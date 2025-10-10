@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPA - Kho App VIP</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="app-container" id="app-list">
+    <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Các IPA mới nhất</h2>
+    <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải IPA...</p>
+  </div>
+
+  <div class="detail-popup" id="app-detail-popup">
+    <div class="detail-popup-content">
+      <button class="close-btn" onclick="closeAppDetailPopup()">&times;</button>
+      <img id="popup-app-icon" src="" alt="App Icon">
+      <h3 id="popup-app-name"></h3>
+      <p id="popup-app-desc"></p>
+      <div class="popup-meta">
+        <span id="popup-app-version"></span> |
+        <span id="popup-app-developer"></span> |
+        <span id="popup-app-date"></span>
+      </div>
+      <a id="popup-app-download-btn" href="#" target="_blank" class="download-btn-popup">Tải về</a>
+    </div>
+  </div>
+
+  <script>
+    const appListContainer = document.getElementById('app-list');
+    let ipaApps = [];
+
+    const appDetailPopup = document.getElementById('app-detail-popup');
+    const popupAppIcon = document.getElementById('popup-app-icon');
+    const popupAppName = document.getElementById('popup-app-name');
+    const popupAppDesc = document.getElementById('popup-app-desc');
+    const popupAppVersion = document.getElementById('popup-app-version');
+    const popupAppDeveloper = document.getElementById('popup-app-developer');
+    const popupAppDate = document.getElementById('popup-app-date');
+    const popupAppDownloadBtn = document.getElementById('popup-app-download-btn');
+
+    function renderApps(appsToDisplay) {
+      if (appsToDisplay.length === 0) {
+        appListContainer.innerHTML = `
+          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy IPA nào.</h2>
+        `;
+        return;
+      }
+      appListContainer.innerHTML = appsToDisplay.map(app => `
+        <div class="app-card" data-id="${app.id}">
+          <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
+          <div class="app-info">
+            <h3>${app.name}</h3>
+            <p>${app.desc}</p>
+            <div class="app-meta">
+              <span>Ver: ${app.version || 'N/A'}</span> |
+              <span>Dev: ${app.developer || 'N/A'}</span>
+            </div>
+          </div>
+          <span class="download-btn">Xem & Tải</span>
+        </div>
+      `).join('');
+
+      document.querySelectorAll('.app-card').forEach(card => {
+        card.addEventListener('click', (event) => {
+          const appId = card.dataset.id;
+          const selectedApp = ipaApps.find(app => app.id === appId);
+          if (selectedApp) {
+            showAppDetailPopup(selectedApp);
+          }
+        });
+      });
+    }
+
+    async function loadIpaApps() {
+      try {
+        const response = await fetch('../data/ipa.json');
+        ipaApps = response.ok ? await response.json() : [];
+        renderApps(ipaApps);
+      } catch (error) {
+        console.error('Lỗi khi tải dữ liệu IPA:', error);
+        appListContainer.innerHTML = `
+          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Lỗi khi tải dữ liệu IPA.</h2>
+        `;
+      }
+    }
+
+    function showAppDetailPopup(app) {
+        popupAppIcon.src = app.icon;
+        popupAppName.textContent = app.name;
+        popupAppDesc.textContent = app.desc;
+        popupAppVersion.textContent = `Ver: ${app.version || 'N/A'}`;
+        popupAppDeveloper.textContent = `Dev: ${app.developer || 'N/A'}`;
+        popupAppDate.textContent = `Date: ${app.date || 'N/A'}`;
+        popupAppDownloadBtn.href = app.fileLink;
+        appDetailPopup.classList.add('active');
+    }
+
+    function closeAppDetailPopup() {
+        appDetailPopup.classList.remove('active');
+    }
+
+    appDetailPopup.addEventListener('click', (event) => {
+        if (event.target === appDetailPopup) {
+            closeAppDetailPopup();
+        }
+    });
+
+    window.addEventListener('message', (event) => {
+      if (event.data.type === 'search') {
+        const keyword = event.data.keyword.toLowerCase();
+        const filteredApps = ipaApps.filter(app =>
+          app.name.toLowerCase().includes(keyword) ||
+          app.desc.toLowerCase().includes(keyword) ||
+          (app.developer && app.developer.toLowerCase().includes(keyword))
+        );
+        renderApps(filteredApps);
+      } else if (event.data.type === 'themeChange') {
+          if (event.data.theme === 'dark') {
+              document.body.classList.add('dark');
+          } else {
+              document.body.classList.remove('dark');
+          }
+      }
+    });
+
+    loadIpaApps();
+
+    // FIXED: Đổi localStorage thành sessionStorage
+    const savedTheme = sessionStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
