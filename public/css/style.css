@@ -1,0 +1,642 @@
+/* Variables for Light and Dark Mode */
+:root {
+  /* Light Mode Colors */
+  --bg-light: #f0f2f5;
+  --text-light: #222;
+  --card-bg-light: #ffffff;
+  --card-shadow-light: rgba(0, 0, 0, 0.1);
+  --glass-bg-light: rgba(255, 255, 255, 0.8);
+  --border-light: #e0e0e0;
+  --placeholder-light: rgba(34, 34, 34, 0.6);
+
+  /* Dark Mode Colors */
+  --bg-dark: #121212;
+  --text-dark: #e0e0e0;
+  --card-bg-dark: #1e1e1e;
+  --card-shadow-dark: rgba(26, 188, 156, 0.2);
+  --glass-bg-dark: rgba(30, 30, 30, 0.8);
+  --border-dark: #333;
+  --placeholder-dark: rgba(224, 224, 224, 0.6);
+
+  /* Common Colors */
+  --primary-color: #1abc9c; /* Teal/Turquoise */
+  --secondary-color: #3498db; /* Blue */
+  --transition-speed: 0.3s;
+}
+
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color var(--transition-speed) ease,
+    color var(--transition-speed) ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark Mode Toggle */
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Header */
+header {
+  background-color: var(--card-bg-light);
+  color: var(--text-light);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px var(--card-shadow-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+body.dark header {
+  background-color: var(--card-bg-dark);
+  box-shadow: 0 4px 12px var(--card-shadow-dark);
+  color: var(--text-dark);
+}
+
+#header-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 600px;
+  position: relative;
+}
+
+#site-title {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 15px;
+  white-space: nowrap;
+}
+
+#search {
+  width: 100%;
+  padding: 10px 15px 10px 45px;
+  border: 1px solid var(--border-light);
+  border-radius: 25px;
+  background: var(--glass-bg-light);
+  color: var(--text-light);
+  font-size: 1em;
+  transition: all var(--transition-speed) ease;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+#search::placeholder {
+  color: var(--placeholder-light);
+}
+
+body.dark #search {
+  background: var(--glass-bg-dark);
+  border-color: var(--border-dark);
+  color: var(--text-dark);
+}
+
+body.dark #search::placeholder {
+  color: var(--placeholder-dark);
+}
+
+#search:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.2);
+}
+
+#search-icon {
+  position: absolute;
+  left: 15px;
+  color: var(--placeholder-light);
+  pointer-events: none;
+  font-size: 24px;
+}
+body.dark #search-icon {
+  color: var(--placeholder-dark);
+}
+
+
+#toggle-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: color var(--transition-speed) ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+body.dark #toggle-mode {
+  color: var(--text-dark);
+}
+
+#toggle-mode:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+body.dark #toggle-mode:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+#toggle-mode .material-icons {
+  font-size: 28px;
+}
+
+/* Content Frame (iframe) */
+.content-frame {
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+  min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--card-bg-light);
+  box-shadow: 0 -4px 12px var(--card-shadow-light);
+  padding: 8px 0;
+  position: sticky; /* Giữ sticky để cuộn cùng trang */
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+}
+
+body.dark .bottom-nav {
+  background-color: var(--card-bg-dark);
+  box-shadow: 0 -4px 12px var(--card-shadow-dark);
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.75em;
+  padding: 5px 0;
+  transition: color var(--transition-speed) ease;
+  flex: 1;
+}
+
+body.dark .bottom-nav a {
+  color: var(--text-dark);
+}
+
+.bottom-nav a .material-icons {
+  font-size: 24px;
+  margin-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.bottom-nav a.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.bottom-nav a.active .material-icons {
+  color: var(--primary-color);
+}
+
+.bottom-nav a:hover {
+  color: var(--primary-color);
+}
+.bottom-nav a:hover .material-icons {
+  color: var(--primary-color);
+}
+
+
+/* App List Container (used in home, ipa, dylib, conf) */
+.app-container {
+  padding: 20px;
+  display: grid; /* Quay lại Grid */
+  /* Cấu hình cột để tự động lặp lại và có kích thước tối thiểu/tối đa */
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adjusted for slightly smaller cards */
+  gap: 15px; /* Reduced gap for a tighter look */
+  justify-content: center; /* Căn giữa các thẻ */
+  align-items: stretch; /* Đảm bảo các thẻ có chiều cao bằng nhau trong cùng một hàng */
+  box-sizing: border-box; /* Bao gồm padding và border vào kích thước tổng */
+}
+
+/* App Card - Điều chỉnh để thành hình chữ nhật đồng đều */
+.app-card {
+  background-color: var(--card-bg-light);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px var(--card-shadow-light);
+  text-decoration: none;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px; /* Slightly reduced padding */
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+  overflow: hidden;
+  height: 230px; /* Adjusted fixed height for slightly smaller cards */
+  box-sizing: border-box; /* Quan trọng để padding không làm tăng kích thước */
+}
+
+body.dark .app-card {
+  background-color: var(--card-bg-dark);
+  box-shadow: 0 4px 15px var(--card-shadow-dark);
+  color: var(--text-dark);
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(26, 188, 156, 0.4);
+}
+
+.app-card img {
+  width: 65px; /* Slightly reduced icon size */
+  height: 65px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 8px; /* Adjusted margin */
+  flex-shrink: 0;
+}
+
+.app-info {
+  flex-grow: 1; /* Cho phép phần info chiếm đủ không gian còn lại */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Đẩy version/dev xuống dưới */
+  width: 100%; /* Đảm bảo chiếm đủ chiều rộng của card */
+}
+
+.app-info h3 {
+  font-size: 1.05em; /* Slightly adjusted font size */
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+  color: var(--primary-color);
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Giới hạn 2 dòng cho tên */
+  -webkit-box-orient: vertical;
+}
+
+.app-info p {
+  font-size: 0.8em; /* Slightly reduced font size */
+  color: #666;
+  margin: 0 0 8px 0; /* Adjusted margin */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Giới hạn mô tả 3 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body.dark .app-info p {
+    color: #b0b0b0;
+}
+
+.app-meta {
+  font-size: 0.7em; /* Slightly reduced font size */
+  color: #888;
+  white-space: nowrap; /* Giữ version/dev trên một dòng */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: auto; /* Đẩy xuống cuối .app-info */
+}
+
+body.dark .app-meta {
+    color: #ccc;
+}
+
+
+.download-btn {
+  display: block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 8px 12px; /* Adjusted padding for better visual spacing */
+  border-radius: 8px;
+  font-size: 0.78em;
+  margin: 12px auto 0 auto; /* Centered horizontally, top margin */
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  /* Adjusted width for slightly wider, more uniform buttons across all sizes */
+  width: calc(100% - 40px); /* Base: 20px space on each side from inner card edge */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  text-align: center; /* Crucial: Ensures text inside button is centered */
+}
+
+.download-btn:hover {
+  background-color: #2980b9;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+  #header-content {
+      flex-grow: 1;
+      max-width: unset;
+      margin-right: 10px;
+  }
+  #site-title {
+    font-size: 1.3em;
+    padding-left: 0;
+  }
+  #search {
+    padding: 10px 15px 10px 45px;
+    margin-left: 0;
+  }
+  #toggle-mode {
+    margin-left: 0;
+  }
+  .app-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusted min-width */
+    gap: 12px; /* Adjusted gap */
+    padding: 15px;
+  }
+  .app-card {
+    height: 210px; /* Adjusted height */
+    padding: 10px; /* Adjusted padding */
+  }
+  .app-card img {
+    width: 55px; /* Adjusted icon size */
+    height: 55px;
+    border-radius: 16px;
+  }
+  .app-info h3 {
+    font-size: 0.95em; /* Adjusted font size */
+  }
+  .app-info p, .app-meta {
+    font-size: 0.75em; /* Adjusted font size */
+  }
+  .download-btn {
+    padding: 7px 10px; /* Adjusted padding slightly for smaller screens */
+    font-size: 0.75em; /* Slightly adjusted font size */
+    width: calc(100% - 36px); /* 18px space on each side from inner card edge */
+    margin-top: 10px; /* Slightly reduced margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-nav a {
+    font-size: 0.7em;
+  }
+  .bottom-nav a .material-icons {
+    font-size: 22px;
+  }
+  .app-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjusted min-width */
+    gap: 8px; /* Adjusted gap */
+    padding: 10px;
+  }
+  .app-card {
+    height: 190px; /* Adjusted height */
+    padding: 8px; /* Adjusted padding */
+  }
+  .app-card img {
+    width: 45px; /* Adjusted icon size */
+    height: 45px;
+    border-radius: 14px;
+  }
+  .app-info h3 {
+    font-size: 0.85em; /* Adjusted font size */
+  }
+  .app-info p, .app-meta {
+    font-size: 0.7em; /* Adjusted font size */
+  }
+  .download-btn {
+    padding: 6px 8px; /* Adjusted padding for very small screens */
+    font-size: 0.7em; /* Consistent with previous smaller font */
+    width: calc(100% - 32px); /* 16px space on each side from inner card edge */
+    margin-top: 8px; /* Slightly reduced margin */
+  }
+}
+
+/* --- Popup Modal Styles (New/Updated) --- */
+.detail-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.detail-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.detail-popup-content {
+  background: var(--card-bg-light);
+  color: var(--text-light);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.detail-popup.active .detail-popup-content {
+  transform: translateY(0);
+}
+
+.detail-popup-content .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+.detail-popup-content h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.detail-popup-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.detail-popup-content p {
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.detail-popup-content .popup-meta {
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.detail-popup-content .download-btn-popup {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 12px 10px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 10px auto 0 auto;
+  transition: background 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.detail-popup-content .download-btn-popup:hover {
+  background: #159f8a;
+}
+
+/* Dark mode for detail popup */
+body.dark .detail-popup-content {
+  background: var(--card-bg-dark);
+  color: var(--text-dark);
+  box-shadow: 0 8px 30px rgba(26, 188, 156, 0.3);
+}
+body.dark .detail-popup-content .close-btn {
+  color: var(--text-dark);
+}
+body.dark .detail-popup-content .popup-meta {
+  color: #ccc;
+}
+
+/* Styles for Conf Usage Popup (specific to Conf page) */
+.usage-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.usage-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.usage-popup-content {
+  background: var(--card-bg-light);
+  color: var(--text-light);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.usage-popup.active .usage-popup-content {
+  transform: translateY(0);
+}
+
+.usage-popup-content h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.usage-popup-content p {
+  white-space: pre-wrap;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.usage-popup-content .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+.usage-popup-content .copy-open-btn {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 12px 10px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 10px auto 0 auto;
+  transition: background 0.2s ease;
+  text-align: center;
+}
+
+.usage-popup-content .copy-open-btn:hover {
+  background: #159f8a;
+}
+
+/* Dark mode for Conf popup */
+body.dark .usage-popup-content {
+  background: var(--card-bg-dark);
+  color: var(--text-dark);
+  box-shadow: 0 8px 30px rgba(26, 188, 156, 0.3);
+}
+body.dark .usage-popup-content .close-btn {
+  color: var(--text-dark);
+}
