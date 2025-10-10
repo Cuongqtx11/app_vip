@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang Chủ - Kho App VIP</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .home-container {
+      padding: 30px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 20px auto;
+      background: var(--card-bg-light);
+      border-radius: 16px;
+      box-shadow: 0 4px 15px var(--card-shadow-light);
+      transition: background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    }
+
+    body.dark .home-container {
+      background: var(--card-bg-dark);
+      box-shadow: 0 4px 15px var(--card-shadow-dark);
+    }
+
+    .home-container h1 {
+      color: var(--primary-color);
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .home-container p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    body.dark .home-container p {
+      color: var(--text-dark);
+    }
+
+    .home-container .call-to-action {
+      margin-top: 30px;
+    }
+
+    .home-container .call-to-action a {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .home-container .call-to-action a:hover {
+      background: #159f8a;
+      transform: translateY(-2px);
+    }
+
+    .home-container ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-container ul li {
+        background: var(--bg-light);
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        font-weight: bold;
+        color: var(--primary-color);
+        transition: background var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    }
+
+    body.dark .home-container ul li {
+        background: var(--card-bg-dark);
+        box-shadow: 0 2px 8px rgba(26, 188, 156, 0.2);
+    }
+
+    .tutorial-section {
+        margin-top: 40px;
+        border-top: 1px solid var(--border-light);
+        padding-top: 30px;
+    }
+
+    .tutorial-section h2 {
+        font-size: 1.8em;
+        color: var(--text-light);
+        margin-bottom: 25px;
+        transition: color var(--transition-speed) ease;
+    }
+    body.dark .tutorial-section h2 {
+        color: var(--text-dark);
+    }
+
+    .tutorial-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .tutorial-button {
+        background-color: transparent;
+        color: var(--text-light);
+        border: 2px solid var(--border-light);
+        padding: 15px 25px;
+        border-radius: 12px;
+        font-size: 1.1em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-width: 150px;
+        text-align: center;
+    }
+
+    body.dark .tutorial-button {
+        color: var(--text-dark);
+        border-color: var(--border-dark);
+    }
+
+    .tutorial-button:hover {
+        background-color: rgba(26, 188, 156, 0.1);
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(26, 188, 156, 0.2);
+    }
+
+    .video-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .video-popup.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .video-popup-content {
+        background-color: var(--card-bg-light);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        width: 90%;
+        max-width: 800px;
+        position: relative;
+        transform: translateY(20px);
+        transition: transform 0.3s ease, background-color var(--transition-speed) ease;
+        max-height: 90vh;
+        overflow: hidden;
+    }
+
+    body.dark .video-popup-content {
+        background-color: var(--card-bg-dark);
+        box-shadow: 0 8px 30px rgba(26, 188, 156, 0.3);
+    }
+
+    .video-popup.active .video-popup-content {
+        transform: translateY(0);
+    }
+
+    .video-popup .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: var(--text-light);
+        transition: color 0.2s ease;
+    }
+
+    body.dark .video-popup .close-btn {
+        color: var(--text-dark);
+    }
+
+    .video-popup .close-btn:hover {
+        color: var(--primary-color);
+    }
+
+    .video-popup iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+    .mauchu {
+        color: aqua;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .home-container {
+            padding: 20px 15px;
+            margin: 15px auto;
+        }
+        .home-container h1 {
+            font-size: 2em;
+        }
+        .home-container p {
+            font-size: 1em;
+        }
+        .tutorial-button {
+            width: calc(33% - 20px);
+            max-width: 200px;
+            padding: 12px 15px;
+            font-size: 0.95em;
+        }
+    }
+    @media (max-width: 480px) {
+        .home-container {
+            padding: 15px 10px;
+        }
+        .home-container h1 {
+            font-size: 1.8em;
+        }
+        .tutorial-button {
+            width: calc(33% - 15px);
+            padding: 10px 12px;
+            font-size: 0.85em;
+            min-width: unset;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <h1>Chào mừng đến với Kho App VIP! 🚀</h1>
+    <p>
+      Khám phá thế giới của các ứng dụng, dylib (mod) và cấu hình VPN (Conf) độc quyền.
+      Chúng tôi mang đến những công cụ mạnh mẽ giúp bạn tùy biến và nâng cao trải nghiệm di động của mình.
+    </p>
+    <p>
+      Tại đây, bạn có thể tìm thấy:
+    </p>
+    <ul>
+        <li>📱 Các file IPA modded chất lượng cao</li>
+        <li>⚙️ Dylib giúp tùy chỉnh ứng dụng</li>
+        <li>🔑 Cấu hình Shadowrocket (Conf) an toàn và nhanh chóng</li>
+    </ul>
+    <p>
+      Đừng ngần ngại khám phá các danh mục ở thanh điều hướng phía dưới để tìm những gì bạn cần!
+    </p>
+    <div class="call-to-action">
+      <a href="ipa.html" target="_parent">Bắt đầu khám phá ngay!</a>
+    </div>
+
+    <div class="tutorial-section">
+    	<div class="mauchu">
+			<a href="https://cuios.shop" target="_blank">WEB CHỨNG CHỈ APPLE</a>
+        </div>
+        <h2>Hướng dẫn sử dụng</h2>
+        <div class="tutorial-buttons">
+            <button class="tutorial-button" data-video-id="UoTyismkkfw">
+                Hướng dẫn IPA
+            </button>
+            <button class="tutorial-button" data-video-id="4jchr9wnNzA">
+                Hướng dẫn Dylib
+            </button>
+            <button class="tutorial-button" data-video-id="Qxox6mxr80w">
+                Hướng dẫn Conf
+            </button>
+        </div>
+    </div>
+  </div>
+
+  <div class="video-popup" id="videoPopup">
+    <div class="video-popup-content">
+      <button class="close-btn material-icons" id="closeVideoPopup">close</button>
+      <iframe id="youtubePlayer" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    // Đồng bộ Dark Mode từ trang cha
+    window.addEventListener('message', (event) => {
+        if (event.data.type === 'themeChange') {
+            if (event.data.theme === 'dark') {
+                document.body.classList.add('dark');
+            } else {
+                document.body.classList.remove('dark');
+            }
+        }
+    });
+
+    // Khôi phục theme đã lưu (dùng sessionStorage)
+    const savedTheme = sessionStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+    }
+
+    // Xử lý Popup video hướng dẫn
+    const videoPopup = document.getElementById('videoPopup');
+    const closeVideoPopupBtn = document.getElementById('closeVideoPopup');
+    const youtubePlayer = document.getElementById('youtubePlayer');
+    const tutorialButtons = document.querySelectorAll('.tutorial-button');
+
+    tutorialButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const videoId = button.dataset.videoId;
+            if (videoId) {
+                youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`;
+                videoPopup.classList.add('active');
+            }
+        });
+    });
+
+    closeVideoPopupBtn.addEventListener('click', () => {
+        videoPopup.classList.remove('active');
+        youtubePlayer.src = '';
+    });
+
+    videoPopup.addEventListener('click', (event) => {
+        if (event.target === videoPopup) {
+            videoPopup.classList.remove('active');
+            youtubePlayer.src = '';
+        }
+    });
+  </script>
+</body>
+</html>
