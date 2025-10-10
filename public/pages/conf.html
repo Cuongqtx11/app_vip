@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conf - Kho App VIP</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .app-card.conf-card {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container" id="app-list">
+    <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Cấu hình Shadowrocket</h2>
+    <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải cấu hình...</p>
+  </div>
+
+  <div class="usage-popup" id="usage-popup">
+    <div class="usage-popup-content">
+      <button class="close-btn" onclick="closePopup()">&times;</button>
+      <h3 id="popup-name"></h3>
+      <h4>Hướng dẫn sử dụng:</h4>
+      <p id="popup-usage"></p>
+      <button class="copy-open-btn" id="copy-open-btn" data-link="">
+        Sao chép & Mở Shadowrocket
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const appListContainer = document.getElementById('app-list');
+    let confApps = [];
+    const usagePopup = document.getElementById('usage-popup');
+    const popupName = document.getElementById('popup-name');
+    const popupUsage = document.getElementById('popup-usage');
+    const copyOpenBtn = document.getElementById('copy-open-btn');
+
+    function renderApps(appsToDisplay) {
+      if (appsToDisplay.length === 0) {
+        appListContainer.innerHTML = `
+          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy cấu hình nào.</h2>
+        `;
+        return;
+      }
+      appListContainer.innerHTML = appsToDisplay.map(app => `
+        <div class="app-card conf-card" data-id="${app.id}">
+          <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
+          <div class="app-info">
+            <h3>${app.name}</h3>
+            <p>${app.desc}</p>
+          </div>
+        </div>
+      `).join('');
+
+      document.querySelectorAll('.conf-card').forEach(card => {
+        card.addEventListener('click', (event) => {
+          const appId = card.dataset.id;
+          const selectedApp = confApps.find(app => app.id === appId);
+          if (selectedApp) {
+            showUsagePopup(selectedApp);
+          }
+        });
+      });
+    }
+
+    async function loadConfApps() {
+      try {
+        const response = await fetch('../data/conf.json');
+        confApps = response.ok ? await response.json() : [];
+        renderApps(confApps);
+      } catch (error) {
+        console.error('Lỗi khi tải dữ liệu Conf:', error);
+        appListContainer.innerHTML = `
+          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Lỗi khi tải dữ liệu cấu hình.</h2>
+        `;
+      }
+    }
+
+    function showUsagePopup(app) {
+      popupName.textContent = app.name;
+      popupUsage.textContent = app.usage;
+      copyOpenBtn.dataset.link = app.link;
+      usagePopup.classList.add('active');
+    }
+
+    function closePopup() {
+      usagePopup.classList.remove('active');
+    }
+
+    copyOpenBtn.addEventListener('click', async () => {
+      const confLink = copyOpenBtn.dataset.link;
+      if (confLink) {
+        try {
+          await navigator.clipboard.writeText(confLink);
+          alert('✅ Đã sao chép link cấu hình vào bộ nhớ tạm!');
+          window.location.href = 'shadowrocket://';
+          closePopup();
+        } catch (err) {
+          console.error('Không thể sao chép hoặc mở ứng dụng:', err);
+          alert('❌ Lỗi: Không thể sao chép link hoặc mở Shadowrocket tự động. Vui lòng sao chép thủ công.');
+          prompt("Vui lòng sao chép thủ công link sau:", confLink);
+        }
+      }
+    });
+
+    usagePopup.addEventListener('click', (event) => {
+      if (event.target === usagePopup) {
+        closePopup();
+      }
+    });
+
+    window.addEventListener('message', (event) => {
+      if (event.data.type === 'search') {
+        const keyword = event.data.keyword.toLowerCase();
+        const filteredApps = confApps.filter(app =>
+          app.name.toLowerCase().includes(keyword) ||
+          app.desc.toLowerCase().includes(keyword)
+        );
+        renderApps(filteredApps);
+      } else if (event.data.type === 'themeChange') {
+          if (event.data.theme === 'dark') {
+              document.body.classList.add('dark');
+          } else {
+              document.body.classList.remove('dark');
+          }
+      }
+    });
+
+    loadConfApps();
+
+    // FIXED: Đổi localStorage thành sessionStorage
+    const savedTheme = sessionStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
