@@ -245,7 +245,7 @@
     "icon": "https://play-lh.googleusercontent.com/JfQNUnohpuq5IP65WN9C109VjLjDEj2tZYlPtComLznQfGeeoesubOaHGBcpZdXKuHU",
     "fileLink": "https://www.mediafire.com/file/d2lar04g3u249eh/Messenger-Flow_511.0.ipa/file",
     "desc": "Messenger Flow: Chặn quảng cáo - Tải Story (Nút 3 chấm) - Chặn “đã xem” ở tin nhắn và Story; Ẩn “đang gõ” tin nhắn - Và nhiều tính năng hơn nữa… - Mở Mục Cài Đặt > Góc phải bên trên là Menu Flow",
-    "version": 1.0,
+    "version": 1,
     "developer": "Cuios",
     "date": "2025-06-22"
   },
@@ -275,7 +275,7 @@
     "icon": "https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo",
     "fileLink": "https://www.mediafire.com/file/fy7lbzagkuxynm5/Facebook_mod.ipa/file",
     "desc": "Không quảng cáo - Tải Video/ảnh Story - Tải Video/mp3 về máy bằng cách nhấn dữ vào video,...",
-    "version": 445.0,
+    "version": 445,
     "developer": "Cuios",
     "date": "2025-06-22"
   },
@@ -285,7 +285,7 @@
     "icon": "https://appsdecoded.com/wp-content/uploads/2024/02/Filza-iPA.jpg",
     "fileLink": "https://raw.githubusercontent.com/Cuongqtx11/Cuios/main/Filza_4.0_No_Url_Crack.ipa",
     "desc": "Bắt buộc phải cài qua TrollStore - Filza No url",
-    "version": 4.0,
+    "version": 4,
     "developer": "Cuios",
     "date": "2025-06-22"
   },
@@ -295,7 +295,7 @@
     "icon": "https://media.havoc.app/669b9b9a4e505bb0dae0841f",
     "fileLink": "https://raw.githubusercontent.com/Cuongqtx11/Cuios/main/TrollFools_3.0-28.tipa",
     "desc": "Bắt buộc phải cài qua TrollStore",
-    "version": 3.0,
+    "version": 3,
     "developer": "Cuios",
     "date": "2025-06-22"
   },
@@ -338,5 +338,16 @@
     "version": "3.7.23",
     "developer": "Cuios",
     "date": "2025-06-22"
+  },
+  {
+    "id": "ipa-1760061399721",
+    "type": "ipa",
+    "name": "ZTest",
+    "icon": "https://cuios.shop",
+    "desc": "test",
+    "fileLink": "https://cuios.shop",
+    "version": "1.0",
+    "developer": "cuios",
+    "date": "2025-10-10"
   }
 ]
