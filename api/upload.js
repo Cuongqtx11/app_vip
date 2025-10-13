@@ -17,8 +17,8 @@ export default async function handler(req, res) {
 
     // GitHub configuration từ environment variables
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-    const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
-    const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
+    const GITHUB_OWNER = process.env.GITHUB_OWNER || 'YOUR_USERNAME';
+    const GITHUB_REPO = process.env.GITHUB_REPO || 'Cuios';
     const FILE_PATH = `public/data/${type}.json`;
 
     if (!GITHUB_TOKEN) {
@@ -45,8 +45,9 @@ export default async function handler(req, res) {
       currentData = JSON.parse(content);
     }
 
-    // 2. Thêm data mới vào mảng
-    currentData.push(data);
+    // 2. Thêm data mới vào ĐẦU MẢNG (thay vì cuối)
+    // THAY ĐỔI: currentData.push(data) → currentData.unshift(data)
+    currentData.unshift(data); // ⭐ Thêm vào đầu để hiển thị trên cùng
 
     // 3. Cập nhật file lên GitHub
     const newContent = Buffer.from(JSON.stringify(currentData, null, 2)).toString('base64');
