@@ -92,7 +92,6 @@
       display: block;
     }
 
-    /* Dark mode for admin page */
     body.dark {
         color: var(--text-dark);
     }
@@ -112,7 +111,6 @@
 </head>
 <body>
 
-  <!-- Login Form -->
   <div class="login-box" id="loginBox">
     <h1>🔐 Đăng Nhập Admin</h1>
     <label for="password">Mật khẩu:</label>
@@ -121,7 +119,6 @@
     <div class="status-message" id="loginStatus"></div>
   </div>
 
-  <!-- Upload Form -->
   <div class="form-box" id="uploadForm">
     <h1>🛠️ Admin Upload</h1>
 
@@ -159,8 +156,8 @@
   </div>
 
   <script>
-    // MẬT KHẨU ADMIN (Thay đổi mật khẩu này!)
-    const ADMIN_PASSWORD = '6872'; // ⚠️ ĐỔI MẬT KHẨU NÀY!
+    // ⚠️ ĐỔI MẬT KHẨU NÀY!
+    const ADMIN_PASSWORD = '6872';
 
     const selectType = document.getElementById('select-type');
     const inputFile = document.getElementById('input-file');
@@ -176,7 +173,6 @@
     const loginStatus = document.getElementById('loginStatus');
     const uploadStatus = document.getElementById('uploadStatus');
 
-    // Kiểm tra đã đăng nhập chưa (dùng sessionStorage)
     if (sessionStorage.getItem('adminLoggedIn') === 'true') {
       showUploadForm();
     }
@@ -231,7 +227,6 @@
     selectType.addEventListener('change', adjustFormFields);
     adjustFormFields();
 
-    // Đồng bộ Dark Mode từ trang cha
     window.addEventListener('message', (event) => {
         if (event.data.type === 'themeChange') {
             if (event.data.theme === 'dark') {
@@ -285,7 +280,6 @@
           appData.date = date;
       }
 
-      // Gửi lên API endpoint
       try {
         showStatus('success', '⏳ Đang upload...');
         const response = await fetch('/api/upload', {
@@ -299,10 +293,12 @@
         const result = await response.json();
         
         if (response.ok) {
-          showStatus('success', `✅ Upload thành công vào mục ${type.toUpperCase()}! Trang sẽ tự động tải lại...`);
+          showStatus('success', `✅ Upload thành công! Đang tải lại trang...`);
           clearForm();
+          
+          // ⭐ TỰ ĐỘNG RELOAD SAU 2 GIÂY
           setTimeout(() => {
-            window.location.reload();
+            window.top.location.reload();
           }, 2000);
         } else {
           showStatus('error', `❌ Lỗi: ${result.error || 'Không thể upload'}`);
