@@ -1,5 +1,16 @@
 [
   {
+    "id": "ipa-1760353159406",
+    "type": "ipa",
+    "name": "Youtube",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "desc": "Youtube premium - không quảng cáo - tải video - tắt màn hình nghe nhạc…",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2025/YouTubeOLED_20.41.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.41.4",
+    "developer": "cuios.shop",
+    "date": "2025-10-13"
+  },
+  {
     "id": "ipa-1760346944312",
     "type": "ipa",
     "name": "Locket Gold",
