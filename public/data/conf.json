@@ -1,5 +1,14 @@
 [
   {
+    "id": "conf-1760344955506",
+    "type": "conf",
+    "name": "Test",
+    "icon": "https://test",
+    "desc": "test",
+    "link": "test",
+    "usage": "test"
+  },
+  {
     "id": "conf-001",
     "name": "Youtube Premium",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
