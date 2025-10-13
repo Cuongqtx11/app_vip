@@ -1,5 +1,16 @@
 [
   {
+    "id": "ipa-1760346944312",
+    "type": "ipa",
+    "name": "Locket Gold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Locket Gold - nếu không thể cài đè lên bản gốc. hãy xoá bản gốc để login",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-10-2025/Locket_2.17.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.17.0",
+    "developer": "cuios.shop",
+    "date": "2025-10-13"
+  },
+  {
     "id": "ipa-001",
     "name": "Viber",
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTinDYu4i72vBcl0NzH1TiMdHniYLn9Yz9f9A&s",
