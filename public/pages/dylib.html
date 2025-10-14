@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterTag('all')">📱 Tất cả</button>
+    <button class="filter-btn" onclick="filterTag('game')">🎮 Game</button>
+    <button class="filter-btn" onclick="filterTag('photo')">📸 Photo</button>
+    <button class="filter-btn" onclick="filterTag('utility')">🔧 Utility</button>
+    <button class="filter-btn" onclick="filterTag('vpn')">🛡️ VPN</button>
+    <button class="filter-btn" onclick="filterTag('social')">💬 Social</button>
+    <button class="filter-btn" onclick="filterTag('music')">🎵 Music</button>
+    <button class="filter-btn" onclick="filterTag('productivity')">⚡ Prod</button>
+    <button class="filter-btn" onclick="filterTag('tools')">🛠️ Tools</button>
+  </div>
+
   <div class="app-container" id="app-list">
     <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Các Dylib mới nhất</h2>
     <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải Dylib...</p>
@@ -18,6 +30,7 @@
       <img id="popup-app-icon" src="" alt="App Icon">
       <h3 id="popup-app-name"></h3>
       <p id="popup-app-desc"></p>
+      <div id="popup-tags" class="tags-section"></div>
       <div class="popup-meta">
         <span id="popup-app-version"></span> |
         <span id="popup-app-developer"></span> |
@@ -30,15 +43,10 @@
   <script>
     const appListContainer = document.getElementById('app-list');
     let dylibApps = [];
+    let selectedApp = null;
+    let currentFilter = 'all';
 
     const appDetailPopup = document.getElementById('app-detail-popup');
-    const popupAppIcon = document.getElementById('popup-app-icon');
-    const popupAppName = document.getElementById('popup-app-name');
-    const popupAppDesc = document.getElementById('popup-app-desc');
-    const popupAppVersion = document.getElementById('popup-app-version');
-    const popupAppDeveloper = document.getElementById('popup-app-developer');
-    const popupAppDate = document.getElementById('popup-app-date');
-    const popupAppDownloadBtn = document.getElementById('popup-app-download-btn');
 
     function renderApps(appsToDisplay) {
       if (appsToDisplay.length === 0) {
@@ -47,15 +55,19 @@
         `;
         return;
       }
+
       appListContainer.innerHTML = appsToDisplay.map(app => `
         <div class="app-card" data-id="${app.id}">
           <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
           <div class="app-info">
             <h3>${app.name}</h3>
             <p>${app.desc}</p>
+            <div class="tags-section">
+              ${app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : ''}
+              ${app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : ''}
+            </div>
             <div class="app-meta">
-              <span>Ver: ${app.version || 'N/A'}</span> |
-              <span>Dev: ${app.developer || 'N/A'}</span>
+              <span>Ver: ${app.version || 'N/A'}</span>
             </div>
           </div>
           <span class="download-btn">Xem & Tải</span>
@@ -63,14 +75,40 @@
       `).join('');
 
       document.querySelectorAll('.app-card').forEach(card => {
-        card.addEventListener('click', (event) => {
+        card.addEventListener('click', () => {
           const appId = card.dataset.id;
-          const selectedApp = dylibApps.find(app => app.id === appId);
+          selectedApp = dylibApps.find(app => app.id === appId);
           if (selectedApp) {
             showAppDetailPopup(selectedApp);
           }
         });
       });
+    }
+
+    function getTagEmoji(tag) {
+      const emojis = {
+        game: '🎮', photo: '📸', utility: '🔧', vpn: '🛡️',
+        social: '💬', music: '🎵', productivity: '⚡', tools: '🛠️'
+      };
+      return emojis[tag] || '🏷️';
+    }
+
+    function getBadgeEmoji(badge) {
+      const emojis = { new: '🆕', trending: '🔥', top: '⭐' };
+      return emojis[badge] || '';
+    }
+
+    function filterTag(tag) {
+      currentFilter = tag;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (tag === 'all') {
+        renderApps(dylibApps);
+      } else {
+        const filtered = dylibApps.filter(app => app.tags && app.tags.includes(tag));
+        renderApps(filtered);
+      }
     }
 
     async function loadDylibApps() {
@@ -87,51 +125,47 @@
     }
 
     function showAppDetailPopup(app) {
-        popupAppIcon.src = app.icon;
-        popupAppName.textContent = app.name;
-        popupAppDesc.textContent = app.desc;
-        popupAppVersion.textContent = `Ver: ${app.version || 'N/A'}`;
-        popupAppDeveloper.textContent = `Dev: ${app.developer || 'N/A'}`;
-        popupAppDate.textContent = `Date: ${app.date || 'N/A'}`;
-        popupAppDownloadBtn.href = app.fileLink;
-        appDetailPopup.classList.add('active');
+      document.getElementById('popup-app-icon').src = app.icon;
+      document.getElementById('popup-app-name').textContent = app.name;
+      document.getElementById('popup-app-desc').textContent = app.desc;
+      document.getElementById('popup-app-version').textContent = `Ver: ${app.version || 'N/A'}`;
+      document.getElementById('popup-app-developer').textContent = `Dev: ${app.developer || 'N/A'}`;
+      document.getElementById('popup-app-date').textContent = `Date: ${app.date || 'N/A'}`;
+      document.getElementById('popup-app-download-btn').href = app.fileLink;
+
+      const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
+      const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
+      document.getElementById('popup-tags').innerHTML = tagsHTML + badgeHTML;
+
+      appDetailPopup.classList.add('active');
     }
 
     function closeAppDetailPopup() {
-        appDetailPopup.classList.remove('active');
+      appDetailPopup.classList.remove('active');
     }
 
     appDetailPopup.addEventListener('click', (event) => {
-        if (event.target === appDetailPopup) {
-            closeAppDetailPopup();
-        }
+      if (event.target === appDetailPopup) closeAppDetailPopup();
     });
 
     window.addEventListener('message', (event) => {
       if (event.data.type === 'search') {
         const keyword = event.data.keyword.toLowerCase();
-        const filteredApps = dylibApps.filter(app =>
+        const filtered = dylibApps.filter(app =>
           app.name.toLowerCase().includes(keyword) ||
           app.desc.toLowerCase().includes(keyword) ||
           (app.developer && app.developer.toLowerCase().includes(keyword))
         );
-        renderApps(filteredApps);
+        renderApps(filtered);
       } else if (event.data.type === 'themeChange') {
-          if (event.data.theme === 'dark') {
-              document.body.classList.add('dark');
-          } else {
-              document.body.classList.remove('dark');
-          }
+        document.body.classList.toggle('dark', event.data.theme === 'dark');
       }
     });
 
     loadDylibApps();
 
-    // FIXED: Đổi localStorage thành sessionStorage
     const savedTheme = sessionStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark');
-    }
+    if (savedTheme === 'dark') document.body.classList.add('dark');
   </script>
 </body>
 </html>
