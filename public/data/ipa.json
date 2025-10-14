@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-1760453486673",
+    "type": "ipa",
+    "name": "Rổ Phim",
+    "icon": "https://i.imgur.com/ysrsn4L.jpeg",
+    "desc": "app ro phim mod RoX \nsử dụng vip tới 2099",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "trending",
+    "views": 0,
+    "downloads": 0,
+    "rating": 0,
+    "fileLink": "https://www.mediafire.com/file/0ss1rj0spozj8ug/ro+phim_1.0.5_1760452615.ipa/file",
+    "version": "1.0.5",
+    "developer": "N/A",
+    "date": "2025-10-14"
+  },
+  {
     "id": "ipa-1760353159406",
     "type": "ipa",
     "name": "Youtube",
