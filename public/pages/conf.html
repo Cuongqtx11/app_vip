@@ -9,9 +9,109 @@
     .app-card.conf-card {
       cursor: pointer;
     }
+
+    .filter-bar {
+      padding: 15px 25px;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    body.dark .filter-bar {
+      border-bottom-color: var(--border-dark);
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      border: 2px solid var(--primary);
+      background: transparent;
+      color: var(--primary);
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9em;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      background: rgba(26, 188, 156, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .filter-btn.active {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      box-shadow: 0 4px 12px rgba(26, 188, 156, 0.3);
+    }
+
+    .tags-section {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .tag-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 0.65em;
+      font-weight: 600;
+      background: rgba(100, 150, 200, 0.2);
+      color: #0f3460;
+      border: 1px solid #0f3460;
+    }
+
+    body.dark .tag-badge {
+      background: rgba(100, 150, 200, 0.15);
+      color: #48dbb8;
+      border-color: #48dbb8;
+    }
+
+    .badge-new {
+      background: rgba(52, 211, 153, 0.2);
+      color: #10b981;
+      border-color: #10b981;
+    }
+
+    .badge-trending {
+      background: rgba(249, 115, 22, 0.2);
+      color: #f97316;
+      border-color: #f97316;
+    }
+
+    .badge-top {
+      background: rgba(236, 72, 96, 0.2);
+      color: #ec4860;
+      border-color: #ec4860;
+    }
+
+    .stats {
+      font-size: 0.7em;
+      color: var(--text-light-secondary);
+      margin-top: 4px;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    body.dark .stats {
+      color: var(--text-dark-secondary);
+    }
   </style>
 </head>
 <body>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterTag('all')">📱 Tất cả</button>
+    <button class="filter-btn" onclick="filterTag('vpn')">🛡️ VPN</button>
+    <button class="filter-btn" onclick="filterTag('productivity')">⚡ Prod</button>
+    <button class="filter-btn" onclick="filterTag('utility')">🔧 Utility</button>
+    <button class="filter-btn" onclick="filterTag('tools')">🛠️ Tools</button>
+  </div>
+
   <div class="app-container" id="app-list">
     <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Cấu hình Shadowrocket</h2>
     <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải cấu hình...</p>
@@ -19,23 +119,26 @@
 
   <div class="usage-popup" id="usage-popup">
     <div class="usage-popup-content">
-      <button class="close-btn" onclick="closePopup()">&times;</button>
+      <button class="close-btn" onclick="closeUsagePopup()">&times;</button>
       <h3 id="popup-name"></h3>
+      <div id="popup-tags" class="tags-section"></div>
       <h4>Hướng dẫn sử dụng:</h4>
       <p id="popup-usage"></p>
-      <button class="copy-open-btn" id="copy-open-btn" data-link="">
-        Sao chép & Mở Shadowrocket
-      </button>
+      <div class="stats">
+        <span>👁️ <span id="popup-views">0</span></span>
+        <span>📥 <span id="popup-downloads">0</span></span>
+      </div>
+      <button onclick="copyAndOpen()" class="download-btn-popup">📥 Sao chép & Mở</button>
     </div>
   </div>
 
   <script>
     const appListContainer = document.getElementById('app-list');
     let confApps = [];
+    let selectedApp = null;
+    let currentFilter = 'all';
+
     const usagePopup = document.getElementById('usage-popup');
-    const popupName = document.getElementById('popup-name');
-    const popupUsage = document.getElementById('popup-usage');
-    const copyOpenBtn = document.getElementById('copy-open-btn');
 
     function renderApps(appsToDisplay) {
       if (appsToDisplay.length === 0) {
@@ -44,25 +147,60 @@
         `;
         return;
       }
+
       appListContainer.innerHTML = appsToDisplay.map(app => `
-        <div class="app-card conf-card" data-id="${app.id}">
+        <div class="app-card conf-card stagger-item" data-id="${app.id}">
           <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
           <div class="app-info">
             <h3>${app.name}</h3>
             <p>${app.desc}</p>
+            <div class="tags-section">
+              ${app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)} ${tag}</span>`).join('') : ''}
+              ${app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)} ${app.badge}</span>` : ''}
+            </div>
+            <div class="stats">
+              <span>👁️ ${app.views || 0}</span>
+              <span>📥 ${app.downloads || 0}</span>
+            </div>
           </div>
         </div>
       `).join('');
 
       document.querySelectorAll('.conf-card').forEach(card => {
-        card.addEventListener('click', (event) => {
+        card.addEventListener('click', () => {
           const appId = card.dataset.id;
-          const selectedApp = confApps.find(app => app.id === appId);
+          selectedApp = confApps.find(app => app.id === appId);
           if (selectedApp) {
+            selectedApp.views = (selectedApp.views || 0) + 1;
             showUsagePopup(selectedApp);
           }
         });
       });
+    }
+
+    function getTagEmoji(tag) {
+      const emojis = {
+        vpn: '🛡️', productivity: '⚡', utility: '🔧', tools: '🛠️'
+      };
+      return emojis[tag] || '🏷️';
+    }
+
+    function getBadgeEmoji(badge) {
+      const emojis = { new: '🆕', trending: '🔥', top: '⭐' };
+      return emojis[badge] || '';
+    }
+
+    function filterTag(tag) {
+      currentFilter = tag;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (tag === 'all') {
+        renderApps(confApps);
+      } else {
+        const filtered = confApps.filter(app => app.tags && app.tags.includes(tag));
+        renderApps(filtered);
+      }
     }
 
     async function loadConfApps() {
@@ -79,62 +217,55 @@
     }
 
     function showUsagePopup(app) {
-      popupName.textContent = app.name;
-      popupUsage.textContent = app.usage;
-      copyOpenBtn.dataset.link = app.link;
+      document.getElementById('popup-name').textContent = app.name;
+      document.getElementById('popup-usage').textContent = app.usage;
+      document.getElementById('popup-views').textContent = app.views || 0;
+      document.getElementById('popup-downloads').textContent = app.downloads || 0;
+
+      const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)} ${tag}</span>`).join('') : '';
+      const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)} ${app.badge}</span>` : '';
+      document.getElementById('popup-tags').innerHTML = tagsHTML + badgeHTML;
+
       usagePopup.classList.add('active');
     }
 
-    function closePopup() {
+    function closeUsagePopup() {
       usagePopup.classList.remove('active');
     }
 
-    copyOpenBtn.addEventListener('click', async () => {
-      const confLink = copyOpenBtn.dataset.link;
-      if (confLink) {
-        try {
-          await navigator.clipboard.writeText(confLink);
-          alert('✅ Đã sao chép link cấu hình vào bộ nhớ tạm!');
+    function copyAndOpen() {
+      if (selectedApp && selectedApp.link) {
+        selectedApp.downloads = (selectedApp.downloads || 0) + 1;
+        navigator.clipboard.writeText(selectedApp.link).then(() => {
           window.location.href = 'shadowrocket://';
-          closePopup();
-        } catch (err) {
-          console.error('Không thể sao chép hoặc mở ứng dụng:', err);
-          alert('❌ Lỗi: Không thể sao chép link hoặc mở Shadowrocket tự động. Vui lòng sao chép thủ công.');
-          prompt("Vui lòng sao chép thủ công link sau:", confLink);
-        }
+          setTimeout(() => closeUsagePopup(), 1000);
+        }).catch(err => {
+          alert('Không thể sao chép. Vui lòng thử lại!');
+        });
       }
-    });
+    }
 
     usagePopup.addEventListener('click', (event) => {
-      if (event.target === usagePopup) {
-        closePopup();
-      }
+      if (event.target === usagePopup) closeUsagePopup();
     });
 
     window.addEventListener('message', (event) => {
       if (event.data.type === 'search') {
         const keyword = event.data.keyword.toLowerCase();
-        const filteredApps = confApps.filter(app =>
+        const filtered = confApps.filter(app =>
           app.name.toLowerCase().includes(keyword) ||
           app.desc.toLowerCase().includes(keyword)
         );
-        renderApps(filteredApps);
+        renderApps(filtered);
       } else if (event.data.type === 'themeChange') {
-          if (event.data.theme === 'dark') {
-              document.body.classList.add('dark');
-          } else {
-              document.body.classList.remove('dark');
-          }
+        document.body.classList.toggle('dark', event.data.theme === 'dark');
       }
     });
 
     loadConfApps();
 
-    // FIXED: Đổi localStorage thành sessionStorage
     const savedTheme = sessionStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark');
-    }
+    if (savedTheme === 'dark') document.body.classList.add('dark');
   </script>
 </body>
 </html>
