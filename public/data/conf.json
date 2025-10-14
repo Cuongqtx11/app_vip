@@ -1,5 +1,19 @@
 [
   {
+    "id": "conf-1760429109967",
+    "type": "conf",
+    "name": "Test",
+    "icon": "no",
+    "desc": "test",
+    "tags": [],
+    "badge": "top",
+    "views": 0,
+    "downloads": 0,
+    "rating": 0,
+    "link": "no",
+    "usage": "test"
+  },
+  {
     "id": "conf-001",
     "name": "Youtube Premium",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
