@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admin Upload</title>
+  <title>Admin Upload - Kho App VIP</title>
   <link rel="stylesheet" href="../css/style.css" />
   <style>
     body {
@@ -16,103 +16,210 @@
     }
     h1 {
       text-align: center;
-      margin-bottom: 20px;
-      color: inherit;
+      margin-bottom: 25px;
+      color: var(--text-light);
+      font-size: 1.8em;
     }
     .login-box, .form-box {
-      max-width: 500px;
+      max-width: 600px;
       margin: 20px auto;
-      background: var(--card-bg-light);
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px var(--card-shadow-light);
-      transition: background var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+      background: var(--bg-light-secondary);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px var(--shadow-light);
+      transition: var(--transition);
+      border: 1px solid rgba(255, 255, 255, 0.5);
     }
     .form-box {
       display: none;
     }
+    body.dark .login-box, body.dark .form-box {
+        background: var(--bg-dark-secondary);
+        box-shadow: 0 8px 25px var(--shadow-dark);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
     label {
-      font-weight: bold;
+      font-weight: 600;
       display: block;
-      margin-top: 12px;
-      margin-bottom: 4px;
-      color: inherit;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      color: var(--text-light);
+      font-size: 0.95em;
+    }
+    body.dark label {
+      color: var(--text-dark);
     }
     input, textarea, select {
-      width: calc(100% - 24px);
-      padding: 10px 12px;
-      margin-top: 4px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 15px;
-      background: var(--glass-bg-light);
+      width: calc(100% - 20px);
+      padding: 12px 10px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: 2px solid var(--border-light);
+      font-size: 0.95em;
+      background: rgba(255, 255, 255, 0.9);
       color: var(--text-light);
-      transition: background var(--transition-speed) ease, border-color var(--transition-speed) ease, color var(--transition-speed) ease;
+      transition: var(--transition);
+      font-family: inherit;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.1);
     }
     input::placeholder, textarea::placeholder {
-        color: rgba(34, 34, 34, 0.6);
-    }
-    button {
-      margin-top: 20px;
-      background: var(--primary-color);
-      color: white;
-      padding: 10px 18px;
-      font-size: 15px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.2s ease;
-      width: 100%;
-    }
-    button:hover {
-      background: #159f8a;
-    }
-    .logout-btn {
-      background: #e74c3c;
-      margin-top: 10px;
-    }
-    .logout-btn:hover {
-      background: #c0392b;
-    }
-    .status-message {
-      margin-top: 15px;
-      padding: 10px;
-      border-radius: 8px;
-      text-align: center;
-      display: none;
-    }
-    .status-message.success {
-      background: #2ecc71;
-      color: white;
-      display: block;
-    }
-    .status-message.error {
-      background: #e74c3c;
-      color: white;
-      display: block;
-    }
-
-    body.dark {
-        color: var(--text-dark);
-    }
-    body.dark .login-box, body.dark .form-box {
-        background: var(--card-bg-dark);
-        box-shadow: 0 8px 20px var(--card-shadow-dark);
+        color: rgba(0, 0, 0, 0.5);
     }
     body.dark input, body.dark textarea, body.dark select {
-        background: var(--glass-bg-dark);
-        border-color: rgba(26, 188, 156, 0.5);
+        background: rgba(30, 30, 30, 0.9);
+        border-color: var(--border-dark);
         color: var(--text-dark);
     }
     body.dark input::placeholder, body.dark textarea::placeholder {
-        color: rgba(224, 224, 224, 0.6);
+        color: rgba(255, 255, 255, 0.4);
+    }
+    button {
+      margin-top: 20px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 14px 20px;
+      font-size: 1em;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: var(--transition);
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(26, 188, 156, 0.4);
+    }
+    button:active {
+      transform: translateY(0);
+    }
+    .logout-btn {
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      margin-top: 10px;
+      box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    }
+    .logout-btn:hover {
+      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    }
+    .status-message {
+      margin-top: 15px;
+      padding: 12px 15px;
+      border-radius: 10px;
+      text-align: center;
+      display: none;
+      font-weight: 500;
+      animation: slideInUp 0.3s ease-out;
+    }
+    .status-message.success {
+      background: linear-gradient(135deg, rgba(46, 204, 113, 0.2) 0%, rgba(46, 204, 113, 0.1) 100%);
+      color: #27ae60;
+      border: 1px solid #27ae60;
+    }
+    .status-message.error {
+      background: linear-gradient(135deg, rgba(231, 76, 60, 0.2) 0%, rgba(231, 76, 60, 0.1) 100%);
+      color: #e74c3c;
+      border: 1px solid #e74c3c;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .tag-input-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .tag-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: rgba(26, 188, 156, 0.1);
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .tag-checkbox:hover {
+      background: rgba(26, 188, 156, 0.2);
+    }
+    .tag-checkbox input {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    .tag-checkbox input:focus {
+      box-shadow: none;
+    }
+    .tag-checkbox label {
+      margin: 0;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--primary);
+      font-size: 0.9em;
+    }
+    body.dark .tag-checkbox {
+      background: rgba(26, 188, 156, 0.15);
+      border-color: var(--primary);
+    }
+    .badge-select {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .badge-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: rgba(100, 100, 100, 0.1);
+      border: 1px solid rgba(100, 100, 100, 0.3);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .badge-option input {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    .badge-option input:focus {
+      box-shadow: none;
+    }
+    .badge-option label {
+      margin: 0;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    .form-section-title {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 20px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary);
     }
   </style>
 </head>
 <body>
 
   <div class="login-box" id="loginBox">
-    <h1>🔐 Đăng Nhập Admin</h1>
+    <h1>🔐 Admin Đăng Nhập</h1>
     <label for="password">Mật khẩu:</label>
     <input type="password" id="password" placeholder="Nhập mật khẩu admin..." />
     <button onclick="checkPassword()">Đăng nhập</button>
@@ -120,50 +227,128 @@
   </div>
 
   <div class="form-box" id="uploadForm">
-    <h1>🛠️ Admin Upload</h1>
+    <h1>🛠️ Admin Upload - Kho App VIP</h1>
 
-    <label for="select-type">📁 Chọn mục upload:</label>
-    <select id="select-type">
-      <option value="ipa">IPA</option>
-      <option value="dylib">Dylib</option>
-      <option value="conf">Conf</option>
-    </select>
+    <div class="form-group">
+      <label for="select-type">📁 Chọn loại upload:</label>
+      <select id="select-type">
+        <option value="ipa">IPA (iOS Application)</option>
+        <option value="dylib">Dylib (Modifications)</option>
+        <option value="conf">Conf (Shadowrocket Config)</option>
+      </select>
+    </div>
 
-    <label for="input-name">📛 Tên App/Conf:</label>
-    <input type="text" id="input-name" placeholder="VD: Instagram Pro / Shadowrocket VN" />
+    <div class="form-group">
+      <label for="input-name">📛 Tên ứng dụng:</label>
+      <input type="text" id="input-name" placeholder="VD: Instagram Pro, Spotify Premium..." />
+    </div>
 
-    <label for="input-icon">🖼️ Link Icon (ảnh):</label>
-    <input type="text" id="input-icon" placeholder="https://..." />
+    <div class="form-group">
+      <label for="input-icon">🖼️ Link Icon (URL ảnh):</label>
+      <input type="text" id="input-icon" placeholder="https://example.com/icon.png" />
+    </div>
 
-    <label for="input-file" id="label-file">📥 Link tải file:</label>
-    <input type="text" id="input-file" placeholder="https://..." />
+    <div class="form-group">
+      <label for="input-file" id="label-file">📥 Link tải file:</label>
+      <input type="text" id="input-file" placeholder="https://mediafire.com/..." />
+    </div>
 
-    <label for="input-desc">📝 Mô tả sử dụng:</label>
-    <textarea id="input-desc" rows="4" placeholder="Nhập mô tả chi tiết..."></textarea>
+    <div class="form-group">
+      <label for="input-desc">📝 Mô tả chi tiết:</label>
+      <textarea id="input-desc" rows="4" placeholder="Nhập mô tả đầy đủ về ứng dụng..."></textarea>
+    </div>
 
-    <label for="input-usage" id="label-usage" style="display: none;">📝 Hướng dẫn sử dụng:</label>
-    <textarea id="input-usage" rows="4" placeholder="Nhập hướng dẫn sử dụng Shadowrocket conf..." style="display: none;"></textarea>
+    <div class="form-group" id="usage-group" style="display: none;">
+      <label for="input-usage">📋 Hướng dẫn sử dụng:</label>
+      <textarea id="input-usage" rows="4" placeholder="Nhập hướng dẫn chi tiết..."></textarea>
+    </div>
 
-    <label for="input-version" id="label-version">#️⃣ Phiên bản:</label>
-    <input type="text" id="input-version" placeholder="VD: 1.0.0" />
+    <div class="form-section-title">🏷️ Danh mục & Thẻ</div>
+    <div class="form-group">
+      <label>Chọn danh mục:</label>
+      <div class="tag-input-group">
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-game" value="game">
+          <label for="tag-game">🎮 Game</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-photo" value="photo">
+          <label for="tag-photo">📸 Photo</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-utility" value="utility">
+          <label for="tag-utility">🔧 Utility</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-vpn" value="vpn">
+          <label for="tag-vpn">🛡️ VPN</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-social" value="social">
+          <label for="tag-social">💬 Social</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-music" value="music">
+          <label for="tag-music">🎵 Music</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-productivity" value="productivity">
+          <label for="tag-productivity">⚡ Productivity</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-tools" value="tools">
+          <label for="tag-tools">🛠️ Tools</label>
+        </div>
+      </div>
+    </div>
 
-    <label for="input-developer" id="label-developer">👨‍💻 Nhà phát triển:</label>
-    <input type="text" id="input-developer" placeholder="VD: Cuios" />
+    <div class="form-section-title">⭐ Nhãn Ứng Dụng</div>
+    <div class="form-group">
+      <label>Chọn nhãn (tối đa 1):</label>
+      <div class="badge-select">
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-none" value="none" checked>
+          <label for="badge-none">Không</label>
+        </div>
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-new" value="new">
+          <label for="badge-new">🆕 Mới</label>
+        </div>
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-trending" value="trending">
+          <label for="badge-trending">🔥 Trending</label>
+        </div>
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-top" value="top">
+          <label for="badge-top">⭐ Top</label>
+        </div>
+      </div>
+    </div>
 
-    <button onclick="uploadApp()">📤 Upload</button>
+    <div class="form-section-title">ℹ️ Thông tin bổ sung</div>
+    <div class="form-group">
+      <label for="input-version" id="label-version">#️⃣ Phiên bản:</label>
+      <input type="text" id="input-version" placeholder="VD: 1.0.0, 5.9.2..." />
+    </div>
+
+    <div class="form-group">
+      <label for="input-developer" id="label-developer">👨‍💻 Nhà phát triển:</label>
+      <input type="text" id="input-developer" placeholder="VD: Cuios, Developer Name..." />
+    </div>
+
+    <button onclick="uploadApp()">📤 Upload Ứng Dụng</button>
     <button class="logout-btn" onclick="logout()">🚪 Đăng xuất</button>
     <div class="status-message" id="uploadStatus"></div>
   </div>
 
   <script>
-    // ⚠️ ĐỔI MẬT KHẨU NÀY!
     const ADMIN_PASSWORD = '6872';
 
     const selectType = document.getElementById('select-type');
     const inputFile = document.getElementById('input-file');
     const labelFile = document.getElementById('label-file');
+    const usageGroup = document.getElementById('usage-group');
     const inputUsage = document.getElementById('input-usage');
-    const labelUsage = document.getElementById('label-usage');
     const inputVersion = document.getElementById('input-version');
     const labelVersion = document.getElementById('label-version');
     const inputDeveloper = document.getElementById('input-developer');
@@ -207,16 +392,14 @@
         const type = selectType.value;
         if (type === 'conf') {
             labelFile.textContent = '🔗 Link Conf (sgmodule):';
-            inputUsage.style.display = 'block';
-            labelUsage.style.display = 'block';
+            usageGroup.style.display = 'block';
             inputVersion.style.display = 'none';
             labelVersion.style.display = 'none';
             inputDeveloper.style.display = 'none';
             labelDeveloper.style.display = 'none';
         } else {
             labelFile.textContent = '📥 Link tải file:';
-            inputUsage.style.display = 'none';
-            labelUsage.style.display = 'none';
+            usageGroup.style.display = 'none';
             inputVersion.style.display = 'block';
             labelVersion.style.display = 'block';
             inputDeveloper.style.display = 'block';
@@ -243,24 +426,38 @@
     }
 
     async function uploadApp() {
-      const type = document.getElementById('select-type').value;
+      const type = selectType.value;
       const name = document.getElementById('input-name').value.trim();
       const icon = document.getElementById('input-icon').value.trim();
       const desc = document.getElementById('input-desc').value.trim();
+
+      // Get tags
+      const tags = [];
+      document.querySelectorAll('.tag-input-group input[type="checkbox"]:checked').forEach(tag => {
+        tags.push(tag.value);
+      });
+
+      // Get badge
+      const badge = document.querySelector('input[name="badge"]:checked').value;
 
       let appData = {
           id: `${type}-${Date.now()}`,
           type: type,
           name: name,
           icon: icon,
-          desc: desc
+          desc: desc,
+          tags: tags,
+          badge: badge !== 'none' ? badge : null,
+          views: 0,
+          downloads: 0,
+          rating: 0
       };
 
       if (type === 'conf') {
           const link = document.getElementById('input-file').value.trim();
           const usage = document.getElementById('input-usage').value.trim();
           if (!name || !icon || !link || !desc || !usage) {
-              showStatus('error', '⚠️ Vui lòng điền đầy đủ thông tin bắt buộc cho Conf!');
+              showStatus('error', '⚠️ Vui lòng điền đầy đủ tất cả thông tin!');
               return;
           }
           appData.link = link;
@@ -271,7 +468,7 @@
           const developer = document.getElementById('input-developer').value.trim();
           const date = new Date().toISOString().split('T')[0];
           if (!name || !icon || !fileLink || !desc) {
-              showStatus('error', '⚠️ Vui lòng điền đầy đủ thông tin bắt buộc!');
+              showStatus('error', '⚠️ Vui lòng điền đầy đủ tất cả thông tin!');
               return;
           }
           appData.fileLink = fileLink;
@@ -293,10 +490,8 @@
         const result = await response.json();
         
         if (response.ok) {
-          showStatus('success', `✅ Upload thành công! Đang tải lại trang...`);
+          showStatus('success', `✅ Upload thành công! Trang sẽ tải lại trong 2 giây...`);
           clearForm();
-          
-          // ⭐ TỰ ĐỘNG RELOAD SAU 2 GIÂY
           setTimeout(() => {
             window.top.location.reload();
           }, 2000);
@@ -326,6 +521,8 @@
       document.getElementById('input-usage').value = '';
       document.getElementById('input-version').value = '';
       document.getElementById('input-developer').value = '';
+      document.querySelectorAll('.tag-input-group input').forEach(tag => tag.checked = false);
+      document.getElementById('badge-none').checked = true;
     }
   </script>
 
