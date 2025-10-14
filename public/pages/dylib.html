@@ -5,8 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dylib - Kho App VIP</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .filter-bar {
+      padding: 15px 25px;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    body.dark .filter-bar {
+      border-bottom-color: var(--border-dark);
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      border: 2px solid var(--primary);
+      background: transparent;
+      color: var(--primary);
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9em;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      background: rgba(26, 188, 156, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .filter-btn.active {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      box-shadow: 0 4px 12px rgba(26, 188, 156, 0.3);
+    }
+
+    .tags-section {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .tag-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 0.65em;
+      font-weight: 600;
+      background: rgba(100, 150, 200, 0.2);
+      color: #0f3460;
+      border: 1px solid #0f3460;
+    }
+
+    body.dark .tag-badge {
+      background: rgba(100, 150, 200, 0.15);
+      color: #48dbb8;
+      border-color: #48dbb8;
+    }
+
+    .badge-new {
+      background: rgba(52, 211, 153, 0.2);
+      color: #10b981;
+      border-color: #10b981;
+    }
+
+    .badge-trending {
+      background: rgba(249, 115, 22, 0.2);
+      color: #f97316;
+      border-color: #f97316;
+    }
+
+    .badge-top {
+      background: rgba(236, 72, 96, 0.2);
+      color: #ec4860;
+      border-color: #ec4860;
+    }
+
+    .stats {
+      font-size: 0.7em;
+      color: var(--text-light-secondary);
+      margin-top: 4px;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    body.dark .stats {
+      color: var(--text-dark-secondary);
+    }
+  </style>
 </head>
 <body>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterTag('all')">📱 Tất cả</button>
+    <button class="filter-btn" onclick="filterTag('game')">🎮 Game</button>
+    <button class="filter-btn" onclick="filterTag('photo')">📸 Photo</button>
+    <button class="filter-btn" onclick="filterTag('utility')">🔧 Utility</button>
+    <button class="filter-btn" onclick="filterTag('vpn')">🛡️ VPN</button>
+    <button class="filter-btn" onclick="filterTag('social')">💬 Social</button>
+    <button class="filter-btn" onclick="filterTag('music')">🎵 Music</button>
+    <button class="filter-btn" onclick="filterTag('productivity')">⚡ Prod</button>
+    <button class="filter-btn" onclick="filterTag('tools')">🛠️ Tools</button>
+  </div>
+
   <div class="app-container" id="app-list">
     <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Các Dylib mới nhất</h2>
     <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải Dylib...</p>
@@ -18,27 +123,27 @@
       <img id="popup-app-icon" src="" alt="App Icon">
       <h3 id="popup-app-name"></h3>
       <p id="popup-app-desc"></p>
+      <div id="popup-tags" class="tags-section"></div>
       <div class="popup-meta">
         <span id="popup-app-version"></span> |
         <span id="popup-app-developer"></span> |
         <span id="popup-app-date"></span>
       </div>
-      <a id="popup-app-download-btn" href="#" target="_blank" class="download-btn-popup">Tải về</a>
+      <div class="stats">
+        <span>👁️ <span id="popup-views">0</span></span>
+        <span>📥 <span id="popup-downloads">0</span></span>
+      </div>
+      <button onclick="downloadApp()" class="download-btn-popup">Tải về</button>
     </div>
   </div>
 
   <script>
     const appListContainer = document.getElementById('app-list');
     let dylibApps = [];
+    let selectedApp = null;
+    let currentFilter = 'all';
 
     const appDetailPopup = document.getElementById('app-detail-popup');
-    const popupAppIcon = document.getElementById('popup-app-icon');
-    const popupAppName = document.getElementById('popup-app-name');
-    const popupAppDesc = document.getElementById('popup-app-desc');
-    const popupAppVersion = document.getElementById('popup-app-version');
-    const popupAppDeveloper = document.getElementById('popup-app-developer');
-    const popupAppDate = document.getElementById('popup-app-date');
-    const popupAppDownloadBtn = document.getElementById('popup-app-download-btn');
 
     function renderApps(appsToDisplay) {
       if (appsToDisplay.length === 0) {
@@ -47,15 +152,23 @@
         `;
         return;
       }
+
       appListContainer.innerHTML = appsToDisplay.map(app => `
-        <div class="app-card" data-id="${app.id}">
+        <div class="app-card stagger-item" data-id="${app.id}">
           <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
           <div class="app-info">
             <h3>${app.name}</h3>
             <p>${app.desc}</p>
+            <div class="tags-section">
+              ${app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)} ${tag}</span>`).join('') : ''}
+              ${app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)} ${app.badge}</span>` : ''}
+            </div>
             <div class="app-meta">
-              <span>Ver: ${app.version || 'N/A'}</span> |
-              <span>Dev: ${app.developer || 'N/A'}</span>
+              <span>Ver: ${app.version || 'N/A'}</span>
+            </div>
+            <div class="stats">
+              <span>👁️ ${app.views || 0}</span>
+              <span>📥 ${app.downloads || 0}</span>
             </div>
           </div>
           <span class="download-btn">Xem & Tải</span>
@@ -63,14 +176,41 @@
       `).join('');
 
       document.querySelectorAll('.app-card').forEach(card => {
-        card.addEventListener('click', (event) => {
+        card.addEventListener('click', () => {
           const appId = card.dataset.id;
-          const selectedApp = dylibApps.find(app => app.id === appId);
+          selectedApp = dylibApps.find(app => app.id === appId);
           if (selectedApp) {
+            selectedApp.views = (selectedApp.views || 0) + 1;
             showAppDetailPopup(selectedApp);
           }
         });
       });
+    }
+
+    function getTagEmoji(tag) {
+      const emojis = {
+        game: '🎮', photo: '📸', utility: '🔧', vpn: '🛡️',
+        social: '💬', music: '🎵', productivity: '⚡', tools: '🛠️'
+      };
+      return emojis[tag] || '🏷️';
+    }
+
+    function getBadgeEmoji(badge) {
+      const emojis = { new: '🆕', trending: '🔥', top: '⭐' };
+      return emojis[badge] || '';
+    }
+
+    function filterTag(tag) {
+      currentFilter = tag;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (tag === 'all') {
+        renderApps(dylibApps);
+      } else {
+        const filtered = dylibApps.filter(app => app.tags && app.tags.includes(tag));
+        renderApps(filtered);
+      }
     }
 
     async function loadDylibApps() {
@@ -87,51 +227,56 @@
     }
 
     function showAppDetailPopup(app) {
-        popupAppIcon.src = app.icon;
-        popupAppName.textContent = app.name;
-        popupAppDesc.textContent = app.desc;
-        popupAppVersion.textContent = `Ver: ${app.version || 'N/A'}`;
-        popupAppDeveloper.textContent = `Dev: ${app.developer || 'N/A'}`;
-        popupAppDate.textContent = `Date: ${app.date || 'N/A'}`;
-        popupAppDownloadBtn.href = app.fileLink;
-        appDetailPopup.classList.add('active');
+      document.getElementById('popup-app-icon').src = app.icon;
+      document.getElementById('popup-app-name').textContent = app.name;
+      document.getElementById('popup-app-desc').textContent = app.desc;
+      document.getElementById('popup-app-version').textContent = `Ver: ${app.version || 'N/A'}`;
+      document.getElementById('popup-app-developer').textContent = `Dev: ${app.developer || 'N/A'}`;
+      document.getElementById('popup-app-date').textContent = `Date: ${app.date || 'N/A'}`;
+      document.getElementById('popup-views').textContent = app.views || 0;
+      document.getElementById('popup-downloads').textContent = app.downloads || 0;
+
+      const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)} ${tag}</span>`).join('') : '';
+      const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)} ${app.badge}</span>` : '';
+      document.getElementById('popup-tags').innerHTML = tagsHTML + badgeHTML;
+
+      appDetailPopup.classList.add('active');
     }
 
     function closeAppDetailPopup() {
-        appDetailPopup.classList.remove('active');
+      appDetailPopup.classList.remove('active');
+    }
+
+    function downloadApp() {
+      if (selectedApp && selectedApp.fileLink) {
+        selectedApp.downloads = (selectedApp.downloads || 0) + 1;
+        window.location.href = selectedApp.fileLink;
+        setTimeout(() => closeAppDetailPopup(), 1000);
+      }
     }
 
     appDetailPopup.addEventListener('click', (event) => {
-        if (event.target === appDetailPopup) {
-            closeAppDetailPopup();
-        }
+      if (event.target === appDetailPopup) closeAppDetailPopup();
     });
 
     window.addEventListener('message', (event) => {
       if (event.data.type === 'search') {
         const keyword = event.data.keyword.toLowerCase();
-        const filteredApps = dylibApps.filter(app =>
+        const filtered = dylibApps.filter(app =>
           app.name.toLowerCase().includes(keyword) ||
           app.desc.toLowerCase().includes(keyword) ||
           (app.developer && app.developer.toLowerCase().includes(keyword))
         );
-        renderApps(filteredApps);
+        renderApps(filtered);
       } else if (event.data.type === 'themeChange') {
-          if (event.data.theme === 'dark') {
-              document.body.classList.add('dark');
-          } else {
-              document.body.classList.remove('dark');
-          }
+        document.body.classList.toggle('dark', event.data.theme === 'dark');
       }
     });
 
     loadDylibApps();
 
-    // FIXED: Đổi localStorage thành sessionStorage
     const savedTheme = sessionStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark');
-    }
+    if (savedTheme === 'dark') document.body.classList.add('dark');
   </script>
 </body>
 </html>
