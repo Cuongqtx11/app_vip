@@ -1,6 +1,12 @@
-/* Variables for Light and Dark Mode */
+/* ==================== DESIGN SYSTEM ==================== */
 :root {
-  /* Light Mode Colors */
+  /* Colors */
+  --primary: #1abc9c;
+  --primary-dark: #16a085;
+  --primary-light: #48dbb8;
+  --secondary: #0f3460;
+  
+  /* Light Mode - GIỮ NGUYÊN BAN ĐẦU */
   --bg-light: #f0f2f5;
   --text-light: #222;
   --card-bg-light: #ffffff;
@@ -9,42 +15,45 @@
   --border-light: #e0e0e0;
   --placeholder-light: rgba(34, 34, 34, 0.6);
 
-  /* Dark Mode Colors */
-  --bg-dark: #121212;
+  /* Dark Mode - CHỈNH LẠI RÕ NẾT HƠN */
+  --bg-dark: #0d1117;
   --text-dark: #e0e0e0;
   --card-bg-dark: #1e1e1e;
-  --card-shadow-dark: rgba(26, 188, 156, 0.2);
-  --glass-bg-dark: rgba(30, 30, 30, 0.8);
+  --card-shadow-dark: rgba(26, 188, 156, 0.15);
+  --glass-bg-dark: rgba(30, 30, 30, 0.9);
   --border-dark: #333;
   --placeholder-dark: rgba(224, 224, 224, 0.6);
 
-  /* Common Colors */
-  --primary-color: #1abc9c; /* Teal/Turquoise */
-  --secondary-color: #3498db; /* Blue */
-  --transition-speed: 0.3s;
+  /* Transitions */
+  --transition: all 0.3s ease;
+  --transition-fast: all 0.15s ease;
 }
 
-/* Global Styles */
+/* ==================== GLOBAL ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--bg-light);
   color: var(--text-light);
-  transition: background-color var(--transition-speed) ease,
-    color var(--transition-speed) ease;
+  transition: background-color var(--transition), color var(--transition);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Dark Mode Toggle */
 body.dark {
   background-color: var(--bg-dark);
   color: var(--text-dark);
 }
 
-/* Header */
+/* ==================== HEADER ==================== */
 header {
   background-color: var(--card-bg-light);
   color: var(--text-light);
@@ -56,8 +65,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: background-color var(--transition-speed) ease,
-    box-shadow var(--transition-speed) ease, color var(--transition-speed) ease;
+  transition: background-color var(--transition), box-shadow var(--transition), color var(--transition);
 }
 
 body.dark header {
@@ -75,7 +83,7 @@ body.dark header {
 }
 
 #site-title {
-  color: var(--primary-color);
+  color: var(--primary);
   font-size: 1.5em;
   font-weight: bold;
   padding-left: 15px;
@@ -90,7 +98,7 @@ body.dark header {
   background: var(--glass-bg-light);
   color: var(--text-light);
   font-size: 1em;
-  transition: all var(--transition-speed) ease;
+  transition: var(--transition);
   flex-grow: 1;
   margin-left: 15px;
 }
@@ -111,7 +119,7 @@ body.dark #search::placeholder {
 
 #search:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.2);
 }
 
@@ -122,17 +130,17 @@ body.dark #search::placeholder {
   pointer-events: none;
   font-size: 24px;
 }
+
 body.dark #search-icon {
   color: var(--placeholder-dark);
 }
-
 
 #toggle-mode {
   background: none;
   border: none;
   cursor: pointer;
   color: var(--text-light);
-  transition: color var(--transition-speed) ease;
+  transition: color var(--transition);
   padding: 0;
   display: flex;
   align-items: center;
@@ -147,38 +155,37 @@ body.dark #toggle-mode {
 }
 
 #toggle-mode:hover {
-    background-color: rgba(0,0,0,0.05);
-}
-body.dark #toggle-mode:hover {
-    background-color: rgba(255,255,255,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
+body.dark #toggle-mode:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
 
 #toggle-mode .material-icons {
   font-size: 28px;
 }
 
-/* Content Frame (iframe) */
+/* ==================== CONTENT FRAME ==================== */
 .content-frame {
   flex-grow: 1;
   width: 100%;
   border: none;
-  min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+  min-height: calc(100vh - 120px);
 }
 
-/* Bottom Navigation */
+/* ==================== BOTTOM NAVIGATION ==================== */
 .bottom-nav {
   display: flex;
   justify-content: space-around;
   background-color: var(--card-bg-light);
   box-shadow: 0 -4px 12px var(--card-shadow-light);
   padding: 8px 0;
-  position: sticky; /* Giữ sticky để cuộn cùng trang */
+  position: sticky;
   bottom: 0;
   width: 100%;
   z-index: 1000;
-  transition: background-color var(--transition-speed) ease,
-    box-shadow var(--transition-speed) ease;
+  transition: background-color var(--transition), box-shadow var(--transition);
 }
 
 body.dark .bottom-nav {
@@ -195,7 +202,7 @@ body.dark .bottom-nav {
   color: var(--text-light);
   font-size: 0.75em;
   padding: 5px 0;
-  transition: color var(--transition-speed) ease;
+  transition: color var(--transition);
   flex: 1;
 }
 
@@ -210,35 +217,72 @@ body.dark .bottom-nav a {
 }
 
 .bottom-nav a.active {
-  color: var(--primary-color);
+  color: var(--primary);
   font-weight: bold;
 }
 
 .bottom-nav a.active .material-icons {
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 .bottom-nav a:hover {
-  color: var(--primary-color);
+  color: var(--primary);
 }
+
 .bottom-nav a:hover .material-icons {
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
+/* ==================== FILTER BAR ==================== */
+.filter-bar {
+  padding: 12px 20px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  background-color: var(--card-bg-light);
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color var(--transition);
+}
 
-/* App List Container (used in home, ipa, dylib, conf) */
+body.dark .filter-bar {
+  background-color: var(--card-bg-dark);
+  border-bottom-color: var(--border-dark);
+}
+
+.filter-btn {
+  padding: 8px 15px;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: rgba(26, 188, 156, 0.1);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+/* ==================== APP CONTAINER & CARDS ==================== */
 .app-container {
   padding: 20px;
-  display: grid; /* Quay lại Grid */
-  /* Cấu hình cột để tự động lặp lại và có kích thước tối thiểu/tối đa */
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adjusted for slightly smaller cards */
-  gap: 15px; /* Reduced gap for a tighter look */
-  justify-content: center; /* Căn giữa các thẻ */
-  align-items: stretch; /* Đảm bảo các thẻ có chiều cao bằng nhau trong cùng một hàng */
-  box-sizing: border-box; /* Bao gồm padding và border vào kích thước tổng */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
 }
 
-/* App Card - Điều chỉnh để thành hình chữ nhật đồng đều */
 .app-card {
   background-color: var(--card-bg-light);
   border-radius: 16px;
@@ -248,12 +292,12 @@ body.dark .bottom-nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px; /* Slightly reduced padding */
+  padding: 12px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color var(--transition), color var(--transition);
   overflow: hidden;
-  height: 230px; /* Adjusted fixed height for slightly smaller cards */
-  box-sizing: border-box; /* Quan trọng để padding không làm tăng kích thước */
+  height: 230px;
+  box-sizing: border-box;
 }
 
 body.dark .app-card {
@@ -268,171 +312,122 @@ body.dark .app-card {
 }
 
 .app-card img {
-  width: 65px; /* Slightly reduced icon size */
+  width: 65px;
   height: 65px;
   border-radius: 18px;
   object-fit: cover;
-  margin-bottom: 8px; /* Adjusted margin */
+  margin-bottom: 8px;
   flex-shrink: 0;
 }
 
 .app-info {
-  flex-grow: 1; /* Cho phép phần info chiếm đủ không gian còn lại */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Đẩy version/dev xuống dưới */
-  width: 100%; /* Đảm bảo chiếm đủ chiều rộng của card */
+  justify-content: space-between;
+  width: 100%;
 }
 
 .app-info h3 {
-  font-size: 1.05em; /* Slightly adjusted font size */
+  font-size: 1.05em;
   margin: 0 0 5px 0;
   line-height: 1.3;
-  color: var(--primary-color);
+  color: var(--primary);
   word-break: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Giới hạn 2 dòng cho tên */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
 .app-info p {
-  font-size: 0.8em; /* Slightly reduced font size */
+  font-size: 0.8em;
   color: #666;
-  margin: 0 0 8px 0; /* Adjusted margin */
+  margin: 0 0 8px 0;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Giới hạn mô tả 3 dòng */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 body.dark .app-info p {
-    color: #b0b0b0;
+  color: #b0b0b0;
 }
 
 .app-meta {
-  font-size: 0.7em; /* Slightly reduced font size */
+  font-size: 0.7em;
   color: #888;
-  white-space: nowrap; /* Giữ version/dev trên một dòng */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-top: auto; /* Đẩy xuống cuối .app-info */
+  margin-top: auto;
 }
 
 body.dark .app-meta {
-    color: #ccc;
+  color: #ccc;
 }
 
+.tags-section {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  justify-content: center;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.65em;
+  font-weight: 600;
+  background: rgba(26, 188, 156, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(26, 188, 156, 0.4);
+}
+
+.badge-new {
+  background: rgba(52, 211, 153, 0.15);
+  color: #10b981;
+  border-color: #10b981;
+}
+
+.badge-trending {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+  border-color: #f97316;
+}
+
+.badge-top {
+  background: rgba(236, 72, 96, 0.15);
+  color: #ec4860;
+  border-color: #ec4860;
+}
 
 .download-btn {
   display: block;
-  background-color: var(--secondary-color);
+  background-color: #3498db;
   color: white;
-  padding: 8px 12px; /* Adjusted padding for better visual spacing */
+  padding: 8px 12px;
   border-radius: 8px;
   font-size: 0.78em;
-  margin: 12px auto 0 auto; /* Centered horizontally, top margin */
+  margin: 12px auto 0 auto;
   text-decoration: none;
   transition: background-color 0.2s ease;
-  /* Adjusted width for slightly wider, more uniform buttons across all sizes */
-  width: calc(100% - 40px); /* Base: 20px space on each side from inner card edge */
-  box-sizing: border-box; /* Ensures padding is included in the width */
-  text-align: center; /* Crucial: Ensures text inside button is centered */
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
 .download-btn:hover {
   background-color: #2980b9;
 }
 
-/* --- Responsive adjustments --- */
-@media (max-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 15px;
-  }
-  #header-content {
-      flex-grow: 1;
-      max-width: unset;
-      margin-right: 10px;
-  }
-  #site-title {
-    font-size: 1.3em;
-    padding-left: 0;
-  }
-  #search {
-    padding: 10px 15px 10px 45px;
-    margin-left: 0;
-  }
-  #toggle-mode {
-    margin-left: 0;
-  }
-  .app-container {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusted min-width */
-    gap: 12px; /* Adjusted gap */
-    padding: 15px;
-  }
-  .app-card {
-    height: 210px; /* Adjusted height */
-    padding: 10px; /* Adjusted padding */
-  }
-  .app-card img {
-    width: 55px; /* Adjusted icon size */
-    height: 55px;
-    border-radius: 16px;
-  }
-  .app-info h3 {
-    font-size: 0.95em; /* Adjusted font size */
-  }
-  .app-info p, .app-meta {
-    font-size: 0.75em; /* Adjusted font size */
-  }
-  .download-btn {
-    padding: 7px 10px; /* Adjusted padding slightly for smaller screens */
-    font-size: 0.75em; /* Slightly adjusted font size */
-    width: calc(100% - 36px); /* 18px space on each side from inner card edge */
-    margin-top: 10px; /* Slightly reduced margin */
-  }
-}
-
-@media (max-width: 480px) {
-  .bottom-nav a {
-    font-size: 0.7em;
-  }
-  .bottom-nav a .material-icons {
-    font-size: 22px;
-  }
-  .app-container {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjusted min-width */
-    gap: 8px; /* Adjusted gap */
-    padding: 10px;
-  }
-  .app-card {
-    height: 190px; /* Adjusted height */
-    padding: 8px; /* Adjusted padding */
-  }
-  .app-card img {
-    width: 45px; /* Adjusted icon size */
-    height: 45px;
-    border-radius: 14px;
-  }
-  .app-info h3 {
-    font-size: 0.85em; /* Adjusted font size */
-  }
-  .app-info p, .app-meta {
-    font-size: 0.7em; /* Adjusted font size */
-  }
-  .download-btn {
-    padding: 6px 8px; /* Adjusted padding for very small screens */
-    font-size: 0.7em; /* Consistent with previous smaller font */
-    width: calc(100% - 32px); /* 16px space on each side from inner card edge */
-    margin-top: 8px; /* Slightly reduced margin */
-  }
-}
-
-/* --- Popup Modal Styles (New/Updated) --- */
+/* ==================== POPUP MODAL ==================== */
 .detail-popup {
   position: fixed;
   top: 0;
@@ -474,6 +469,12 @@ body.dark .app-meta {
   transform: translateY(0);
 }
 
+body.dark .detail-popup-content {
+  background: var(--card-bg-dark);
+  color: var(--text-dark);
+  box-shadow: 0 8px 30px rgba(26, 188, 156, 0.2);
+}
+
 .detail-popup-content .close-btn {
   position: absolute;
   top: 15px;
@@ -485,9 +486,13 @@ body.dark .app-meta {
   color: var(--text-light);
 }
 
+body.dark .detail-popup-content .close-btn {
+  color: var(--text-dark);
+}
+
 .detail-popup-content h3 {
   margin-top: 0;
-  color: var(--primary-color);
+  color: var(--primary);
   font-size: 1.6em;
   margin-bottom: 10px;
 }
@@ -507,17 +512,21 @@ body.dark .app-meta {
   text-align: left;
 }
 
-.detail-popup-content .popup-meta {
+.popup-meta {
   font-size: 0.85em;
   color: #888;
   margin-bottom: 20px;
 }
 
-.detail-popup-content .download-btn-popup {
+body.dark .popup-meta {
+  color: #ccc;
+}
+
+.download-btn-popup {
   display: block;
   width: calc(100% - 20px);
   padding: 12px 10px;
-  background: var(--primary-color);
+  background: #3498db;
   color: white;
   border: none;
   border-radius: 8px;
@@ -529,114 +538,109 @@ body.dark .app-meta {
   text-align: center;
 }
 
-.detail-popup-content .download-btn-popup:hover {
-  background: #159f8a;
+.download-btn-popup:hover {
+  background: #2980b9;
 }
 
-/* Dark mode for detail popup */
-body.dark .detail-popup-content {
-  background: var(--card-bg-dark);
-  color: var(--text-dark);
-  box-shadow: 0 8px 30px rgba(26, 188, 156, 0.3);
-}
-body.dark .detail-popup-content .close-btn {
-  color: var(--text-dark);
-}
-body.dark .detail-popup-content .popup-meta {
-  color: #ccc;
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  #header-content {
+    flex-grow: 1;
+    max-width: unset;
+    margin-right: 10px;
+  }
+
+  #site-title {
+    font-size: 1.3em;
+    padding-left: 0;
+  }
+
+  #search {
+    padding: 10px 15px 10px 45px;
+    margin-left: 0;
+  }
+
+  #toggle-mode {
+    margin-left: 0;
+  }
+
+  .app-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .app-card {
+    height: 210px;
+    padding: 10px;
+  }
+
+  .app-card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+  }
+
+  .app-info h3 {
+    font-size: 0.95em;
+  }
+
+  .app-info p, .app-meta {
+    font-size: 0.75em;
+  }
+
+  .download-btn {
+    padding: 7px 10px;
+    font-size: 0.75em;
+    width: calc(100% - 36px);
+    margin-top: 10px;
+  }
 }
 
-/* Styles for Conf Usage Popup (specific to Conf page) */
-.usage-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
+@media (max-width: 480px) {
+  .bottom-nav a {
+    font-size: 0.7em;
+  }
 
-.usage-popup.active {
-  opacity: 1;
-  visibility: visible;
-}
+  .bottom-nav a .material-icons {
+    font-size: 22px;
+  }
 
-.usage-popup-content {
-  background: var(--card-bg-light);
-  color: var(--text-light);
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 500px;
-  width: 90%;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  position: relative;
-  transform: translateY(20px);
-  transition: transform 0.3s ease;
-  max-height: 80vh;
-  overflow-y: auto;
-}
+  .app-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+    padding: 10px;
+  }
 
-.usage-popup.active .usage-popup-content {
-  transform: translateY(0);
-}
+  .app-card {
+    height: 190px;
+    padding: 8px;
+  }
 
-.usage-popup-content h3 {
-  margin-top: 0;
-  color: var(--primary-color);
-  font-size: 1.5em;
-  text-align: center;
-}
+  .app-card img {
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+  }
 
-.usage-popup-content p {
-  white-space: pre-wrap;
-  font-size: 0.95em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
+  .app-info h3 {
+    font-size: 0.85em;
+  }
 
-.usage-popup-content .close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--text-light);
-}
+  .app-info p, .app-meta {
+    font-size: 0.7em;
+  }
 
-.usage-popup-content .copy-open-btn {
-  display: block;
-  width: calc(100% - 20px);
-  padding: 12px 10px;
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1em;
-  cursor: pointer;
-  margin: 10px auto 0 auto;
-  transition: background 0.2s ease;
-  text-align: center;
-}
-
-.usage-popup-content .copy-open-btn:hover {
-  background: #159f8a;
-}
-
-/* Dark mode for Conf popup */
-body.dark .usage-popup-content {
-  background: var(--card-bg-dark);
-  color: var(--text-dark);
-  box-shadow: 0 8px 30px rgba(26, 188, 156, 0.3);
-}
-body.dark .usage-popup-content .close-btn {
-  color: var(--text-dark);
+  .download-btn {
+    padding: 6px 8px;
+    font-size: 0.7em;
+    width: calc(100% - 32px);
+    margin-top: 8px;
+  }
 }
