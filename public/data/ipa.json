@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-1760455654067",
+    "type": "ipa",
+    "name": "Spotify",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.spotify.client.png",
+    "desc": "mod premium",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "views": 0,
+    "downloads": 0,
+    "rating": 0,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-10-2025/Spotify_9.0.86_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.0.86",
+    "developer": "cuios.shop",
+    "date": "2025-10-14"
+  },
+  {
     "id": "ipa-1760453486673",
     "type": "ipa",
     "name": "Rổ Phim",
