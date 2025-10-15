@@ -1,5 +1,18 @@
 [
   {
+    "id": "conf-1760506244014",
+    "type": "conf",
+    "name": "All in One",
+    "icon": "https://cdn-icons-png.freepik.com/512/5622/5622900.png",
+    "desc": "All In One - bật 1 dùng 17 app",
+    "tags": [
+      "vpn"
+    ],
+    "badge": "trending",
+    "link": "https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/All_In_One.sgmodule",
+    "usage": "All in One 17 app - Youtube Premium, Spotify Pre, SoundCloudGo, VSCO, AlightMotion, PicsArt, Wink, Truecaller,  Lightroom, Kinemaster, CamScanner, BeautyPlus, LocketGold, RevenueCatVip, iTunes, Snow, Meitu,"
+  },
+  {
     "id": "conf-1760506051544",
     "type": "conf",
     "name": "All In One",
