@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     // GitHub configuration từ environment variables
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
-    const GITHUB_REPO = process.env.GITHUB_REPO || 'Cuios';
+    const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
     const FILE_PATH = `public/data/${type}.json`;
 
     if (!GITHUB_TOKEN) {
