@@ -314,7 +314,7 @@ body.dark .app-info p, body.dark .app-meta {
   border-radius: 15px;
   background-color: var(--primary);
   color: white;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   transition: background-color 0.2s;
 }
