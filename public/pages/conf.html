@@ -12,6 +12,14 @@
   </style>
 </head>
 <body>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterTag('all')">📱 Tất cả</button>
+    <button class="filter-btn" onclick="filterTag('vpn')">🛡️ VPN</button>
+    <button class="filter-btn" onclick="filterTag('productivity')">⚡ Prod</button>
+    <button class="filter-btn" onclick="filterTag('utility')">🔧 Utility</button>
+    <button class="filter-btn" onclick="filterTag('tools')">🛠️ Tools</button>
+  </div>
+
   <div class="app-container" id="app-list">
     <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Cấu hình Shadowrocket</h2>
     <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải cấu hình...</p>
@@ -21,21 +29,20 @@
     <div class="usage-popup-content">
       <button class="close-btn" onclick="closePopup()">&times;</button>
       <h3 id="popup-name"></h3>
+      <div id="popup-tags" class="tags-section"></div>
       <h4>Hướng dẫn sử dụng:</h4>
       <p id="popup-usage"></p>
-      <button class="copy-open-btn" id="copy-open-btn" data-link="">
-        Sao chép & Mở Shadowrocket
-      </button>
+      <a id="popup-link" href="#" onclick="copyAndOpen(event)" class="download-btn-popup">📥 Sao chép & Mở</a>
     </div>
   </div>
 
   <script>
     const appListContainer = document.getElementById('app-list');
     let confApps = [];
+    let selectedApp = null;
+    let currentFilter = 'all';
+
     const usagePopup = document.getElementById('usage-popup');
-    const popupName = document.getElementById('popup-name');
-    const popupUsage = document.getElementById('popup-usage');
-    const copyOpenBtn = document.getElementById('copy-open-btn');
 
     function renderApps(appsToDisplay) {
       if (appsToDisplay.length === 0) {
@@ -44,25 +51,55 @@
         `;
         return;
       }
+
       appListContainer.innerHTML = appsToDisplay.map(app => `
         <div class="app-card conf-card" data-id="${app.id}">
           <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
           <div class="app-info">
             <h3>${app.name}</h3>
             <p>${app.desc}</p>
+            <div class="tags-section">
+              ${app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : ''}
+              ${app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : ''}
+            </div>
           </div>
         </div>
       `).join('');
 
       document.querySelectorAll('.conf-card').forEach(card => {
-        card.addEventListener('click', (event) => {
+        card.addEventListener('click', () => {
           const appId = card.dataset.id;
-          const selectedApp = confApps.find(app => app.id === appId);
+          selectedApp = confApps.find(app => app.id === appId);
           if (selectedApp) {
             showUsagePopup(selectedApp);
           }
         });
       });
+    }
+
+    function getTagEmoji(tag) {
+      const emojis = {
+        vpn: '🛡️', productivity: '⚡', utility: '🔧', tools: '🛠️'
+      };
+      return emojis[tag] || '🏷️';
+    }
+
+    function getBadgeEmoji(badge) {
+      const emojis = { new: '🆕', trending: '🔥', top: '⭐' };
+      return emojis[badge] || '';
+    }
+
+    function filterTag(tag) {
+      currentFilter = tag;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (tag === 'all') {
+        renderApps(confApps);
+      } else {
+        const filtered = confApps.filter(app => app.tags && app.tags.includes(tag));
+        renderApps(filtered);
+      }
     }
 
     async function loadConfApps() {
@@ -79,9 +116,14 @@
     }
 
     function showUsagePopup(app) {
-      popupName.textContent = app.name;
-      popupUsage.textContent = app.usage;
-      copyOpenBtn.dataset.link = app.link;
+      document.getElementById('popup-name').textContent = app.name;
+      document.getElementById('popup-usage').textContent = app.usage;
+      document.getElementById('popup-link').dataset.link = app.link;
+
+      const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
+      const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
+      document.getElementById('popup-tags').innerHTML = tagsHTML + badgeHTML;
+
       usagePopup.classList.add('active');
     }
 
@@ -89,52 +131,40 @@
       usagePopup.classList.remove('active');
     }
 
-    copyOpenBtn.addEventListener('click', async () => {
-      const confLink = copyOpenBtn.dataset.link;
-      if (confLink) {
-        try {
-          await navigator.clipboard.writeText(confLink);
-          alert('✅ Đã sao chép link cấu hình vào bộ nhớ tạm!');
+    function copyAndOpen(e) {
+      e.preventDefault();
+      const link = e.target.dataset.link;
+      if (link) {
+        navigator.clipboard.writeText(link).then(() => {
           window.location.href = 'shadowrocket://';
-          closePopup();
-        } catch (err) {
-          console.error('Không thể sao chép hoặc mở ứng dụng:', err);
-          alert('❌ Lỗi: Không thể sao chép link hoặc mở Shadowrocket tự động. Vui lòng sao chép thủ công.');
-          prompt("Vui lòng sao chép thủ công link sau:", confLink);
-        }
+          setTimeout(() => closePopup(), 1000);
+        }).catch(err => {
+          alert('Không thể sao chép. Vui lòng thử lại!');
+        });
       }
-    });
+    }
 
     usagePopup.addEventListener('click', (event) => {
-      if (event.target === usagePopup) {
-        closePopup();
-      }
+      if (event.target === usagePopup) closePopup();
     });
 
     window.addEventListener('message', (event) => {
       if (event.data.type === 'search') {
         const keyword = event.data.keyword.toLowerCase();
-        const filteredApps = confApps.filter(app =>
+        const filtered = confApps.filter(app =>
           app.name.toLowerCase().includes(keyword) ||
           app.desc.toLowerCase().includes(keyword)
         );
-        renderApps(filteredApps);
+        renderApps(filtered);
       } else if (event.data.type === 'themeChange') {
-          if (event.data.theme === 'dark') {
-              document.body.classList.add('dark');
-          } else {
-              document.body.classList.remove('dark');
-          }
+        document.body.classList.toggle('dark', event.data.theme === 'dark');
       }
     });
 
     loadConfApps();
 
-    // FIXED: Đổi localStorage thành sessionStorage
     const savedTheme = sessionStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark');
-    }
+    if (savedTheme === 'dark') document.body.classList.add('dark');
   </script>
 </body>
 </html>
