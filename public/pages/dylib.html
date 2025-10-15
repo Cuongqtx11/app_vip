@@ -45,8 +45,8 @@
           <p><strong>Ngày cập nhật:</strong> <span id="popup-app-date"></span></p>
       </div>
 
-      <a href="#" id="popup-app-download-btn" class="download-btn" onclick="return handleDownload(event, 'DYLIB')">
-          <span class="material-icons">cloud_download</span> Tải xuống
+      <a href="#" id="popup-app-download-btn" class="download-btn" target="_blank" onclick="closeAppDetailPopup()">
+          Tải xuống
       </a>
     </div>
   </div>
@@ -54,7 +54,7 @@
 <script>
     const appList = document.getElementById('app-list');
     const appDetailPopup = document.getElementById('app-detail-popup');
-    let dylibApps = []; // Đổi tên biến thành dylibApps
+    let dylibApps = []; 
 
     // Helper functions
     function getTagEmoji(tag) {
@@ -71,7 +71,7 @@
     }
 
     // Load data
-    async function loadDylibApps() { // Sửa tên hàm
+    async function loadDylibApps() {
       try {
         const response = await fetch('../data/dylib.json');
         dylibApps = await response.json();
@@ -107,7 +107,7 @@
           </div>
           <div class="app-tags">${tagsHTML}${badgeHTML}</div>
           <button class="download-btn">
-            <span class="material-icons">info</span> Chi tiết
+            <span class="material-icons">visibility</span> Xem & Tải
           </button>
         `;
         appList.appendChild(card);
@@ -120,9 +120,9 @@
       event.target.classList.add('active');
 
       if (tag === 'all') {
-        renderApps(dylibApps); // Sửa tên biến
+        renderApps(dylibApps);
       } else {
-        const filtered = dylibApps.filter(app => app.tags && app.tags.includes(tag)); // Sửa tên biến
+        const filtered = dylibApps.filter(app => app.tags && app.tags.includes(tag));
         renderApps(filtered);
       }
     }
@@ -136,7 +136,7 @@
       document.getElementById('popup-app-version').textContent = app.version || 'N/A';
       document.getElementById('popup-app-date').textContent = `Date: ${app.date || 'N/A'}`;
       
-      // Gán link tải vào thuộc tính href
+      // ⭐ CẬP NHẬT: Gán link tải vào thuộc tính href (download tức thì)
       const downloadBtn = document.getElementById('popup-app-download-btn');
       downloadBtn.href = app.fileLink;
       
@@ -151,21 +151,7 @@
       appDetailPopup.classList.remove('active');
     }
 
-    // ⭐ FIX MỚI: XỬ LÝ SỰ KIỆN DOWNLOAD VÀ THÔNG BÁO
-    function handleDownload(e, type) {
-        e.preventDefault();
-        
-        const fileLink = e.currentTarget.href;
-
-        // Hiển thị thông báo trước khi chuyển hướng
-        alert(`⚡ Bắt đầu tải xuống file ${type.toUpperCase()}. Vui lòng đợi...`); 
-        
-        // Chuyển hướng đến link tải
-        window.location.href = fileLink;
-        
-        closeAppDetailPopup();
-        return false; // Ngăn chặn hành động mặc định của thẻ <a>
-    }
+    // ⭐ CẬP NHẬT: Xóa hoàn toàn hàm handleDownload (không cần alert)
 
     appDetailPopup.addEventListener('click', (event) => {
       if (event.target === appDetailPopup) closeAppDetailPopup();
@@ -175,7 +161,7 @@
     window.addEventListener('message', (event) => {
       if (event.data.type === 'search') {
         const keyword = event.data.keyword.toLowerCase();
-        const filtered = dylibApps.filter(app => // Sửa tên biến
+        const filtered = dylibApps.filter(app =>
           app.name.toLowerCase().includes(keyword) ||
           app.desc.toLowerCase().includes(keyword) ||
           (app.developer && app.developer.toLowerCase().includes(keyword))
@@ -186,7 +172,7 @@
       }
     });
 
-    loadDylibApps(); // Sửa tên hàm
+    loadDylibApps(); 
 
     // Khôi phục theme đã lưu (dùng sessionStorage)
     const savedTheme = sessionStorage.getItem('theme');
