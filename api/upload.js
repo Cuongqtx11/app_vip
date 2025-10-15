@@ -1,4 +1,8 @@
+// api/upload.js - Vercel Serverless Function với auth ổn định
+// API này sẽ cập nhật file JSON trên GitHub
+
 export default async function handler(req, res) {
+  // Chỉ cho phép POST request
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -6,10 +10,18 @@ export default async function handler(req, res) {
   try {
     const { type, data } = req.body;
 
-    // 🔐 SIMPLE AUTH CHECK
-    const cookieToken = req.headers.cookie?.includes('admin_token');
-    if (!cookieToken) {
-      return res.status(401).json({ error: 'Unauthorized - Please login' });
+    // 🔐 AUTH CHECK - NHẸ NHÀNG nhưng hiệu quả
+    const hasAuthCookie = req.headers.cookie && (
+      req.headers.cookie.includes('admin_token') || 
+      req.headers.cookie.includes('auth')
+    );
+    
+    if (!hasAuthCookie) {
+      console.log('⚠️  No auth cookie found');
+      return res.status(401).json({ 
+        error: 'Unauthorized - Please login first',
+        code: 'NO_AUTH_COOKIE'
+      });
     }
 
     // Validate input
@@ -17,23 +29,20 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Invalid request data' });
     }
 
-    // GitHub configuration - SỬ DỤNG ENV VARIABLES
+    // GitHub configuration từ environment variables
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-    const GITHUB_OWNER = process.env.GITHUB_OWNER; // Sẽ lấy từ env
-    const GITHUB_REPO = process.env.GITHUB_REPO;   // Sẽ lấy từ env
+    const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
+    const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
     const FILE_PATH = `public/data/${type}.json`;
 
-    if (!GITHUB_TOKEN || !GITHUB_OWNER || !GITHUB_REPO) {
-      return res.status(500).json({ 
-        error: 'GitHub configuration missing',
-        details: { hasToken: !!GITHUB_TOKEN, owner: GITHUB_OWNER, repo: GITHUB_REPO }
-      });
+    if (!GITHUB_TOKEN) {
+      return res.status(500).json({ error: 'GitHub token not configured' });
     }
 
-    // 1. Get current file content
+    console.log('📡 GitHub Config:', { GITHUB_OWNER, GITHUB_REPO, FILE_PATH });
+
+    // 1. Lấy nội dung file hiện tại từ GitHub
     const getFileUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
-    
-    console.log('📡 Fetching from:', getFileUrl);
     
     const getResponse = await fetch(getFileUrl, {
       headers: {
@@ -50,22 +59,22 @@ export default async function handler(req, res) {
       sha = fileData.sha;
       const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
       currentData = JSON.parse(content);
+      console.log('📄 Current data length:', currentData.length);
     } else if (getResponse.status === 404) {
-      console.log('📄 File not found, creating new one...');
+      console.log('📄 File not found, will create new');
     } else {
       const errorText = await getResponse.text();
-      console.error('❌ GitHub API Error:', errorText);
+      console.error('❌ GitHub fetch error:', getResponse.status, errorText);
       return res.status(500).json({ 
         error: 'Failed to fetch from GitHub', 
-        details: errorText,
-        url: getFileUrl
+        details: errorText 
       });
     }
 
-    // 2. Add new data to beginning
+    // 2. Thêm data mới vào ĐẦU MẢNG
     currentData.unshift(data);
 
-    // 3. Update file on GitHub
+    // 3. Cập nhật file lên GitHub
     const newContent = Buffer.from(JSON.stringify(currentData, null, 2)).toString('base64');
     
     const updatePayload = {
@@ -91,7 +100,7 @@ export default async function handler(req, res) {
 
     if (!updateResponse.ok) {
       const errorText = await updateResponse.text();
-      console.error('❌ GitHub Upload Error:', errorText);
+      console.error('❌ GitHub upload error:', updateResponse.status, errorText);
       return res.status(500).json({ 
         error: 'Failed to update GitHub', 
         details: errorText 
