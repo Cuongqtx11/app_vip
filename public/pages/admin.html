@@ -329,34 +329,70 @@
   </div>
 
   <script>
-    const ADMIN_PASSWORD = '6872';
-
-    const selectType = document.getElementById('select-type');
-    const usageGroup = document.getElementById('usage-group');
-    const inputVersion = document.getElementById('input-version');
-    const labelVersion = document.getElementById('label-version');
-    const inputDeveloper = document.getElementById('input-developer');
-    const labelDeveloper = document.getElementById('label-developer');
+    let authToken = null;
     const loginBox = document.getElementById('loginBox');
     const uploadForm = document.getElementById('uploadForm');
     const loginStatus = document.getElementById('loginStatus');
     const uploadStatus = document.getElementById('uploadStatus');
 
-    if (sessionStorage.getItem('adminLoggedIn') === 'true') {
-      showUploadForm();
+    // Kiểm tra auth khi trang load
+    async function checkExistingAuth() {
+      try {
+        const response = await fetch('/api/auth/verify', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ token: '' })
+        });
+        
+        const result = await response.json();
+        if (result.success) {
+          showUploadForm();
+        }
+      } catch (error) {
+        // Không làm gì cả, user cần login lại
+      }
     }
 
-    function checkPassword() {
+    // Gọi khi trang load
+    checkExistingAuth();
+
+    async function checkPassword() {
       const password = document.getElementById('password').value;
-      if (password === ADMIN_PASSWORD) {
-        sessionStorage.setItem('adminLoggedIn', 'true');
-        showUploadForm();
-      } else {
-        loginStatus.className = 'status-message error';
-        loginStatus.textContent = '❌ Mật khẩu không đúng!';
+      
+      try {
+        const response = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ password })
+        });
+
+        const result = await response.json();
+        
+        if (response.ok) {
+          authToken = result.token;
+          showUploadForm();
+          showLoginStatus('success', '✅ Đăng nhập thành công!');
+        } else {
+          showLoginStatus('error', '❌ ' + (result.error || 'Đăng nhập thất bại'));
+        }
+      } catch (error) {
+        showLoginStatus('error', '❌ Lỗi kết nối: ' + error.message);
+      }
+    }
+
+    function showLoginStatus(type, message) {
+      loginStatus.className = `status-message ${type}`;
+      loginStatus.textContent = message;
+      loginStatus.style.display = 'block';
+      
+      if (type === 'error') {
         setTimeout(() => {
           loginStatus.style.display = 'none';
-        }, 3000);
+        }, 5000);
       }
     }
 
@@ -365,12 +401,40 @@
       uploadForm.style.display = 'block';
     }
 
+    async function verifyAuth() {
+      if (!authToken) return false;
+      
+      try {
+        const response = await fetch('/api/auth/verify', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ token: authToken })
+        });
+        
+        const result = await response.json();
+        return result.success;
+      } catch (error) {
+        return false;
+      }
+    }
+
     function logout() {
-      sessionStorage.removeItem('adminLoggedIn');
+      // Xóa token và cookie
+      authToken = null;
+      document.cookie = "admin_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       loginBox.style.display = 'block';
       uploadForm.style.display = 'none';
       document.getElementById('password').value = '';
     }
+
+    const selectType = document.getElementById('select-type');
+    const usageGroup = document.getElementById('usage-group');
+    const inputVersion = document.getElementById('input-version');
+    const labelVersion = document.getElementById('label-version');
+    const inputDeveloper = document.getElementById('input-developer');
+    const labelDeveloper = document.getElementById('label-developer');
 
     function adjustFormFields() {
         const type = selectType.value;
@@ -404,6 +468,14 @@
     if (savedTheme === 'dark') document.body.classList.add('dark');
 
     async function uploadApp() {
+      // 🔐 Verify auth trước khi upload
+      const isAuthenticated = await verifyAuth();
+      if (!isAuthenticated) {
+        showUploadStatus('error', '❌ Phiên đăng nhập hết hạn. Vui lòng đăng nhập lại.');
+        logout();
+        return;
+      }
+
       const type = selectType.value;
       const name = document.getElementById('input-name').value.trim();
       const icon = document.getElementById('input-icon').value.trim();
@@ -430,7 +502,7 @@
           const link = document.getElementById('input-file').value.trim();
           const usage = document.getElementById('input-usage').value.trim();
           if (!name || !icon || !link || !desc || !usage) {
-              showStatus('error', '⚠️ Vui lòng điền đầy đủ tất cả thông tin!');
+              showUploadStatus('error', '⚠️ Vui lòng điền đầy đủ tất cả thông tin!');
               return;
           }
           appData.link = link;
@@ -441,7 +513,7 @@
           const developer = document.getElementById('input-developer').value.trim();
           const date = new Date().toISOString().split('T')[0];
           if (!name || !icon || !fileLink || !desc) {
-              showStatus('error', '⚠️ Vui lòng điền đầy đủ tất cả thông tin!');
+              showUploadStatus('error', '⚠️ Vui lòng điền đầy đủ tất cả thông tin!');
               return;
           }
           appData.fileLink = fileLink;
@@ -451,7 +523,7 @@
       }
 
       try {
-        showStatus('success', '⏳ Đang upload...');
+        showUploadStatus('success', '⏳ Đang upload...');
         const response = await fetch('/api/upload', {
           method: 'POST',
           headers: {
@@ -463,22 +535,24 @@
         const result = await response.json();
         
         if (response.ok) {
-          showStatus('success', `✅ Upload thành công! Trang sẽ tải lại...`);
+          showUploadStatus('success', `✅ Upload thành công! Trang sẽ tải lại...`);
           clearForm();
           setTimeout(() => {
             window.top.location.reload();
           }, 2000);
         } else {
-          showStatus('error', `❌ Lỗi: ${result.error || 'Không thể upload'}`);
+          showUploadStatus('error', `❌ Lỗi: ${result.error || 'Không thể upload'}`);
         }
       } catch (error) {
-        showStatus('error', `❌ Lỗi kết nối: ${error.message}`);
+        showUploadStatus('error', `❌ Lỗi kết nối: ${error.message}`);
       }
     }
 
-    function showStatus(type, message) {
+    function showUploadStatus(type, message) {
       uploadStatus.className = `status-message ${type}`;
       uploadStatus.textContent = message;
+      uploadStatus.style.display = 'block';
+      
       if (type === 'error') {
         setTimeout(() => {
           uploadStatus.style.display = 'none';
