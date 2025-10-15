@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1760534264421",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Mod một số chức năng\nInjected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2025/X_11.30.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.30.1",
+    "developer": "cuios.shop",
+    "date": "2025-10-15"
+  },
+  {
     "id": "ipa-1760533082962",
     "type": "ipa",
     "name": "VideoStar",
