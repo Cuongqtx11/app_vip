@@ -28,69 +28,92 @@
   <div class="usage-popup" id="usage-popup">
     <div class="usage-popup-content">
       <button class="close-btn" onclick="closePopup()">&times;</button>
-      <h3 id="popup-name"></h3>
-      <div id="popup-tags" class="tags-section"></div>
-      <h4>Hướng dẫn sử dụng:</h4>
-      <p id="popup-usage"></p>
-      <a id="popup-link" href="#" onclick="copyAndOpen(event)" class="download-btn-popup">📥 Sao chép & Mở</a>
+      <div class="app-info-header">
+          <img id="popup-app-icon" src="" alt="Icon" />
+          <div>
+              <h2 id="popup-app-name"></h2>
+              <p id="popup-app-developer" class="app-meta"></p>
+          </div>
+      </div>
+      <div id="popup-tags" class="app-tags"></div>
+      
+      <div class="usage-content">
+          <h3 id="usage-title">Hướng dẫn sử dụng</h3>
+          <p id="usage-desc"></p>
+          <pre id="usage-link-display"></pre>
+      </div>
+
+      <a href="#" id="copy-open-btn" class="download-btn" data-link="" onclick="copyAndOpen(event)">
+          <span class="material-icons">content_copy</span> Sao chép & Mở Shadowrocket
+      </a>
     </div>
   </div>
 
-  <script>
-    const appListContainer = document.getElementById('app-list');
-    let confApps = [];
-    let selectedApp = null;
-    let currentFilter = 'all';
-
+<script>
+    const appList = document.getElementById('app-list');
     const usagePopup = document.getElementById('usage-popup');
+    let confApps = [];
 
-    function renderApps(appsToDisplay) {
-      if (appsToDisplay.length === 0) {
-        appListContainer.innerHTML = `
-          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy cấu hình nào.</h2>
-        `;
+    // Helper functions
+    function getTagEmoji(tag) {
+      const emojis = {
+        'vpn': '🛡️', 'productivity': '⚡', 'utility': '🔧', 'tools': '🛠️'
+      };
+      return emojis[tag] || tag;
+    }
+    function getBadgeEmoji(badge) {
+        const emojis = {
+            'new': '✨ Mới', 'update': '🔄 Cập nhật', 'trending': '🔥 Hot'
+        };
+        return emojis[badge] || badge;
+    }
+
+    // Load data
+    async function loadConfApps() {
+      try {
+        const response = await fetch('../data/conf.json');
+        confApps = await response.json();
+        renderApps(confApps);
+      } catch (error) {
+        appList.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: red;">Lỗi khi tải dữ liệu cấu hình.</p>';
+      }
+    }
+
+    // Render list
+    function renderApps(apps) {
+      if (!apps.length) {
+        appList.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy cấu hình nào.</p>';
         return;
       }
-
-      appListContainer.innerHTML = appsToDisplay.map(app => `
-        <div class="app-card conf-card" data-id="${app.id}">
-          <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
+      
+      appList.innerHTML = '<h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Cấu hình Shadowrocket</h2>';
+      
+      apps.forEach(app => {
+        const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
+        const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
+        
+        const card = document.createElement('div');
+        card.className = 'app-card conf-card';
+        card.setAttribute('data-tag', app.tags ? app.tags.join(' ') : 'all');
+        card.onclick = () => showPopup(app);
+        
+        card.innerHTML = `
+          <img src="${app.icon || 'placeholder.png'}" alt="${app.name} Icon" />
           <div class="app-info">
             <h3>${app.name}</h3>
             <p>${app.desc}</p>
-            <div class="tags-section">
-              ${app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : ''}
-              ${app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : ''}
-            </div>
           </div>
-        </div>
-      `).join('');
-
-      document.querySelectorAll('.conf-card').forEach(card => {
-        card.addEventListener('click', () => {
-          const appId = card.dataset.id;
-          selectedApp = confApps.find(app => app.id === appId);
-          if (selectedApp) {
-            showUsagePopup(selectedApp);
-          }
-        });
+          <div class="app-tags">${tagsHTML}${badgeHTML}</div>
+          <button class="download-btn" style="background-color: #3498db; margin-top: 10px;">
+            <span class="material-icons">info</span> Chi tiết
+          </button>
+        `;
+        appList.appendChild(card);
       });
     }
 
-    function getTagEmoji(tag) {
-      const emojis = {
-        vpn: '🛡️', productivity: '⚡', utility: '🔧', tools: '🛠️'
-      };
-      return emojis[tag] || '🏷️';
-    }
-
-    function getBadgeEmoji(badge) {
-      const emojis = { new: '🆕', trending: '🔥', top: '⭐' };
-      return emojis[badge] || '';
-    }
-
+    // Filter
     function filterTag(tag) {
-      currentFilter = tag;
       document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
       event.target.classList.add('active');
 
@@ -102,23 +125,17 @@
       }
     }
 
-    async function loadConfApps() {
-      try {
-        const response = await fetch('../data/conf.json');
-        confApps = response.ok ? await response.json() : [];
-        renderApps(confApps);
-      } catch (error) {
-        console.error('Lỗi khi tải dữ liệu Conf:', error);
-        appListContainer.innerHTML = `
-          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Lỗi khi tải dữ liệu cấu hình.</h2>
-        `;
-      }
-    }
-
-    function showUsagePopup(app) {
-      document.getElementById('popup-name').textContent = app.name;
-      document.getElementById('popup-usage').textContent = app.usage;
-      document.getElementById('popup-link').dataset.link = app.link;
+    // Show popup
+    function showPopup(app) {
+      document.getElementById('popup-app-icon').src = app.icon;
+      document.getElementById('popup-app-name').textContent = app.name;
+      document.getElementById('popup-app-developer').textContent = app.developer ? `Dev: ${app.developer}` : '';
+      
+      document.getElementById('usage-desc').innerHTML = app.usage ? app.usage.replace(/\\n/g, '<br>') : 'Không có hướng dẫn sử dụng.';
+      
+      const copyBtn = document.getElementById('copy-open-btn');
+      copyBtn.setAttribute('data-link', app.link);
+      document.getElementById('usage-link-display').textContent = app.link || 'Không tìm thấy liên kết.';
 
       const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
       const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
@@ -131,15 +148,19 @@
       usagePopup.classList.remove('active');
     }
 
+    // ⭐ FIX LỖI THÔNG BÁO COPY (YÊU CẦU 2)
     function copyAndOpen(e) {
       e.preventDefault();
       const link = e.target.dataset.link;
       if (link) {
         navigator.clipboard.writeText(link).then(() => {
+          
+          alert('✅ Đã sao chép liên kết Conf! Ứng dụng Shadowrocket sẽ mở ngay.'); // THÊM THÔNG BÁO
+
           window.location.href = 'shadowrocket://';
-          setTimeout(() => closePopup(), 1000);
+          setTimeout(() => closePopup(), 1500); // Tăng thời gian chờ một chút
         }).catch(err => {
-          alert('Không thể sao chép. Vui lòng thử lại!');
+          alert('❌ Lỗi: Không thể sao chép. Vui lòng thử lại!');
         });
       }
     }
@@ -163,8 +184,11 @@
 
     loadConfApps();
 
+    // Khôi phục theme đã lưu (dùng sessionStorage)
     const savedTheme = sessionStorage.getItem('theme');
-    if (savedTheme === 'dark') document.body.classList.add('dark');
-  </script>
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+    }
+</script>
 </body>
 </html>
