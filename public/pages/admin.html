@@ -380,8 +380,14 @@
         
         if (response.ok) {
           authToken = result.token;
-          showUploadForm();
           showLoginStatus('success', '✅ Đăng nhập thành công!');
+          
+          // Ẩn thông báo sau 2 giây rồi mới hiện form upload
+          setTimeout(() => {
+            loginStatus.style.display = 'none';
+            showUploadForm();
+          }, 2000);
+          
         } else {
           showLoginStatus('error', '❌ ' + (result.error || 'Đăng nhập thất bại'));
         }
@@ -544,8 +550,20 @@
         const result = await response.json();
         
         if (response.ok) {
-          showUploadStatus('success', `✅ Upload thành công! ID: ${result.id}`);
+          showUploadStatus('success', `✅ Upload thành công! Đang chuyển về trang chủ...`);
           clearForm();
+          
+          // Tự động chuyển về trang chủ sau 2 giây
+          setTimeout(() => {
+            // Quay về trang chủ trong iframe
+            if (window.top && window.top.document) {
+              const homeLink = window.top.document.querySelector('.bottom-nav a[href*="home.html"]');
+              if (homeLink) {
+                homeLink.click();
+              }
+            }
+          }, 2000);
+          
         } else {
           // 🛡️ QUAN TRỌNG: Xử lý lỗi thông minh - KHÔNG tự logout
           if (result.code === 'NO_AUTH_COOKIE') {
