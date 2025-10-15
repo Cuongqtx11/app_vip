@@ -21,118 +21,125 @@
 
   <div class="app-container" id="app-list">
     <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Các Dylib mới nhất</h2>
-    <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải Dylib...</p>
+    <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải ứng dụng...</p>
   </div>
 
-  <div class="detail-popup" id="app-detail-popup">
-    <div class="detail-popup-content">
+  <div class="app-detail-popup" id="app-detail-popup">
+    <div class="app-detail-popup-content">
       <button class="close-btn" onclick="closeAppDetailPopup()">&times;</button>
-      <img id="popup-app-icon" src="" alt="App Icon">
-      <h3 id="popup-app-name"></h3>
-      <p id="popup-app-desc"></p>
-      <div id="popup-tags" class="tags-section"></div>
-      <div class="popup-meta">
-        <span id="popup-app-version"></span> |
-        <span id="popup-app-developer"></span> |
-        <span id="popup-app-date"></span>
+      
+      <div class="app-info-header">
+          <img id="popup-app-icon" src="" alt="Icon" />
+          <div>
+              <h2 id="popup-app-name"></h2>
+              <p id="popup-app-developer" class="app-meta"></p>
+          </div>
       </div>
-      <a id="popup-app-download-btn" href="#" target="_blank" class="download-btn-popup">Tải về</a>
+      
+      <div id="popup-tags" class="app-tags"></div>
+      
+      <p class="app-desc" id="popup-app-desc"></p>
+      
+      <div class="app-meta-details">
+          <p><strong>Phiên bản:</strong> <span id="popup-app-version"></span></p>
+          <p><strong>Ngày cập nhật:</strong> <span id="popup-app-date"></span></p>
+      </div>
+
+      <a href="#" id="popup-app-download-btn" class="download-btn" onclick="return handleDownload(event, 'DYLIB')">
+          <span class="material-icons">cloud_download</span> Tải xuống
+      </a>
     </div>
   </div>
 
-  <script>
-    const appListContainer = document.getElementById('app-list');
-    let dylibApps = [];
-    let selectedApp = null;
-    let currentFilter = 'all';
-
+<script>
+    const appList = document.getElementById('app-list');
     const appDetailPopup = document.getElementById('app-detail-popup');
+    let dylibApps = []; // Đổi tên biến thành dylibApps
 
-    function renderApps(appsToDisplay) {
-      if (appsToDisplay.length === 0) {
-        appListContainer.innerHTML = `
-          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy Dylib nào.</h2>
-        `;
+    // Helper functions
+    function getTagEmoji(tag) {
+      const emojis = {
+        'game': '🎮', 'photo': '📸', 'utility': '🔧', 'vpn': '🛡️', 'social': '💬', 'music': '🎵', 'productivity': '⚡', 'tools': '🛠️'
+      };
+      return emojis[tag] || tag;
+    }
+    function getBadgeEmoji(badge) {
+        const emojis = {
+            'new': '✨ Mới', 'update': '🔄 Cập nhật', 'trending': '🔥 Hot'
+        };
+        return emojis[badge] || badge;
+    }
+
+    // Load data
+    async function loadDylibApps() { // Sửa tên hàm
+      try {
+        const response = await fetch('../data/dylib.json');
+        dylibApps = await response.json();
+        renderApps(dylibApps);
+      } catch (error) {
+        appList.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: red;">Lỗi khi tải dữ liệu Dylib.</p>';
+      }
+    }
+
+    // Render list
+    function renderApps(apps) {
+      if (!apps.length) {
+        appList.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy ứng dụng nào.</p>';
         return;
       }
-
-      appListContainer.innerHTML = appsToDisplay.map(app => `
-        <div class="app-card" data-id="${app.id}">
-          <img src="${app.icon}" alt="${app.name} icon" loading="lazy">
+      
+      appList.innerHTML = '<h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Các Dylib mới nhất</h2>';
+      
+      apps.forEach(app => {
+        const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
+        const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
+        
+        const card = document.createElement('div');
+        card.className = 'app-card';
+        card.setAttribute('data-tag', app.tags ? app.tags.join(' ') : 'all');
+        card.onclick = () => showAppDetailPopup(app);
+        
+        card.innerHTML = `
+          <img src="${app.icon || 'placeholder.png'}" alt="${app.name} Icon" />
           <div class="app-info">
             <h3>${app.name}</h3>
             <p>${app.desc}</p>
-            <div class="tags-section">
-              ${app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : ''}
-              ${app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : ''}
-            </div>
-            <div class="app-meta">
-              <span>Ver: ${app.version || 'N/A'}</span>
-            </div>
           </div>
-          <span class="download-btn">Xem & Tải</span>
-        </div>
-      `).join('');
-
-      document.querySelectorAll('.app-card').forEach(card => {
-        card.addEventListener('click', () => {
-          const appId = card.dataset.id;
-          selectedApp = dylibApps.find(app => app.id === appId);
-          if (selectedApp) {
-            showAppDetailPopup(selectedApp);
-          }
-        });
+          <div class="app-tags">${tagsHTML}${badgeHTML}</div>
+          <button class="download-btn">
+            <span class="material-icons">info</span> Chi tiết
+          </button>
+        `;
+        appList.appendChild(card);
       });
     }
 
-    function getTagEmoji(tag) {
-      const emojis = {
-        game: '🎮', photo: '📸', utility: '🔧', vpn: '🛡️',
-        social: '💬', music: '🎵', productivity: '⚡', tools: '🛠️'
-      };
-      return emojis[tag] || '🏷️';
-    }
-
-    function getBadgeEmoji(badge) {
-      const emojis = { new: '🆕', trending: '🔥', top: '⭐' };
-      return emojis[badge] || '';
-    }
-
+    // Filter
     function filterTag(tag) {
-      currentFilter = tag;
       document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
       event.target.classList.add('active');
 
       if (tag === 'all') {
-        renderApps(dylibApps);
+        renderApps(dylibApps); // Sửa tên biến
       } else {
-        const filtered = dylibApps.filter(app => app.tags && app.tags.includes(tag));
+        const filtered = dylibApps.filter(app => app.tags && app.tags.includes(tag)); // Sửa tên biến
         renderApps(filtered);
       }
     }
 
-    async function loadDylibApps() {
-      try {
-        const response = await fetch('../data/dylib.json');
-        dylibApps = response.ok ? await response.json() : [];
-        renderApps(dylibApps);
-      } catch (error) {
-        console.error('Lỗi khi tải dữ liệu Dylib:', error);
-        appListContainer.innerHTML = `
-          <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Lỗi khi tải dữ liệu Dylib.</h2>
-        `;
-      }
-    }
-
+    // Show popup
     function showAppDetailPopup(app) {
       document.getElementById('popup-app-icon').src = app.icon;
       document.getElementById('popup-app-name').textContent = app.name;
-      document.getElementById('popup-app-desc').textContent = app.desc;
-      document.getElementById('popup-app-version').textContent = `Ver: ${app.version || 'N/A'}`;
       document.getElementById('popup-app-developer').textContent = `Dev: ${app.developer || 'N/A'}`;
+      document.getElementById('popup-app-desc').textContent = app.desc;
+      document.getElementById('popup-app-version').textContent = app.version || 'N/A';
       document.getElementById('popup-app-date').textContent = `Date: ${app.date || 'N/A'}`;
-      document.getElementById('popup-app-download-btn').href = app.fileLink;
-
+      
+      // Gán link tải vào thuộc tính href
+      const downloadBtn = document.getElementById('popup-app-download-btn');
+      downloadBtn.href = app.fileLink;
+      
       const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
       const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
       document.getElementById('popup-tags').innerHTML = tagsHTML + badgeHTML;
@@ -144,14 +151,31 @@
       appDetailPopup.classList.remove('active');
     }
 
+    // ⭐ FIX MỚI: XỬ LÝ SỰ KIỆN DOWNLOAD VÀ THÔNG BÁO
+    function handleDownload(e, type) {
+        e.preventDefault();
+        
+        const fileLink = e.currentTarget.href;
+
+        // Hiển thị thông báo trước khi chuyển hướng
+        alert(`⚡ Bắt đầu tải xuống file ${type.toUpperCase()}. Vui lòng đợi...`); 
+        
+        // Chuyển hướng đến link tải
+        window.location.href = fileLink;
+        
+        closeAppDetailPopup();
+        return false; // Ngăn chặn hành động mặc định của thẻ <a>
+    }
+
     appDetailPopup.addEventListener('click', (event) => {
       if (event.target === appDetailPopup) closeAppDetailPopup();
     });
 
+    // Handle message from parent (search, theme change)
     window.addEventListener('message', (event) => {
       if (event.data.type === 'search') {
         const keyword = event.data.keyword.toLowerCase();
-        const filtered = dylibApps.filter(app =>
+        const filtered = dylibApps.filter(app => // Sửa tên biến
           app.name.toLowerCase().includes(keyword) ||
           app.desc.toLowerCase().includes(keyword) ||
           (app.developer && app.developer.toLowerCase().includes(keyword))
@@ -162,10 +186,13 @@
       }
     });
 
-    loadDylibApps();
+    loadDylibApps(); // Sửa tên hàm
 
+    // Khôi phục theme đã lưu (dùng sessionStorage)
     const savedTheme = sessionStorage.getItem('theme');
-    if (savedTheme === 'dark') document.body.classList.add('dark');
-  </script>
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+    }
+</script>
 </body>
 </html>
