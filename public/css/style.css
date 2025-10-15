@@ -241,7 +241,7 @@ body.dark .filter-btn {
     flex-direction: column; /* Xếp các thành phần theo chiều dọc */
     justify-content: space-between; /* Đẩy các phần tử lên/xuống */
     
-    height: 250px; /* ⭐ Đặt chiều cao CỐ ĐỊNH cho thẻ ứng dụng */
+    height: 240px; /* ⭐ Đặt chiều cao CỐ ĐỊNH cho thẻ ứng dụng */
     
     background: var(--card-bg-light);
     border-radius: 20px;
@@ -314,7 +314,7 @@ body.dark .app-info p, body.dark .app-meta {
   border-radius: 15px;
   background-color: var(--primary);
   color: white;
-  font-weight: 900;
+  font-weight: bold;
   text-align: center;
   transition: background-color 0.2s;
 }
