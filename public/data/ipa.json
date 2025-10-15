@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1760526776997",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "game hack - Injected with IAP",
+    "tags": [
+      "game"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-10-2025/MergeCooking_1.13.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.13.0",
+    "developer": "cuios.shop",
+    "date": "2025-10-15"
+  },
+  {
     "id": "ipa-1760516738424",
     "type": "ipa",
     "name": "BeautyPlus",
