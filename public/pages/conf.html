@@ -54,7 +54,6 @@
     const usagePopup = document.getElementById('usage-popup');
     let confApps = [];
 
-    // Helper functions
     function getTagEmoji(tag) {
       const emojis = {
         'vpn': '🛡️', 'productivity': '⚡', 'utility': '🔧', 'tools': '🛠️'
@@ -68,7 +67,6 @@
         return emojis[badge] || badge;
     }
 
-    // Load data
     async function loadConfApps() {
       try {
         const response = await fetch('../data/conf.json');
@@ -79,7 +77,6 @@
       }
     }
 
-    // Render list
     function renderApps(apps) {
       if (!apps.length) {
         appList.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy cấu hình nào.</p>';
@@ -104,7 +101,7 @@
             <p>${app.desc}</p>
           </div>
           <div class="app-tags">${tagsHTML}${badgeHTML}</div>
-          <button class="download-btn" style="background-color: #3498db; margin-top: 10px;">
+          <button class="download-btn">
             <span class="material-icons"></span> Xem & Tải
           </button>
         `;
@@ -112,7 +109,6 @@
       });
     }
 
-    // Filter
     function filterTag(tag) {
       document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
       event.target.classList.add('active');
@@ -125,7 +121,6 @@
       }
     }
 
-    // Show popup
     function showPopup(app) {
       document.getElementById('popup-app-icon').src = app.icon;
       document.getElementById('popup-app-name').textContent = app.name;
@@ -148,15 +143,13 @@
       usagePopup.classList.remove('active');
     }
 
-    // ⭐ CẬP NHẬT: Loại bỏ alert, chỉ thực hiện copy và mở Shadowrocket
     function copyAndOpen(e) {
       e.preventDefault();
       const link = e.target.dataset.link;
       if (link) {
         navigator.clipboard.writeText(link).then(() => {
-          // KHÔNG CÓ ALERT
           window.location.href = 'shadowrocket://';
-          setTimeout(() => closePopup(), 500); // Tăng thời gian chờ một chút
+          setTimeout(() => closePopup(), 500);
         }).catch(err => {
           alert('❌ Lỗi: Không thể sao chép. Vui lòng thử lại!');
         });
@@ -182,7 +175,6 @@
 
     loadConfApps();
 
-    // Khôi phục theme đã lưu (dùng sessionStorage)
     const savedTheme = sessionStorage.getItem('theme');
     if (savedTheme === 'dark') {
       document.body.classList.add('dark');
