@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1760533082962",
+    "type": "ipa",
+    "name": "VideoStar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontierdesign.videostar.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-10-2025/VideoStar_14.3.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.3.5",
+    "developer": "cuios.shop",
+    "date": "2025-10-15"
+  },
+  {
     "id": "ipa-1760526776997",
     "type": "ipa",
     "name": "MergeCooking",
