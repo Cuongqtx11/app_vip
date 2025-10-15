@@ -44,7 +44,7 @@
       </div>
 
       <a href="#" id="copy-open-btn" class="download-btn" data-link="" onclick="copyAndOpen(event)">
-          <span class="material-icons">content_copy</span> Sao chép & Mở Shadowrocket
+          Sao chép & Mở Shadowrocket
       </a>
     </div>
   </div>
@@ -105,7 +105,7 @@
           </div>
           <div class="app-tags">${tagsHTML}${badgeHTML}</div>
           <button class="download-btn" style="background-color: #3498db; margin-top: 10px;">
-            <span class="material-icons">info</span> Chi tiết
+            <span class="material-icons">visibility</span> Xem & Tải
           </button>
         `;
         appList.appendChild(card);
@@ -148,17 +148,15 @@
       usagePopup.classList.remove('active');
     }
 
-    // ⭐ FIX LỖI THÔNG BÁO COPY (YÊU CẦU 2)
+    // ⭐ CẬP NHẬT: Loại bỏ alert, chỉ thực hiện copy và mở Shadowrocket
     function copyAndOpen(e) {
       e.preventDefault();
       const link = e.target.dataset.link;
       if (link) {
         navigator.clipboard.writeText(link).then(() => {
-          
-          alert('✅ Đã sao chép liên kết Conf! Ứng dụng Shadowrocket sẽ mở ngay.'); // THÊM THÔNG BÁO
-
+          // KHÔNG CÓ ALERT
           window.location.href = 'shadowrocket://';
-          setTimeout(() => closePopup(), 1500); // Tăng thời gian chờ một chút
+          setTimeout(() => closePopup(), 500); // Tăng thời gian chờ một chút
         }).catch(err => {
           alert('❌ Lỗi: Không thể sao chép. Vui lòng thử lại!');
         });
