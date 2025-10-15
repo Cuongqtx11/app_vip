@@ -24,7 +24,7 @@
     }
 
     .home-container h1 {
-      color: var(--primary-color);
+      color: var(--primary);
       font-size: 2.5em;
       margin-bottom: 20px;
     }
@@ -46,7 +46,7 @@
 
     .home-container .call-to-action a {
       display: inline-block;
-      background: var(--primary-color);
+      background: var(--primary);
       color: white;
       padding: 12px 25px;
       border-radius: 8px;
@@ -56,9 +56,21 @@
       transition: background 0.2s ease, transform 0.2s ease;
     }
 
+    body.dark .home-container .call-to-action a {
+      background: var(--card-bg-dark);
+      color: var(--text-dark);
+      border: 2px solid var(--border-dark);
+    }
+
     .home-container .call-to-action a:hover {
       background: #159f8a;
+      color: white;
       transform: translateY(-2px);
+    }
+    
+    body.dark .home-container .call-to-action a:hover {
+      background: var(--primary);
+      border-color: var(--primary);
     }
 
     .home-container ul {
@@ -77,7 +89,7 @@
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         font-weight: bold;
-        color: var(--primary-color);
+        color: var(--primary);
         transition: background var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
     }
 
@@ -110,9 +122,9 @@
     }
 
     .tutorial-button {
-        background-color: transparent;
-        color: var(--text-light);
-        border: 2px solid var(--border-light);
+        background-color: var(--primary);
+        color: white;
+        border: 2px solid var(--primary);
         padding: 15px 25px;
         border-radius: 12px;
         font-size: 1.1em;
@@ -128,16 +140,22 @@
     }
 
     body.dark .tutorial-button {
+        background-color: var(--card-bg-dark);
         color: var(--text-dark);
         border-color: var(--border-dark);
     }
 
     .tutorial-button:hover {
-        background-color: rgba(26, 188, 156, 0.1);
-        border-color: var(--primary-color);
-        color: var(--primary-color);
+        background-color: #159f8a;
+        border-color: #159f8a;
+        color: white;
         transform: translateY(-3px);
-        box-shadow: 0 4px 15px rgba(26, 188, 156, 0.2);
+        box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+    }
+    
+    body.dark .tutorial-button:hover {
+        background-color: var(--primary);
+        border-color: var(--primary);
     }
 
     .video-popup {
@@ -201,7 +219,7 @@
     }
 
     .video-popup .close-btn:hover {
-        color: var(--primary-color);
+        color: var(--primary);
     }
 
     .video-popup iframe {
@@ -213,9 +231,21 @@
     }
 
     .mauchu {
-        color: aqua;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin-bottom: 20px;
+    }
+    
+    .mauchu a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;
+        transition: color 0.2s ease;
+    }
+    
+    .mauchu a:hover {
+        color: #159f8a;
+        text-decoration: underline;
     }
 
     @media (max-width: 768px) {
@@ -265,7 +295,7 @@
     <ul>
         <li>📱 Các file IPA modded chất lượng cao</li>
         <li>⚙️ Dylib giúp tùy chỉnh ứng dụng</li>
-        <li>🔑 Cấu hình Shadowrocket (Conf) an toàn và nhanh chóng</li>
+        <li>🔐 Cấu hình Shadowrocket (Conf) an toàn và nhanh chóng</li>
     </ul>
     <p>
       Đừng ngần ngại khám phá các danh mục ở thanh điều hướng phía dưới để tìm những gì bạn cần!
@@ -301,7 +331,6 @@
   </div>
 
   <script>
-    // Đồng bộ Dark Mode từ trang cha
     window.addEventListener('message', (event) => {
         if (event.data.type === 'themeChange') {
             if (event.data.theme === 'dark') {
@@ -312,13 +341,11 @@
         }
     });
 
-    // Khôi phục theme đã lưu (dùng sessionStorage)
     const savedTheme = sessionStorage.getItem('theme');
     if (savedTheme === 'dark') {
       document.body.classList.add('dark');
     }
 
-    // Xử lý Popup video hướng dẫn
     const videoPopup = document.getElementById('videoPopup');
     const closeVideoPopupBtn = document.getElementById('closeVideoPopup');
     const youtubePlayer = document.getElementById('youtubePlayer');
