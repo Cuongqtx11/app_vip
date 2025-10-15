@@ -13,19 +13,6 @@
     "usage": "All in One 17 app - Youtube Premium, Spotify Pre, SoundCloudGo, VSCO, AlightMotion, PicsArt, Wink, Truecaller,  Lightroom, Kinemaster, CamScanner, BeautyPlus, LocketGold, RevenueCatVip, iTunes, Snow, Meitu,"
   },
   {
-    "id": "conf-1760506051544",
-    "type": "conf",
-    "name": "All In One",
-    "icon": "https://cdn-icons-png.freepik.com/512/5622/5622900.png",
-    "desc": "All in One 17 app - Youtube Premium, Spotify Pre, SoundCloudGo, VSCO, AlightMotion, PicsArt, Wink, Truecaller,  Lightroom, Kinemaster, CamScanner, BeautyPlus, LocketGold, RevenueCatVip, iTunes, Snow, Meitu",
-    "tags": [
-      "vpn"
-    ],
-    "badge": "trending",
-    "link": "https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/All_In_One.sgmodule",
-    "usage": "Dùng qua Shadowrocket tải từ AppStore\ncó thể xem hd ở cuối trang home"
-  },
-  {
     "id": "conf-001",
     "name": "Youtube Premium",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
