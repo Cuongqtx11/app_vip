@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1760516738424",
+    "type": "ipa",
+    "name": "BeautyPlus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.commsource.BeautyPlus.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2025/BeautyPlus_7.20.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.20.2",
+    "developer": "cuios.shop",
+    "date": "2025-10-15"
+  },
+  {
     "id": "ipa-1760494085183",
     "type": "ipa",
     "name": "Messenger",
