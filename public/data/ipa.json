@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1760494085183",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "một số chức năng tựa facebook. ae tự trải nghiệm nhé",
+    "tags": [
+      "social"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2025/Messenger_529.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "529.0.0",
+    "developer": "cuios.shop",
+    "date": "2025-10-15"
+  },
+  {
     "id": "ipa-1760455654067",
     "type": "ipa",
     "name": "Spotify",
