@@ -1,5 +1,18 @@
 [
   {
+    "id": "ipa-1760686987248",
+    "type": "ipa",
+    "name": "HeyJapan",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.eup.heyjapan.png",
+    "desc": "Injected with IAP\nMod một số chức năng",
+    "tags": [],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2025/HeyJapan_2.1.12_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.12",
+    "developer": "cuios.shop",
+    "date": "2025-10-17"
+  },
+  {
     "id": "ipa-1760663311336",
     "type": "ipa",
     "name": "HillClimb",
