@@ -179,6 +179,14 @@
     if (savedTheme === 'dark') {
       document.body.classList.add('dark');
     }
+    // Thêm vào cuối mỗi file: ipa.html, dylib.html, conf.html, home.html
+		document.addEventListener('DOMContentLoaded', function() {
+    	document.body.style.zoom = "0.75";
+    
+    // Lưu vào sessionStorage để khi refresh vẫn giữ zoom
+    	sessionStorage.setItem('pageZoom', '0.75');
+		});
+    
 </script>
 </body>
 </html>
