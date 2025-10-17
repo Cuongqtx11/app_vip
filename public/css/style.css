@@ -1,3 +1,5 @@
+[file name]: style.css
+[file content begin]
 /* ==================== DESIGN SYSTEM ==================== */
 :root {
   /* Colors */
@@ -135,10 +137,10 @@ body.dark #toggle-mode {
 
 .content-frame {
   width: 100%;
-  height: calc(100vh - 120px); /* 100vh - header - footer */
+  height: calc(100vh - 120px);
   border: none;
-  margin-top: 60px; /* Header height */
-  margin-bottom: 60px; /* Footer height */
+  margin-top: 60px;
+  margin-bottom: 60px;
   background: none;
 }
 
@@ -225,13 +227,15 @@ body.dark .filter-btn {
   font-weight: 600;
 }
 
-/* ==================== APP CARDS & LIST (CHỈNH SỬA CHÍNH) ==================== */
+/* ==================== APP CARDS & LIST (ĐIỀU CHỈNH ĐỂ HIỂN THỊ 3 HÀNG) ==================== */
 
 .app-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
 }
 
 .app-card {
@@ -239,12 +243,13 @@ body.dark .filter-btn {
     flex-direction: column;
     justify-content: space-between;
     
-    height: 240px;
+    /* Giảm chiều cao để hiển thị được nhiều hàng hơn */
+    height: 200px;
     
     background: var(--card-bg-light);
-    border-radius: 20px;
-    box-shadow: 0 4px 10px var(--card-shadow-light);
-    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px var(--card-shadow-light);
+    padding: 12px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s, background-color var(--transition-speed);
@@ -252,50 +257,52 @@ body.dark .filter-btn {
 
 body.dark .app-card {
     background: var(--card-bg-dark);
-    box-shadow: 0 4px 10px var(--card-shadow-dark);
+    box-shadow: 0 4px 8px var(--card-shadow-dark);
 }
 
 .app-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--card-shadow-light);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px var(--card-shadow-light);
 }
 body.dark .app-card:hover {
-    box-shadow: 0 8px 20px var(--card-shadow-dark);
+    box-shadow: 0 6px 15px var(--card-shadow-dark);
 }
 
 .app-card img {
-  width: 60px;
-  height: 60px;
-  border-radius: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
   object-fit: cover;
-  margin: 0 auto 10px;
+  margin: 0 auto 8px;
 }
 
 .app-info {
     flex-grow: 1; 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     overflow: hidden;
 }
 
 .app-info h3 {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: var(--text-light);
+  line-height: 1.2;
 }
 body.dark .app-info h3 {
     color: var(--text-dark);
 }
 
 .app-info p, .app-meta {
-  font-size: 0.8em;
+  font-size: 0.75em;
   color: var(--placeholder-light);
-  margin-top: 3px;
+  margin-top: 2px;
   overflow: hidden;
   text-overflow: ellipsis; 
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  line-height: 1.3;
 }
 body.dark .app-info p, body.dark .app-meta {
     color: var(--placeholder-dark);
@@ -305,13 +312,14 @@ body.dark .app-info p, body.dark .app-meta {
   margin-top: auto; 
   display: block;
   width: 100%;
-  padding: 8px 15px;
-  border-radius: 15px;
+  padding: 6px 12px;
+  border-radius: 12px;
   background-color: var(--primary);
   color: white;
   font-weight: bold;
   text-align: center;
   transition: background-color 0.2s;
+  font-size: 0.8em;
 }
 
 /* ⭐ THÊM: Dark mode cho download button */
@@ -339,20 +347,20 @@ body.dark .download-btn:hover {
     margin-right: 5px;
 }
 
-/* Conf Cards */
+/* Conf Cards - cũng giảm chiều cao */
 .app-card.conf-card {
-    height: 200px;
+    height: 180px;
 }
 
-/* Tags */
+/* Tags - điều chỉnh nhỏ hơn */
 .tag-badge {
     display: inline-block;
     background-color: #f1f1f1;
     color: #333;
-    font-size: 0.7em;
-    padding: 3px 6px;
-    border-radius: 10px;
-    margin-top: 5px;
+    font-size: 0.65em;
+    padding: 2px 5px;
+    border-radius: 8px;
+    margin-top: 3px;
 }
 body.dark .tag-badge {
     background-color: #333;
@@ -461,7 +469,6 @@ body.dark .usage-content pre {
 #copy-open-btn:hover {
     background-color: #2980b9;
 }
-
 
 /* ==================== HOME PAGE (Tùy chỉnh) ==================== */
 .home-container {
@@ -589,24 +596,24 @@ body.dark .tutorial-list li {
   }
   
   .app-container {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 12px;
-    padding: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 12px;
   }
 
   .app-card {
-    height: 220px;
+    height: 180px;
     padding: 10px;
   }
 
   .app-card img {
-    width: 50px;
-    height: 50px;
-    border-radius: 14px;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
   }
 
   .app-info h3 {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 
   .app-info p, .app-meta {
@@ -614,8 +621,8 @@ body.dark .tutorial-list li {
   }
 
   .download-btn {
-    padding: 6px 8px;
-    font-size: 0.85em;
+    padding: 5px 8px;
+    font-size: 0.75em;
   }
   
   .app-detail-popup-content, .usage-popup-content {
@@ -627,3 +634,41 @@ body.dark .tutorial-list li {
       max-width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .app-container {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .app-card {
+    height: 170px;
+    padding: 8px;
+  }
+
+  .app-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
+
+/* Ẩn thanh scrollbar cho đẹp */
+.app-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.app-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.app-container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.app-container::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+[file content end]
