@@ -1,5 +1,18 @@
 [
   {
+    "id": "ipa-1760699615204",
+    "type": "ipa",
+    "name": "LingoDeer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lingodeer.png",
+    "desc": "Injected with Premium - app học ngôn ngữ ngoại quốc",
+    "tags": [],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2025/LingoDeer_3.0.13_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.0.13",
+    "developer": "cuios.shop",
+    "date": "2025-10-17"
+  },
+  {
     "id": "ipa-1760699364019",
     "type": "ipa",
     "name": "Duolingo",
