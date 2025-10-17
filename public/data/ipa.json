@@ -1,5 +1,18 @@
 [
   {
+    "id": "ipa-1760699364019",
+    "type": "ipa",
+    "name": "Duolingo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.duolingo.DuolingoMobile.png",
+    "desc": "Injected with IAP - MaxPublic - app học ngôn ngữ nước ngoài",
+    "tags": [],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-10-2025/DuolingoMaxPublic_7.96.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.96.0",
+    "developer": "cuios.shop",
+    "date": "2025-10-17"
+  },
+  {
     "id": "ipa-1760686987248",
     "type": "ipa",
     "name": "HeyJapan",
