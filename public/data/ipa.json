@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1760663311336",
+    "type": "ipa",
+    "name": "HillClimb",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fingersoft.hillclimbracing.png",
+    "desc": "Injected with IAP\nHack Tài nguyên",
+    "tags": [
+      "game"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-09-2025/HillClimb_1.67.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.67.0",
+    "developer": "cuios.shop",
+    "date": "2025-10-17"
+  },
+  {
     "id": "ipa-1760534264421",
     "type": "ipa",
     "name": "X",
