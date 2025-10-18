@@ -1,5 +1,21 @@
 [
   {
+    "id": "ipa-1760788243776",
+    "type": "ipa",
+    "name": "B612",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.b612.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo",
+      "utility"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2025/B612_14.5.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.5.10",
+    "developer": "cuios.shop",
+    "date": "2025-10-18"
+  },
+  {
     "id": "ipa-1760699615204",
     "type": "ipa",
     "name": "LingoDeer",
