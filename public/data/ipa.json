@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1760840252760",
+    "type": "ipa",
+    "name": "YouTubeMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtubemusic.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "music"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-10-2025/YouTubeMusic_8.41.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.41.3",
+    "developer": "cuios.shop",
+    "date": "2025-10-19"
+  },
+  {
     "id": "ipa-1760788423144",
     "type": "ipa",
     "name": "SnapEdit",
