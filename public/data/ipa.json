@@ -1,5 +1,21 @@
 [
   {
+    "id": "ipa-1760920316755",
+    "type": "ipa",
+    "name": "MagicTiles3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.amanotes.magictiles.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "game",
+      "music"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-10-2025/MagicTiles3_12.101.007_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.101.007",
+    "developer": "cuios.shop",
+    "date": "2025-10-20"
+  },
+  {
     "id": "ipa-1760920224587",
     "type": "ipa",
     "name": "TeraBox",
