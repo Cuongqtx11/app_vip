@@ -1,5 +1,20 @@
 [
   {
+    "id": "dylib-1761004034476",
+    "type": "dylib",
+    "name": "LuckySpeed",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnB42rg804O7EHb5Yf-i1KausqxZBP7roiQ&s",
+    "desc": "Dylib tăng tốc độ Game và tốc độ quảng cáo\nKhông phải App nào cũng có hiệu lực, bạn tự kiểm chứng ❗️",
+    "tags": [
+      "tools"
+    ],
+    "badge": null,
+    "fileLink": "https://raw.githubusercontent.com/Cuongqtx11/Cuios/refs/heads/main/LuckySpeeder_1.0.1.dylib",
+    "version": "1.0.1",
+    "developer": "",
+    "date": "2025-10-20"
+  },
+  {
     "id": "dylib-001",
     "name": "Spotify",
     "icon": "https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=w240-h480-rw",
