@@ -1,5 +1,21 @@
 [
   {
+    "id": "ipa-1760920224587",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility",
+      "productivity"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-10-2025/TeraBox_4.6.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.6.5",
+    "developer": "cuios.shop",
+    "date": "2025-10-20"
+  },
+  {
     "id": "ipa-1760840252760",
     "type": "ipa",
     "name": "YouTubeMusic",
