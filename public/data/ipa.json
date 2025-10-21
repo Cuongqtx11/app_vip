@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1761026760671",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-10-2025/Truecaller_14.39.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.36.9",
+    "developer": "cuios.shop",
+    "date": "2025-10-21"
+  },
+  {
     "id": "ipa-1760920316755",
     "type": "ipa",
     "name": "MagicTiles3",
