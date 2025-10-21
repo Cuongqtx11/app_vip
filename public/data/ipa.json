@@ -1,5 +1,21 @@
 [
   {
+    "id": "ipa-1761026933440",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "mod một số chức năng \nInjected with Premium",
+    "tags": [
+      "photo",
+      "social"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-10-2025/Instagram_403.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "403.0.0",
+    "developer": "cuios.shop",
+    "date": "2025-10-21"
+  },
+  {
     "id": "ipa-1761026760671",
     "type": "ipa",
     "name": "Truecaller",
