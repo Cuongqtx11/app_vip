@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1761998164409",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "photo"
+    ],
+    "badge": "trending",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-11-2025/Locket_2.20.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.20.0",
+    "developer": "cuios.shop",
+    "date": "2025-11-01"
+  },
+  {
     "id": "ipa-1761026933440",
     "type": "ipa",
     "name": "Instagram",
