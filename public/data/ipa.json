@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1762036739068",
+    "type": "ipa",
+    "name": "Arena of Valor",
+    "icon": "https://play-lh.googleusercontent.com/3Qs6i05oAAUtjzwZCi0AJ9FpxT85w5BWCedIXCrsVKLTGOCcnP2B5yOVoheGSBZpj8z9",
+    "desc": "S4-2025 - Hack Map, hiện hồi chiêu, bỗ trợ,… (không menu)\nantiband chấp tố phang bụi",
+    "tags": [
+      "game"
+    ],
+    "badge": null,
+    "fileLink": "https://www.mediafire.com/file/io7ztmwibe8t69r/Arena+of+Valor_1.60.11504879.ipa/file",
+    "version": "s4",
+    "developer": "",
+    "date": "2025-11-01"
+  },
+  {
     "id": "ipa-1762007264986",
     "type": "ipa",
     "name": "Liên Quân Mobile",
