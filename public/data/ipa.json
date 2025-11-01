@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1762007264986",
+    "type": "ipa",
+    "name": "Liên Quân Mobile",
+    "icon": "https://play-lh.googleusercontent.com/DduNvUMc6rXuH1v9ErjwBcLQ5VUxHNnRK2EVL9odjJ7vGubZZh0_M0VfsBjK-4TsQMg",
+    "desc": "S4 mùa 4 - \nbản menu ae chơi tự trải nghiệm",
+    "tags": [
+      "game"
+    ],
+    "badge": null,
+    "fileLink": "https://www.mediafire.com/file/whxhnqfmkvxmycz/Mapmenufree.ipa/file",
+    "version": "",
+    "developer": "",
+    "date": "2025-11-01"
+  },
+  {
     "id": "ipa-1761998264303",
     "type": "ipa",
     "name": "Youtube",
