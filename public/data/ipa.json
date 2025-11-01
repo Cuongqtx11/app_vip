@@ -1,5 +1,18 @@
 [
   {
+    "id": "ipa-1761998264303",
+    "type": "ipa",
+    "name": "Youtube",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "desc": "Injected with Premium - không quảng cáo - tắt màn nghe nhạc …",
+    "tags": [],
+    "badge": "trending",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-10-2025/YouTubeOLED_20.43.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.43.3",
+    "developer": "cuios.shop",
+    "date": "2025-11-01"
+  },
+  {
     "id": "ipa-1761998164409",
     "type": "ipa",
     "name": "Locket",
