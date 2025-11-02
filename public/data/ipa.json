@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1762125523206",
+    "type": "ipa",
+    "name": "PSExpress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.PSMobile.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": null,
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-09-2025/PSExpress_25.35.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.35.0",
+    "developer": "cuios.shop",
+    "date": "2025-11-02"
+  },
+  {
     "id": "ipa-1762036739068",
     "type": "ipa",
     "name": "Arena of Valor",
