@@ -1,7 +1,6 @@
-// api/sync-ipa.js - Sync thông minh với error handling tốt hơn
+// api/sync-ipa.js - Sync với format đúng từ AppTesters
 
 export default async function handler(req, res) {
-  // Enable CORS for debugging
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -36,7 +35,6 @@ export default async function handler(req, res) {
 
     console.log('✅ Auth passed');
 
-    // Validate environment variables
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
     const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
@@ -46,37 +44,40 @@ export default async function handler(req, res) {
     if (!GITHUB_TOKEN) {
       console.error('❌ GITHUB_TOKEN not found');
       return res.status(500).json({ 
-        error: 'GitHub token not configured. Please set GITHUB_TOKEN in environment variables.' 
+        error: 'GitHub token not configured' 
       });
     }
 
-    console.log('📡 Config:', { GITHUB_OWNER, GITHUB_REPO, FILE_PATH });
+    console.log('📡 Config:', { GITHUB_OWNER, GITHUB_REPO });
 
-    // 1️⃣ Fetch dữ liệu từ AppTesters
+    // 1️⃣ Fetch từ AppTesters
     console.log('📦 Fetching from AppTesters...');
     let allAppTestersData;
     
     try {
-      const appTestersResponse = await fetch(APPTESTER_URL, {
+      const response = await fetch(APPTESTER_URL, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; KhoAppVIP/1.0)'
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'application/json'
         }
       });
       
-      if (!appTestersResponse.ok) {
-        throw new Error(`AppTesters API returned ${appTestersResponse.status}: ${appTestersResponse.statusText}`);
+      if (!response.ok) {
+        throw new Error(`API returned ${response.status}`);
       }
       
-      const rawData = await appTestersResponse.text();
-      allAppTestersData = JSON.parse(rawData);
+      const jsonData = await response.json();
       
-      if (!Array.isArray(allAppTestersData)) {
-        throw new Error('AppTesters data is not an array');
+      // ✅ Lấy array từ key "apps"
+      if (jsonData.apps && Array.isArray(jsonData.apps)) {
+        allAppTestersData = jsonData.apps;
+        console.log(`✅ Found ${allAppTestersData.length} apps in "apps" key`);
+      } else {
+        throw new Error('No "apps" array found in response');
       }
       
-      console.log(`✅ Fetched ${allAppTestersData.length} apps from AppTesters`);
     } catch (fetchError) {
-      console.error('❌ AppTesters fetch error:', fetchError.message);
+      console.error('❌ Fetch error:', fetchError.message);
       return res.status(500).json({ 
         error: 'Failed to fetch from AppTesters', 
         details: fetchError.message 
@@ -97,7 +98,7 @@ export default async function handler(req, res) {
     }
 
     // 2️⃣ Lấy dữ liệu hiện tại từ GitHub
-    console.log('📄 Fetching current data from GitHub...');
+    console.log('📄 Fetching from GitHub...');
     const getFileUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
     
     let currentData = [];
@@ -117,15 +118,14 @@ export default async function handler(req, res) {
         sha = fileData.sha;
         const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
         currentData = JSON.parse(content);
-        console.log(`✅ Current data: ${currentData.length} apps`);
+        console.log(`✅ Current: ${currentData.length} apps`);
       } else if (getResponse.status === 404) {
         console.log('⚠️ File not found, will create new');
       } else {
-        const errorText = await getResponse.text();
-        throw new Error(`GitHub GET failed (${getResponse.status}): ${errorText}`);
+        throw new Error(`GitHub GET failed: ${getResponse.status}`);
       }
     } catch (githubError) {
-      console.error('❌ GitHub GET error:', githubError.message);
+      console.error('❌ GitHub error:', githubError.message);
       return res.status(500).json({ 
         error: 'Failed to fetch from GitHub', 
         details: githubError.message 
@@ -136,8 +136,7 @@ export default async function handler(req, res) {
     const manualApps = currentData.filter(app => app.source === 'manual');
     const existingAutoApps = currentData.filter(app => app.source === 'apptesters');
     
-    console.log(`✋ Manual apps: ${manualApps.length}`);
-    console.log(`🤖 Existing auto apps: ${existingAutoApps.length}`);
+    console.log(`✋ Manual: ${manualApps.length} | 🤖 Auto: ${existingAutoApps.length}`);
 
     // 4️⃣ Convert & Merge
     const newAutoApps = [];
@@ -149,55 +148,50 @@ export default async function handler(req, res) {
         const convertedApp = {
           id: `ipa-${app.bundleID || app.name.replace(/\s+/g, '-').toLowerCase()}`,
           type: 'ipa',
-          name: app.name || 'Unknown',
-          icon: app.iconURL || app.icon || 'https://via.placeholder.com/150',
+          name: app.name,
+          icon: app.iconURL || app.icon,
           desc: app.localizedDescription || 'Injected with Premium',
           tags: autoDetectTags(app.name, app.localizedDescription || ''),
           badge: isRecent(app.versionDate) ? 'new' : null,
-          fileLink: app.downloadURL || app.down || '#',
-          version: app.version || '1.0.0',
-          developer: app.developerName || 'AppTesters',
-          date: app.versionDate || today,
+          fileLink: app.downloadURL || app.down,
+          version: app.version,
+          developer: app.developerName || 'apptesters.org',
+          date: app.versionDate,
           source: 'apptesters',
-          bundleID: app.bundleID || null,
+          bundleID: app.bundleID,
           lastSync: new Date().toISOString()
         };
 
-        const existingApp = existingAutoApps.find(existing => 
-          existing.name === convertedApp.name
-        );
+        const existing = existingAutoApps.find(e => e.name === convertedApp.name);
 
-        if (existingApp) {
-          if (existingApp.version !== convertedApp.version) {
+        if (existing) {
+          if (existing.version !== convertedApp.version) {
             updatedApps.push(convertedApp);
+            console.log(`🔄 Update: ${app.name} (${existing.version} → ${convertedApp.version})`);
           } else {
-            skippedApps.push(existingApp);
+            skippedApps.push(existing);
           }
         } else {
           newAutoApps.push(convertedApp);
+          console.log(`✨ New: ${app.name} v${convertedApp.version}`);
         }
-      } catch (conversionError) {
-        console.error('⚠️ Error converting app:', app.name, conversionError.message);
+      } catch (err) {
+        console.error('⚠️ Convert error:', app.name, err.message);
       }
     });
 
     const finalAutoApps = [...skippedApps, ...updatedApps, ...newAutoApps];
     const mergedData = [...manualApps, ...finalAutoApps];
 
-    console.log(`📊 Summary:
-  - Manual: ${manualApps.length}
-  - New: ${newAutoApps.length}
-  - Updated: ${updatedApps.length}
-  - Skipped: ${skippedApps.length}
-  - Total: ${mergedData.length}`);
+    console.log(`📊 Summary: Manual=${manualApps.length} | New=${newAutoApps.length} | Updated=${updatedApps.length} | Total=${mergedData.length}`);
 
-    // 5️⃣ Upload lên GitHub
+    // 5️⃣ Upload
     console.log('📤 Uploading to GitHub...');
     try {
       const newContent = Buffer.from(JSON.stringify(mergedData, null, 2)).toString('base64');
       
       const updatePayload = {
-        message: `Auto-sync IPA: +${newAutoApps.length} new, ~${updatedApps.length} updated`,
+        message: `Auto-sync: +${newAutoApps.length} new, ~${updatedApps.length} updated`,
         content: newContent,
         branch: 'main'
       };
@@ -219,14 +213,14 @@ export default async function handler(req, res) {
 
       if (!updateResponse.ok) {
         const errorText = await updateResponse.text();
-        throw new Error(`GitHub PUT failed (${updateResponse.status}): ${errorText}`);
+        throw new Error(`PUT failed: ${errorText}`);
       }
 
       console.log('✅ Upload successful!');
     } catch (uploadError) {
-      console.error('❌ GitHub upload error:', uploadError.message);
+      console.error('❌ Upload error:', uploadError.message);
       return res.status(500).json({ 
-        error: 'Failed to upload to GitHub', 
+        error: 'Failed to upload', 
         details: uploadError.message 
       });
     }
@@ -250,8 +244,7 @@ export default async function handler(req, res) {
     console.error('💥 CRITICAL ERROR:', error);
     return res.status(500).json({ 
       error: 'Internal server error', 
-      details: error.message,
-      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+      details: error.message
     });
   }
 }
@@ -262,12 +255,12 @@ function autoDetectTags(name, desc) {
   const text = `${name} ${desc}`.toLowerCase();
   
   const tagKeywords = {
-    game: ['game', 'play', 'clash', 'minecraft', 'mario', 'puzzle', 'racing'],
-    photo: ['photo', 'camera', 'snap', 'pic', 'remini', 'lightroom', 'vsco'],
-    music: ['music', 'spotify', 'sound', 'audio', 'piano', 'tune'],
-    social: ['social', 'messenger', 'chat', 'instagram', 'facebook', 'telegram'],
-    utility: ['utility', 'tool', 'scanner', 'calculator', 'vpn', 'truecaller'],
-    productivity: ['productivity', 'note', 'docs', 'edit', 'office']
+    game: ['game', 'play', 'clash', 'minecraft', 'mario', 'puzzle', 'racing', 'arcade'],
+    photo: ['photo', 'camera', 'snap', 'pic', 'remini', 'lightroom', 'vsco', 'filter'],
+    music: ['music', 'spotify', 'sound', 'audio', 'piano', 'tune', 'song'],
+    social: ['social', 'messenger', 'chat', 'instagram', 'facebook', 'telegram', 'tiktok'],
+    utility: ['utility', 'tool', 'scanner', 'calculator', 'vpn', 'truecaller', 'cleaner'],
+    productivity: ['productivity', 'note', 'docs', 'edit', 'office', 'pdf', 'scanner']
   };
   
   for (const [tag, keywords] of Object.entries(tagKeywords)) {
