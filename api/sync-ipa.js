@@ -201,9 +201,9 @@ export default async function handler(req, res) {
     // 🔒 MERGE: GIỮ NGUYÊN TẤT CẢ + THÊM MỚI
     const finalAutoApps = [...skippedApps, ...updatedApps, ...newAutoApps];
     const mergedData = [
-      ...otherApps,     // 🔒 Apps cũ không có source
+      ...finalAutoApps,     // 🤖 Auto apps (cũ + mới)
       ...manualApps,    // 🔒 Manual apps
-      ...finalAutoApps  // 🤖 Auto apps (cũ + mới)
+      ...otherApps  // 🔒 Apps cũ không có source
     ];
 
     console.log(`📊 Summary:
