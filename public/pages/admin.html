@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Upload</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body {
+      padding: 20px;
+      background: none;
+      color: var(--text-light);
+      height: auto;
+      display: block;
+      overflow-y: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--text-light);
+      font-size: 1.8em;
+    }
+    .login-box, .form-box {
+      max-width: 600px;
+      margin: 20px auto;
+      background: var(--card-bg-light);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px var(--card-shadow-light);
+      transition: var(--transition);
+    }
+    .form-box {
+      display: none;
+    }
+    body.dark .login-box, body.dark .form-box {
+        background: var(--card-bg-dark);
+        box-shadow: 0 8px 25px var(--card-shadow-dark);
+    }
+    
+    /* 🆕 AUTO-SYNC SECTION */
+    .sync-section {
+      background: rgba(26, 188, 156, 0.05);
+      border: 2px solid var(--primary);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    body.dark .sync-section {
+      background: rgba(26, 188, 156, 0.1);
+      border-color: var(--primary);
+    }
+    
+    .sync-section h2 {
+      color: var(--primary);
+      font-size: 1.3em;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .sync-btn {
+      background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+      color: white;
+      padding: 14px 30px;
+      font-size: 1.1em;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .sync-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(26, 188, 156, 0.5);
+    }
+    
+    .sync-btn:active {
+      transform: translateY(0);
+    }
+    
+    .sync-btn:disabled {
+      background: #95a5a6;
+      cursor: not-allowed;
+      opacity: 0.6;
+      transform: none;
+    }
+    
+    .sync-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .stat-box {
+      background: var(--card-bg-light);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    body.dark .stat-box {
+      background: var(--card-bg-dark);
+    }
+    
+    .stat-box h3 {
+      font-size: 2em;
+      color: var(--primary);
+      margin: 0;
+    }
+    
+    .stat-box p {
+      font-size: 0.9em;
+      color: var(--text-light);
+      margin: 5px 0 0 0;
+    }
+    body.dark .stat-box p {
+      color: var(--text-dark);
+    }
+    
+    /* Rest of existing styles... */
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      color: var(--text-light);
+      font-size: 0.95em;
+    }
+    body.dark label {
+      color: var(--text-dark);
+    }
+    input, textarea, select {
+      width: calc(100% - 20px);
+      padding: 12px 10px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: 2px solid var(--border-light);
+      font-size: 0.95em;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--text-light);
+      transition: var(--transition);
+      font-family: inherit;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.1);
+    }
+    input::placeholder, textarea::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    body.dark input, body.dark textarea, body.dark select {
+        background: rgba(30, 30, 30, 0.9);
+        border-color: var(--border-dark);
+        color: var(--text-dark);
+    }
+    body.dark input::placeholder, body.dark textarea::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+    }
+    button {
+      margin-top: 20px;
+      background: #3498db;
+      color: white;
+      padding: 14px 20px;
+      font-size: 1em;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: var(--transition);
+      width: 100%;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .logout-btn {
+      background: #e74c3c;
+      margin-top: 10px;
+    }
+    .logout-btn:hover {
+      background: #c0392b;
+    }
+    .status-message {
+      margin-top: 15px;
+      padding: 12px 15px;
+      border-radius: 10px;
+      text-align: center;
+      display: none;
+      font-weight: 500;
+    }
+    .status-message.success {
+      background: rgba(46, 204, 113, 0.2);
+      color: #27ae60;
+      border: 1px solid #27ae60;
+    }
+    .status-message.error {
+      background: rgba(231, 76, 60, 0.2);
+      color: #e74c3c;
+      border: 1px solid #e74c3c;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .tag-input-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .tag-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: rgba(26, 188, 156, 0.1);
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .tag-checkbox:hover {
+      background: rgba(26, 188, 156, 0.2);
+    }
+    .tag-checkbox input {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    .tag-checkbox input:focus {
+      box-shadow: none;
+    }
+    .tag-checkbox label {
+      margin: 0;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--primary);
+      font-size: 0.9em;
+    }
+    .badge-select {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .badge-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: rgba(100, 100, 100, 0.1);
+      border: 1px solid rgba(100, 100, 100, 0.3);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .badge-option input {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    .badge-option input:focus {
+      box-shadow: none;
+    }
+    .badge-option label {
+      margin: 0;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    .form-section-title {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 20px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .spinner {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 0.8s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box" id="loginBox">
+    <h1>🔐 Admin Đăng Nhập</h1>
+    <label for="password">Mật khẩu:</label>
+    <input type="password" id="password" placeholder="Nhập mật khẩu admin..." />
+    <button onclick="checkPassword()">Đăng nhập</button>
+    <div class="status-message" id="loginStatus"></div>
+  </div>
+
+  <div class="form-box" id="uploadForm">
+    <h1>🛠️ Admin Dashboard</h1>
+
+    <!-- 🆕 AUTO-SYNC SECTION -->
+    <div class="sync-section">
+      <h2>
+        🔄 Auto-Sync IPA từ AppTesters
+      </h2>
+      <p style="color: var(--text-light); margin: 10px 0;">
+        <strong>Sync hàng ngày tự động lúc 9:00 AM</strong><br>
+        Hoặc bấm nút bên dưới để sync ngay (chỉ lấy IPA hôm nay)
+      </p>
+      <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+        <button class="sync-btn" id="syncBtn" onclick="syncIPA(false)">
+          <span id="syncBtnIcon">🔄</span>
+          <span id="syncBtnText">Sync Hôm Nay</span>
+        </button>
+        <button class="sync-btn" id="forceSyncBtn" onclick="syncIPA(true)" 
+                style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+          <span id="forceSyncBtnIcon">⚠️</span>
+          <span id="forceSyncBtnText">Force Full Sync</span>
+        </button>
+      </div>
+      <p style="color: #e74c3c; font-size: 0.85em; margin-top: 10px;">
+        ⚠️ Force Full Sync sẽ xử lý toàn bộ dữ liệu, chỉ dùng khi cần thiết
+      </p>
+      
+      <div class="sync-stats" id="syncStats" style="display: none;">
+        <div class="stat-box">
+          <h3 id="statManual">-</h3>
+          <p>Thủ công</p>
+        </div>
+        <div class="stat-box">
+          <h3 id="statAuto">-</h3>
+          <p>Tự động</p>
+        </div>
+        <div class="stat-box">
+          <h3 id="statTotal">-</h3>
+          <p>Tổng cộng</p>
+        </div>
+        <div class="stat-box">
+          <h3 id="statSynced">-</h3>
+          <p>Mới sync</p>
+        </div>
+      </div>
+      
+      <div class="status-message" id="syncStatus"></div>
+    </div>
+
+    <!-- UPLOAD MANUAL SECTION (GIỮ NGUYÊN) -->
+    <div class="form-section-title">📤 Upload Thủ Công</div>
+
+    <div class="form-group">
+      <label for="select-type">📁 Chọn loại upload:</label>
+      <select id="select-type">
+        <option value="ipa">IPA</option>
+        <option value="dylib">Dylib</option>
+        <option value="conf">Conf</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="input-name">📛 Tên ứng dụng:</label>
+      <input type="text" id="input-name" placeholder="VD: Instagram Pro..." />
+    </div>
+
+    <div class="form-group">
+      <label for="input-icon">🖼️ Link Icon:</label>
+      <input type="text" id="input-icon" placeholder="https://..." />
+    </div>
+
+    <div class="form-group">
+      <label for="input-file" id="label-file">📥 Link tải file:</label>
+      <input type="text" id="input-file" placeholder="https://..." />
+    </div>
+
+    <div class="form-group">
+      <label for="input-desc">📝 Mô tả:</label>
+      <textarea id="input-desc" rows="4" placeholder="Nhập mô tả..."></textarea>
+    </div>
+
+    <div class="form-group" id="usage-group" style="display: none;">
+      <label for="input-usage">📋 Hướng dẫn sử dụng:</label>
+      <textarea id="input-usage" rows="4" placeholder="Nhập hướng dẫn..."></textarea>
+    </div>
+
+    <div class="form-section-title">🏷️ Danh mục & Thẻ</div>
+    <div class="form-group">
+      <label>Chọn danh mục:</label>
+      <div class="tag-input-group">
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-game" value="game">
+          <label for="tag-game">🎮 Game</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-photo" value="photo">
+          <label for="tag-photo">📸 Photo</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-utility" value="utility">
+          <label for="tag-utility">🔧 Utility</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-vpn" value="vpn">
+          <label for="tag-vpn">🛡️ VPN</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-social" value="social">
+          <label for="tag-social">💬 Social</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-music" value="music">
+          <label for="tag-music">🎵 Music</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-productivity" value="productivity">
+          <label for="tag-productivity">⚡ Prod</label>
+        </div>
+        <div class="tag-checkbox">
+          <input type="checkbox" id="tag-tools" value="tools">
+          <label for="tag-tools">🛠️ Tools</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section-title">⭐ Nhãn Ứng Dụng</div>
+    <div class="form-group">
+      <label>Chọn nhãn (tối đa 1):</label>
+      <div class="badge-select">
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-none" value="none" checked>
+          <label for="badge-none">Không</label>
+        </div>
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-new" value="new">
+          <label for="badge-new">🆕 Mới</label>
+        </div>
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-trending" value="trending">
+          <label for="badge-trending">🔥 Hot</label>
+        </div>
+        <div class="badge-option">
+          <input type="radio" name="badge" id="badge-top" value="top">
+          <label for="badge-top">⭐ Top</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section-title">ℹ️ Thông tin bổ sung</div>
+    <div class="form-group">
+      <label for="input-version" id="label-version">Phiên bản:</label>
+      <input type="text" id="input-version" placeholder="VD: 1.0.0..." />
+    </div>
+
+    <div class="form-group">
+      <label for="input-developer" id="label-developer">Nhà phát triển:</label>
+      <input type="text" id="input-developer" placeholder="VD: Cuios..." />
+    </div>
+
+    <button onclick="uploadApp()">📤 Upload</button>
+    <button class="logout-btn" onclick="logout()">🚪 Đăng xuất</button>
+    <div class="status-message" id="uploadStatus"></div>
+  </div>
+
+  <script>
+    let authToken = null;
+    const loginBox = document.getElementById('loginBox');
+    const uploadForm = document.getElementById('uploadForm');
+    const loginStatus = document.getElementById('loginStatus');
+    const uploadStatus = document.getElementById('uploadStatus');
+
+    // ==================== AUTH LOGIC (GIỮ NGUYÊN) ====================
+    async function checkExistingAuth() {
+      try {
+        const response = await fetch('/api/auth/verify', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ token: '' })
+        });
+        
+        const result = await response.json();
+        if (result.success) {
+          showUploadForm();
+        }
+      } catch (error) {
+        console.log('No existing auth session');
+      }
+    }
+
+    checkExistingAuth();
+
+    async function checkPassword() {
+      const password = document.getElementById('password').value;
+      
+      if (!password) {
+        showLoginStatus('error', '⚠️ Vui lòng nhập mật khẩu!');
+        return;
+      }
+
+      try {
+        const response = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ password })
+        });
+
+        const result = await response.json();
+        
+        if (response.ok) {
+          authToken = result.token;
+          showLoginStatus('success', '✅ Đăng nhập thành công!');
+          
+          setTimeout(() => {
+            loginStatus.style.display = 'none';
+            showUploadForm();
+          }, 2000);
+          
+        } else {
+          showLoginStatus('error', '❌ ' + (result.error || 'Đăng nhập thất bại'));
+        }
+      } catch (error) {
+        showLoginStatus('error', '❌ Lỗi kết nối: ' + error.message);
+      }
+    }
+
+    function showLoginStatus(type, message) {
+      loginStatus.className = `status-message ${type}`;
+      loginStatus.textContent = message;
+      loginStatus.style.display = 'block';
+      
+      if (type === 'error') {
+        setTimeout(() => {
+          loginStatus.style.display = 'none';
+        }, 5000);
+      }
+    }
+
+    function showUploadForm() {
+      loginBox.style.display = 'none';
+      uploadForm.style.display = 'block';
+    }
+
+    function logout() {
+      authToken = null;
+      document.cookie = "admin_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      loginBox.style.display = 'block';
+      uploadForm.style.display = 'none';
+      document.getElementById('password').value = '';
+      showUploadStatus('success', '🚪 Đã đăng xuất!');
+      setTimeout(() => {
+        uploadStatus.style.display = 'none';
+      }, 3000);
+    }
+
+    // ==================== 🆕 AUTO-SYNC LOGIC ====================
+    async function syncIPA() {
+      const syncBtn = document.getElementById('syncBtn');
+      const syncBtnIcon = document.getElementById('syncBtnIcon');
+      const syncBtnText = document.getElementById('syncBtnText');
+      const syncStatusEl = document.getElementById('syncStatus');
+      const syncStats = document.getElementById('syncStats');
+      
+      // Disable button
+      syncBtn.disabled = true;
+      syncBtnIcon.innerHTML = '<span class="spinner"></span>';
+      syncBtnText.textContent = 'Đang sync...';
+      
+      try {
+        const response = await fetch('/api/sync-ipa', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        });
+
+        const result = await response.json();
+        
+        if (response.ok) {
+          showSyncStatus('success', `✅ Sync thành công! Đã thêm ${result.stats.synced} app mới`);
+          
+          // Hiển thị stats
+          syncStats.style.display = 'grid';
+          document.getElementById('statManual').textContent = result.stats.manual;
+          document.getElementById('statAuto').textContent = result.stats.auto;
+          document.getElementById('statTotal').textContent = result.stats.total;
+          document.getElementById('statSynced').textContent = '+' + result.stats.synced;
+          
+        } else {
+          if (result.code === 'NO_AUTH_COOKIE') {
+            showSyncStatus('error', '❌ Phiên đăng nhập hết hạn. Vui lòng đăng nhập lại.');
+            logout();
+          } else {
+            showSyncStatus('error', `❌ Lỗi: ${result.error || 'Không thể sync'}`);
+          }
+        }
+      } catch (error) {
+        showSyncStatus('error', `❌ Lỗi kết nối: ${error.message}`);
+      } finally {
+        // Re-enable button
+        syncBtn.disabled = false;
+        syncBtnIcon.textContent = '🔄';
+        syncBtnText.textContent = 'Sync Ngay';
+      }
+    }
+
+    function showSyncStatus(type, message) {
+      const syncStatusEl = document.getElementById('syncStatus');
+      syncStatusEl.className = `status-message ${type}`;
+      syncStatusEl.textContent = message;
+      syncStatusEl.style.display = 'block';
+      
+      setTimeout(() => {
+        syncStatusEl.style.display = 'none';
+      }, 7000);
+    }
+
+    // ==================== UPLOAD LOGIC (GIỮ NGUYÊN) ====================
+    const selectType = document.getElementById('select-type');
+    const usageGroup = document.getElementById('usage-group');
+    const inputVersion = document.getElementById('input-version');
+    const labelVersion = document.getElementById('label-version');
+    const inputDeveloper = document.getElementById('input-developer');
+    const labelDeveloper = document.getElementById('label-developer');
+
+    function adjustFormFields() {
+        const type = selectType.value;
+        if (type === 'conf') {
+            document.getElementById('label-file').textContent = '🔗 Link Conf:';
+            usageGroup.style.display = 'block';
+            inputVersion.style.display = 'none';
+            labelVersion.style.display = 'none';
+            inputDeveloper.style.display = 'none';
+            labelDeveloper.style.display = 'none';
+        } else {
+            document.getElementById('label-file').textContent = '📥 Link tải file:';
+            usageGroup.style.display = 'none';
+            inputVersion.style.display = 'block';
+            labelVersion.style.display = 'block';
+            inputDeveloper.style.display = 'block';
+            labelDeveloper.style.display = 'block';
+        }
+    }
+
+    selectType.addEventListener('change', adjustFormFields);
+    adjustFormFields();
+
+    window.addEventListener('message', (event) => {
+        if (event.data.type === 'themeChange') {
+            document.body.classList.toggle('dark', event.data.theme === 'dark');
+        }
+    });
+
+    const savedTheme = sessionStorage.getItem('theme');
+    if (savedTheme === 'dark') document.body.classList.add('dark');
+
+    async function uploadApp() {
+      const type = selectType.value;
+      const name = document.getElementById('input-name').value.trim();
+      const icon = document.getElementById('input-icon').value.trim();
+      const desc = document.getElementById('input-desc').value.trim();
+
+      if (!name || !icon || !desc) {
+        showUploadStatus('error', '⚠️ Vui lòng điền đầy đủ thông tin!');
+        return;
+      }
+
+      const tags = [];
+      document.querySelectorAll('.tag-input-group input[type="checkbox"]:checked').forEach(tag => {
+        tags.push(tag.value);
+      });
+
+      const badge = document.querySelector('input[name="badge"]:checked').value;
+
+      let appData = {
+          id: `${type}-${Date.now()}`,
+          type: type,
+          name: name,
+          icon: icon,
+          desc: desc,
+          tags: tags,
+          badge: badge !== 'none' ? badge : null,
+          source: 'manual' // 🏷️ Đánh dấu nguồn manual
+      };
+
+      if (type === 'conf') {
+          const link = document.getElementById('input-file').value.trim();
+          const usage = document.getElementById('input-usage').value.trim();
+          if (!link || !usage) {
+              showUploadStatus('error', '⚠️ Vui lòng điền link và hướng dẫn sử dụng!');
+              return;
+          }
+          appData.link = link;
+          appData.usage = usage;
+      } else {
+          const fileLink = document.getElementById('input-file').value.trim();
+          const version = document.getElementById('input-version').value.trim();
+          const developer = document.getElementById('input-developer').value.trim();
+          const date = new Date().toISOString().split('T')[0];
+          if (!fileLink) {
+              showUploadStatus('error', '⚠️ Vui lòng điền link tải file!');
+              return;
+          }
+          appData.fileLink = fileLink;
+          appData.version = version;
+          appData.developer = developer;
+          appData.date = date;
+      }
+
+      try {
+        showUploadStatus('success', '⏳ Đang upload...');
+        
+        const response = await fetch('/api/upload', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ type, data: appData })
+        });
+
+        const result = await response.json();
+        
+        if (response.ok) {
+          showUploadStatus('success', `✅ Upload thành công! Đang chuyển về trang chủ...`);
+          clearForm();
+          
+          setTimeout(() => {
+            if (window.top && window.top.document) {
+              const homeLink = window.top.document.querySelector('.bottom-nav a[href*="home.html"]');
+              if (homeLink) {
+                homeLink.click();
+              }
+            }
+          }, 2000);
+          
+        } else {
+          if (result.code === 'NO_AUTH_COOKIE') {
+            showUploadStatus('error', '❌ Phiên đăng nhập hết hạn. Vui lòng đăng nhập lại.');
+            logout();
+          } else {
+            showUploadStatus('error', `❌ Lỗi: ${result.error || 'Không thể upload'}`);
+          }
+        }
+      } catch (error) {
+        showUploadStatus('error', `❌ Lỗi kết nối: ${error.message}`);
+      }
+    }
+
+    function showUploadStatus(type, message) {
+      uploadStatus.className = `status-message ${type}`;
+      uploadStatus.textContent = message;
+      uploadStatus.style.display = 'block';
+      
+      if (type === 'success') {
+        setTimeout(() => {
+          uploadStatus.style.display = 'none';
+        }, 5000);
+      } else if (type === 'error') {
+        setTimeout(() => {
+          uploadStatus.style.display = 'none';
+        }, 7000);
+      }
+    }
+
+    function clearForm() {
+      document.getElementById('input-name').value = '';
+      document.getElementById('input-icon').value = '';
+      document.getElementById('input-file').value = '';
+      document.getElementById('input-desc').value = '';
+      document.getElementById('input-usage').value = '';
+      document.getElementById('input-version').value = '';
+      document.getElementById('input-developer').value = '';
+      document.querySelectorAll('.tag-input-group input').forEach(tag => tag.checked = false);
+      document.getElementById('badge-none').checked = true;
+    }
+  </script>
+
+</body>
+</html>
