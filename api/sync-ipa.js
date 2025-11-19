@@ -1,14 +1,25 @@
-// api/sync-ipa.js - Sync thông minh chỉ IPA ngày hiện tại
+// api/sync-ipa.js - Sync thông minh với error handling tốt hơn
 
 export default async function handler(req, res) {
+  // Enable CORS for debugging
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  try {
-    const { forceFullSync } = req.body; // Cho phép sync toàn bộ khi cần
+  console.log('🔄 Sync started at:', new Date().toISOString());
 
-    // 🔐 AUTH CHECK (Bypass cho cron job)
+  try {
+    const { forceFullSync } = req.body || {};
+
+    // 🔐 AUTH CHECK
     const isCronJob = req.headers.cookie && req.headers.cookie.includes('admin_token=cron_job_authorized');
     const hasAuthCookie = req.headers.cookie && (
       req.headers.cookie.includes('admin_token') || 
@@ -16,12 +27,16 @@ export default async function handler(req, res) {
     );
     
     if (!hasAuthCookie && !isCronJob) {
+      console.log('⚠️ Auth failed');
       return res.status(401).json({ 
         error: 'Unauthorized',
         code: 'NO_AUTH_COOKIE'
       });
     }
 
+    console.log('✅ Auth passed');
+
+    // Validate environment variables
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
     const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
@@ -29,159 +44,193 @@ export default async function handler(req, res) {
     const APPTESTER_URL = 'https://repository.apptesters.org/';
 
     if (!GITHUB_TOKEN) {
-      return res.status(500).json({ error: 'GitHub token not configured' });
+      console.error('❌ GITHUB_TOKEN not found');
+      return res.status(500).json({ 
+        error: 'GitHub token not configured. Please set GITHUB_TOKEN in environment variables.' 
+      });
     }
 
-    console.log('🔄 Starting smart sync...');
+    console.log('📡 Config:', { GITHUB_OWNER, GITHUB_REPO, FILE_PATH });
 
-    // 1️⃣ Fetch toàn bộ dữ liệu từ AppTesters
-    const appTestersResponse = await fetch(APPTESTER_URL);
-    if (!appTestersResponse.ok) {
-      throw new Error('Failed to fetch AppTesters data');
-    }
+    // 1️⃣ Fetch dữ liệu từ AppTesters
+    console.log('📦 Fetching from AppTesters...');
+    let allAppTestersData;
     
-    const allAppTestersData = await appTestersResponse.json();
-    console.log(`📦 Total apps from AppTesters: ${allAppTestersData.length}`);
+    try {
+      const appTestersResponse = await fetch(APPTESTER_URL, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; KhoAppVIP/1.0)'
+        }
+      });
+      
+      if (!appTestersResponse.ok) {
+        throw new Error(`AppTesters API returned ${appTestersResponse.status}: ${appTestersResponse.statusText}`);
+      }
+      
+      const rawData = await appTestersResponse.text();
+      allAppTestersData = JSON.parse(rawData);
+      
+      if (!Array.isArray(allAppTestersData)) {
+        throw new Error('AppTesters data is not an array');
+      }
+      
+      console.log(`✅ Fetched ${allAppTestersData.length} apps from AppTesters`);
+    } catch (fetchError) {
+      console.error('❌ AppTesters fetch error:', fetchError.message);
+      return res.status(500).json({ 
+        error: 'Failed to fetch from AppTesters', 
+        details: fetchError.message 
+      });
+    }
 
-    // 🎯 LỌC CHỈ LẤY IPA NGÀY HÔM NAY (trừ khi forceFullSync)
-    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+    // 🎯 Lọc theo ngày
+    const today = new Date().toISOString().split('T')[0];
     let filteredApps = allAppTestersData;
     
     if (!forceFullSync) {
       filteredApps = allAppTestersData.filter(app => {
         return app.versionDate && app.versionDate.startsWith(today);
       });
-      console.log(`📅 Apps released today (${today}): ${filteredApps.length}`);
+      console.log(`📅 Apps today (${today}): ${filteredApps.length}`);
     } else {
-      console.log('⚠️ FORCE FULL SYNC MODE - Processing all apps');
+      console.log('⚠️ FORCE FULL SYNC MODE');
     }
 
     // 2️⃣ Lấy dữ liệu hiện tại từ GitHub
+    console.log('📄 Fetching current data from GitHub...');
     const getFileUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
     
-    const getResponse = await fetch(getFileUrl, {
-      headers: {
-        'Authorization': `token ${GITHUB_TOKEN}`,
-        'Accept': 'application/vnd.github.v3+json'
-      }
-    });
-
     let currentData = [];
     let sha = null;
 
-    if (getResponse.ok) {
-      const fileData = await getResponse.json();
-      sha = fileData.sha;
-      const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
-      currentData = JSON.parse(content);
-      console.log(`📄 Current data: ${currentData.length} apps`);
+    try {
+      const getResponse = await fetch(getFileUrl, {
+        headers: {
+          'Authorization': `token ${GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'User-Agent': 'KhoAppVIP'
+        }
+      });
+
+      if (getResponse.ok) {
+        const fileData = await getResponse.json();
+        sha = fileData.sha;
+        const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
+        currentData = JSON.parse(content);
+        console.log(`✅ Current data: ${currentData.length} apps`);
+      } else if (getResponse.status === 404) {
+        console.log('⚠️ File not found, will create new');
+      } else {
+        const errorText = await getResponse.text();
+        throw new Error(`GitHub GET failed (${getResponse.status}): ${errorText}`);
+      }
+    } catch (githubError) {
+      console.error('❌ GitHub GET error:', githubError.message);
+      return res.status(500).json({ 
+        error: 'Failed to fetch from GitHub', 
+        details: githubError.message 
+      });
     }
 
-    // 3️⃣ Phân loại: Manual apps (giữ nguyên 100%)
+    // 3️⃣ Phân loại
     const manualApps = currentData.filter(app => app.source === 'manual');
     const existingAutoApps = currentData.filter(app => app.source === 'apptesters');
     
-    console.log(`✋ Manual apps (keep): ${manualApps.length}`);
+    console.log(`✋ Manual apps: ${manualApps.length}`);
     console.log(`🤖 Existing auto apps: ${existingAutoApps.length}`);
 
-    // 4️⃣ Convert & Merge thông minh
+    // 4️⃣ Convert & Merge
     const newAutoApps = [];
     const updatedApps = [];
     const skippedApps = [];
 
     filteredApps.forEach(app => {
-      const convertedApp = {
-        id: `ipa-${app.bundleID}`,
-        type: 'ipa',
-        name: app.name,
-        icon: app.iconURL || app.icon,
-        desc: app.localizedDescription || 'Injected with Premium',
-        tags: autoDetectTags(app.name, app.localizedDescription),
-        badge: isRecent(app.versionDate) ? 'new' : null,
-        fileLink: app.downloadURL || app.down,
-        version: app.version,
-        developer: app.developerName || 'AppTesters',
-        date: app.versionDate,
-        source: 'apptesters',
-        bundleID: app.bundleID,
-        lastSync: new Date().toISOString()
-      };
+      try {
+        const convertedApp = {
+          id: `ipa-${app.bundleID || app.name.replace(/\s+/g, '-').toLowerCase()}`,
+          type: 'ipa',
+          name: app.name || 'Unknown',
+          icon: app.iconURL || app.icon || 'https://via.placeholder.com/150',
+          desc: app.localizedDescription || 'Injected with Premium',
+          tags: autoDetectTags(app.name, app.localizedDescription || ''),
+          badge: isRecent(app.versionDate) ? 'new' : null,
+          fileLink: app.downloadURL || app.down || '#',
+          version: app.version || '1.0.0',
+          developer: app.developerName || 'AppTesters',
+          date: app.versionDate || today,
+          source: 'apptesters',
+          bundleID: app.bundleID || null,
+          lastSync: new Date().toISOString()
+        };
 
-      // 🔍 Kiểm tra trùng lặp: Tên + Version
-      const existingApp = existingAutoApps.find(existing => 
-        existing.name === convertedApp.name
-      );
+        const existingApp = existingAutoApps.find(existing => 
+          existing.name === convertedApp.name
+        );
 
-      if (existingApp) {
-        // Nếu version khác → cập nhật
-        if (existingApp.version !== convertedApp.version) {
-          updatedApps.push(convertedApp);
-          console.log(`🔄 Update: ${app.name} (${existingApp.version} → ${convertedApp.version})`);
+        if (existingApp) {
+          if (existingApp.version !== convertedApp.version) {
+            updatedApps.push(convertedApp);
+          } else {
+            skippedApps.push(existingApp);
+          }
         } else {
-          // Version giống → giữ nguyên
-          skippedApps.push(existingApp);
+          newAutoApps.push(convertedApp);
         }
-      } else {
-        // App mới hoàn toàn
-        newAutoApps.push(convertedApp);
-        console.log(`✨ New: ${app.name} v${convertedApp.version}`);
+      } catch (conversionError) {
+        console.error('⚠️ Error converting app:', app.name, conversionError.message);
       }
     });
 
-    // 5️⃣ Gộp dữ liệu cuối cùng
-    const finalAutoApps = [
-      ...skippedApps,   // Apps cũ không thay đổi
-      ...updatedApps,   // Apps được cập nhật version mới
-      ...newAutoApps    // Apps hoàn toàn mới
-    ];
+    const finalAutoApps = [...skippedApps, ...updatedApps, ...newAutoApps];
+    const mergedData = [...manualApps, ...finalAutoApps];
 
-    const mergedData = [
-      ...manualApps,      // Manual apps luôn ở đầu
-      ...finalAutoApps    // Auto apps
-    ];
-
-    console.log(`
-📊 SYNC SUMMARY:
-  - Manual (kept): ${manualApps.length}
-  - New apps: ${newAutoApps.length}
+    console.log(`📊 Summary:
+  - Manual: ${manualApps.length}
+  - New: ${newAutoApps.length}
   - Updated: ${updatedApps.length}
-  - Skipped (unchanged): ${skippedApps.length}
-  - Total: ${mergedData.length}
-    `);
+  - Skipped: ${skippedApps.length}
+  - Total: ${mergedData.length}`);
 
-    // 6️⃣ Upload lên GitHub
-    const newContent = Buffer.from(JSON.stringify(mergedData, null, 2)).toString('base64');
-    
-    const updatePayload = {
-      message: `Auto-sync IPA: +${newAutoApps.length} new, ~${updatedApps.length} updated`,
-      content: newContent,
-      branch: 'main'
-    };
+    // 5️⃣ Upload lên GitHub
+    console.log('📤 Uploading to GitHub...');
+    try {
+      const newContent = Buffer.from(JSON.stringify(mergedData, null, 2)).toString('base64');
+      
+      const updatePayload = {
+        message: `Auto-sync IPA: +${newAutoApps.length} new, ~${updatedApps.length} updated`,
+        content: newContent,
+        branch: 'main'
+      };
 
-    if (sha) {
-      updatePayload.sha = sha;
-    }
+      if (sha) {
+        updatePayload.sha = sha;
+      }
 
-    const updateResponse = await fetch(getFileUrl, {
-      method: 'PUT',
-      headers: {
-        'Authorization': `token ${GITHUB_TOKEN}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(updatePayload)
-    });
+      const updateResponse = await fetch(getFileUrl, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+          'User-Agent': 'KhoAppVIP'
+        },
+        body: JSON.stringify(updatePayload)
+      });
 
-    if (!updateResponse.ok) {
-      const errorText = await updateResponse.text();
-      console.error('❌ GitHub upload error:', errorText);
+      if (!updateResponse.ok) {
+        const errorText = await updateResponse.text();
+        throw new Error(`GitHub PUT failed (${updateResponse.status}): ${errorText}`);
+      }
+
+      console.log('✅ Upload successful!');
+    } catch (uploadError) {
+      console.error('❌ GitHub upload error:', uploadError.message);
       return res.status(500).json({ 
-        error: 'Failed to update GitHub', 
-        details: errorText 
+        error: 'Failed to upload to GitHub', 
+        details: uploadError.message 
       });
     }
 
-    console.log('✅ Auto-sync completed!');
     return res.status(200).json({ 
       success: true,
       message: newAutoApps.length > 0 
@@ -198,15 +247,16 @@ export default async function handler(req, res) {
     });
 
   } catch (error) {
-    console.error('💥 Sync error:', error);
+    console.error('💥 CRITICAL ERROR:', error);
     return res.status(500).json({ 
       error: 'Internal server error', 
-      details: error.message 
+      details: error.message,
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }
 
-// 🏷️ Helper: Tự động phát hiện tags
+// Helper functions
 function autoDetectTags(name, desc) {
   const tags = [];
   const text = `${name} ${desc}`.toLowerCase();
@@ -229,14 +279,17 @@ function autoDetectTags(name, desc) {
   return tags.length > 0 ? tags : ['utility'];
 }
 
-// 🆕 Helper: Kiểm tra app mới (7 ngày)
 function isRecent(versionDate) {
   if (!versionDate) return false;
   
-  const appDate = new Date(versionDate);
-  const now = new Date();
-  const diffTime = Math.abs(now - appDate);
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  
-  return diffDays <= 7;
+  try {
+    const appDate = new Date(versionDate);
+    const now = new Date();
+    const diffTime = Math.abs(now - appDate);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+    return diffDays <= 7;
+  } catch {
+    return false;
+  }
 }
