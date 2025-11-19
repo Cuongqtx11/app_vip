@@ -1142,5 +1142,204 @@
     "source": "apptesters",
     "bundleID": "digital.euforia",
     "lastSync": "2025-11-19T03:54:51.352Z"
+  },
+  {
+    "id": "ipa-com.sfun.snapedit",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo",
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/SnapEdit_6.2.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2025-11-19T07:55:18.157Z"
+  },
+  {
+    "id": "ipa-com.kinemaster.kios",
+    "type": "ipa",
+    "name": "KineMaster",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/KineMaster_8.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.kinemaster.kios",
+    "lastSync": "2025-11-19T07:55:18.157Z"
+  },
+  {
+    "id": "ipa-com.templyvideo.Temply",
+    "type": "ipa",
+    "name": "Temply",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.templyvideo.Temply.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/Temply_8.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.3.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.templyvideo.Temply",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-app.renovateai",
+    "type": "ipa",
+    "name": "RenovateAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.renovateai.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/RenovateAI_4.4.66_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.4.66",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "app.renovateai",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-com.vyro.Imagine",
+    "type": "ipa",
+    "name": "ImagineArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vyro.Imagine.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/ImagineArt_3.1.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.3",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.vyro.Imagine",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-com.iptv.player",
+    "type": "ipa",
+    "name": "IPTVExpert",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iptv.player.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/IPTVExpert_9.1.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.1.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.iptv.player",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-com.rickharrison.narwhal",
+    "type": "ipa",
+    "name": "Narwhal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.rickharrison.narwhal.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/Narwhal_2025.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.rickharrison.narwhal",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-org.borrowedcache.ultimate531",
+    "type": "ipa",
+    "name": "KeyLifts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/KeyLifts_5.16.14_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.16.14",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "org.borrowedcache.ultimate531",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-com.kalavision.alfred",
+    "type": "ipa",
+    "name": "AlfredCamera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kalavision.alfred.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/AlfredCamera_2025.24.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.24.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.kalavision.alfred",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-uk.co.leeus.planefinderfree",
+    "type": "ipa",
+    "name": "PlaneFinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uk.co.leeus.planefinderfree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/PlaneFinder_2025.5.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.5.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "uk.co.leeus.planefinderfree",
+    "lastSync": "2025-11-19T07:55:18.158Z"
+  },
+  {
+    "id": "ipa-com.zhiliaoapp.musically",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/TikTok_42.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "42.6.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2025-11-19T07:55:18.159Z"
   }
 ]
