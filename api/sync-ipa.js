@@ -8,13 +8,14 @@ export default async function handler(req, res) {
   try {
     const { forceFullSync } = req.body; // Cho phép sync toàn bộ khi cần
 
-    // 🔐 AUTH CHECK
+    // 🔐 AUTH CHECK (Bypass cho cron job)
+    const isCronJob = req.headers.cookie && req.headers.cookie.includes('admin_token=cron_job_authorized');
     const hasAuthCookie = req.headers.cookie && (
       req.headers.cookie.includes('admin_token') || 
       req.headers.cookie.includes('auth')
     );
     
-    if (!hasAuthCookie) {
+    if (!hasAuthCookie && !isCronJob) {
       return res.status(401).json({ 
         error: 'Unauthorized',
         code: 'NO_AUTH_COOKIE'
