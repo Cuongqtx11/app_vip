@@ -132,16 +132,20 @@ export default async function handler(req, res) {
       });
     }
 
-    // 3️⃣ Phân loại
+    // 3️⃣ Phân loại - GIỮ NGUYÊN TẤT CẢ APP CŨ
+    // ⚠️ QUAN TRỌNG: Không xóa bất kỳ app nào!
     const manualApps = currentData.filter(app => app.source === 'manual');
     const existingAutoApps = currentData.filter(app => app.source === 'apptesters');
     
-    console.log(`✋ Manual: ${manualApps.length} | 🤖 Auto: ${existingAutoApps.length}`);
+    // 🔒 GIỮ NGUYÊN TẤT CẢ APPS KHÁC (không có source hoặc source khác)
+    const otherApps = currentData.filter(app => !app.source || (app.source !== 'manual' && app.source !== 'apptesters'));
+    
+    console.log(`✋ Manual: ${manualApps.length} | 🤖 Auto: ${existingAutoApps.length} | 📦 Others: ${otherApps.length}`);
 
-    // 4️⃣ Convert & Merge
+    // 4️⃣ Convert & Merge - CHỈ THÊM, KHÔNG XÓA
     const newAutoApps = [];
     const updatedApps = [];
-    const skippedApps = [];
+    const skippedApps = [...existingAutoApps]; // 🔒 GIỮ NGUYÊN TẤT CẢ AUTO APPS CŨ
 
     filteredApps.forEach(app => {
       try {
@@ -162,29 +166,63 @@ export default async function handler(req, res) {
           lastSync: new Date().toISOString()
         };
 
-        const existing = existingAutoApps.find(e => e.name === convertedApp.name);
+        // 🔍 Kiểm tra trùng lặp: Tên + BundleID + Version
+        const isDuplicate = existingAutoApps.find(existing => 
+          existing.name === convertedApp.name && 
+          existing.bundleID === convertedApp.bundleID &&
+          existing.version === convertedApp.version
+        );
 
-        if (existing) {
-          if (existing.version !== convertedApp.version) {
-            updatedApps.push(convertedApp);
-            console.log(`🔄 Update: ${app.name} (${existing.version} → ${convertedApp.version})`);
-          } else {
-            skippedApps.push(existing);
-          }
+        if (isDuplicate) {
+          // ✅ Trùng hoàn toàn → Bỏ qua, GIỮ NGUYÊN cái cũ
+          console.log(`⏭️  Skip (duplicate): ${app.name} v${app.version}`);
         } else {
-          newAutoApps.push(convertedApp);
-          console.log(`✨ New: ${app.name} v${convertedApp.version}`);
+          // Kiểm tra có app cùng tên nhưng version khác không
+          const existingSameName = existingAutoApps.find(e => e.name === convertedApp.name);
+          
+          if (existingSameName && existingSameName.version !== convertedApp.version) {
+            // 🔄 Update version mới
+            updatedApps.push(convertedApp);
+            // Xóa version cũ khỏi skippedApps
+            const index = skippedApps.findIndex(s => s.name === existingSameName.name);
+            if (index > -1) skippedApps.splice(index, 1);
+            console.log(`🔄 Update: ${app.name} (${existingSameName.version} → ${convertedApp.version})`);
+          } else if (!existingSameName) {
+            // ✨ App hoàn toàn mới
+            newAutoApps.push(convertedApp);
+            console.log(`✨ New: ${app.name} v${convertedApp.version}`);
+          }
         }
       } catch (err) {
         console.error('⚠️ Convert error:', app.name, err.message);
       }
     });
 
+    // 🔒 MERGE: GIỮ NGUYÊN TẤT CẢ + THÊM MỚI
     const finalAutoApps = [...skippedApps, ...updatedApps, ...newAutoApps];
-    const mergedData = [...manualApps, ...finalAutoApps];
+    const mergedData = [
+      ...otherApps,     // 🔒 Apps cũ không có source
+      ...manualApps,    // 🔒 Manual apps
+      ...finalAutoApps  // 🤖 Auto apps (cũ + mới)
+    ];
 
-    console.log(`📊 Summary: Manual=${manualApps.length} | New=${newAutoApps.length} | Updated=${updatedApps.length} | Total=${mergedData.length}`);
+    console.log(`📊 Summary:
+  - Others (kept): ${otherApps.length}
+  - Manual (kept): ${manualApps.length}
+  - Auto kept: ${skippedApps.length}
+  - Auto updated: ${updatedApps.length}
+  - Auto new: ${newAutoApps.length}
+  - TOTAL: ${mergedData.length}`);
 
+    // ⚠️ KIỂM TRA: Không được mất data
+    if (mergedData.length < currentData.length) {
+      console.error(`🚨 DATA LOSS DETECTED! Before: ${currentData.length}, After: ${mergedData.length}`);
+      return res.status(500).json({ 
+        error: 'Data loss detected! Sync aborted.',
+        before: currentData.length,
+        after: mergedData.length
+      });
+    }
     // 5️⃣ Upload
     console.log('📤 Uploading to GitHub...');
     try {
