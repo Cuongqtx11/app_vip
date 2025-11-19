@@ -631,6 +631,78 @@
     "lastSync": "2025-11-19T09:13:54.354Z"
   },
   {
+    "id": "ipa-app.cranberry.splash",
+    "type": "ipa",
+    "name": "Splash",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.splash.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/Splash_2.1.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.7",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.splash",
+    "lastSync": "2025-11-19T15:45:31.927Z"
+  },
+  {
+    "id": "ipa-com.revivasoftworks.Snore-Lab",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/SnoreLab_6.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2025-11-19T15:45:31.927Z"
+  },
+  {
+    "id": "ipa-app.gentler.activity",
+    "type": "ipa",
+    "name": "GentlerStreak",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.gentler.activity.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/GentlerStreak_5.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "app.gentler.activity",
+    "lastSync": "2025-11-19T15:45:31.927Z"
+  },
+  {
+    "id": "ipa-com.mwm.guitartuner",
+    "type": "ipa",
+    "name": "TunerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.guitartuner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/TunerPro_3.19.04_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.19.04",
+    "developer": "apptesters.org",
+    "date": "2025-11-19",
+    "source": "apptesters",
+    "bundleID": "com.mwm.guitartuner",
+    "lastSync": "2025-11-19T15:45:31.928Z"
+  },
+  {
     "id": "ipa-1762125523206",
     "type": "ipa",
     "name": "PSExpress",
