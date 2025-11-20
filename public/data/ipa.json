@@ -1009,6 +1009,294 @@
     "lastSync": "2025-11-20T04:14:14.108Z"
   },
   {
+    "id": "ipa-com.funnmedia.calory",
+    "type": "ipa",
+    "name": "Calory",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.funnmedia.calory.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Calory_4.5.2_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.5.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.funnmedia.calory",
+    "lastSync": "2025-11-20T12:53:47.343Z"
+  },
+  {
+    "id": "ipa-com.commsource.BeautyPlus",
+    "type": "ipa",
+    "name": "BeautyPlus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.commsource.BeautyPlus.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/BeautyPlus_7.24.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.24.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.commsource.BeautyPlus",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.mindsethealth.ibs",
+    "type": "ipa",
+    "name": "Nerva",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mindsethealth.ibs.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Nerva_46.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "46.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.mindsethealth.ibs",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-ch.b-eng.tor",
+    "type": "ipa",
+    "name": "OrNETBrowser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ch.b-eng.tor.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/OrNETBrowser_3.9.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "ch.b-eng.tor",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.alltrails.AllTrails",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/AllTrails_25.11.30_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.11.30",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.TickTick.task",
+    "type": "ipa",
+    "name": "TickTick",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.TickTick.task.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/TickTick_7.8.20_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.8.20",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.TickTick.task",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/BlockBlast_6.5.4_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.lyrebirdstudio.facelab",
+    "type": "ipa",
+    "name": "FaceLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lyrebirdstudio.facelab.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/FaceLab_4.44.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.44.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.lyrebirdstudio.facelab",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.burbn.barcelona",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Threads_407.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "407.0.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Stemz_4.02.17_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.02.17",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-io.veed.appstore",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/VEEDCaptions_7.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.5.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.appicfun.translatorfree",
+    "type": "ipa",
+    "name": "SpeakTranslate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.appicfun.translatorfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/SpeakTranslate_6.0.53_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.53",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.appicfun.translatorfree",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.ADPTVLTD.push",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/PUSH_3.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.calisthenics.thenx",
+    "type": "ipa",
+    "name": "Thenx",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.calisthenics.thenx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Thenx_6.5.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.calisthenics.thenx",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.impalastudios.pianofree",
+    "type": "ipa",
+    "name": "ThePiano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.impalastudios.pianofree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/ThePiano_2.16.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.16.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.impalastudios.pianofree",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
+    "id": "ipa-com.wikiloc.wikiloc",
+    "type": "ipa",
+    "name": "Wikiloc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wikiloc.wikiloc.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Wikiloc_3.25.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.25.10",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.wikiloc.wikiloc",
+    "lastSync": "2025-11-20T12:53:47.344Z"
+  },
+  {
     "id": "ipa-1762125523206",
     "type": "ipa",
     "name": "PSExpress",
