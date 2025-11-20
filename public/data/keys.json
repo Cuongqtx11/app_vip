@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "key_1763660593_3303",
+    "key": "XM0Z-VDOS-KHJI-GCX7",
+    "createdAt": "2025-11-21T00:43:13.570172",
+    "expiresAt": null,
+    "maxUses": null,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "∞ days, ∞ uses"
+  }
+]
