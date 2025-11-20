@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "key_1763660289_6640",
+    "key": "MBA0-KN40-JWHW-ABAO",
+    "createdAt": "2025-11-21T00:38:09.073017",
+    "expiresAt": null,
+    "maxUses": null,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "∞ days, ∞ uses"
+  }
+]
