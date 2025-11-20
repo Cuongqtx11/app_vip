@@ -379,24 +379,6 @@
     "lastSync": "2025-11-19T07:55:18.157Z"
   },
   {
-    "id": "ipa-com.kinemaster.kios",
-    "type": "ipa",
-    "name": "KineMaster",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
-    "desc": "Injected with Pro",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/KineMaster_8.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "8.0.6",
-    "developer": "apptesters.org",
-    "date": "2025-11-19",
-    "source": "apptesters",
-    "bundleID": "com.kinemaster.kios",
-    "lastSync": "2025-11-19T07:55:18.157Z"
-  },
-  {
     "id": "ipa-com.templyvideo.Temply",
     "type": "ipa",
     "name": "Temply",
@@ -989,6 +971,42 @@
     "source": "apptesters",
     "bundleID": "com.snowcorp.soda",
     "lastSync": "2025-11-20T02:36:16.759Z"
+  },
+  {
+    "id": "ipa-com.kinemaster.kios",
+    "type": "ipa",
+    "name": "KineMaster",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/KineMaster_8.0.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.7",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.kinemaster.kios",
+    "lastSync": "2025-11-20T04:14:14.107Z"
+  },
+  {
+    "id": "ipa-club.boxbox.widgets-ios",
+    "type": "ipa",
+    "name": "BoxBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/club.boxbox.widgets-ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/BoxBox_5.3.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "club.boxbox.widgets-ios",
+    "lastSync": "2025-11-20T04:14:14.108Z"
   },
   {
     "id": "ipa-1762125523206",
