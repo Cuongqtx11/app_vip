@@ -21,5 +21,11 @@
       "source": "/",
       "destination": "/public/index.html"
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/auto-sync",
+      "schedule": "0 */6 * * *"
+    }
   ]
 }
