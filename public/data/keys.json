@@ -6,7 +6,7 @@
     "expiresAt": "2025-11-22T08:02:23.398995",
     "maxUses": 2,
     "currentUses": 2,
-    "active": true,
+    "active": false,
     "createdBy": "telegram_bot",
     "notes": "1 days, 2 uses",
     "lastUsedAt": "2025-11-21T01:03:17.863Z"
