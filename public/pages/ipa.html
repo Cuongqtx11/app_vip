@@ -314,6 +314,69 @@
       display: block;
     }
 
+    /* 🆕 DOWNLOAD BUTTON AFTER VERIFY */
+    .download-direct-btn {
+      display: none;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+      text-align: center;
+      width: 100%;
+    }
+
+    .download-direct-btn.active {
+      display: block;
+      animation: bounceIn 0.5s ease;
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+      }
+      50% {
+        transform: scale(1.05) translateY(-5px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .download-direct-btn:hover {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+    }
+
+    .download-direct-btn:active {
+      transform: translateY(-1px);
+    }
+
+    .download-icon {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 1.3em;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
     /* LOADING SPINNER */
     .spinner {
       display: inline-block;
