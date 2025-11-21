@@ -1,5 +1,149 @@
 [
   {
+    "id": "ipa-com.leshko.tagseditor",
+    "type": "ipa",
+    "name": "Evertag",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.leshko.tagseditor.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Evertag_3.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.leshko.tagseditor",
+    "lastSync": "2025-11-21T12:39:00.563Z"
+  },
+  {
+    "id": "ipa-tech.sketchar.ios",
+    "type": "ipa",
+    "name": "Sketchar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.sketchar.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Sketchar_10.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "tech.sketchar.ios",
+    "lastSync": "2025-11-21T12:39:00.564Z"
+  },
+  {
+    "id": "ipa-com.upskew.encode.ios",
+    "type": "ipa",
+    "name": "Encode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.upskew.encode.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Encode_6.14.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.14.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.upskew.encode.ios",
+    "lastSync": "2025-11-21T12:39:00.564Z"
+  },
+  {
+    "id": "ipa-co.airapps.dictionary",
+    "type": "ipa",
+    "name": "DictionaryAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.dictionary.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/DictionaryAir_2025.11.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "co.airapps.dictionary",
+    "lastSync": "2025-11-21T12:39:00.564Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/edjingMix_8.16.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.16.00",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2025-11-21T12:39:00.564Z"
+  },
+  {
+    "id": "ipa-com.moonly.Moonly",
+    "type": "ipa",
+    "name": "Moonly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonly.Moonly.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Moonly_2.5.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.moonly.Moonly",
+    "lastSync": "2025-11-21T12:39:00.564Z"
+  },
+  {
+    "id": "ipa-fontskeyboard.fonts",
+    "type": "ipa",
+    "name": "Fonts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fontskeyboard.fonts.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Fonts_8.4.44_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.4.44",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "fontskeyboard.fonts",
+    "lastSync": "2025-11-21T12:39:00.564Z"
+  },
+  {
+    "id": "ipa-com.internet-rocks.codescanner",
+    "type": "ipa",
+    "name": "QrCode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/QrCode_2025.10.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.10.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.internet-rocks.codescanner",
+    "lastSync": "2025-11-21T12:39:00.564Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty",
     "type": "ipa",
     "name": "Coconote",
