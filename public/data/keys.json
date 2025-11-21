@@ -1,17 +1,5 @@
 [
   {
-    "id": "key_1763686943_6505",
-    "key": "7Y3L-N7R4-7A5M-FRXJ",
-    "createdAt": "2025-11-21T08:02:23.398978",
-    "expiresAt": "2025-11-22T08:02:23.398995",
-    "maxUses": 2,
-    "currentUses": 2,
-    "active": false,
-    "createdBy": "telegram_bot",
-    "notes": "1 days, 2 uses",
-    "lastUsedAt": "2025-11-21T01:03:17.863Z"
-  },
-  {
     "id": "key_1763660593_3303",
     "key": "XM0Z-VDOS-KHJI-GCX7",
     "createdAt": "2025-11-21T00:43:13.570172",
