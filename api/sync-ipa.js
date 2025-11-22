@@ -1,4 +1,4 @@
-// api/sync-ipa.js - Manual Sync Button (với sắp xếp đúng)
+// api/sync-ipa.js - Smart Auto-Detect Tags & Badges
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -13,26 +13,20 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  console.log('🔄 Manual Sync started at:', new Date().toISOString());
+  console.log('🔄 Sync started at:', new Date().toISOString());
 
   try {
     const { forceFullSync } = req.body || {};
 
-    // 🔐 AUTH CHECK
+    // Auth check
     const hasAuthCookie = req.headers.cookie && (
       req.headers.cookie.includes('admin_token') || 
       req.headers.cookie.includes('auth')
     );
     
     if (!hasAuthCookie) {
-      console.log('⚠️ Auth failed');
-      return res.status(401).json({ 
-        error: 'Unauthorized',
-        code: 'NO_AUTH_COOKIE'
-      });
+      return res.status(401).json({ error: 'Unauthorized' });
     }
-
-    console.log('✅ Auth passed');
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
@@ -41,22 +35,17 @@ export default async function handler(req, res) {
     const APPTESTER_URL = 'https://repository.apptesters.org/';
 
     if (!GITHUB_TOKEN) {
-      console.error('❌ GITHUB_TOKEN not found');
-      return res.status(500).json({ 
-        error: 'GitHub token not configured' 
-      });
+      return res.status(500).json({ error: 'GitHub token not configured' });
     }
 
-    console.log('📡 Config:', { GITHUB_OWNER, GITHUB_REPO });
-
-    // 1️⃣ Fetch từ AppTesters
+    // 1. Fetch từ AppTesters
     console.log('📦 Fetching from AppTesters...');
     let allAppTestersData;
     
     try {
       const response = await fetch(APPTESTER_URL, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'User-Agent': 'Mozilla/5.0',
           'Accept': 'application/json'
         }
       });
@@ -71,7 +60,7 @@ export default async function handler(req, res) {
         allAppTestersData = jsonData.apps;
         console.log(`✅ Found ${allAppTestersData.length} apps`);
       } else {
-        throw new Error('No "apps" array found in response');
+        throw new Error('No apps array found');
       }
       
     } catch (fetchError) {
@@ -82,7 +71,7 @@ export default async function handler(req, res) {
       });
     }
 
-    // 🎯 Lọc theo ngày (hoặc full sync)
+    // 2. Filter by date
     const today = new Date().toISOString().split('T')[0];
     let filteredApps = allAppTestersData;
     
@@ -90,12 +79,10 @@ export default async function handler(req, res) {
       filteredApps = allAppTestersData.filter(app => {
         return app.versionDate && app.versionDate.startsWith(today);
       });
-      console.log(`📅 Apps today (${today}): ${filteredApps.length}`);
-    } else {
-      console.log('⚠️ FORCE FULL SYNC MODE');
+      console.log(`📅 Apps today: ${filteredApps.length}`);
     }
 
-    // 2️⃣ Lấy dữ liệu hiện tại từ GitHub
+    // 3. Get current data from GitHub
     console.log('📄 Fetching from GitHub...');
     const getFileUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
     
@@ -117,10 +104,6 @@ export default async function handler(req, res) {
         const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
         currentData = JSON.parse(content);
         console.log(`✅ Current: ${currentData.length} apps`);
-      } else if (getResponse.status === 404) {
-        console.log('⚠️ File not found, will create new');
-      } else {
-        throw new Error(`GitHub GET failed: ${getResponse.status}`);
       }
     } catch (githubError) {
       console.error('❌ GitHub error:', githubError.message);
@@ -130,15 +113,15 @@ export default async function handler(req, res) {
       });
     }
 
-    // 3️⃣ Phân loại
+    // 4. Phân loại
     const manualApps = currentData.filter(app => app.source === 'manual');
     const existingAutoApps = currentData.filter(app => app.source === 'apptesters');
     const otherApps = currentData.filter(app => !app.source || 
       (app.source !== 'manual' && app.source !== 'apptesters'));
     
-    console.log(`✋ Manual: ${manualApps.length} | 🤖 Auto: ${existingAutoApps.length} | 📦 Others: ${otherApps.length}`);
+    console.log(`✋ Manual: ${manualApps.length} | 🤖 Auto: ${existingAutoApps.length}`);
 
-    // 4️⃣ Convert & Process
+    // 5. Convert với AI-like detection
     const newAutoApps = [];
     const updatedApps = [];
 
@@ -150,8 +133,8 @@ export default async function handler(req, res) {
           name: app.name,
           icon: app.iconURL || app.icon,
           desc: app.localizedDescription || 'Injected with Premium',
-          tags: autoDetectTags(app.name, app.localizedDescription || ''),
-          badge: isRecent(app.versionDate) ? 'new' : null,
+          tags: smartDetectTags(app),           // 🆕 SMART DETECTION
+          badge: smartDetectBadge(app),         // 🆕 SMART BADGE
           fileLink: app.downloadURL || app.down,
           version: app.version,
           developer: app.developerName || 'apptesters.org',
@@ -169,70 +152,59 @@ export default async function handler(req, res) {
         if (existing) {
           if (existing.version !== convertedApp.version) {
             updatedApps.push(convertedApp);
-            console.log(`🔄 Update: ${app.name} (${existing.version} → ${convertedApp.version})`);
+            console.log(`🔄 Update: ${app.name}`);
           }
         } else {
           newAutoApps.push(convertedApp);
-          console.log(`✨ New: ${app.name} v${convertedApp.version}`);
+          console.log(`✨ New: ${app.name}`);
         }
       } catch (err) {
         console.error('⚠️ Convert error:', app.name, err.message);
       }
     });
 
-    // Giữ lại apps cũ không bị update
+    // Giữ apps cũ không bị update
     const unchangedAutoApps = existingAutoApps.filter(old => {
-      const isUpdated = updatedApps.some(u => u.name === old.name && u.bundleID === old.bundleID);
-      const isNew = newAutoApps.some(n => n.name === old.name && n.bundleID === old.bundleID);
+      const isUpdated = updatedApps.some(u => u.name === old.name);
+      const isNew = newAutoApps.some(n => n.name === old.name);
       return !isUpdated && !isNew;
     });
 
-    // 5️⃣ 🎯 MERGE VÀ SẮP XẾP: APP MỚI LÊN ĐẦU
+    // 6. Merge & Sort
     const allAutoApps = [...newAutoApps, ...updatedApps, ...unchangedAutoApps];
     
-    // Sort by date (mới → cũ)
     allAutoApps.sort((a, b) => {
       const dateA = new Date(a.date || a.lastSync || 0);
       const dateB = new Date(b.date || b.lastSync || 0);
       return dateB - dateA;
     });
 
-    // Manual apps cũng sort
     manualApps.sort((a, b) => {
       const dateA = new Date(a.date || 0);
       const dateB = new Date(b.date || 0);
       return dateB - dateA;
     });
 
-    const mergedData = [
-      ...allAutoApps,    // 🆕 Auto (sorted - MỚI NHẤT TRÊN CÙNG)
-      ...manualApps,     // ✋ Manual (sorted)
-      ...otherApps       // 📦 Others
-    ];
+    const mergedData = [...allAutoApps, ...manualApps, ...otherApps];
 
     console.log(`📊 Summary:
   - New: ${newAutoApps.length}
   - Updated: ${updatedApps.length}
-  - Unchanged auto: ${unchangedAutoApps.length}
-  - Manual: ${manualApps.length}
-  - Others: ${otherApps.length}
-  - TOTAL: ${mergedData.length}`);
+  - Total: ${mergedData.length}`);
 
-    // 6️⃣ Upload to GitHub
+    // 7. Upload to GitHub
     if (newAutoApps.length > 0 || updatedApps.length > 0) {
-      console.log('📤 Uploading to GitHub...');
+      console.log('📤 Uploading...');
       
       const newContent = Buffer.from(JSON.stringify(mergedData, null, 2)).toString('base64');
       
       const updatePayload = {
-        message: `Manual sync: +${newAutoApps.length} new, ~${updatedApps.length} updated`,
+        message: `Sync: +${newAutoApps.length} new, ~${updatedApps.length} updated`,
         content: newContent,
         branch: 'main'
       };
 
-      if (sha) {
-        updatePayload.sha = sha;
-      }
+      if (sha) updatePayload.sha = sha;
 
       const updateResponse = await fetch(getFileUrl, {
         method: 'PUT',
@@ -246,40 +218,34 @@ export default async function handler(req, res) {
       });
 
       if (!updateResponse.ok) {
-        const errorText = await updateResponse.text();
-        throw new Error(`PUT failed: ${errorText}`);
+        throw new Error('Upload failed');
       }
 
-      console.log('✅ Upload successful!');
+      console.log('✅ Success!');
       
       return res.status(200).json({ 
         success: true,
-        message: `Đã sync: +${newAutoApps.length} mới, ~${updatedApps.length} cập nhật`,
+        message: `Sync thành công: +${newAutoApps.length} mới`,
         stats: {
-          manual: manualApps.length,
-          auto: allAutoApps.length,
-          total: mergedData.length,
           new: newAutoApps.length,
-          updated: updatedApps.length
+          updated: updatedApps.length,
+          total: mergedData.length
         }
       });
     } else {
-      console.log('ℹ️ No new apps today');
       return res.status(200).json({ 
         success: true,
-        message: 'Không có app mới hôm nay',
+        message: 'Không có app mới',
         stats: {
-          manual: manualApps.length,
-          auto: allAutoApps.length,
-          total: mergedData.length,
           new: 0,
-          updated: 0
+          updated: 0,
+          total: mergedData.length
         }
       });
     }
 
   } catch (error) {
-    console.error('💥 SYNC ERROR:', error);
+    console.error('💥 ERROR:', error);
     return res.status(500).json({ 
       error: 'Internal server error', 
       details: error.message
@@ -287,40 +253,174 @@ export default async function handler(req, res) {
   }
 }
 
-// Helper functions
-function autoDetectTags(name, desc) {
+// ==================== 🆕 SMART DETECTION ====================
+
+function smartDetectTags(app) {
   const tags = [];
-  const text = `${name} ${desc}`.toLowerCase();
+  const name = (app.name || '').toLowerCase();
+  const desc = (app.localizedDescription || '').toLowerCase();
+  const bundleID = (app.bundleID || '').toLowerCase();
+  const text = `${name} ${desc} ${bundleID}`;
   
-  const tagKeywords = {
-    game: ['game', 'play', 'clash', 'minecraft', 'mario', 'puzzle', 'racing', 'arcade'],
-    photo: ['photo', 'camera', 'snap', 'pic', 'remini', 'lightroom', 'vsco', 'filter'],
-    music: ['music', 'spotify', 'sound', 'audio', 'piano', 'tune', 'song'],
-    social: ['social', 'messenger', 'chat', 'instagram', 'facebook', 'telegram', 'tiktok'],
-    utility: ['utility', 'tool', 'scanner', 'calculator', 'vpn', 'truecaller', 'cleaner'],
-    productivity: ['productivity', 'note', 'docs', 'edit', 'office', 'pdf', 'scanner']
+  // 🎮 GAME - Priority detection
+  const gameKeywords = [
+    'game', 'play', 'racing', 'clash', 'craft', 'mario', 'sonic',
+    'puzzle', 'arcade', 'adventure', 'action', 'rpg', 'strategy',
+    'simulator', 'runner', 'shooter', 'battle', 'war', 'fight',
+    'casino', 'cards', 'poker', 'chess', 'sudoku', 'zombie',
+    'dragon', 'hero', 'legend', 'quest', 'dungeon', 'fantasy'
+  ];
+  
+  // 📸 PHOTO
+  const photoKeywords = [
+    'photo', 'camera', 'pic', 'image', 'snap', 'selfie',
+    'filter', 'beauty', 'editor', 'collage', 'gallery',
+    'lightroom', 'vsco', 'picsart', 'remini', 'facetune',
+    'photoshop', 'instagram', 'snapseed', 'prisma'
+  ];
+  
+  // 🎵 MUSIC
+  const musicKeywords = [
+    'music', 'audio', 'sound', 'song', 'radio', 'player',
+    'spotify', 'soundcloud', 'youtube music', 'apple music',
+    'piano', 'guitar', 'tune', 'beat', 'mp3', 'podcast'
+  ];
+  
+  // 💬 SOCIAL
+  const socialKeywords = [
+    'social', 'chat', 'messenger', 'message', 'whatsapp',
+    'telegram', 'facebook', 'instagram', 'twitter', 'tiktok',
+    'snapchat', 'discord', 'skype', 'viber', 'line', 'wechat',
+    'dating', 'friend', 'community', 'network'
+  ];
+  
+  // 🔧 UTILITY
+  const utilityKeywords = [
+    'utility', 'tool', 'manager', 'cleaner', 'booster',
+    'vpn', 'scanner', 'calculator', 'converter', 'translator',
+    'weather', 'clock', 'alarm', 'flashlight', 'compass',
+    'qr', 'barcode', 'file', 'zip', 'backup'
+  ];
+  
+  // ⚡ PRODUCTIVITY
+  const productivityKeywords = [
+    'productivity', 'note', 'todo', 'task', 'calendar',
+    'office', 'word', 'excel', 'pdf', 'document', 'edit',
+    'scanner', 'email', 'drive', 'cloud', 'sync'
+  ];
+  
+  // 🎬 VIDEO
+  const videoKeywords = [
+    'video', 'movie', 'film', 'tv', 'stream', 'player',
+    'youtube', 'netflix', 'editor', 'maker', 'recorder'
+  ];
+  
+  // 🏃 HEALTH & FITNESS
+  const healthKeywords = [
+    'health', 'fitness', 'workout', 'exercise', 'yoga',
+    'diet', 'calorie', 'step', 'run', 'walk', 'sleep'
+  ];
+  
+  const allCategories = {
+    game: gameKeywords,
+    photo: photoKeywords,
+    music: musicKeywords,
+    social: socialKeywords,
+    utility: utilityKeywords,
+    productivity: productivityKeywords,
+    video: videoKeywords,
+    health: healthKeywords
   };
   
-  for (const [tag, keywords] of Object.entries(tagKeywords)) {
-    if (keywords.some(keyword => text.includes(keyword))) {
-      tags.push(tag);
+  // Score-based detection
+  let scores = {};
+  
+  for (const [category, keywords] of Object.entries(allCategories)) {
+    scores[category] = 0;
+    
+    keywords.forEach(keyword => {
+      // Exact match in name = +3 points
+      if (name.includes(keyword)) {
+        scores[category] += 3;
+      }
+      // Match in description = +1 point
+      if (desc.includes(keyword)) {
+        scores[category] += 1;
+      }
+      // Match in bundleID = +2 points
+      if (bundleID.includes(keyword)) {
+        scores[category] += 2;
+      }
+    });
+  }
+  
+  // Get top 2 categories with score > 0
+  const sortedCategories = Object.entries(scores)
+    .filter(([_, score]) => score > 0)
+    .sort(([_, a], [__, b]) => b - a)
+    .slice(0, 2)
+    .map(([cat, _]) => cat);
+  
+  // If no match, random from common categories
+  if (sortedCategories.length === 0) {
+    const commonTags = ['utility', 'productivity', 'photo', 'social'];
+    return [commonTags[Math.floor(Math.random() * commonTags.length)]];
+  }
+  
+  return sortedCategories;
+}
+
+function smartDetectBadge(app) {
+  const name = (app.name || '').toLowerCase();
+  const desc = (app.localizedDescription || '').toLowerCase();
+  const versionDate = app.versionDate;
+  
+  // Check if recent (within 7 days)
+  let isRecent = false;
+  if (versionDate) {
+    try {
+      const appDate = new Date(versionDate);
+      const now = new Date();
+      const diffDays = Math.ceil((now - appDate) / (1000 * 60 * 60 * 24));
+      isRecent = diffDays <= 7;
+    } catch (e) {
+      isRecent = false;
     }
   }
   
-  return tags.length > 0 ? tags : ['utility'];
-}
-
-function isRecent(versionDate) {
-  if (!versionDate) return false;
-  
-  try {
-    const appDate = new Date(versionDate);
-    const now = new Date();
-    const diffTime = Math.abs(now - appDate);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
-    return diffDays <= 7;
-  } catch {
-    return false;
+  // 🆕 NEW - Recent apps
+  if (isRecent) {
+    return 'new';
   }
+  
+  // 🔥 TRENDING - Popular apps
+  const trendingKeywords = [
+    'spotify', 'youtube', 'tiktok', 'instagram', 'facebook',
+    'whatsapp', 'telegram', 'snapchat', 'netflix', 'twitter',
+    'minecraft', 'roblox', 'among us', 'pubg', 'free fire',
+    'zoom', 'discord', 'canva', 'capcut', 'lightroom'
+  ];
+  
+  if (trendingKeywords.some(keyword => name.includes(keyword))) {
+    // 50% chance trending, 50% chance top
+    return Math.random() > 0.5 ? 'trending' : 'top';
+  }
+  
+  // ⭐ TOP - Premium/Pro apps
+  const premiumKeywords = [
+    'premium', 'pro', 'plus', 'gold', 'vip', 'unlocked',
+    'full', 'cracked', 'modded', 'hacked'
+  ];
+  
+  if (premiumKeywords.some(keyword => desc.includes(keyword))) {
+    return 'top';
+  }
+  
+  // 🎲 Random for variety (20% chance)
+  if (Math.random() < 0.2) {
+    const randomBadges = ['trending', 'top', null, null, null];
+    return randomBadges[Math.floor(Math.random() * randomBadges.length)];
+  }
+  
+  return null; // No badge (60% apps have no badge for clean look)
 }
