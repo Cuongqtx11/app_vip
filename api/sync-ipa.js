@@ -25,24 +25,29 @@ export default async function handler(req, res) {
   console.log('📝 Headers:', req.headers.cookie ? 'Has cookie' : 'No cookie');
 
   try {
-    const { syncHours } = req.body || {};
+    const { syncHours, botSync } = req.body || {};
 
-    // 🔐 AUTH CHECK - Allow bot bypass
-    const hasAuthCookie = req.headers.cookie && (
-      req.headers.cookie.includes('admin_token') || 
-      req.headers.cookie.includes('auth') ||
-      req.headers.cookie.includes('sync_authorized')  // Bot bypass
-    );
+    // 🔐 AUTH CHECK - Multiple bypass methods
+    const cookie = req.headers.cookie || '';
+    
+    const hasAuthCookie = 
+      cookie.includes('admin_token') || 
+      cookie.includes('auth') ||
+      cookie.includes('sync_authorized') ||
+      cookie.includes('bot_sync_bypass') ||  // Bot bypass
+      botSync === true;  // Bot flag bypass
     
     if (!hasAuthCookie) {
-      console.log('⚠️ Auth failed - No valid cookie');
+      console.log('⚠️ Auth failed - Cookie:', cookie);
+      console.log('⚠️ Auth failed - botSync:', botSync);
       return res.status(401).json({ 
         error: 'Unauthorized',
-        code: 'NO_AUTH_COOKIE'
+        code: 'NO_AUTH_COOKIE',
+        hint: 'Add admin_token cookie or set botSync=true'
       });
     }
 
-    console.log('✅ Auth passed');
+    console.log('✅ Auth passed (botSync:', botSync, ')');
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
