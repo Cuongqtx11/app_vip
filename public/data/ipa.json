@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.sfun.snapedit",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/SnapEdit_6.2.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2025-11-22T16:55:01.609Z"
+  },
+  {
     "id": "ipa-com.atebits.Tweetie2",
     "type": "ipa",
     "name": "X",
@@ -1744,25 +1762,6 @@
     "source": "apptesters",
     "bundleID": "com.adobe.photoshop.ios",
     "lastSync": "2025-11-19T03:54:51.352Z"
-  },
-  {
-    "id": "ipa-com.sfun.snapedit",
-    "type": "ipa",
-    "name": "SnapEdit",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
-    "desc": "Injected with Pro",
-    "tags": [
-      "photo",
-      "productivity"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/SnapEdit_6.2.5_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "6.2.5",
-    "developer": "apptesters.org",
-    "date": "2025-11-19",
-    "source": "apptesters",
-    "bundleID": "com.sfun.snapedit",
-    "lastSync": "2025-11-19T07:55:18.157Z"
   },
   {
     "id": "ipa-com.templyvideo.Temply",
