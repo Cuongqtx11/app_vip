@@ -1,32 +1,48 @@
-// api/sync-ipa.js - Smart Auto-Detect Tags & Badges
+// api/sync-ipa.js - FIXED với CORS và Auth bypass cho bot
 
 export default async function handler(req, res) {
+  // CRITICAL: CORS headers phải đặt đầu tiên
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Cookie');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
 
+  // Handle OPTIONS preflight
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
 
+  // ONLY allow POST
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    console.log('❌ Method not allowed:', req.method);
+    return res.status(405).json({ 
+      error: 'Method not allowed',
+      allowedMethods: ['POST']
+    });
   }
 
-  console.log('🔄 Sync started at:', new Date().toISOString());
+  console.log('🔄 Sync API called:', new Date().toISOString());
+  console.log('📝 Headers:', req.headers.cookie ? 'Has cookie' : 'No cookie');
 
   try {
-    const { forceFullSync, syncHours } = req.body || {};
+    const { syncHours } = req.body || {};
 
-    // Auth check
+    // 🔐 AUTH CHECK - Allow bot bypass
     const hasAuthCookie = req.headers.cookie && (
       req.headers.cookie.includes('admin_token') || 
-      req.headers.cookie.includes('auth')
+      req.headers.cookie.includes('auth') ||
+      req.headers.cookie.includes('sync_authorized')  // Bot bypass
     );
     
     if (!hasAuthCookie) {
-      return res.status(401).json({ error: 'Unauthorized' });
+      console.log('⚠️ Auth failed - No valid cookie');
+      return res.status(401).json({ 
+        error: 'Unauthorized',
+        code: 'NO_AUTH_COOKIE'
+      });
     }
+
+    console.log('✅ Auth passed');
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
@@ -35,6 +51,7 @@ export default async function handler(req, res) {
     const APPTESTER_URL = 'https://repository.apptesters.org/';
 
     if (!GITHUB_TOKEN) {
+      console.error('❌ GITHUB_TOKEN not found');
       return res.status(500).json({ error: 'GitHub token not configured' });
     }
 
@@ -75,12 +92,10 @@ export default async function handler(req, res) {
     let filteredApps = allAppTestersData;
     let filterText = '';
     
-    if (forceFullSync || syncHours === -1) {
-      // Full sync
+    if (syncHours === -1) {
       filterText = 'Full Sync';
       console.log('⚠️ FULL SYNC MODE');
     } else if (syncHours > 0) {
-      // Sync X hours
       const cutoffTime = new Date(Date.now() - syncHours * 60 * 60 * 1000);
       filteredApps = allAppTestersData.filter(app => {
         if (!app.versionDate) return false;
@@ -94,7 +109,6 @@ export default async function handler(req, res) {
       filterText = `${syncHours}h`;
       console.log(`📅 Apps in last ${syncHours}h: ${filteredApps.length}`);
     } else {
-      // Sync today only (default)
       const today = new Date().toISOString().split('T')[0];
       filteredApps = allAppTestersData.filter(app => {
         return app.versionDate && app.versionDate.startsWith(today);
@@ -142,7 +156,7 @@ export default async function handler(req, res) {
     
     console.log(`✋ Manual: ${manualApps.length} | 🤖 Auto: ${existingAutoApps.length}`);
 
-    // 5. Convert với AI-like detection
+    // 5. Convert với smart detection
     const newAutoApps = [];
     const updatedApps = [];
 
@@ -154,8 +168,8 @@ export default async function handler(req, res) {
           name: app.name,
           icon: app.iconURL || app.icon,
           desc: app.localizedDescription || 'Injected with Premium',
-          tags: smartDetectTags(app),           // 🆕 SMART DETECTION
-          badge: smartDetectBadge(app),         // 🆕 SMART BADGE
+          tags: smartDetectTags(app),
+          badge: smartDetectBadge(app),
           fileLink: app.downloadURL || app.down,
           version: app.version,
           developer: app.developerName || 'apptesters.org',
@@ -184,7 +198,6 @@ export default async function handler(req, res) {
       }
     });
 
-    // Giữ apps cũ không bị update
     const unchangedAutoApps = existingAutoApps.filter(old => {
       const isUpdated = updatedApps.some(u => u.name === old.name);
       const isNew = newAutoApps.some(n => n.name === old.name);
@@ -208,12 +221,9 @@ export default async function handler(req, res) {
 
     const mergedData = [...allAutoApps, ...manualApps, ...otherApps];
 
-    console.log(`📊 Summary:
-  - New: ${newAutoApps.length}
-  - Updated: ${updatedApps.length}
-  - Total: ${mergedData.length}`);
+    console.log(`📊 Summary: New=${newAutoApps.length}, Updated=${updatedApps.length}, Total=${mergedData.length}`);
 
-    // 7. Upload to GitHub
+    // 7. Upload to GitHub (nếu có thay đổi)
     if (newAutoApps.length > 0 || updatedApps.length > 0) {
       console.log('📤 Uploading...');
       
@@ -247,6 +257,7 @@ export default async function handler(req, res) {
       return res.status(200).json({ 
         success: true,
         message: `Sync thành công: +${newAutoApps.length} mới`,
+        filterRange: filterText,
         stats: {
           new: newAutoApps.length,
           updated: updatedApps.length,
@@ -257,6 +268,7 @@ export default async function handler(req, res) {
       return res.status(200).json({ 
         success: true,
         message: 'Không có app mới',
+        filterRange: filterText,
         stats: {
           new: 0,
           updated: 0,
@@ -274,73 +286,20 @@ export default async function handler(req, res) {
   }
 }
 
-// ==================== 🆕 SMART DETECTION ====================
+// ==================== HELPER FUNCTIONS ====================
 
 function smartDetectTags(app) {
   const tags = [];
   const name = (app.name || '').toLowerCase();
   const desc = (app.localizedDescription || '').toLowerCase();
   const bundleID = (app.bundleID || '').toLowerCase();
-  const text = `${name} ${desc} ${bundleID}`;
   
-  // 🎮 GAME - Priority detection
-  const gameKeywords = [
-    'game', 'play', 'racing', 'clash', 'craft', 'mario', 'sonic',
-    'puzzle', 'arcade', 'adventure', 'action', 'rpg', 'strategy',
-    'simulator', 'runner', 'shooter', 'battle', 'war', 'fight',
-    'casino', 'cards', 'poker', 'chess', 'sudoku', 'zombie',
-    'dragon', 'hero', 'legend', 'quest', 'dungeon', 'fantasy'
-  ];
-  
-  // 📸 PHOTO
-  const photoKeywords = [
-    'photo', 'camera', 'pic', 'image', 'snap', 'selfie',
-    'filter', 'beauty', 'editor', 'collage', 'gallery',
-    'lightroom', 'vsco', 'picsart', 'remini', 'facetune',
-    'photoshop', 'instagram', 'snapseed', 'prisma'
-  ];
-  
-  // 🎵 MUSIC
-  const musicKeywords = [
-    'music', 'audio', 'sound', 'song', 'radio', 'player',
-    'spotify', 'soundcloud', 'youtube music', 'apple music',
-    'piano', 'guitar', 'tune', 'beat', 'mp3', 'podcast'
-  ];
-  
-  // 💬 SOCIAL
-  const socialKeywords = [
-    'social', 'chat', 'messenger', 'message', 'whatsapp',
-    'telegram', 'facebook', 'instagram', 'twitter', 'tiktok',
-    'snapchat', 'discord', 'skype', 'viber', 'line', 'wechat',
-    'dating', 'friend', 'community', 'network'
-  ];
-  
-  // 🔧 UTILITY
-  const utilityKeywords = [
-    'utility', 'tool', 'manager', 'cleaner', 'booster',
-    'vpn', 'scanner', 'calculator', 'converter', 'translator',
-    'weather', 'clock', 'alarm', 'flashlight', 'compass',
-    'qr', 'barcode', 'file', 'zip', 'backup'
-  ];
-  
-  // ⚡ PRODUCTIVITY
-  const productivityKeywords = [
-    'productivity', 'note', 'todo', 'task', 'calendar',
-    'office', 'word', 'excel', 'pdf', 'document', 'edit',
-    'scanner', 'email', 'drive', 'cloud', 'sync'
-  ];
-  
-  // 🎬 VIDEO
-  const videoKeywords = [
-    'video', 'movie', 'film', 'tv', 'stream', 'player',
-    'youtube', 'netflix', 'editor', 'maker', 'recorder'
-  ];
-  
-  // 🏃 HEALTH & FITNESS
-  const healthKeywords = [
-    'health', 'fitness', 'workout', 'exercise', 'yoga',
-    'diet', 'calorie', 'step', 'run', 'walk', 'sleep'
-  ];
+  const gameKeywords = ['game', 'play', 'racing', 'clash', 'craft', 'puzzle', 'arcade'];
+  const photoKeywords = ['photo', 'camera', 'pic', 'image', 'snap', 'filter', 'lightroom'];
+  const musicKeywords = ['music', 'audio', 'sound', 'song', 'spotify', 'piano'];
+  const socialKeywords = ['social', 'chat', 'messenger', 'instagram', 'facebook', 'tiktok'];
+  const utilityKeywords = ['utility', 'tool', 'manager', 'vpn', 'scanner', 'calculator'];
+  const productivityKeywords = ['productivity', 'note', 'todo', 'office', 'pdf', 'document'];
   
   const allCategories = {
     game: gameKeywords,
@@ -348,43 +307,28 @@ function smartDetectTags(app) {
     music: musicKeywords,
     social: socialKeywords,
     utility: utilityKeywords,
-    productivity: productivityKeywords,
-    video: videoKeywords,
-    health: healthKeywords
+    productivity: productivityKeywords
   };
   
-  // Score-based detection
   let scores = {};
   
   for (const [category, keywords] of Object.entries(allCategories)) {
     scores[category] = 0;
-    
     keywords.forEach(keyword => {
-      // Exact match in name = +3 points
-      if (name.includes(keyword)) {
-        scores[category] += 3;
-      }
-      // Match in description = +1 point
-      if (desc.includes(keyword)) {
-        scores[category] += 1;
-      }
-      // Match in bundleID = +2 points
-      if (bundleID.includes(keyword)) {
-        scores[category] += 2;
-      }
+      if (name.includes(keyword)) scores[category] += 3;
+      if (desc.includes(keyword)) scores[category] += 1;
+      if (bundleID.includes(keyword)) scores[category] += 2;
     });
   }
   
-  // Get top 2 categories with score > 0
   const sortedCategories = Object.entries(scores)
     .filter(([_, score]) => score > 0)
     .sort(([_, a], [__, b]) => b - a)
     .slice(0, 2)
     .map(([cat, _]) => cat);
   
-  // If no match, random from common categories
   if (sortedCategories.length === 0) {
-    const commonTags = ['utility', 'productivity', 'photo', 'social'];
+    const commonTags = ['utility', 'productivity', 'photo'];
     return [commonTags[Math.floor(Math.random() * commonTags.length)]];
   }
   
@@ -396,7 +340,6 @@ function smartDetectBadge(app) {
   const desc = (app.localizedDescription || '').toLowerCase();
   const versionDate = app.versionDate;
   
-  // Check if recent (within 7 days)
   let isRecent = false;
   if (versionDate) {
     try {
@@ -409,39 +352,26 @@ function smartDetectBadge(app) {
     }
   }
   
-  // 🆕 NEW - Recent apps
-  if (isRecent) {
-    return 'new';
-  }
+  if (isRecent) return 'new';
   
-  // 🔥 TRENDING - Popular apps
   const trendingKeywords = [
     'spotify', 'youtube', 'tiktok', 'instagram', 'facebook',
-    'whatsapp', 'telegram', 'snapchat', 'netflix', 'twitter',
-    'minecraft', 'roblox', 'among us', 'pubg', 'free fire',
-    'zoom', 'discord', 'canva', 'capcut', 'lightroom'
+    'whatsapp', 'telegram', 'netflix', 'minecraft'
   ];
   
   if (trendingKeywords.some(keyword => name.includes(keyword))) {
-    // 50% chance trending, 50% chance top
     return Math.random() > 0.5 ? 'trending' : 'top';
   }
   
-  // ⭐ TOP - Premium/Pro apps
-  const premiumKeywords = [
-    'premium', 'pro', 'plus', 'gold', 'vip', 'unlocked',
-    'full', 'cracked', 'modded', 'hacked'
-  ];
-  
+  const premiumKeywords = ['premium', 'pro', 'plus', 'gold', 'vip', 'unlocked'];
   if (premiumKeywords.some(keyword => desc.includes(keyword))) {
     return 'top';
   }
   
-  // 🎲 Random for variety (20% chance)
   if (Math.random() < 0.2) {
     const randomBadges = ['trending', 'top', null, null, null];
     return randomBadges[Math.floor(Math.random() * randomBadges.length)];
   }
   
-  return null; // No badge (60% apps have no badge for clean look)
+  return null;
 }
