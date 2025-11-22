@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-dazz.camera.vintagecamera",
+    "type": "ipa",
+    "name": "Dazz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Dazz_2.12.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.12.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "dazz.camera.vintagecamera",
+    "lastSync": "2025-11-22T14:35:58.338Z"
+  },
+  {
     "id": "ipa-se.resenatverket.FlightRadar24-Free",
     "type": "ipa",
     "name": "Flightradar24",
@@ -126,42 +144,6 @@
     "lastSync": "2025-11-22T13:40:21.812Z"
   },
   {
-    "id": "ipa-com.atebits.Tweetie2",
-    "type": "ipa",
-    "name": "X",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "productivity"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/X_11.42_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "11.42",
-    "developer": "apptesters.org",
-    "date": "2025-11-22",
-    "source": "apptesters",
-    "bundleID": "com.atebits.Tweetie2",
-    "lastSync": "2025-11-22T13:40:21.811Z"
-  },
-  {
-    "id": "ipa-com.laubrothersllc.BabyArt",
-    "type": "ipa",
-    "name": "Precious",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "photo"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Precious_3.49.5_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "3.49.5",
-    "developer": "apptesters.org",
-    "date": "2025-11-22",
-    "source": "apptesters",
-    "bundleID": "com.laubrothersllc.BabyArt",
-    "lastSync": "2025-11-22T13:40:21.812Z"
-  },
-  {
     "id": "ipa-com.chaninicholas.chaniapp",
     "type": "ipa",
     "name": "CHANI",
@@ -216,6 +198,24 @@
     "lastSync": "2025-11-22T02:24:35.446Z"
   },
   {
+    "id": "ipa-com.sbs.diet",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/MacroFactor_5.6.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-11-22T14:35:58.339Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam",
     "type": "ipa",
     "name": "VSCO",
@@ -250,42 +250,6 @@
     "source": "apptesters",
     "bundleID": "com.risesci.nyx",
     "lastSync": "2025-11-22T13:40:21.812Z"
-  },
-  {
-    "id": "ipa-com.sbs.diet",
-    "type": "ipa",
-    "name": "MacroFactor",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
-    "desc": "Injected with Subscription Unlocked",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/MacroFactor_5.6.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-    "version": "5.6.6",
-    "developer": "apptesters.org",
-    "date": "2025-11-21",
-    "source": "apptesters",
-    "bundleID": "com.sbs.diet",
-    "lastSync": "2025-11-22T13:40:21.812Z"
-  },
-  {
-    "id": "ipa-dazz.camera.vintagecamera",
-    "type": "ipa",
-    "name": "Dazz",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
-    "desc": "Injected with Pro",
-    "tags": [
-      "photo"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Dazz_2.12.1_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "2.12.1",
-    "developer": "apptesters.org",
-    "date": "2025-11-21",
-    "source": "apptesters",
-    "bundleID": "dazz.camera.vintagecamera",
-    "lastSync": "2025-11-22T13:40:21.813Z"
   },
   {
     "id": "ipa-com.leshko.tagseditor",
@@ -520,24 +484,6 @@
     "source": "apptesters",
     "bundleID": "ru.routes.peakvisor",
     "lastSync": "2025-11-21T01:16:08.085Z"
-  },
-  {
-    "id": "ipa-club.boxbox.widgets-ios",
-    "type": "ipa",
-    "name": "BoxBox",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/club.boxbox.widgets-ios.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/BoxBox_5.3.2_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "5.3.2",
-    "developer": "apptesters.org",
-    "date": "2025-11-21",
-    "source": "apptesters",
-    "bundleID": "club.boxbox.widgets-ios",
-    "lastSync": "2025-11-21T01:16:08.086Z"
   },
   {
     "id": "ipa-com.aoklab.fewerphotos",
@@ -790,6 +736,204 @@
     "source": "apptesters",
     "bundleID": "com.gunthermarktl.stepapp",
     "lastSync": "2025-11-21T01:16:08.086Z"
+  },
+  {
+    "id": "ipa-com.ideation.Stress",
+    "type": "ipa",
+    "name": "StressWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Stress.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/StressWatch_2.4.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.11",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.ideation.Stress",
+    "lastSync": "2025-11-22T14:35:58.339Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.Fitia",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Fitia_19.10.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "19.10.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2025-11-22T14:35:58.339Z"
+  },
+  {
+    "id": "ipa-com.macpaw.iosgemini",
+    "type": "ipa",
+    "name": "CleanMyPhone",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.macpaw.iosgemini.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/CleanMyPhone_2.10.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.macpaw.iosgemini",
+    "lastSync": "2025-11-22T14:35:58.340Z"
+  },
+  {
+    "id": "ipa-com.hasankassem.mockup",
+    "type": "ipa",
+    "name": "Mockup",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hasankassem.mockup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Mockup_4.0.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.hasankassem.mockup",
+    "lastSync": "2025-11-22T14:35:58.340Z"
+  },
+  {
+    "id": "ipa-com.evolve.helm",
+    "type": "ipa",
+    "name": "Rest",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.evolve.helm.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Rest_3.163.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.163.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.evolve.helm",
+    "lastSync": "2025-11-22T14:35:58.340Z"
+  },
+  {
+    "id": "ipa-app.tripsy.ios",
+    "type": "ipa",
+    "name": "Tripsy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.tripsy.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Tripsy_3.6.19_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.6.19",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "app.tripsy.ios",
+    "lastSync": "2025-11-22T14:35:58.340Z"
+  },
+  {
+    "id": "ipa-health.sleep.sounds.tracker.alarm.calm",
+    "type": "ipa",
+    "name": "ShutEye",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/ShutEye_3.2.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "health.sleep.sounds.tracker.alarm.calm",
+    "lastSync": "2025-11-22T14:35:58.340Z"
+  },
+  {
+    "id": "ipa-club.boxbox.widgets-ios",
+    "type": "ipa",
+    "name": "BoxBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/club.boxbox.widgets-ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/BoxBox_5.3.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "club.boxbox.widgets-ios",
+    "lastSync": "2025-11-22T14:35:58.340Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/X_11.41_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.41",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-11-22T14:35:58.340Z"
+  },
+  {
+    "id": "ipa-com.laubrothersllc.BabyArt",
+    "type": "ipa",
+    "name": "Precious",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Precious_3.49.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.49.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.laubrothersllc.BabyArt",
+    "lastSync": "2025-11-22T14:35:58.342Z"
+  },
+  {
+    "id": "ipa-com.sbs.diet",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/MacroFactor_5.6.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-20",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-11-22T14:35:58.342Z"
   },
   {
     "id": "ipa-com.frontpocketsoftware.happyscale",
@@ -1366,24 +1510,6 @@
     "source": "apptesters",
     "bundleID": "com.wikiloc.wikiloc",
     "lastSync": "2025-11-20T12:53:47.344Z"
-  },
-  {
-    "id": "ipa-health.sleep.sounds.tracker.alarm.calm",
-    "type": "ipa",
-    "name": "ShutEye",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/ShutEye_3.2.4_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "3.2.4",
-    "developer": "apptesters.org",
-    "date": "2025-11-19",
-    "source": "apptesters",
-    "bundleID": "health.sleep.sounds.tracker.alarm.calm",
-    "lastSync": "2025-11-19T03:54:51.350Z"
   },
   {
     "id": "ipa-com.joytunes.asla",
