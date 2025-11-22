@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.atebits.Tweetie2",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/X_11.42_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.42",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-11-22T15:53:11.901Z"
+  },
+  {
+    "id": "ipa-com.laubrothersllc.BabyArt",
+    "type": "ipa",
+    "name": "Precious",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Precious_3.49.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.49.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.laubrothersllc.BabyArt",
+    "lastSync": "2025-11-22T15:53:11.901Z"
+  },
+  {
     "id": "ipa-dazz.camera.vintagecamera",
     "type": "ipa",
     "name": "Dazz",
@@ -880,42 +916,6 @@
     "source": "apptesters",
     "bundleID": "club.boxbox.widgets-ios",
     "lastSync": "2025-11-22T14:35:58.340Z"
-  },
-  {
-    "id": "ipa-com.atebits.Tweetie2",
-    "type": "ipa",
-    "name": "X",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/X_11.41_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "11.41",
-    "developer": "apptesters.org",
-    "date": "2025-11-20",
-    "source": "apptesters",
-    "bundleID": "com.atebits.Tweetie2",
-    "lastSync": "2025-11-22T14:35:58.340Z"
-  },
-  {
-    "id": "ipa-com.laubrothersllc.BabyArt",
-    "type": "ipa",
-    "name": "Precious",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Precious_3.49.4_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "3.49.4",
-    "developer": "apptesters.org",
-    "date": "2025-11-20",
-    "source": "apptesters",
-    "bundleID": "com.laubrothersllc.BabyArt",
-    "lastSync": "2025-11-22T14:35:58.342Z"
   },
   {
     "id": "ipa-com.sbs.diet",
