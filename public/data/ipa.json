@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.mangacrush.ios",
+    "type": "ipa",
+    "name": "Tachimanga",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mangacrush.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Tachimanga_4.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.10",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.mangacrush.ios",
+    "lastSync": "2025-11-22T03:00:00.972Z"
+  },
+  {
     "id": "ipa-nt.nc.ios",
     "type": "ipa",
     "name": "NCv1802",
