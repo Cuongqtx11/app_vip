@@ -1,21 +1,183 @@
 [
   {
-    "id": "ipa-dazz.camera.vintagecamera",
+    "id": "ipa-se.resenatverket.FlightRadar24-Free",
     "type": "ipa",
-    "name": "Dazz",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "name": "Flightradar24",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/se.resenatverket.FlightRadar24-Free.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Flightradar24_10.19.1_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.19.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "se.resenatverket.FlightRadar24-Free",
+    "lastSync": "2025-11-22T13:40:21.811Z"
+  },
+  {
+    "id": "ipa-com.iqraapp.Iqra",
+    "type": "ipa",
+    "name": "Tarteel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iqraapp.Iqra.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Tarteel_5.69.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.69.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.iqraapp.Iqra",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.coach.zing",
+    "type": "ipa",
+    "name": "Zing",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.coach.zing.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Zing_1.117.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.117.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.coach.zing",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.morpholioapps.trace",
+    "type": "ipa",
+    "name": "Trace",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.morpholioapps.trace.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Trace_6.78_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.78",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.morpholioapps.trace",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.bowery-digital.bend",
+    "type": "ipa",
+    "name": "Bend",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bowery-digital.bend.png",
     "desc": "Injected with Pro",
     "tags": [
       "photo"
     ],
     "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Dazz_2.12.2_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "2.12.2",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Bend_7.0.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.5",
     "developer": "apptesters.org",
     "date": "2025-11-22",
     "source": "apptesters",
-    "bundleID": "dazz.camera.vintagecamera",
-    "lastSync": "2025-11-22T04:08:34.491Z"
+    "bundleID": "com.bowery-digital.bend",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.dehancer.film.ios-app",
+    "type": "ipa",
+    "name": "Dehancer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dehancer.film.ios-app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Dehancer_5.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.dehancer.film.ios-app",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.bpmhealth.boostfitness",
+    "type": "ipa",
+    "name": "Boostcamp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bpmhealth.boostfitness.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Boostcamp_248_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "248",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.bpmhealth.boostfitness",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/X_11.42_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.42",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-11-22T13:40:21.811Z"
+  },
+  {
+    "id": "ipa-com.laubrothersllc.BabyArt",
+    "type": "ipa",
+    "name": "Precious",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Precious_3.49.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.49.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.laubrothersllc.BabyArt",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.chaninicholas.chaniapp",
+    "type": "ipa",
+    "name": "CHANI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.chaninicholas.chaniapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/CHANI_2.6.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.6.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.chaninicholas.chaniapp",
+    "lastSync": "2025-11-22T13:40:21.812Z"
   },
   {
     "id": "ipa-com.mangacrush.ios",
@@ -52,6 +214,78 @@
     "source": "apptesters",
     "bundleID": "nt.nc.ios",
     "lastSync": "2025-11-22T02:24:35.446Z"
+  },
+  {
+    "id": "ipa-co.visualsupply.cam",
+    "type": "ipa",
+    "name": "VSCO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.visualsupply.cam.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/VSCO_450.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "450.0.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "co.visualsupply.cam",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/RiseSleep_0.1.549_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.549",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-com.sbs.diet",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/MacroFactor_5.6.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-11-22T13:40:21.812Z"
+  },
+  {
+    "id": "ipa-dazz.camera.vintagecamera",
+    "type": "ipa",
+    "name": "Dazz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Dazz_2.12.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.12.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "dazz.camera.vintagecamera",
+    "lastSync": "2025-11-22T13:40:21.813Z"
   },
   {
     "id": "ipa-com.leshko.tagseditor",
@@ -339,24 +573,6 @@
     "date": "2025-11-21",
     "source": "apptesters",
     "bundleID": "de.komoot.berlinbikeapp",
-    "lastSync": "2025-11-21T01:16:08.086Z"
-  },
-  {
-    "id": "ipa-com.sbs.diet",
-    "type": "ipa",
-    "name": "MacroFactor",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
-    "desc": "Injected with Subscription Unlocked",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/MacroFactor_5.6.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-    "version": "5.6.5",
-    "developer": "apptesters.org",
-    "date": "2025-11-21",
-    "source": "apptesters",
-    "bundleID": "com.sbs.diet",
     "lastSync": "2025-11-21T01:16:08.086Z"
   },
   {
@@ -648,24 +864,6 @@
     "lastSync": "2025-11-20T02:36:16.758Z"
   },
   {
-    "id": "ipa-com.atebits.Tweetie2",
-    "type": "ipa",
-    "name": "X",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/X_11.41_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "11.41",
-    "developer": "apptesters.org",
-    "date": "2025-11-20",
-    "source": "apptesters",
-    "bundleID": "com.atebits.Tweetie2",
-    "lastSync": "2025-11-20T02:36:16.758Z"
-  },
-  {
     "id": "ipa-com.picsart.studio",
     "type": "ipa",
     "name": "PicsArt",
@@ -753,24 +951,6 @@
     "date": "2025-11-20",
     "source": "apptesters",
     "bundleID": "com.myscript.nebo",
-    "lastSync": "2025-11-20T02:36:16.758Z"
-  },
-  {
-    "id": "ipa-com.laubrothersllc.BabyArt",
-    "type": "ipa",
-    "name": "Precious",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
-    "desc": "Injected with Premium",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-11-2025/Precious_3.49.4_Premium_%40thisismanpreets_apptesters.org.ipa",
-    "version": "3.49.4",
-    "developer": "apptesters.org",
-    "date": "2025-11-20",
-    "source": "apptesters",
-    "bundleID": "com.laubrothersllc.BabyArt",
     "lastSync": "2025-11-20T02:36:16.758Z"
   },
   {
@@ -1239,24 +1419,6 @@
     "date": "2025-11-19",
     "source": "apptesters",
     "bundleID": "io.betterhalf.app",
-    "lastSync": "2025-11-19T03:54:51.351Z"
-  },
-  {
-    "id": "ipa-com.chaninicholas.chaniapp",
-    "type": "ipa",
-    "name": "CHANI",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.chaninicholas.chaniapp.png",
-    "desc": "Injected with Pro",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-11-2025/CHANI_2.6.0_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "2.6.0",
-    "developer": "apptesters.org",
-    "date": "2025-11-19",
-    "source": "apptesters",
-    "bundleID": "com.chaninicholas.chaniapp",
     "lastSync": "2025-11-19T03:54:51.351Z"
   },
   {
