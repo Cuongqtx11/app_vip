@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-nt.nc.ios",
+    "type": "ipa",
+    "name": "NCv1802",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/nt.nc.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/NCv1802_18.0.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "18.0.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "nt.nc.ios",
+    "lastSync": "2025-11-22T02:24:35.446Z"
+  },
+  {
     "id": "ipa-com.leshko.tagseditor",
     "type": "ipa",
     "name": "Evertag",
