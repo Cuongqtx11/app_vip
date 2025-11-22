@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   console.log('🔄 Sync started at:', new Date().toISOString());
 
   try {
-    const { forceFullSync } = req.body || {};
+    const { forceFullSync, syncHours } = req.body || {};
 
     // Auth check
     const hasAuthCookie = req.headers.cookie && (
@@ -71,14 +71,35 @@ export default async function handler(req, res) {
       });
     }
 
-    // 2. Filter by date
-    const today = new Date().toISOString().split('T')[0];
+    // 2. Filter by time range
     let filteredApps = allAppTestersData;
+    let filterText = '';
     
-    if (!forceFullSync) {
+    if (forceFullSync || syncHours === -1) {
+      // Full sync
+      filterText = 'Full Sync';
+      console.log('⚠️ FULL SYNC MODE');
+    } else if (syncHours > 0) {
+      // Sync X hours
+      const cutoffTime = new Date(Date.now() - syncHours * 60 * 60 * 1000);
+      filteredApps = allAppTestersData.filter(app => {
+        if (!app.versionDate) return false;
+        try {
+          const appDate = new Date(app.versionDate);
+          return appDate >= cutoffTime;
+        } catch {
+          return false;
+        }
+      });
+      filterText = `${syncHours}h`;
+      console.log(`📅 Apps in last ${syncHours}h: ${filteredApps.length}`);
+    } else {
+      // Sync today only (default)
+      const today = new Date().toISOString().split('T')[0];
       filteredApps = allAppTestersData.filter(app => {
         return app.versionDate && app.versionDate.startsWith(today);
       });
+      filterText = 'Today';
       console.log(`📅 Apps today: ${filteredApps.length}`);
     }
 
