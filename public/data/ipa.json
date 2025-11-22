@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-dazz.camera.vintagecamera",
+    "type": "ipa",
+    "name": "Dazz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Dazz_2.12.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.12.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "dazz.camera.vintagecamera",
+    "lastSync": "2025-11-22T04:08:34.491Z"
+  },
+  {
     "id": "ipa-com.mangacrush.ios",
     "type": "ipa",
     "name": "Tachimanga",
@@ -448,24 +466,6 @@
     "source": "apptesters",
     "bundleID": "myndarc.newFitnessApp",
     "lastSync": "2025-11-21T01:16:08.085Z"
-  },
-  {
-    "id": "ipa-dazz.camera.vintagecamera",
-    "type": "ipa",
-    "name": "Dazz",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
-    "desc": "Injected with Pro",
-    "tags": [
-      "utility"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Dazz_2.12.1_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "2.12.1",
-    "developer": "apptesters.org",
-    "date": "2025-11-21",
-    "source": "apptesters",
-    "bundleID": "dazz.camera.vintagecamera",
-    "lastSync": "2025-11-21T01:16:08.086Z"
   },
   {
     "id": "ipa-com.hevyapp.hevy",
