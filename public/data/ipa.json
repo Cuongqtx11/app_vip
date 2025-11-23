@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.mwm.nota",
+    "type": "ipa",
+    "name": "Peanote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.nota.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Peanote_1.4.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.mwm.nota",
+    "lastSync": "2025-11-23T10:21:42.506Z"
+  },
+  {
+    "id": "ipa-com.sfun.snapedit",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/SnapEdit_6.2.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.7",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2025-11-23T10:21:42.506Z"
+  },
+  {
     "id": "ipa-com.sbs.diet",
     "type": "ipa",
     "name": "MacroFactor",
@@ -178,24 +214,6 @@
     "source": "apptesters",
     "bundleID": "com.textasticapp.textastic-universal",
     "lastSync": "2025-11-23T00:32:13.162Z"
-  },
-  {
-    "id": "ipa-com.sfun.snapedit",
-    "type": "ipa",
-    "name": "SnapEdit",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
-    "desc": "Injected with Pro",
-    "tags": [
-      "photo"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/SnapEdit_6.2.6_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "6.2.6",
-    "developer": "apptesters.org",
-    "date": "2025-11-22",
-    "source": "apptesters",
-    "bundleID": "com.sfun.snapedit",
-    "lastSync": "2025-11-22T16:55:01.609Z"
   },
   {
     "id": "ipa-com.atebits.Tweetie2",
