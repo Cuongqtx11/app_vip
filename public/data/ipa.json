@@ -234,6 +234,132 @@
     "lastSync": "2025-11-23T11:36:52.357Z"
   },
   {
+    "id": "ipa-com.andrespizabuckmann.MetadataEditor-3.1.2",
+    "type": "ipa",
+    "name": "MetadataEditor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andrespizabuckmann.MetadataEditor.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/MetadataEditor_3.1.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.andrespizabuckmann.MetadataEditor",
+    "lastSync": "2025-11-23T16:55:01.571Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Facetune2-3.112",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Facetune_3.112_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.112",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2025-11-23T16:55:01.571Z"
+  },
+  {
+    "id": "ipa-com.funnmedia.calory-4.5.3",
+    "type": "ipa",
+    "name": "Calory",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.funnmedia.calory.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Calory_4.5.3_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.5.3",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.funnmedia.calory",
+    "lastSync": "2025-11-23T16:55:01.571Z"
+  },
+  {
+    "id": "ipa-com.na.istb-1.29.0",
+    "type": "ipa",
+    "name": "iSTB",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.na.istb.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/iSTB_1.29.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.29.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.na.istb",
+    "lastSync": "2025-11-23T16:55:01.571Z"
+  },
+  {
+    "id": "ipa-com.waterminder.waterminder-7.1.2",
+    "type": "ipa",
+    "name": "WaterMinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.waterminder.waterminder.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/WaterMinder_7.1.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.waterminder.waterminder",
+    "lastSync": "2025-11-23T16:55:01.571Z"
+  },
+  {
+    "id": "ipa-com.beelinguapp.beelinguapp-3.8.47",
+    "type": "ipa",
+    "name": "Beelinguapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beelinguapp.beelinguapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Beelinguapp_3.8.47_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.47",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.beelinguapp.beelinguapp",
+    "lastSync": "2025-11-23T16:55:01.571Z"
+  },
+  {
+    "id": "ipa-com.joytunes.asla-9.10.43",
+    "type": "ipa",
+    "name": "SimplyPiano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.asla.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/SimplyPiano_9.10.43_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.10.43",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.joytunes.asla",
+    "lastSync": "2025-11-23T16:55:01.572Z"
+  },
+  {
     "id": "ipa-com.textasticapp.textastic-universal",
     "type": "ipa",
     "name": "Textastic",
