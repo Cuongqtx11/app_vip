@@ -1,5 +1,131 @@
 [
   {
+    "id": "ipa-com.ahaf.mshion",
+    "type": "ipa",
+    "name": "ism",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ahaf.mshion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/ism_7.28.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.28.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.ahaf.mshion",
+    "lastSync": "2025-11-23T00:31:07.301Z"
+  },
+  {
+    "id": "ipa-com.mwm.bananai",
+    "type": "ipa",
+    "name": "Bananai",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.bananai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Bananai_1.0.21_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.21",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.mwm.bananai",
+    "lastSync": "2025-11-23T00:31:07.301Z"
+  },
+  {
+    "id": "ipa-com.mwm.moments",
+    "type": "ipa",
+    "name": "SnapCut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.moments.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/SnapCut_1.0.44_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.44",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.mwm.moments",
+    "lastSync": "2025-11-23T00:31:07.302Z"
+  },
+  {
+    "id": "ipa-com.facebook.Facebook",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Facebook_540.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "540.0.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2025-11-23T00:31:07.302Z"
+  },
+  {
+    "id": "ipa-app.cranberry.cure",
+    "type": "ipa",
+    "name": "Cure",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.cure.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Cure_1.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.7",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.cure",
+    "lastSync": "2025-11-23T00:31:07.302Z"
+  },
+  {
+    "id": "ipa-com.khanov.BlockerX",
+    "type": "ipa",
+    "name": "1Blocker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.khanov.BlockerX.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/1Blocker_6.3.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.khanov.BlockerX",
+    "lastSync": "2025-11-23T00:31:07.302Z"
+  },
+  {
+    "id": "ipa-com.jakemor.firness-ai",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/FitnessAI_14.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2025-11-23T00:31:07.302Z"
+  },
+  {
     "id": "ipa-com.sfun.snapedit",
     "type": "ipa",
     "name": "SnapEdit",
