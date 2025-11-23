@@ -126,6 +126,24 @@
     "lastSync": "2025-11-23T00:31:07.302Z"
   },
   {
+    "id": "ipa-com.textasticapp.textastic-universal",
+    "type": "ipa",
+    "name": "Textastic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.textasticapp.textastic-universal.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/Textastic_10.8.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.8.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.textasticapp.textastic-universal",
+    "lastSync": "2025-11-23T00:32:13.162Z"
+  },
+  {
     "id": "ipa-com.sfun.snapedit",
     "type": "ipa",
     "name": "SnapEdit",
