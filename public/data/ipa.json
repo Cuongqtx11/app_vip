@@ -198,6 +198,42 @@
     "lastSync": "2025-11-23T00:31:07.302Z"
   },
   {
+    "id": "ipa-com.mobivalley.LookAroundApp-1.44.0",
+    "type": "ipa",
+    "name": "PlaceGuesser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobivalley.LookAroundApp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/PlaceGuesser_1.44.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.44.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.mobivalley.LookAroundApp",
+    "lastSync": "2025-11-23T11:36:52.357Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Enlight-Phoenix-1.9.32",
+    "type": "ipa",
+    "name": "Motionleap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Enlight-Phoenix.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-11-2025/Motionleap_1.9.32_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9.32",
+    "developer": "apptesters.org",
+    "date": "2025-11-23",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Enlight-Phoenix",
+    "lastSync": "2025-11-23T11:36:52.357Z"
+  },
+  {
     "id": "ipa-com.textasticapp.textastic-universal",
     "type": "ipa",
     "name": "Textastic",
