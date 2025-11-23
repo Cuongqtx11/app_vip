@@ -486,6 +486,24 @@
     "lastSync": "2025-11-22T02:24:35.446Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.2.6",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-11-2025/SnapEdit_6.2.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-22",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2025-11-23T11:38:52.995Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam",
     "type": "ipa",
     "name": "VSCO",
@@ -1006,6 +1024,78 @@
     "source": "apptesters",
     "bundleID": "com.gunthermarktl.stepapp",
     "lastSync": "2025-11-21T01:16:08.086Z"
+  },
+  {
+    "id": "ipa-com.sbs.diet-5.6.6",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/MacroFactor_5.6.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-11-23T11:38:52.996Z"
+  },
+  {
+    "id": "ipa-club.boxbox.widgets-ios-5.3.2",
+    "type": "ipa",
+    "name": "BoxBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/club.boxbox.widgets-ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/BoxBox_5.3.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "club.boxbox.widgets-ios",
+    "lastSync": "2025-11-23T11:38:52.997Z"
+  },
+  {
+    "id": "ipa-dazz.camera.vintagecamera-2.12.1",
+    "type": "ipa",
+    "name": "Dazz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/Dazz_2.12.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.12.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "dazz.camera.vintagecamera",
+    "lastSync": "2025-11-23T11:38:52.997Z"
+  },
+  {
+    "id": "ipa-com.sbs.diet-5.6.5",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-11-2025/MacroFactor_5.6.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-21",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-11-23T11:38:52.997Z"
   },
   {
     "id": "ipa-com.ideation.Stress",
