@@ -414,6 +414,78 @@
     "lastSync": "2025-11-24T14:06:29.954Z"
   },
   {
+    "id": "ipa-overlook.fing-12.11.3",
+    "type": "ipa",
+    "name": "Fing",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/overlook.fing.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Fing_12.11.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.11.3",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "overlook.fing",
+    "lastSync": "2025-11-24T16:55:01.838Z"
+  },
+  {
+    "id": "ipa-com.alohabrowser.alohabrowser-7.13.0",
+    "type": "ipa",
+    "name": "Aloha",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alohabrowser.alohabrowser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Aloha_7.13.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.13.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.alohabrowser.alohabrowser",
+    "lastSync": "2025-11-24T16:55:01.839Z"
+  },
+  {
+    "id": "ipa-com.frontrow.vlog-1.103.1",
+    "type": "ipa",
+    "name": "VlogNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/VlogNow_1.103.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.103.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.frontrow.vlog",
+    "lastSync": "2025-11-24T16:55:01.839Z"
+  },
+  {
+    "id": "ipa-com.markodevcic.js-code-pad-1.8.17",
+    "type": "ipa",
+    "name": "JSCodePad",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.markodevcic.js-code-pad.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/JSCodePad_1.8.17_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.8.17",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.markodevcic.js-code-pad",
+    "lastSync": "2025-11-24T16:55:01.839Z"
+  },
+  {
     "id": "ipa-com.mwm.nota",
     "type": "ipa",
     "name": "Peanote",
