@@ -378,6 +378,42 @@
     "lastSync": "2025-11-24T11:58:54.212Z"
   },
   {
+    "id": "ipa-com.truesoftware.TrueCallerOther-14.44.6",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Truecaller_14.44.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.44.6",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2025-11-24T14:06:29.954Z"
+  },
+  {
+    "id": "ipa-com.dopedevelopment.Panels-9.22",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/SCRL_9.22_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.22",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2025-11-24T14:06:29.954Z"
+  },
+  {
     "id": "ipa-com.mwm.nota",
     "type": "ipa",
     "name": "Peanote",
