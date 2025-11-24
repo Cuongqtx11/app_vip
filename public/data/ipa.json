@@ -1,5 +1,113 @@
 [
   {
+    "id": "ipa-com.noteful-technologies.noteful-1.4.30",
+    "type": "ipa",
+    "name": "Noteful",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.noteful-technologies.noteful.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Noteful_1.4.30_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.30",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.noteful-technologies.noteful",
+    "lastSync": "2025-11-24T01:03:06.435Z"
+  },
+  {
+    "id": "ipa-com.AppChief.ArabicArt-9.3.2",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/_9.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.3.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2025-11-24T01:03:06.436Z"
+  },
+  {
+    "id": "ipa-com.edwinchan.Scoreboard-1.8",
+    "type": "ipa",
+    "name": "Scoreboard",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edwinchan.Scoreboard.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Scoreboard_1.8_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.8",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.edwinchan.Scoreboard",
+    "lastSync": "2025-11-24T01:03:06.436Z"
+  },
+  {
+    "id": "ipa-com.lexwarelabs.goodmorning-6.25.46",
+    "type": "ipa",
+    "name": "SleepCycle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lexwarelabs.goodmorning.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/SleepCycle_6.25.46_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.25.46",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.lexwarelabs.goodmorning",
+    "lastSync": "2025-11-24T01:03:06.436Z"
+  },
+  {
+    "id": "ipa-com.busuu.english.app-29.26.1",
+    "type": "ipa",
+    "name": "Busuu",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Busuu_29.26.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.26.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.busuu.english.app",
+    "lastSync": "2025-11-24T01:03:06.436Z"
+  },
+  {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.0.2",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/SnoreLab_6.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-24",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2025-11-24T01:03:06.436Z"
+  },
+  {
     "id": "ipa-com.mwm.nota",
     "type": "ipa",
     "name": "Peanote",
