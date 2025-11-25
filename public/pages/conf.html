@@ -635,8 +635,7 @@
       }
       
       navigator.clipboard.writeText(currentAppLink).then(() => {
-        const shadowrocketUrl = 'shadowrocket://';
-        const link4mUrl = `https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(shadowrocketUrl)}`;
+        const link4mUrl = `https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(currentAppLink)}`;
         window.open(link4mUrl, '_blank');
         
         setTimeout(() => closeDownloadPopup(), 1000);
