@@ -1,17 +1,5 @@
 [
   {
-    "id": "key_1763818751_2747",
-    "key": "T97W-TXYT-EI47-B1DA",
-    "createdAt": "2025-11-22T20:39:11.724890",
-    "expiresAt": "2025-11-23T20:39:11.724900",
-    "maxUses": 10,
-    "currentUses": 1,
-    "active": true,
-    "createdBy": "telegram_bot",
-    "notes": "1 days, 10 uses",
-    "lastUsedAt": "2025-11-22T13:39:34.115Z"
-  },
-  {
     "id": "key_1763780483_8584",
     "key": "SZM4-XLIP-8IJP-5LWC",
     "createdAt": "2025-11-22T10:01:23.124944",
