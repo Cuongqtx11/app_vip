@@ -805,6 +805,12 @@
     if (savedTheme === 'dark') {
       document.body.classList.add('dark');
     }
+
+    function forceZoom() {
+    document.body.style.zoom = "0.75";}
+    document.addEventListener("DOMContentLoaded", forceZoom);
+    window.addEventListener("resize", forceZoom);
+    window.addEventListener("orientationchange", forceZoom);
 </script>
 </body>
 </html>
