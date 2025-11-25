@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <title>Conf - Kho App VIP</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .app-card.conf-card {
+      cursor: pointer;
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4727200587055365"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterTag('all')">📱 Tất cả</button>
+    <button class="filter-btn" onclick="filterTag('vpn')">🛡️ VPN</button>
+    <button class="filter-btn" onclick="filterTag('productivity')">⚡ Prod</button>
+    <button class="filter-btn" onclick="filterTag('utility')">🔧 Utility</button>
+    <button class="filter-btn" onclick="filterTag('tools')">🛠️ Tools</button>
+  </div>
+
+  <div class="app-container" id="app-list">
+    <h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Cấu hình Shadowrocket</h2>
+    <p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Đang tải cấu hình...</p>
+  </div>
+
+  <div class="usage-popup" id="usage-popup">
+    <div class="usage-popup-content">
+      <button class="close-btn" onclick="closePopup()">&times;</button>
+      <div class="app-info-header">
+          <img id="popup-app-icon" src="" alt="Icon" />
+          <div>
+              <h2 id="popup-app-name"></h2>
+              <p id="popup-app-developer" class="app-meta"></p>
+          </div>
+      </div>
+      <div id="popup-tags" class="app-tags"></div>
+      
+      <div class="usage-content">
+          <h3 id="usage-title">Hướng dẫn sử dụng</h3>
+          <p id="usage-desc"></p>
+          <pre id="usage-link-display"></pre>
+      </div>
+
+      <a href="#" id="copy-open-btn" class="download-btn" data-link="" onclick="copyAndOpen(event)">
+          Sao chép & Mở Shadowrocket
+      </a>
+    </div>
+  </div>
+
+<script>
+    const appList = document.getElementById('app-list');
+    const usagePopup = document.getElementById('usage-popup');
+    let confApps = [];
+
+    function getTagEmoji(tag) {
+      const emojis = {
+        'vpn': '🛡️', 'productivity': '⚡', 'utility': '🔧', 'tools': '🛠️'
+      };
+      return emojis[tag] || tag;
+    }
+    function getBadgeEmoji(badge) {
+        const emojis = {
+            'new': '✨ Mới', 'update': '🔄 Cập nhật', 'trending': '🔥 Hot'
+        };
+        return emojis[badge] || badge;
+    }
+
+    // ⭐ HÀM RÚT GỌN LINK BẰNG LINK4M.COM
+    async function shortenLink(originalUrl) {
+      try {
+        const response = await fetch('https://link4m.com/api', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: `url=${encodeURIComponent(originalUrl)}`
+        });
+        
+        const data = await response.json();
+        
+        if (data.status === 'success' && data.shortenedUrl) {
+          return data.shortenedUrl;
+        }
+        return originalUrl;
+      } catch (error) {
+        console.error('Lỗi rút gọn link:', error);
+        return originalUrl;
+      }
+    }
+
+    async function loadConfApps() {
+      try {
+        const response = await fetch('../data/conf.json');
+        confApps = await response.json();
+        renderApps(confApps);
+      } catch (error) {
+        appList.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: red;">Lỗi khi tải dữ liệu cấu hình.</p>';
+      }
+    }
+
+    function renderApps(apps) {
+      if (!apps.length) {
+        appList.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Không tìm thấy cấu hình nào.</p>';
+        return;
+      }
+      
+      appList.innerHTML = '<h2 style="grid-column: 1 / -1; text-align: center; color: var(--text-light);">Cấu hình Shadowrocket</h2>';
+      
+      apps.forEach(app => {
+        const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
+        const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
+        
+        const card = document.createElement('div');
+        card.className = 'app-card conf-card';
+        card.setAttribute('data-tag', app.tags ? app.tags.join(' ') : 'all');
+        card.onclick = () => showPopup(app);
+        
+        card.innerHTML = `
+          <img src="${app.icon || 'placeholder.png'}" alt="${app.name} Icon" />
+          <div class="app-info">
+            <h3>${app.name}</h3>
+            <p>${app.desc}</p>
+          </div>
+          <div class="app-tags">${tagsHTML}${badgeHTML}</div>
+          <button class="download-btn">
+            <span class="material-icons"></span> Xem & Tải
+          </button>
+        `;
+        appList.appendChild(card);
+      });
+    }
+
+    function filterTag(tag) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (tag === 'all') {
+        renderApps(confApps);
+      } else {
+        const filtered = confApps.filter(app => app.tags && app.tags.includes(tag));
+        renderApps(filtered);
+      }
+    }
+
+    // ⭐ CẬP NHẬT: Rút gọn link trước khi hiển thị
+    async function showPopup(app) {
+      document.getElementById('popup-app-icon').src = app.icon;
+      document.getElementById('popup-app-name').textContent = app.name;
+      document.getElementById('popup-app-developer').textContent = app.developer ? `Dev: ${app.developer}` : '';
+      
+      document.getElementById('usage-desc').innerHTML = app.usage ? app.usage.replace(/\\n/g, '<br>') : 'Không có hướng dẫn sử dụng.';
+      
+      // Hiển thị loading
+      document.getElementById('usage-link-display').textContent = '⏳ Đang tạo link rút gọn...';
+      
+      const copyBtn = document.getElementById('copy-open-btn');
+      copyBtn.disabled = true;
+      copyBtn.style.opacity = '0.6';
+      copyBtn.style.cursor = 'not-allowed';
+      
+      const tagsHTML = app.tags ? app.tags.map(tag => `<span class="tag-badge">${getTagEmoji(tag)}</span>`).join('') : '';
+      const badgeHTML = app.badge ? `<span class="tag-badge badge-${app.badge}">${getBadgeEmoji(app.badge)}</span>` : '';
+      document.getElementById('popup-tags').innerHTML = tagsHTML + badgeHTML;
+
+      usagePopup.classList.add('active');
+      
+      // Rút gọn link (async)
+      const shortLink = await shortenLink(app.link);
+      
+      copyBtn.setAttribute('data-link', shortLink);
+      document.getElementById('usage-link-display').textContent = shortLink || 'Không tìm thấy liên kết.';
+      copyBtn.disabled = false;
+      copyBtn.style.opacity = '1';
+      copyBtn.style.cursor = 'pointer';
+    }
+
+    function closePopup() {
+      usagePopup.classList.remove('active');
+    }
+
+    function copyAndOpen(e) {
+      e.preventDefault();
+      const link = e.target.dataset.link;
+      if (link) {
+        navigator.clipboard.writeText(link).then(() => {
+          window.location.href = 'shadowrocket://';
+          setTimeout(() => closePopup(), 500);
+        }).catch(err => {
+          alert('❌ Lỗi: Không thể sao chép. Vui lòng thử lại!');
+        });
+      }
+    }
+
+    usagePopup.addEventListener('click', (event) => {
+      if (event.target === usagePopup) closePopup();
+    });
+
+    window.addEventListener('message', (event) => {
+      if (event.data.type === 'search') {
+        const keyword = event.data.keyword.toLowerCase();
+        const filtered = confApps.filter(app =>
+          app.name.toLowerCase().includes(keyword) ||
+          app.desc.toLowerCase().includes(keyword)
+        );
+        renderApps(filtered);
+      } else if (event.data.type === 'themeChange') {
+        document.body.classList.toggle('dark', event.data.theme === 'dark');
+      }
+    });
+
+    loadConfApps();
+
+    const savedTheme = sessionStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+    }
+</script>
+</body>
+</html>
