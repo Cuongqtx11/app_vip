@@ -1,17 +1,5 @@
 [
   {
-    "id": "key_1763780483_8584",
-    "key": "SZM4-XLIP-8IJP-5LWC",
-    "createdAt": "2025-11-22T10:01:23.124944",
-    "expiresAt": "2025-11-23T10:01:23.124953",
-    "maxUses": 100,
-    "currentUses": 4,
-    "active": false,
-    "createdBy": "telegram_bot",
-    "notes": "1 days, 100 uses",
-    "lastUsedAt": "2025-11-22T04:11:38.480Z"
-  },
-  {
     "id": "key_1763660593_3303",
     "key": "XM0Z-VDOS-KHJI-GCX7",
     "createdAt": "2025-11-21T00:43:13.570172",
