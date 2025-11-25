@@ -559,6 +559,24 @@
     "lastSync": "2025-11-25T15:55:52.760Z"
   },
   {
+    "id": "ipa-io.stampapp.Stamp-9.20.0",
+    "type": "ipa",
+    "name": "FreeYourMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.stampapp.Stamp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/FreeYourMusic_9.20.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.20.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "io.stampapp.Stamp",
+    "lastSync": "2025-11-25T16:55:01.678Z"
+  },
+  {
     "id": "ipa-com.noteful-technologies.noteful-1.4.30",
     "type": "ipa",
     "name": "Noteful",
