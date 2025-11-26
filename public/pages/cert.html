@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCM System - Sign • Cert • Mod</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .top-menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(12px);
+            background: rgba(0,0,0,0.4);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            color: #94a3b8;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-item:hover {
+            color: #60a5fa;
+            background: rgba(96, 165, 250, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .nav-item.active {
+            color: #60a5fa;
+            background: rgba(96, 165, 250, 0.2);
+            transform: scale(1.05);
+        }
+
+        .nav-item i {
+            font-size: 1.5rem;
+        }
+
+        .nav-item span {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        /* Frame Container */
+        #content-frame {
+            width: 100%;
+            height: calc(100vh - 80px);
+            margin-top: 80px;
+            border: none;
+            display: block;
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 999;
+        }
+
+        .loading i {
+            font-size: 3rem;
+            color: #60a5fa;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .nav-item {
+                padding: 0.5rem 1rem;
+            }
+
+            .nav-item i {
+                font-size: 1.25rem;
+            }
+
+            .nav-item span {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* 🌓 DARK MODE SUPPORT */
+        body.dark {
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a1034 50%, #0a0e1a 100%);
+        }
+
+        body.dark .top-menu {
+            background: rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="top-menu">
+        <div class="nav-container">
+            <a class="nav-item active" data-page="sign" onclick="loadPage('sign')">
+                <i class="fa-solid fa-pen-nib"></i>
+                <span>SIGN</span>
+            </a>
+            <a class="nav-item" data-page="cert" onclick="loadPage('cert')">
+                <i class="fa-solid fa-certificate"></i>
+                <span>CERT</span>
+            </a>
+            <a class="nav-item" data-page="mod" onclick="loadPage('mod')">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>MOD</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Loading Indicator -->
+    <div class="loading" id="loading" style="display: none;">
+        <i class="fa-solid fa-spinner"></i>
+    </div>
+
+    <!-- Content Frame -->
+    <iframe id="content-frame"></iframe>
+
+    <script>
+        // 🌓 DARK MODE SYNC
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'themeChange') {
+                document.body.classList.toggle('dark', event.data.theme === 'dark');
+                
+                // Forward theme to iframe
+                const iframe = document.getElementById('content-frame');
+                if (iframe.contentWindow) {
+                    iframe.contentWindow.postMessage({
+                        type: 'themeChange',
+                        theme: event.data.theme
+                    }, '*');
+                }
+            }
+        });
+
+        // Check saved theme
+        const savedTheme = sessionStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark');
+        }
+
+        // Navigation logic
+        const navItems = document.querySelectorAll('.nav-item');
+        const contentFrame = document.getElementById('content-frame');
+        const loading = document.getElementById('loading');
+
+        function loadPage(page) {
+            // Update active state
+            navItems.forEach(nav => nav.classList.remove('active'));
+            document.querySelector(`[data-page="${page}"]`).classList.add('active');
+
+            // Show loading
+            loading.style.display = 'block';
+
+            // Load page
+            contentFrame.src = `scm/${page}.html`;
+        }
+
+        // Hide loading when frame loads
+        contentFrame.addEventListener('load', () => {
+            loading.style.display = 'none';
+            
+            // Send theme to newly loaded iframe
+            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+            if (contentFrame.contentWindow) {
+                contentFrame.contentWindow.postMessage({
+                    type: 'themeChange',
+                    theme: currentTheme
+                }, '*');
+            }
+        });
+
+        // Initial load
+        window.addEventListener('load', () => {
+            loadPage('sign'); // Load SIGN by default
+        });
+    </script>
+</body>
+</html>
