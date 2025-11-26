@@ -196,8 +196,8 @@
             // Show loading
             loading.style.display = 'block';
 
-            // Load page
-            contentFrame.src = `scm/${page}.html`;
+            // 🎯 FIX: Load from correct path - page/ folder
+            contentFrame.src = `page/${page}.html`;
         }
 
         // Hide loading when frame loads
