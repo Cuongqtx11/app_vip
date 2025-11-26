@@ -1,5 +1,383 @@
 [
   {
+    "id": "ipa-boomer.Smart-Video-12.46.0",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Captions_12.46.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.46.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2025-11-26T15:49:27.587Z"
+  },
+  {
+    "id": "ipa-com.blake.femalefitness-10.4.5",
+    "type": "ipa",
+    "name": "Shapy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blake.femalefitness.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Shapy_10.4.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.4.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.blake.femalefitness",
+    "lastSync": "2025-11-26T15:49:27.587Z"
+  },
+  {
+    "id": "ipa-com.focos-2.11.37",
+    "type": "ipa",
+    "name": "Focos",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.focos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Focos_2.11.37_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.37",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.focos",
+    "lastSync": "2025-11-26T15:49:27.587Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2025.47.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Photoroom_2025.47.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.47.01",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2025-11-26T15:49:27.587Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.3.1",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/GOWOD_5.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2025-11-26T15:49:27.588Z"
+  },
+  {
+    "id": "ipa-co.codeleap.bearable-1.0.576",
+    "type": "ipa",
+    "name": "Bearable",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.codeleap.bearable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Bearable_1.0.576_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.576",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "co.codeleap.bearable",
+    "lastSync": "2025-11-26T15:49:27.588Z"
+  },
+  {
+    "id": "ipa-com.ideation.Stress-2.4.13",
+    "type": "ipa",
+    "name": "StressWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Stress.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/StressWatch_2.4.13_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.13",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.ideation.Stress",
+    "lastSync": "2025-11-26T15:49:27.588Z"
+  },
+  {
+    "id": "ipa-com.textasticapp.textastic-universal-10.8.5",
+    "type": "ipa",
+    "name": "Textastic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.textasticapp.textastic-universal.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Textastic_10.8.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.8.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.textasticapp.textastic-universal",
+    "lastSync": "2025-11-26T15:49:27.588Z"
+  },
+  {
+    "id": "ipa-com.bbauman.Scripty-2.27",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Coconote_2.27_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.27",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2025-11-26T15:49:27.588Z"
+  },
+  {
+    "id": "ipa-com.yengshine.proccd-5.1.2",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/ProCCD_5.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.1.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2025-11-26T15:49:27.588Z"
+  },
+  {
+    "id": "ipa-co.lovetap.Female-by-Design-6.5.2",
+    "type": "ipa",
+    "name": "Life",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.lovetap.Female-by-Design.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Life_6.5.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "co.lovetap.Female-by-Design",
+    "lastSync": "2025-11-26T15:49:27.588Z"
+  },
+  {
+    "id": "ipa-es.monkimun.lingokids-25.48.0",
+    "type": "ipa",
+    "name": "Lingokids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/es.monkimun.lingokids.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Lingokids_25.48.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.48.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "es.monkimun.lingokids",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-com.abishkking.sixpack-1.42.0",
+    "type": "ipa",
+    "name": "SixPackAbsAbsWorkout",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.abishkking.sixpack.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/SixPackAbsAbsWorkout_1.42.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.42.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.abishkking.sixpack",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-com.fluidtouch.noteshelf3-5.10",
+    "type": "ipa",
+    "name": "Noteshelf3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fluidtouch.noteshelf3.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Noteshelf3_5.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.10",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.fluidtouch.noteshelf3",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-viral.vision.vids-1.126.0",
+    "type": "ipa",
+    "name": "Vids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/viral.vision.vids.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Vids_1.126.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.126.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "viral.vision.vids",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2-11.42.2",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/X_11.42.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.42.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-com.consumedbycode.slopes-2025.16",
+    "type": "ipa",
+    "name": "Slopes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.consumedbycode.slopes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Slopes_2025.16_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.16",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.consumedbycode.slopes",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-com.adobe.fresco.ios-7.0.1",
+    "type": "ipa",
+    "name": "AdobeFresco",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.fresco.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/AdobeFresco_7.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.adobe.fresco.ios",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-com.linecorp.b612-14.6.15",
+    "type": "ipa",
+    "name": "B612",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.b612.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/B612_14.6.15_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.6.15",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.b612",
+    "lastSync": "2025-11-26T15:49:27.589Z"
+  },
+  {
+    "id": "ipa-com.snowcorp.glowup-3.5.1",
+    "type": "ipa",
+    "name": "GlowUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.glowup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/GlowUp_3.5.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.glowup",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-co.bazaart.app-26.0.5",
+    "type": "ipa",
+    "name": "Bazaart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bazaart.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-11-2025/Bazaart_26.0.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.0.5",
+    "developer": "apptesters.org",
+    "date": "2025-11-26",
+    "source": "apptesters",
+    "bundleID": "co.bazaart.app",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
     "id": "ipa-com.nixwang.decision-25.11.0",
     "type": "ipa",
     "name": "TinyDecisions",
@@ -575,6 +953,312 @@
     "source": "apptesters",
     "bundleID": "io.stampapp.Stamp",
     "lastSync": "2025-11-25T16:55:01.678Z"
+  },
+  {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.18.0",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/MergeCooking_1.18.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.18.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-app.labbet.labbet-2.50",
+    "type": "ipa",
+    "name": "Labbet",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.labbet.labbet.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Labbet_2.50_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.50",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "app.labbet.labbet",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-com.aismartapps.retrofix-1.0.34",
+    "type": "ipa",
+    "name": "RetroFix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aismartapps.retrofix.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/RetroFix_1.0.34_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.34",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.aismartapps.retrofix",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-mansuri.aidrumpadbeatsdjmixer.com-1.0",
+    "type": "ipa",
+    "name": "DJDrumPad",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/mansuri.aidrumpadbeatsdjmixer.com.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/DJDrumPad_1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "mansuri.aidrumpadbeatsdjmixer.com",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-com.ironotes.Ironotes-1.181",
+    "type": "ipa",
+    "name": "Ironotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ironotes.Ironotes.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Ironotes_1.181_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.181",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.ironotes.Ironotes",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-com.armengrewal.Pyxis-3.1",
+    "type": "ipa",
+    "name": "Pyxis",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.armengrewal.Pyxis.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Pyxis_3.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.armengrewal.Pyxis",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-sleepwave.app-3.2.22",
+    "type": "ipa",
+    "name": "Sleepwave",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/sleepwave.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Sleepwave_3.2.22_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.22",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "sleepwave.app",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-com.ironotes.Ironotes-1.180",
+    "type": "ipa",
+    "name": "Ironotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ironotes.Ironotes.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Ironotes_1.180_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.180",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.ironotes.Ironotes",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-matekovacs.Teleprompter-9.0.9",
+    "type": "ipa",
+    "name": "Telepromptercom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/matekovacs.Teleprompter.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Telepromptercom_9.0.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.0.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "matekovacs.Teleprompter",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-com.arcuilo.inktica-1.50.133",
+    "type": "ipa",
+    "name": "Inktica",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.arcuilo.inktica.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Inktica_1.50.133_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.50.133",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.arcuilo.inktica",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-io.linga-3.5.1",
+    "type": "ipa",
+    "name": "Linga",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.linga.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Linga_3.5.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "io.linga",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-com.obzena.procreate-2.0.1",
+    "type": "ipa",
+    "name": "ProcreateHUB",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.obzena.procreate.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/ProcreateHUB_2.0.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.obzena.procreate",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-com.ironotes.Ironotes-1.182",
+    "type": "ipa",
+    "name": "Ironotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ironotes.Ironotes.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Ironotes_1.182_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.182",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.ironotes.Ironotes",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-app.cranberry.splash-2.1.9",
+    "type": "ipa",
+    "name": "Splash",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.splash.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Splash_2.1.9_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.splash",
+    "lastSync": "2025-11-26T15:49:27.590Z"
+  },
+  {
+    "id": "ipa-app.cranberry.splash-2.1.8",
+    "type": "ipa",
+    "name": "Splash",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.splash.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Splash_2.1.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.8",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.splash",
+    "lastSync": "2025-11-26T15:49:27.591Z"
+  },
+  {
+    "id": "ipa-com.fineyo.Fineyo-3.8.8",
+    "type": "ipa",
+    "name": "Fineyo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fineyo.Fineyo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Fineyo_3.8.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.8",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.fineyo.Fineyo",
+    "lastSync": "2025-11-26T15:49:27.591Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Facetune2-3.112.1",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/Facetune_3.112.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.112.1",
+    "developer": "apptesters.org",
+    "date": "2025-11-25",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2025-11-26T15:49:27.591Z"
   },
   {
     "id": "ipa-com.noteful-technologies.noteful-1.4.30",
