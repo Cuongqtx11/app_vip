@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     }
 
     // Validate input
-    if (!type || !data || !['ipa', 'dylib', 'conf'].includes(type)) {
+    if (!type || !data || !['ipa', 'dylib', 'conf', 'cert'].includes(type)) {
       return res.status(400).json({ error: 'Invalid request data' });
     }
 
