@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "TrollFools - Inject Dylib vào IPA",
+    "description": "Module cho phép tiêm dylib vào file IPA trực tiếp trên iOS. Cần TrollStore để sử dụng.",
+    "size": "15.2 MB",
+    "downloadUrl": "https://github.com/Lessica/TrollFools/releases/latest",
+    "date": "2025-01-22"
+  }
+]
