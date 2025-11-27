@@ -216,6 +216,96 @@
     "lastSync": "2025-11-27T13:32:18.376Z"
   },
   {
+    "id": "ipa-com.endel.endel-4.48.418",
+    "type": "ipa",
+    "name": "Endel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.endel.endel.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-11-2025/Endel_4.48.418_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.48.418",
+    "developer": "apptesters.org",
+    "date": "2025-11-27",
+    "source": "apptesters",
+    "bundleID": "com.endel.endel",
+    "lastSync": "2025-11-27T16:55:01.551Z"
+  },
+  {
+    "id": "ipa-xyz.gingertech.fitnotes-14",
+    "type": "ipa",
+    "name": "FitNotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/xyz.gingertech.fitnotes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-11-2025/FitNotes_14_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14",
+    "developer": "apptesters.org",
+    "date": "2025-11-27",
+    "source": "apptesters",
+    "bundleID": "xyz.gingertech.fitnotes",
+    "lastSync": "2025-11-27T16:55:01.551Z"
+  },
+  {
+    "id": "ipa-com.future.kapi-3.24.0",
+    "type": "ipa",
+    "name": "Action",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.future.kapi.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-11-2025/Action_3.24.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.24.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-27",
+    "source": "apptesters",
+    "bundleID": "com.future.kapi",
+    "lastSync": "2025-11-27T16:55:01.552Z"
+  },
+  {
+    "id": "ipa-com.grey.swiftcamera-2.5.46",
+    "type": "ipa",
+    "name": "NoFusion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grey.swiftcamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-11-2025/NoFusion_2.5.46_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.46",
+    "developer": "apptesters.org",
+    "date": "2025-11-27",
+    "source": "apptesters",
+    "bundleID": "com.grey.swiftcamera",
+    "lastSync": "2025-11-27T16:55:01.552Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.Fitia-19.11",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-11-2025/Fitia_19.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "19.11",
+    "developer": "apptesters.org",
+    "date": "2025-11-27",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2025-11-27T16:55:01.552Z"
+  },
+  {
     "id": "ipa-boomer.Smart-Video-12.46.0",
     "type": "ipa",
     "name": "Captions",
