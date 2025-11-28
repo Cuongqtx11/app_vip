@@ -49,7 +49,6 @@
         }
 
         .items-grid {
-            /* Tối ưu hóa cho màn hình lớn hơn */
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 1.5rem; /* Giảm gap */
@@ -66,7 +65,6 @@
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             animation: slideUp 0.6s ease;
             animation-fill-mode: both;
-            /* Loại bỏ cursor: pointer; để chỉ nút Download mới có thể click */
             
             display: flex;
             flex-direction: column;
@@ -74,7 +72,7 @@
         }
 
         .item-card:hover {
-            transform: translateY(-5px) scale(1.01); /* Giảm hiệu ứng hover */
+            transform: translateY(-5px) scale(1.01); 
             border-color: rgba(96, 165, 250, 0.3);
             box-shadow: 0 15px 30px rgba(96, 165, 250, 0.2);
         }
@@ -231,7 +229,6 @@
         }
 
         /* --- DOWNLOAD POPUP (Giữ nguyên cấu trúc và màu sắc) --- */
-        /* ... CSS popup giữ nguyên từ lần trước ... */
         
         .download-popup {
             position: fixed;
@@ -398,8 +395,8 @@
             display: none;
             margin-top: 20px;
             padding: 20px;
-            background: rgba(167, 139, 250, 0.08); /* Dùng màu tím nhạt */
-            border: 2px dashed #a78bfa; /* Dùng màu tím */
+            background: rgba(167, 139, 250, 0.08); 
+            border: 2px dashed #a78bfa; 
             border-radius: 16px;
             animation: slideDown 0.3s ease;
         }
@@ -436,7 +433,7 @@
 
         .vip-key-input button {
             padding: 12px 25px;
-            background: linear-gradient(135deg, #a78bfa, #8b5cf6); /* Gradient tím */
+            background: linear-gradient(135deg, #a78bfa, #8b5cf6); 
             color: white;
             border: none;
             border-radius: 10px;
@@ -664,7 +661,7 @@
 
         async function loadData() {
             try {
-                // Sử dụng đường dẫn tương đối cho file JSON
+                // Tải dữ liệu ứng dụng từ file sign.json
                 const response = await fetch('../data/sign.json'); 
                 const data = await response.json();
                 renderItems(data);
@@ -741,13 +738,19 @@
             
             currentDownloadUrl = item.downloadUrl;
             
-            // Reset
+            // Reset trạng thái
             document.getElementById('vipKeySection').classList.remove('active');
             document.getElementById('downloadDirectBtn').classList.remove('show');
             document.getElementById('keyMessage').className = 'key-message';
+            document.getElementById('keyMessage').textContent = '';
             document.getElementById('vipKeyInput').value = '';
             
             document.getElementById('downloadPopup').classList.add('active');
+            
+            // Đảm bảo nút Xác Nhận luôn hiển thị văn bản đúng ban đầu
+            document.querySelector('#verifyBtn .spinner').style.display = 'none';
+            document.getElementById('verifyBtn').disabled = false;
+            document.getElementById('verifyBtn').childNodes[document.getElementById('verifyBtn').childNodes.length - 1].textContent = ' Xác Nhận';
         }
 
         function closeDownloadPopup() {
@@ -756,12 +759,12 @@
 
         function handleFreeDownload() {
             if (!currentDownloadUrl) {
-                // Thay thế alert() bằng thông báo trong popup
                 document.getElementById('keyMessage').className = 'key-message error';
                 document.getElementById('keyMessage').textContent = '❌ Link không khả dụng!';
                 return;
             }
             
+            // Sử dụng link4m đã được cung cấp
             const link4mUrl = `https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(currentDownloadUrl)}`;
             window.open(link4mUrl, '_blank');
             setTimeout(() => closeDownloadPopup(), 1000);
@@ -792,7 +795,7 @@
             e.target.value = formatted;
         });
 
-        // GIẢ LẬP XÁC THỰC KEY (Giữ nguyên logic giả lập)
+        // Tích hợp logic gọi API xác thực key từ ipa.html
         async function verifyAndDownload() {
             const keyInput = document.getElementById('vipKeyInput');
             const verifyBtn = document.getElementById('verifyBtn');
@@ -814,18 +817,31 @@
             keyMessage.textContent = '';
             downloadBtn.classList.remove('show');
 
-            await new Promise(resolve => setTimeout(resolve, 1500)); 
-
-            // Key test: 'ABCD-EFGH-IJKL-MNPZ' là key thành công
-            const isSuccess = key === 'ABCD-EFGH-IJKL-MNPZ'; 
-            
             try {
-                if (isSuccess) {
+                // SỬ DỤNG ENDPOINT ĐƯỢC THẤY TRONG ipa.html
+                const response = await fetch('/api/keys/verify', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ key: key }) // Truyền key
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
                     keyMessage.className = 'key-message success';
                     
                     let successMsg = '✅ Xác thực thành công!\n';
-                    successMsg += `\n📊 Còn lại: Vô hạn lượt`;
-                    successMsg += `\n⏰ Hết hạn: 2050-12-31`;
+                    if (result.remainingUses !== null) {
+                        successMsg += `\n📊 Còn lại: ${result.remainingUses} lượt`;
+                    } else {
+                        successMsg += '\n♾️ Không giới hạn lượt';
+                    }
+                    if (result.expiresAt) {
+                        const expiryDate = new Date(result.expiresAt);
+                        successMsg += `\n⏰ Hết hạn: ${expiryDate.toLocaleDateString('vi-VN')}`;
+                    } else {
+                        successMsg += '\n⏰ Hết hạn: Vĩnh viễn';
+                    }
                     
                     keyMessage.textContent = successMsg;
                     downloadBtn.classList.add('show');
@@ -833,11 +849,26 @@
                     setTimeout(() => {
                         downloadBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }, 200);
+                    
                 } else {
                     keyMessage.className = 'key-message error';
-                    keyMessage.textContent = '❌ Mã key không hợp lệ, đã hết hạn hoặc không tồn tại!';
+                    
+                    let errorMsg = '❌ ';
+                    // Xử lý các mã lỗi như trong ipa.html
+                    if (result.code === 'KEY_NOT_FOUND') errorMsg += 'Mã key không tồn tại';
+                    else if (result.code === 'KEY_INACTIVE') errorMsg += 'Mã key đã bị vô hiệu hóa';
+                    else if (result.code === 'KEY_EXPIRED') errorMsg += 'Mã key đã hết hạn sử dụng';
+                    else if (result.code === 'KEY_MAX_USES_REACHED') errorMsg += 'Mã key đã hết lượt sử dụng';
+                    else errorMsg += result.error || 'Mã không hợp lệ';
+                    
+                    keyMessage.textContent = errorMsg;
                     downloadBtn.classList.remove('show');
                 }
+            } catch (error) {
+                console.error('API Error:', error);
+                keyMessage.className = 'key-message error';
+                keyMessage.textContent = '❌ Lỗi kết nối! Vui lòng thử lại. (Kiểm tra console để biết chi tiết lỗi)';
+                downloadBtn.classList.remove('show');
             } finally {
                 verifyBtn.disabled = false;
                 document.querySelector('#verifyBtn .spinner').style.display = 'none';
