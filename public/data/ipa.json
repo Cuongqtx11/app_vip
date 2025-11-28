@@ -450,6 +450,24 @@
     "lastSync": "2025-11-28T16:35:31.313Z"
   },
   {
+    "id": "ipa-com.mwm.stems-4.02.19",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-11-2025/Stemz_4.02.19_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.02.19",
+    "developer": "apptesters.org",
+    "date": "2025-11-28",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2025-11-28T16:55:01.700Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.21",
     "type": "ipa",
     "name": "Stndrd",
