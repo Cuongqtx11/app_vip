@@ -1,5 +1,21 @@
 [
   {
+    "id": "ipa-1764302023121",
+    "type": "ipa",
+    "name": "Clash of Clans",
+    "icon": "https://yt3.googleusercontent.com/y6-04__BPPI4DOXXBbGweG9tMOz5GfOgWDeIHSTzo8lQYRllA-X6I-Dx1x1xDpW2wiDnZfNtPQ=s900-c-k-c0x00ffffff-no-rj",
+    "desc": "Update hall 18 - Mod sever riêng",
+    "tags": [
+      "game"
+    ],
+    "badge": "top",
+    "source": "manual",
+    "fileLink": "https://www.mediafire.com/file/dt1swm2j2xy06ze/Null's+Clash+18.0.2+for+iOS.ipa/file",
+    "version": "18.0.2",
+    "developer": "cuios.shop",
+    "date": "2025-11-28"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.21",
     "type": "ipa",
     "name": "Stndrd",
