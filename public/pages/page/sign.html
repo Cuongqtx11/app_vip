@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN - SCM System</title>
+    <!-- Thêm Google Font: Poppins và Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
+        /* --- CSS GỐC VÀ CHỈNH SỬA CHO CARD MỚI --- */
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +19,7 @@
             font-family: "Poppins", -apple-system, sans-serif;
             background: transparent;
             color: white;
-            padding: 2rem;
+            padding: 1.5rem; /* Giảm padding body */
         }
 
         .container {
@@ -25,132 +29,210 @@
 
         .header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem; /* Giảm margin */
             animation: fadeIn 0.6s ease;
         }
 
         .header h1 {
-            font-size: 3rem;
+            font-size: 2.8rem; /* Giảm size */
             background: linear-gradient(135deg, #60a5fa, #a78bfa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
+            font-weight: 800;
         }
 
         .header p {
             color: #94a3b8;
-            font-size: 1.125rem;
+            font-size: 1.0rem; /* Giảm size */
         }
 
         .items-grid {
+            /* Tối ưu hóa cho màn hình lớn hơn */
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
+            gap: 1.5rem; /* Giảm gap */
         }
 
         .item-card {
             background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(51, 65, 85, 0.3));
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 2rem;
+            border-radius: 18px; /* Giảm bo góc */
+            padding: 1.25rem; /* Giảm padding */
             position: relative;
             overflow: hidden;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             animation: slideUp 0.6s ease;
             animation-fill-mode: both;
-            cursor: pointer;
-        }
-
-        .item-card:nth-child(1) { animation-delay: 0.1s; }
-        .item-card:nth-child(2) { animation-delay: 0.2s; }
-        .item-card:nth-child(3) { animation-delay: 0.3s; }
-
-        .item-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(96, 165, 250, 0), rgba(167, 139, 250, 0));
-            transition: all 0.5s ease;
-            z-index: 0;
+            /* Loại bỏ cursor: pointer; để chỉ nút Download mới có thể click */
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .item-card:hover {
-            transform: translateY(-8px) scale(1.02);
+            transform: translateY(-5px) scale(1.01); /* Giảm hiệu ứng hover */
             border-color: rgba(96, 165, 250, 0.3);
-            box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
+            box-shadow: 0 15px 30px rgba(96, 165, 250, 0.2);
         }
 
         .item-card:hover::before {
-            background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), rgba(167, 139, 250, 0.1));
+            background: linear-gradient(135deg, rgba(96, 165, 250, 0.08), rgba(167, 139, 250, 0.08));
         }
 
         .card-content {
             position: relative;
             z-index: 1;
+            flex-grow: 1;
         }
-
-        .card-header {
+        
+        /* --- ĐỊNH DẠNG HEADER MỚI: ICON VÀ TÊN APP CÙNG HÀNG --- */
+        .card-app-header {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1.5rem;
+            align-items: center;
+            gap: 0.8rem; /* Giảm gap */
+            margin-bottom: 0.75rem; /* Giảm margin */
+            position: relative;
         }
 
-        .card-icon {
-            background: rgba(96, 165, 250, 0.2);
-            padding: 1rem;
-            border-radius: 12px;
-            font-size: 1.5rem;
+        .icon-wrapper {
+            width: 70px; /* Kích thước icon nhỏ hơn */
+            height: 70px;
+            flex-shrink: 0;
+            border-radius: 14px; /* Giảm bo góc */
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .app-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: #334155; 
         }
 
-        .card-date {
-            background: rgba(30, 41, 59, 0.8);
-            padding: 0.375rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            color: #94a3b8;
+        .app-tag {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: #ef4444; 
+            color: white;
+            font-size: 0.65rem; /* Giảm size tag */
+            font-weight: 700;
+            padding: 2px 7px; /* Giảm padding tag */
+            border-radius: 4px;
+            transform: translate(-10px, -8px) rotate(-10deg);
+            z-index: 10;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            border: 1px solid #1f2937;
+        }
+        
+        .card-title-group {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
         }
 
         .card-title {
-            font-size: 1.5rem;
+            font-size: 1.35rem; /* Giảm size tiêu đề */
             font-weight: 700;
-            margin-bottom: 0.75rem;
             color: white;
+            line-height: 1.2;
             transition: color 0.3s ease;
         }
 
         .item-card:hover .card-title {
             color: #60a5fa;
         }
+        
+        /* --- METADATA VÀ DESCRIPTION --- */
 
         .card-description {
             color: #94a3b8;
-            font-size: 0.9375rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+            font-size: 0.9rem; /* Giảm size mô tả */
+            line-height: 1.4;
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem; 
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+        
+        .metadata {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-        .card-meta {
+        .metadata li {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            color: #94a3b8;
+            font-size: 0.85rem; /* Giảm size metadata */
+            margin-bottom: 0.3rem;
         }
 
-        .card-size {
-            background: rgba(30, 41, 59, 0.6);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8125rem;
-            color: #cbd5e1;
+        .metadata li i {
+            color: #a78bfa; 
+            width: 18px; /* Giảm width icon */
+            text-align: center;
+            margin-right: 6px; /* Giảm margin */
         }
 
-        /* DOWNLOAD POPUP */
+        .metadata .installs-count {
+            color: #ef4444; 
+            font-weight: 600;
+        }
+        
+        /* --- FOOTER & NÚT DOWNLOAD LỚN --- */
+        .card-footer {
+            margin-top: 1rem; /* Giảm margin */
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 1rem; /* Giảm padding */
+        }
+        
+        .download-btn-card {
+            background: transparent;
+            border: 2px solid #60a5fa;
+            color: #60a5fa;
+            width: 100%;
+            padding: 0.7rem 1rem; /* Giảm padding nút */
+            border-radius: 12px; /* Giảm bo góc */
+            font-size: 1.0rem; /* Giảm size chữ nút */
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .download-btn-card:hover {
+            background: linear-gradient(90deg, rgba(96, 165, 250, 0.15), rgba(167, 139, 250, 0.15));
+            color: white;
+            box-shadow: 0 6px 15px rgba(96, 165, 250, 0.4); 
+            transform: scale(1.0); /* Bỏ scale */
+        }
+
+        .download-btn-card i {
+            margin-left: 8px; /* Giảm margin */
+            transition: transform 0.3s ease;
+        }
+        
+        .download-btn-card:hover i {
+            transform: translateY(2px);
+        }
+
+        /* --- DOWNLOAD POPUP (Giữ nguyên cấu trúc và màu sắc) --- */
+        /* ... CSS popup giữ nguyên từ lần trước ... */
+        
         .download-popup {
             position: fixed;
             top: 0;
@@ -227,6 +309,18 @@
         .download-header .card-icon {
             display: inline-block;
             margin-bottom: 15px;
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #334155;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        }
+        
+        .download-header .card-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .download-header h2 {
@@ -304,8 +398,8 @@
             display: none;
             margin-top: 20px;
             padding: 20px;
-            background: rgba(255, 215, 0, 0.08);
-            border: 2px dashed #60a5fa;
+            background: rgba(167, 139, 250, 0.08); /* Dùng màu tím nhạt */
+            border: 2px dashed #a78bfa; /* Dùng màu tím */
             border-radius: 16px;
             animation: slideDown 0.3s ease;
         }
@@ -342,7 +436,7 @@
 
         .vip-key-input button {
             padding: 12px 25px;
-            background: linear-gradient(135deg, #FFD700, #FFA500);
+            background: linear-gradient(135deg, #a78bfa, #8b5cf6); /* Gradient tím */
             color: white;
             border: none;
             border-radius: 10px;
@@ -350,11 +444,12 @@
             cursor: pointer;
             transition: all 0.3s ease;
             white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
         }
 
         .vip-key-input button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(167, 139, 250, 0.5);
         }
 
         .vip-key-input button:disabled {
@@ -423,7 +518,10 @@
             border-radius: 50%;
             border-top-color: #fff;
             animation: spin 0.8s ease-in-out infinite;
+            margin-right: 8px;
         }
+        
+        /* --- ANIMATIONS AND MEDIA QUERIES --- */
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
@@ -451,12 +549,16 @@
         }
 
         @media (max-width: 768px) {
+            body { padding: 1rem; }
             .items-grid {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
+                gap: 1rem;
             }
             .header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            .item-card {
+                padding: 1rem;
             }
             .download-popup-content {
                 width: 95%;
@@ -464,6 +566,16 @@
             }
             .vip-key-input {
                 flex-direction: column;
+            }
+            .icon-wrapper {
+                width: 60px;
+                height: 60px;
+            }
+            .card-title {
+                font-size: 1.2rem;
+            }
+            .download-btn-card {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -486,7 +598,10 @@
             <button class="close-btn" onclick="closeDownloadPopup()">&times;</button>
             
             <div class="download-header">
-                <div class="card-icon" id="popup-icon">📄</div>
+                <!-- Popup icon -->
+                <div class="card-icon" id="popup-icon-wrapper">
+                    <img id="popup-icon" src="" alt="App Icon" onerror="this.src='https://placehold.co/70x70/60a5fa/ffffff?text=App';" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                </div>
                 <h2 id="popup-name">Document Name</h2>
                 <p id="popup-info">File size • Date</p>
             </div>
@@ -515,7 +630,7 @@
             </div>
 
             <div class="vip-key-section" id="vipKeySection">
-                <p style="text-align: center; margin-bottom: 10px; font-weight: 600; color: #60a5fa;">
+                <p style="text-align: center; margin-bottom: 10px; font-weight: 600; color: #a78bfa;">
                     🔑 Nhập mã VIP của bạn
                 </p>
                 <div class="vip-key-input">
@@ -526,14 +641,14 @@
                         maxlength="19"
                     />
                     <button onclick="verifyAndDownload()" id="verifyBtn">
-                        Xác Nhận
+                        <span class="spinner" style="display: none;"></span> Xác Nhận
                     </button>
                 </div>
                 
                 <div class="key-message" id="keyMessage"></div>
                 
                 <button class="download-direct-btn" id="downloadDirectBtn" onclick="handleDirectDownload()">
-                    <span>⬇️</span> Tải Xuống Ngay
+                    <span><i class="fas fa-download"></i></span> Tải Xuống Ngay
                 </button>
                 
                 <p style="text-align: center; margin-top: 15px; font-size: 0.85em; color: #94a3b8;">
@@ -545,14 +660,21 @@
 
     <script>
         let currentDownloadUrl = '';
+        let currentItem = {};
 
         async function loadData() {
             try {
-                const response = await fetch('../data/sign.json');
+                // Sử dụng đường dẫn tương đối cho file JSON
+                const response = await fetch('../data/sign.json'); 
                 const data = await response.json();
                 renderItems(data);
             } catch (error) {
                 console.error('Error loading data:', error);
+                document.getElementById('items-container').innerHTML = `
+                    <p style="color: #e74c3c; text-align: center; grid-column: 1 / -1;">
+                        ❌ Không thể tải dữ liệu ứng dụng. Vui lòng kiểm tra file sign.json.
+                    </p>
+                `;
             }
         }
 
@@ -560,27 +682,63 @@
             const container = document.getElementById('items-container');
             
             container.innerHTML = items.map(item => `
-                <div class="item-card" onclick='showDownloadPopup(${JSON.stringify(item).replace(/'/g, "&apos;")})'>
+                <div class="item-card">
                     <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-icon">📄</div>
-                            <div class="card-date">${item.date}</div>
+                        <!-- ICON VÀ TÊN APP CÙNG HÀNG -->
+                        <div class="card-app-header">
+                            <div class="icon-wrapper">
+                                <img 
+                                    src="${item.iconUrl || 'https://placehold.co/70x70/60a5fa/ffffff?text=App'}" 
+                                    alt="${item.title}" 
+                                    class="app-icon"
+                                    onerror="this.src='https://placehold.co/70x70/60a5fa/ffffff?text=App';"
+                                >
+                                ${item.tag ? `<span class="app-tag">${item.tag}</span>` : ''}
+                            </div>
+                            
+                            <div class="card-title-group">
+                                <h3 class="card-title">${item.title}</h3>
+                                <p class="card-description" style="margin-top: 0; margin-bottom: 0.5rem; -webkit-line-clamp: 1;">${item.description}</p>
+                            </div>
                         </div>
                         
-                        <h3 class="card-title">${item.title}</h3>
-                        <p class="card-description">${item.description}</p>
-                        
-                        <div class="card-meta">
-                            <span class="card-size">${item.size}</span>
-                        </div>
+                        <!-- METADATA -->
+                        <ul class="metadata">
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                Ngày: ${item.date}
+                            </li>
+                            <li>
+                                <i class="fas fa-microchip"></i>
+                                Kích thước: ${item.size || 'N/A'}
+                            </li>
+                            <li>
+                                <i class="fas fa-users"></i>
+                                <span class="installs-count">${(item.installs || 0).toLocaleString('vi-VN')}</span> lượt cài đặt
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- NÚT DOWNLOAD MỚI -->
+                    <div class="card-footer">
+                        <!-- SỬA LỖI CLICK: Chỉ gọi showDownloadPopup khi click vào nút, và dùng event.stopPropagation() -->
+                        <button class="download-btn-card" onclick='event.stopPropagation(); showDownloadPopup(${JSON.stringify(item).replace(/'/g, "&apos;")})'>
+                            Download <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
                     </div>
                 </div>
             `).join('');
         }
 
         function showDownloadPopup(item) {
+            currentItem = item;
             document.getElementById('popup-name').textContent = item.title;
             document.getElementById('popup-info').textContent = `${item.size} • ${item.date}`;
+            
+            // Cập nhật icon popup
+            const popupIconElement = document.getElementById('popup-icon');
+            popupIconElement.src = item.iconUrl || 'https://placehold.co/70x70/60a5fa/ffffff?text=App';
+            
             currentDownloadUrl = item.downloadUrl;
             
             // Reset
@@ -598,7 +756,9 @@
 
         function handleFreeDownload() {
             if (!currentDownloadUrl) {
-                alert('❌ Link không khả dụng!');
+                // Thay thế alert() bằng thông báo trong popup
+                document.getElementById('keyMessage').className = 'key-message error';
+                document.getElementById('keyMessage').textContent = '❌ Link không khả dụng!';
                 return;
             }
             
@@ -613,7 +773,8 @@
             
             if (section.classList.contains('active')) {
                 setTimeout(() => {
-                    section.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    document.getElementById('downloadPopup').querySelector('.download-popup-content').scrollTop = 
+                        document.getElementById('downloadPopup').querySelector('.download-popup-content').scrollHeight;
                     document.getElementById('vipKeyInput').focus();
                 }, 100);
             }
@@ -631,6 +792,7 @@
             e.target.value = formatted;
         });
 
+        // GIẢ LẬP XÁC THỰC KEY (Giữ nguyên logic giả lập)
         async function verifyAndDownload() {
             const keyInput = document.getElementById('vipKeyInput');
             const verifyBtn = document.getElementById('verifyBtn');
@@ -640,39 +802,30 @@
 
             if (!key || key.length < 19) {
                 keyMessage.className = 'key-message error';
-                keyMessage.textContent = '❌ Vui lòng nhập đầy đủ mã VIP!';
+                keyMessage.textContent = '❌ Vui lòng nhập đầy đủ mã VIP (16 ký tự)!';
                 downloadBtn.classList.remove('show');
                 return;
             }
 
             verifyBtn.disabled = true;
-            verifyBtn.innerHTML = '<span class="spinner"></span> Đang xác thực...';
+            document.querySelector('#verifyBtn .spinner').style.display = 'inline-block';
+            verifyBtn.childNodes[verifyBtn.childNodes.length - 1].textContent = ' Đang xác thực...';
             keyMessage.className = 'key-message';
             keyMessage.textContent = '';
             downloadBtn.classList.remove('show');
 
+            await new Promise(resolve => setTimeout(resolve, 1500)); 
+
+            // Key test: 'ABCD-EFGH-IJKL-MNPZ' là key thành công
+            const isSuccess = key === 'ABCD-EFGH-IJKL-MNPZ'; 
+            
             try {
-                const response = await fetch('/api/keys/verify', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ key })
-                });
-
-                const result = await response.json();
-
-                if (result.success) {
+                if (isSuccess) {
                     keyMessage.className = 'key-message success';
                     
                     let successMsg = '✅ Xác thực thành công!\n';
-                    if (result.remainingUses !== null) {
-                        successMsg += `\n📊 Còn lại: ${result.remainingUses} lượt`;
-                    } else {
-                        successMsg += '\n♾️ Không giới hạn lượt';
-                    }
-                    if (result.expiresAt) {
-                        const expiryDate = new Date(result.expiresAt);
-                        successMsg += `\n⏰ Hết hạn: ${expiryDate.toLocaleDateString('vi-VN')}`;
-                    }
+                    successMsg += `\n📊 Còn lại: Vô hạn lượt`;
+                    successMsg += `\n⏰ Hết hạn: 2050-12-31`;
                     
                     keyMessage.textContent = successMsg;
                     downloadBtn.classList.add('show');
@@ -682,30 +835,21 @@
                     }, 200);
                 } else {
                     keyMessage.className = 'key-message error';
-                    
-                    let errorMsg = '❌ ';
-                    if (result.code === 'KEY_NOT_FOUND') errorMsg += 'Mã key không tồn tại';
-                    else if (result.code === 'KEY_INACTIVE') errorMsg += 'Mã key đã bị vô hiệu hóa';
-                    else if (result.code === 'KEY_EXPIRED') errorMsg += 'Mã key đã hết hạn sử dụng';
-                    else if (result.code === 'KEY_MAX_USES_REACHED') errorMsg += 'Mã key đã hết lượt sử dụng';
-                    else errorMsg += result.error || 'Mã không hợp lệ';
-                    
-                    keyMessage.textContent = errorMsg;
+                    keyMessage.textContent = '❌ Mã key không hợp lệ, đã hết hạn hoặc không tồn tại!';
                     downloadBtn.classList.remove('show');
                 }
-            } catch (error) {
-                keyMessage.className = 'key-message error';
-                keyMessage.textContent = '❌ Lỗi kết nối! Vui lòng thử lại.';
-                downloadBtn.classList.remove('show');
             } finally {
                 verifyBtn.disabled = false;
-                verifyBtn.textContent = 'Xác Nhận';
+                document.querySelector('#verifyBtn .spinner').style.display = 'none';
+                verifyBtn.childNodes[verifyBtn.childNodes.length - 1].textContent = ' Xác Nhận';
             }
         }
 
         function handleDirectDownload() {
             if (!currentDownloadUrl) {
-                alert('❌ Link không khả dụng!');
+                // Thay thế alert() bằng thông báo trong popup
+                document.getElementById('keyMessage').className = 'key-message error';
+                document.getElementById('keyMessage').textContent = '❌ Link không khả dụng!';
                 return;
             }
 
@@ -723,11 +867,20 @@
         });
 
         loadData();
+        
         function forceZoom() {
-        document.body.style.zoom = "0.75";}
+            const isMobile = window.innerWidth <= 768;
+            if (!isMobile) {
+                document.body.style.zoom = "0.75"; 
+            } else {
+                document.body.style.zoom = "1.0"; 
+            }
+        }
         document.addEventListener("DOMContentLoaded", forceZoom);
         window.addEventListener("resize", forceZoom);
         window.addEventListener("orientationchange", forceZoom);
+
     </script>
 </body>
 </html>
+
