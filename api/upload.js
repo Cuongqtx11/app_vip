@@ -1,5 +1,5 @@
 // api/upload.js - Vercel Serverless Function với auth ổn định
-// API này sẽ cập nhật file JSON trên GitHub
+// FIX: Sửa lỗi đường dẫn File (FILE_PATH) cho các loại mới
 
 export default async function handler(req, res) {
   // Chỉ cho phép POST request
@@ -34,11 +34,15 @@ export default async function handler(req, res) {
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
     const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
     
-    // File path được xác định dựa trên type
-    // Lưu ý: Dù file cert.json, mod.json, sign.json được liệt kê trong thư mục public/pages/data/,
-    // việc truy cập qua GitHub API vẫn cần đường dẫn chính xác trên repository.
-    // Giả định: tất cả các file JSON đều nằm trong thư mục 'public/data/' hoặc tương đương.
-    const FILE_PATH = `public/data/${type}.json`; 
+    // 🎯 FIX: ĐỊNH DẠNG LẠI FILE_PATH DỰA TRÊN LOẠI UPLOAD
+    let FILE_PATH;
+    if (['cert', 'mod', 'sign'].includes(type)) {
+        // Dùng đường dẫn thư mục con cho các loại file mới theo sơ đồ
+        FILE_PATH = `public/pages/data/${type}.json`; //
+    } else {
+        // Dùng đường dẫn thư mục gốc cho các loại file cũ
+        FILE_PATH = `public/data/${type}.json`;
+    }
 
     if (!GITHUB_TOKEN) {
       return res.status(500).json({ error: 'GitHub token not configured' });
@@ -82,8 +86,11 @@ export default async function handler(req, res) {
     // 3. Cập nhật file lên GitHub
     const newContent = Buffer.from(JSON.stringify(currentData, null, 2)).toString('base64');
     
+    // Dùng data.name, data.title, data.filename để linh hoạt tạo commit message
+    const commitName = data.name || data.title || data.filename || 'Untitled Item'; 
+    
     const updatePayload = {
-      message: `Add new ${type}: ${data.name || data.title || data.filename}`,
+      message: `Add new ${type}: ${commitName}`,
       content: newContent,
       branch: 'main'
     };
