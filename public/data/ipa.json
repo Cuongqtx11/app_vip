@@ -54,6 +54,24 @@
     "lastSync": "2025-11-29T22:00:01.451Z"
   },
   {
+    "id": "ipa-com.hassantaleb.mockup-4.4",
+    "type": "ipa",
+    "name": "Animock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hassantaleb.mockup.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/Animock_4.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.hassantaleb.mockup",
+    "lastSync": "2025-11-29T23:00:01.712Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
