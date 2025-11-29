@@ -144,6 +144,60 @@
     "lastSync": "2025-11-29T07:00:01.597Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.2.9",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-11-2025/SnapEdit_6.2.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-29",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2025-11-29T11:00:01.606Z"
+  },
+  {
+    "id": "ipa-com.jakemor.firness-ai-14.7",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-11-2025/FitnessAI_14.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.7",
+    "developer": "apptesters.org",
+    "date": "2025-11-29",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2025-11-29T11:00:01.606Z"
+  },
+  {
+    "id": "ipa-com.AppChief.ArabicArt-9.3.4",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-11-2025/_9.3.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.3.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-29",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2025-11-29T11:00:01.607Z"
+  },
+  {
     "id": "ipa-co.codeleap.bearable-1.0.577",
     "type": "ipa",
     "name": "Bearable",
