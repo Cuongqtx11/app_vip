@@ -218,6 +218,12 @@
         window.addEventListener('load', () => {
             loadPage('sign'); // Load SIGN by default
         });
+
+        function forceZoom() {
+    	document.body.style.zoom = "0.75";}
+    	document.addEventListener("DOMContentLoaded", forceZoom);
+    	window.addEventListener("resize", forceZoom);
+    	window.addEventListener("orientationchange", forceZoom);
     </script>
 </body>
 </html>
