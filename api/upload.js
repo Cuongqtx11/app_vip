@@ -1,5 +1,5 @@
 // api/upload.js - Vercel Serverless Function với auth ổn định
-// FIX: Sửa lỗi đường dẫn File (FILE_PATH) cho các loại mới
+// FIX: Sửa lỗi đường dẫn File (FILE_PATH) cho các loại cert, mod, sign
 
 export default async function handler(req, res) {
   // Chỉ cho phép POST request
@@ -34,13 +34,13 @@ export default async function handler(req, res) {
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
     const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
     
-    // 🎯 FIX: ĐỊNH DẠNG LẠI FILE_PATH DỰA TRÊN LOẠI UPLOAD
+    // 🎯 FIX LỖI ĐƯỜNG DẪN: ĐỊNH DẠNG LẠI FILE_PATH DỰA TRÊN LOẠI UPLOAD
     let FILE_PATH;
     if (['cert', 'mod', 'sign'].includes(type)) {
-        // Dùng đường dẫn thư mục con cho các loại file mới theo sơ đồ
-        FILE_PATH = `public/pages/data/${type}.json`; //
+        // Dùng đường dẫn: public/pages/data/ cho các loại mới (theo sơ đồ chuẩn)
+        FILE_PATH = `public/pages/data/${type}.json`;
     } else {
-        // Dùng đường dẫn thư mục gốc cho các loại file cũ
+        // Dùng đường dẫn: public/data/ cho các loại cũ (ipa, dylib, conf)
         FILE_PATH = `public/data/${type}.json`;
     }
 
