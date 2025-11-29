@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Rổ Phim",
+    "description": "kho phim miễn phí, app ro phim mod RoX sử dụng vip tới 2099",
+    "version": "1.0.5",
+    "downloadUrl": "https://www.mediafire.com/file/0ss1rj0spozj8ug/ro+phim_1.0.5_1760452615.ipa/file",
+    "date": "2025-11-27",
+    "iconUrl": "https://i.imgur.com/ysrsn4L.jpeg",
+    "tag": "HOT"
+  },
+  {
+    "id": 1,
+    "title": "Locket Gold",
+    "description": "Xoá bản gốc mới có thể đăng nhập. quay video 5-15s",
+    "version": "2.23.0",
+    "downloadUrl": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Locket_2.23.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "date": "2025-11-27",
+    "iconUrl": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "tag": "Gold"
+  },
+  {
+    "id": 2,
+    "title": "Spotify Premium",
+    "description": "Nghe nhạc không quảng cáo, các chức năng premium",
+    "version": "9.1.0",
+    "downloadUrl": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-11-2025/Spotify_9.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "date": "2025-11-29",
+    "iconUrl": "https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=w240-h480-rw",
+    "tag": "Pre"
+  },
+  {
+    "id": 3,
+    "title": "YouTube",
+    "description": "Chặn quảng cáo, phát nền, picture-in-picture. các chức năng premium.",
+    "version": "20.47.3",
+    "downloadUrl": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/YouTubeOLED_20.47.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "date": "2025-11-29",
+    "iconUrl": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "tag": "pre"
+  }
+]
+
