@@ -18,6 +18,42 @@
     "lastSync": "2025-11-29T21:00:01.403Z"
   },
   {
+    "id": "ipa-com.sbs.diet-5.6.9",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/MacroFactor_5.6.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-11-29T22:00:01.450Z"
+  },
+  {
+    "id": "ipa-com.magicv.AirBrush-7.21.0",
+    "type": "ipa",
+    "name": "Airbrush",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.magicv.AirBrush.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/Airbrush_7.21.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.21.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.magicv.AirBrush",
+    "lastSync": "2025-11-29T22:00:01.451Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
