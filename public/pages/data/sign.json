@@ -2,13 +2,12 @@
   {
     "id": 1,
     "title": "App Feather (như esign)",
-    "description": "Ký và cài đặt ipa không giới hạn.",
+    "description": "ký và cài đặt ipa không giới hạn",
     "downloadUrl": "https://sign.applep12.com/Install/691c3124-4ed7-4401-006a-a0552df7c4c5",
     "date": "2025-11-26",
-    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGdDM-mMrohm_ydNM8tf40eHUW3xyGxkXT7D2bUO0Kw&s=10",
-    "installs": 3277,
-    "tag": "NEW",
-    "size": "34.5 MB"
+    "iconUrl": "https://feather-ios.com/assets/logo-squire.webp",
+    "size": "15.5 MB",
+    "tag": "NEW"
   }
 ]
 
