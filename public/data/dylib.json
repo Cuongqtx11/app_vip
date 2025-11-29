@@ -1,5 +1,19 @@
 [
   {
+    "id": "dylib-1764430431684",
+    "type": "dylib",
+    "name": "IGG Mod",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRot6753smBo04_Q1A5CQGJLMiVef3nAMzUEhYCh0QhEcMvW9BFCIwHMN0&s=10",
+    "desc": "cheat game, mod thông số",
+    "source": "manual",
+    "fileLink": "https://www.mediafire.com/file/5mxs591q0su68ld/igamegod+v0.4.3.deb/file",
+    "version": "v0.4.3",
+    "developer": "cuios.shop",
+    "date": "2025-11-29",
+    "tags": [],
+    "badge": null
+  },
+  {
     "id": "dylib-1761004034476",
     "type": "dylib",
     "name": "LuckySpeed",
