@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1764397509_4286",
+    "key": "TA3J-VF71-QXIN-C748",
+    "createdAt": "2025-11-29T13:25:09.927022",
+    "expiresAt": "2025-11-30T13:25:09.927035",
+    "maxUses": 10,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "1 days, 10 uses"
+  },
+  {
     "id": "key_1763660593_3303",
     "key": "XM0Z-VDOS-KHJI-GCX7",
     "createdAt": "2025-11-21T00:43:13.570172",
