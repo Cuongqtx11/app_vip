@@ -198,6 +198,24 @@
     "lastSync": "2025-11-29T11:00:01.607Z"
   },
   {
+    "id": "ipa-com.picsart.studio-28.9.4",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-11-2025/PicsArt_28.9.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "28.9.4",
+    "developer": "apptesters.org",
+    "date": "2025-11-29",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2025-11-29T12:00:01.710Z"
+  },
+  {
     "id": "ipa-co.codeleap.bearable-1.0.577",
     "type": "ipa",
     "name": "Bearable",
