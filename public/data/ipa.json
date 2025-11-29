@@ -108,6 +108,42 @@
     "lastSync": "2025-11-29T04:45:55.297Z"
   },
   {
+    "id": "ipa-com.hassantaleb.mockup-4.3",
+    "type": "ipa",
+    "name": "Animock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hassantaleb.mockup.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-11-2025/Animock_4.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3",
+    "developer": "apptesters.org",
+    "date": "2025-11-29",
+    "source": "apptesters",
+    "bundleID": "com.hassantaleb.mockup",
+    "lastSync": "2025-11-29T07:00:01.597Z"
+  },
+  {
+    "id": "ipa-co.airapps.finderbot-2025.11.9",
+    "type": "ipa",
+    "name": "FindAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.finderbot.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-11-2025/FindAir_2025.11.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.9",
+    "developer": "apptesters.org",
+    "date": "2025-11-29",
+    "source": "apptesters",
+    "bundleID": "co.airapps.finderbot",
+    "lastSync": "2025-11-29T07:00:01.597Z"
+  },
+  {
     "id": "ipa-co.codeleap.bearable-1.0.577",
     "type": "ipa",
     "name": "Bearable",
