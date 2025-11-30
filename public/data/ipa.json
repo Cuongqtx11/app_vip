@@ -90,6 +90,42 @@
     "lastSync": "2025-11-30T22:00:01.846Z"
   },
   {
+    "id": "ipa-com.kingsoft.office.g.wpsoffice-11.37.10",
+    "type": "ipa",
+    "name": "wpsoffice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kingsoft.office.g.wpsoffice.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/wpsoffice_11.37.10_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.37.10",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.kingsoft.office.g.wpsoffice",
+    "lastSync": "2025-11-30T23:00:01.693Z"
+  },
+  {
+    "id": "ipa-me.imgbase.videoday-3.5.4",
+    "type": "ipa",
+    "name": "VDIT",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/VDIT_3.5.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5.4",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "me.imgbase.videoday",
+    "lastSync": "2025-11-30T23:00:01.694Z"
+  },
+  {
     "id": "ipa-com.tickettothemoon.video.persona-1.14.38",
     "type": "ipa",
     "name": "Persona",
