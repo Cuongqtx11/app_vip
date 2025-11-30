@@ -72,6 +72,24 @@
     "lastSync": "2025-11-29T23:00:01.712Z"
   },
   {
+    "id": "ipa-com.v43years.avatarify2-2.31",
+    "type": "ipa",
+    "name": "Avatarify",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.v43years.avatarify2.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/Avatarify_2.31_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.31",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.v43years.avatarify2",
+    "lastSync": "2025-11-30T08:00:01.175Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
