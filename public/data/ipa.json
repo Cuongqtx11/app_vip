@@ -198,6 +198,24 @@
     "lastSync": "2025-11-30T18:00:01.478Z"
   },
   {
+    "id": "ipa-net.mkswap.Dropshare-iOS-3.58",
+    "type": "ipa",
+    "name": "Dropshare",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.mkswap.Dropshare-iOS.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/Dropshare_3.58_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.58",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "net.mkswap.Dropshare-iOS",
+    "lastSync": "2025-11-30T19:00:01.622Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
