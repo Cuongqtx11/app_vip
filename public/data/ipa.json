@@ -90,6 +90,24 @@
     "lastSync": "2025-11-30T08:00:01.175Z"
   },
   {
+    "id": "ipa-com.ADPTVLTD.push-3.8.0",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/PUSH_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2025-11-30T10:00:01.271Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
