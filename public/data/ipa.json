@@ -108,6 +108,24 @@
     "lastSync": "2025-11-30T10:00:01.271Z"
   },
   {
+    "id": "ipa-com.mwm.moments-1.0.46",
+    "type": "ipa",
+    "name": "SnapCut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.moments.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/SnapCut_1.0.46_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.46",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.mwm.moments",
+    "lastSync": "2025-11-30T13:00:01.273Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
