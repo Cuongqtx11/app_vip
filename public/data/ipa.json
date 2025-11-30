@@ -144,6 +144,60 @@
     "lastSync": "2025-11-30T17:00:01.412Z"
   },
   {
+    "id": "ipa-co.visualsupply.cam-450.0.2",
+    "type": "ipa",
+    "name": "VSCO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.visualsupply.cam.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/VSCO_450.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "450.0.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "co.visualsupply.cam",
+    "lastSync": "2025-11-30T18:00:01.477Z"
+  },
+  {
+    "id": "ipa-com.frontpocketsoftware.happyscale-2025.17",
+    "type": "ipa",
+    "name": "HappyScale",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontpocketsoftware.happyscale.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/HappyScale_2025.17_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.17",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.frontpocketsoftware.happyscale",
+    "lastSync": "2025-11-30T18:00:01.477Z"
+  },
+  {
+    "id": "ipa-app.uplens-3.4.2",
+    "type": "ipa",
+    "name": "Uplens",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.uplens.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/Uplens_3.4.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.2",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "app.uplens",
+    "lastSync": "2025-11-30T18:00:01.478Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
