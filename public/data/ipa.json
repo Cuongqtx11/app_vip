@@ -126,6 +126,24 @@
     "lastSync": "2025-11-30T13:00:01.273Z"
   },
   {
+    "id": "ipa-com.future.kapi-3.25.0",
+    "type": "ipa",
+    "name": "Action",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.future.kapi.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-11-2025/Action_3.25.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.25.0",
+    "developer": "apptesters.org",
+    "date": "2025-11-30",
+    "source": "apptesters",
+    "bundleID": "com.future.kapi",
+    "lastSync": "2025-11-30T17:00:01.412Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.0.5",
     "type": "ipa",
     "name": "Luminar",
