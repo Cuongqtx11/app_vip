@@ -234,6 +234,42 @@
     "lastSync": "2025-12-01T04:00:01.447Z"
   },
   {
+    "id": "ipa-com.apalonapps.clrbook-1.5.4",
+    "type": "ipa",
+    "name": "ColoringBook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.clrbook.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/ColoringBook_1.5.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.4",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.clrbook",
+    "lastSync": "2025-12-01T07:00:01.424Z"
+  },
+  {
+    "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.10",
+    "type": "ipa",
+    "name": "InCollage",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PhotoEditor.PhotoCollage.inCollage.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/InCollage_2.2.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.10",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "PhotoEditor.PhotoCollage.inCollage",
+    "lastSync": "2025-12-01T07:00:01.425Z"
+  },
+  {
     "id": "ipa-com.tickettothemoon.video.persona-1.14.38",
     "type": "ipa",
     "name": "Persona",
