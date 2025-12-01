@@ -270,6 +270,42 @@
     "lastSync": "2025-12-01T07:00:01.425Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-20.0",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Fitia_20.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2025-12-01T08:00:01.688Z"
+  },
+  {
+    "id": "ipa-com.mwm.bananai-1.0.22",
+    "type": "ipa",
+    "name": "Bananai",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.bananai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Bananai_1.0.22_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.22",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.mwm.bananai",
+    "lastSync": "2025-12-01T08:00:01.688Z"
+  },
+  {
     "id": "ipa-com.tickettothemoon.video.persona-1.14.38",
     "type": "ipa",
     "name": "Persona",
