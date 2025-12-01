@@ -126,6 +126,78 @@
     "lastSync": "2025-11-30T23:00:01.694Z"
   },
   {
+    "id": "ipa-com.CalculatorForiPad.InternetRocks-2025.11.4",
+    "type": "ipa",
+    "name": "CalculatorAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.CalculatorForiPad.InternetRocks.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/CalculatorAir_2025.11.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.4",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.CalculatorForiPad.InternetRocks",
+    "lastSync": "2025-12-01T02:00:01.314Z"
+  },
+  {
+    "id": "ipa-com.internet-rocks.codescanner-2025.11.2",
+    "type": "ipa",
+    "name": "QrCode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/QrCode_2025.11.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.2",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.internet-rocks.codescanner",
+    "lastSync": "2025-12-01T02:00:01.314Z"
+  },
+  {
+    "id": "ipa-co.airapps.scannerapp-2025.11.5",
+    "type": "ipa",
+    "name": "ScannerAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.scannerapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/ScannerAir_2025.11.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.5",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "co.airapps.scannerapp",
+    "lastSync": "2025-12-01T02:00:01.314Z"
+  },
+  {
+    "id": "ipa-co.airapps.dictionary-2025.11.2",
+    "type": "ipa",
+    "name": "DictionaryAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.dictionary.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/DictionaryAir_2025.11.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.2",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "co.airapps.dictionary",
+    "lastSync": "2025-12-01T02:00:01.315Z"
+  },
+  {
     "id": "ipa-com.tickettothemoon.video.persona-1.14.38",
     "type": "ipa",
     "name": "Persona",
