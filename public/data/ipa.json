@@ -396,6 +396,132 @@
     "lastSync": "2025-12-01T09:00:01.562Z"
   },
   {
+    "id": "ipa-archery.storify-1.252.0",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Mojo_1.252.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.252.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2025-12-01T12:03:42.160Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.clrbook-4.50.26",
+    "type": "ipa",
+    "name": "ColoringBookforMe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.clrbook.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/ColoringBookforMe_4.50.26_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.50.26",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.clrbook",
+    "lastSync": "2025-12-01T12:03:42.160Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.57.09",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/ColorPop_2.57.09_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.57.09",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2025-12-01T12:03:42.160Z"
+  },
+  {
+    "id": "ipa-com.sillens.iShape-23.1.0",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Lifesum_23.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.1.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2025-12-01T12:03:42.161Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.17.00",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/edjingMix_8.17.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.17.00",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2025-12-01T12:03:42.161Z"
+  },
+  {
+    "id": "ipa-com.macpaw.iosgemini-2.10.1",
+    "type": "ipa",
+    "name": "CleanMyPhone",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.macpaw.iosgemini.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/CleanMyPhone_2.10.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.1",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.macpaw.iosgemini",
+    "lastSync": "2025-12-01T12:03:42.161Z"
+  },
+  {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.17.15",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Documents_8.17.15_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.17.15",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2025-12-01T12:03:42.161Z"
+  },
+  {
     "id": "ipa-com.tickettothemoon.video.persona-1.14.38",
     "type": "ipa",
     "name": "Persona",
