@@ -126,6 +126,60 @@
     "lastSync": "2025-12-01T22:00:01.582Z"
   },
   {
+    "id": "ipa-com.picsart.studio-28.9.6",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/PicsArt_28.9.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "28.9.6",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2025-12-01T23:00:01.868Z"
+  },
+  {
+    "id": "ipa-com.wangyuehuan.vrtef-5.3.0",
+    "type": "ipa",
+    "name": "rPlayer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wangyuehuan.vrtef.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/rPlayer_5.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.wangyuehuan.vrtef",
+    "lastSync": "2025-12-01T23:00:01.868Z"
+  },
+  {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.0.4",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/SnoreLab_6.0.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.4",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2025-12-01T23:00:01.869Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
