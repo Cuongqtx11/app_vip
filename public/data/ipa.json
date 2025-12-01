@@ -36,6 +36,96 @@
     "lastSync": "2025-12-01T21:00:01.583Z"
   },
   {
+    "id": "ipa-com.softissimo.ReversoContext-16.3",
+    "type": "ipa",
+    "name": "ReversoContext",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.softissimo.ReversoContext.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/ReversoContext_16.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.3",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.softissimo.ReversoContext",
+    "lastSync": "2025-12-01T22:00:01.581Z"
+  },
+  {
+    "id": "ipa-de.my-fit-coach.myfitcoach-ios-1.20",
+    "type": "ipa",
+    "name": "MyFitCoach",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.my-fit-coach.myfitcoach-ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/MyFitCoach_1.20_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.20",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "de.my-fit-coach.myfitcoach-ios",
+    "lastSync": "2025-12-01T22:00:01.581Z"
+  },
+  {
+    "id": "ipa-com.zijayrate.analogcam-8.1.0",
+    "type": "ipa",
+    "name": "OldRoll",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zijayrate.analogcam.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/OldRoll_8.1.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.zijayrate.analogcam",
+    "lastSync": "2025-12-01T22:00:01.582Z"
+  },
+  {
+    "id": "ipa-gen.tech.impulse-1.39",
+    "type": "ipa",
+    "name": "Impulse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gen.tech.impulse.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/Impulse_1.39_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.39",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "gen.tech.impulse",
+    "lastSync": "2025-12-01T22:00:01.582Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.5.8",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/BlockBlast_6.5.8_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.8",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2025-12-01T22:00:01.582Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
