@@ -306,6 +306,96 @@
     "lastSync": "2025-12-01T08:00:01.688Z"
   },
   {
+    "id": "ipa-com.lexwarelabs.goodmorning-6.25.47",
+    "type": "ipa",
+    "name": "SleepCycle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lexwarelabs.goodmorning.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/SleepCycle_6.25.47_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.25.47",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.lexwarelabs.goodmorning",
+    "lastSync": "2025-12-01T09:00:01.561Z"
+  },
+  {
+    "id": "ipa-com.getmimo.mimo-9.35.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Mimo_9.35.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.35.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2025-12-01T09:00:01.561Z"
+  },
+  {
+    "id": "ipa-com.moonlab.unfoldstories-8.151.0",
+    "type": "ipa",
+    "name": "Unfold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonlab.unfoldstories.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Unfold_8.151.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.151.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.moonlab.unfoldstories",
+    "lastSync": "2025-12-01T09:00:01.562Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2025.48.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/Photoroom_2025.48.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.48.01",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2025-12-01T09:00:01.562Z"
+  },
+  {
+    "id": "ipa-com.snowcorp.glowup-3.5.2",
+    "type": "ipa",
+    "name": "GlowUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.glowup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/GlowUp_3.5.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5.2",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.glowup",
+    "lastSync": "2025-12-01T09:00:01.562Z"
+  },
+  {
     "id": "ipa-com.tickettothemoon.video.persona-1.14.38",
     "type": "ipa",
     "name": "Persona",
