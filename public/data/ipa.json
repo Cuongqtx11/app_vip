@@ -522,6 +522,24 @@
     "lastSync": "2025-12-01T12:03:42.161Z"
   },
   {
+    "id": "ipa-com.aoklab.fewerphotos-3.2.38",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-12-2025/swipewipe_3.2.38_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.38",
+    "developer": "apptesters.org",
+    "date": "2025-12-01",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2025-12-01T15:00:01.464Z"
+  },
+  {
     "id": "ipa-com.tickettothemoon.video.persona-1.14.38",
     "type": "ipa",
     "name": "Persona",
