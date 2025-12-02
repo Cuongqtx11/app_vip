@@ -54,6 +54,24 @@
     "lastSync": "2025-12-02T21:00:02.117Z"
   },
   {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.0.5",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/SnoreLab_6.0.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.5",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2025-12-02T22:00:02.116Z"
+  },
+  {
     "id": "ipa-com.impalastudios.pianofree-2.16.2",
     "type": "ipa",
     "name": "ThePiano",
