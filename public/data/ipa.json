@@ -180,6 +180,150 @@
     "lastSync": "2025-12-01T23:00:01.869Z"
   },
   {
+    "id": "ipa-com.leapingcoyote.rungo-7.2.1",
+    "type": "ipa",
+    "name": "RunGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.leapingcoyote.rungo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/RunGo_7.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.2.1",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.leapingcoyote.rungo",
+    "lastSync": "2025-12-02T00:00:01.915Z"
+  },
+  {
+    "id": "ipa-com.gunthermarktl.stepapp-8.6.0",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/StepsApp_8.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2025-12-02T00:00:01.915Z"
+  },
+  {
+    "id": "ipa-com.wallpapershub.anime-4.0.4",
+    "type": "ipa",
+    "name": "Anime",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wallpapershub.anime.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/Anime_4.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.4",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.wallpapershub.anime",
+    "lastSync": "2025-12-02T00:00:01.915Z"
+  },
+  {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.19.1",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/MergeCooking_1.19.1_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.19.1",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2025-12-02T00:00:01.915Z"
+  },
+  {
+    "id": "ipa-com.alexanderben.RadioIn-40.6.0",
+    "type": "ipa",
+    "name": "TuneInRadio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alexanderben.RadioIn.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/TuneInRadio_40.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "40.6.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.alexanderben.RadioIn",
+    "lastSync": "2025-12-02T00:00:01.916Z"
+  },
+  {
+    "id": "ipa-com.TetianaKolomiichuk.Reel-Templates-3.5.2",
+    "type": "ipa",
+    "name": "Reels",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.TetianaKolomiichuk.Reel-Templates.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/Reels_3.5.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5.2",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.TetianaKolomiichuk.Reel-Templates",
+    "lastSync": "2025-12-02T00:00:01.916Z"
+  },
+  {
+    "id": "ipa-com.dubox.drive-4.8.6",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/TeraBox_4.8.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.8.6",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2025-12-02T00:00:01.916Z"
+  },
+  {
+    "id": "ipa-app.mmap.mobile-2.6.4",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/Soundmap_2.6.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.6.4",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2025-12-02T00:00:01.916Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
