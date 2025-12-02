@@ -594,6 +594,24 @@
     "lastSync": "2025-12-02T18:00:01.776Z"
   },
   {
+    "id": "ipa-com.AppChief.ArabicArt-9.3.5",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/_9.3.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.3.5",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2025-12-02T19:00:01.839Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
