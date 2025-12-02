@@ -342,6 +342,60 @@
     "lastSync": "2025-12-02T02:00:01.364Z"
   },
   {
+    "id": "ipa-com.blake.femalefitness-10.4.8",
+    "type": "ipa",
+    "name": "Shapy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blake.femalefitness.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/Shapy_10.4.8_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.4.8",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.blake.femalefitness",
+    "lastSync": "2025-12-02T08:00:01.635Z"
+  },
+  {
+    "id": "ipa-net.quochuywdm.collanote496-4.0.2",
+    "type": "ipa",
+    "name": "CollaNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/CollaNote_4.0.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.2",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "net.quochuywdm.collanote496",
+    "lastSync": "2025-12-02T08:00:01.636Z"
+  },
+  {
+    "id": "ipa-com.iPwners.Plonkan-13.11",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/Buddy_13.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.11",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2025-12-02T08:00:01.636Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
