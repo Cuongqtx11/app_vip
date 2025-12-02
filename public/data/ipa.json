@@ -432,6 +432,42 @@
     "lastSync": "2025-12-02T09:00:01.733Z"
   },
   {
+    "id": "ipa-com.dopedevelopment.Panels-9.23",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/SCRL_9.23_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.23",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2025-12-02T10:00:02.022Z"
+  },
+  {
+    "id": "ipa-com.itwcalculator.worldradarfree-5.16.1",
+    "type": "ipa",
+    "name": "NOAARadar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/NOAARadar_5.16.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.16.1",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.itwcalculator.worldradarfree",
+    "lastSync": "2025-12-02T10:00:02.023Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
