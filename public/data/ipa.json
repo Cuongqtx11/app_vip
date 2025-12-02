@@ -522,6 +522,42 @@
     "lastSync": "2025-12-02T11:00:02.110Z"
   },
   {
+    "id": "ipa-com.burbn.instagram-408.1.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/Instagram_408.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "408.1.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2025-12-02T16:00:01.882Z"
+  },
+  {
+    "id": "ipa-com.mwm.guitartuner-3.20.00",
+    "type": "ipa",
+    "name": "TunerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.guitartuner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/TunerPro_3.20.00_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.20.00",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.mwm.guitartuner",
+    "lastSync": "2025-12-02T16:00:01.883Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
