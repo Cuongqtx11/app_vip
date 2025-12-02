@@ -18,6 +18,42 @@
     "lastSync": "2025-12-02T20:00:01.923Z"
   },
   {
+    "id": "ipa-com.wakdev.wdnfc-2.34",
+    "type": "ipa",
+    "name": "NFCTools",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wakdev.wdnfc.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/NFCTools_2.34_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.34",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.wakdev.wdnfc",
+    "lastSync": "2025-12-02T21:00:02.117Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Facetune2-3.113",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/Facetune_3.113_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.113",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2025-12-02T21:00:02.117Z"
+  },
+  {
     "id": "ipa-com.impalastudios.pianofree-2.16.2",
     "type": "ipa",
     "name": "ThePiano",
