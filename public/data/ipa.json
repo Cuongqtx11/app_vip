@@ -324,6 +324,24 @@
     "lastSync": "2025-12-02T00:00:01.916Z"
   },
   {
+    "id": "ipa-com.frontpocketsoftware.happyscale-2025.17.1",
+    "type": "ipa",
+    "name": "HappyScale",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontpocketsoftware.happyscale.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-12-2025/HappyScale_2025.17.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.17.1",
+    "developer": "apptesters.org",
+    "date": "2025-12-02",
+    "source": "apptesters",
+    "bundleID": "com.frontpocketsoftware.happyscale",
+    "lastSync": "2025-12-02T02:00:01.364Z"
+  },
+  {
     "id": "ipa-co.bazaart.app-26.0.6",
     "type": "ipa",
     "name": "Bazaart",
