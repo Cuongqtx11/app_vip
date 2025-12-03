@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.mwm.stems-4.02.20",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Stemz_4.02.20_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.02.20",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2025-12-03T20:00:01.520Z"
+  },
+  {
+    "id": "ipa-com.hassantaleb.mockup-4.6",
+    "type": "ipa",
+    "name": "Animock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hassantaleb.mockup.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Animock_4.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.6",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.hassantaleb.mockup",
+    "lastSync": "2025-12-03T20:00:01.521Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
