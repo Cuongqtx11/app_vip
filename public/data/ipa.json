@@ -36,6 +36,42 @@
     "lastSync": "2025-12-03T20:00:01.521Z"
   },
   {
+    "id": "ipa-com.photoeditor.polish-2.1.2",
+    "type": "ipa",
+    "name": "Polish",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photoeditor.polish.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Polish_2.1.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.2",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.photoeditor.polish",
+    "lastSync": "2025-12-03T22:00:01.443Z"
+  },
+  {
+    "id": "ipa-com.snowcorp.epik-6.5.0",
+    "type": "ipa",
+    "name": "EPIK",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.epik.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/EPIK_6.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.epik",
+    "lastSync": "2025-12-03T22:00:01.444Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
