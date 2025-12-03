@@ -72,6 +72,24 @@
     "lastSync": "2025-12-02T22:00:02.116Z"
   },
   {
+    "id": "ipa-com.nixwang.decision-25.12.0",
+    "type": "ipa",
+    "name": "TinyDecisions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nixwang.decision.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/TinyDecisions_25.12.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.12.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.nixwang.decision",
+    "lastSync": "2025-12-03T02:00:01.439Z"
+  },
+  {
     "id": "ipa-com.impalastudios.pianofree-2.16.2",
     "type": "ipa",
     "name": "ThePiano",
