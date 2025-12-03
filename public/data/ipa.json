@@ -361,6 +361,42 @@
     "lastSync": "2025-12-03T11:00:01.732Z"
   },
   {
+    "id": "ipa-com.adobe.PSMobile-25.49.0",
+    "type": "ipa",
+    "name": "PSExpress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.PSMobile.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/PSExpress_25.49.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.49.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.adobe.PSMobile",
+    "lastSync": "2025-12-03T12:00:01.859Z"
+  },
+  {
+    "id": "ipa-fontskeyboard.fonts-8.4.45",
+    "type": "ipa",
+    "name": "Fonts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fontskeyboard.fonts.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/Fonts_8.4.45_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.4.45",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "fontskeyboard.fonts",
+    "lastSync": "2025-12-03T12:00:01.860Z"
+  },
+  {
     "id": "ipa-com.impalastudios.pianofree-2.16.2",
     "type": "ipa",
     "name": "ThePiano",
