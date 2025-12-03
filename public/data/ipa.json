@@ -415,6 +415,24 @@
     "lastSync": "2025-12-03T15:00:01.605Z"
   },
   {
+    "id": "ipa-boomer.Smart-Video-12.47.0",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/Captions_12.47.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.47.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2025-12-03T16:00:01.812Z"
+  },
+  {
     "id": "ipa-com.impalastudios.pianofree-2.16.2",
     "type": "ipa",
     "name": "ThePiano",
