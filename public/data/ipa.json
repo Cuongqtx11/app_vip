@@ -235,6 +235,42 @@
     "lastSync": "2025-12-03T07:00:01.732Z"
   },
   {
+    "id": "ipa-com.snowcorp.soda-9.6.0",
+    "type": "ipa",
+    "name": "SODA",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.soda.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/SODA_9.6.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.6.0",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.soda",
+    "lastSync": "2025-12-03T08:00:01.645Z"
+  },
+  {
+    "id": "ipa-app.cranberry.cure-1.8",
+    "type": "ipa",
+    "name": "Cure",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.cure.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/Cure_1.8_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.8",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.cure",
+    "lastSync": "2025-12-03T08:00:01.646Z"
+  },
+  {
     "id": "ipa-com.impalastudios.pianofree-2.16.2",
     "type": "ipa",
     "name": "ThePiano",
