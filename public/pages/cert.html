@@ -12,12 +12,36 @@
             box-sizing: border-box;
         }
 
+        /* --- CẤU HÌNH MÀU SẮC --- */
+        :root {
+            /* Mặc định: Chế độ Sáng */
+            --bg-body: #f8fafc;
+            --text-color: #1e293b;
+            --nav-bg: rgba(255, 255, 255, 0.85);
+            --nav-border: rgba(0,0,0,0.1);
+            --nav-item-color: #64748b;
+            --nav-item-hover-bg: rgba(96, 165, 250, 0.1);
+            --nav-item-active-bg: rgba(96, 165, 250, 0.2);
+        }
+
+        body.dark {
+            /* Chế độ Tối: GIỮ NGUYÊN MÀU GỐC CỦA BẠN */
+            --bg-body: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+            --text-color: white;
+            --nav-bg: rgba(0,0,0,0.4);
+            --nav-border: rgba(255,255,255,0.1);
+            --nav-item-color: #94a3b8;
+            --nav-item-hover-bg: rgba(96, 165, 250, 0.1);
+            --nav-item-active-bg: rgba(96, 165, 250, 0.2);
+        }
+
         body {
             font-family: "Poppins", -apple-system, sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
-            color: white;
+            background: var(--bg-body);
+            color: var(--text-color);
             min-height: 100vh;
             overflow-x: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
         }
 
         /* Navigation */
@@ -26,9 +50,10 @@
             top: 0;
             width: 100%;
             backdrop-filter: blur(12px);
-            background: rgba(0,0,0,0.4);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--nav-border);
             z-index: 1000;
+            transition: background 0.3s ease, border-color 0.3s ease;
         }
 
         .nav-container {
@@ -45,7 +70,7 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.75rem 1.5rem;
-            color: #94a3b8;
+            color: var(--nav-item-color);
             text-decoration: none;
             border-radius: 12px;
             transition: all 0.3s ease;
@@ -54,13 +79,13 @@
 
         .nav-item:hover {
             color: #60a5fa;
-            background: rgba(96, 165, 250, 0.1);
+            background: var(--nav-item-hover-bg);
             transform: translateY(-3px);
         }
 
         .nav-item.active {
             color: #60a5fa;
-            background: rgba(96, 165, 250, 0.2);
+            background: var(--nav-item-active-bg);
             transform: scale(1.05);
         }
 
@@ -122,19 +147,9 @@
                 font-size: 0.75rem;
             }
         }
-
-        /* 🌓 DARK MODE SUPPORT */
-        body.dark {
-            background: linear-gradient(135deg, #0a0e1a 0%, #1a1034 50%, #0a0e1a 100%);
-        }
-
-        body.dark .top-menu {
-            background: rgba(0,0,0,0.6);
-        }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="top-menu">
         <div class="nav-container">
             <a class="nav-item active" data-page="sign" onclick="loadPage('sign')">
@@ -152,42 +167,43 @@
         </div>
     </nav>
 
-    <!-- Loading Indicator -->
     <div class="loading" id="loading" style="display: none;">
         <i class="fa-solid fa-spinner"></i>
     </div>
 
-    <!-- Content Frame -->
     <iframe id="content-frame"></iframe>
 
     <script>
-        // 🌓 DARK MODE SYNC
+        const contentFrame = document.getElementById('content-frame');
+        const loading = document.getElementById('loading');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        // Hàm áp dụng theme
+        function applyTheme(theme) {
+            // Cập nhật body của trang mẹ
+            document.body.classList.toggle('dark', theme === 'dark');
+            
+            // Gửi theme xuống iframe con
+            if (contentFrame.contentWindow) {
+                contentFrame.contentWindow.postMessage({
+                    type: 'themeChange',
+                    theme: theme
+                }, '*');
+            }
+        }
+
+        // 1. Lắng nghe từ window cha (index.html)
         window.addEventListener('message', (event) => {
             if (event.data.type === 'themeChange') {
-                document.body.classList.toggle('dark', event.data.theme === 'dark');
-                
-                // Forward theme to iframe
-                const iframe = document.getElementById('content-frame');
-                if (iframe.contentWindow) {
-                    iframe.contentWindow.postMessage({
-                        type: 'themeChange',
-                        theme: event.data.theme
-                    }, '*');
-                }
+                applyTheme(event.data.theme);
             }
         });
 
-        // Check saved theme
-        const savedTheme = sessionStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark');
-        }
+        // 2. Kiểm tra sessionStorage khi load (để đồng bộ nếu F5)
+        const savedTheme = sessionStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
 
         // Navigation logic
-        const navItems = document.querySelectorAll('.nav-item');
-        const contentFrame = document.getElementById('content-frame');
-        const loading = document.getElementById('loading');
-
         function loadPage(page) {
             // Update active state
             navItems.forEach(nav => nav.classList.remove('active'));
@@ -196,15 +212,15 @@
             // Show loading
             loading.style.display = 'block';
 
-            // 🎯 FIX: Load from correct path - page/ folder
+            // Load sub-page
             contentFrame.src = `page/${page}.html`;
         }
 
-        // Hide loading when frame loads
+        // Hide loading when frame loads & Resync theme
         contentFrame.addEventListener('load', () => {
             loading.style.display = 'none';
             
-            // Send theme to newly loaded iframe
+            // Khi iframe mới load xong, gửi ngay theme hiện tại xuống
             const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
             if (contentFrame.contentWindow) {
                 contentFrame.contentWindow.postMessage({
@@ -216,8 +232,20 @@
 
         // Initial load
         window.addEventListener('load', () => {
-            loadPage('sign'); // Load SIGN by default
+            loadPage('sign');
         });
+
+        function forceZoom() {
+            const isMobile = window.innerWidth <= 768;
+            if (!isMobile) {
+                document.body.style.zoom = "0.75"; 
+            } else {
+                document.body.style.zoom = "1.0"; 
+            }
+        }
+        document.addEventListener("DOMContentLoaded", forceZoom);
+        window.addEventListener("resize", forceZoom);
+        window.addEventListener("orientationchange", forceZoom);
 
         function forceZoom() {
     	document.body.style.zoom = "0.75";}
