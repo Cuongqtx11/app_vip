@@ -126,6 +126,78 @@
     "lastSync": "2025-12-03T03:00:01.820Z"
   },
   {
+    "id": "ipa-com.intsig.CamScannerLite-7.7.1",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.intsig.CamScannerLite.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/_7.7.1_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.7.1",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.intsig.CamScannerLite",
+    "lastSync": "2025-12-03T04:00:01.631Z"
+  },
+  {
+    "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.11",
+    "type": "ipa",
+    "name": "InCollage",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PhotoEditor.PhotoCollage.inCollage.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/InCollage_2.2.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.11",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "PhotoEditor.PhotoCollage.inCollage",
+    "lastSync": "2025-12-03T04:00:01.631Z"
+  },
+  {
+    "id": "ipa-com.zerone.hidesktop-4.3.62",
+    "type": "ipa",
+    "name": "HiWidget",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zerone.hidesktop.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/HiWidget_4.3.62_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.62",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.zerone.hidesktop",
+    "lastSync": "2025-12-03T04:00:01.632Z"
+  },
+  {
+    "id": "ipa-com.frontrow.vlog-1.104",
+    "type": "ipa",
+    "name": "VlogNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-12-2025/VlogNow_1.104_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.104",
+    "developer": "apptesters.org",
+    "date": "2025-12-03",
+    "source": "apptesters",
+    "bundleID": "com.frontrow.vlog",
+    "lastSync": "2025-12-03T04:00:01.632Z"
+  },
+  {
     "id": "ipa-com.impalastudios.pianofree-2.16.2",
     "type": "ipa",
     "name": "ThePiano",
