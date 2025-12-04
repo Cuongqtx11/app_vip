@@ -29,18 +29,14 @@
   </script>
 
   <style>
-    /* === GLOBAL ZOOM FIX (SAFE METHOD) === */
-    /* Thay vì dùng zoom (gây lỗi layout), ta giảm size chữ gốc.
-       Vì Tailwind dùng REM, nên 100% giao diện (kích thước, margin, padding)
-       sẽ tự động thu nhỏ về 85% mà vẫn giữ nguyên cấu trúc chuẩn. */
+    /* === GLOBAL ZOOM 85% === */
     :root {
-      font-size: 85%; 
+      font-size: 85%; /* Thu nhỏ toàn bộ hệ thống */
     }
 
     body {
       -webkit-tap-highlight-color: transparent;
       overscroll-behavior-y: none;
-      /* Đảm bảo full màn hình chuẩn */
       width: 100%;
       overflow-x: hidden;
     }
@@ -61,16 +57,14 @@
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
-    /* VIP Tab Bar - Tối ưu chiều cao & vị trí */
+    /* VIP Tab Bar */
     .vip-tab-bar {
       position: fixed; bottom: 0; left: 0; right: 0;
-      /* Dùng REM để scale theo font-size gốc */
       height: calc(3.8rem + env(safe-area-inset-bottom)); 
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(20px);
       border-top: 1px solid rgba(0,0,0,0.05);
       display: flex; justify-content: space-evenly; align-items: flex-start;
-      /* Padding nhỏ để icon không bị nổi cao */
       padding-top: 0.5rem; 
       padding-bottom: env(safe-area-inset-bottom);
       z-index: 50;
@@ -84,13 +78,11 @@
       flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
       gap: 0.2rem; color: #999; transition: all 0.3s; background: none; border: none; cursor: pointer;
     }
-    /* Chỉnh size icon/text bằng rem */
     .tab-btn i { width: 1.5rem; height: 1.5rem; } 
     .tab-btn span { font-size: 0.7rem; font-weight: 700; }
     
     .tab-btn.active { color: #7c3aed; }
     .dark .tab-btn.active { color: #a78bfa; }
-    .tab-btn svg { transition: transform 0.3s; }
     .tab-btn.active svg { transform: translateY(-2px) scale(1.1); }
 
     /* Sub Tab Bar */
@@ -112,7 +104,6 @@
     }
 
     /* Pagination */
-    .pagination { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
     .page-btn {
       width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center;
       border-radius: 0.6rem; background: #fff; color: #666; font-weight: 600; font-size: 0.9rem;
@@ -122,53 +113,54 @@
     .page-btn.active {
       background: #7c3aed; color: #fff; border-color: #7c3aed;
     }
-    .page-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-    /* Snap Scroll */
     .snap-x-mandatory { scroll-snap-type: x mandatory; }
     .snap-center { scroll-snap-align: center; }
   </style>
 </head>
 <body class="bg-bgLight dark:bg-bgDark text-gray-900 dark:text-white transition-colors duration-300 font-sans h-[100dvh] flex flex-col overflow-hidden">
 
-  <!-- HEADER (Dùng h-14 ~ 3.5rem để gọn hơn) -->
-  <header class="header-glass fixed top-0 w-full z-40 h-14 flex items-center justify-between px-5">
-    <div class="flex items-center gap-3 w-full max-w-6xl mx-auto">
-      <!-- Title -->
-      <div class="font-extrabold text-xl tracking-tight text-brand dark:text-white flex items-center gap-2 cursor-pointer" onclick="window.location.reload()">
-        <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center text-white">
-           <i data-lucide="zap" class="w-4 h-4"></i>
+  <!-- HEADER -->
+  <!-- 
+       FIX HEADER: Đã tăng kích thước thủ công (h-[68px], icon w-6, text-2xl) 
+       để bù lại font-size 85%, giúp header trông to bình thường. 
+  -->
+  <header class="header-glass fixed top-0 w-full z-40 h-[68px] flex items-center justify-between px-5">
+    <div class="flex items-center gap-4 w-full max-w-6xl mx-auto">
+      <!-- Title (Tăng size) -->
+      <div class="font-extrabold text-2xl tracking-tight text-brand dark:text-white flex items-center gap-3 cursor-pointer" onclick="window.location.reload()">
+        <div class="w-10 h-10 rounded-xl bg-brand flex items-center justify-center text-white">
+           <i data-lucide="zap" class="w-6 h-6"></i>
         </div>
         Kho Vip
       </div>
 
-      <!-- Search -->
+      <!-- Search (Tăng size) -->
       <div class="flex-1 flex justify-end ml-4">
-         <div class="relative group w-full max-w-[220px] transition-all duration-300">
-            <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"></i>
-            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="w-full h-9 pl-9 pr-4 bg-gray-100 dark:bg-white/10 text-sm rounded-full outline-none focus:ring-2 focus:ring-brand/50 transition-all placeholder-gray-500 text-gray-700 dark:text-gray-200">
+         <div class="relative group w-full max-w-[260px] transition-all duration-300">
+            <i data-lucide="search" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="w-full h-11 pl-11 pr-5 bg-gray-100 dark:bg-white/10 text-base rounded-full outline-none focus:ring-2 focus:ring-brand/50 transition-all placeholder-gray-500 text-gray-700 dark:text-gray-200">
          </div>
       </div>
 
-      <!-- Actions -->
-      <div class="flex items-center gap-2 ml-2">
-        <button onclick="toggleTheme()" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition">
-          <i data-lucide="moon" class="w-4 h-4 dark:text-yellow-400"></i>
+      <!-- Actions (Tăng size) -->
+      <div class="flex items-center gap-3 ml-2">
+        <button onclick="toggleTheme()" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition">
+          <i data-lucide="moon" class="w-5 h-5 dark:text-yellow-400"></i>
         </button>
-        <a href="pages/home.html" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition text-gray-600 dark:text-gray-300">
-          <i data-lucide="user" class="w-4 h-4"></i>
+        <a href="pages/home.html" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition text-gray-600 dark:text-gray-300">
+          <i data-lucide="user" class="w-5 h-5"></i>
         </a>
       </div>
     </div>
   </header>
 
   <!-- MAIN CONTENT -->
-  <!-- Padding top adjusted for new header height -->
-  <main id="mainContainer" class="flex-1 h-full overflow-y-auto overflow-x-hidden scrollbar-hide pt-16 pb-20 md:pb-10 relative scroll-smooth">
+  <!-- Padding top tăng lên 80px để không bị header che mất -->
+  <main id="mainContainer" class="flex-1 h-full overflow-y-auto overflow-x-hidden scrollbar-hide pt-[80px] pb-20 md:pb-10 relative scroll-smooth">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
        <!-- Dynamic Content -->
        <div id="dynamicContent" class="min-h-[500px] animate-in fade-in duration-300">
-          <!-- Loading -->
           <div class="flex flex-col items-center justify-center pt-32">
              <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-brand"></div>
           </div>
@@ -202,7 +194,6 @@
 
   <!-- ================= MODALS ================= -->
 
-  <!-- APP DETAIL MODAL -->
   <div id="appModal" class="fixed inset-0 z-[60] hidden flex items-end md:items-center justify-center bg-black/40 backdrop-blur-sm p-0 md:p-6 opacity-0 transition-opacity duration-300">
     <div id="appModalPanel" class="bg-white dark:bg-[#1c1c1e] w-full max-w-md md:rounded-3xl rounded-t-3xl max-h-[90vh] flex flex-col shadow-2xl transform translate-y-full transition-transform duration-300 relative">
        <div class="absolute top-4 right-4 z-10">
@@ -234,7 +225,6 @@
                 
                 <p id="vipMsg" class="text-center text-xs mt-3 font-semibold hidden"></p>
                 
-                <!-- Nút Tải Miễn Phí -->
                 <div class="mt-4 pt-0">
                    <button onclick="downloadFree()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 dark:from-white/10 dark:to-white/5 text-gray-900 dark:text-white font-bold text-sm shadow-sm hover:scale-[1.02] transition border border-gray-200 dark:border-white/10 flex items-center justify-center gap-2 group">
                       <i data-lucide="gift" class="w-4 h-4 text-brand group-hover:scale-110 transition"></i>
@@ -304,7 +294,6 @@
            ...DB.dylib.map(i=>({...i, _type:'DYLIB'}))
         ];
         
-        // Featured
         const featured = allApps.filter(i => {
            const badge = (i.badge || i.tag || '').toLowerCase();
            return badge.includes('hot') || badge.includes('top') || badge.includes('gold');
@@ -314,8 +303,7 @@
            featured.push(...remaining.slice(0, 5 - featured.length));
         }
 
-        // Trending
-        const trendingKeywords = ['youtube', 'locket', 'spotify', 'tiktok', 'facebook', 'instagram', 'capcut', 'messenger', 'rổ phim', 'B612', 'Liên Quân Mobile', 'Duolingo'];
+        const trendingKeywords = ['youtube', 'locket', 'spotify', 'tiktok', 'facebook', 'instagram', 'messenger', 'liên quân mobile', 'clash of clans', 'doulingo', 'capcut'];
         const trendingApps = [];
         const seenNames = new Set();
         for (const i of allApps) {
@@ -327,7 +315,6 @@
                 }
             }
         }
-
         const recent = allApps.slice(0, 12);
 
         html = `
@@ -523,12 +510,22 @@
        document.getElementById('mIcon').src = i.icon || i.iconUrl;
        document.getElementById('mDesc').innerText = i.desc || i.description || i.usage || 'Không có mô tả.';
        
+       // RESET STATE TO TRÁNH LỖI TREO
        document.getElementById('vipArea').classList.add('hidden');
        document.getElementById('vipMsg').classList.add('hidden');
        document.getElementById('vipMsg').classList.remove('text-green-500', 'text-red-500');
        document.getElementById('vipKey').value = '';
-       document.querySelector('#appModalPanel button[onclick*="showVipInput()"]').classList.remove('hidden');
-       document.getElementById('verifyBtn').classList.remove('hidden');
+       
+       // RESET NÚT
+       const mainBtn = document.querySelector('#appModalPanel button[onclick*="showVipInput()"]');
+       mainBtn.classList.remove('hidden');
+       
+       const verifyBtn = document.getElementById('verifyBtn');
+       verifyBtn.classList.remove('hidden');
+       verifyBtn.disabled = false;
+       verifyBtn.innerText = "XÁC NHẬN & TẢI";
+       
+       // Xóa nút download cũ nếu có
        const dlBtn = document.getElementById('finalDownloadBtn');
        if(dlBtn) dlBtn.remove(); 
 
@@ -543,6 +540,13 @@
        panel.classList.add('translate-y-full');
        modal.classList.add('opacity-0');
        setTimeout(() => modal.classList.add('hidden'), 300);
+       
+       // Reset thêm lần nữa cho chắc
+       if(id === 'appModal') {
+          const verifyBtn = document.getElementById('verifyBtn');
+          verifyBtn.disabled = false;
+          verifyBtn.innerText = "XÁC NHẬN & TẢI";
+       }
     }
 
     function showVipInput() {
@@ -575,16 +579,11 @@
              msg.innerText = "✅ Đang chuyển hướng...";
              btn.classList.add('hidden');
 
-             // Ưu tiên chuyển hướng trực tiếp cho Mobile
              setTimeout(() => {
                  if(link.includes('http')) window.location.href = link;
-                 else {
-                     // Scheme lạ (shadowrocket://) thì thử cả location và window.open
-                     window.location.href = link;
-                 }
+                 else window.location.href = link;
              }, 800);
              
-             // Nút Fallback
              let realBtn = document.getElementById('finalDownloadBtn');
              if(!realBtn) {
                  realBtn = document.createElement('button');
