@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>Kho App Vip - Hack - Crack - Mod</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: { 
+            brand: '#7c3aed', 
+            brandDark: '#6d28d9',
+            bgLight: '#f8fafc',
+            bgDark: '#000000',
+            cardDark: '#1c1c1e'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* === GLOBAL ZOOM 85% === */
+    :root {
+      font-size: 85%; /* Thu nhỏ toàn bộ hệ thống */
+    }
+
+    body {
+      -webkit-tap-highlight-color: transparent;
+      overscroll-behavior-y: none;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Ẩn thanh cuộn */
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Glass Header */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .dark .header-glass {
+      background: rgba(18, 18, 20, 0.85);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* VIP Tab Bar */
+    .vip-tab-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      height: calc(3.8rem + env(safe-area-inset-bottom)); 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(0,0,0,0.05);
+      display: flex; justify-content: space-evenly; align-items: flex-start;
+      padding-top: 0.5rem; 
+      padding-bottom: env(safe-area-inset-bottom);
+      z-index: 50;
+    }
+    .dark .vip-tab-bar {
+      background: rgba(28, 28, 30, 0.95);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tab-btn {
+      flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.2rem; color: #999; transition: all 0.3s; background: none; border: none; cursor: pointer;
+    }
+    .tab-btn i { width: 1.5rem; height: 1.5rem; } 
+    .tab-btn span { font-size: 0.7rem; font-weight: 700; }
+    
+    .tab-btn.active { color: #7c3aed; }
+    .dark .tab-btn.active { color: #a78bfa; }
+    .tab-btn.active svg { transform: translateY(-2px) scale(1.1); }
+
+    /* Sub Tab Bar */
+    .sub-tab-container {
+      display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.25rem; margin-bottom: 1.25rem;
+      background: rgba(0,0,0,0.05); border-radius: 0.75rem;
+    }
+    .dark .sub-tab-container { background: rgba(255,255,255,0.05); }
+    
+    .sub-tab-btn {
+      flex: 1; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.8rem; font-weight: 600;
+      text-align: center; white-space: nowrap; transition: all 0.2s;
+    }
+    .sub-tab-btn.active {
+      background: #fff; color: #7c3aed; shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .dark .sub-tab-btn.active {
+      background: #2c2c2e; color: #fff;
+    }
+
+    /* Pagination Buttons */
+    .page-btn {
+      width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center;
+      border-radius: 0.6rem; background: #fff; color: #666; font-weight: 600; font-size: 0.9rem;
+      border: 1px solid #eee; transition: all 0.2s;
+    }
+    .dark .page-btn { background: #1c1c1e; color: #aaa; border-color: #333; }
+    .page-btn.active {
+      background: #7c3aed; color: #fff; border-color: #7c3aed;
+    }
+
+    /* CSS cho Pagination nằm ngang */
+    .pagination {
+      display: flex;           
+      justify-content: center; 
+      align-items: center;
+      gap: 0.5rem;             
+      margin-top: 1.5rem;
+      flex-wrap: wrap;         
+      width: 100%;
+    }
+
+    .snap-x-mandatory { scroll-snap-type: x mandatory; }
+    .snap-center { scroll-snap-align: center; }
+  </style>
+</head>
+<body class="bg-bgLight dark:bg-bgDark text-gray-900 dark:text-white transition-colors duration-300 font-sans h-[100dvh] flex flex-col overflow-hidden">
+
+  <header class="header-glass fixed top-0 w-full z-40 h-[68px] flex items-center justify-between px-5">
+    <div class="flex items-center gap-4 w-full max-w-6xl mx-auto">
+      <div class="font-extrabold text-2xl tracking-tight text-brand dark:text-white flex items-center gap-3 cursor-pointer" onclick="loadData();">
+        <div class="w-10 h-10 rounded-xl bg-brand flex items-center justify-center text-white">
+           <i data-lucide="zap" class="w-6 h-6"></i>
+        </div>
+        Kho Vip
+      </div>
+
+      <div class="flex-1 flex justify-end ml-4">
+         <div class="relative group w-full max-w-[260px] transition-all duration-300">
+            <i data-lucide="search" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="w-full h-11 pl-11 pr-5 bg-gray-100 dark:bg-white/10 text-base rounded-full outline-none focus:ring-2 focus:ring-brand/50 transition-all placeholder-gray-500 text-gray-700 dark:text-gray-200">
+         </div>
+      </div>
+
+      <div class="flex items-center gap-3 ml-2">
+        <button onclick="toggleTheme()" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition">
+          <i data-lucide="moon" class="w-5 h-5 dark:text-yellow-400"></i>
+        </button>
+        <a href="pages/home.html" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition text-gray-600 dark:text-gray-300">
+          <i data-lucide="user" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContainer" class="flex-1 h-full overflow-y-auto overflow-x-hidden scrollbar-hide pt-[80px] pb-20 md:pb-10 relative scroll-smooth">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+       <div id="dynamicContent" class="min-h-[500px] animate-in fade-in duration-300">
+          <div class="flex flex-col items-center justify-center pt-32">
+             <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-brand"></div>
+          </div>
+       </div>
+    </div>
+  </main>
+
+  <nav class="vip-tab-bar">
+    <button onclick="switchTab('home')" class="tab-btn active" data-tab="home">
+      <i data-lucide="layout-grid"></i>
+      <span>Home</span>
+    </button>
+    <button onclick="switchTab('dylib')" class="tab-btn" data-tab="dylib">
+      <i data-lucide="cpu"></i>
+      <span>Dylib</span>
+    </button>
+    <button onclick="switchTab('ipa')" class="tab-btn" data-tab="ipa">
+      <i data-lucide="smartphone"></i>
+      <span>IPA</span>
+    </button>
+    <button onclick="switchTab('conf')" class="tab-btn" data-tab="conf">
+      <i data-lucide="shield-check"></i>
+      <span>Conf</span>
+    </button>
+    <button onclick="switchTab('cert')" class="tab-btn" data-tab="cert">
+      <i data-lucide="award"></i>
+      <span>Cert</span>
+    </button>
+  </nav>
+
+  <div id="appModal" class="fixed inset-0 z-[60] hidden flex items-end md:items-center justify-center bg-black/40 backdrop-blur-sm p-0 md:p-6 opacity-0 transition-opacity duration-300">
+    <div id="appModalPanel" class="bg-white dark:bg-[#1c1c1e] w-full max-w-md md:rounded-3xl rounded-t-3xl max-h-[90vh] flex flex-col shadow-2xl transform translate-y-full transition-transform duration-300 relative">
+       <div class="absolute top-4 right-4 z-10">
+          <button onclick="closeModal('appModal')" class="bg-gray-100/80 dark:bg-white/10 backdrop-blur p-2 rounded-full hover:scale-110 transition">
+             <i data-lucide="x" class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
+          </button>
+       </div>
+       
+       <div class="overflow-y-auto p-6 scrollbar-hide">
+          <div class="flex gap-5 mb-6 pt-2">
+             <img id="mIcon" class="w-24 h-24 rounded-[1.5rem] shadow-xl bg-gray-100 object-cover" />
+             <div class="flex-1 flex flex-col justify-center">
+                <h2 id="mTitle" class="text-2xl font-bold leading-tight mb-1 line-clamp-2">App Name</h2>
+                <p id="mSub" class="text-sm text-gray-500 dark:text-gray-400 mb-3">Version • Dev</p>
+                <button onclick="showVipInput()" class="bg-brand text-white py-2 px-6 rounded-full font-bold text-sm shadow-lg shadow-brand/30 hover:bg-brandDark transition w-fit">
+                   NHẬN
+                </button>
+             </div>
+          </div>
+
+          <div id="vipArea" class="hidden mb-6 animate-in slide-in-from-top-4 fade-in">
+             <div class="bg-yellow-50 dark:bg-yellow-900/10 p-4 rounded-2xl border border-yellow-200 dark:border-yellow-800/30">
+                <p class="text-center text-xs font-bold text-yellow-600 dark:text-yellow-500 uppercase mb-3">Nhập mã VIP để tải</p>
+                <input type="text" id="vipKey" placeholder="XXXX-XXXX-XXXX-XXXX" class="w-full bg-white dark:bg-black/50 border border-yellow-200 dark:border-yellow-800 rounded-xl px-3 py-2.5 text-center font-mono text-sm uppercase outline-none focus:border-yellow-500 transition mb-3">
+                
+                <button onclick="verifyKey()" id="verifyBtn" class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-2.5 rounded-xl text-sm shadow-md hover:brightness-110 transition">
+                    XÁC NHẬN & TẢI
+                </button>
+                
+                <p id="vipMsg" class="text-center text-xs mt-3 font-semibold hidden"></p>
+                
+                <div class="mt-4 pt-0">
+                   <button onclick="downloadFree()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 dark:from-white/10 dark:to-white/5 text-gray-900 dark:text-white font-bold text-sm shadow-sm hover:scale-[1.02] transition border border-gray-200 dark:border-white/10 flex items-center justify-center gap-2 group">
+                      <i data-lucide="gift" class="w-4 h-4 text-brand group-hover:scale-110 transition"></i>
+                      Tải xuống miễn phí
+                   </button>
+                </div>
+             </div>
+          </div>
+
+          <hr class="border-gray-100 dark:border-white/10 mb-6">
+          <h3 class="font-bold text-lg mb-2">Giới thiệu</h3>
+          <p id="mDesc" class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed whitespace-pre-line"></p>
+       </div>
+    </div>
+  </div>
+
+  <script>
+    // --- STATE ---
+    const DB = { ipa: [], dylib: [], conf: [], cert_sign: [], cert_cert: [], cert_mod: [] };
+    const STATE = { 
+        currentTab: 'home', 
+        currentSubTab: 'sign', 
+        currentPage: 1, 
+        itemsPerPage: 24, 
+        currentItem: null,
+        currentFilter: 'all'
+    };
+
+    // --- HELPER SORT MỚI NHẤT ---
+    // Hàm này sẽ sắp xếp mảng theo thời gian giảm dần (mới nhất lên đầu)
+    // Ưu tiên 'lastSync' (ISO string từ auto-sync) rồi đến 'date'
+    function sortItemsByDate(items) {
+        return items.sort((a, b) => {
+            // Lấy timestamp, nếu không có thì mặc định là 0
+            const timeA = new Date(a.lastSync || a.date || 0).getTime();
+            const timeB = new Date(b.lastSync || b.date || 0).getTime();
+            return timeB - timeA; // Giảm dần: Lớn (mới) -> Bé (cũ)
+        });
+    }
+
+    // --- INIT ---
+    async function loadData() {
+      const endpoints = [
+        {k: 'ipa', u: 'data/ipa.json'},
+        {k: 'dylib', u: 'data/dylib.json'},
+        {k: 'conf', u: 'data/conf.json'},
+        {k: 'cert_sign', u: 'pages/data/sign.json'},
+        {k: 'cert_cert', u: 'pages/data/cert.json'},
+        {k: 'cert_mod', u: 'pages/data/mod.json'}
+      ];
+
+      await Promise.all(endpoints.map(async e => {
+        try {
+          // Thêm timestamp để bypass cache trình duyệt: ?t=Date.now()
+          const res = await fetch(`${e.u}?t=${Date.now()}`);
+          if(res.ok) {
+              let data = await res.json();
+              // Sắp xếp dữ liệu ngay khi tải về
+              DB[e.k] = sortItemsByDate(data);
+          }
+        } catch(err) { console.error(`Lỗi tải ${e.k}`, err); }
+      }));
+      
+      // Nếu đang ở tab nào thì render lại tab đó để thấy dữ liệu mới
+      renderContent(document.getElementById('searchInput').value);
+    }
+
+    // --- FILTER ACTION ---
+    function setFilter(filter) {
+        STATE.currentFilter = filter;
+        STATE.currentPage = 1;
+        renderContent(document.getElementById('searchInput').value);
+    }
+
+    // --- RENDER LOGIC ---
+    function switchTab(tabId) {
+      STATE.currentTab = tabId;
+      STATE.currentPage = 1;
+      STATE.currentFilter = 'all';
+      
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.tab === tabId);
+      });
+
+      const searchInput = document.getElementById('searchInput');
+      searchInput.value = '';
+      searchInput.placeholder = `Tìm trong ${tabId === 'home' ? 'tất cả' : tabId.toUpperCase()}...`;
+      
+      renderContent();
+      document.getElementById('mainContainer').scrollTop = 0;
+    }
+
+    function renderContent(query = '') {
+      const container = document.getElementById('dynamicContent');
+      let html = '';
+      let items = [];
+      const tab = STATE.currentTab;
+
+      // Filter Data
+      if (tab === 'home') {
+        let allApps = [
+           ...DB.ipa.map(i=>({...i, _type:'IPA'})),
+           ...DB.cert_mod.map(i=>({...i, _type:'MOD'})),
+           ...DB.dylib.map(i=>({...i, _type:'DYLIB'}))
+        ];
+        
+        // Sắp xếp lại danh sách tổng hợp theo thời gian mới nhất
+        allApps = sortItemsByDate(allApps);
+        
+        const featured = allApps.filter(i => {
+           const badge = (i.badge || i.tag || '').toLowerCase();
+           return badge.includes('hot') || badge.includes('top') || badge.includes('gold');
+        }).slice(0, 5);
+        if(featured.length < 5) {
+           const remaining = allApps.filter(i => !featured.includes(i));
+           featured.push(...remaining.slice(0, 5 - featured.length));
+        }
+
+        const trendingKeywords = ['youtube', 'locket', 'spotify', 'liên quân mobile', 'Arena of Valor', 'duolingo', 'tiktok', 'facebook', 'messenger', 'instagram', 'capcut'];
+        const trendingApps = [];
+        const seenNames = new Set();
+        for (const i of allApps) {
+            const nameLower = (i.name || '').toLowerCase();
+            if (trendingKeywords.some(key => nameLower.includes(key))) {
+                if (!seenNames.has(nameLower)) {
+                    seenNames.add(nameLower);
+                    trendingApps.push(i);
+                }
+            }
+        }
+        
+        // Recent apps (đã được sort ở trên nên slice 0-12 là chính xác những cái mới nhất)
+        const recent = allApps.slice(0, 12);
+
+        html = `
+          <div class="mb-2 text-xs font-bold text-gray-400 uppercase tracking-widest animate-in fade-in">
+             ${new Date().toLocaleDateString('vi-VN', {weekday: 'long', day: 'numeric', month: 'long'})}
+          </div>
+          <h1 class="text-4xl font-black mb-6 text-gray-900 dark:text-white">Hôm Nay</h1>
+          
+          <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-6 -mx-4 px-4 md:mx-0 md:px-0">
+             ${featured.map(i => createHomeHero(i)).join('')}
+          </div>
+
+          ${trendingApps.length > 0 ? `
+            <div class="mt-2 mb-6 animate-in fade-in slide-in-from-right-4">
+                <div class="flex justify-between items-end mb-3">
+                   <h3 class="text-xl font-extrabold text-gray-900 dark:text-white flex items-center gap-2">
+                     <i data-lucide="flame" class="w-4 h-4 text-orange-500 fill-orange-500"></i> Xu hướng
+                   </h3>
+                </div>
+                <div class="flex gap-3 overflow-x-auto snap-x-mandatory scrollbar-hide pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+                   ${trendingApps.map(i => createTrendingItem(i)).join('')}
+                </div>
+                <hr class="border-gray-100 dark:border-white/5 mt-4">
+            </div>
+          ` : ''}
+
+          <div class="mt-4">
+             <div class="flex justify-between items-end mb-4">
+                <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">Mới cập nhật</h3>
+                <span class="text-brand text-xs font-bold bg-brand/10 px-2 py-1 rounded-md">HOT</span>
+             </div>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                ${recent.map(i => createGridItem(i)).join('')}
+             </div>
+          </div>
+        `;
+      } else if (tab === 'cert') {
+        const subTab = STATE.currentSubTab;
+        if (subTab === 'sign') items = DB.cert_sign;
+        else if (subTab === 'cert') items = DB.cert_cert;
+        else if (subTab === 'mod') items = DB.cert_mod;
+        // Items đã được sort ở loadData
+        if(query) items = filterItems(items, query);
+
+        html = `
+          <h1 class="text-3xl font-black mb-4 text-gray-900 dark:text-white">Chứng Chỉ & Mod</h1>
+          <div class="sub-tab-container scrollbar-hide">
+             <button onclick="switchSubTab('sign')" class="sub-tab-btn ${subTab==='sign'?'active':''}">✍️ Sign App</button>
+             <button onclick="switchSubTab('cert')" class="sub-tab-btn ${subTab==='cert'?'active':''}">🎖️ Cert File</button>
+             <button onclick="switchSubTab('mod')" class="sub-tab-btn ${subTab==='mod'?'active':''}">📦 Hot Mod</button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 animate-in slide-in-from-bottom-2 duration-300">
+             ${items.length ? items.map(i => createGridItem(i, subTab.toUpperCase())).join('') : emptyState()}
+          </div>
+        `;
+      } else {
+        if (tab === 'ipa') items = DB.ipa;
+        else if (tab === 'dylib') items = DB.dylib;
+        else if (tab === 'conf') items = DB.conf;
+        // Items đã được sort ở loadData
+        
+        if(query) items = filterItems(items, query);
+
+        if (STATE.currentFilter !== 'all') {
+            items = items.filter(i => i.tags && i.tags.includes(STATE.currentFilter));
+        }
+
+        const featured = items.slice(0, 5);
+        const totalPages = Math.ceil(items.length / STATE.itemsPerPage);
+        const start = (STATE.currentPage - 1) * STATE.itemsPerPage;
+        const pagedItems = items.slice(start, start + STATE.itemsPerPage);
+
+        const showFilter = (tab === 'ipa');
+
+        html = `
+           <h1 class="text-3xl font-black mb-6 text-gray-900 dark:text-white uppercase">${tab} Store</h1>
+           ${!query && STATE.currentFilter === 'all' ? `
+           <div class="mb-8">
+              <h3 class="text-lg font-bold mb-3 px-1">Nổi bật</h3>
+              <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-4 -mx-4 px-4 md:mx-0 md:px-0">
+                 ${featured.map(i => createSubPageHero(i)).join('')}
+              </div>
+           </div>` : ''}
+           
+           <div class="flex flex-col md:flex-row md:items-end justify-between mb-4 px-1 gap-3">
+              <div class="flex items-center gap-4 w-full md:w-auto justify-between md:justify-start">
+                  <h3 class="text-lg font-bold">Danh sách</h3>
+                  ${showFilter ? `
+                  <div class="flex bg-gray-200 dark:bg-white/10 rounded-lg p-1 gap-1">
+                      <button onclick="setFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'all' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Tất cả</button>
+                      <button onclick="setFilter('game')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'game' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Game</button>
+                      <button onclick="setFilter('social')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'social' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Social</button>
+                  </div>
+                  ` : ''}
+              </div>
+              <span class="text-xs text-gray-500">${items.length} apps</span>
+           </div>
+
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${pagedItems.length ? pagedItems.map(i => createGridItem(i, tab.toUpperCase())).join('') : emptyState()}
+           </div>
+           ${items.length > STATE.itemsPerPage ? createPagination(totalPages) : ''}
+        `;
+      }
+      container.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    // --- HELPERS ---
+    function createHomeHero(i) {
+       const title = i.name || i.title || 'App';
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       const desc = i.desc || i.description || 'Trải nghiệm ngay';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[85%] md:w-[24rem] h-[16rem] relative rounded-[1.5rem] overflow-hidden shadow-xl group cursor-pointer bg-gray-900">
+            <img src="${icon}" class="absolute inset-0 w-full h-full object-cover opacity-50 blur-xl scale-125 group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 w-full p-5 flex flex-col items-start gap-3">
+               <span class="bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase shadow-lg shadow-brand/20">NỔI BẬT</span>
+               <div class="flex items-center gap-3 w-full">
+                  <img src="${icon}" class="w-14 h-14 rounded-xl shadow-lg border border-white/10 bg-gray-800 object-cover">
+                  <div class="flex-1 min-w-0">
+                     <h2 class="text-xl font-bold text-white leading-tight truncate">${title}</h2>
+                     <p class="text-gray-300 text-xs line-clamp-1 mt-1">${desc}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       `;
+    }
+
+    function createTrendingItem(i) {
+       const title = i.name || i.title || 'App';
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       const cat = i.tag || 'Ứng dụng';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-28 flex flex-col gap-2 cursor-pointer group">
+            <div class="w-full aspect-square rounded-[1.2rem] overflow-hidden shadow-sm border border-black/5 dark:border-white/10 relative">
+               <img src="${icon}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 bg-gray-100 dark:bg-gray-800" onerror="this.src='https://placehold.co/100'">
+            </div>
+            <div>
+               <h4 class="font-semibold text-gray-900 dark:text-white text-xs truncate leading-tight">${title}</h4>
+               <p class="text-[10px] text-gray-500 dark:text-gray-400 truncate">${cat}</p>
+            </div>
+         </div>
+       `;
+    }
+
+    function createSubPageHero(i) {
+       const title = i.name || i.title;
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[17.5rem] h-[10rem] relative rounded-3xl overflow-hidden shadow-lg group cursor-pointer border border-white/10">
+            <img src="${icon}" class="absolute inset-0 w-full h-full object-cover blur-md opacity-60 scale-125 group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 p-5 flex flex-col justify-end">
+               <div class="flex items-center gap-3">
+                  <img src="${icon}" class="w-12 h-12 rounded-xl shadow-md border border-white/20 bg-black/20 backdrop-blur-md">
+                  <div class="flex-1 min-w-0">
+                     <h4 class="font-bold text-white text-lg truncate">${title}</h4>
+                     <p class="text-[10px] text-gray-200 uppercase font-bold tracking-wider">Top Download</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       `;
+    }
+
+    function createGridItem(i, tag = 'APP') {
+       const title = i.name || i.title || i.filename || 'Unknown';
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       const desc = i.desc || i.description || i.certname || 'No description';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")}, "${tag}")' class="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-cardDark border border-transparent hover:border-gray-200 dark:hover:border-white/10 transition-all cursor-pointer shadow-sm group">
+            <img src="${icon}" class="w-14 h-14 rounded-[12px] bg-gray-100 object-cover shadow-sm group-hover:scale-105 transition" onerror="this.src='https://placehold.co/100'"/>
+            <div class="flex-1 min-w-0">
+               <h4 class="font-bold text-gray-900 dark:text-white truncate text-sm">${title}</h4>
+               <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1 mt-0.5">${desc}</p>
+            </div>
+            <button class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center text-brand">
+               <i data-lucide="download" class="w-4 h-4"></i>
+            </button>
+         </div>
+       `;
+    }
+
+    function createPagination(total) {
+       let btns = '';
+       const maxShow = 5;
+       let start = Math.max(1, STATE.currentPage - 2);
+       let end = Math.min(total, start + maxShow - 1);
+       if (total <= 1) return '';
+       btns += `<button onclick="changePage(${STATE.currentPage - 1})" class="page-btn" ${STATE.currentPage===1?'disabled':''}><i data-lucide="chevron-left" class="w-4 h-4"></i></button>`;
+       for(let p = start; p <= end; p++) btns += `<button onclick="changePage(${p})" class="page-btn ${p===STATE.currentPage?'active':''}">${p}</button>`;
+       btns += `<button onclick="changePage(${STATE.currentPage + 1})" class="page-btn" ${STATE.currentPage===total?'disabled':''}><i data-lucide="chevron-right" class="w-4 h-4"></i></button>`;
+       
+       return `<div class="pagination">${btns}</div>`;
+    }
+
+    function emptyState() {
+       return `<div class="col-span-full py-10 text-center text-gray-400 flex flex-col items-center"><i data-lucide="package-open" class="w-10 h-10 mb-2 opacity-50"></i><p class="text-sm">Không tìm thấy dữ liệu</p></div>`;
+    }
+
+    // --- ACTIONS ---
+    function changePage(p) { 
+        STATE.currentPage = p; 
+        renderContent(); 
+        document.getElementById('mainContainer').scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    function switchSubTab(sub) { STATE.currentSubTab = sub; renderContent(); }
+    function filterItems(items, q) { const lower = q.toLowerCase(); return items.filter(i => (i.name || i.title || i.filename || '').toLowerCase().includes(lower)); }
+    document.getElementById('searchInput').addEventListener('input', (e) => renderContent(e.target.value));
+
+    function openModal(i) {
+       STATE.currentItem = i;
+       document.getElementById('mTitle').innerText = i.name || i.title || i.filename;
+       document.getElementById('mSub').innerText = `${i.version || 'Latest'} • ${i.developer || 'Unknown'}`;
+       document.getElementById('mIcon').src = i.icon || i.iconUrl;
+       document.getElementById('mDesc').innerText = i.desc || i.description || i.usage || 'Không có mô tả.';
+       
+       document.getElementById('vipArea').classList.add('hidden');
+       document.getElementById('vipMsg').classList.add('hidden');
+       document.getElementById('vipMsg').classList.remove('text-green-500', 'text-red-500');
+       document.getElementById('vipKey').value = '';
+       
+       const mainBtn = document.querySelector('#appModalPanel button[onclick*="showVipInput()"]');
+       mainBtn.classList.remove('hidden');
+       
+       const verifyBtn = document.getElementById('verifyBtn');
+       verifyBtn.classList.remove('hidden');
+       verifyBtn.disabled = false;
+       verifyBtn.innerText = "XÁC NHẬN & TẢI";
+       
+       const dlBtn = document.getElementById('finalDownloadBtn');
+       if(dlBtn) dlBtn.remove(); 
+
+       const modal = document.getElementById('appModal');
+       modal.classList.remove('hidden');
+       setTimeout(() => { modal.classList.remove('opacity-0'); document.getElementById('appModalPanel').classList.remove('translate-y-full'); }, 10);
+    }
+
+    function closeModal(id) {
+       const modal = document.getElementById(id);
+       const panel = modal.firstElementChild;
+       panel.classList.add('translate-y-full');
+       modal.classList.add('opacity-0');
+       setTimeout(() => modal.classList.add('hidden'), 300);
+       
+       if(id === 'appModal') {
+          const verifyBtn = document.getElementById('verifyBtn');
+          verifyBtn.disabled = false;
+          verifyBtn.innerText = "XÁC NHẬN & TẢI";
+       }
+    }
+
+    function showVipInput() {
+        document.getElementById('vipArea').classList.remove('hidden');
+        document.querySelector('#appModalPanel button[onclick*="showVipInput()"]').classList.add('hidden');
+    }
+
+    async function verifyKey() {
+       const k = document.getElementById('vipKey').value;
+       if(k.length < 5) return alert('Key lỗi');
+       
+       const btn = document.getElementById('verifyBtn');
+       const msg = document.getElementById('vipMsg');
+       btn.innerText = "ĐANG CHECK...";
+       btn.disabled = true;
+       
+       try {
+          const res = await fetch('/api/keys/verify', {
+              method:'POST',
+              headers:{'Content-Type':'application/json'},
+              body:JSON.stringify({key:k})
+          });
+          const d = await res.json();
+          
+          if(d.success) {
+             const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
+             
+             msg.classList.remove('hidden', 'text-red-500');
+             msg.classList.add('text-green-500');
+             msg.innerText = "✅ Đang chuyển hướng...";
+             btn.classList.add('hidden');
+
+             setTimeout(() => {
+                 if(link.includes('http')) window.location.href = link;
+                 else window.location.href = link;
+             }, 800);
+             
+             let realBtn = document.getElementById('finalDownloadBtn');
+             if(!realBtn) {
+                 realBtn = document.createElement('button');
+                 realBtn.id = 'finalDownloadBtn';
+                 realBtn.className = "w-full bg-green-500 text-white font-bold py-3 rounded-xl text-sm shadow-md hover:brightness-110 transition mt-3 animate-in fade-in zoom-in";
+                 realBtn.innerHTML = "<i data-lucide='download' class='inline w-4 h-4 mr-2'></i> TẢI LẠI (NẾU LỖI)";
+                 msg.parentNode.insertBefore(realBtn, msg.nextSibling);
+                 lucide.createIcons();
+             }
+             realBtn.onclick = function() {
+                 if(link.includes('http')) window.open(link, '_blank');
+                 else window.location.href = link;
+             };
+             
+          } else {
+             msg.classList.remove('hidden', 'text-green-500');
+             msg.classList.add('text-red-500');
+             msg.innerText = d.error || "Mã không hợp lệ";
+             btn.disabled = false;
+             btn.innerText = "XÁC NHẬN & TẢI";
+          }
+       } catch(e) { 
+           alert('Lỗi: '+e.message); 
+           btn.disabled = false;
+           btn.innerText = "XÁC NHẬN & TẢI";
+       }
+    }
+
+    function downloadFree() {
+       const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
+       window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank');
+       closeModal('appModal');
+    }
+
+    function toggleTheme() {
+       document.documentElement.classList.toggle('dark');
+       localStorage.setItem('theme', document.documentElement.classList.contains('dark')?'dark':'light');
+    }
+    if(localStorage.getItem('theme')==='dark') document.documentElement.classList.add('dark');
+
+    loadData();
+    lucide.createIcons();
+    
+    document.getElementById('vipKey').addEventListener('input', function(e) {
+      let v = e.target.value.replace(/[^A-Z0-9]/gi, '').toUpperCase();
+      let f = '';
+      for(let i=0; i<v.length && i<16; i++) {
+        if(i>0 && i%4===0) f+='-';
+        f+=v[i];
+      }
+      e.target.value = f;
+    });
+  </script>
+</body>
+</html>
