@@ -234,6 +234,60 @@
     "lastSync": "2025-12-04T09:14:28.737Z"
   },
   {
+    "id": "ipa-com.lightricks.Enlight-Video-2.79",
+    "type": "ipa",
+    "name": "Videoleap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Enlight-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Videoleap_2.79_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.79",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Enlight-Video",
+    "lastSync": "2025-12-04T10:00:01.652Z"
+  },
+  {
+    "id": "ipa-com.impalastudios.pianofree-2.16.3",
+    "type": "ipa",
+    "name": "ThePiano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.impalastudios.pianofree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/ThePiano_2.16.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.16.3",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.impalastudios.pianofree",
+    "lastSync": "2025-12-04T10:00:01.652Z"
+  },
+  {
+    "id": "ipa-com.neybox.Pillow-6.2.3",
+    "type": "ipa",
+    "name": "Pillow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neybox.Pillow.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Pillow_6.2.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.3",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.neybox.Pillow",
+    "lastSync": "2025-12-04T10:00:01.652Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
