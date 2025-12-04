@@ -198,6 +198,24 @@
     "lastSync": "2025-12-04T06:00:02.485Z"
   },
   {
+    "id": "ipa-com.aiby.wtcoin-1.20",
+    "type": "ipa",
+    "name": "CoinID",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aiby.wtcoin.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "ai"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/CoinID_1.20_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.20",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.aiby.wtcoin",
+    "lastSync": "2025-12-04T09:00:01.816Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
