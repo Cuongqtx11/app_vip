@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-co.visualsupply.cam-451.0.0",
+    "type": "ipa",
+    "name": "VSCO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.visualsupply.cam.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/VSCO_451.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "451.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "co.visualsupply.cam",
+    "lastSync": "2025-12-04T21:00:01.335Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.18.00",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/edjingMix_8.18.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.18.00",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2025-12-04T21:00:01.335Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
