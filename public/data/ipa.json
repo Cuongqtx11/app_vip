@@ -324,6 +324,24 @@
     "lastSync": "2025-12-04T12:00:01.802Z"
   },
   {
+    "id": "ipa-com.yazio.ios.YAZIO-12.61.1",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Yazio_12.61.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.61.1",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2025-12-04T13:00:01.595Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
