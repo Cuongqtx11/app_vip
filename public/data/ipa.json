@@ -342,6 +342,24 @@
     "lastSync": "2025-12-04T13:00:01.595Z"
   },
   {
+    "id": "ipa-com.alightcreative.motion-6.2.45",
+    "type": "ipa",
+    "name": "AlightMotion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/AlightMotion_6.2.45_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.45",
+    "developer": "khomodvip",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.alightcreative.motion",
+    "lastSync": "2025-12-04T14:00:01.721Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
