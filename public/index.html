@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
   <title>Kho Vip</title>
   
-  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -103,7 +102,7 @@
       background: #2c2c2e; color: #fff;
     }
 
-    /* Pagination */
+    /* Pagination Buttons */
     .page-btn {
       width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center;
       border-radius: 0.6rem; background: #fff; color: #666; font-weight: 600; font-size: 0.9rem;
@@ -114,20 +113,25 @@
       background: #7c3aed; color: #fff; border-color: #7c3aed;
     }
 
+    /* === [FIX 1] CSS cho Pagination nằm ngang === */
+    .pagination {
+      display: flex;           /* Xếp ngang */
+      justify-content: center; /* Căn giữa */
+      align-items: center;
+      gap: 0.5rem;             /* Khoảng cách nút */
+      margin-top: 1.5rem;
+      flex-wrap: wrap;         /* Xuống dòng nếu màn bé */
+      width: 100%;
+    }
+
     .snap-x-mandatory { scroll-snap-type: x mandatory; }
     .snap-center { scroll-snap-align: center; }
   </style>
 </head>
 <body class="bg-bgLight dark:bg-bgDark text-gray-900 dark:text-white transition-colors duration-300 font-sans h-[100dvh] flex flex-col overflow-hidden">
 
-  <!-- HEADER -->
-  <!-- 
-       FIX HEADER: Đã tăng kích thước thủ công (h-[68px], icon w-6, text-2xl) 
-       để bù lại font-size 85%, giúp header trông to bình thường. 
-  -->
   <header class="header-glass fixed top-0 w-full z-40 h-[68px] flex items-center justify-between px-5">
     <div class="flex items-center gap-4 w-full max-w-6xl mx-auto">
-      <!-- Title (Tăng size) -->
       <div class="font-extrabold text-2xl tracking-tight text-brand dark:text-white flex items-center gap-3 cursor-pointer" onclick="window.location.reload()">
         <div class="w-10 h-10 rounded-xl bg-brand flex items-center justify-center text-white">
            <i data-lucide="zap" class="w-6 h-6"></i>
@@ -135,7 +139,6 @@
         Kho Vip
       </div>
 
-      <!-- Search (Tăng size) -->
       <div class="flex-1 flex justify-end ml-4">
          <div class="relative group w-full max-w-[260px] transition-all duration-300">
             <i data-lucide="search" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
@@ -143,7 +146,6 @@
          </div>
       </div>
 
-      <!-- Actions (Tăng size) -->
       <div class="flex items-center gap-3 ml-2">
         <button onclick="toggleTheme()" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition">
           <i data-lucide="moon" class="w-5 h-5 dark:text-yellow-400"></i>
@@ -155,11 +157,8 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <!-- Padding top tăng lên 80px để không bị header che mất -->
   <main id="mainContainer" class="flex-1 h-full overflow-y-auto overflow-x-hidden scrollbar-hide pt-[80px] pb-20 md:pb-10 relative scroll-smooth">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
-       <!-- Dynamic Content -->
        <div id="dynamicContent" class="min-h-[500px] animate-in fade-in duration-300">
           <div class="flex flex-col items-center justify-center pt-32">
              <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-brand"></div>
@@ -168,7 +167,6 @@
     </div>
   </main>
 
-  <!-- BOTTOM NAVIGATION -->
   <nav class="vip-tab-bar">
     <button onclick="switchTab('home')" class="tab-btn active" data-tab="home">
       <i data-lucide="layout-grid"></i>
@@ -191,8 +189,6 @@
       <span>Cert</span>
     </button>
   </nav>
-
-  <!-- ================= MODALS ================= -->
 
   <div id="appModal" class="fixed inset-0 z-[60] hidden flex items-end md:items-center justify-center bg-black/40 backdrop-blur-sm p-0 md:p-6 opacity-0 transition-opacity duration-300">
     <div id="appModalPanel" class="bg-white dark:bg-[#1c1c1e] w-full max-w-md md:rounded-3xl rounded-t-3xl max-h-[90vh] flex flex-col shadow-2xl transform translate-y-full transition-transform duration-300 relative">
@@ -270,14 +266,19 @@
     function switchTab(tabId) {
       STATE.currentTab = tabId;
       STATE.currentPage = 1;
+      
       document.querySelectorAll('.tab-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.tab === tabId);
       });
+
       const searchInput = document.getElementById('searchInput');
       searchInput.value = '';
       searchInput.placeholder = `Tìm trong ${tabId === 'home' ? 'tất cả' : tabId.toUpperCase()}...`;
+      
       renderContent();
-      window.scrollTo(0,0);
+      
+      // === [FIX 2] Reset scroll vị trí về 0 của thẻ main ===
+      document.getElementById('mainContainer').scrollTop = 0;
     }
 
     function renderContent(query = '') {
@@ -303,7 +304,7 @@
            featured.push(...remaining.slice(0, 5 - featured.length));
         }
 
-        const trendingKeywords = ['youtube', 'locket', 'spotify', 'tiktok', 'facebook', 'instagram', 'messenger', 'liên quân mobile', 'clash of clans', 'doulingo', 'capcut'];
+        const trendingKeywords = ['youtube', 'locket', 'spotify', 'liên quân mobile', 'Arena of Valor', 'duolingo', 'tiktok', 'facebook', 'messenger', 'instagram', 'capcut'];
         const trendingApps = [];
         const seenNames = new Set();
         for (const i of allApps) {
@@ -455,7 +456,7 @@
                   <img src="${icon}" class="w-12 h-12 rounded-xl shadow-md border border-white/20 bg-black/20 backdrop-blur-md">
                   <div class="flex-1 min-w-0">
                      <h4 class="font-bold text-white text-lg truncate">${title}</h4>
-                     <p class="text-[10px] text-gray-200 uppercase font-bold tracking-wider">Top Choice</p>
+                     <p class="text-[10px] text-gray-200 uppercase font-bold tracking-wider">Top Download</p>
                   </div>
                </div>
             </div>
@@ -490,6 +491,8 @@
        btns += `<button onclick="changePage(${STATE.currentPage - 1})" class="page-btn" ${STATE.currentPage===1?'disabled':''}><i data-lucide="chevron-left" class="w-4 h-4"></i></button>`;
        for(let p = start; p <= end; p++) btns += `<button onclick="changePage(${p})" class="page-btn ${p===STATE.currentPage?'active':''}">${p}</button>`;
        btns += `<button onclick="changePage(${STATE.currentPage + 1})" class="page-btn" ${STATE.currentPage===total?'disabled':''}><i data-lucide="chevron-right" class="w-4 h-4"></i></button>`;
+       
+       // Thẻ div này đã được CSS .pagination xử lý
        return `<div class="pagination">${btns}</div>`;
     }
 
@@ -498,7 +501,13 @@
     }
 
     // --- ACTIONS ---
-    function changePage(p) { STATE.currentPage = p; renderContent(); document.getElementById('dynamicContent').scrollIntoView({behavior:'smooth'}); }
+    function changePage(p) { 
+        STATE.currentPage = p; 
+        renderContent(); 
+        // === [FIX] Scroll container chính lên đầu ===
+        document.getElementById('mainContainer').scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
     function switchSubTab(sub) { STATE.currentSubTab = sub; renderContent(); }
     function filterItems(items, q) { const lower = q.toLowerCase(); return items.filter(i => (i.name || i.title || i.filename || '').toLowerCase().includes(lower)); }
     document.getElementById('searchInput').addEventListener('input', (e) => renderContent(e.target.value));
@@ -510,13 +519,11 @@
        document.getElementById('mIcon').src = i.icon || i.iconUrl;
        document.getElementById('mDesc').innerText = i.desc || i.description || i.usage || 'Không có mô tả.';
        
-       // RESET STATE TO TRÁNH LỖI TREO
        document.getElementById('vipArea').classList.add('hidden');
        document.getElementById('vipMsg').classList.add('hidden');
        document.getElementById('vipMsg').classList.remove('text-green-500', 'text-red-500');
        document.getElementById('vipKey').value = '';
        
-       // RESET NÚT
        const mainBtn = document.querySelector('#appModalPanel button[onclick*="showVipInput()"]');
        mainBtn.classList.remove('hidden');
        
@@ -525,7 +532,6 @@
        verifyBtn.disabled = false;
        verifyBtn.innerText = "XÁC NHẬN & TẢI";
        
-       // Xóa nút download cũ nếu có
        const dlBtn = document.getElementById('finalDownloadBtn');
        if(dlBtn) dlBtn.remove(); 
 
@@ -541,7 +547,6 @@
        modal.classList.add('opacity-0');
        setTimeout(() => modal.classList.add('hidden'), 300);
        
-       // Reset thêm lần nữa cho chắc
        if(id === 'appModal') {
           const verifyBtn = document.getElementById('verifyBtn');
           verifyBtn.disabled = false;
@@ -639,5 +644,3 @@
   </script>
 </body>
 </html>
-
-
