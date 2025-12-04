@@ -216,6 +216,24 @@
     "lastSync": "2025-12-04T09:00:01.816Z"
   },
   {
+    "id": "ipa-com.mwm.piano-app-3.54.01",
+    "type": "ipa",
+    "name": "Piano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.piano-app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Piano_3.54.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.54.01",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.mwm.piano-app",
+    "lastSync": "2025-12-04T09:14:28.737Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
