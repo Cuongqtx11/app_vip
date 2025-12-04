@@ -378,6 +378,24 @@
     "lastSync": "2025-12-04T17:00:01.519Z"
   },
   {
+    "id": "ipa-tech.sketchar.ios-10.2.1",
+    "type": "ipa",
+    "name": "Sketchar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.sketchar.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/Sketchar_10.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.2.1",
+    "developer": "khomodvip",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "tech.sketchar.ios",
+    "lastSync": "2025-12-04T18:00:01.787Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
