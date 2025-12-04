@@ -162,6 +162,24 @@
     "lastSync": "2025-12-04T05:00:01.615Z"
   },
   {
+    "id": "ipa-in.muditbhargava.LookUp-12.0.3",
+    "type": "ipa",
+    "name": "LookUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/in.muditbhargava.LookUp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/LookUp_12.0.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.3",
+    "developer": "apptesters.org",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "in.muditbhargava.LookUp",
+    "lastSync": "2025-12-04T05:34:53.568Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
