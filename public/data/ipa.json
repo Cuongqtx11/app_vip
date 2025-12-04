@@ -234,6 +234,114 @@
     "lastSync": "2025-12-04T22:00:01.825Z"
   },
   {
+    "id": "ipa-com.bitsmedia.muslimpro-16.18.6",
+    "type": "ipa",
+    "name": "MuslimPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bitsmedia.muslimpro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/MuslimPro_16.18.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.18.6",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.bitsmedia.muslimpro",
+    "lastSync": "2025-12-04T23:00:01.753Z"
+  },
+  {
+    "id": "ipa-com.kalavision.alfred-2025.25.0",
+    "type": "ipa",
+    "name": "AlfredCamera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kalavision.alfred.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/AlfredCamera_2025.25.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.25.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.kalavision.alfred",
+    "lastSync": "2025-12-04T23:00:01.754Z"
+  },
+  {
+    "id": "ipa-games.calico.mantracker-1.0.9",
+    "type": "ipa",
+    "name": "DrKegel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/games.calico.mantracker.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/DrKegel_1.0.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.9",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "games.calico.mantracker",
+    "lastSync": "2025-12-04T23:00:01.754Z"
+  },
+  {
+    "id": "ipa-com.bandlab.bandlab.iphone-11.13.0",
+    "type": "ipa",
+    "name": "BandLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bandlab.bandlab.iphone.png",
+    "desc": "Injected with Boost Membership",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/BandLab_11.13.0_Boost_Membership_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.13.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.bandlab.bandlab.iphone",
+    "lastSync": "2025-12-04T23:00:01.754Z"
+  },
+  {
+    "id": "ipa-com.alltrails.AllTrails-25.12.10",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/AllTrails_25.12.10_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.12.10",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2025-12-04T23:00:01.754Z"
+  },
+  {
+    "id": "ipa-co.lovetap.Female-by-Design-6.5.3",
+    "type": "ipa",
+    "name": "Life",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.lovetap.Female-by-Design.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Life_6.5.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.3",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "co.lovetap.Female-by-Design",
+    "lastSync": "2025-12-04T23:00:01.755Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
