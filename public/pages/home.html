@@ -3,377 +3,248 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- ⭐ THÊM FONT INTER -->
+  <title>Trang Chủ - Kho App VIP</title>
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <title>Trang Chủ - Kho App VIP</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4727200587055365"
-     crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
-    .home-container {
-      padding: 30px 20px;
-      text-align: center;
-      max-width: 800px;
-      margin: 20px auto;
-      background: var(--card-bg-light);
-      border-radius: 16px;
-      box-shadow: 0 4px 15px var(--card-shadow-light);
-      transition: background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-    }
-
-    body.dark .home-container {
-      background: var(--card-bg-dark);
-      box-shadow: 0 4px 15px var(--card-shadow-dark);
-    }
-
-    .home-container h1 {
-      color: var(--primary);
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-
-    .home-container p {
-      font-size: 1.1em;
-      line-height: 1.8;
-      color: var(--text-light);
-      margin-bottom: 20px;
-    }
-
-    body.dark .home-container p {
-      color: var(--text-dark);
-    }
-
-    .home-container .call-to-action {
-      margin-top: 30px;
-    }
-
-    .home-container .call-to-action a {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
-
-    body.dark .home-container .call-to-action a {
-      background: var(--card-bg-dark);
-      color: var(--text-dark);
-      border: 2px solid var(--border-dark);
-    }
-
-    .home-container .call-to-action a:hover {
-      background: #159f8a;
-      color: white;
-      transform: translateY(-2px);
+    /* Hiệu ứng mờ nền (Glassmorphism) tùy chỉnh */
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
     
-    body.dark .home-container .call-to-action a:hover {
-      background: var(--primary);
-      border-color: var(--primary);
+    .dark .glass-panel {
+      background: rgba(30, 30, 35, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    .home-container ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 25px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+    /* Animation đơn giản */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-
-    .home-container ul li {
-        background: var(--bg-light);
-        padding: 10px 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        font-weight: bold;
-        color: var(--primary);
-        transition: background var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-    }
-
-    body.dark .home-container ul li {
-        background: var(--card-bg-dark);
-        box-shadow: 0 2px 8px rgba(26, 188, 156, 0.2);
-    }
-
-    .tutorial-section {
-        margin-top: 40px;
-        border-top: 1px solid var(--border-light);
-        padding-top: 30px;
-    }
-
-    .tutorial-section h2 {
-        font-size: 1.8em;
-        color: var(--text-light);
-        margin-bottom: 25px;
-        transition: color var(--transition-speed) ease;
-    }
-    body.dark .tutorial-section h2 {
-        color: var(--text-dark);
-    }
-
-    .tutorial-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .tutorial-button {
-        background-color: var(--primary);
-        color: white;
-        border: 2px solid var(--primary);
-        padding: 15px 25px;
-        border-radius: 12px;
-        font-size: 1.1em;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        min-width: 150px;
-        text-align: center;
-    }
-
-    body.dark .tutorial-button {
-        background-color: var(--card-bg-dark);
-        color: var(--text-dark);
-        border-color: var(--border-dark);
-    }
-
-    .tutorial-button:hover {
-        background-color: #159f8a;
-        border-color: #159f8a;
-        color: white;
-        transform: translateY(-3px);
-        box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
     }
     
-    body.dark .tutorial-button:hover {
-        background-color: var(--primary);
-        border-color: var(--primary);
-    }
-
-    .video-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 3000;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    .video-popup.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .video-popup-content {
-        background-color: var(--card-bg-light);
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-        width: 90%;
-        max-width: 800px;
-        position: relative;
-        transform: translateY(20px);
-        transition: transform 0.3s ease, background-color var(--transition-speed) ease;
-        max-height: 90vh;
-        overflow: hidden;
-    }
-
-    body.dark .video-popup-content {
-        background-color: var(--card-bg-dark);
-        box-shadow: 0 8px 30px rgba(26, 188, 156, 0.3);
-    }
-
-    .video-popup.active .video-popup-content {
-        transform: translateY(0);
-    }
-
-    .video-popup .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        font-size: 28px;
-        cursor: pointer;
-        color: var(--text-light);
-        transition: color 0.2s ease;
-    }
-
-    body.dark .video-popup .close-btn {
-        color: var(--text-dark);
-    }
-
-    .video-popup .close-btn:hover {
-        color: var(--primary);
-    }
-
-    .video-popup iframe {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        border-radius: 10px;
-        overflow: hidden;
-        margin-top: 15px;
-    }
-
-    .mauchu {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-bottom: 20px;
-    }
-    
-    .mauchu a {
-        color: var(--primary);
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2em;
-        transition: color 0.2s ease;
-    }
-    
-    .mauchu a:hover {
-        color: #159f8a;
-        text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-        .home-container {
-            padding: 20px 15px;
-            margin: 15px auto;
-        }
-        .home-container h1 {
-            font-size: 2em;
-        }
-        .home-container p {
-            font-size: 1em;
-        }
-        .tutorial-button {
-            width: calc(33% - 20px);
-            max-width: 200px;
-            padding: 12px 15px;
-            font-size: 0.95em;
-        }
-    }
-    @media (max-width: 480px) {
-        .home-container {
-            padding: 15px 10px;
-        }
-        .home-container h1 {
-            font-size: 1.8em;
-        }
-        .tutorial-button {
-            width: calc(33% - 15px);
-            padding: 10px 12px;
-            font-size: 0.85em;
-            min-width: unset;
-        }
-    }
+    /* Ẩn thanh cuộn nhưng vẫn cuộn được */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .dark ::-webkit-scrollbar-thumb { background: #475569; }
   </style>
 </head>
-<body>
-  <div class="home-container">
-    <h1>Chào mừng đến với Kho App VIP! 🚀</h1>
-    <p>
-      Khám phá thế giới của các ứng dụng, dylib (mod) và cấu hình VPN (Conf) độc quyền.
-      Chúng tôi mang đến những công cụ mạnh mẽ giúp bạn tùy biến và nâng cao trải nghiệm di động của mình.
-    </p>
-    <p>
-      Tại đây, bạn có thể tìm thấy:
-    </p>
-    <ul>
-        <li>📱 Các file IPA modded chất lượng cao</li>
-        <li>⚙️ Dylib giúp tùy chỉnh ứng dụng</li>
-        <li>🔐 Cấu hình Shadowrocket (Conf) an toàn và nhanh chóng</li>
-    </ul>
-    <p>
-      Đừng ngần ngại khám phá các danh mục ở thanh điều hướng phía dưới để tìm những gì bạn cần!
-    </p>
-    <div class="call-to-action">
-      <a href="https://cuios.shop" target="_parent">Website chứng chỉ Apple</a>
+<body class="bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-[#0f0f11] dark:text-gray-100 min-h-screen p-4">
+
+  <div class="max-w-3xl mx-auto space-y-6 animate-fade-in">
+
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 to-purple-700 p-8 text-white shadow-xl shadow-indigo-500/20">
+      <div class="relative z-10">
+        <h1 class="text-3xl font-extrabold mb-3 leading-tight tracking-tight">Chào mừng đến với <br/>Kho App VIP! 🚀</h1>
+        <p class="text-indigo-100 text-sm md:text-base leading-relaxed mb-6 max-w-lg">
+          Khám phá thế giới của các ứng dụng, dylib (mod) và cấu hình VPN (Conf) độc quyền. 
+          Công cụ mạnh mẽ giúp nâng cao trải nghiệm di động của bạn.
+        </p>
+        
+        <a href="https://cuios.shop" target="_parent" 
+           class="inline-flex items-center gap-2 bg-white text-indigo-700 px-6 py-3 rounded-xl text-sm font-bold hover:bg-gray-50 transition-all shadow-lg active:scale-95 transform">
+           <span>Website chứng chỉ Apple</span>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+      
+      <div class="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+      <div class="absolute bottom-0 left-0 w-32 h-32 bg-purple-500/30 rounded-full blur-2xl -ml-10 -mb-10"></div>
     </div>
 
-    <div class="tutorial-section">
-    	<div class="mauchu">
+    <div>
+      <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Khám phá kho tàng
+      </h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div class="glass-panel p-4 rounded-2xl flex md:flex-col md:items-start items-center gap-4 transition-all hover:scale-[1.02]">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-blue-500/10 text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <span class="font-medium text-sm text-gray-700 dark:text-gray-200">IPA Modded<br/><span class="text-xs opacity-70 font-normal">Chất lượng cao</span></span>
         </div>
-        <h2>Hướng dẫn sử dụng</h2>
-        <div class="tutorial-buttons">
-            <button class="tutorial-button" data-video-id="UoTyismkkfw">
-                Hướng dẫn IPA
-            </button>
-            <button class="tutorial-button" data-video-id="4jchr9wnNzA">
-                Hướng dẫn Dylib
-            </button>
-            <button class="tutorial-button" data-video-id="Qxox6mxr80w">
-                Hướng dẫn Conf
-            </button>
-        </div>
-    </div>
-  </div>
 
-  <div class="video-popup" id="videoPopup">
-    <div class="video-popup-content">
-      <button class="close-btn material-icons" id="closeVideoPopup">close</button>
-      <iframe id="youtubePlayer" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="glass-panel p-4 rounded-2xl flex md:flex-col md:items-start items-center gap-4 transition-all hover:scale-[1.02]">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-pink-500/10 text-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <span class="font-medium text-sm text-gray-700 dark:text-gray-200">Dylib<br/><span class="text-xs opacity-70 font-normal">Tùy chỉnh App</span></span>
+        </div>
+
+        <div class="glass-panel p-4 rounded-2xl flex md:flex-col md:items-start items-center gap-4 transition-all hover:scale-[1.02]">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-green-500/10 text-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="font-medium text-sm text-gray-700 dark:text-gray-200">VPN Conf<br/><span class="text-xs opacity-70 font-normal">An toàn & Nhanh</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#EF4444" stroke="none"/></svg>
+        Hướng dẫn sử dụng
+      </h3>
+      
+      <div class="flex flex-col gap-3">
+        <button class="tutorial-button w-full group relative p-4 rounded-2xl glass-panel text-left flex items-center justify-between transition-all hover:bg-white dark:hover:bg-white/5 active:scale-[0.98]" 
+                data-video-id="UoTyismkkfw">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-red-500/10 text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-800 dark:text-gray-200">Hướng dẫn IPA</h4>
+              <span class="text-xs text-gray-500">Cách cài đặt và sử dụng</span>
+            </div>
+          </div>
+          <div class="text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </button>
+
+        <button class="tutorial-button w-full group relative p-4 rounded-2xl glass-panel text-left flex items-center justify-between transition-all hover:bg-white dark:hover:bg-white/5 active:scale-[0.98]" 
+                data-video-id="4jchr9wnNzA">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-red-500/10 text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-800 dark:text-gray-200">Hướng dẫn Dylib</h4>
+              <span class="text-xs text-gray-500">Tùy chỉnh ứng dụng</span>
+            </div>
+          </div>
+          <div class="text-gray-400">
+             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </button>
+
+        <button class="tutorial-button w-full group relative p-4 rounded-2xl glass-panel text-left flex items-center justify-between transition-all hover:bg-white dark:hover:bg-white/5 active:scale-[0.98]" 
+                data-video-id="Qxox6mxr80w">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-red-500/10 text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-800 dark:text-gray-200">Hướng dẫn Conf</h4>
+              <span class="text-xs text-gray-500">Cấu hình Shadowrocket</span>
+            </div>
+          </div>
+          <div class="text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mt-8 text-center pb-4">
+      <p class="text-[10px] text-gray-400/40 dark:text-gray-600/40 font-medium select-none">
+        <a href="admin.html" class="cursor-default hover:text-gray-500 transition-colors">Kho</a> mod vip - ©2024 - cuios.shop
+      </p>
+    </div>
+
+  </div> <div id="videoPopup" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 invisible transition-all duration-300">
+    <div class="relative w-full max-w-3xl bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-white/10 transform scale-95 transition-all duration-300" id="videoPopupContent">
+      <div class="flex justify-between items-center p-4 border-b border-white/10 bg-white/5">
+        <h3 class="text-white font-bold flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#EF4444" stroke="none"/></svg>
+          Đang xem video
+        </h3>
+        <button id="closeVideoPopup" class="p-1 hover:bg-white/10 rounded-full text-gray-400 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      
+      <div class="aspect-video w-full bg-black">
+        <iframe id="youtubePlayer" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
   <script>
+    // 1. Logic nhận tín hiệu Dark Mode từ trang mẹ (index.html)
     window.addEventListener('message', (event) => {
         if (event.data.type === 'themeChange') {
             if (event.data.theme === 'dark') {
-                document.body.classList.add('dark');
+                document.documentElement.classList.add('dark');
             } else {
-                document.body.classList.remove('dark');
+                document.documentElement.classList.remove('dark');
             }
         }
     });
 
+    // Kiểm tra theme đã lưu
     const savedTheme = sessionStorage.getItem('theme');
     if (savedTheme === 'dark') {
-      document.body.classList.add('dark');
+      document.documentElement.classList.add('dark');
     }
 
+    // 2. Logic Popup Video (Vanilla JS thuần)
     const videoPopup = document.getElementById('videoPopup');
+    const videoPopupContent = document.getElementById('videoPopupContent');
     const closeVideoPopupBtn = document.getElementById('closeVideoPopup');
     const youtubePlayer = document.getElementById('youtubePlayer');
     const tutorialButtons = document.querySelectorAll('.tutorial-button');
 
+    // Mở popup
     tutorialButtons.forEach(button => {
         button.addEventListener('click', () => {
             const videoId = button.dataset.videoId;
             if (videoId) {
                 youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`;
-                videoPopup.classList.add('active');
+                
+                // Hiển thị modal
+                videoPopup.classList.remove('invisible', 'opacity-0');
+                videoPopupContent.classList.remove('scale-95');
+                videoPopupContent.classList.add('scale-100');
             }
         });
     });
 
-    closeVideoPopupBtn.addEventListener('click', () => {
-        videoPopup.classList.remove('active');
-        youtubePlayer.src = '';
-    });
+    // Đóng popup
+    function closePopup() {
+        // Ẩn modal
+        videoPopup.classList.add('opacity-0', 'invisible');
+        videoPopupContent.classList.remove('scale-100');
+        videoPopupContent.classList.add('scale-95');
+        
+        // Dừng video sau 300ms (đợi animation đóng xong)
+        setTimeout(() => {
+            youtubePlayer.src = '';
+        }, 300);
+    }
 
+    closeVideoPopupBtn.addEventListener('click', closePopup);
+
+    // Đóng khi click ra ngoài
     videoPopup.addEventListener('click', (event) => {
         if (event.target === videoPopup) {
-            videoPopup.classList.remove('active');
-            youtubePlayer.src = '';
+            closePopup();
         }
     });
   </script>
