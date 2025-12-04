@@ -360,6 +360,24 @@
     "lastSync": "2025-12-04T14:00:01.721Z"
   },
   {
+    "id": "ipa-com.djitlabs.pixelcolor-5.46.00",
+    "type": "ipa",
+    "name": "PixelColor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.djitlabs.pixelcolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-12-2025/PixelColor_5.46.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.46.00",
+    "developer": "khomodvip",
+    "date": "2025-12-04",
+    "source": "apptesters",
+    "bundleID": "com.djitlabs.pixelcolor",
+    "lastSync": "2025-12-04T17:00:01.519Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.3.3",
     "type": "ipa",
     "name": "Infuse",
