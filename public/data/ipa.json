@@ -666,6 +666,24 @@
     "lastSync": "2025-12-05T14:00:01.621Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.3.0",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/SnapEdit_6.3.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2025-12-05T15:00:01.800Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
