@@ -522,6 +522,42 @@
     "lastSync": "2025-12-05T06:00:01.363Z"
   },
   {
+    "id": "ipa-com.spotify.client-8.9.8",
+    "type": "ipa",
+    "name": "EeveeSpotify",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.spotify.client.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/EeveeSpotify_8.9.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.9.8",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.spotify.client",
+    "lastSync": "2025-12-05T08:00:01.422Z"
+  },
+  {
+    "id": "ipa-com.commsource.BeautyPlus-7.25.0",
+    "type": "ipa",
+    "name": "BeautyPlus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.commsource.BeautyPlus.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/BeautyPlus_7.25.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.25.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.commsource.BeautyPlus",
+    "lastSync": "2025-12-05T08:00:01.423Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
