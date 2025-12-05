@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - Kho App VIP</title>
+  
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: { 
+            brand: '#6366f1', 
+            brandDark: '#4f46e5',
+            surface: '#ffffff',
+            surfaceDark: '#1e293b',
+            bgDark: '#0f172a'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-size: 0.95rem; }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .dark .glass-effect {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    .dark ::-webkit-scrollbar-thumb { background: #475569; }
+    
+    .input-field {
+      @apply w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all;
+    }
+    .label-text {
+      @apply block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 dark:bg-bgDark text-gray-900 dark:text-white transition-colors duration-300 min-h-screen">
+
+  <!-- LOGIN OVERLAY -->
+  <div id="loginOverlay" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-100 dark:bg-bgDark p-4">
+    <div class="w-full max-w-md bg-white dark:bg-surfaceDark rounded-3xl shadow-2xl p-8 text-center animate-in fade-in zoom-in duration-300">
+      <div class="w-16 h-16 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="lock" class="w-8 h-8"></i>
+      </div>
+      <h1 class="text-2xl font-extrabold mb-2">Admin Access</h1>
+      <p class="text-gray-500 text-sm mb-6">Vui lòng nhập mật khẩu quản trị để tiếp tục</p>
+      
+      <input type="password" id="password" placeholder="Mật khẩu..." class="input-field text-center text-lg mb-4" onkeypress="if(event.key==='Enter') checkPassword()">
+      
+      <button onclick="checkPassword()" class="w-full py-3.5 rounded-xl bg-brand hover:bg-brandDark text-white font-bold shadow-lg shadow-brand/30 transition-all active:scale-95">
+        Đăng Nhập
+      </button>
+      <p id="loginMsg" class="mt-4 text-sm font-medium text-red-500 hidden"></p>
+    </div>
+  </div>
+
+  <!-- MAIN DASHBOARD -->
+  <div id="dashboard" class="hidden max-w-5xl mx-auto p-4 md:p-8 pb-20">
+    
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+      <div>
+        <h1 class="text-3xl font-black bg-gradient-to-r from-brand to-purple-500 bg-clip-text text-transparent">Dashboard</h1>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">Quản lý nội dung ứng dụng & hệ thống</p>
+      </div>
+      <div class="flex gap-3">
+        <button onclick="logout()" class="px-4 py-2 rounded-lg bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 font-bold text-sm hover:bg-red-100 transition flex items-center gap-2">
+          <i data-lucide="log-out" class="w-4 h-4"></i> Thoát
+        </button>
+      </div>
+    </div>
+
+    <!-- Stats & Quick Actions -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <!-- Auto Sync Card -->
+      <div class="md:col-span-2 bg-white dark:bg-surfaceDark rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-brand/10 rounded-full blur-3xl -mr-10 -mt-10"></div>
+        
+        <div class="flex justify-between items-start mb-4 relative z-10">
+          <div>
+            <h3 class="text-lg font-bold flex items-center gap-2">
+              <i data-lucide="refresh-cw" class="w-5 h-5 text-brand"></i> Auto-Sync IPA
+            </h3>
+            <p class="text-xs text-gray-500 mt-1">Đồng bộ dữ liệu tự động từ AppTesters</p>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-bold flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Active
+          </span>
+        </div>
+
+        <div class="flex gap-3 mt-4 relative z-10">
+          <button onclick="syncIPA(false)" id="syncBtn" class="flex-1 py-2.5 rounded-xl bg-brand text-white font-bold text-sm shadow-md hover:bg-brandDark transition flex items-center justify-center gap-2">
+            <i data-lucide="download-cloud" class="w-4 h-4"></i> Sync Hôm Nay
+          </button>
+          <button onclick="syncIPA(true)" id="forceSyncBtn" class="px-4 py-2.5 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-700 dark:text-gray-300 font-bold text-sm hover:bg-gray-200 dark:hover:bg-white/10 transition" title="Force Full Sync">
+            <i data-lucide="database" class="w-4 h-4"></i>
+          </button>
+        </div>
+        <p id="syncStatus" class="mt-3 text-xs text-center font-medium h-4"></p>
+      </div>
+
+      <!-- Quick Upload Type Selector -->
+      <div class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-6 text-white shadow-lg shadow-indigo-500/20 flex flex-col justify-center">
+        <h3 class="text-lg font-bold mb-1">Upload Mới</h3>
+        <p class="text-indigo-100 text-xs mb-4">Chọn loại nội dung cần đăng tải</p>
+        
+        <div class="grid grid-cols-3 gap-2">
+           <button onclick="setFormType('ipa')" class="type-btn active bg-white/20 hover:bg-white/30 p-2 rounded-lg text-xs font-bold backdrop-blur-sm transition" data-type="ipa">IPA</button>
+           <button onclick="setFormType('cert')" class="type-btn bg-white/10 hover:bg-white/30 p-2 rounded-lg text-xs font-bold backdrop-blur-sm transition" data-type="cert">Cert</button>
+           <button onclick="setFormType('mod')" class="type-btn bg-white/10 hover:bg-white/30 p-2 rounded-lg text-xs font-bold backdrop-blur-sm transition" data-type="mod">Mod</button>
+           <button onclick="setFormType('sign')" class="type-btn bg-white/10 hover:bg-white/30 p-2 rounded-lg text-xs font-bold backdrop-blur-sm transition" data-type="sign">Sign</button>
+           <button onclick="setFormType('dylib')" class="type-btn bg-white/10 hover:bg-white/30 p-2 rounded-lg text-xs font-bold backdrop-blur-sm transition" data-type="dylib">Dylib</button>
+           <button onclick="setFormType('conf')" class="type-btn bg-white/10 hover:bg-white/30 p-2 rounded-lg text-xs font-bold backdrop-blur-sm transition" data-type="conf">Conf</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upload Form -->
+    <div class="bg-white dark:bg-surfaceDark rounded-3xl p-6 md:p-8 shadow-sm border border-gray-100 dark:border-white/5">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-bold flex items-center gap-2">
+          <span id="formTitleIcon" class="p-2 rounded-lg bg-brand/10 text-brand"><i data-lucide="upload" class="w-5 h-5"></i></span>
+          <span id="formTitleText">Upload IPA</span>
+        </h2>
+        <input type="hidden" id="currentType" value="ipa">
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Cột Trái -->
+        <div class="space-y-4">
+          <div>
+            <label class="label-text" id="lbl-name">Tên ứng dụng</label>
+            <input type="text" id="inp-name" class="input-field" placeholder="Nhập tên...">
+          </div>
+          
+          <div>
+            <label class="label-text">Link Icon</label>
+            <div class="flex gap-3">
+               <input type="text" id="inp-icon" class="input-field" placeholder="https://..." oninput="updatePreview()">
+               <img id="preview-icon" src="https://placehold.co/100" class="w-12 h-12 rounded-xl bg-gray-100 object-cover border border-gray-200 dark:border-gray-700">
+            </div>
+          </div>
+
+          <div>
+            <label class="label-text" id="lbl-link">Link Tải (Download/File)</label>
+            <input type="text" id="inp-link" class="input-field" placeholder="https://...">
+          </div>
+
+          <!-- Dynamic Fields -->
+          <div id="field-version-group">
+            <label class="label-text" id="lbl-version">Phiên bản</label>
+            <input type="text" id="inp-version" class="input-field" placeholder="1.0.0">
+          </div>
+        </div>
+
+        <!-- Cột Phải -->
+        <div class="space-y-4">
+          <div id="field-desc-group">
+            <label class="label-text">Mô tả / Ghi chú</label>
+            <textarea id="inp-desc" rows="3" class="input-field resize-none" placeholder="Nhập mô tả ngắn..."></textarea>
+          </div>
+
+          <div id="field-extra-group">
+             <label class="label-text" id="lbl-extra">Nhà phát triển</label>
+             <input type="text" id="inp-extra" class="input-field" placeholder="Tên dev...">
+          </div>
+
+          <!-- Tags & Badges -->
+          <div id="field-tags-group">
+            <label class="label-text">Thẻ (Tags)</label>
+            <div class="flex flex-wrap gap-2">
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="game"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">Game</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="app"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">App</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="tool"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">Tool</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="social"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">Social</span></label>
+            </div>
+          </div>
+
+          <div>
+            <label class="label-text">Nhãn (Badge)</label>
+            <div class="flex flex-wrap gap-2">
+              <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="" checked><span class="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-gray-700 peer-checked:border-brand peer-checked:text-brand text-xs font-bold transition">None</span></label>
+              <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="new"><span class="px-3 py-1.5 rounded-lg bg-blue-500/10 text-blue-500 peer-checked:bg-blue-500 peer-checked:text-white text-xs font-bold transition">Mới</span></label>
+              <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="hot"><span class="px-3 py-1.5 rounded-lg bg-orange-500/10 text-orange-500 peer-checked:bg-orange-500 peer-checked:text-white text-xs font-bold transition">Hot</span></label>
+              <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="vip"><span class="px-3 py-1.5 rounded-lg bg-yellow-500/10 text-yellow-500 peer-checked:bg-yellow-500 peer-checked:text-white text-xs font-bold transition">VIP</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-6 border-gray-100 dark:border-white/5">
+
+      <div class="flex justify-end gap-3">
+        <button onclick="resetForm()" class="px-6 py-3 rounded-xl font-bold text-gray-500 hover:bg-gray-100 dark:hover:bg-white/5 transition">Làm mới</button>
+        <button onclick="submitForm()" id="submitBtn" class="px-8 py-3 rounded-xl bg-brand text-white font-bold shadow-lg shadow-brand/30 hover:bg-brandDark hover:scale-[1.02] transition flex items-center gap-2">
+          <i data-lucide="upload-cloud" class="w-5 h-5"></i> Đăng Tải
+        </button>
+      </div>
+      <p id="uploadMsg" class="text-center mt-4 text-sm font-semibold"></p>
+    </div>
+
+  </div>
+
+  <script>
+    // === AUTH ===
+    async function checkAuth() {
+        try {
+            const res = await fetch('/api/auth/verify', { method: 'POST', body: JSON.stringify({}) });
+            if(res.ok) showDashboard();
+        } catch(e) {}
+    }
+    
+    async function checkPassword() {
+        const p = document.getElementById('password').value;
+        const msg = document.getElementById('loginMsg');
+        try {
+            const res = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({password: p})
+            });
+            const d = await res.json();
+            if(d.success) {
+                showDashboard();
+            } else {
+                msg.textContent = '❌ Mật khẩu không đúng';
+                msg.classList.remove('hidden');
+            }
+        } catch(e) { msg.textContent = '❌ Lỗi kết nối'; msg.classList.remove('hidden'); }
+    }
+
+    function showDashboard() {
+        document.getElementById('loginOverlay').classList.add('hidden');
+        document.getElementById('dashboard').classList.remove('hidden');
+        document.getElementById('dashboard').classList.add('animate-in', 'fade-in', 'slide-in-from-bottom-4');
+    }
+
+    function logout() {
+        document.cookie = "admin_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        window.location.reload();
+    }
+
+    // === UI LOGIC ===
+    const CONFIG = {
+        ipa: { title: 'Upload IPA', lblName: 'Tên App', lblExtra: 'Nhà phát triển', hasTags: true },
+        dylib: { title: 'Upload Dylib', lblName: 'Tên Dylib', lblExtra: 'Nhà phát triển', hasTags: true },
+        conf: { title: 'Upload Conf', lblName: 'Tên Cấu hình', lblExtra: 'Tác giả', hasTags: true },
+        sign: { title: 'Đăng Sign Mới', lblName: 'Tên Ứng dụng', lblExtra: 'Ngày cập nhật', lblVer: 'Kích thước (Size)', hasTags: false },
+        cert: { title: 'Đăng Cert Mới', lblName: 'Tên File', lblExtra: 'Tên Chứng Chỉ (CN)', lblVer: 'Trạng thái (Check)', hasTags: false },
+        mod: { title: 'Đăng Mod Hot', lblName: 'Tên Mod', lblExtra: 'Tag (VD: Gold)', lblVer: 'Phiên bản', hasTags: false }
+    };
+
+    function setFormType(type) {
+        document.querySelectorAll('.type-btn').forEach(b => {
+            b.classList.remove('bg-white/20', 'active');
+            b.classList.add('bg-white/10');
+            if(b.dataset.type === type) {
+                b.classList.add('bg-white/20', 'active');
+                b.classList.remove('bg-white/10');
+            }
+        });
+
+        const cfg = CONFIG[type];
+        document.getElementById('currentType').value = type;
+        document.getElementById('formTitleText').textContent = cfg.title;
+        
+        document.getElementById('lbl-name').textContent = cfg.lblName;
+        document.getElementById('lbl-extra').textContent = cfg.lblExtra;
+        
+        // Show/Hide Tags based on type
+        document.getElementById('field-tags-group').style.display = cfg.hasTags ? 'block' : 'none';
+
+        // Adjust Version/Extra fields based on type
+        const lblVer = document.getElementById('lbl-version');
+        const inpVer = document.getElementById('inp-version');
+        const inpExtra = document.getElementById('inp-extra');
+
+        if(type === 'cert') {
+            lblVer.textContent = 'Trạng thái (Check)'; // ex: 🟢 Good
+            inpVer.placeholder = 'VD: 🟢 Good';
+            inpExtra.placeholder = 'VD: China Mobile...';
+        } else if (type === 'sign') {
+            lblVer.textContent = 'Kích thước (Size)';
+            inpVer.placeholder = 'VD: 150 MB';
+            inpExtra.placeholder = 'VD: 2024-12-05 (Để trống lấy ngày hiện tại)';
+        } else if (type === 'mod') {
+            lblVer.textContent = 'Phiên bản';
+            inpVer.placeholder = 'VD: 1.0.5';
+            inpExtra.placeholder = 'VD: Gold / VIP';
+        } else {
+            lblVer.textContent = 'Phiên bản';
+            inpVer.placeholder = 'VD: 1.0.0';
+            inpExtra.placeholder = 'VD: Dev Name';
+        }
+    }
+
+    function updatePreview() {
+        const url = document.getElementById('inp-icon').value;
+        if(url) document.getElementById('preview-icon').src = url;
+    }
+
+    // === SUBMIT LOGIC ===
+    async function submitForm() {
+        const type = document.getElementById('currentType').value;
+        const name = document.getElementById('inp-name').value.trim();
+        const icon = document.getElementById('inp-icon').value.trim();
+        const link = document.getElementById('inp-link').value.trim();
+        const version = document.getElementById('inp-version').value.trim();
+        const desc = document.getElementById('inp-desc').value.trim();
+        const extra = document.getElementById('inp-extra').value.trim(); // Developer / Date / CertName / ModTag
+        
+        // Get Badge
+        const badgeEl = document.querySelector('input[name="badge"]:checked');
+        const badge = badgeEl ? badgeEl.value : null;
+
+        // Get Tags
+        const tags = [];
+        document.querySelectorAll('input[name="tags"]:checked').forEach(c => tags.push(c.value));
+
+        if(!name || !link) {
+            alert('⚠️ Vui lòng nhập ít nhất Tên và Link tải!');
+            return;
+        }
+
+        const btn = document.getElementById('submitBtn');
+        const msg = document.getElementById('uploadMsg');
+        
+        btn.disabled = true;
+        btn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Đang xử lý...';
+        lucide.createIcons();
+
+        // Construct Data Object based on Type
+        let appData = {
+            id: `${type}-${Date.now()}`,
+            type: type,
+            date: new Date().toISOString().split('T')[0] // Default date
+        };
+
+        if (['ipa', 'dylib', 'conf'].includes(type)) {
+            appData.name = name;
+            appData.icon = icon;
+            appData.desc = desc;
+            appData.version = version;
+            appData.developer = extra;
+            appData.tags = tags;
+            appData.badge = badge;
+            if (type === 'conf') appData.link = link; 
+            else appData.fileLink = link;
+            if (type === 'conf') appData.usage = desc; // Conf usually uses desc as usage
+        } 
+        else if (type === 'cert') {
+            // Mapping for cert.json
+            appData.filename = name;
+            appData.check = version || '🟢 Good'; // Version input is Check status
+            appData.certname = extra || 'Unknown'; // Extra input is Cert Name
+            appData.size = desc; // Use Description input for file format/size text
+            appData.downloadUrl = link;
+            appData.iconUrl = icon;
+            appData.tag = badge ? badge.toUpperCase() : 'NEW';
+        } 
+        else if (type === 'mod') {
+            // Mapping for mod.json
+            appData.title = name;
+            appData.version = version;
+            appData.description = desc; // Fix: Ensure description is passed
+            appData.downloadUrl = link;
+            appData.iconUrl = icon;
+            appData.tag = extra || badge; // Use extra input for Tag (e.g. Gold)
+        } 
+        else if (type === 'sign') {
+            // Mapping for sign.json
+            appData.title = name;
+            appData.description = desc;
+            appData.size = version; // Version input is Size
+            appData.date = extra || appData.date; // Use extra input for Date override
+            appData.downloadUrl = link;
+            appData.iconUrl = icon;
+            appData.tag = badge ? badge.toUpperCase() : 'NEW';
+        }
+
+        try {
+            const res = await fetch('/api/upload', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ type, data: appData })
+            });
+            const result = await res.json();
+
+            if(res.ok) {
+                msg.textContent = '✅ Upload thành công!';
+                msg.className = 'mt-4 text-center text-sm font-bold text-green-500';
+                setTimeout(() => { 
+                    msg.textContent = ''; 
+                    resetForm();
+                }, 2000);
+            } else {
+                if(result.code === 'NO_AUTH_COOKIE') {
+                    msg.textContent = '⚠️ Hết phiên đăng nhập. Vui lòng đăng nhập lại.';
+                    logout();
+                } else {
+                    msg.textContent = '❌ Lỗi: ' + (result.error || 'Unknown');
+                }
+                msg.className = 'mt-4 text-center text-sm font-bold text-red-500';
+            }
+        } catch(e) {
+            msg.textContent = '❌ Lỗi kết nối: ' + e.message;
+            msg.className = 'mt-4 text-center text-sm font-bold text-red-500';
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '<i data-lucide="upload-cloud" class="w-5 h-5"></i> Đăng Tải';
+            lucide.createIcons();
+        }
+    }
+
+    function resetForm() {
+        document.getElementById('inp-name').value = '';
+        document.getElementById('inp-icon').value = '';
+        document.getElementById('inp-link').value = '';
+        document.getElementById('inp-version').value = '';
+        document.getElementById('inp-desc').value = '';
+        document.getElementById('inp-extra').value = '';
+        document.getElementById('preview-icon').src = 'https://placehold.co/100';
+        
+        document.querySelectorAll('input[name="tags"]').forEach(c => c.checked = false);
+        document.querySelector('input[name="badge"][value=""]').checked = true;
+    }
+
+    // === SYNC LOGIC ===
+    async function syncIPA(force) {
+        const btn = document.getElementById(force ? 'forceSyncBtn' : 'syncBtn');
+        const status = document.getElementById('syncStatus');
+        const originContent = btn.innerHTML;
+        
+        btn.disabled = true;
+        btn.innerHTML = '<i data-lucide="loader" class="w-4 h-4 animate-spin"></i>';
+        lucide.createIcons();
+        status.className = 'mt-3 text-xs text-center font-medium h-4 text-gray-500';
+        status.textContent = 'Đang đồng bộ...';
+
+        try {
+            const res = await fetch('/api/sync-ipa', { method: 'POST' });
+            const data = await res.json();
+            
+            if(res.ok) {
+                status.className = 'mt-3 text-xs text-center font-bold h-4 text-green-500';
+                status.textContent = `✅ Thành công! +${data.stats?.new || 0} App mới`;
+            } else {
+                status.className = 'mt-3 text-xs text-center font-bold h-4 text-red-500';
+                status.textContent = '❌ Lỗi: ' + (data.error || 'Unknown');
+            }
+        } catch(e) {
+            status.className = 'mt-3 text-xs text-center font-bold h-4 text-red-500';
+            status.textContent = '❌ Lỗi kết nối';
+        } finally {
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.innerHTML = originContent;
+                lucide.createIcons();
+            }, 1000);
+        }
+    }
+
+    // INIT
+    checkAuth();
+    setFormType('ipa');
+    lucide.createIcons();
+  </script>
+</body>
+</html>
