@@ -612,6 +612,24 @@
     "lastSync": "2025-12-05T11:00:01.310Z"
   },
   {
+    "id": "ipa-com.apalonapps.planesfree-3.10.54",
+    "type": "ipa",
+    "name": "PlanesLiveFree",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.planesfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/PlanesLiveFree_3.10.54_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.10.54",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.planesfree",
+    "lastSync": "2025-12-05T12:00:01.694Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
