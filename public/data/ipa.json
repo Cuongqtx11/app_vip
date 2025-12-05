@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1764899504109",
+    "type": "ipa",
+    "date": "2025-12-05",
+    "name": "Tiệm phở anh hai",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3dbW5XGB6sTSvWvcfYAFkSKhDushwHnFeYTN9vyYiBAMInZo1uzVdsQ&s=10",
+    "desc": "ipa - phiên bản dành cho ios",
+    "version": "1.0.0",
+    "developer": "",
+    "tags": [
+      "Game"
+    ],
+    "badge": "hot",
+    "fileLink": "https://proxy-files.thuthuatjb.com/apps?=thuthuatjb/IPAS/releases/download/2/AowVN-TiemPhoCuaAnhHai-V1.0_TTJB.ipa"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.0",
     "type": "ipa",
     "name": "VSCO",
