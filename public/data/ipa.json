@@ -684,6 +684,78 @@
     "lastSync": "2025-12-05T15:00:01.800Z"
   },
   {
+    "id": "ipa-com.iPwners.Plonkan-13.13",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Buddy_13.13_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.13",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2025-12-05T18:00:01.490Z"
+  },
+  {
+    "id": "ipa-com.yengshine.proccd-5.2.0",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/ProCCD_5.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.2.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2025-12-05T18:00:01.490Z"
+  },
+  {
+    "id": "ipa-com.mcdiamondfinder.app-4.0.0",
+    "type": "ipa",
+    "name": "DiamondFinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mcdiamondfinder.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/DiamondFinder_4.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.mcdiamondfinder.app",
+    "lastSync": "2025-12-05T18:00:01.490Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx-0.1.551",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/RiseSleep_0.1.551_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.551",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2025-12-05T18:00:01.491Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
