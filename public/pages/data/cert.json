@@ -7,6 +7,17 @@
     "size": " .p12, .mobileprovision",
     "downloadUrl": "https://www.mediafire.com/file/0bjx0xdtdyxs1i6/Etisalat+-+Emirates+Telecommunications+Corporation.zip/file",
     "iconUrl": "https://cdn-icons-png.freepik.com/256/6572/6572271.png?semt=ais_white_label",
-    "tag": "NEW"
+    "tag": ""
+  },
+  {
+    "id": 2,
+    "filename": "Certificate file",
+    "check": "Trạng  thái: 🟢 Good",
+    "certname": "Etisalat - Emirates Telecommunications Corporation",
+    "size": " .p12, .mobileprovision",
+    "downloadUrl": "https://www.mediafire.com/file/0bjx0xdtdyxs1i6/Etisalat+-+Emirates+Telecommunications+Corporation.zip/file",
+    "iconUrl": "https://cdn-icons-png.freepik.com/256/6572/6572271.png?semt=ais_white_label",
+    "tag": "",
+    "desc": "chứng chỉ doanh nghiệp free thường sẽ lỗi sau 3-7 ngày sử dụng"
   }
 ]
