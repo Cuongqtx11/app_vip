@@ -342,6 +342,24 @@
     "lastSync": "2025-12-04T23:00:01.755Z"
   },
   {
+    "id": "ipa-ventures.slam.minutes-1.9.11",
+    "type": "ipa",
+    "name": "Minutes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ventures.slam.minutes.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Minutes_1.9.11_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9.11",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "ventures.slam.minutes",
+    "lastSync": "2025-12-05T00:00:01.735Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
