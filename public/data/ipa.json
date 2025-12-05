@@ -360,6 +360,132 @@
     "lastSync": "2025-12-05T00:00:01.735Z"
   },
   {
+    "id": "ipa-com.facebook.Facebook-541.1.0",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Facebook_541.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "541.1.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2025-12-05T01:00:29.917Z"
+  },
+  {
+    "id": "ipa-co.noteplan.NotePlan3-3.19.3",
+    "type": "ipa",
+    "name": "NotePlan",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.noteplan.NotePlan3.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/NotePlan_3.19.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.19.3",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "co.noteplan.NotePlan3",
+    "lastSync": "2025-12-05T01:00:29.917Z"
+  },
+  {
+    "id": "ipa-com.facebook.Messenger-535.0.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Messenger_535.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "535.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2025-12-05T01:00:29.917Z"
+  },
+  {
+    "id": "ipa-com.fluidtouch.noteshelf3-5.11",
+    "type": "ipa",
+    "name": "Noteshelf3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fluidtouch.noteshelf3.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Noteshelf3_5.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.11",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.fluidtouch.noteshelf3",
+    "lastSync": "2025-12-05T01:00:29.918Z"
+  },
+  {
+    "id": "ipa-evolly.app.rokuremote-2.0.8",
+    "type": "ipa",
+    "name": "TVRemote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/evolly.app.rokuremote.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/TVRemote_2.0.8_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.8",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "evolly.app.rokuremote",
+    "lastSync": "2025-12-05T01:00:29.919Z"
+  },
+  {
+    "id": "ipa-com.tickettothemoon.video.persona-1.14.40",
+    "type": "ipa",
+    "name": "Persona",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tickettothemoon.video.persona.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Persona_1.14.40_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.14.40",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.tickettothemoon.video.persona",
+    "lastSync": "2025-12-05T01:00:29.919Z"
+  },
+  {
+    "id": "ipa-com.sbs.diet-5.7.0",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/MacroFactor_5.7.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.7.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-12-05T01:00:29.919Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
