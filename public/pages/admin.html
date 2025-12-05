@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Admin Dashboard - Kho App VIP</title>
   
-  <!-- Font & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -55,7 +54,6 @@
 </head>
 <body class="bg-gray-100 dark:bg-bgDark text-gray-900 dark:text-white transition-colors duration-300 min-h-screen">
 
-  <!-- LOGIN OVERLAY -->
   <div id="loginOverlay" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-100 dark:bg-bgDark p-4">
     <div class="w-full max-w-md bg-white dark:bg-surfaceDark rounded-3xl shadow-2xl p-8 text-center animate-in fade-in zoom-in duration-300">
       <div class="w-16 h-16 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -73,10 +71,8 @@
     </div>
   </div>
 
-  <!-- MAIN DASHBOARD -->
   <div id="dashboard" class="hidden max-w-5xl mx-auto p-4 md:p-8 pb-20">
     
-    <!-- Header -->
     <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
       <div>
         <h1 class="text-3xl font-black bg-gradient-to-r from-brand to-purple-500 bg-clip-text text-transparent">Dashboard</h1>
@@ -89,9 +85,7 @@
       </div>
     </div>
 
-    <!-- Stats & Quick Actions -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      <!-- Auto Sync Card -->
       <div class="md:col-span-2 bg-white dark:bg-surfaceDark rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-white/5 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-32 h-32 bg-brand/10 rounded-full blur-3xl -mr-10 -mt-10"></div>
         
@@ -118,7 +112,6 @@
         <p id="syncStatus" class="mt-3 text-xs text-center font-medium h-4"></p>
       </div>
 
-      <!-- Quick Upload Type Selector -->
       <div class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-6 text-white shadow-lg shadow-indigo-500/20 flex flex-col justify-center">
         <h3 class="text-lg font-bold mb-1">Upload Mới</h3>
         <p class="text-indigo-100 text-xs mb-4">Chọn loại nội dung cần đăng tải</p>
@@ -134,7 +127,6 @@
       </div>
     </div>
 
-    <!-- Upload Form -->
     <div class="bg-white dark:bg-surfaceDark rounded-3xl p-6 md:p-8 shadow-sm border border-gray-100 dark:border-white/5">
       <div class="flex items-center justify-between mb-6">
         <h2 class="text-xl font-bold flex items-center gap-2">
@@ -145,7 +137,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Cột Trái -->
         <div class="space-y-4">
           <div>
             <label class="label-text" id="lbl-name">Tên ứng dụng</label>
@@ -165,14 +156,12 @@
             <input type="text" id="inp-link" class="input-field" placeholder="https://...">
           </div>
 
-          <!-- Dynamic Fields -->
           <div id="field-version-group">
             <label class="label-text" id="lbl-version">Phiên bản</label>
             <input type="text" id="inp-version" class="input-field" placeholder="1.0.0">
           </div>
         </div>
 
-        <!-- Cột Phải -->
         <div class="space-y-4">
           <div id="field-desc-group">
             <label class="label-text">Mô tả / Ghi chú</label>
@@ -184,14 +173,15 @@
              <input type="text" id="inp-extra" class="input-field" placeholder="Tên dev...">
           </div>
 
-          <!-- Tags & Badges -->
           <div id="field-tags-group">
-            <label class="label-text">Thẻ (Tags)</label>
-            <div class="flex flex-wrap gap-2">
-              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="game"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">Game</span></label>
-              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="app"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">App</span></label>
-              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="tool"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">Tool</span></label>
-              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="social"><span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">Social</span></label>
+            <label class="label-text">Thẻ (Tags) - Đã cập nhật</label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="Game"><span class="block text-center px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">🎮 Game</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="Social"><span class="block text-center px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">💬 Social</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="Photo/Video"><span class="block text-center px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">📸 Photo/Video</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="Music"><span class="block text-center px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">🎵 Music</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="Utility"><span class="block text-center px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">🛠️ Utility</span></label>
+              <label class="cursor-pointer select-none"><input type="checkbox" class="peer hidden" name="tags" value="Productivity"><span class="block text-center px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-white/5 peer-checked:bg-brand peer-checked:text-white text-xs font-bold transition">📊 Productivity</span></label>
             </div>
           </div>
 
@@ -202,6 +192,7 @@
               <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="new"><span class="px-3 py-1.5 rounded-lg bg-blue-500/10 text-blue-500 peer-checked:bg-blue-500 peer-checked:text-white text-xs font-bold transition">Mới</span></label>
               <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="hot"><span class="px-3 py-1.5 rounded-lg bg-orange-500/10 text-orange-500 peer-checked:bg-orange-500 peer-checked:text-white text-xs font-bold transition">Hot</span></label>
               <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="vip"><span class="px-3 py-1.5 rounded-lg bg-yellow-500/10 text-yellow-500 peer-checked:bg-yellow-500 peer-checked:text-white text-xs font-bold transition">VIP</span></label>
+              <label class="cursor-pointer select-none"><input type="radio" class="peer hidden" name="badge" value="trending"><span class="px-3 py-1.5 rounded-lg bg-purple-500/10 text-purple-500 peer-checked:bg-purple-500 peer-checked:text-white text-xs font-bold transition">Trending</span></label>
             </div>
           </div>
         </div>
