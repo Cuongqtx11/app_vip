@@ -630,6 +630,24 @@
     "lastSync": "2025-12-05T12:00:01.694Z"
   },
   {
+    "id": "ipa-com.sillens.iShape-23.2.0",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-12-2025/Lifesum_23.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.2.0",
+    "developer": "khomodvip",
+    "date": "2025-12-05",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2025-12-05T13:00:01.837Z"
+  },
+  {
     "id": "ipa-com.mwm.stems-4.02.20",
     "type": "ipa",
     "name": "Stemz",
