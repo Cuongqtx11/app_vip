@@ -292,7 +292,7 @@ function smartDetectTags(app) {
     'game', 'play', 'racing', 'puzzle', 'arcade', 'action', 'rpg', 'strategy', 'simulation', 'simulator', 
     'adventure', 'survival', 'shooter', 'sport', 'football', 'soccer', 'chess', 'card', 'board', 'arena', 
     'battle', 'war', 'fight', 'ninja', 'zombie', 'hero', 'clash', 'royal', 'minecraft', 'roblox', 'gta', 
-    'pubg', 'call of duty', 'league'
+    'pubg', 'call of duty', 'MergeCooking', 'league'
   ];
 
   // 2. SOCIAL
