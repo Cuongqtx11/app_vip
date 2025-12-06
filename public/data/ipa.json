@@ -274,6 +274,24 @@
     "lastSync": "2025-12-06T17:00:01.510Z"
   },
   {
+    "id": "ipa-com.apalonapps.wlf-7.24.40",
+    "type": "ipa",
+    "name": "WeatherLive",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.wlf.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/WeatherLive_7.24.40_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.24.40",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.wlf",
+    "lastSync": "2025-12-06T18:00:01.690Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.0",
     "type": "ipa",
     "name": "VSCO",
