@@ -38,6 +38,24 @@
     "lastSync": "2025-12-05T23:00:01.436Z"
   },
   {
+    "id": "ipa-com.kinemaster.kios-8.0.9",
+    "type": "ipa",
+    "name": "KineMaster",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/KineMaster_8.0.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.9",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.kinemaster.kios",
+    "lastSync": "2025-12-06T00:00:01.706Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.0",
     "type": "ipa",
     "name": "VSCO",
