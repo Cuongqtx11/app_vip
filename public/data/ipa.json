@@ -18,6 +18,42 @@
     "lastSync": "2025-12-06T19:00:01.769Z"
   },
   {
+    "id": "ipa-com.getupnote.ios-9.14.11",
+    "type": "ipa",
+    "name": "UpNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getupnote.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/UpNote_9.14.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.14.11",
+    "developer": "khomodvip",
+    "date": "2025-12-07",
+    "source": "apptesters",
+    "bundleID": "com.getupnote.ios",
+    "lastSync": "2025-12-06T20:00:01.776Z"
+  },
+  {
+    "id": "ipa-com.upskew.encode.ios-6.15.0",
+    "type": "ipa",
+    "name": "Encode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.upskew.encode.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Encode_6.15.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.15.0",
+    "developer": "khomodvip",
+    "date": "2025-12-07",
+    "source": "apptesters",
+    "bundleID": "com.upskew.encode.ios",
+    "lastSync": "2025-12-06T20:00:01.776Z"
+  },
+  {
     "id": "ipa-com.edjing.edjingdjturntable-8.18.01",
     "type": "ipa",
     "name": "edjingMix",
