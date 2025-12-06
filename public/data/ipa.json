@@ -56,6 +56,24 @@
     "lastSync": "2025-12-06T00:00:01.706Z"
   },
   {
+    "id": "ipa-com.picsart.studio-28.9.7",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/PicsArt_28.9.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "28.9.7",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2025-12-06T01:00:01.659Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.0",
     "type": "ipa",
     "name": "VSCO",
