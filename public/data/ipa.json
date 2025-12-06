@@ -164,6 +164,98 @@
     "lastSync": "2025-12-06T10:00:01.292Z"
   },
   {
+    "id": "ipa-com.peoplefun.wordcross-3.6.1",
+    "type": "ipa",
+    "name": "Wordscapes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.peoplefun.wordcross.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Wordscapes_3.6.1_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.6.1",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.peoplefun.wordcross",
+    "lastSync": "2025-12-06T15:00:01.690Z"
+  },
+  {
+    "id": "ipa-pilotpro-5.49.0",
+    "type": "ipa",
+    "name": "PilotPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/pilotpro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/PilotPro_5.49.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.49.0",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "pilotpro",
+    "lastSync": "2025-12-06T15:00:01.691Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2-11.46",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/X_11.46_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.46",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-12-06T15:00:01.691Z"
+  },
+  {
+    "id": "ipa-com.iptv.player-9.2.0",
+    "type": "ipa",
+    "name": "IPTVExpert",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iptv.player.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Social",
+      "Game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/IPTVExpert_9.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.2.0",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.iptv.player",
+    "lastSync": "2025-12-06T15:00:01.692Z"
+  },
+  {
+    "id": "ipa-com.dubox.drive-4.9.1",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social",
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/TeraBox_4.9.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.9.1",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2025-12-06T15:00:01.692Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.0",
     "type": "ipa",
     "name": "VSCO",
