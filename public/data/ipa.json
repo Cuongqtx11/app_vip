@@ -74,6 +74,96 @@
     "lastSync": "2025-12-06T01:00:01.659Z"
   },
   {
+    "id": "ipa-com.paha.LoFiCam-3.12.0",
+    "type": "ipa",
+    "name": "LoFiCam",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.paha.LoFiCam.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/LoFiCam_3.12.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.12.0",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.paha.LoFiCam",
+    "lastSync": "2025-12-06T10:00:01.291Z"
+  },
+  {
+    "id": "ipa-ch.b-eng.tor-3.9.9",
+    "type": "ipa",
+    "name": "OrNETBrowser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ch.b-eng.tor.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/OrNETBrowser_3.9.9_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.9",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "ch.b-eng.tor",
+    "lastSync": "2025-12-06T10:00:01.292Z"
+  },
+  {
+    "id": "ipa-viral.vision.vids-1.128.0",
+    "type": "ipa",
+    "name": "Vids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/viral.vision.vids.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Vids_1.128.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.128.0",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "viral.vision.vids",
+    "lastSync": "2025-12-06T10:00:01.292Z"
+  },
+  {
+    "id": "ipa-com.zijayrate.analogcam-8.1.2",
+    "type": "ipa",
+    "name": "OldRoll",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zijayrate.analogcam.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/OldRoll_8.1.2_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.2",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "com.zijayrate.analogcam",
+    "lastSync": "2025-12-06T10:00:01.292Z"
+  },
+  {
+    "id": "ipa-org.iggymedia.periodtracker-9.93.1",
+    "type": "ipa",
+    "name": "Flo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.iggymedia.periodtracker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Flo_9.93.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.93.1",
+    "developer": "khomodvip",
+    "date": "2025-12-06",
+    "source": "apptesters",
+    "bundleID": "org.iggymedia.periodtracker",
+    "lastSync": "2025-12-06T10:00:01.292Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.0",
     "type": "ipa",
     "name": "VSCO",
