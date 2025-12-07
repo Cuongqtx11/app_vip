@@ -162,6 +162,24 @@
     "lastSync": "2025-12-07T16:00:01.324Z"
   },
   {
+    "id": "ipa-com.vyro.Imagine-3.2.0",
+    "type": "ipa",
+    "name": "ImagineArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vyro.Imagine.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/ImagineArt_3.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.0",
+    "developer": "khomodvip",
+    "date": "2025-12-07",
+    "source": "apptesters",
+    "bundleID": "com.vyro.Imagine",
+    "lastSync": "2025-12-07T17:00:01.781Z"
+  },
+  {
     "id": "ipa-com.edjing.edjingdjturntable-8.18.01",
     "type": "ipa",
     "name": "edjingMix",
