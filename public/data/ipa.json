@@ -144,6 +144,24 @@
     "lastSync": "2025-12-07T13:00:01.376Z"
   },
   {
+    "id": "ipa-com.grey.swiftcamera-2.5.47",
+    "type": "ipa",
+    "name": "NoFusion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grey.swiftcamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/NoFusion_2.5.47_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.47",
+    "developer": "khomodvip",
+    "date": "2025-12-07",
+    "source": "apptesters",
+    "bundleID": "com.grey.swiftcamera",
+    "lastSync": "2025-12-07T16:00:01.324Z"
+  },
+  {
     "id": "ipa-com.edjing.edjingdjturntable-8.18.01",
     "type": "ipa",
     "name": "edjingMix",
