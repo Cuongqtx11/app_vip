@@ -126,6 +126,24 @@
     "lastSync": "2025-12-07T00:00:01.364Z"
   },
   {
+    "id": "ipa-com.joytunes.asla-9.10.48",
+    "type": "ipa",
+    "name": "SimplyPiano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.asla.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/SimplyPiano_9.10.48_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.10.48",
+    "developer": "khomodvip",
+    "date": "2025-12-07",
+    "source": "apptesters",
+    "bundleID": "com.joytunes.asla",
+    "lastSync": "2025-12-07T13:00:01.376Z"
+  },
+  {
     "id": "ipa-com.edjing.edjingdjturntable-8.18.01",
     "type": "ipa",
     "name": "edjingMix",
