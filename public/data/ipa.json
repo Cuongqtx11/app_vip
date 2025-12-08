@@ -54,6 +54,43 @@
     "lastSync": "2025-12-08T03:00:01.420Z"
   },
   {
+    "id": "ipa-com.intsig.CamScannerLite-7.7.5",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.intsig.CamScannerLite.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "Utility",
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/_7.7.5_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.7.5",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.intsig.CamScannerLite",
+    "lastSync": "2025-12-08T04:00:01.783Z"
+  },
+  {
+    "id": "ipa-com.dajiu.stay.pro-2.9.16",
+    "type": "ipa",
+    "name": "Stay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dajiu.stay.pro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Stay_2.9.16_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.9.16",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.dajiu.stay.pro",
+    "lastSync": "2025-12-08T04:00:01.783Z"
+  },
+  {
     "id": "ipa-com.moodtools.thoughtdiary-5.5.10",
     "type": "ipa",
     "name": "Clarity",
