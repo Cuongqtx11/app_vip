@@ -237,6 +237,60 @@
     "lastSync": "2025-12-08T11:00:01.726Z"
   },
   {
+    "id": "ipa-com.lightricks.Facetune2-3.114",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Facetune_3.114_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.114",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2025-12-08T12:00:01.622Z"
+  },
+  {
+    "id": "ipa-archery.storify-1.253.0",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Mojo_1.253.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.253.0",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2025-12-08T12:00:01.622Z"
+  },
+  {
+    "id": "ipa-se.resenatverket.FlightRadar24-Free-10.20.0",
+    "type": "ipa",
+    "name": "Flightradar24",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/se.resenatverket.FlightRadar24-Free.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Flightradar24_10.20.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.20.0",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "se.resenatverket.FlightRadar24-Free",
+    "lastSync": "2025-12-08T12:00:01.622Z"
+  },
+  {
     "id": "ipa-com.moodtools.thoughtdiary-5.5.10",
     "type": "ipa",
     "name": "Clarity",
