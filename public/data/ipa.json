@@ -328,6 +328,24 @@
     "lastSync": "2025-12-08T15:00:01.473Z"
   },
   {
+    "id": "ipa-com.endel.endel-4.48.426",
+    "type": "ipa",
+    "name": "Endel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.endel.endel.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Endel_4.48.426_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.48.426",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.endel.endel",
+    "lastSync": "2025-12-08T17:00:01.438Z"
+  },
+  {
     "id": "ipa-com.moodtools.thoughtdiary-5.5.10",
     "type": "ipa",
     "name": "Clarity",
