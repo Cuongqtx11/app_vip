@@ -291,6 +291,25 @@
     "lastSync": "2025-12-08T12:00:01.622Z"
   },
   {
+    "id": "ipa-com.truesoftware.TrueCallerOther-14.46.5",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social",
+      "Game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Truecaller_14.46.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.46.5",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2025-12-08T13:00:01.831Z"
+  },
+  {
     "id": "ipa-com.moodtools.thoughtdiary-5.5.10",
     "type": "ipa",
     "name": "Clarity",
