@@ -144,6 +144,42 @@
     "lastSync": "2025-12-08T20:00:01.687Z"
   },
   {
+    "id": "ipa-com.elevateapp.kamino.kamino-1.191.0",
+    "type": "ipa",
+    "name": "Balance",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.kamino.kamino.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Balance_1.191.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.191.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.kamino.kamino",
+    "lastSync": "2025-12-08T21:00:01.745Z"
+  },
+  {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.20.0",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/MergeCooking_1.20.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.20.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2025-12-08T21:00:01.746Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.27.0",
     "type": "ipa",
     "name": "Busuu",
