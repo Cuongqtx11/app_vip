@@ -109,6 +109,79 @@
     "lastSync": "2025-12-08T07:00:01.638Z"
   },
   {
+    "id": "ipa-com.apalonapps.wlf-4.18.14",
+    "type": "ipa",
+    "name": "Weather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.wlf.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Weather_4.18.14_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.18.14",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.wlf",
+    "lastSync": "2025-12-08T09:00:01.695Z"
+  },
+  {
+    "id": "ipa-com.yazio.ios.YAZIO-12.62.0",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Yazio_12.62.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.62.0",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2025-12-08T09:00:01.696Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.Fitia-20.0.2",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Fitia_20.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.0.2",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2025-12-08T09:00:01.697Z"
+  },
+  {
+    "id": "ipa-com.lexwarelabs.goodmorning-6.25.48",
+    "type": "ipa",
+    "name": "SleepCycle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lexwarelabs.goodmorning.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Game",
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/SleepCycle_6.25.48_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.25.48",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.lexwarelabs.goodmorning",
+    "lastSync": "2025-12-08T09:00:01.697Z"
+  },
+  {
     "id": "ipa-com.moodtools.thoughtdiary-5.5.10",
     "type": "ipa",
     "name": "Clarity",
