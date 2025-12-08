@@ -1,5 +1,149 @@
 [
   {
+    "id": "ipa-com.amanotes.magictiles-12.115.020",
+    "type": "ipa",
+    "name": "MagicTiles3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.amanotes.magictiles.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/MagicTiles3_12.115.020_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.115.020",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.amanotes.magictiles",
+    "lastSync": "2025-12-08T20:00:01.686Z"
+  },
+  {
+    "id": "ipa-com.gingerlabs.Notability-15.2",
+    "type": "ipa",
+    "name": "Notability",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gingerlabs.Notability.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Notability_15.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.2",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.gingerlabs.Notability",
+    "lastSync": "2025-12-08T20:00:01.686Z"
+  },
+  {
+    "id": "ipa-com.cuilingshi.flipclock-6.15",
+    "type": "ipa",
+    "name": "flipclock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cuilingshi.flipclock.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/flipclock_6.15_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.15",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.cuilingshi.flipclock",
+    "lastSync": "2025-12-08T20:00:01.686Z"
+  },
+  {
+    "id": "ipa-com.shapr3d.shapr-5.1010.0",
+    "type": "ipa",
+    "name": "Shapr3D",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shapr3d.shapr.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Shapr3D_5.1010.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.1010.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.shapr3d.shapr",
+    "lastSync": "2025-12-08T20:00:01.686Z"
+  },
+  {
+    "id": "ipa-com.letterboxd.LetterboxdApp-4.8.2",
+    "type": "ipa",
+    "name": "Letterboxd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.letterboxd.LetterboxdApp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Letterboxd_4.8.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.8.2",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.letterboxd.LetterboxdApp",
+    "lastSync": "2025-12-08T20:00:01.687Z"
+  },
+  {
+    "id": "ipa-com.locket.Locket-2.24.0",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Locket_2.24.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.24.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2025-12-08T20:00:01.687Z"
+  },
+  {
+    "id": "ipa-com.mobivalley.LookAroundApp-1.45.0",
+    "type": "ipa",
+    "name": "PlaceGuesser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobivalley.LookAroundApp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/PlaceGuesser_1.45.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.45.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.mobivalley.LookAroundApp",
+    "lastSync": "2025-12-08T20:00:01.687Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.6.0",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/BlockBlast_6.6.0_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2025-12-08T20:00:01.687Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.27.0",
     "type": "ipa",
     "name": "Busuu",
