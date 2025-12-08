@@ -180,6 +180,42 @@
     "lastSync": "2025-12-08T21:00:01.746Z"
   },
   {
+    "id": "ipa-in.muditbhargava.LookUp-12.0.4",
+    "type": "ipa",
+    "name": "LookUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/in.muditbhargava.LookUp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/LookUp_12.0.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.4",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "in.muditbhargava.LookUp",
+    "lastSync": "2025-12-08T23:00:01.361Z"
+  },
+  {
+    "id": "ipa-com.linecorp.Foodie-7.4.5",
+    "type": "ipa",
+    "name": "Foodie",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.Foodie.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Foodie_7.4.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4.5",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.Foodie",
+    "lastSync": "2025-12-08T23:00:01.361Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.27.0",
     "type": "ipa",
     "name": "Busuu",
