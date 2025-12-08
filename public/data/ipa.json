@@ -200,6 +200,43 @@
     "lastSync": "2025-12-08T10:00:01.751Z"
   },
   {
+    "id": "ipa-com.dr1ven.eraser-2025.49.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Photoroom_2025.49.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.49.01",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2025-12-08T11:00:01.725Z"
+  },
+  {
+    "id": "ipa-fontskeyboard.fonts-8.4.46",
+    "type": "ipa",
+    "name": "Fonts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fontskeyboard.fonts.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Game",
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Fonts_8.4.46_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.4.46",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "fontskeyboard.fonts",
+    "lastSync": "2025-12-08T11:00:01.726Z"
+  },
+  {
     "id": "ipa-com.moodtools.thoughtdiary-5.5.10",
     "type": "ipa",
     "name": "Clarity",
