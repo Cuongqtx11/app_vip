@@ -182,6 +182,24 @@
     "lastSync": "2025-12-08T09:00:01.697Z"
   },
   {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.17.16",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Documents_8.17.16_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.17.16",
+    "developer": "khomodvip",
+    "date": "2025-12-08",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2025-12-08T10:00:01.751Z"
+  },
+  {
     "id": "ipa-com.moodtools.thoughtdiary-5.5.10",
     "type": "ipa",
     "name": "Clarity",
