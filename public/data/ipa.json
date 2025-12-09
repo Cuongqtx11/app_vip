@@ -55,6 +55,42 @@
     "lastSync": "2025-12-09T21:00:01.893Z"
   },
   {
+    "id": "ipa-com.jakemor.firness-ai-14.8",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/FitnessAI_14.8_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.8",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2025-12-09T22:00:01.816Z"
+  },
+  {
+    "id": "ipa-com.castpeer.audioroom.ios-2.9.9",
+    "type": "ipa",
+    "name": "SoundLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.castpeer.audioroom.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/SoundLab_2.9.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.9.9",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.castpeer.audioroom.ios",
+    "lastSync": "2025-12-09T22:00:01.816Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
