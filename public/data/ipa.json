@@ -216,6 +216,132 @@
     "lastSync": "2025-12-08T23:00:01.361Z"
   },
   {
+    "id": "ipa-com.frontierdesign.videostar-14.4.6",
+    "type": "ipa",
+    "name": "VideoStar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontierdesign.videostar.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/VideoStar_14.4.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.4.6",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.frontierdesign.videostar",
+    "lastSync": "2025-12-09T00:00:01.885Z"
+  },
+  {
+    "id": "ipa-com.fitbod-7.24.0",
+    "type": "ipa",
+    "name": "Fitbod",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fitbod.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Fitbod_7.24.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.24.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.fitbod",
+    "lastSync": "2025-12-09T00:00:01.885Z"
+  },
+  {
+    "id": "ipa-com.google.ios.youtube-20.49.5",
+    "type": "ipa",
+    "name": "YouTubeOLED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/YouTubeOLED_20.49.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.49.5",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.google.ios.youtube",
+    "lastSync": "2025-12-09T00:00:01.885Z"
+  },
+  {
+    "id": "ipa-com.culturedcode.ThingsiPad-3.22.5",
+    "type": "ipa",
+    "name": "Things",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.culturedcode.ThingsiPad.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Things_3.22.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.22.5",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.culturedcode.ThingsiPad",
+    "lastSync": "2025-12-09T00:00:01.886Z"
+  },
+  {
+    "id": "ipa-com.burbn.barcelona-409.0.0",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Threads_409.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "409.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2025-12-09T00:00:01.886Z"
+  },
+  {
+    "id": "ipa-com.photomyne.photomyneapplite-32.1",
+    "type": "ipa",
+    "name": "Photomyne",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photomyne.photomyneapplite.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Photomyne_32.1_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "32.1",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.photomyne.photomyneapplite",
+    "lastSync": "2025-12-09T00:00:01.886Z"
+  },
+  {
+    "id": "ipa-com.burbn.instagram-409.0.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Instagram_409.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "409.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2025-12-09T00:00:01.886Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.27.0",
     "type": "ipa",
     "name": "Busuu",
