@@ -414,6 +414,24 @@
     "lastSync": "2025-12-09T08:00:01.796Z"
   },
   {
+    "id": "ipa-com.google.ios.youtube-20.49.5",
+    "type": "ipa",
+    "name": "YouTubeOLED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/YouTubeOLED_20.49.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.49.5",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.google.ios.youtube",
+    "lastSync": "2025-12-09T11:00:01.669Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.27.0",
     "type": "ipa",
     "name": "Busuu",
