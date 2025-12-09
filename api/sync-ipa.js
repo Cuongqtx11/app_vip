@@ -330,12 +330,12 @@ function smartDetectTags(app) {
   ];
 
   const allCategories = {
-    'Game': gameKeywords,
-    'Social': socialKeywords,
-    'Photo/Video': photoKeywords,
-    'Music': musicKeywords,
-    'Utility': utilityKeywords,
-    'Productivity': productivityKeywords
+    'game': gameKeywords,
+    'social': socialKeywords,
+    'photo/video': photoKeywords,
+    'music': musicKeywords,
+    'utility': utilityKeywords,
+    'productivity': productivityKeywords
   };
   
   let scores = {};
