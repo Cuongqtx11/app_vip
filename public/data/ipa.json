@@ -19,6 +19,42 @@
     "lastSync": "2025-12-09T20:00:01.891Z"
   },
   {
+    "id": "ipa-com.linecorp.Foodie-7.4.6",
+    "type": "ipa",
+    "name": "Foodie",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.Foodie.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Foodie_7.4.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4.6",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.Foodie",
+    "lastSync": "2025-12-09T21:00:01.892Z"
+  },
+  {
+    "id": "ipa-com.duolingo.DuolingoMobile-7.102.0",
+    "type": "ipa",
+    "name": "Duolingo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.duolingo.DuolingoMobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Duolingo_7.102.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.102.0",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.duolingo.DuolingoMobile",
+    "lastSync": "2025-12-09T21:00:01.893Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
