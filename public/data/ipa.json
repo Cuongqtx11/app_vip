@@ -91,6 +91,60 @@
     "lastSync": "2025-12-09T22:00:01.816Z"
   },
   {
+    "id": "ipa-com.myfitnesspal.mfp-25.49.0",
+    "type": "ipa",
+    "name": "MyFitnessPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myfitnesspal.mfp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/MyFitnessPal_25.49.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.49.0",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.myfitnesspal.mfp",
+    "lastSync": "2025-12-09T23:00:01.868Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx-0.1.552",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/RiseSleep_0.1.552_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.552",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2025-12-09T23:00:01.877Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems-4.02.21",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Stemz_4.02.21_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.02.21",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2025-12-09T23:00:01.877Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
