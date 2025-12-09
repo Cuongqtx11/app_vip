@@ -432,6 +432,260 @@
     "lastSync": "2025-12-09T11:00:01.669Z"
   },
   {
+    "id": "ipa-com.adobe.photoshop.ios-7.2.2",
+    "type": "ipa",
+    "name": "Photoshop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.photoshop.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Photoshop_7.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.2.2",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.adobe.photoshop.ios",
+    "lastSync": "2025-12-09T17:00:01.535Z"
+  },
+  {
+    "id": "ipa-com.codeway.cleanerplus-6.7.0",
+    "type": "ipa",
+    "name": "Cleanup",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.codeway.cleanerplus.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Cleanup_6.7.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.7.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.codeway.cleanerplus",
+    "lastSync": "2025-12-09T17:00:01.535Z"
+  },
+  {
+    "id": "ipa-io.veed.appstore-7.6.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/VEEDCaptions_7.6.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.6.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2025-12-09T17:00:01.536Z"
+  },
+  {
+    "id": "ipa-co.airapps.scannerapp-2025.11.6",
+    "type": "ipa",
+    "name": "ScannerAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.scannerapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility",
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/ScannerAir_2025.11.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.6",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "co.airapps.scannerapp",
+    "lastSync": "2025-12-09T17:00:01.536Z"
+  },
+  {
+    "id": "ipa-com.ADPTVLTD.push-3.9.0",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/PUSH_3.9.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.0",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2025-12-09T17:00:01.536Z"
+  },
+  {
+    "id": "ipa-solutions.wzp.translator-2025.11.6",
+    "type": "ipa",
+    "name": "TranslateNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/solutions.wzp.translator.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/TranslateNow_2025.11.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.6",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "solutions.wzp.translator",
+    "lastSync": "2025-12-09T17:00:01.536Z"
+  },
+  {
+    "id": "ipa-co.airapps.dictionary-2025.11.3",
+    "type": "ipa",
+    "name": "DictionaryAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.dictionary.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/DictionaryAir_2025.11.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.3",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "co.airapps.dictionary",
+    "lastSync": "2025-12-09T17:00:01.537Z"
+  },
+  {
+    "id": "ipa-com.outerspaceapps.itranslate-17.4.62",
+    "type": "ipa",
+    "name": "iTranslate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.outerspaceapps.itranslate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/iTranslate_17.4.62_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.4.62",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.outerspaceapps.itranslate",
+    "lastSync": "2025-12-09T17:00:01.537Z"
+  },
+  {
+    "id": "ipa-com.dopedevelopment.Panels-9.24",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/SCRL_9.24_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.24",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2025-12-09T17:00:01.537Z"
+  },
+  {
+    "id": "ipa-com.videobrowser.ios-621000",
+    "type": "ipa",
+    "name": "VideoLite",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.videobrowser.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo/video",
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/VideoLite_621000_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "621000",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.videobrowser.ios",
+    "lastSync": "2025-12-09T17:00:01.537Z"
+  },
+  {
+    "id": "ipa-co.airapps.finderbot-2025.11.10",
+    "type": "ipa",
+    "name": "FindAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.finderbot.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/FindAir_2025.11.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.10",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "co.airapps.finderbot",
+    "lastSync": "2025-12-09T17:00:01.538Z"
+  },
+  {
+    "id": "ipa-com.CalculatorForiPad.InternetRocks-2025.11.5",
+    "type": "ipa",
+    "name": "CalculatorAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.CalculatorForiPad.InternetRocks.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/CalculatorAir_2025.11.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.11.5",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.CalculatorForiPad.InternetRocks",
+    "lastSync": "2025-12-09T17:00:01.538Z"
+  },
+  {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.0.7",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/SnoreLab_6.0.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.7",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2025-12-09T17:00:01.538Z"
+  },
+  {
+    "id": "ipa-com.hevyapp.hevy-2.5.5",
+    "type": "ipa",
+    "name": "Hevy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hevyapp.hevy.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Hevy_2.5.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.5",
+    "developer": "khomodvip",
+    "date": "2025-12-09",
+    "source": "apptesters",
+    "bundleID": "com.hevyapp.hevy",
+    "lastSync": "2025-12-09T17:00:01.538Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.27.0",
     "type": "ipa",
     "name": "Busuu",
