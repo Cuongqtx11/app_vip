@@ -96,7 +96,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
     "desc": "Injected with Gold",
     "tags": [
-      "Utility"
+      "social"
     ],
     "badge": "hot",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Locket_2.24.0_Gold_%40thisismanpreets_apptesters.org.ipa",
@@ -254,13 +254,13 @@
   {
     "id": "ipa-com.google.ios.youtube-20.49.5",
     "type": "ipa",
-    "name": "YouTubeOLED",
+    "name": "YouTube Premium",
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
     "desc": "Injected with Premium",
     "tags": [
-      "Photo/Video"
+      "photo/video"
     ],
-    "badge": "new",
+    "badge": "hot",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/YouTubeOLED_20.49.5_Premium_%40thisismanpreets_apptesters.org.ipa",
     "version": "20.49.5",
     "developer": "khomodvip",
@@ -330,7 +330,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
     "desc": "Injected with Premium",
     "tags": [
-      "Social"
+      "social"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Instagram_409.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
@@ -366,9 +366,9 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mojang.minecraftpe.png",
     "desc": "Injected with Premium",
     "tags": [
-      "Game"
+      "game"
     ],
-    "badge": "new",
+    "badge": "hot",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Minecraft_1.21.124_Premium_%40thisismanpreets_apptesters.org.ipa",
     "version": "1.21.124",
     "developer": "khomodvip",
