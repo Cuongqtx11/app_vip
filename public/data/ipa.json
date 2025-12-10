@@ -236,6 +236,43 @@
     "lastSync": "2025-12-10T03:00:01.666Z"
   },
   {
+    "id": "ipa-com.zhiliaoapp.musically-42.9.0",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social",
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/TikTok_42.9.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "42.9.0",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2025-12-10T04:00:01.673Z"
+  },
+  {
+    "id": "ipa-com.kingsoft.office.g.wpsoffice-11.37.20",
+    "type": "ipa",
+    "name": "wpsoffice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kingsoft.office.g.wpsoffice.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/wpsoffice_11.37.20_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.37.20",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.kingsoft.office.g.wpsoffice",
+    "lastSync": "2025-12-10T04:00:01.673Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
