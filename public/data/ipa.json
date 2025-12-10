@@ -437,6 +437,42 @@
     "lastSync": "2025-12-10T10:00:01.335Z"
   },
   {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.17.17",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Documents_8.17.17_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.17.17",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2025-12-10T12:00:02.845Z"
+  },
+  {
+    "id": "ipa-com.beHappy.Productive-3.26.38",
+    "type": "ipa",
+    "name": "Productive",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beHappy.Productive.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Productive_3.26.38_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.26.38",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.beHappy.Productive",
+    "lastSync": "2025-12-10T12:00:02.845Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
