@@ -527,6 +527,24 @@
     "lastSync": "2025-12-10T15:00:01.498Z"
   },
   {
+    "id": "ipa-com.macpaw.iosgemini-2.10.2",
+    "type": "ipa",
+    "name": "CleanMyPhone",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.macpaw.iosgemini.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/CleanMyPhone_2.10.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.2",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.macpaw.iosgemini",
+    "lastSync": "2025-12-10T16:00:02.147Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
