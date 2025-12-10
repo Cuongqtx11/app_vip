@@ -473,6 +473,42 @@
     "lastSync": "2025-12-10T12:00:02.845Z"
   },
   {
+    "id": "ipa-com.codeway.cleanerplus-6.7.1",
+    "type": "ipa",
+    "name": "Cleanup",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.codeway.cleanerplus.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Cleanup_6.7.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.7.1",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.codeway.cleanerplus",
+    "lastSync": "2025-12-10T13:00:01.854Z"
+  },
+  {
+    "id": "ipa-com.adobe.lrmobilephone-11.1.0",
+    "type": "ipa",
+    "name": "Lightroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.lrmobilephone.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Lightroom_11.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.1.0",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.adobe.lrmobilephone",
+    "lastSync": "2025-12-10T13:00:01.854Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
