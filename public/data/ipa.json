@@ -401,6 +401,42 @@
     "lastSync": "2025-12-10T08:00:01.626Z"
   },
   {
+    "id": "ipa-com.wikiloc.wikiloc-3.26.0",
+    "type": "ipa",
+    "name": "Wikiloc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wikiloc.wikiloc.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Wikiloc_3.26.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.26.0",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.wikiloc.wikiloc",
+    "lastSync": "2025-12-10T10:00:01.334Z"
+  },
+  {
+    "id": "ipa-com.calm.calmapp-6.85",
+    "type": "ipa",
+    "name": "Calm",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.calm.calmapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-12-2025/Calm_6.85_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.85",
+    "developer": "khomodvip",
+    "date": "2025-12-10",
+    "source": "apptesters",
+    "bundleID": "com.calm.calmapp",
+    "lastSync": "2025-12-10T10:00:01.335Z"
+  },
+  {
     "id": "ipa-com.amanotes.magictiles-12.115.020",
     "type": "ipa",
     "name": "MagicTiles3",
