@@ -18,6 +18,24 @@
     "lastSync": "2025-12-11T19:00:01.498Z"
   },
   {
+    "id": "ipa-com.gingerlabs.Notability-15.2.1",
+    "type": "ipa",
+    "name": "Notability",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gingerlabs.Notability.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Notability_15.2.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.2.1",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.gingerlabs.Notability",
+    "lastSync": "2025-12-11T21:00:01.482Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.1",
     "type": "ipa",
     "name": "VSCO",
