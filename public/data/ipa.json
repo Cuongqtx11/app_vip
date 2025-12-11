@@ -253,6 +253,42 @@
     "lastSync": "2025-12-11T16:00:01.501Z"
   },
   {
+    "id": "ipa-com.apalonapps.radarfree-5.13.64",
+    "type": "ipa",
+    "name": "CLIME",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.radarfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/CLIME_5.13.64_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.13.64",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.radarfree",
+    "lastSync": "2025-12-11T17:00:01.712Z"
+  },
+  {
+    "id": "ipa-com.leapingcoyote.rungo-7.2.2",
+    "type": "ipa",
+    "name": "RunGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.leapingcoyote.rungo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/RunGo_7.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.2.2",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.leapingcoyote.rungo",
+    "lastSync": "2025-12-11T17:00:01.712Z"
+  },
+  {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
     "type": "ipa",
     "name": "Widgetsmith",
