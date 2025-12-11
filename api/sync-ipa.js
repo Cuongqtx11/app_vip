@@ -289,8 +289,7 @@ function smartDetectTags(app) {
 
   // 1. GAME
   const gameKeywords = [
-    'game', 'play', 'racing', 'puzzle', 'arcade', 'action', 'rpg', 'strategy', 'simulation', 'simulator', 
-    'adventure', 'survival', 'shooter', 'sport', 'football', 'soccer', 'chess', 'card', 'board', 'arena', 
+    'game', 'racing', 'MagicTiles3', 'arcade', 'rpg', 'HillClimb', 'BlockBlast', 'simulator', 'sport', 'football', 'soccer', 'chess', 'card', 'board', 'arena', 
     'battle', 'war', 'fight', 'ninja', 'zombie', 'hero', 'clash', 'royal', 'minecraft', 'roblox', 'gta', 
     'pubg', 'call of duty', 'MergeCooking', 'league'
   ];
