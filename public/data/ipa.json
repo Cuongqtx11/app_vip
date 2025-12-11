@@ -217,6 +217,24 @@
     "lastSync": "2025-12-11T11:00:02.025Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-20.0.3",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/Fitia_20.0.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.0.3",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2025-12-11T12:00:01.881Z"
+  },
+  {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
     "type": "ipa",
     "name": "Widgetsmith",
