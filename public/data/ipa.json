@@ -109,6 +109,60 @@
     "lastSync": "2025-12-11T08:00:01.662Z"
   },
   {
+    "id": "ipa-com.facebook.Messenger-536.0.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/Messenger_536.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "536.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2025-12-11T10:00:01.597Z"
+  },
+  {
+    "id": "ipa-com.facebook.Facebook-542.0.0",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/Facebook_542.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "542.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2025-12-11T10:00:01.597Z"
+  },
+  {
+    "id": "ipa-com.camerasideas.InstaShot-1.92.0",
+    "type": "ipa",
+    "name": "InShot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.InstaShot.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/InShot_1.92.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.92.0",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.InstaShot",
+    "lastSync": "2025-12-11T10:00:01.598Z"
+  },
+  {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
     "type": "ipa",
     "name": "Widgetsmith",
