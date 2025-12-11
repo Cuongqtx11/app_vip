@@ -235,6 +235,24 @@
     "lastSync": "2025-12-11T12:00:01.881Z"
   },
   {
+    "id": "ipa-com.risesci.nyx-0.1.553",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/RiseSleep_0.1.553_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.553",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2025-12-11T16:00:01.501Z"
+  },
+  {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
     "type": "ipa",
     "name": "Widgetsmith",
