@@ -36,6 +36,79 @@
     "lastSync": "2025-12-11T00:00:01.406Z"
   },
   {
+    "id": "ipa-com.glority.everlens-2.20.0",
+    "type": "ipa",
+    "name": "MobileScanner",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.everlens.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility",
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/MobileScanner_2.20.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.20.0",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.glority.everlens",
+    "lastSync": "2025-12-11T08:00:01.661Z"
+  },
+  {
+    "id": "ipa-com.consumedbycode.slopes-2025.18",
+    "type": "ipa",
+    "name": "Slopes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.consumedbycode.slopes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/Slopes_2025.18_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.18",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.consumedbycode.slopes",
+    "lastSync": "2025-12-11T08:00:01.661Z"
+  },
+  {
+    "id": "ipa-com.future.kapi-3.27.0",
+    "type": "ipa",
+    "name": "Action",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.future.kapi.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/Action_3.27.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.27.0",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.future.kapi",
+    "lastSync": "2025-12-11T08:00:01.661Z"
+  },
+  {
+    "id": "ipa-com.adobe.post-29.5.0",
+    "type": "ipa",
+    "name": "AdobeExpress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.post.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/AdobeExpress_29.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.5.0",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.adobe.post",
+    "lastSync": "2025-12-11T08:00:01.662Z"
+  },
+  {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
     "type": "ipa",
     "name": "Widgetsmith",
