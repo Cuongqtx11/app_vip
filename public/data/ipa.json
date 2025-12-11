@@ -18,6 +18,24 @@
     "lastSync": "2025-12-10T22:00:01.672Z"
   },
   {
+    "id": "ipa-me.imgbase.videoday-3.6.0",
+    "type": "ipa",
+    "name": "VDIT",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/VDIT_3.6.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.6.0",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "me.imgbase.videoday",
+    "lastSync": "2025-12-11T00:00:01.406Z"
+  },
+  {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
     "type": "ipa",
     "name": "Widgetsmith",
