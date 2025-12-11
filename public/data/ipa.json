@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.iPwners.Plonkan-13.15",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Buddy_13.15_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.15",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2025-12-11T19:00:01.498Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.1",
     "type": "ipa",
     "name": "VSCO",
@@ -287,6 +305,43 @@
     "source": "apptesters",
     "bundleID": "com.leapingcoyote.rungo",
     "lastSync": "2025-12-11T17:00:01.712Z"
+  },
+  {
+    "id": "ipa-com.calisthenics.thenx-6.5.4",
+    "type": "ipa",
+    "name": "Thenx",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.calisthenics.thenx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social",
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/Thenx_6.5.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.4",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.calisthenics.thenx",
+    "lastSync": "2025-12-11T19:00:01.499Z"
+  },
+  {
+    "id": "ipa-com.shred.shredlabs-5.3.5",
+    "type": "ipa",
+    "name": "SHRED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shred.shredlabs.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/SHRED_5.3.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.5",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.shred.shredlabs",
+    "lastSync": "2025-12-11T19:00:01.499Z"
   },
   {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
