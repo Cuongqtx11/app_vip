@@ -163,6 +163,60 @@
     "lastSync": "2025-12-11T10:00:01.598Z"
   },
   {
+    "id": "ipa-com.zerone.hidesktop-4.3.65",
+    "type": "ipa",
+    "name": "HiWidget",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zerone.hidesktop.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/HiWidget_4.3.65_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.65",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.zerone.hidesktop",
+    "lastSync": "2025-12-11T11:00:02.024Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.57.10",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/ColorPop_2.57.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.57.10",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2025-12-11T11:00:02.024Z"
+  },
+  {
+    "id": "ipa-com.mwm.sampler-app-4.12.00",
+    "type": "ipa",
+    "name": "BeatMakerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.sampler-app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/BeatMakerPro_4.12.00_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.12.00",
+    "developer": "khomodvip",
+    "date": "2025-12-11",
+    "source": "apptesters",
+    "bundleID": "com.mwm.sampler-app",
+    "lastSync": "2025-12-11T11:00:02.025Z"
+  },
+  {
     "id": "ipa-com.crossforward.WidgetSmith-8.1.1",
     "type": "ipa",
     "name": "Widgetsmith",
