@@ -433,6 +433,24 @@
     "lastSync": "2025-12-12T15:00:01.678Z"
   },
   {
+    "id": "ipa-com.evolve.helm-3.166.1",
+    "type": "ipa",
+    "name": "Rest",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.evolve.helm.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Rest_3.166.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.166.1",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.evolve.helm",
+    "lastSync": "2025-12-12T16:00:01.862Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.1",
     "type": "ipa",
     "name": "VSCO",
