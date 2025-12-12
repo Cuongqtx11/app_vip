@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.jakemor.firness-ai-15.0",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/FitnessAI_15.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.0",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2025-12-12T21:00:01.847Z"
+  },
+  {
     "id": "ipa-com.iPwners.Plonkan-13.15",
     "type": "ipa",
     "name": "Buddy",
