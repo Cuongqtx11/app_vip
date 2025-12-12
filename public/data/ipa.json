@@ -36,6 +36,168 @@
     "lastSync": "2025-12-11T21:00:01.482Z"
   },
   {
+    "id": "ipa-com.alltrails.AllTrails-25.12.20",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/AllTrails_25.12.20_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.12.20",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2025-12-12T00:00:01.600Z"
+  },
+  {
+    "id": "ipa-app.tripsy.ios-3.7.0",
+    "type": "ipa",
+    "name": "Tripsy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.tripsy.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Tripsy_3.7.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.0",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "app.tripsy.ios",
+    "lastSync": "2025-12-12T00:00:01.601Z"
+  },
+  {
+    "id": "ipa-com.ibit.UNPOSED-4.6.0",
+    "type": "ipa",
+    "name": "Unscripted",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ibit.UNPOSED.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Unscripted_4.6.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.6.0",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.ibit.UNPOSED",
+    "lastSync": "2025-12-12T00:00:01.601Z"
+  },
+  {
+    "id": "ipa-com.ookla.speedtest-6.5.0",
+    "type": "ipa",
+    "name": "Speedtest",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ookla.speedtest.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Speedtest_6.5.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.0",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.ookla.speedtest",
+    "lastSync": "2025-12-12T00:00:01.601Z"
+  },
+  {
+    "id": "ipa-com.travelboast.travelboast-2.16",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/TravelBoast_2.16_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.16",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2025-12-12T00:00:01.601Z"
+  },
+  {
+    "id": "ipa-com.crossforward.pedometer-7.1.1",
+    "type": "ipa",
+    "name": "Pedometer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.crossforward.pedometer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Pedometer_7.1.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.1",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.crossforward.pedometer",
+    "lastSync": "2025-12-12T00:00:01.601Z"
+  },
+  {
+    "id": "ipa-com.peoplefun.wordcross-3.7.0",
+    "type": "ipa",
+    "name": "Wordscapes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.peoplefun.wordcross.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Wordscapes_3.7.0_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.0",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.peoplefun.wordcross",
+    "lastSync": "2025-12-12T00:00:01.602Z"
+  },
+  {
+    "id": "ipa-org.iggymedia.periodtracker-9.93.3",
+    "type": "ipa",
+    "name": "Flo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.iggymedia.periodtracker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/Flo_9.93.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.93.3",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "org.iggymedia.periodtracker",
+    "lastSync": "2025-12-12T00:00:01.602Z"
+  },
+  {
+    "id": "ipa-com.icecoldapps.fileconverter-24.2.4",
+    "type": "ipa",
+    "name": "FileConverter",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.icecoldapps.fileconverter.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/FileConverter_24.2.4_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "24.2.4",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.icecoldapps.fileconverter",
+    "lastSync": "2025-12-12T00:00:01.603Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.1",
     "type": "ipa",
     "name": "VSCO",
