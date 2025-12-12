@@ -451,6 +451,24 @@
     "lastSync": "2025-12-12T16:00:01.862Z"
   },
   {
+    "id": "ipa-com.outerspaceapps.itranslate-17.4.63",
+    "type": "ipa",
+    "name": "iTranslate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.outerspaceapps.itranslate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-12-2025/iTranslate_17.4.63_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.4.63",
+    "developer": "khomodvip",
+    "date": "2025-12-12",
+    "source": "apptesters",
+    "bundleID": "com.outerspaceapps.itranslate",
+    "lastSync": "2025-12-12T17:00:01.688Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-451.0.1",
     "type": "ipa",
     "name": "VSCO",
