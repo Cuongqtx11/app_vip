@@ -272,6 +272,169 @@
     "lastSync": "2025-12-13T13:00:01.436Z"
   },
   {
+    "id": "ipa-com.app.phlow-2.1.3",
+    "type": "ipa",
+    "name": "Phlow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.app.phlow.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/Phlow_2.1.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.3",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.app.phlow",
+    "lastSync": "2025-12-13T14:00:01.774Z"
+  },
+  {
+    "id": "ipa-com.lyftaios-1.127",
+    "type": "ipa",
+    "name": "Lyfta",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lyftaios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/Lyfta_1.127_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.127",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.lyftaios",
+    "lastSync": "2025-12-13T14:00:01.775Z"
+  },
+  {
+    "id": "ipa-ai.befreed.freed-frontend-rn-4.1.5",
+    "type": "ipa",
+    "name": "BeFreed",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ai.befreed.freed-frontend-rn.png",
+    "desc": "Injected with Unlocked All Functions",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/BeFreed_4.1.5_Unlocked_All_Functions_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.5",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "ai.befreed.freed-frontend-rn",
+    "lastSync": "2025-12-13T14:00:01.775Z"
+  },
+  {
+    "id": "ipa-com.oneothergame.workout-for-older-adults-app-6.4.4",
+    "type": "ipa",
+    "name": "SeniorsWorkout",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.oneothergame.workout-for-older-adults-app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/SeniorsWorkout_6.4.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4.4",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.oneothergame.workout-for-older-adults-app",
+    "lastSync": "2025-12-13T14:00:01.775Z"
+  },
+  {
+    "id": "ipa-com.identification.plant-2.71",
+    "type": "ipa",
+    "name": "LeafSnap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.identification.plant.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/LeafSnap_2.71_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.71",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.identification.plant",
+    "lastSync": "2025-12-13T14:00:01.776Z"
+  },
+  {
+    "id": "ipa-com.tr.paraphrasingtool.rewritertool.textrewriter-1.5.5",
+    "type": "ipa",
+    "name": "Paraphrase",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tr.paraphrasingtool.rewritertool.textrewriter.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social",
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/Paraphrase_1.5.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.5",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.tr.paraphrasingtool.rewritertool.textrewriter",
+    "lastSync": "2025-12-13T14:00:01.776Z"
+  },
+  {
+    "id": "ipa-com.aidana.cardriving.ios-4.9.6",
+    "type": "ipa",
+    "name": "CarParking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aidana.cardriving.ios.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/CarParking_4.9.6_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.9.6",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.aidana.cardriving.ios",
+    "lastSync": "2025-12-13T14:00:01.776Z"
+  },
+  {
+    "id": "ipa-com.hiiker.hiiker-26.1.12",
+    "type": "ipa",
+    "name": "HiiKER",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hiiker.hiiker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/HiiKER_26.1.12_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1.12",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.hiiker.hiiker",
+    "lastSync": "2025-12-13T14:00:01.776Z"
+  },
+  {
+    "id": "ipa-com.limepresso.shiftworkcalendar-2.4.2",
+    "type": "ipa",
+    "name": "Spoke",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.limepresso.shiftworkcalendar.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/Spoke_2.4.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.2",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.limepresso.shiftworkcalendar",
+    "lastSync": "2025-12-13T14:00:01.776Z"
+  },
+  {
     "id": "ipa-com.iPwners.Plonkan-13.15",
     "type": "ipa",
     "name": "Buddy",
