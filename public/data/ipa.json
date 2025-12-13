@@ -507,6 +507,24 @@
     "lastSync": "2025-12-13T15:00:01.701Z"
   },
   {
+    "id": "ipa-com.offlinemusic-3.7.6",
+    "type": "ipa",
+    "name": "OfflineMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.offlinemusic.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/OfflineMusic_3.7.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.6",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.offlinemusic",
+    "lastSync": "2025-12-13T16:00:01.863Z"
+  },
+  {
     "id": "ipa-com.iPwners.Plonkan-13.15",
     "type": "ipa",
     "name": "Buddy",
