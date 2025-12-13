@@ -18,6 +18,42 @@
     "lastSync": "2025-12-13T19:00:01.680Z"
   },
   {
+    "id": "ipa-com.atebits.Tweetie2-11.48",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/X_11.48_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.48",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-12-13T22:00:01.722Z"
+  },
+  {
+    "id": "ipa-com.letterboxd.LetterboxdApp-4.8.4",
+    "type": "ipa",
+    "name": "Letterboxd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.letterboxd.LetterboxdApp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Letterboxd_4.8.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.8.4",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.letterboxd.LetterboxdApp",
+    "lastSync": "2025-12-13T22:00:01.723Z"
+  },
+  {
     "id": "ipa-com.jakemor.firness-ai-15.0",
     "type": "ipa",
     "name": "FitnessAI",
