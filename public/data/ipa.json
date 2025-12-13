@@ -162,6 +162,24 @@
     "lastSync": "2025-12-13T04:00:01.635Z"
   },
   {
+    "id": "ipa-com.grey.swiftcamera-2.5.48",
+    "type": "ipa",
+    "name": "NoFusion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grey.swiftcamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/NoFusion_2.5.48_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.48",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.grey.swiftcamera",
+    "lastSync": "2025-12-13T05:00:01.634Z"
+  },
+  {
     "id": "ipa-com.iPwners.Plonkan-13.15",
     "type": "ipa",
     "name": "Buddy",
