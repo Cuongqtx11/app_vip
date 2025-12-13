@@ -54,6 +54,96 @@
     "lastSync": "2025-12-12T22:00:02.027Z"
   },
   {
+    "id": "ipa-com.google.ios.youtube-20.50.6",
+    "type": "ipa",
+    "name": "YouTubeOLED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/YouTubeOLED_20.50.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.50.6",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.google.ios.youtube",
+    "lastSync": "2025-12-13T01:00:01.376Z"
+  },
+  {
+    "id": "ipa-com.lyrebirdstudio.facelab-4.45.0",
+    "type": "ipa",
+    "name": "FaceLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lyrebirdstudio.facelab.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/FaceLab_4.45.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.45.0",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.lyrebirdstudio.facelab",
+    "lastSync": "2025-12-13T01:00:01.377Z"
+  },
+  {
+    "id": "ipa-com.nextgen.reelsapp-7.3",
+    "type": "ipa",
+    "name": "ReelsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nextgen.reelsapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/ReelsApp_7.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.3",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.nextgen.reelsapp",
+    "lastSync": "2025-12-13T01:00:01.377Z"
+  },
+  {
+    "id": "ipa-com.bitsmedia.muslimpro-16.19",
+    "type": "ipa",
+    "name": "MuslimPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bitsmedia.muslimpro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/MuslimPro_16.19_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.19",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.bitsmedia.muslimpro",
+    "lastSync": "2025-12-13T01:00:01.378Z"
+  },
+  {
+    "id": "ipa-com.inakitajes.Calisthenial-25.12.0",
+    "type": "ipa",
+    "name": "Calisteniapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.inakitajes.Calisthenial.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/Calisteniapp_25.12.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.12.0",
+    "developer": "khomodvip",
+    "date": "2025-12-13",
+    "source": "apptesters",
+    "bundleID": "com.inakitajes.Calisthenial",
+    "lastSync": "2025-12-13T01:00:01.378Z"
+  },
+  {
     "id": "ipa-com.iPwners.Plonkan-13.15",
     "type": "ipa",
     "name": "Buddy",
