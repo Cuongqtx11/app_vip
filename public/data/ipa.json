@@ -378,6 +378,222 @@
     "lastSync": "2025-12-14T17:00:01.736Z"
   },
   {
+    "id": "ipa-com.readdle.Scanner-8.32.2",
+    "type": "ipa",
+    "name": "ScannerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.Scanner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/ScannerPro_8.32.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.32.2",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.readdle.Scanner",
+    "lastSync": "2025-12-14T18:00:01.636Z"
+  },
+  {
+    "id": "ipa-com.readdle.CalendarsLite-5.37.12",
+    "type": "ipa",
+    "name": "Calendars",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.CalendarsLite.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Calendars_5.37.12_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.37.12",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.readdle.CalendarsLite",
+    "lastSync": "2025-12-14T18:00:01.636Z"
+  },
+  {
+    "id": "ipa-com.frameoneapps.Crsel-1.2",
+    "type": "ipa",
+    "name": "Crsel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Crsel_1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.2",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.frameoneapps.Crsel",
+    "lastSync": "2025-12-14T18:00:01.636Z"
+  },
+  {
+    "id": "ipa-com.vitalii.mind-2.5.1",
+    "type": "ipa",
+    "name": "Mindllama",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vitalii.mind.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Mindllama_2.5.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.1",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.vitalii.mind",
+    "lastSync": "2025-12-14T18:00:01.637Z"
+  },
+  {
+    "id": "ipa-com.hubx.imagination-4.3.2",
+    "type": "ipa",
+    "name": "DaVinci",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hubx.imagination.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/DaVinci_4.3.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.2",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.hubx.imagination",
+    "lastSync": "2025-12-14T18:00:01.637Z"
+  },
+  {
+    "id": "ipa-com.dtd.aroundu-2.4.5",
+    "type": "ipa",
+    "name": "DtdSounds",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dtd.aroundu.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/DtdSounds_2.4.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.5",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.dtd.aroundu",
+    "lastSync": "2025-12-14T18:00:01.637Z"
+  },
+  {
+    "id": "ipa-tech.miidii.MDBlank-3.11.1",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.MDBlank.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/_3.11.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.11.1",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.MDBlank",
+    "lastSync": "2025-12-14T18:00:01.637Z"
+  },
+  {
+    "id": "ipa-tech.miidii.MDClock-2.62",
+    "type": "ipa",
+    "name": "MDClock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.MDClock.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/MDClock_2.62_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.62",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.MDClock",
+    "lastSync": "2025-12-14T18:00:01.637Z"
+  },
+  {
+    "id": "ipa-com.LEMO.LemoFM-1.11.1",
+    "type": "ipa",
+    "name": "LEMOFM",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.LEMO.LemoFM.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/LEMOFM_1.11.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.11.1",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.LEMO.LemoFM",
+    "lastSync": "2025-12-14T18:00:01.637Z"
+  },
+  {
+    "id": "ipa-com.luckyclan.artstudio2.ios-5.2.9",
+    "type": "ipa",
+    "name": "ArtstudioPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.luckyclan.artstudio2.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/ArtstudioPro_5.2.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.2.9",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.luckyclan.artstudio2.ios",
+    "lastSync": "2025-12-14T18:00:01.637Z"
+  },
+  {
+    "id": "ipa-tech.miidii.AlbumManager-2.2.1",
+    "type": "ipa",
+    "name": "KKPhoto",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.AlbumManager.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/KKPhoto_2.2.1_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.1",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.AlbumManager",
+    "lastSync": "2025-12-14T18:00:01.638Z"
+  },
+  {
+    "id": "ipa-tech.miidii.SquareDude-1.5.1",
+    "type": "ipa",
+    "name": "SquareDude",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.SquareDude.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/SquareDude_1.5.1_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.1",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.SquareDude",
+    "lastSync": "2025-12-14T18:00:01.638Z"
+  },
+  {
     "id": "ipa-com.jakemor.firness-ai-15.0",
     "type": "ipa",
     "name": "FitnessAI",
