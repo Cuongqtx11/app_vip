@@ -60,7 +60,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.puzzle1studio.ap.brickoutshoottheball.png",
     "desc": "Injected with IGG",
     "tags": [
-      "Utility"
+      "game"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/BrickOut_25.1212.00_IGG_%40thisismanpreets_apptesters.org.ipa",
@@ -312,7 +312,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bcanada.weedfirm2.png",
     "desc": "Injected with IGG",
     "tags": [
-      "Utility"
+      "game"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/WeedFirm2_4.1.11_IGG_%40thisismanpreets_apptesters.org.ipa",
@@ -330,7 +330,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
     "desc": "Injected with noads",
     "tags": [
-      "Utility"
+      "game"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/BlockBlast_6.6.2_noads_%40thisismanpreets_apptesters.org.ipa",
@@ -348,7 +348,6 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
     "desc": "Injected with Premium",
     "tags": [
-      "social",
       "productivity"
     ],
     "badge": "new",
