@@ -108,6 +108,24 @@
     "lastSync": "2025-12-14T01:00:02.457Z"
   },
   {
+    "id": "ipa-com.fujixweekly.fujixweeklyrecipes-1.12.0",
+    "type": "ipa",
+    "name": "FujiXWeekly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fujixweekly.fujixweeklyrecipes.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/FujiXWeekly_1.12.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.12.0",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.fujixweekly.fujixweeklyrecipes",
+    "lastSync": "2025-12-14T07:00:01.317Z"
+  },
+  {
     "id": "ipa-com.jakemor.firness-ai-15.0",
     "type": "ipa",
     "name": "FitnessAI",
