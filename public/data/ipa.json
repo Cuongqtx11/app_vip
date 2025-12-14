@@ -18,6 +18,42 @@
     "lastSync": "2025-12-14T20:00:01.500Z"
   },
   {
+    "id": "ipa-com.softissimo.ReversoContext-16.4",
+    "type": "ipa",
+    "name": "ReversoContext",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.softissimo.ReversoContext.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/ReversoContext_16.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.4",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.softissimo.ReversoContext",
+    "lastSync": "2025-12-14T22:00:01.307Z"
+  },
+  {
+    "id": "ipa-com.fujixweekly.fujixweeklyrecipes-1.12.1",
+    "type": "ipa",
+    "name": "FujiXWeekly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fujixweekly.fujixweeklyrecipes.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/FujiXWeekly_1.12.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.12.1",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.fujixweekly.fujixweeklyrecipes",
+    "lastSync": "2025-12-14T22:00:01.308Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.25.0",
     "type": "ipa",
     "name": "Locket",
