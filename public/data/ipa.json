@@ -198,6 +198,114 @@
     "lastSync": "2025-12-14T15:00:01.552Z"
   },
   {
+    "id": "ipa-com.apperto.piclabhd-5.57.4",
+    "type": "ipa",
+    "name": "DesignLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apperto.piclabhd.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/DesignLab_5.57.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.57.4",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.apperto.piclabhd",
+    "lastSync": "2025-12-14T16:00:02.122Z"
+  },
+  {
+    "id": "ipa-co.detail.duo-5.4.2",
+    "type": "ipa",
+    "name": "Detail",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.detail.duo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Detail_5.4.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.2",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "co.detail.duo",
+    "lastSync": "2025-12-14T16:00:02.122Z"
+  },
+  {
+    "id": "ipa-com.lappir.carnivore-2.0",
+    "type": "ipa",
+    "name": "Carnivore",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lappir.carnivore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Carnivore_2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.lappir.carnivore",
+    "lastSync": "2025-12-14T16:00:02.122Z"
+  },
+  {
+    "id": "ipa-com.picretouch.photoeditor-1.1.2",
+    "type": "ipa",
+    "name": "AIRetouch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picretouch.photoeditor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/AIRetouch_1.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.2",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.picretouch.photoeditor",
+    "lastSync": "2025-12-14T16:00:02.123Z"
+  },
+  {
+    "id": "ipa-instapreview-6.8.0",
+    "type": "ipa",
+    "name": "Inpreview",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/instapreview.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Inpreview_6.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.8.0",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "instapreview",
+    "lastSync": "2025-12-14T16:00:02.123Z"
+  },
+  {
+    "id": "ipa-com.momentogifs.Momento-7.5.2",
+    "type": "ipa",
+    "name": "Momento",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.momentogifs.Momento.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Momento_7.5.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.5.2",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.momentogifs.Momento",
+    "lastSync": "2025-12-14T16:00:02.124Z"
+  },
+  {
     "id": "ipa-com.jakemor.firness-ai-15.0",
     "type": "ipa",
     "name": "FitnessAI",
