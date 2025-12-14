@@ -162,6 +162,24 @@
     "lastSync": "2025-12-14T11:00:01.616Z"
   },
   {
+    "id": "ipa-com.getupnote.ios-9.15.0",
+    "type": "ipa",
+    "name": "UpNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getupnote.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/UpNote_9.15.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.15.0",
+    "developer": "khomodvip",
+    "date": "2025-12-14",
+    "source": "apptesters",
+    "bundleID": "com.getupnote.ios",
+    "lastSync": "2025-12-14T12:00:01.808Z"
+  },
+  {
     "id": "ipa-com.jakemor.firness-ai-15.0",
     "type": "ipa",
     "name": "FitnessAI",
