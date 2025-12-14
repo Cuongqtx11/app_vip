@@ -42,7 +42,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.letterboxd.LetterboxdApp.png",
     "desc": "Injected with Pro",
     "tags": [
-      "social"
+      "null"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-12-2025/Letterboxd_4.8.4_Pro_%40thisismanpreets_apptesters.org.ipa",
@@ -204,7 +204,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nextgen.reelsapp.png",
     "desc": "Injected with Pro",
     "tags": [
-      "social"
+      "null"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/ReelsApp_7.3_Pro_%40thisismanpreets_apptesters.org.ipa",
@@ -476,7 +476,6 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tr.paraphrasingtool.rewritertool.textrewriter.png",
     "desc": "Injected with Premium",
     "tags": [
-      "social",
       "utility"
     ],
     "badge": "new",
@@ -567,7 +566,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.uqxuwtxbbu.parkingjam.png",
     "desc": "Injected with noads",
     "tags": [
-      "social"
+      "game"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-12-2025/ParkingJam3D_229.0.6_noads_%40thisismanpreets_apptesters.org.ipa",
@@ -1017,7 +1016,6 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iptv.player.png",
     "desc": "Injected with Pro",
     "tags": [
-      "social",
       "music"
     ],
     "badge": "new",
@@ -1199,7 +1197,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.post.png",
     "desc": "Injected with Subscription Unlocked",
     "tags": [
-      "social"
+      "photo"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/AdobeExpress_29.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
@@ -1343,7 +1341,7 @@
     "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
     "desc": "Injected with Subscription Unlocked",
     "tags": [
-      "social"
+      "null"
     ],
     "badge": "new",
     "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-12-2025/RiseSleep_0.1.553_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
