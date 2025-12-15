@@ -486,6 +486,114 @@
     "lastSync": "2025-12-15T11:00:01.809Z"
   },
   {
+    "id": "ipa-com.fishbrain.app-9.44.0",
+    "type": "ipa",
+    "name": "Fishbrain",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fishbrain.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Fishbrain_9.44.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.44.0",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.fishbrain.app",
+    "lastSync": "2025-12-15T12:00:01.728Z"
+  },
+  {
+    "id": "ipa-com.gunthermarktl.stepapp-8.6.1",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/StepsApp_8.6.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.1",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2025-12-15T12:00:01.728Z"
+  },
+  {
+    "id": "ipa-uk.os.osmaps-5.5.4",
+    "type": "ipa",
+    "name": "OSMaps",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uk.os.osmaps.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/OSMaps_5.5.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.4",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "uk.os.osmaps",
+    "lastSync": "2025-12-15T12:00:01.728Z"
+  },
+  {
+    "id": "ipa-com.myswimpro.apps.MySwimPro-8.34.4",
+    "type": "ipa",
+    "name": "MySwimPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myswimpro.apps.MySwimPro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/MySwimPro_8.34.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.34.4",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.myswimpro.apps.MySwimPro",
+    "lastSync": "2025-12-15T12:00:01.729Z"
+  },
+  {
+    "id": "ipa-com.roehl.habitkit-1.14.4",
+    "type": "ipa",
+    "name": "HabitKit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.roehl.habitkit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/HabitKit_1.14.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.14.4",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.roehl.habitkit",
+    "lastSync": "2025-12-15T12:00:01.729Z"
+  },
+  {
+    "id": "ipa-com.moonlab.unfoldstories-8.152.0",
+    "type": "ipa",
+    "name": "Unfold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonlab.unfoldstories.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Unfold_8.152.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.152.0",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.moonlab.unfoldstories",
+    "lastSync": "2025-12-15T12:00:01.729Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.25.0",
     "type": "ipa",
     "name": "Locket",
