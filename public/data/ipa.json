@@ -108,6 +108,42 @@
     "lastSync": "2025-12-15T01:00:01.998Z"
   },
   {
+    "id": "ipa-com.mangacrush.ios-4.11",
+    "type": "ipa",
+    "name": "Tachimanga",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mangacrush.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Tachimanga_4.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.11",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.mangacrush.ios",
+    "lastSync": "2025-12-15T02:00:02.028Z"
+  },
+  {
+    "id": "ipa-com.internet-rocks.codescanner-2025.12.2",
+    "type": "ipa",
+    "name": "QrCode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/QrCode_2025.12.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.12.2",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.internet-rocks.codescanner",
+    "lastSync": "2025-12-15T02:00:02.029Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.25.0",
     "type": "ipa",
     "name": "Locket",
