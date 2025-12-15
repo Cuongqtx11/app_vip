@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.iPwners.Plonkan-13.17",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Buddy_13.17_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.17",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2025-12-15T19:00:01.873Z"
+  },
+  {
+    "id": "ipa-com.adobe.fresco.ios-7.1.0",
+    "type": "ipa",
+    "name": "AdobeFresco",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.fresco.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/AdobeFresco_7.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.adobe.fresco.ios",
+    "lastSync": "2025-12-15T19:00:01.874Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
@@ -754,6 +790,24 @@
     "source": "apptesters",
     "bundleID": "com.dr1ven.eraser",
     "lastSync": "2025-12-15T18:00:01.793Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.18.03",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/edjingMix_8.18.03_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.18.03",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2025-12-15T19:00:01.874Z"
   },
   {
     "id": "ipa-com.locket.Locket-2.25.0",
