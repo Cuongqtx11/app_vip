@@ -594,6 +594,132 @@
     "lastSync": "2025-12-15T12:00:01.729Z"
   },
   {
+    "id": "ipa-com.truesoftware.TrueCallerOther-14.47.5",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Truecaller_14.47.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.47.5",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2025-12-15T13:00:02.030Z"
+  },
+  {
+    "id": "ipa-com.limepresso.pomodorofree-4.1.4",
+    "type": "ipa",
+    "name": "FocusKeeper",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.limepresso.pomodorofree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/FocusKeeper_4.1.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.4",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.limepresso.pomodorofree",
+    "lastSync": "2025-12-15T13:00:02.030Z"
+  },
+  {
+    "id": "ipa-com.halfbrick.jetpack-1.103.2",
+    "type": "ipa",
+    "name": "Jetpack",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.halfbrick.jetpack.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Jetpack_1.103.2_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.103.2",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.halfbrick.jetpack",
+    "lastSync": "2025-12-15T13:00:02.031Z"
+  },
+  {
+    "id": "ipa-dance.fitness.app-2.78",
+    "type": "ipa",
+    "name": "Dancebit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dance.fitness.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Dancebit_2.78_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.78",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "dance.fitness.app",
+    "lastSync": "2025-12-15T13:00:02.031Z"
+  },
+  {
+    "id": "ipa-com.saltycrackers.daygram-5.3.8",
+    "type": "ipa",
+    "name": "Daygram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.saltycrackers.daygram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Daygram_5.3.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.8",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.saltycrackers.daygram",
+    "lastSync": "2025-12-15T13:00:02.031Z"
+  },
+  {
+    "id": "ipa-com.northstar.gratitude-5.2.2",
+    "type": "ipa",
+    "name": "Gratitude",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.northstar.gratitude.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/Gratitude_5.2.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.2.2",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "com.northstar.gratitude",
+    "lastSync": "2025-12-15T13:00:02.031Z"
+  },
+  {
+    "id": "ipa-app.vocalimage.bessia-8.35.6",
+    "type": "ipa",
+    "name": "VocalImage",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.vocalimage.bessia.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-12-2025/VocalImage_8.35.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.35.6",
+    "developer": "khomodvip",
+    "date": "2025-12-15",
+    "source": "apptesters",
+    "bundleID": "app.vocalimage.bessia",
+    "lastSync": "2025-12-15T13:00:02.031Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.25.0",
     "type": "ipa",
     "name": "Locket",
