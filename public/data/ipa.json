@@ -972,6 +972,96 @@
     "lastSync": "2025-12-16T13:00:01.964Z"
   },
   {
+    "id": "ipa-fi.twomenandadog.zombiecatchers-1.58.7",
+    "type": "ipa",
+    "name": "ZombieCatchers",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fi.twomenandadog.zombiecatchers.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "Game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/ZombieCatchers_1.58.7_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.58.7",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "fi.twomenandadog.zombiecatchers",
+    "lastSync": "2025-12-16T14:00:01.730Z"
+  },
+  {
+    "id": "ipa-com.mwm.guitartuner-3.20.01",
+    "type": "ipa",
+    "name": "TunerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.guitartuner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/TunerPro_3.20.01_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.20.01",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.guitartuner",
+    "lastSync": "2025-12-16T14:00:01.730Z"
+  },
+  {
+    "id": "ipa-com.lexwarelabs.goodmorning-6.25.49",
+    "type": "ipa",
+    "name": "SleepCycle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lexwarelabs.goodmorning.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/SleepCycle_6.25.49_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.25.49",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.lexwarelabs.goodmorning",
+    "lastSync": "2025-12-16T14:00:01.731Z"
+  },
+  {
+    "id": "ipa-com.evolve.helm-3.167.0",
+    "type": "ipa",
+    "name": "Rest",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.evolve.helm.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Rest_3.167.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.167.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.evolve.helm",
+    "lastSync": "2025-12-16T14:00:01.731Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.57.11",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/ColorPop_2.57.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.57.11",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2025-12-16T14:00:01.731Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
