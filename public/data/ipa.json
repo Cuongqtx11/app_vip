@@ -504,6 +504,132 @@
     "lastSync": "2025-12-16T09:00:02.431Z"
   },
   {
+    "id": "ipa-com.mwm.piano-app-3.54.02",
+    "type": "ipa",
+    "name": "Piano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.piano-app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Piano_3.54.02_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.54.02",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.piano-app",
+    "lastSync": "2025-12-16T10:00:01.777Z"
+  },
+  {
+    "id": "ipa-com.morpholioapps.trace-6.81",
+    "type": "ipa",
+    "name": "Trace",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.morpholioapps.trace.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Trace_6.81_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.81",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.morpholioapps.trace",
+    "lastSync": "2025-12-16T10:00:01.777Z"
+  },
+  {
+    "id": "ipa-com.burbn.barcelona-410.0.0",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Threads_410.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "410.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2025-12-16T10:00:01.777Z"
+  },
+  {
+    "id": "ipa-com.beelinguapp.beelinguapp-3.9.0",
+    "type": "ipa",
+    "name": "Beelinguapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beelinguapp.beelinguapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Beelinguapp_3.9.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.beelinguapp.beelinguapp",
+    "lastSync": "2025-12-16T10:00:01.777Z"
+  },
+  {
+    "id": "ipa-com.bandlab.bandlab.iphone-11.14.0",
+    "type": "ipa",
+    "name": "BandLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bandlab.bandlab.iphone.png",
+    "desc": "Injected with Boost Membership",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/BandLab_11.14.0_Boost_Membership_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.14.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.bandlab.bandlab.iphone",
+    "lastSync": "2025-12-16T10:00:01.778Z"
+  },
+  {
+    "id": "ipa-co.bergen.Darkroom-7.0.3",
+    "type": "ipa",
+    "name": "Darkroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bergen.Darkroom.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Darkroom_7.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.3",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "co.bergen.Darkroom",
+    "lastSync": "2025-12-16T10:00:01.778Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.6.3",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/BlockBlast_6.6.3_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.3",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2025-12-16T10:00:01.778Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
