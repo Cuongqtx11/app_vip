@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.getmotobit.motobit-1.0.52",
+    "type": "ipa",
+    "name": "Motobit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmotobit.motobit.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "vip",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Motobit_1.0.52_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.52",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.getmotobit.motobit",
+    "lastSync": "2025-12-16T21:00:02.167Z"
+  },
+  {
     "id": "ipa-com.risesci.nyx-0.1.555",
     "type": "ipa",
     "name": "RiseSleep",
@@ -14883,6 +14901,24 @@
     "version": "3.7.23",
     "developer": "Cuios",
     "date": "2025-06-22"
+  },
+  {
+    "id": "ipa-com.mindsethealth.ibs-47.0",
+    "type": "ipa",
+    "name": "Nerva",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mindsethealth.ibs.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "vip",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Nerva_47.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "47.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.mindsethealth.ibs",
+    "lastSync": "2025-12-16T21:00:01.941Z"
   },
   {
     "id": "ipa-com.burbn.instagram-410.0.0",
