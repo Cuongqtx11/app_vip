@@ -198,6 +198,78 @@
     "lastSync": "2025-12-16T00:00:01.663Z"
   },
   {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.21.0",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/MergeCooking_1.21.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.21.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2025-12-16T01:00:01.686Z"
+  },
+  {
+    "id": "ipa-io.betterhalf.app-2.64.0",
+    "type": "ipa",
+    "name": "Paired",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.betterhalf.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Paired_2.64.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.64.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "io.betterhalf.app",
+    "lastSync": "2025-12-16T01:00:01.687Z"
+  },
+  {
+    "id": "ipa-com.na.istb-1.29.2",
+    "type": "ipa",
+    "name": "iSTB",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.na.istb.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/iSTB_1.29.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.29.2",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.na.istb",
+    "lastSync": "2025-12-16T01:00:01.687Z"
+  },
+  {
+    "id": "ipa-com.lingodeer-3.1.2",
+    "type": "ipa",
+    "name": "LingoDeer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lingodeer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/LingoDeer_3.1.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.2",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.lingodeer",
+    "lastSync": "2025-12-16T01:00:01.687Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
