@@ -108,6 +108,96 @@
     "lastSync": "2025-12-15T21:00:01.648Z"
   },
   {
+    "id": "ipa-com.headway.books-360.3",
+    "type": "ipa",
+    "name": "Headway",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.headway.books.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Headway_360.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "360.3",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.headway.books",
+    "lastSync": "2025-12-16T00:00:01.657Z"
+  },
+  {
+    "id": "ipa-com.coinidentifier.identifycoins-2.12.0",
+    "type": "ipa",
+    "name": "CoinSnap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.coinidentifier.identifycoins.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/CoinSnap_2.12.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.12.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.coinidentifier.identifycoins",
+    "lastSync": "2025-12-16T00:00:01.658Z"
+  },
+  {
+    "id": "ipa-com.locket.Locket-2.26.0",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Locket_2.26.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.26.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2025-12-16T00:00:01.658Z"
+  },
+  {
+    "id": "ipa-com.gingerlabs.Notability-15.3",
+    "type": "ipa",
+    "name": "Notability",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gingerlabs.Notability.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Notability_15.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.3",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.gingerlabs.Notability",
+    "lastSync": "2025-12-16T00:00:01.658Z"
+  },
+  {
+    "id": "ipa-com.madarsoft.fitness-16.5",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/_16.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.5",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2025-12-16T00:00:01.663Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
