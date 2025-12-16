@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.myfitnesspal.mfp-25.50.0",
+    "type": "ipa",
+    "name": "MyFitnessPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myfitnesspal.mfp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "updated",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/MyFitnessPal_25.50.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.50.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.myfitnesspal.mfp",
+    "lastSync": "2025-12-16T22:00:04.993Z"
+  },
+  {
     "id": "ipa-com.getmotobit.motobit-1.0.52",
     "type": "ipa",
     "name": "Motobit",
@@ -14901,6 +14919,24 @@
     "version": "3.7.23",
     "developer": "Cuios",
     "date": "2025-06-22"
+  },
+  {
+    "id": "ipa-com.mobivalley.LookAroundApp-1.46.0",
+    "type": "ipa",
+    "name": "PlaceGuesser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobivalley.LookAroundApp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "game"
+    ],
+    "badge": "vip",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/PlaceGuesser_1.46.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.46.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.mobivalley.LookAroundApp",
+    "lastSync": "2025-12-16T22:00:02.260Z"
   },
   {
     "id": "ipa-com.mindsethealth.ibs-47.0",
