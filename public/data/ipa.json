@@ -486,6 +486,24 @@
     "lastSync": "2025-12-16T08:00:01.884Z"
   },
   {
+    "id": "ipa-eu.gowod-5.4.0",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/GOWOD_5.4.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2025-12-16T09:00:02.431Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
