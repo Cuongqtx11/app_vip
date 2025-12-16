@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.mcdiamondfinder.app-4.0.1",
+    "type": "ipa",
+    "name": "DiamondFinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mcdiamondfinder.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "entertainment"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/DiamondFinder_4.0.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.1",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.mcdiamondfinder.app",
+    "lastSync": "2025-12-16T18:00:01.716Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.28.0",
     "type": "ipa",
     "name": "Action",
@@ -14829,6 +14847,24 @@
     "version": "3.7.23",
     "developer": "Cuios",
     "date": "2025-06-22"
+  },
+  {
+    "id": "ipa-com.burbn.instagram-410.0.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Instagram_410.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "410.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2025-12-16T18:00:01.592Z"
   },
   {
     "id": "ipa-me.imgbase.videoday-3.6.1",
