@@ -630,6 +630,42 @@
     "lastSync": "2025-12-16T10:00:01.778Z"
   },
   {
+    "id": "ipa-com.fifteenjugglers.solarwatch-2026.11",
+    "type": "ipa",
+    "name": "SolarWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fifteenjugglers.solarwatch.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/SolarWatch_2026.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.11",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.fifteenjugglers.solarwatch",
+    "lastSync": "2025-12-16T11:00:01.719Z"
+  },
+  {
+    "id": "ipa-com.endel.endel-4.48.436",
+    "type": "ipa",
+    "name": "Endel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.endel.endel.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Endel_4.48.436_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.48.436",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.endel.endel",
+    "lastSync": "2025-12-16T11:00:01.720Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
