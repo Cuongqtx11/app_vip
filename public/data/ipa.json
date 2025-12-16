@@ -846,6 +846,132 @@
     "lastSync": "2025-12-16T12:00:01.641Z"
   },
   {
+    "id": "ipa-com.mfagency.nurture-5.1.8",
+    "type": "ipa",
+    "name": "Eden",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mfagency.nurture.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Eden_5.1.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.1.8",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.mfagency.nurture",
+    "lastSync": "2025-12-16T13:00:01.962Z"
+  },
+  {
+    "id": "ipa-com.tr.paraphrasingtool.rewritertool.textrewriter-1.5.6",
+    "type": "ipa",
+    "name": "Paraphrase",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tr.paraphrasingtool.rewritertool.textrewriter.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Paraphrase_1.5.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.6",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.tr.paraphrasingtool.rewritertool.textrewriter",
+    "lastSync": "2025-12-16T13:00:01.962Z"
+  },
+  {
+    "id": "ipa-co.smartreceipts.ios-5.13.0",
+    "type": "ipa",
+    "name": "SmartReceipts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.smartreceipts.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/SmartReceipts_5.13.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.13.0",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "co.smartreceipts.ios",
+    "lastSync": "2025-12-16T13:00:01.963Z"
+  },
+  {
+    "id": "ipa-DesignTech-SIA.Spendit-2.6.7",
+    "type": "ipa",
+    "name": "Accountit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/DesignTech-SIA.Spendit.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Accountit_2.6.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.6.7",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "DesignTech-SIA.Spendit",
+    "lastSync": "2025-12-16T13:00:01.963Z"
+  },
+  {
+    "id": "ipa-com.moymer.falou-0.0.386",
+    "type": "ipa",
+    "name": "Falou",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moymer.falou.png",
+    "desc": "Injected with Satella",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Falou_0.0.386_Satella_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.0.386",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.moymer.falou",
+    "lastSync": "2025-12-16T13:00:01.964Z"
+  },
+  {
+    "id": "ipa-com.aoklab.fewerphotos-3.2.39",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/swipewipe_3.2.39_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.39",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2025-12-16T13:00:01.964Z"
+  },
+  {
+    "id": "ipa-com.huckleberry-labs.app-0.9.282",
+    "type": "ipa",
+    "name": "Huckleberry",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.huckleberry-labs.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Huckleberry_0.9.282_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.9.282",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.huckleberry-labs.app",
+    "lastSync": "2025-12-16T13:00:01.964Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
