@@ -666,6 +666,186 @@
     "lastSync": "2025-12-16T11:00:01.720Z"
   },
   {
+    "id": "ipa-com.magneticzero.pennies-6.4.12",
+    "type": "ipa",
+    "name": "Pennies",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.magneticzero.pennies.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Pennies_6.4.12_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4.12",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.magneticzero.pennies",
+    "lastSync": "2025-12-16T12:00:01.639Z"
+  },
+  {
+    "id": "ipa-com.pia.lungy-2.9.25",
+    "type": "ipa",
+    "name": "Lungy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.pia.lungy.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Lungy_2.9.25_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.9.25",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.pia.lungy",
+    "lastSync": "2025-12-16T12:00:01.639Z"
+  },
+  {
+    "id": "ipa-com.soundscape.music-9.5.9",
+    "type": "ipa",
+    "name": "Soundscape",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.soundscape.music.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Soundscape_9.5.9_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.5.9",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.soundscape.music",
+    "lastSync": "2025-12-16T12:00:01.639Z"
+  },
+  {
+    "id": "ipa-com.dynamicapps.Vocab-Builder-4.6.14",
+    "type": "ipa",
+    "name": "WordPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dynamicapps.Vocab-Builder.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/WordPal_4.6.14_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.6.14",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.dynamicapps.Vocab-Builder",
+    "lastSync": "2025-12-16T12:00:01.640Z"
+  },
+  {
+    "id": "ipa-com.thewayapp.mobile-1.17.1",
+    "type": "ipa",
+    "name": "TheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thewayapp.mobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/TheWay_1.17.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.17.1",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.thewayapp.mobile",
+    "lastSync": "2025-12-16T12:00:01.640Z"
+  },
+  {
+    "id": "ipa-com.vertventures.stella-3.11.35",
+    "type": "ipa",
+    "name": "Astra",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vertventures.stella.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Astra_3.11.35_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.11.35",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.vertventures.stella",
+    "lastSync": "2025-12-16T12:00:01.640Z"
+  },
+  {
+    "id": "ipa-com.picsart.studio-29.0.3",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/PicsArt_29.0.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.0.3",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2025-12-16T12:00:01.640Z"
+  },
+  {
+    "id": "ipa-com.grandgames.magicsort-0.0.1906",
+    "type": "ipa",
+    "name": "MagicSort",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grandgames.magicsort.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/MagicSort_0.0.1906_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.0.1906",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.grandgames.magicsort",
+    "lastSync": "2025-12-16T12:00:01.640Z"
+  },
+  {
+    "id": "ipa-RVS-Riverside.fm-4.5.5",
+    "type": "ipa",
+    "name": "Riverside",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/RVS-Riverside.fm.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Riverside_4.5.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.5.5",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "RVS-Riverside.fm",
+    "lastSync": "2025-12-16T12:00:01.640Z"
+  },
+  {
+    "id": "ipa-com.limepresso.shiftworkcalendar-2.4.3",
+    "type": "ipa",
+    "name": "Spoke",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.limepresso.shiftworkcalendar.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Spoke_2.4.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.3",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.limepresso.shiftworkcalendar",
+    "lastSync": "2025-12-16T12:00:01.641Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
