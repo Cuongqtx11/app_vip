@@ -270,6 +270,78 @@
     "lastSync": "2025-12-16T01:00:01.687Z"
   },
   {
+    "id": "ipa-com.agiletortoise.Drafts5-49.0.1",
+    "type": "ipa",
+    "name": "Drafts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.agiletortoise.Drafts5.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Drafts_49.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "49.0.1",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.agiletortoise.Drafts5",
+    "lastSync": "2025-12-16T02:00:01.659Z"
+  },
+  {
+    "id": "ipa-com.penguinbit.fastdownload-1.5.22",
+    "type": "ipa",
+    "name": "fGet",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.penguinbit.fastdownload.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/fGet_1.5.22_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.22",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.penguinbit.fastdownload",
+    "lastSync": "2025-12-16T02:00:01.659Z"
+  },
+  {
+    "id": "ipa-dazz.camera.vintagecamera-2.13",
+    "type": "ipa",
+    "name": "Dazz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Dazz_2.13_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.13",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "dazz.camera.vintagecamera",
+    "lastSync": "2025-12-16T02:00:01.659Z"
+  },
+  {
+    "id": "ipa-com.bbauman.Scripty-2.30",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-12-2025/Coconote_2.30_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.30",
+    "developer": "khomodvip",
+    "date": "2025-12-16",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2025-12-16T02:00:01.660Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.1",
     "type": "ipa",
     "name": "MacroFactor",
