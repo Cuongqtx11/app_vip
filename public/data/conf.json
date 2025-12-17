@@ -1,18 +1,5 @@
 [
   {
-    "id": "conf-1760506244014",
-    "type": "conf",
-    "name": "All in One",
-    "icon": "https://cdn-icons-png.freepik.com/512/5622/5622900.png",
-    "desc": "All In One - bật 1 dùng 17 app",
-    "tags": [
-      "vpn"
-    ],
-    "badge": "trending",
-    "link": "https://anotepad.com/notes/debpjbpx",
-    "usage": "All in One 17 app - Youtube Premium, Spotify Pre, SoundCloudGo, VSCO, AlightMotion, PicsArt, Wink, Truecaller,  Lightroom, Kinemaster, CamScanner, BeautyPlus, LocketGold, RevenueCatVip, iTunes, Snow, Meitu,"
-  },
-  {
     "id": "conf-001",
     "name": "Youtube Premium",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
