@@ -1224,6 +1224,78 @@
     "lastSync": "2025-12-17T17:00:02.502Z"
   },
   {
+    "id": "ipa-com.coinidentifier.identifycoins-2.13.0",
+    "type": "ipa",
+    "name": "CoinSnap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.coinidentifier.identifycoins.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/CoinSnap_2.13.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.13.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.coinidentifier.identifycoins",
+    "lastSync": "2025-12-17T18:00:01.913Z"
+  },
+  {
+    "id": "ipa-com.cuilingshi.flipclock-6.16",
+    "type": "ipa",
+    "name": "flipclock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cuilingshi.flipclock.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/flipclock_6.16_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.16",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.cuilingshi.flipclock",
+    "lastSync": "2025-12-17T18:00:01.913Z"
+  },
+  {
+    "id": "ipa-com.kalavision.alfred-2025.26.0",
+    "type": "ipa",
+    "name": "AlfredCamera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kalavision.alfred.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/AlfredCamera_2025.26.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.26.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.kalavision.alfred",
+    "lastSync": "2025-12-17T18:00:01.913Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.18.04",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/edjingMix_8.18.04_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.18.04",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2025-12-17T18:00:01.913Z"
+  },
+  {
     "id": "ipa-com.mcdiamondfinder.app-4.0.1",
     "type": "ipa",
     "name": "DiamondFinder",
