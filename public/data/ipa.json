@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.snowcorp.glowup-3.5.3",
+    "type": "ipa",
+    "name": "GlowUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.glowup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/GlowUp_3.5.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5.3",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.glowup",
+    "lastSync": "2025-12-17T00:00:02.386Z"
+  },
+  {
     "id": "ipa-com.adobe.scan.ios-25.12.16",
     "type": "ipa",
     "name": "AdobeScan",
@@ -14937,6 +14955,42 @@
     "version": "3.7.23",
     "developer": "Cuios",
     "date": "2025-06-22"
+  },
+  {
+    "id": "ipa-com.readdle.CalendarsLite-5.37.13",
+    "type": "ipa",
+    "name": "Calendars",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.CalendarsLite.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Calendars_5.37.13_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.37.13",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.readdle.CalendarsLite",
+    "lastSync": "2025-12-17T00:00:02.087Z"
+  },
+  {
+    "id": "ipa-com.bpmhealth.boostfitness-250",
+    "type": "ipa",
+    "name": "Boostcamp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bpmhealth.boostfitness.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Boostcamp_250_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "250",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.bpmhealth.boostfitness",
+    "lastSync": "2025-12-17T00:00:01.946Z"
   },
   {
     "id": "ipa-com.mobivalley.LookAroundApp-1.46.0",
