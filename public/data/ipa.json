@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-uni.cbum-4.1.24",
+    "type": "ipa",
+    "name": "Stndrd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uni.cbum.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Stndrd_4.1.24_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.24",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "uni.cbum",
+    "lastSync": "2025-12-17T10:00:01.817Z"
+  },
+  {
     "id": "ipa-com.mwm.sampler-app-4.13.01",
     "type": "ipa",
     "name": "BeatMakerPro",
