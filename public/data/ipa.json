@@ -14993,6 +14993,114 @@
     "date": "2025-06-22"
   },
   {
+    "id": "ipa-com.snowcorp.epik-6.5.20",
+    "type": "ipa",
+    "name": "EPIK",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.epik.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/EPIK_6.5.20_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.20",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.epik",
+    "lastSync": "2025-12-17T08:00:02.515Z"
+  },
+  {
+    "id": "ipa-co.detail.duo-5.4.3",
+    "type": "ipa",
+    "name": "Detail",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.detail.duo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Detail_5.4.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.3",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "co.detail.duo",
+    "lastSync": "2025-12-17T08:00:02.407Z"
+  },
+  {
+    "id": "ipa-com.noteful-technologies.noteful-1.4.31",
+    "type": "ipa",
+    "name": "Noteful",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.noteful-technologies.noteful.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Noteful_1.4.31_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.31",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.noteful-technologies.noteful",
+    "lastSync": "2025-12-17T08:00:02.298Z"
+  },
+  {
+    "id": "ipa-org.borrowedcache.ultimate531-5.17.5",
+    "type": "ipa",
+    "name": "KeyLifts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/KeyLifts_5.17.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.5",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "org.borrowedcache.ultimate531",
+    "lastSync": "2025-12-17T08:00:02.190Z"
+  },
+  {
+    "id": "ipa-com.snowcorp.soda-9.6.5",
+    "type": "ipa",
+    "name": "SODA",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.soda.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/SODA_9.6.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.6.5",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.soda",
+    "lastSync": "2025-12-17T08:00:02.080Z"
+  },
+  {
+    "id": "ipa-au.com.savageinteractive.procreate-pocket-4.0.15",
+    "type": "ipa",
+    "name": "Pocket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/au.com.savageinteractive.procreate-pocket.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Pocket_4.0.15_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.15",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "au.com.savageinteractive.procreate-pocket",
+    "lastSync": "2025-12-17T08:00:01.905Z"
+  },
+  {
     "id": "ipa-app.uplens-3.4.4",
     "type": "ipa",
     "name": "Uplens",
