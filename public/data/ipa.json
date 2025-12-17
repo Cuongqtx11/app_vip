@@ -15029,6 +15029,168 @@
     "date": "2025-06-22"
   },
   {
+    "id": "ipa-co.codeleap.bearable-1.0.578",
+    "type": "ipa",
+    "name": "Bearable",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.codeleap.bearable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Bearable_1.0.578_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.578",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "co.codeleap.bearable",
+    "lastSync": "2025-12-17T11:00:02.983Z"
+  },
+  {
+    "id": "ipa-com.macpaw.iosgemini-2.11.0",
+    "type": "ipa",
+    "name": "CleanMyPhone",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.macpaw.iosgemini.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/CleanMyPhone_2.11.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.macpaw.iosgemini",
+    "lastSync": "2025-12-17T11:00:02.818Z"
+  },
+  {
+    "id": "ipa-com.genau.MoneyCircle-2.8.6",
+    "type": "ipa",
+    "name": "MoneyCircle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.genau.MoneyCircle.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/MoneyCircle_2.8.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.6",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.genau.MoneyCircle",
+    "lastSync": "2025-12-17T11:00:02.711Z"
+  },
+  {
+    "id": "ipa-com.napper-6.28.0",
+    "type": "ipa",
+    "name": "Napper",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.napper.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Napper_6.28.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.28.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.napper",
+    "lastSync": "2025-12-17T11:00:02.505Z"
+  },
+  {
+    "id": "ipa-com.stromming.Plants-3.103.0",
+    "type": "ipa",
+    "name": "Planta",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.stromming.Plants.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Planta_3.103.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.103.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.stromming.Plants",
+    "lastSync": "2025-12-17T11:00:02.321Z"
+  },
+  {
+    "id": "ipa-com.mlobodzinski.Stoic-2025.46",
+    "type": "ipa",
+    "name": "stoic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mlobodzinski.Stoic.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/stoic_2025.46_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.46",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.mlobodzinski.Stoic",
+    "lastSync": "2025-12-17T11:00:02.209Z"
+  },
+  {
+    "id": "ipa-me.imgbase.intolive-4.3.5",
+    "type": "ipa",
+    "name": "intoLive",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.intolive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/intoLive_4.3.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.5",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "me.imgbase.intolive",
+    "lastSync": "2025-12-17T11:00:02.088Z"
+  },
+  {
+    "id": "ipa-co.vulcanlabs.moodtracker-8.251215.2",
+    "type": "ipa",
+    "name": "ChatSmith",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.vulcanlabs.moodtracker.png",
+    "desc": "Injected with Satella",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/ChatSmith_8.251215.2_Satella_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.251215.2",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "co.vulcanlabs.moodtracker",
+    "lastSync": "2025-12-17T11:00:01.980Z"
+  },
+  {
+    "id": "ipa-com.hipsterwhale.crossy-7.9.1",
+    "type": "ipa",
+    "name": "CrossyRoad",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hipsterwhale.crossy.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/CrossyRoad_7.9.1_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.9.1",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.hipsterwhale.crossy",
+    "lastSync": "2025-12-17T11:00:01.862Z"
+  },
+  {
     "id": "ipa-overlook.fing-12.11.5",
     "type": "ipa",
     "name": "Fing",
