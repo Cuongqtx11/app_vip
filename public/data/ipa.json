@@ -36,6 +36,60 @@
     "lastSync": "2025-12-17T20:00:01.944Z"
   },
   {
+    "id": "ipa-com.facebook.Facebook-543.0.0",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Facebook_543.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "543.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2025-12-17T21:00:01.894Z"
+  },
+  {
+    "id": "ipa-com.travelboast.travelboast-2.17",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/TravelBoast_2.17_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.17",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2025-12-17T21:00:01.894Z"
+  },
+  {
+    "id": "ipa-app.mmap.mobile-2.7.2",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Soundmap_2.7.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.7.2",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2025-12-17T21:00:01.894Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
