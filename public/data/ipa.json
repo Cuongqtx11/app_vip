@@ -1296,6 +1296,132 @@
     "lastSync": "2025-12-17T18:00:01.913Z"
   },
   {
+    "id": "ipa-au.com.savageinteractive.procreate-5.4.8",
+    "type": "ipa",
+    "name": "Procreate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/au.com.savageinteractive.procreate.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Procreate_5.4.8_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.8",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "au.com.savageinteractive.procreate",
+    "lastSync": "2025-12-17T19:00:02.055Z"
+  },
+  {
+    "id": "ipa-com.shred.shredlabs-5.3.6",
+    "type": "ipa",
+    "name": "SHRED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shred.shredlabs.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/SHRED_5.3.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.6",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.shred.shredlabs",
+    "lastSync": "2025-12-17T19:00:02.056Z"
+  },
+  {
+    "id": "ipa-com.alltrails.AllTrails-25.12.30",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/AllTrails_25.12.30_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.12.30",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2025-12-17T19:00:02.056Z"
+  },
+  {
+    "id": "ipa-com.steinberg.cubasis3-3.8",
+    "type": "ipa",
+    "name": "Cubasis3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.steinberg.cubasis3.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Cubasis3_3.8_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.steinberg.cubasis3",
+    "lastSync": "2025-12-17T19:00:02.056Z"
+  },
+  {
+    "id": "ipa-com.facebook.Messenger-537.0.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Messenger_537.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "537.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2025-12-17T19:00:02.065Z"
+  },
+  {
+    "id": "ipa-co.bergen.Darkroom-7.0.4",
+    "type": "ipa",
+    "name": "Darkroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bergen.Darkroom.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Darkroom_7.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.4",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "co.bergen.Darkroom",
+    "lastSync": "2025-12-17T19:00:02.065Z"
+  },
+  {
+    "id": "ipa-co.bazaart.app-26.0.7",
+    "type": "ipa",
+    "name": "Bazaart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bazaart.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Bazaart_26.0.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.0.7",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "co.bazaart.app",
+    "lastSync": "2025-12-17T19:00:02.065Z"
+  },
+  {
     "id": "ipa-com.mcdiamondfinder.app-4.0.1",
     "type": "ipa",
     "name": "DiamondFinder",
