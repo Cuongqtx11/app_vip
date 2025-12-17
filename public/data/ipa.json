@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.mwm.sampler-app-4.13.01",
+    "type": "ipa",
+    "name": "BeatMakerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.sampler-app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/BeatMakerPro_4.13.01_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.13.01",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.mwm.sampler-app",
+    "lastSync": "2025-12-17T09:00:02.070Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty-2.31",
     "type": "ipa",
     "name": "Coconote",
@@ -14991,6 +15009,24 @@
     "version": "3.7.23",
     "developer": "Cuios",
     "date": "2025-06-22"
+  },
+  {
+    "id": "ipa-overlook.fing-12.11.5",
+    "type": "ipa",
+    "name": "Fing",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/overlook.fing.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Fing_12.11.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.11.5",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "overlook.fing",
+    "lastSync": "2025-12-17T09:00:01.963Z"
   },
   {
     "id": "ipa-com.snowcorp.epik-6.5.20",
