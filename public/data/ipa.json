@@ -648,6 +648,294 @@
     "lastSync": "2025-12-17T12:00:01.923Z"
   },
   {
+    "id": "ipa-geeo.Kwit-4.30.0",
+    "type": "ipa",
+    "name": "Kwit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/geeo.Kwit.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Kwit_4.30.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.30.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "geeo.Kwit",
+    "lastSync": "2025-12-17T13:00:01.802Z"
+  },
+  {
+    "id": "ipa-com.mobilefootie.fotmobpro-1219.0",
+    "type": "ipa",
+    "name": "FotMob",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobilefootie.fotmobpro.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/FotMob_1219.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1219.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.mobilefootie.fotmobpro",
+    "lastSync": "2025-12-17T13:00:01.803Z"
+  },
+  {
+    "id": "ipa-eu.sun.litt-4.9.8",
+    "type": "ipa",
+    "name": "Sunlitt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.sun.litt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Sunlitt_4.9.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.9.8",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "eu.sun.litt",
+    "lastSync": "2025-12-17T13:00:01.803Z"
+  },
+  {
+    "id": "ipa-com.aoklab.fewerphotos-3.2.40",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/swipewipe_3.2.40_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.40",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2025-12-17T13:00:01.807Z"
+  },
+  {
+    "id": "ipa-com.logicalengine.qsei-5.9.4",
+    "type": "ipa",
+    "name": "InvoiceSimple",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.logicalengine.qsei.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/InvoiceSimple_5.9.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.9.4",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.logicalengine.qsei",
+    "lastSync": "2025-12-17T13:00:01.809Z"
+  },
+  {
+    "id": "ipa-com.pronetis.ironballride2-1.4.9",
+    "type": "ipa",
+    "name": "GoingBalls",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.pronetis.ironballride2.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/GoingBalls_1.4.9_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.9",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.pronetis.ironballride2",
+    "lastSync": "2025-12-17T13:00:01.809Z"
+  },
+  {
+    "id": "ipa-ideastudio.Weather-on-the-Way-2.3.1",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/OnTheWay_2.3.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.3.1",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2025-12-17T13:00:01.809Z"
+  },
+  {
+    "id": "ipa-com.thewayapp.mobile-1.17.2",
+    "type": "ipa",
+    "name": "TheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thewayapp.mobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/TheWay_1.17.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.17.2",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.thewayapp.mobile",
+    "lastSync": "2025-12-17T13:00:01.809Z"
+  },
+  {
+    "id": "ipa-ai.parrotpal-175",
+    "type": "ipa",
+    "name": "ParrotPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ai.parrotpal.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/ParrotPal_175_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "175",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "ai.parrotpal",
+    "lastSync": "2025-12-17T13:00:01.809Z"
+  },
+  {
+    "id": "ipa-com.hiiker.hiiker-26.1.13",
+    "type": "ipa",
+    "name": "HiiKER",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hiiker.hiiker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/HiiKER_26.1.13_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1.13",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.hiiker.hiiker",
+    "lastSync": "2025-12-17T13:00:01.810Z"
+  },
+  {
+    "id": "ipa-co.smartreceipts.ios-5.13.1",
+    "type": "ipa",
+    "name": "SmartReceipts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.smartreceipts.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/SmartReceipts_5.13.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.13.1",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "co.smartreceipts.ios",
+    "lastSync": "2025-12-17T13:00:01.810Z"
+  },
+  {
+    "id": "ipa-llc.planeenglish.PlaneEnglish-1.5.13",
+    "type": "ipa",
+    "name": "ARSim",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/llc.planeenglish.PlaneEnglish.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/ARSim_1.5.13_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.13",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "llc.planeenglish.PlaneEnglish",
+    "lastSync": "2025-12-17T13:00:01.810Z"
+  },
+  {
+    "id": "ipa-com.shinobiapp.shinobi-1.2.6",
+    "type": "ipa",
+    "name": "Shinobi",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shinobiapp.shinobi.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Shinobi_1.2.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.2.6",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.shinobiapp.shinobi",
+    "lastSync": "2025-12-17T13:00:01.810Z"
+  },
+  {
+    "id": "ipa-com.unofficialcalculators.payplan-4.1.14",
+    "type": "ipa",
+    "name": "BillTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unofficialcalculators.payplan.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/BillTracker_4.1.14_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.14",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.unofficialcalculators.payplan",
+    "lastSync": "2025-12-17T13:00:01.810Z"
+  },
+  {
+    "id": "ipa-com.choiceapps.recipesfdw-2.2.1",
+    "type": "ipa",
+    "name": "Voicepal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.choiceapps.recipesfdw.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Voicepal_2.2.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.1",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.choiceapps.recipesfdw",
+    "lastSync": "2025-12-17T13:00:01.810Z"
+  },
+  {
+    "id": "ipa-com.unofficialcalculators.payplan-4.1.15",
+    "type": "ipa",
+    "name": "BillTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unofficialcalculators.payplan.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/BillTracker_4.1.15_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.15",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.unofficialcalculators.payplan",
+    "lastSync": "2025-12-17T13:00:01.810Z"
+  },
+  {
     "id": "ipa-com.mcdiamondfinder.app-4.0.1",
     "type": "ipa",
     "name": "DiamondFinder",
