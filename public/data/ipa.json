@@ -936,6 +936,150 @@
     "lastSync": "2025-12-17T13:00:01.810Z"
   },
   {
+    "id": "ipa-com.hubx.imagination-4.3.3",
+    "type": "ipa",
+    "name": "DaVinci",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hubx.imagination.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/DaVinci_4.3.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.3",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.hubx.imagination",
+    "lastSync": "2025-12-17T14:00:01.975Z"
+  },
+  {
+    "id": "ipa-com.yazio.ios.YAZIO-12.63.1",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Yazio_12.63.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.63.1",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2025-12-17T14:00:01.976Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.57.12",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/ColorPop_2.57.12_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.57.12",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2025-12-17T14:00:01.976Z"
+  },
+  {
+    "id": "ipa-com.alightcreative.motion-6.2.46",
+    "type": "ipa",
+    "name": "AlightMotion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/AlightMotion_6.2.46_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.46",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.alightcreative.motion",
+    "lastSync": "2025-12-17T14:00:01.976Z"
+  },
+  {
+    "id": "ipa-com.tiimo.app-3.37.0",
+    "type": "ipa",
+    "name": "Tiimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tiimo.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Tiimo_3.37.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.37.0",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.tiimo.app",
+    "lastSync": "2025-12-17T14:00:01.976Z"
+  },
+  {
+    "id": "ipa-com.JindoBlu.OfflineGamesIOS-3.6.4",
+    "type": "ipa",
+    "name": "OfflineGames",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.JindoBlu.OfflineGamesIOS.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/OfflineGames_3.6.4_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.6.4",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.JindoBlu.OfflineGamesIOS",
+    "lastSync": "2025-12-17T14:00:01.977Z"
+  },
+  {
+    "id": "ipa-com.thegenau.NoteCircle-4.45",
+    "type": "ipa",
+    "name": "NoteCircle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thegenau.NoteCircle.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/NoteCircle_4.45_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.45",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.thegenau.NoteCircle",
+    "lastSync": "2025-12-17T14:00:01.977Z"
+  },
+  {
+    "id": "ipa-com.frameoneapps.Crsel-1.2.11",
+    "type": "ipa",
+    "name": "Crsel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Crsel_1.2.11_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.2.11",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.frameoneapps.Crsel",
+    "lastSync": "2025-12-17T14:00:01.977Z"
+  },
+  {
     "id": "ipa-com.mcdiamondfinder.app-4.0.1",
     "type": "ipa",
     "name": "DiamondFinder",
