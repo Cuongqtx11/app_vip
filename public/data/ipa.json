@@ -14957,6 +14957,60 @@
     "date": "2025-06-22"
   },
   {
+    "id": "ipa-com.kinemaster.kios-8.0.10",
+    "type": "ipa",
+    "name": "KineMaster",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/KineMaster_8.0.10_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.10",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.kinemaster.kios",
+    "lastSync": "2025-12-17T03:00:02.115Z"
+  },
+  {
+    "id": "ipa-com.zerone.hidesktop-4.3.66",
+    "type": "ipa",
+    "name": "HiWidget",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zerone.hidesktop.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/HiWidget_4.3.66_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.66",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "com.zerone.hidesktop",
+    "lastSync": "2025-12-17T03:00:02.003Z"
+  },
+  {
+    "id": "ipa-ventures.slam.minutes-1.9.12",
+    "type": "ipa",
+    "name": "Minutes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ventures.slam.minutes.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-12-2025/Minutes_1.9.12_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9.12",
+    "developer": "khomodvip",
+    "date": "2025-12-17",
+    "source": "apptesters",
+    "bundleID": "ventures.slam.minutes",
+    "lastSync": "2025-12-17T03:00:01.888Z"
+  },
+  {
     "id": "ipa-com.readdle.CalendarsLite-5.37.13",
     "type": "ipa",
     "name": "Calendars",
