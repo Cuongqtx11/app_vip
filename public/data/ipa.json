@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.mwm.procolor-2.57.14",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/ColorPop_2.57.14_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.57.14",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2025-12-17T20:00:01.943Z"
+  },
+  {
+    "id": "ipa-com.wolframalpha.wolframalphaviewer-2.6.1",
+    "type": "ipa",
+    "name": "WolframAlpha",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wolframalpha.wolframalphaviewer.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/WolframAlpha_2.6.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.6.1",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.wolframalpha.wolframalphaviewer",
+    "lastSync": "2025-12-17T20:00:01.944Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
