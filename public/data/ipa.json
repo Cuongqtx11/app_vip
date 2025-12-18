@@ -306,6 +306,60 @@
     "lastSync": "2025-12-18T07:00:01.783Z"
   },
   {
+    "id": "ipa-ventures.slam.minutes-1.9.13",
+    "type": "ipa",
+    "name": "Minutes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ventures.slam.minutes.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Minutes_1.9.13_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9.13",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "ventures.slam.minutes",
+    "lastSync": "2025-12-18T08:00:01.634Z"
+  },
+  {
+    "id": "ipa-com.alohabrowser.alohabrowser-7.14.0",
+    "type": "ipa",
+    "name": "Aloha",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alohabrowser.alohabrowser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Aloha_7.14.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.14.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.alohabrowser.alohabrowser",
+    "lastSync": "2025-12-18T08:00:01.635Z"
+  },
+  {
+    "id": "ipa-com.hubx.imagination-4.3.4",
+    "type": "ipa",
+    "name": "DaVinci",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hubx.imagination.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/DaVinci_4.3.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.4",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.hubx.imagination",
+    "lastSync": "2025-12-18T08:00:01.635Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
