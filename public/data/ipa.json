@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.yengshine.proccd-5.2.1",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/ProCCD_5.2.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.2.1",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2025-12-18T19:00:01.870Z"
+  },
+  {
     "id": "ipa-com.mwm.procolor-2.57.14",
     "type": "ipa",
     "name": "ColorPop",
