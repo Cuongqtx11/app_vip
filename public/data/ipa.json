@@ -558,6 +558,42 @@
     "lastSync": "2025-12-18T14:00:01.964Z"
   },
   {
+    "id": "ipa-io.veed.appstore-8.1.1",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/VEEDCaptions_8.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.1",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2025-12-18T15:00:01.765Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.18.05",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/edjingMix_8.18.05_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.18.05",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2025-12-18T15:00:01.766Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
