@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1766076702_6974",
+    "key": "ZEUE-05EW-RZE3-G74C",
+    "createdAt": "2025-12-18T23:51:42.261396",
+    "expiresAt": "2025-12-19T23:51:42.261434",
+    "maxUses": 5,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "1 days, 5 uses"
+  },
+  {
     "id": "key_1764762438_5624",
     "key": "7CWW-IQXN-OPE7-D3MP",
     "createdAt": "2025-12-03T18:47:18.007784",
