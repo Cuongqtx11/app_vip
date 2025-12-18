@@ -360,6 +360,42 @@
     "lastSync": "2025-12-18T08:00:01.635Z"
   },
   {
+    "id": "ipa-com.camerasideas.Peachy-2.8.0",
+    "type": "ipa",
+    "name": "Peachy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.Peachy.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Peachy_2.8.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.Peachy",
+    "lastSync": "2025-12-18T09:00:02.037Z"
+  },
+  {
+    "id": "ipa-com.picsart.studio-29.1.1",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/PicsArt_29.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.1.1",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2025-12-18T09:00:02.038Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
