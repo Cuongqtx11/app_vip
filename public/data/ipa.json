@@ -630,6 +630,60 @@
     "lastSync": "2025-12-18T16:00:01.881Z"
   },
   {
+    "id": "ipa-com.vigorapps.30DayFitness-6.29.23",
+    "type": "ipa",
+    "name": "30DayFitness",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vigorapps.30DayFitness.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/30DayFitness_6.29.23_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.29.23",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.vigorapps.30DayFitness",
+    "lastSync": "2025-12-18T18:00:01.808Z"
+  },
+  {
+    "id": "ipa-com.visualhype.pedometer-4.10.33",
+    "type": "ipa",
+    "name": "Stepz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.visualhype.pedometer.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Stepz_4.10.33_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.10.33",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.visualhype.pedometer",
+    "lastSync": "2025-12-18T18:00:01.809Z"
+  },
+  {
+    "id": "ipa-com.locket.Locket-2.27.0",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Locket_2.27.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.27.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2025-12-18T18:00:01.809Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
