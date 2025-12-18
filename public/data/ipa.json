@@ -234,6 +234,78 @@
     "lastSync": "2025-12-18T06:00:01.439Z"
   },
   {
+    "id": "ipa-com.campmobile.snow-14.7.0",
+    "type": "ipa",
+    "name": "SNOW",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.campmobile.snow.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/SNOW_14.7.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.7.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.campmobile.snow",
+    "lastSync": "2025-12-18T07:00:01.782Z"
+  },
+  {
+    "id": "ipa-com.hitpaw.photoenhancer-1.93.0",
+    "type": "ipa",
+    "name": "AIMarvels",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hitpaw.photoenhancer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/AIMarvels_1.93.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.93.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.hitpaw.photoenhancer",
+    "lastSync": "2025-12-18T07:00:01.783Z"
+  },
+  {
+    "id": "ipa-com.vixerapp.Vixer-7.0",
+    "type": "ipa",
+    "name": "Vixer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vixerapp.Vixer.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Vixer_7.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.vixerapp.Vixer",
+    "lastSync": "2025-12-18T07:00:01.783Z"
+  },
+  {
+    "id": "ipa-com.templyvideo.Temply-9.0",
+    "type": "ipa",
+    "name": "Temply",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.templyvideo.Temply.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Temply_9.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.0",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.templyvideo.Temply",
+    "lastSync": "2025-12-18T07:00:01.783Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
