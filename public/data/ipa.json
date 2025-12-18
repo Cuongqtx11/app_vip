@@ -486,6 +486,24 @@
     "lastSync": "2025-12-18T11:00:01.730Z"
   },
   {
+    "id": "ipa-com.readdle.CalendarsLite-5.37.14",
+    "type": "ipa",
+    "name": "Calendars",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.CalendarsLite.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-12-2025/Calendars_5.37.14_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.37.14",
+    "developer": "khomodvip",
+    "date": "2025-12-18",
+    "source": "apptesters",
+    "bundleID": "com.readdle.CalendarsLite",
+    "lastSync": "2025-12-18T12:00:01.907Z"
+  },
+  {
     "id": "ipa-uni.cbum-4.1.24",
     "type": "ipa",
     "name": "Stndrd",
