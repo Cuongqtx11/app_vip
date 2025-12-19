@@ -828,6 +828,42 @@
     "lastSync": "2025-12-19T13:00:01.460Z"
   },
   {
+    "id": "ipa-com.outerspaceapps.itranslate-17.4.64",
+    "type": "ipa",
+    "name": "iTranslate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.outerspaceapps.itranslate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/iTranslate_17.4.64_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.4.64",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.outerspaceapps.itranslate",
+    "lastSync": "2025-12-19T14:00:01.401Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.Fitia-20.0.5",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/Fitia_20.0.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.0.5",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2025-12-19T14:00:01.410Z"
+  },
+  {
     "id": "ipa-com.mwm.procolor-2.57.14",
     "type": "ipa",
     "name": "ColorPop",
