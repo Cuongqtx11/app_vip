@@ -522,6 +522,204 @@
     "lastSync": "2025-12-19T09:00:01.595Z"
   },
   {
+    "id": "ipa-com.identification.plant-2.73",
+    "type": "ipa",
+    "name": "LeafSnap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.identification.plant.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/LeafSnap_2.73_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.73",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.identification.plant",
+    "lastSync": "2025-12-19T12:00:01.774Z"
+  },
+  {
+    "id": "ipa-com.pronetis.ironballride2-1.4.11",
+    "type": "ipa",
+    "name": "GoingBalls",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.pronetis.ironballride2.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/GoingBalls_1.4.11_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.11",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.pronetis.ironballride2",
+    "lastSync": "2025-12-19T12:00:01.777Z"
+  },
+  {
+    "id": "ipa-com.vertventures.stella-3.11.37",
+    "type": "ipa",
+    "name": "Astra",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vertventures.stella.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/Astra_3.11.37_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.11.37",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.vertventures.stella",
+    "lastSync": "2025-12-19T12:00:01.777Z"
+  },
+  {
+    "id": "ipa-com.JindoBlu.OfflineGamesIOS-1.51",
+    "type": "ipa",
+    "name": "OfflineGames",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.JindoBlu.OfflineGamesIOS.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/OfflineGames_1.51_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.51",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.JindoBlu.OfflineGamesIOS",
+    "lastSync": "2025-12-19T12:00:01.777Z"
+  },
+  {
+    "id": "ipa-au.com.michaeltigas.MiniOS-1.11.1",
+    "type": "ipa",
+    "name": "dp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/au.com.michaeltigas.MiniOS.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/dp_1.11.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.11.1",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "au.com.michaeltigas.MiniOS",
+    "lastSync": "2025-12-19T12:00:01.778Z"
+  },
+  {
+    "id": "ipa-mobi.digitalminds.itunerfree-10.0.4",
+    "type": "ipa",
+    "name": "myTunerRadio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/mobi.digitalminds.itunerfree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/myTunerRadio_10.0.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.0.4",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "mobi.digitalminds.itunerfree",
+    "lastSync": "2025-12-19T12:00:01.778Z"
+  },
+  {
+    "id": "ipa-io.labhouse.audioapp-2.9.3",
+    "type": "ipa",
+    "name": "SummaryAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.labhouse.audioapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/SummaryAI_2.9.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.9.3",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "io.labhouse.audioapp",
+    "lastSync": "2025-12-19T12:00:01.778Z"
+  },
+  {
+    "id": "ipa-com.mobilefootie.fotmobpro-1221.0",
+    "type": "ipa",
+    "name": "FotMob",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobilefootie.fotmobpro.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/FotMob_1221.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1221.0",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.mobilefootie.fotmobpro",
+    "lastSync": "2025-12-19T12:00:01.778Z"
+  },
+  {
+    "id": "ipa-com.huckleberry-labs.app-0.9.283",
+    "type": "ipa",
+    "name": "Huckleberry",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.huckleberry-labs.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/Huckleberry_0.9.283_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.9.283",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.huckleberry-labs.app",
+    "lastSync": "2025-12-19T12:00:01.778Z"
+  },
+  {
+    "id": "ipa-com.geniussoftware.GeniusScan-8.6.2",
+    "type": "ipa",
+    "name": "GeniusScan",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.geniussoftware.GeniusScan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/GeniusScan_8.6.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.2",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.geniussoftware.GeniusScan",
+    "lastSync": "2025-12-19T12:00:01.779Z"
+  },
+  {
+    "id": "ipa-com.genau.MemoryCircle-3.1.7",
+    "type": "ipa",
+    "name": "VocaCircle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.genau.MemoryCircle.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/VocaCircle_3.1.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.7",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.genau.MemoryCircle",
+    "lastSync": "2025-12-19T12:00:01.779Z"
+  },
+  {
     "id": "ipa-com.mwm.procolor-2.57.14",
     "type": "ipa",
     "name": "ColorPop",
