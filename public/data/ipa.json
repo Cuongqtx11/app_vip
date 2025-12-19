@@ -720,6 +720,114 @@
     "lastSync": "2025-12-19T12:00:01.779Z"
   },
   {
+    "id": "ipa-jp.co.bandainamcoent.BNEI0333-6.16.0",
+    "type": "ipa",
+    "name": "DBLEGENDS",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/jp.co.bandainamcoent.BNEI0333.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/DBLEGENDS_6.16.0_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.16.0",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "jp.co.bandainamcoent.BNEI0333",
+    "lastSync": "2025-12-19T13:00:01.452Z"
+  },
+  {
+    "id": "ipa-co.videobakery.ReelsEditor-1.4.14",
+    "type": "ipa",
+    "name": "ReelMaker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.videobakery.ReelsEditor.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/ReelMaker_1.4.14_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.14",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "co.videobakery.ReelsEditor",
+    "lastSync": "2025-12-19T13:00:01.452Z"
+  },
+  {
+    "id": "ipa-labs.mehmet.gptalk-1.9.3",
+    "type": "ipa",
+    "name": "GPTalk",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/labs.mehmet.gptalk.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/GPTalk_1.9.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9.3",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "labs.mehmet.gptalk",
+    "lastSync": "2025-12-19T13:00:01.453Z"
+  },
+  {
+    "id": "ipa-ideastudio.Weather-on-the-Way-2.3.2",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/OnTheWay_2.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.3.2",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2025-12-19T13:00:01.453Z"
+  },
+  {
+    "id": "ipa-com.andydev.alpenglow-11.1.2",
+    "type": "ipa",
+    "name": "Alpenglow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andydev.alpenglow.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/Alpenglow_11.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.1.2",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.andydev.alpenglow",
+    "lastSync": "2025-12-19T13:00:01.460Z"
+  },
+  {
+    "id": "ipa-com.camerasideas.InstaShot-1.92.1",
+    "type": "ipa",
+    "name": "InShot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.InstaShot.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-12-2025/InShot_1.92.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.92.1",
+    "developer": "khomodvip",
+    "date": "2025-12-19",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.InstaShot",
+    "lastSync": "2025-12-19T13:00:01.460Z"
+  },
+  {
     "id": "ipa-com.mwm.procolor-2.57.14",
     "type": "ipa",
     "name": "ColorPop",
