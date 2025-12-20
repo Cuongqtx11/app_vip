@@ -108,6 +108,24 @@
     "lastSync": "2025-12-20T06:00:01.576Z"
   },
   {
+    "id": "ipa-com.aiti.FitnessOnline-1.12.0",
+    "type": "ipa",
+    "name": "FitnessOnline",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aiti.FitnessOnline.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/FitnessOnline_1.12.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.12.0",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.aiti.FitnessOnline",
+    "lastSync": "2025-12-20T08:00:01.428Z"
+  },
+  {
     "id": "ipa-com.yengshine.proccd-5.2.1",
     "type": "ipa",
     "name": "ProCCD",
