@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.future.kapi-3.29.0",
+    "type": "ipa",
+    "name": "Action",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.future.kapi.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/Action_3.29.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.29.0",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.future.kapi",
+    "lastSync": "2025-12-20T20:00:01.463Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty-2.32",
     "type": "ipa",
     "name": "Coconote",
