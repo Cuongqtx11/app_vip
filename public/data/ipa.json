@@ -72,6 +72,24 @@
     "lastSync": "2025-12-19T23:00:01.353Z"
   },
   {
+    "id": "ipa-com.zerone.hidesktop-4.3.67",
+    "type": "ipa",
+    "name": "HiWidget",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zerone.hidesktop.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/HiWidget_4.3.67_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.67",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.zerone.hidesktop",
+    "lastSync": "2025-12-20T03:00:01.492Z"
+  },
+  {
     "id": "ipa-com.yengshine.proccd-5.2.1",
     "type": "ipa",
     "name": "ProCCD",
