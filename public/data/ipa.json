@@ -126,6 +126,24 @@
     "lastSync": "2025-12-20T08:00:01.428Z"
   },
   {
+    "id": "ipa-com.castpeer.audioroom.ios-2.10.2",
+    "type": "ipa",
+    "name": "SoundLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.castpeer.audioroom.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/SoundLab_2.10.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.2",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.castpeer.audioroom.ios",
+    "lastSync": "2025-12-20T09:00:01.303Z"
+  },
+  {
     "id": "ipa-com.yengshine.proccd-5.2.1",
     "type": "ipa",
     "name": "ProCCD",
