@@ -18,6 +18,96 @@
     "lastSync": "2025-12-20T20:00:01.463Z"
   },
   {
+    "id": "ipa-com.travelboast.travelboast-2.18",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/TravelBoast_2.18_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.18",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2025-12-20T21:00:01.678Z"
+  },
+  {
+    "id": "ipa-com.adobe.scan.ios-25.12.18",
+    "type": "ipa",
+    "name": "AdobeScan",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.scan.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/AdobeScan_25.12.18_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.12.18",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.adobe.scan.ios",
+    "lastSync": "2025-12-20T21:00:01.678Z"
+  },
+  {
+    "id": "ipa-com.myscript.nebo-7.0.12",
+    "type": "ipa",
+    "name": "MyScriptNotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myscript.nebo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/MyScriptNotes_7.0.12_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.12",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.myscript.nebo",
+    "lastSync": "2025-12-20T21:00:01.679Z"
+  },
+  {
+    "id": "ipa-com.photomyne.photomyneapplite-32.2",
+    "type": "ipa",
+    "name": "Photomyne",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photomyne.photomyneapplite.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Photo/Video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/Photomyne_32.2_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "32.2",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.photomyne.photomyneapplite",
+    "lastSync": "2025-12-20T21:00:01.679Z"
+  },
+  {
+    "id": "ipa-io.betterhalf.app-2.65.0",
+    "type": "ipa",
+    "name": "Paired",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.betterhalf.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/Paired_2.65.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.65.0",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "io.betterhalf.app",
+    "lastSync": "2025-12-20T21:00:01.679Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty-2.32",
     "type": "ipa",
     "name": "Coconote",
