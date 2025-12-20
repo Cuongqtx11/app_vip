@@ -108,6 +108,96 @@
     "lastSync": "2025-12-20T21:00:01.679Z"
   },
   {
+    "id": "ipa-com.sleepmonitor.aio-2.6.12",
+    "type": "ipa",
+    "name": "SleepMonitor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sleepmonitor.aio.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/SleepMonitor_2.6.12_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.6.12",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.sleepmonitor.aio",
+    "lastSync": "2025-12-20T23:00:01.377Z"
+  },
+  {
+    "id": "ipa-com.fingersoft.hillclimbracing-1.67.7",
+    "type": "ipa",
+    "name": "HillClimb",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fingersoft.hillclimbracing.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/HillClimb_1.67.7_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.67.7",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.fingersoft.hillclimbracing",
+    "lastSync": "2025-12-20T23:00:01.378Z"
+  },
+  {
+    "id": "ipa-com.innothenics.thenics-6.1.2",
+    "type": "ipa",
+    "name": "Thenics",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.innothenics.thenics.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/Thenics_6.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.1.2",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.innothenics.thenics",
+    "lastSync": "2025-12-20T23:00:01.378Z"
+  },
+  {
+    "id": "ipa-com.bowery-digital.bend-7.0.7",
+    "type": "ipa",
+    "name": "Bend",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bowery-digital.bend.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/Bend_7.0.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.7",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.bowery-digital.bend",
+    "lastSync": "2025-12-20T23:00:01.378Z"
+  },
+  {
+    "id": "ipa-com.funlabsoft.iptv-2.13",
+    "type": "ipa",
+    "name": "FlexIPTV",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.funlabsoft.iptv.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "Social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/FlexIPTV_2.13_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.13",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.funlabsoft.iptv",
+    "lastSync": "2025-12-20T23:00:01.379Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty-2.32",
     "type": "ipa",
     "name": "Coconote",
