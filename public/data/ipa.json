@@ -144,6 +144,204 @@
     "lastSync": "2025-12-20T09:00:01.303Z"
   },
   {
+    "id": "ipa-com.yadux.Speak4Me-6.2.3",
+    "type": "ipa",
+    "name": "Speak4Me",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yadux.Speak4Me.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/Speak4Me_6.2.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.3",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.yadux.Speak4Me",
+    "lastSync": "2025-12-20T12:00:01.509Z"
+  },
+  {
+    "id": "ipa-com.abi.busjam.sortpuzzle-1.9.53",
+    "type": "ipa",
+    "name": "BusEscapeTrafficJam",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.abi.busjam.sortpuzzle.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/BusEscapeTrafficJam_1.9.53_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9.53",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.abi.busjam.sortpuzzle",
+    "lastSync": "2025-12-20T12:00:01.510Z"
+  },
+  {
+    "id": "ipa-com.evolve.podcast-6.132.0",
+    "type": "ipa",
+    "name": "PodcastApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.evolve.podcast.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/PodcastApp_6.132.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.132.0",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.evolve.podcast",
+    "lastSync": "2025-12-20T12:00:01.510Z"
+  },
+  {
+    "id": "ipa-com.polywise.weekly-5.0.6",
+    "type": "ipa",
+    "name": "Imprint",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.polywise.weekly.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/Imprint_5.0.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.0.6",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.polywise.weekly",
+    "lastSync": "2025-12-20T12:00:01.510Z"
+  },
+  {
+    "id": "ipa-happy.paint.color.coloring.number-1.84.3",
+    "type": "ipa",
+    "name": "ZenColor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/happy.paint.color.coloring.number.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/ZenColor_1.84.3_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.84.3",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "happy.paint.color.coloring.number",
+    "lastSync": "2025-12-20T12:00:01.511Z"
+  },
+  {
+    "id": "ipa-com.jabhi.clarido-1.0.3",
+    "type": "ipa",
+    "name": "Clarido",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jabhi.clarido.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/Clarido_1.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.3",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.jabhi.clarido",
+    "lastSync": "2025-12-20T12:00:01.511Z"
+  },
+  {
+    "id": "ipa-com.algoriddim.djay-iphone-free-5.6.1",
+    "type": "ipa",
+    "name": "djay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.algoriddim.djay-iphone-free.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/djay_5.6.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.1",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.algoriddim.djay-iphone-free",
+    "lastSync": "2025-12-20T12:00:01.511Z"
+  },
+  {
+    "id": "ipa-com.optiflow.imposter-2.15",
+    "type": "ipa",
+    "name": "BAM",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.optiflow.imposter.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/BAM_2.15_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.15",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.optiflow.imposter",
+    "lastSync": "2025-12-20T12:00:01.512Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.6.5",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/BlockBlast_6.6.5_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.5",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2025-12-20T12:00:01.512Z"
+  },
+  {
+    "id": "ipa-com.unofficialcalculators.payplan-4.1.18",
+    "type": "ipa",
+    "name": "BillTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unofficialcalculators.payplan.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/BillTracker_4.1.18_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.18",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.unofficialcalculators.payplan",
+    "lastSync": "2025-12-20T12:00:01.512Z"
+  },
+  {
+    "id": "ipa-com.rubygames.assassin-2.033",
+    "type": "ipa",
+    "name": "HunterAssassin",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.rubygames.assassin.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-12-2025/HunterAssassin_2.033_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.033",
+    "developer": "khomodvip",
+    "date": "2025-12-20",
+    "source": "apptesters",
+    "bundleID": "com.rubygames.assassin",
+    "lastSync": "2025-12-20T12:00:01.513Z"
+  },
+  {
     "id": "ipa-com.yengshine.proccd-5.2.1",
     "type": "ipa",
     "name": "ProCCD",
