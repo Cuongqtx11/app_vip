@@ -1,31 +1,22 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
+  "public": true,
+  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/public/index.html"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     }
   ],
-  "crons": [
+  "headers": [
     {
-      "path": "/api/cron/auto-sync",
-      "schedule": "0 */1 * * *"
+      "source": "/data/(.*).json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     }
   ]
 }
