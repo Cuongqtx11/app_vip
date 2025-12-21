@@ -18,6 +18,42 @@
     "lastSync": "2025-12-21T19:00:01.639Z"
   },
   {
+    "id": "ipa-com.picspacehd.anilistclient-1.9.2",
+    "type": "ipa",
+    "name": "AniClient",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picspacehd.anilistclient.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/AniClient_1.9.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9.2",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.picspacehd.anilistclient",
+    "lastSync": "2025-12-21T22:00:01.390Z"
+  },
+  {
+    "id": "ipa-gen.tech.impulse-1.40",
+    "type": "ipa",
+    "name": "Impulse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gen.tech.impulse.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/Impulse_1.40_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.40",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "gen.tech.impulse",
+    "lastSync": "2025-12-21T22:00:01.390Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
