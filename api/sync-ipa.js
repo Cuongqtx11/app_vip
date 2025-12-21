@@ -306,7 +306,7 @@ function smartDetectTags(app) {
     'stickman', 'dragon ball', 'naruto', 'one piece', 'pokemon', 'hill climb', 'block blast',
     'parking', 'survival', 'arena', 'moba', 'rpg', 'shoot', 'sniper', 'war', 'battle', 'fight'
   ];
-  if (gameNames.some(k => name.includes(k))) return ['Game'];
+  if (gameNames.some(k => name.includes(k))) return ['game'];
 
   // 2. SOCIAL
   const socialNames = [
@@ -330,7 +330,7 @@ function smartDetectTags(app) {
     'spotify', 'zing mp3', 'naccuatui', 'nhaccuatui', 'soundcloud', 'apple music', 'shazam', 
     'deezer', 'tidal', 'amazon music', 'youtube music', 'piano', 'guitar', 'drum', 'dj', 'mixer', 'mp3'
   ];
-  if (musicNames.some(k => name.includes(k))) return ['Music'];
+  if (musicNames.some(k => name.includes(k))) return ['music'];
 
   // 5. PRODUCTIVITY
   const productivityNames = [
