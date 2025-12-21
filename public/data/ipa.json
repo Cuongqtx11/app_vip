@@ -234,6 +234,24 @@
     "lastSync": "2025-12-21T03:00:01.319Z"
   },
   {
+    "id": "ipa-com.madarsoft.fitness-16.7",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/_16.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.7",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2025-12-21T08:00:01.687Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty-2.32",
     "type": "ipa",
     "name": "Coconote",
