@@ -324,6 +324,42 @@
     "lastSync": "2025-12-21T13:00:01.447Z"
   },
   {
+    "id": "ipa-co.detail.duo-5.5",
+    "type": "ipa",
+    "name": "Detail",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.detail.duo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/Detail_5.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "co.detail.duo",
+    "lastSync": "2025-12-21T14:00:01.930Z"
+  },
+  {
+    "id": "ipa-de.my-fit-coach.myfitcoach-ios-1.20.2",
+    "type": "ipa",
+    "name": "MyFitCoach",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.my-fit-coach.myfitcoach-ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/MyFitCoach_1.20.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.20.2",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "de.my-fit-coach.myfitcoach-ios",
+    "lastSync": "2025-12-21T14:00:01.930Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty-2.32",
     "type": "ipa",
     "name": "Coconote",
