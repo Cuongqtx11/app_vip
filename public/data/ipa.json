@@ -198,6 +198,24 @@
     "lastSync": "2025-12-20T23:00:01.379Z"
   },
   {
+    "id": "ipa-com.na.istb-1.29.3",
+    "type": "ipa",
+    "name": "iSTB",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.na.istb.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "Utility"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-12-2025/iSTB_1.29.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.29.3",
+    "developer": "khomodvip",
+    "date": "2025-12-21",
+    "source": "apptesters",
+    "bundleID": "com.na.istb",
+    "lastSync": "2025-12-21T00:00:01.768Z"
+  },
+  {
     "id": "ipa-com.bbauman.Scripty-2.32",
     "type": "ipa",
     "name": "Coconote",
