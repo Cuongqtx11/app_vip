@@ -378,6 +378,60 @@
     "lastSync": "2025-12-22T14:00:01.710Z"
   },
   {
+    "id": "ipa-com.spacegab.slideshow-5.6.44",
+    "type": "ipa",
+    "name": "SlideShow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.spacegab.slideshow.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/SlideShow_5.6.44_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.44",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.spacegab.slideshow",
+    "lastSync": "2025-12-22T15:00:01.812Z"
+  },
+  {
+    "id": "ipa-com.flyingnayeem.nmVideoMergerJune-5.4.31",
+    "type": "ipa",
+    "name": "BackgroundMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flyingnayeem.nmVideoMergerJune.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/BackgroundMusic_5.4.31_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.31",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.flyingnayeem.nmVideoMergerJune",
+    "lastSync": "2025-12-22T15:00:01.812Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.4.1",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/GOWOD_5.4.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.1",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2025-12-22T15:00:01.812Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
