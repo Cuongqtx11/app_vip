@@ -432,6 +432,42 @@
     "lastSync": "2025-12-22T15:00:01.812Z"
   },
   {
+    "id": "ipa-app.swiftgram.ios-12.2.3",
+    "type": "ipa",
+    "name": "Swiftgram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.swiftgram.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/Swiftgram_12.2.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.2.3",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "app.swiftgram.ios",
+    "lastSync": "2025-12-22T16:00:01.871Z"
+  },
+  {
+    "id": "ipa-com.alightcreative.motion-6.2.47",
+    "type": "ipa",
+    "name": "AlightMotion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/AlightMotion_6.2.47_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.47",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.alightcreative.motion",
+    "lastSync": "2025-12-22T16:00:01.872Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
