@@ -162,6 +162,60 @@
     "lastSync": "2025-12-22T08:00:01.480Z"
   },
   {
+    "id": "ipa-com.getmimo.mimo-10.0.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/Mimo_10.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2025-12-22T09:00:01.820Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.pdffree-4.24.34",
+    "type": "ipa",
+    "name": "ScannerforMe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.pdffree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/ScannerforMe_4.24.34_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.24.34",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.pdffree",
+    "lastSync": "2025-12-22T09:00:01.821Z"
+  },
+  {
+    "id": "ipa-app.uplens-3.4.5",
+    "type": "ipa",
+    "name": "Uplens",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.uplens.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/Uplens_3.4.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.5",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "app.uplens",
+    "lastSync": "2025-12-22T09:00:01.821Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
