@@ -486,6 +486,24 @@
     "lastSync": "2025-12-22T18:00:01.697Z"
   },
   {
+    "id": "ipa-com.gingerlabs.Notability-15.3.1",
+    "type": "ipa",
+    "name": "Notability",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gingerlabs.Notability.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/Notability_15.3.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.3.1",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.gingerlabs.Notability",
+    "lastSync": "2025-12-22T19:00:01.778Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
