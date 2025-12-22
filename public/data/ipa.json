@@ -90,6 +90,42 @@
     "lastSync": "2025-12-22T02:00:01.899Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.3.3",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/SnapEdit_6.3.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.3",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2025-12-22T04:00:01.435Z"
+  },
+  {
+    "id": "ipa-com.sillens.iShape-23.3.0",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/Lifesum_23.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.3.0",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2025-12-22T04:00:01.436Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
