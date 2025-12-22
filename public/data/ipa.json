@@ -234,6 +234,24 @@
     "lastSync": "2025-12-22T10:00:01.795Z"
   },
   {
+    "id": "ipa-co.codeleap.bearable-1.0.579",
+    "type": "ipa",
+    "name": "Bearable",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.codeleap.bearable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/Bearable_1.0.579_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.579",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "co.codeleap.bearable",
+    "lastSync": "2025-12-22T11:00:02.232Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
