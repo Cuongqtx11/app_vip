@@ -1,5 +1,203 @@
 [
   {
+    "id": "ipa-com.moonly.Moonly-2.5.9",
+    "type": "ipa",
+    "name": "Moonly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonly.Moonly.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Moonly_2.5.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.9",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.moonly.Moonly",
+    "lastSync": "2025-12-22T22:00:01.455Z"
+  },
+  {
+    "id": "ipa-org.powerthesaurus.powerthesaurus-2.8.2",
+    "type": "ipa",
+    "name": "PowerThesaurus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.powerthesaurus.powerthesaurus.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/PowerThesaurus_2.8.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.2",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "org.powerthesaurus.powerthesaurus",
+    "lastSync": "2025-12-22T22:00:01.455Z"
+  },
+  {
+    "id": "ipa-com.keiwando.toonsquid-2.0.17",
+    "type": "ipa",
+    "name": "ToonSquid",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.keiwando.toonsquid.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/ToonSquid_2.0.17_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.17",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.keiwando.toonsquid",
+    "lastSync": "2025-12-22T22:00:01.456Z"
+  },
+  {
+    "id": "ipa-biser.stories-8.5.3",
+    "type": "ipa",
+    "name": "Leto",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/biser.stories.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Leto_8.5.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.5.3",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "biser.stories",
+    "lastSync": "2025-12-22T22:00:01.457Z"
+  },
+  {
+    "id": "ipa-viral.vision.vids-1.129.0",
+    "type": "ipa",
+    "name": "Vids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/viral.vision.vids.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Vids_1.129.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.129.0",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "viral.vision.vids",
+    "lastSync": "2025-12-22T22:00:01.457Z"
+  },
+  {
+    "id": "ipa-com.agiletortoise.Drafts5-49.0.2",
+    "type": "ipa",
+    "name": "Drafts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.agiletortoise.Drafts5.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Drafts_49.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "49.0.2",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.agiletortoise.Drafts5",
+    "lastSync": "2025-12-22T22:00:01.457Z"
+  },
+  {
+    "id": "ipa-evolly.app.rokuremote-2.0.9",
+    "type": "ipa",
+    "name": "TVRemote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/evolly.app.rokuremote.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/TVRemote_2.0.9_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.9",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "evolly.app.rokuremote",
+    "lastSync": "2025-12-22T22:00:01.457Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2-11.49",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/X_11.49_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.49",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-12-22T22:00:01.457Z"
+  },
+  {
+    "id": "ipa-com.TickTick.task-7.8.22",
+    "type": "ipa",
+    "name": "TickTick",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.TickTick.task.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/TickTick_7.8.22_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.8.22",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.TickTick.task",
+    "lastSync": "2025-12-22T22:00:01.458Z"
+  },
+  {
+    "id": "ipa-com.neocortext.doublicatapp-5.28.0",
+    "type": "ipa",
+    "name": "Reface",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neocortext.doublicatapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Reface_5.28.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.28.0",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.neocortext.doublicatapp",
+    "lastSync": "2025-12-22T22:00:01.458Z"
+  },
+  {
+    "id": "ipa-com.dubox.drive-4.9.3",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/TeraBox_4.9.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.9.3",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2025-12-22T22:00:01.458Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.8",
     "type": "ipa",
     "name": "Moonly",
