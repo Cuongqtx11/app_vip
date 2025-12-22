@@ -144,6 +144,24 @@
     "lastSync": "2025-12-22T05:00:01.649Z"
   },
   {
+    "id": "ipa-com.adobe.PSMobile-25.50.0",
+    "type": "ipa",
+    "name": "PSExpress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.PSMobile.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-12-2025/PSExpress_25.50.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.50.0",
+    "developer": "khomodvip",
+    "date": "2025-12-22",
+    "source": "apptesters",
+    "bundleID": "com.adobe.PSMobile",
+    "lastSync": "2025-12-22T08:00:01.480Z"
+  },
+  {
     "id": "ipa-com.future.kapi-3.29.0",
     "type": "ipa",
     "name": "Action",
