@@ -1188,6 +1188,42 @@
     "lastSync": "2025-12-23T13:00:01.985Z"
   },
   {
+    "id": "ipa-com.camerasideas.Peachy-2.8.1",
+    "type": "ipa",
+    "name": "Peachy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.Peachy.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Peachy_2.8.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.1",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.Peachy",
+    "lastSync": "2025-12-23T14:00:01.812Z"
+  },
+  {
+    "id": "ipa-de.komoot.berlinbikeapp-2025.53.0",
+    "type": "ipa",
+    "name": "Komoot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Komoot_2025.53.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.53.0",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "de.komoot.berlinbikeapp",
+    "lastSync": "2025-12-23T14:00:01.813Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.8",
     "type": "ipa",
     "name": "Moonly",
