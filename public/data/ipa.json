@@ -1278,6 +1278,24 @@
     "lastSync": "2025-12-23T15:00:02.002Z"
   },
   {
+    "id": "ipa-com.risesci.nyx-0.1.556",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/RiseSleep_0.1.556_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.556",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2025-12-23T17:00:01.479Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.8",
     "type": "ipa",
     "name": "Moonly",
