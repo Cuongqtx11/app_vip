@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.outerspaceapps.itranslate-17.4.65",
+    "type": "ipa",
+    "name": "iTranslate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.outerspaceapps.itranslate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/iTranslate_17.4.65_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.4.65",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.outerspaceapps.itranslate",
+    "lastSync": "2025-12-23T19:00:01.746Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.9",
     "type": "ipa",
     "name": "Moonly",
