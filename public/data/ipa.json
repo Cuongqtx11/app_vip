@@ -1026,6 +1026,168 @@
     "lastSync": "2025-12-23T12:00:01.870Z"
   },
   {
+    "id": "ipa-net.quochuywdm.collanote496-4.0.3",
+    "type": "ipa",
+    "name": "CollaNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/CollaNote_4.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.3",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "net.quochuywdm.collanote496",
+    "lastSync": "2025-12-23T13:00:01.983Z"
+  },
+  {
+    "id": "ipa-com.glucobit.cravingBuster.CravingBuster-3.8.97",
+    "type": "ipa",
+    "name": "Reframe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glucobit.cravingBuster.CravingBuster.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Reframe_3.8.97_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.97",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.glucobit.cravingBuster.CravingBuster",
+    "lastSync": "2025-12-23T13:00:01.983Z"
+  },
+  {
+    "id": "ipa-com.mlobodzinski.Stoic-2025.48",
+    "type": "ipa",
+    "name": "stoic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mlobodzinski.Stoic.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/stoic_2025.48_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.48",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.mlobodzinski.Stoic",
+    "lastSync": "2025-12-23T13:00:01.984Z"
+  },
+  {
+    "id": "ipa-com.limepresso.shiftworkcalendar-2.4.5",
+    "type": "ipa",
+    "name": "Spoke",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.limepresso.shiftworkcalendar.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Spoke_2.4.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.5",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.limepresso.shiftworkcalendar",
+    "lastSync": "2025-12-23T13:00:01.984Z"
+  },
+  {
+    "id": "ipa-com.northstar.gratitude-5.2.3",
+    "type": "ipa",
+    "name": "Gratitude",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.northstar.gratitude.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Gratitude_5.2.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.2.3",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.northstar.gratitude",
+    "lastSync": "2025-12-23T13:00:01.984Z"
+  },
+  {
+    "id": "ipa-com.claushuang.FocusTomato-6.0.6",
+    "type": "ipa",
+    "name": "FocusTomato",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.claushuang.FocusTomato.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/FocusTomato_6.0.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.6",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.claushuang.FocusTomato",
+    "lastSync": "2025-12-23T13:00:01.984Z"
+  },
+  {
+    "id": "ipa-com.basenji.mood-3.4.2",
+    "type": "ipa",
+    "name": "Breeze",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.basenji.mood.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Breeze_3.4.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.2",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.basenji.mood",
+    "lastSync": "2025-12-23T13:00:01.984Z"
+  },
+  {
+    "id": "ipa-me.imgbase.videoday-3.6.2",
+    "type": "ipa",
+    "name": "VDIT",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/VDIT_3.6.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.6.2",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "me.imgbase.videoday",
+    "lastSync": "2025-12-23T13:00:01.985Z"
+  },
+  {
+    "id": "ipa-com.livintis.aiartapp-35",
+    "type": "ipa",
+    "name": "Artistai",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.livintis.aiartapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Artistai_35_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "35",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.livintis.aiartapp",
+    "lastSync": "2025-12-23T13:00:01.985Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.8",
     "type": "ipa",
     "name": "Moonly",
