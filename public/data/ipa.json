@@ -522,6 +522,168 @@
     "lastSync": "2025-12-23T09:00:01.824Z"
   },
   {
+    "id": "ipa-vladchechura.MotivationEN-1.5.0",
+    "type": "ipa",
+    "name": "QuoteUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/vladchechura.MotivationEN.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/QuoteUp_1.5.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.0",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "vladchechura.MotivationEN",
+    "lastSync": "2025-12-23T11:00:01.537Z"
+  },
+  {
+    "id": "ipa-com.intvl.app-3.3.0",
+    "type": "ipa",
+    "name": "INTVL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.intvl.app.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/INTVL_3.3.0_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.0",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.intvl.app",
+    "lastSync": "2025-12-23T11:00:01.538Z"
+  },
+  {
+    "id": "ipa-com.digitas.solidstarts-3.6.10",
+    "type": "ipa",
+    "name": "SolidStarts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.digitas.solidstarts.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/SolidStarts_3.6.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.6.10",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.digitas.solidstarts",
+    "lastSync": "2025-12-23T11:00:01.538Z"
+  },
+  {
+    "id": "ipa-com.o-p-e-n.open-25.51",
+    "type": "ipa",
+    "name": "Open",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.o-p-e-n.open.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Open_25.51_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.51",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.o-p-e-n.open",
+    "lastSync": "2025-12-23T11:00:01.539Z"
+  },
+  {
+    "id": "ipa-org.reactjs.native.example.rootd-3.1.28",
+    "type": "ipa",
+    "name": "Rootd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.reactjs.native.example.rootd.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Rootd_3.1.28_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.28",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "org.reactjs.native.example.rootd",
+    "lastSync": "2025-12-23T11:00:01.540Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.6.6",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/BlockBlast_6.6.6_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.6",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2025-12-23T11:00:01.540Z"
+  },
+  {
+    "id": "ipa-ai.befreed.freed-frontend-rn-4.1.7",
+    "type": "ipa",
+    "name": "BeFreed",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ai.befreed.freed-frontend-rn.png",
+    "desc": "Injected with Unlocked All Functions",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/BeFreed_4.1.7_Unlocked_All_Functions_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.7",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "ai.befreed.freed-frontend-rn",
+    "lastSync": "2025-12-23T11:00:01.540Z"
+  },
+  {
+    "id": "ipa-com.withopal.opal-3.142",
+    "type": "ipa",
+    "name": "Opal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.withopal.opal.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Opal_3.142_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.142",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.withopal.opal",
+    "lastSync": "2025-12-23T11:00:01.540Z"
+  },
+  {
+    "id": "ipa-com.iaftt.flightplusfree-8.6.13",
+    "type": "ipa",
+    "name": "FlightTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iaftt.flightplusfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/FlightTracker_8.6.13_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.13",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.iaftt.flightplusfree",
+    "lastSync": "2025-12-23T11:00:01.540Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.8",
     "type": "ipa",
     "name": "Moonly",
