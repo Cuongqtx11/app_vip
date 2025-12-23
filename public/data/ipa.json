@@ -432,6 +432,96 @@
     "lastSync": "2025-12-23T08:00:01.907Z"
   },
   {
+    "id": "ipa-com.picsart.studio-29.1.2",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/PicsArt_29.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.1.2",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2025-12-23T09:00:01.823Z"
+  },
+  {
+    "id": "ipa-com.iqraapp.Iqra-5.70.2",
+    "type": "ipa",
+    "name": "Tarteel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iqraapp.Iqra.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Tarteel_5.70.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.70.2",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.iqraapp.Iqra",
+    "lastSync": "2025-12-23T09:00:01.823Z"
+  },
+  {
+    "id": "ipa-com.daymore.Across-1.12.6",
+    "type": "ipa",
+    "name": "Across",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.daymore.Across.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Across_1.12.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.12.6",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.daymore.Across",
+    "lastSync": "2025-12-23T09:00:01.824Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.4.2",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/GOWOD_5.4.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.2",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2025-12-23T09:00:01.824Z"
+  },
+  {
+    "id": "ipa-com.path36.SpliceFree-4.28.56",
+    "type": "ipa",
+    "name": "Splice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.path36.SpliceFree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-12-2025/Splice_4.28.56_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.28.56",
+    "developer": "khomodvip",
+    "date": "2025-12-23",
+    "source": "apptesters",
+    "bundleID": "com.path36.SpliceFree",
+    "lastSync": "2025-12-23T09:00:01.824Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.8",
     "type": "ipa",
     "name": "Moonly",
