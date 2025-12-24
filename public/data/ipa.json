@@ -162,6 +162,24 @@
     "lastSync": "2025-12-24T03:00:01.889Z"
   },
   {
+    "id": "ipa-com.sbs.diet-5.7.2",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/MacroFactor_5.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.7.2",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-12-24T05:00:01.784Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.9",
     "type": "ipa",
     "name": "Moonly",
