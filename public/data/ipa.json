@@ -180,6 +180,132 @@
     "lastSync": "2025-12-24T05:00:01.784Z"
   },
   {
+    "id": "ipa-co.vulcanlabs.moodtracker-8.251222.2",
+    "type": "ipa",
+    "name": "ChatSmith",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.vulcanlabs.moodtracker.png",
+    "desc": "Injected with Satella",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/ChatSmith_8.251222.2_Satella_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.251222.2",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "co.vulcanlabs.moodtracker",
+    "lastSync": "2025-12-24T11:00:01.444Z"
+  },
+  {
+    "id": "ipa-com.unofficialcalculators.payplan-4.1.21",
+    "type": "ipa",
+    "name": "BillTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unofficialcalculators.payplan.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "finance"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/BillTracker_4.1.21_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.21",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.unofficialcalculators.payplan",
+    "lastSync": "2025-12-24T11:00:01.444Z"
+  },
+  {
+    "id": "ipa-com.jabhi.clarido-1.0.4",
+    "type": "ipa",
+    "name": "Clarido",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jabhi.clarido.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Clarido_1.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.4",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.jabhi.clarido",
+    "lastSync": "2025-12-24T11:00:01.445Z"
+  },
+  {
+    "id": "ipa-com.app.phlow-2.1.5",
+    "type": "ipa",
+    "name": "Phlow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.app.phlow.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Phlow_2.1.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.5",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.app.phlow",
+    "lastSync": "2025-12-24T11:00:01.445Z"
+  },
+  {
+    "id": "ipa-com.365scores.365scroesapp-6.3.8",
+    "type": "ipa",
+    "name": "365Scores",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.365scores.365scroesapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/365Scores_6.3.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.8",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.365scores.365scroesapp",
+    "lastSync": "2025-12-24T11:00:01.445Z"
+  },
+  {
+    "id": "ipa-com.genau.JournalCircle-3.0.8",
+    "type": "ipa",
+    "name": "JournalCircle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.genau.JournalCircle.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/JournalCircle_3.0.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.0.8",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.genau.JournalCircle",
+    "lastSync": "2025-12-24T11:00:01.445Z"
+  },
+  {
+    "id": "ipa-app.gentler.activity-5.11",
+    "type": "ipa",
+    "name": "GentlerStreak",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.gentler.activity.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/GentlerStreak_5.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.11",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "app.gentler.activity",
+    "lastSync": "2025-12-24T11:00:01.445Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.9",
     "type": "ipa",
     "name": "Moonly",
