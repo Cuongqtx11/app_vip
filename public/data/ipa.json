@@ -432,6 +432,96 @@
     "lastSync": "2025-12-24T16:00:01.742Z"
   },
   {
+    "id": "ipa-com.burbn.barcelona-410.2.0",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Threads_410.2.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "410.2.0",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2025-12-24T18:00:01.371Z"
+  },
+  {
+    "id": "ipa-com.photoedit.cleanwatermark-2.14",
+    "type": "ipa",
+    "name": "iRetouch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photoedit.cleanwatermark.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/iRetouch_2.14_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.14",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.photoedit.cleanwatermark",
+    "lastSync": "2025-12-24T18:00:01.372Z"
+  },
+  {
+    "id": "ipa-com.abishkking.maleworkout-1.43.10",
+    "type": "ipa",
+    "name": "Homeworkouts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.abishkking.maleworkout.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Homeworkouts_1.43.10_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.43.10",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.abishkking.maleworkout",
+    "lastSync": "2025-12-24T18:00:01.372Z"
+  },
+  {
+    "id": "ipa-co.windyapp.Windy-15.4.6",
+    "type": "ipa",
+    "name": "Windyapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.windyapp.Windy.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Windyapp_15.4.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.4.6",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "co.windyapp.Windy",
+    "lastSync": "2025-12-24T18:00:01.373Z"
+  },
+  {
+    "id": "ipa-fi.twomenandadog.zombiecatchers-1.59.31",
+    "type": "ipa",
+    "name": "ZombieCatchers",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fi.twomenandadog.zombiecatchers.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/ZombieCatchers_1.59.31_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.59.31",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "fi.twomenandadog.zombiecatchers",
+    "lastSync": "2025-12-24T18:00:01.373Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.9",
     "type": "ipa",
     "name": "Moonly",
