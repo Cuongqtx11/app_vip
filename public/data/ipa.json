@@ -144,6 +144,24 @@
     "lastSync": "2025-12-24T02:00:01.579Z"
   },
   {
+    "id": "ipa-com.getupnote.ios-9.16.0",
+    "type": "ipa",
+    "name": "UpNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getupnote.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/UpNote_9.16.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.16.0",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.getupnote.ios",
+    "lastSync": "2025-12-24T03:00:01.889Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.9",
     "type": "ipa",
     "name": "Moonly",
