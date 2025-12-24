@@ -306,6 +306,78 @@
     "lastSync": "2025-12-24T11:00:01.445Z"
   },
   {
+    "id": "ipa-com.hiiker.hiiker-26.1.16",
+    "type": "ipa",
+    "name": "HiiKER",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hiiker.hiiker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/HiiKER_26.1.16_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1.16",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.hiiker.hiiker",
+    "lastSync": "2025-12-24T12:00:01.825Z"
+  },
+  {
+    "id": "ipa-com.inakitajes.Calisthenial-25.12.1",
+    "type": "ipa",
+    "name": "Calisteniapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.inakitajes.Calisthenial.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Calisteniapp_25.12.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.12.1",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.inakitajes.Calisthenial",
+    "lastSync": "2025-12-24T12:00:01.825Z"
+  },
+  {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.18",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/Documents_8.18_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.18",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2025-12-24T12:00:01.826Z"
+  },
+  {
+    "id": "ipa-com.kinemaster.kios-8.0.11",
+    "type": "ipa",
+    "name": "KineMaster",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-12-2025/KineMaster_8.0.11_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.11",
+    "developer": "khomodvip",
+    "date": "2025-12-24",
+    "source": "apptesters",
+    "bundleID": "com.kinemaster.kios",
+    "lastSync": "2025-12-24T12:00:01.826Z"
+  },
+  {
     "id": "ipa-com.moonly.Moonly-2.5.9",
     "type": "ipa",
     "name": "Moonly",
