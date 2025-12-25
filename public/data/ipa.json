@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.hitpaw.photoenhancer-1.94.0",
+    "type": "ipa",
+    "name": "AIMarvels",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hitpaw.photoenhancer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-12-2025/AIMarvels_1.94.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.94.0",
+    "developer": "khomodvip",
+    "date": "2025-12-25",
+    "source": "apptesters",
+    "bundleID": "com.hitpaw.photoenhancer",
+    "lastSync": "2025-12-25T03:00:01.414Z"
+  },
+  {
     "id": "ipa-com.outerspaceapps.itranslate-17.4.65",
     "type": "ipa",
     "name": "iTranslate",
