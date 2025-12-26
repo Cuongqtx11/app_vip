@@ -126,6 +126,24 @@
     "lastSync": "2025-12-26T05:00:01.745Z"
   },
   {
+    "id": "ipa-com.glority.everlens-2.22.0",
+    "type": "ipa",
+    "name": "MobileScanner",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.everlens.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-12-2025/MobileScanner_2.22.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.22.0",
+    "developer": "khomodvip",
+    "date": "2025-12-26",
+    "source": "apptesters",
+    "bundleID": "com.glority.everlens",
+    "lastSync": "2025-12-26T06:00:01.594Z"
+  },
+  {
     "id": "ipa-com.hitpaw.photoenhancer-1.94.0",
     "type": "ipa",
     "name": "AIMarvels",
