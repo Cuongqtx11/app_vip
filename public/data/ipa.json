@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.aiby.wtcoin-1.21",
+    "type": "ipa",
+    "name": "CoinID",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aiby.wtcoin.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-12-2025/CoinID_1.21_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.21",
+    "developer": "khomodvip",
+    "date": "2025-12-27",
+    "source": "apptesters",
+    "bundleID": "com.aiby.wtcoin",
+    "lastSync": "2025-12-26T19:00:01.704Z"
+  },
+  {
     "id": "ipa-com.camerasideas.InstaShot-1.92.2",
     "type": "ipa",
     "name": "InShot",
