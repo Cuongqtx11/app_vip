@@ -126,6 +126,24 @@
     "lastSync": "2025-12-28T17:00:01.374Z"
   },
   {
+    "id": "ipa-com.idevtal.Wallpapers-5.90",
+    "type": "ipa",
+    "name": "ImgAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.idevtal.Wallpapers.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-12-2025/ImgAI_5.90_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.90",
+    "developer": "khomodvip",
+    "date": "2025-12-28",
+    "source": "apptesters",
+    "bundleID": "com.idevtal.Wallpapers",
+    "lastSync": "2025-12-28T18:00:01.728Z"
+  },
+  {
     "id": "ipa-com.aiby.wtcoin-1.21",
     "type": "ipa",
     "name": "CoinID",
