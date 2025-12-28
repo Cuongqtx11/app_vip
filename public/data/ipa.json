@@ -36,6 +36,24 @@
     "lastSync": "2025-12-28T10:00:01.417Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-20.0.6",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-12-2025/Fitia_20.0.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.0.6",
+    "developer": "khomodvip",
+    "date": "2025-12-28",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2025-12-28T12:00:01.322Z"
+  },
+  {
     "id": "ipa-com.aiby.wtcoin-1.21",
     "type": "ipa",
     "name": "CoinID",
