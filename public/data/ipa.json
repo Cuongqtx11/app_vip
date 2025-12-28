@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.ADPTVLTD.push-3.9.2",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-12-2025/PUSH_3.9.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.2",
+    "developer": "khomodvip",
+    "date": "2025-12-28",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2025-12-28T00:00:01.460Z"
+  },
+  {
     "id": "ipa-com.aiby.wtcoin-1.21",
     "type": "ipa",
     "name": "CoinID",
