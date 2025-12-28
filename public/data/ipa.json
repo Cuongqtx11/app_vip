@@ -18,6 +18,24 @@
     "lastSync": "2025-12-28T00:00:01.460Z"
   },
   {
+    "id": "ipa-ee.keel24.Lingvist-2.64.2",
+    "type": "ipa",
+    "name": "Lingvist",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ee.keel24.Lingvist.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-12-2025/Lingvist_2.64.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.64.2",
+    "developer": "khomodvip",
+    "date": "2025-12-28",
+    "source": "apptesters",
+    "bundleID": "ee.keel24.Lingvist",
+    "lastSync": "2025-12-28T10:00:01.417Z"
+  },
+  {
     "id": "ipa-com.aiby.wtcoin-1.21",
     "type": "ipa",
     "name": "CoinID",
