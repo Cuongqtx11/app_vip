@@ -54,6 +54,42 @@
     "lastSync": "2025-12-28T12:00:01.322Z"
   },
   {
+    "id": "ipa-ch.b-eng.tor-3.9.12",
+    "type": "ipa",
+    "name": "OrNETBrowser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ch.b-eng.tor.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-12-2025/OrNETBrowser_3.9.12_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.12",
+    "developer": "khomodvip",
+    "date": "2025-12-28",
+    "source": "apptesters",
+    "bundleID": "ch.b-eng.tor",
+    "lastSync": "2025-12-28T13:00:03.079Z"
+  },
+  {
+    "id": "ipa-com.tonymasek.Purgo-1.4.0",
+    "type": "ipa",
+    "name": "Purgo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tonymasek.Purgo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-12-2025/Purgo_1.4.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.0",
+    "developer": "khomodvip",
+    "date": "2025-12-28",
+    "source": "apptesters",
+    "bundleID": "com.tonymasek.Purgo",
+    "lastSync": "2025-12-28T13:00:03.080Z"
+  },
+  {
     "id": "ipa-com.aiby.wtcoin-1.21",
     "type": "ipa",
     "name": "CoinID",
