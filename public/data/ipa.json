@@ -306,6 +306,42 @@
     "lastSync": "2025-12-29T09:00:01.699Z"
   },
   {
+    "id": "ipa-app.soulver.appstore.mac-3.15.2",
+    "type": "ipa",
+    "name": "Soulver",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.soulver.appstore.mac.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Soulver_3.15.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.15.2",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "app.soulver.appstore.mac",
+    "lastSync": "2025-12-29T10:00:01.924Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2025.52.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Photoroom_2025.52.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.52.01",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2025-12-29T10:00:01.924Z"
+  },
+  {
     "id": "ipa-com.ADPTVLTD.push-3.9.2",
     "type": "ipa",
     "name": "PUSH",
