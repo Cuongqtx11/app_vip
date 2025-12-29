@@ -396,6 +396,42 @@
     "lastSync": "2025-12-29T14:00:01.461Z"
   },
   {
+    "id": "ipa-com.coach.zing-1.118.1",
+    "type": "ipa",
+    "name": "Zing",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.coach.zing.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Zing_1.118.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.118.1",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.coach.zing",
+    "lastSync": "2025-12-29T15:00:01.689Z"
+  },
+  {
+    "id": "ipa-com.moneycontrol.mc-11.0.8",
+    "type": "ipa",
+    "name": "moneycontrol",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moneycontrol.mc.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/moneycontrol_11.0.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.0.8",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.moneycontrol.mc",
+    "lastSync": "2025-12-29T15:00:01.689Z"
+  },
+  {
     "id": "ipa-com.ADPTVLTD.push-3.9.2",
     "type": "ipa",
     "name": "PUSH",
