@@ -360,6 +360,24 @@
     "lastSync": "2025-12-29T11:00:01.755Z"
   },
   {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.18.1",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Documents_8.18.1_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.18.1",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2025-12-29T12:00:01.802Z"
+  },
+  {
     "id": "ipa-com.ADPTVLTD.push-3.9.2",
     "type": "ipa",
     "name": "PUSH",
