@@ -180,6 +180,132 @@
     "lastSync": "2025-12-29T08:00:01.517Z"
   },
   {
+    "id": "ipa-com.locket.Locket-2.27.4",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Locket_2.27.4_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.27.4",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2025-12-29T09:00:01.697Z"
+  },
+  {
+    "id": "ipa-com.coinidentifier.identifycoins-2.14.0",
+    "type": "ipa",
+    "name": "CoinSnap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.coinidentifier.identifycoins.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/CoinSnap_2.14.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.14.0",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.coinidentifier.identifycoins",
+    "lastSync": "2025-12-29T09:00:01.698Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2-11.52",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/X_11.52_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.52",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2025-12-29T09:00:01.698Z"
+  },
+  {
+    "id": "ipa-com.bandlab.bandlab.iphone-11.14.2",
+    "type": "ipa",
+    "name": "BandLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bandlab.bandlab.iphone.png",
+    "desc": "Injected with Boost Membership",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/BandLab_11.14.2_Boost_Membership_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.14.2",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.bandlab.bandlab.iphone",
+    "lastSync": "2025-12-29T09:00:01.698Z"
+  },
+  {
+    "id": "ipa-com.innothenics.thenics-6.1.3",
+    "type": "ipa",
+    "name": "Thenics",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.innothenics.thenics.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Thenics_6.1.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.1.3",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.innothenics.thenics",
+    "lastSync": "2025-12-29T09:00:01.699Z"
+  },
+  {
+    "id": "ipa-com.letterboxd.LetterboxdApp-4.8.6",
+    "type": "ipa",
+    "name": "Letterboxd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.letterboxd.LetterboxdApp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Letterboxd_4.8.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.8.6",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.letterboxd.LetterboxdApp",
+    "lastSync": "2025-12-29T09:00:01.699Z"
+  },
+  {
+    "id": "ipa-com.getmotobit.motobit-1.0.54",
+    "type": "ipa",
+    "name": "Motobit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmotobit.motobit.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-12-2025/Motobit_1.0.54_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.54",
+    "developer": "khomodvip",
+    "date": "2025-12-29",
+    "source": "apptesters",
+    "bundleID": "com.getmotobit.motobit",
+    "lastSync": "2025-12-29T09:00:01.699Z"
+  },
+  {
     "id": "ipa-com.ADPTVLTD.push-3.9.2",
     "type": "ipa",
     "name": "PUSH",
