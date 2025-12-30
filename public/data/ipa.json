@@ -468,6 +468,42 @@
     "lastSync": "2025-12-30T15:00:02.395Z"
   },
   {
+    "id": "ipa-com.ahaf.mshion-7.33.0",
+    "type": "ipa",
+    "name": "ism",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ahaf.mshion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/ism_7.33.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.33.0",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.ahaf.mshion",
+    "lastSync": "2025-12-30T16:00:01.999Z"
+  },
+  {
+    "id": "ipa-com.nextgen.reelsapp-7.4",
+    "type": "ipa",
+    "name": "ReelsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nextgen.reelsapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/ReelsApp_7.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.nextgen.reelsapp",
+    "lastSync": "2025-12-30T16:00:02.000Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.4",
     "type": "ipa",
     "name": "",
