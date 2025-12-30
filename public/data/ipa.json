@@ -216,6 +216,24 @@
     "lastSync": "2025-12-30T12:00:01.784Z"
   },
   {
+    "id": "ipa-dazz.camera.vintagecamera-2.13.2",
+    "type": "ipa",
+    "name": "Dazz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/Dazz_2.13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.13.2",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "dazz.camera.vintagecamera",
+    "lastSync": "2025-12-30T14:00:01.575Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.4",
     "type": "ipa",
     "name": "",
