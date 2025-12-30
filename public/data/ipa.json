@@ -180,6 +180,24 @@
     "lastSync": "2025-12-30T10:00:01.546Z"
   },
   {
+    "id": "ipa-com.moonly.Moonly-2.6.1",
+    "type": "ipa",
+    "name": "Moonly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonly.Moonly.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/Moonly_2.6.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.6.1",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.moonly.Moonly",
+    "lastSync": "2025-12-30T11:00:02.028Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.4",
     "type": "ipa",
     "name": "",
