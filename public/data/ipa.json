@@ -234,6 +234,240 @@
     "lastSync": "2025-12-30T14:00:01.575Z"
   },
   {
+    "id": "ipa-com.daymore.Across-1.12.7",
+    "type": "ipa",
+    "name": "Across",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.daymore.Across.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/Across_1.12.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.12.7",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.daymore.Across",
+    "lastSync": "2025-12-30T15:00:02.392Z"
+  },
+  {
+    "id": "ipa-com.commsource.BeautyPlus-7.27.0",
+    "type": "ipa",
+    "name": "BeautyPlus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.commsource.BeautyPlus.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/BeautyPlus_7.27.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.27.0",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.commsource.BeautyPlus",
+    "lastSync": "2025-12-30T15:00:02.392Z"
+  },
+  {
+    "id": "ipa-com.dubox.drive-4.10.0",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/TeraBox_4.10.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.10.0",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2025-12-30T15:00:02.393Z"
+  },
+  {
+    "id": "ipa-games.urmobi.found.it-1.61.80",
+    "type": "ipa",
+    "name": "FoundIt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/games.urmobi.found.it.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/FoundIt_1.61.80_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.61.80",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "games.urmobi.found.it",
+    "lastSync": "2025-12-30T15:00:02.393Z"
+  },
+  {
+    "id": "ipa-com.fifteenjugglers.solarwatch-2026.15",
+    "type": "ipa",
+    "name": "SolarWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fifteenjugglers.solarwatch.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/SolarWatch_2026.15_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.15",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.fifteenjugglers.solarwatch",
+    "lastSync": "2025-12-30T15:00:02.393Z"
+  },
+  {
+    "id": "ipa-com.glucobit.cravingBuster.CravingBuster-3.9.10",
+    "type": "ipa",
+    "name": "Reframe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glucobit.cravingBuster.CravingBuster.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/Reframe_3.9.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.10",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.glucobit.cravingBuster.CravingBuster",
+    "lastSync": "2025-12-30T15:00:02.393Z"
+  },
+  {
+    "id": "ipa-gronda.gmbh-8.2.3",
+    "type": "ipa",
+    "name": "Gronda",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gronda.gmbh.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/Gronda_8.2.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.2.3",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "gronda.gmbh",
+    "lastSync": "2025-12-30T15:00:02.393Z"
+  },
+  {
+    "id": "ipa-com.limepresso.shiftworkcalendar-2.4.8",
+    "type": "ipa",
+    "name": "Spoke",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.limepresso.shiftworkcalendar.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/Spoke_2.4.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.8",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.limepresso.shiftworkcalendar",
+    "lastSync": "2025-12-30T15:00:02.394Z"
+  },
+  {
+    "id": "ipa-ai.mindveil.musicai-1.7.4",
+    "type": "ipa",
+    "name": "SonivaMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ai.mindveil.musicai.png",
+    "desc": "Injected with Satella",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/SonivaMusic_1.7.4_Satella_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.7.4",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "ai.mindveil.musicai",
+    "lastSync": "2025-12-30T15:00:02.394Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.6.8",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/BlockBlast_6.6.8_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.8",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2025-12-30T15:00:02.394Z"
+  },
+  {
+    "id": "ipa-com.evolve.podcast-6.133.0",
+    "type": "ipa",
+    "name": "PodcastApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.evolve.podcast.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/PodcastApp_6.133.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.133.0",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.evolve.podcast",
+    "lastSync": "2025-12-30T15:00:02.394Z"
+  },
+  {
+    "id": "ipa-com.genau.MemoryCircle-3.1.9",
+    "type": "ipa",
+    "name": "VocaCircle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.genau.MemoryCircle.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/VocaCircle_3.1.9_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.9",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.genau.MemoryCircle",
+    "lastSync": "2025-12-30T15:00:02.395Z"
+  },
+  {
+    "id": "ipa-com.kevinquisquater.Habits-2025.19",
+    "type": "ipa",
+    "name": "Evoday",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kevinquisquater.Habits.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/Evoday_2025.19_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.19",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.kevinquisquater.Habits",
+    "lastSync": "2025-12-30T15:00:02.395Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.4",
     "type": "ipa",
     "name": "",
