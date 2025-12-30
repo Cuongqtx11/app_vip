@@ -126,6 +126,24 @@
     "lastSync": "2025-12-30T03:00:01.751Z"
   },
   {
+    "id": "ipa-com.neo.NeoMan-8.0.2",
+    "type": "ipa",
+    "name": "NeoServer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neo.NeoMan.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-12-2025/NeoServer_8.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.2",
+    "developer": "khomodvip",
+    "date": "2025-12-30",
+    "source": "apptesters",
+    "bundleID": "com.neo.NeoMan",
+    "lastSync": "2025-12-30T06:00:01.491Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.4",
     "type": "ipa",
     "name": "",
