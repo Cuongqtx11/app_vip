@@ -288,6 +288,60 @@
     "lastSync": "2025-12-31T13:00:01.632Z"
   },
   {
+    "id": "ipa-app.renovateai-4.4.69",
+    "type": "ipa",
+    "name": "RenovateAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.renovateai.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/RenovateAI_4.4.69_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.4.69",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "app.renovateai",
+    "lastSync": "2025-12-31T16:00:01.453Z"
+  },
+  {
+    "id": "ipa-de.komoot.berlinbikeapp-2026.01.2",
+    "type": "ipa",
+    "name": "Komoot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/Komoot_2026.01.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.01.2",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "de.komoot.berlinbikeapp",
+    "lastSync": "2025-12-31T16:00:01.454Z"
+  },
+  {
+    "id": "ipa-com.videobrowser.ios-621200",
+    "type": "ipa",
+    "name": "VideoLite",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.videobrowser.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/VideoLite_621200_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "621200",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.videobrowser.ios",
+    "lastSync": "2025-12-31T16:00:01.454Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
