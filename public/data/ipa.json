@@ -90,6 +90,42 @@
     "lastSync": "2025-12-31T07:00:01.496Z"
   },
   {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.24.0",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "lifestyle"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/MergeCooking_1.24.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.24.0",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2025-12-31T08:00:01.666Z"
+  },
+  {
+    "id": "ipa-com.neocortext.doublicatapp-6.0.0",
+    "type": "ipa",
+    "name": "Reface",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neocortext.doublicatapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/Reface_6.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.0",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.neocortext.doublicatapp",
+    "lastSync": "2025-12-31T08:00:01.667Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
