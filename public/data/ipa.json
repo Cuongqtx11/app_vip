@@ -126,6 +126,24 @@
     "lastSync": "2025-12-31T08:00:01.667Z"
   },
   {
+    "id": "ipa-eu.gowod-5.4.3",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/GOWOD_5.4.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.3",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2025-12-31T09:00:01.670Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
