@@ -144,6 +144,24 @@
     "lastSync": "2025-12-31T09:00:01.670Z"
   },
   {
+    "id": "ipa-com.textasticapp.textastic-universal-10.8.7",
+    "type": "ipa",
+    "name": "Textastic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.textasticapp.textastic-universal.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/Textastic_10.8.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.8.7",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.textasticapp.textastic-universal",
+    "lastSync": "2025-12-31T10:00:01.737Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
