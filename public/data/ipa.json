@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.getmimo.mimo-10.1.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/Mimo_10.1.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2025-12-31T22:00:01.478Z"
+  },
+  {
     "id": "ipa-com.wangyuehuan.vrtef-5.4.0",
     "type": "ipa",
     "name": "rPlayer",
