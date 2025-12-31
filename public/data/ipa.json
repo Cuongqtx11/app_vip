@@ -54,6 +54,42 @@
     "lastSync": "2025-12-31T02:00:02.307Z"
   },
   {
+    "id": "ipa-com.frontrow.vlog-2.0.2",
+    "type": "ipa",
+    "name": "VlogNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/VlogNow_2.0.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.2",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.frontrow.vlog",
+    "lastSync": "2025-12-31T07:00:01.495Z"
+  },
+  {
+    "id": "ipa-com.future.kapi-3.33.0",
+    "type": "ipa",
+    "name": "Action",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.future.kapi.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/Action_3.33.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.33.0",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.future.kapi",
+    "lastSync": "2025-12-31T07:00:01.496Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
