@@ -162,6 +162,24 @@
     "lastSync": "2025-12-31T10:00:01.737Z"
   },
   {
+    "id": "ipa-com.yazio.ios.YAZIO-12.63.2",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/Yazio_12.63.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.63.2",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2025-12-31T11:00:01.698Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
