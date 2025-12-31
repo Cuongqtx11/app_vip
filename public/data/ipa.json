@@ -342,6 +342,24 @@
     "lastSync": "2025-12-31T16:00:01.454Z"
   },
   {
+    "id": "ipa-com.sbs.diet-5.7.3",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/MacroFactor_5.7.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.7.3",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2025-12-31T18:00:01.399Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
