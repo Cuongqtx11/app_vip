@@ -198,6 +198,96 @@
     "lastSync": "2025-12-31T12:00:01.638Z"
   },
   {
+    "id": "ipa-com.intvl.app-3.3.3",
+    "type": "ipa",
+    "name": "INTVL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.intvl.app.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/INTVL_3.3.3_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.3",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.intvl.app",
+    "lastSync": "2025-12-31T13:00:01.631Z"
+  },
+  {
+    "id": "ipa-com.mlobodzinski.Stoic-2025.49",
+    "type": "ipa",
+    "name": "stoic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mlobodzinski.Stoic.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/stoic_2025.49_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.49",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.mlobodzinski.Stoic",
+    "lastSync": "2025-12-31T13:00:01.631Z"
+  },
+  {
+    "id": "ipa-com.tr.paraphrasingtool.rewritertool.textrewriter-1.5.7",
+    "type": "ipa",
+    "name": "Paraphrase",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tr.paraphrasingtool.rewritertool.textrewriter.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/Paraphrase_1.5.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.7",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.tr.paraphrasingtool.rewritertool.textrewriter",
+    "lastSync": "2025-12-31T13:00:01.632Z"
+  },
+  {
+    "id": "ipa-io.fadel.Spiik-1.0.111",
+    "type": "ipa",
+    "name": "Spiik",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.fadel.Spiik.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/Spiik_1.0.111_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.111",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "io.fadel.Spiik",
+    "lastSync": "2025-12-31T13:00:01.632Z"
+  },
+  {
+    "id": "ipa-com.unofficialcalculators.payplan-4.1.24",
+    "type": "ipa",
+    "name": "BillTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unofficialcalculators.payplan.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "finance"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/BillTracker_4.1.24_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.24",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.unofficialcalculators.payplan",
+    "lastSync": "2025-12-31T13:00:01.632Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
