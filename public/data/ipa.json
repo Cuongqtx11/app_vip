@@ -18,6 +18,42 @@
     "lastSync": "2025-12-31T01:00:01.455Z"
   },
   {
+    "id": "ipa-com.fifthstarlabs.skyguide-12.0.8",
+    "type": "ipa",
+    "name": "SkyGuide",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fifthstarlabs.skyguide.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/SkyGuide_12.0.8_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.8",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "com.fifthstarlabs.skyguide",
+    "lastSync": "2025-12-31T02:00:02.307Z"
+  },
+  {
+    "id": "ipa-hd.clear.status.app.clearstatus-6.0.3",
+    "type": "ipa",
+    "name": "ClearStatus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/hd.clear.status.app.clearstatus.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-12-2025/ClearStatus_6.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.3",
+    "developer": "khomodvip",
+    "date": "2025-12-31",
+    "source": "apptesters",
+    "bundleID": "hd.clear.status.app.clearstatus",
+    "lastSync": "2025-12-31T02:00:02.307Z"
+  },
+  {
     "id": "ipa-com.zijayrate.analogcam-8.2.5",
     "type": "ipa",
     "name": "OldRoll",
