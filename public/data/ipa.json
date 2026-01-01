@@ -36,6 +36,24 @@
     "lastSync": "2026-01-01T02:00:01.545Z"
   },
   {
+    "id": "ipa-com.travelboast.travelboast-2.21",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/TravelBoast_2.21_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.21",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-01-01T11:00:01.489Z"
+  },
+  {
     "id": "ipa-com.wangyuehuan.vrtef-5.4.0",
     "type": "ipa",
     "name": "rPlayer",
