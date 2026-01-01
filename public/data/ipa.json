@@ -18,6 +18,24 @@
     "lastSync": "2025-12-31T22:00:01.478Z"
   },
   {
+    "id": "ipa-com.ADPTVLTD.push-3.9.5",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/PUSH_3.9.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.5",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2026-01-01T02:00:01.545Z"
+  },
+  {
     "id": "ipa-com.wangyuehuan.vrtef-5.4.0",
     "type": "ipa",
     "name": "rPlayer",
