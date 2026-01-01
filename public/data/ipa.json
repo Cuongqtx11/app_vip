@@ -54,6 +54,240 @@
     "lastSync": "2026-01-01T11:00:01.489Z"
   },
   {
+    "id": "ipa-com.gamelegendstudio.lavasurvival-1.1.4",
+    "type": "ipa",
+    "name": "LavaSurvival",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gamelegendstudio.lavasurvival.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/LavaSurvival_1.1.4_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.4",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.gamelegendstudio.lavasurvival",
+    "lastSync": "2026-01-01T17:00:01.384Z"
+  },
+  {
+    "id": "ipa-com.TetianaKolomiichuk.Reel-Templates-3.5.3",
+    "type": "ipa",
+    "name": "Reels",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.TetianaKolomiichuk.Reel-Templates.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/Reels_3.5.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5.3",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.TetianaKolomiichuk.Reel-Templates",
+    "lastSync": "2026-01-01T17:00:01.385Z"
+  },
+  {
+    "id": "ipa-com.clearmindshypnotherapy.app-64.0.0",
+    "type": "ipa",
+    "name": "ClearMindsHypnotherapy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.clearmindshypnotherapy.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/ClearMindsHypnotherapy_64.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "64.0.0",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.clearmindshypnotherapy.app",
+    "lastSync": "2026-01-01T17:00:01.386Z"
+  },
+  {
+    "id": "ipa-com.goodturn.memorize-5.5.5",
+    "type": "ipa",
+    "name": "MemorizeByHeart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.goodturn.memorize.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/MemorizeByHeart_5.5.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.5",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.goodturn.memorize",
+    "lastSync": "2026-01-01T17:00:01.386Z"
+  },
+  {
+    "id": "ipa-com.nibbleapps.MealPrepPro-3.131",
+    "type": "ipa",
+    "name": "MealPrepPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nibbleapps.MealPrepPro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/MealPrepPro_3.131_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.131",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.nibbleapps.MealPrepPro",
+    "lastSync": "2026-01-01T17:00:01.386Z"
+  },
+  {
+    "id": "ipa-com.unofficialcalculators.payplan-4.1.25",
+    "type": "ipa",
+    "name": "BillTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unofficialcalculators.payplan.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "finance"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/BillTracker_4.1.25_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.25",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.unofficialcalculators.payplan",
+    "lastSync": "2026-01-01T17:00:01.386Z"
+  },
+  {
+    "id": "ipa-com.ToweringTower.KnightLancer-1.57",
+    "type": "ipa",
+    "name": "KnightLancer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ToweringTower.KnightLancer.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/KnightLancer_1.57_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.57",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.ToweringTower.KnightLancer",
+    "lastSync": "2026-01-01T17:00:01.387Z"
+  },
+  {
+    "id": "ipa-com.kiloo.subwaysurfers-3.56.0",
+    "type": "ipa",
+    "name": "SubwaySurf",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kiloo.subwaysurfers.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/SubwaySurf_3.56.0_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.56.0",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.kiloo.subwaysurfers",
+    "lastSync": "2026-01-01T17:00:01.387Z"
+  },
+  {
+    "id": "ipa-nz.digitaltools.Tube-GPT-3.12.0",
+    "type": "ipa",
+    "name": "Summarify",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/nz.digitaltools.Tube-GPT.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/Summarify_3.12.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.12.0",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "nz.digitaltools.Tube-GPT",
+    "lastSync": "2026-01-01T17:00:01.387Z"
+  },
+  {
+    "id": "ipa-com.ketchapp.pop2-1.4.6",
+    "type": "ipa",
+    "name": "PoPEscape2",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ketchapp.pop2.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/PoPEscape2_1.4.6_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.6",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.ketchapp.pop2",
+    "lastSync": "2026-01-01T17:00:01.387Z"
+  },
+  {
+    "id": "ipa-com.dawinstone.b2ba-3.4.1",
+    "type": "ipa",
+    "name": "B2BApocalypse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dawinstone.b2ba.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/B2BApocalypse_3.4.1_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.1",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.dawinstone.b2ba",
+    "lastSync": "2026-01-01T17:00:01.388Z"
+  },
+  {
+    "id": "ipa-com.superplaystudios.dicedreams-1.101.1",
+    "type": "ipa",
+    "name": "DiceDreams",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.superplaystudios.dicedreams.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/DiceDreams_1.101.1_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.101.1",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.superplaystudios.dicedreams",
+    "lastSync": "2026-01-01T17:00:01.388Z"
+  },
+  {
+    "id": "ipa-com.polywise.weekly-5.0.7",
+    "type": "ipa",
+    "name": "Imprint",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.polywise.weekly.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-01-2026/Imprint_5.0.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.0.7",
+    "developer": "khomodvip",
+    "date": "2026-01-01",
+    "source": "apptesters",
+    "bundleID": "com.polywise.weekly",
+    "lastSync": "2026-01-01T17:00:01.388Z"
+  },
+  {
     "id": "ipa-com.wangyuehuan.vrtef-5.4.0",
     "type": "ipa",
     "name": "rPlayer",
