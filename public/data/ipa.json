@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-camera.lux.kino-1.3.2",
+    "type": "ipa",
+    "name": "Kino",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/camera.lux.kino.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/Kino_1.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.3.2",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "camera.lux.kino",
+    "lastSync": "2026-01-01T23:00:01.521Z"
+  },
+  {
     "id": "ipa-com.getmimo.mimo-10.1.0",
     "type": "ipa",
     "name": "Mimo",
