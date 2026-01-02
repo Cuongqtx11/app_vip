@@ -144,6 +144,60 @@
     "lastSync": "2026-01-02T11:00:01.728Z"
   },
   {
+    "id": "ipa-com.glucobit.cravingBuster.CravingBuster-3.9.11",
+    "type": "ipa",
+    "name": "Reframe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glucobit.cravingBuster.CravingBuster.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/Reframe_3.9.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.11",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "com.glucobit.cravingBuster.CravingBuster",
+    "lastSync": "2026-01-02T12:00:01.729Z"
+  },
+  {
+    "id": "ipa-com.clearmindshypnotherapy.app-65.0.0",
+    "type": "ipa",
+    "name": "ClearMindsHypnotherapy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.clearmindshypnotherapy.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/ClearMindsHypnotherapy_65.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "65.0.0",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "com.clearmindshypnotherapy.app",
+    "lastSync": "2026-01-02T12:00:01.730Z"
+  },
+  {
+    "id": "ipa-com.saltycrackers.daygram-5.4.0",
+    "type": "ipa",
+    "name": "Daygram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.saltycrackers.daygram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/Daygram_5.4.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.0",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "com.saltycrackers.daygram",
+    "lastSync": "2026-01-02T12:00:01.730Z"
+  },
+  {
     "id": "ipa-com.getmimo.mimo-10.1.0",
     "type": "ipa",
     "name": "Mimo",
