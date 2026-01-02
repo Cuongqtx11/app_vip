@@ -18,6 +18,78 @@
     "lastSync": "2026-01-01T23:00:01.521Z"
   },
   {
+    "id": "ipa-com.sillens.iShape-23.3.2",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/Lifesum_23.3.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.3.2",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2026-01-02T04:00:01.402Z"
+  },
+  {
+    "id": "ipa-in.muditbhargava.LookUp-12.0.5",
+    "type": "ipa",
+    "name": "LookUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/in.muditbhargava.LookUp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/LookUp_12.0.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.5",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "in.muditbhargava.LookUp",
+    "lastSync": "2026-01-02T04:00:01.402Z"
+  },
+  {
+    "id": "ipa-com.lappir.keto-8.3.1",
+    "type": "ipa",
+    "name": "KetoDiet",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lappir.keto.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/KetoDiet_8.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.3.1",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "com.lappir.keto",
+    "lastSync": "2026-01-02T04:00:01.402Z"
+  },
+  {
+    "id": "ipa-com.lappir.carnivore-2.0.1",
+    "type": "ipa",
+    "name": "Carnivore",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lappir.carnivore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-01-2026/Carnivore_2.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.1",
+    "developer": "khomodvip",
+    "date": "2026-01-02",
+    "source": "apptesters",
+    "bundleID": "com.lappir.carnivore",
+    "lastSync": "2026-01-02T04:00:01.403Z"
+  },
+  {
     "id": "ipa-com.getmimo.mimo-10.1.0",
     "type": "ipa",
     "name": "Mimo",
