@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.13",
+    "type": "ipa",
+    "name": "InCollage",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PhotoEditor.PhotoCollage.inCollage.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/InCollage_2.2.13_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.13",
+    "developer": "khomodvip",
+    "date": "2026-01-03",
+    "source": "apptesters",
+    "bundleID": "PhotoEditor.PhotoCollage.inCollage",
+    "lastSync": "2026-01-02T21:00:01.531Z"
+  },
+  {
     "id": "ipa-camera.lux.kino-1.3.2",
     "type": "ipa",
     "name": "Kino",
