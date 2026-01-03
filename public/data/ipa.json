@@ -72,6 +72,78 @@
     "lastSync": "2026-01-03T03:00:01.757Z"
   },
   {
+    "id": "ipa-com.fluidtouch.noteshelf3-6.3",
+    "type": "ipa",
+    "name": "Noteshelf3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fluidtouch.noteshelf3.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/Noteshelf3_6.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3",
+    "developer": "khomodvip",
+    "date": "2026-01-03",
+    "source": "apptesters",
+    "bundleID": "com.fluidtouch.noteshelf3",
+    "lastSync": "2026-01-03T08:00:01.389Z"
+  },
+  {
+    "id": "ipa-app.mmap.mobile-2.7.6",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/Soundmap_2.7.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.7.6",
+    "developer": "khomodvip",
+    "date": "2026-01-03",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2026-01-03T08:00:01.390Z"
+  },
+  {
+    "id": "ipa-app.renovateai-4.4.70",
+    "type": "ipa",
+    "name": "RenovateAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.renovateai.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/RenovateAI_4.4.70_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.4.70",
+    "developer": "khomodvip",
+    "date": "2026-01-03",
+    "source": "apptesters",
+    "bundleID": "app.renovateai",
+    "lastSync": "2026-01-03T08:00:01.390Z"
+  },
+  {
+    "id": "ipa-com.grey.swiftcamera-2.5.49",
+    "type": "ipa",
+    "name": "NoFusion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grey.swiftcamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/NoFusion_2.5.49_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.49",
+    "developer": "khomodvip",
+    "date": "2026-01-03",
+    "source": "apptesters",
+    "bundleID": "com.grey.swiftcamera",
+    "lastSync": "2026-01-03T08:00:01.391Z"
+  },
+  {
     "id": "ipa-camera.lux.kino-1.3.2",
     "type": "ipa",
     "name": "Kino",
