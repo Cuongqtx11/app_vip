@@ -36,6 +36,42 @@
     "lastSync": "2026-01-02T22:00:01.701Z"
   },
   {
+    "id": "ipa-net.quochuywdm.collanote496-4.0.4",
+    "type": "ipa",
+    "name": "CollaNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/CollaNote_4.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.4",
+    "developer": "khomodvip",
+    "date": "2026-01-03",
+    "source": "apptesters",
+    "bundleID": "net.quochuywdm.collanote496",
+    "lastSync": "2026-01-03T03:00:01.756Z"
+  },
+  {
+    "id": "ipa-PHCXZHD53T.com.enki.insights-2.40.4",
+    "type": "ipa",
+    "name": "Enki",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PHCXZHD53T.com.enki.insights.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-01-2026/Enki_2.40.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.40.4",
+    "developer": "khomodvip",
+    "date": "2026-01-03",
+    "source": "apptesters",
+    "bundleID": "PHCXZHD53T.com.enki.insights",
+    "lastSync": "2026-01-03T03:00:01.757Z"
+  },
+  {
     "id": "ipa-camera.lux.kino-1.3.2",
     "type": "ipa",
     "name": "Kino",
