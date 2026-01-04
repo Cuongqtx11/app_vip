@@ -126,6 +126,24 @@
     "lastSync": "2026-01-04T10:00:02.494Z"
   },
   {
+    "id": "ipa-com.vgfit.fitnessvip-1.11.0",
+    "type": "ipa",
+    "name": "FB",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vgfit.fitnessvip.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-01-2026/FB_1.11.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.11.0",
+    "developer": "khomodvip",
+    "date": "2026-01-04",
+    "source": "apptesters",
+    "bundleID": "com.vgfit.fitnessvip",
+    "lastSync": "2026-01-04T12:00:01.734Z"
+  },
+  {
     "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.13",
     "type": "ipa",
     "name": "InCollage",
