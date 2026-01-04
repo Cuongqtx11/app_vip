@@ -144,6 +144,24 @@
     "lastSync": "2026-01-04T12:00:01.734Z"
   },
   {
+    "id": "ipa-com.vitalii.mind-2.5.2",
+    "type": "ipa",
+    "name": "Mindllama",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vitalii.mind.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-01-2026/Mindllama_2.5.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.2",
+    "developer": "khomodvip",
+    "date": "2026-01-04",
+    "source": "apptesters",
+    "bundleID": "com.vitalii.mind",
+    "lastSync": "2026-01-04T16:00:01.546Z"
+  },
+  {
     "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.13",
     "type": "ipa",
     "name": "InCollage",
