@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.zhiliaoapp.musically-43.1.0",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-01-2026/TikTok_43.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "43.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-04",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-01-04T01:00:01.674Z"
+  },
+  {
     "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.13",
     "type": "ipa",
     "name": "InCollage",
