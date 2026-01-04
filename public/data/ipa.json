@@ -90,6 +90,42 @@
     "lastSync": "2026-01-04T09:00:01.475Z"
   },
   {
+    "id": "ipa-com.maxty.gofitness-7.14.0",
+    "type": "ipa",
+    "name": "ProFit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.maxty.gofitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-01-2026/ProFit_7.14.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.14.0",
+    "developer": "khomodvip",
+    "date": "2026-01-04",
+    "source": "apptesters",
+    "bundleID": "com.maxty.gofitness",
+    "lastSync": "2026-01-04T10:00:02.493Z"
+  },
+  {
+    "id": "ipa-com.blake.femalefitness-10.5.0",
+    "type": "ipa",
+    "name": "Shapy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blake.femalefitness.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-01-2026/Shapy_10.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.5.0",
+    "developer": "khomodvip",
+    "date": "2026-01-04",
+    "source": "apptesters",
+    "bundleID": "com.blake.femalefitness",
+    "lastSync": "2026-01-04T10:00:02.494Z"
+  },
+  {
     "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.13",
     "type": "ipa",
     "name": "InCollage",
