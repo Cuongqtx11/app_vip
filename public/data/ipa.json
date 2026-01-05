@@ -54,6 +54,42 @@
     "lastSync": "2026-01-05T20:00:01.509Z"
   },
   {
+    "id": "ipa-com.alexanderben.RadioIn-40.7.0",
+    "type": "ipa",
+    "name": "TuneInRadio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alexanderben.RadioIn.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/TuneInRadio_40.7.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "40.7.0",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.alexanderben.RadioIn",
+    "lastSync": "2026-01-05T21:00:01.820Z"
+  },
+  {
+    "id": "ipa-com.burbn.instagram-411.0.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/Instagram_411.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "411.0.0",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-01-05T21:00:01.820Z"
+  },
+  {
     "id": "ipa-com.readdle.Scanner-8.33.1",
     "type": "ipa",
     "name": "ScannerPro",
