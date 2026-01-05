@@ -1,5 +1,59 @@
 [
   {
+    "id": "ipa-com.informelab.toonme-0.11.31",
+    "type": "ipa",
+    "name": "ToonMe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.informelab.toonme.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/ToonMe_0.11.31_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.11.31",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.informelab.toonme",
+    "lastSync": "2026-01-05T20:00:01.508Z"
+  },
+  {
+    "id": "ipa-com.rickharrison.narwhal-2025.10",
+    "type": "ipa",
+    "name": "Narwhal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.rickharrison.narwhal.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/Narwhal_2025.10_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.10",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.rickharrison.narwhal",
+    "lastSync": "2026-01-05T20:00:01.509Z"
+  },
+  {
+    "id": "ipa-com.duolingo.DuolingoMobile-7.104.0",
+    "type": "ipa",
+    "name": "Duolingo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.duolingo.DuolingoMobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/Duolingo_7.104.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.104.0",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.duolingo.DuolingoMobile",
+    "lastSync": "2026-01-05T20:00:01.509Z"
+  },
+  {
     "id": "ipa-com.readdle.Scanner-8.33.1",
     "type": "ipa",
     "name": "ScannerPro",
