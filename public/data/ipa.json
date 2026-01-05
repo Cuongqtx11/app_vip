@@ -378,6 +378,24 @@
     "lastSync": "2026-01-05T16:00:01.865Z"
   },
   {
+    "id": "ipa-solutions.wzp.translator-2025.12.2",
+    "type": "ipa",
+    "name": "TranslateNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/solutions.wzp.translator.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-01-2026/TranslateNow_2025.12.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.12.2",
+    "developer": "khomodvip",
+    "date": "2026-01-05",
+    "source": "apptesters",
+    "bundleID": "solutions.wzp.translator",
+    "lastSync": "2026-01-05T17:00:01.874Z"
+  },
+  {
     "id": "ipa-com.zhiliaoapp.musically-43.1.0",
     "type": "ipa",
     "name": "TikTok",
