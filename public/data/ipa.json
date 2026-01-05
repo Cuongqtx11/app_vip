@@ -342,6 +342,24 @@
     "lastSync": "2026-01-05T13:00:01.850Z"
   },
   {
+    "id": "ipa-com.tripleglazedstudios.Weather-3.1.3",
+    "type": "ipa",
+    "name": "Mercury",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tripleglazedstudios.Weather.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-01-2026/Mercury_3.1.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.3",
+    "developer": "khomodvip",
+    "date": "2026-01-05",
+    "source": "apptesters",
+    "bundleID": "com.tripleglazedstudios.Weather",
+    "lastSync": "2026-01-05T14:00:02.487Z"
+  },
+  {
     "id": "ipa-com.zhiliaoapp.musically-43.1.0",
     "type": "ipa",
     "name": "TikTok",
