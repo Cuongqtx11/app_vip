@@ -162,6 +162,42 @@
     "lastSync": "2026-01-05T09:00:01.813Z"
   },
   {
+    "id": "ipa-com.codeway.cleanerplus-6.9.0",
+    "type": "ipa",
+    "name": "Cleanup",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.codeway.cleanerplus.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-01-2026/Cleanup_6.9.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.9.0",
+    "developer": "khomodvip",
+    "date": "2026-01-05",
+    "source": "apptesters",
+    "bundleID": "com.codeway.cleanerplus",
+    "lastSync": "2026-01-05T10:00:01.739Z"
+  },
+  {
+    "id": "ipa-com.hitpaw.photoenhancer-1.95.0",
+    "type": "ipa",
+    "name": "AIMarvels",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hitpaw.photoenhancer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-01-2026/AIMarvels_1.95.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.95.0",
+    "developer": "khomodvip",
+    "date": "2026-01-05",
+    "source": "apptesters",
+    "bundleID": "com.hitpaw.photoenhancer",
+    "lastSync": "2026-01-05T10:00:01.740Z"
+  },
+  {
     "id": "ipa-com.zhiliaoapp.musically-43.1.0",
     "type": "ipa",
     "name": "TikTok",
