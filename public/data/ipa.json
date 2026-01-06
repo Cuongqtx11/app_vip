@@ -198,6 +198,24 @@
     "lastSync": "2026-01-06T02:00:01.618Z"
   },
   {
+    "id": "ipa-com.hubx.imagination-4.3.6",
+    "type": "ipa",
+    "name": "DaVinci",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hubx.imagination.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/DaVinci_4.3.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.6",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.hubx.imagination",
+    "lastSync": "2026-01-06T07:00:01.560Z"
+  },
+  {
     "id": "ipa-com.readdle.Scanner-8.33.1",
     "type": "ipa",
     "name": "ScannerPro",
