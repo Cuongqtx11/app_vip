@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1767676223_7638",
+    "key": "81WI-8FHF-BL9T-3JCP",
+    "createdAt": "2026-01-06T12:10:23.216304",
+    "expiresAt": "2026-02-06T12:10:23.216339",
+    "maxUses": null,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "31 days, ∞ uses"
+  },
+  {
     "id": "key_1767453270_1492",
     "key": "N1JX-5KYR-FS01-VU15",
     "createdAt": "2026-01-03T22:14:30.243823",
