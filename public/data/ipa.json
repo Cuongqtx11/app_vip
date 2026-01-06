@@ -396,6 +396,24 @@
     "lastSync": "2026-01-06T17:00:01.756Z"
   },
   {
+    "id": "ipa-com.yengshine.proccd-5.3.0",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/ProCCD_5.3.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.0",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2026-01-06T19:00:01.559Z"
+  },
+  {
     "id": "ipa-com.readdle.Scanner-8.33.1",
     "type": "ipa",
     "name": "ScannerPro",
