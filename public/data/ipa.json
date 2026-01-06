@@ -126,6 +126,78 @@
     "lastSync": "2026-01-06T01:00:01.882Z"
   },
   {
+    "id": "ipa-com.google.ios.youtubemusic-8.51.1",
+    "type": "ipa",
+    "name": "YouTubeMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtubemusic.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/YouTubeMusic_8.51.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.51.1",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.google.ios.youtubemusic",
+    "lastSync": "2026-01-06T02:00:01.614Z"
+  },
+  {
+    "id": "ipa-com.google.ios.youtube-20.50.10",
+    "type": "ipa",
+    "name": "YouTubeOLED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/YouTubeOLED_20.50.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.50.10",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.google.ios.youtube",
+    "lastSync": "2026-01-06T02:00:01.615Z"
+  },
+  {
+    "id": "ipa-com.innothenics.thenics-6.1.4",
+    "type": "ipa",
+    "name": "Thenics",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.innothenics.thenics.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/Thenics_6.1.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.1.4",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "com.innothenics.thenics",
+    "lastSync": "2026-01-06T02:00:01.616Z"
+  },
+  {
+    "id": "ipa-tech.miidii.MDClock-2.63",
+    "type": "ipa",
+    "name": "MDClock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.MDClock.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-01-2026/MDClock_2.63_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.63",
+    "developer": "khomodvip",
+    "date": "2026-01-06",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.MDClock",
+    "lastSync": "2026-01-06T02:00:01.618Z"
+  },
+  {
     "id": "ipa-com.readdle.Scanner-8.33.1",
     "type": "ipa",
     "name": "ScannerPro",
