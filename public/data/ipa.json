@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.0",
+    "type": "ipa",
+    "name": "ShutEye",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/ShutEye_3.3.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.0",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "health.sleep.sounds.tracker.alarm.calm",
+    "lastSync": "2026-01-07T19:00:01.799Z"
+  },
+  {
     "id": "ipa-com.bitsmedia.muslimpro-16.19.1",
     "type": "ipa",
     "name": "MuslimPro",
@@ -610,6 +628,24 @@
     "source": "apptesters",
     "bundleID": "com.endel.endel",
     "lastSync": "2026-01-07T18:00:01.844Z"
+  },
+  {
+    "id": "ipa-com.madarsoft.fitness-16.8",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/_16.8_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.8",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2026-01-07T19:00:01.799Z"
   },
   {
     "id": "ipa-com.informelab.toonme-0.11.31",
