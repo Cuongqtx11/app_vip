@@ -450,6 +450,96 @@
     "lastSync": "2026-01-07T13:00:02.213Z"
   },
   {
+    "id": "ipa-com.aoklab.fewerphotos-3.2.43",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/swipewipe_3.2.43_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.43",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2026-01-07T14:00:01.948Z"
+  },
+  {
+    "id": "ipa-fontskeyboard.fonts-8.4.48",
+    "type": "ipa",
+    "name": "Fonts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fontskeyboard.fonts.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/Fonts_8.4.48_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.4.48",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "fontskeyboard.fonts",
+    "lastSync": "2026-01-07T14:00:01.949Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.7.0",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/BlockBlast_6.7.0_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.7.0",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2026-01-07T14:00:01.949Z"
+  },
+  {
+    "id": "ipa-com.joytunes.SimplyGuitar-10.12",
+    "type": "ipa",
+    "name": "SimplyGuitar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.SimplyGuitar.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/SimplyGuitar_10.12_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.12",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.joytunes.SimplyGuitar",
+    "lastSync": "2026-01-07T14:00:01.951Z"
+  },
+  {
+    "id": "ipa-app.cranberry.cure-1.9",
+    "type": "ipa",
+    "name": "Cure",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.cure.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/Cure_1.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.9",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.cure",
+    "lastSync": "2026-01-07T14:00:01.951Z"
+  },
+  {
     "id": "ipa-com.informelab.toonme-0.11.31",
     "type": "ipa",
     "name": "ToonMe",
