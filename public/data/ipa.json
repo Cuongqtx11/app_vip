@@ -234,6 +234,96 @@
     "lastSync": "2026-01-07T07:00:01.644Z"
   },
   {
+    "id": "ipa-com.adobe.PSMobile-25.50.1",
+    "type": "ipa",
+    "name": "PSExpress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.PSMobile.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/PSExpress_25.50.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.50.1",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.adobe.PSMobile",
+    "lastSync": "2026-01-07T08:00:01.688Z"
+  },
+  {
+    "id": "ipa-com.imageline.FLStudioMobileHD-4.9.3",
+    "type": "ipa",
+    "name": "FLStudioMobile",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.imageline.FLStudioMobileHD.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/FLStudioMobile_4.9.3_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.9.3",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.imageline.FLStudioMobileHD",
+    "lastSync": "2026-01-07T08:00:01.689Z"
+  },
+  {
+    "id": "ipa-com.TickTick.task-8.0.00",
+    "type": "ipa",
+    "name": "TickTick",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.TickTick.task.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/TickTick_8.0.00_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.00",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.TickTick.task",
+    "lastSync": "2026-01-07T08:00:01.689Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2-11.55",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/X_11.55_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.55",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2026-01-07T08:00:01.690Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.57.15",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/ColorPop_2.57.15_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.57.15",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2026-01-07T08:00:01.690Z"
+  },
+  {
     "id": "ipa-com.informelab.toonme-0.11.31",
     "type": "ipa",
     "name": "ToonMe",
