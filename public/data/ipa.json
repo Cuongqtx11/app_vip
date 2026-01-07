@@ -180,6 +180,24 @@
     "lastSync": "2026-01-07T00:00:01.442Z"
   },
   {
+    "id": "ipa-com.grow.my.food-1.36",
+    "type": "ipa",
+    "name": "GrowIt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grow.my.food.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "lifestyle"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/GrowIt_1.36_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.36",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.grow.my.food",
+    "lastSync": "2026-01-07T04:00:01.477Z"
+  },
+  {
     "id": "ipa-com.informelab.toonme-0.11.31",
     "type": "ipa",
     "name": "ToonMe",
