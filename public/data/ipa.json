@@ -342,6 +342,42 @@
     "lastSync": "2026-01-07T09:00:01.682Z"
   },
   {
+    "id": "ipa-com.burbn.instagram-411.1.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/Instagram_411.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "411.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-01-07T10:00:01.703Z"
+  },
+  {
+    "id": "ipa-archery.storify-1.254.0",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/Mojo_1.254.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.254.0",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2026-01-07T10:00:01.704Z"
+  },
+  {
     "id": "ipa-com.informelab.toonme-0.11.31",
     "type": "ipa",
     "name": "ToonMe",
