@@ -162,6 +162,24 @@
     "lastSync": "2026-01-06T22:00:02.078Z"
   },
   {
+    "id": "ipa-com.calculated.laurene-294",
+    "type": "ipa",
+    "name": "CMProCalc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.calculated.laurene.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/CMProCalc_294_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "294",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.calculated.laurene",
+    "lastSync": "2026-01-07T00:00:01.442Z"
+  },
+  {
     "id": "ipa-com.informelab.toonme-0.11.31",
     "type": "ipa",
     "name": "ToonMe",
