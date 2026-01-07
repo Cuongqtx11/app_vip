@@ -594,6 +594,24 @@
     "lastSync": "2026-01-07T17:00:01.435Z"
   },
   {
+    "id": "ipa-com.endel.endel-4.49.5",
+    "type": "ipa",
+    "name": "Endel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.endel.endel.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/Endel_4.49.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.49.5",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.endel.endel",
+    "lastSync": "2026-01-07T18:00:01.844Z"
+  },
+  {
     "id": "ipa-com.informelab.toonme-0.11.31",
     "type": "ipa",
     "name": "ToonMe",
