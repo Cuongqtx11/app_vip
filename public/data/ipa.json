@@ -540,6 +540,24 @@
     "lastSync": "2026-01-07T14:00:01.951Z"
   },
   {
+    "id": "ipa-com.jakemor.firness-ai-15.2",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-01-2026/FitnessAI_15.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.2",
+    "developer": "khomodvip",
+    "date": "2026-01-07",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2026-01-07T15:00:01.901Z"
+  },
+  {
     "id": "ipa-com.informelab.toonme-0.11.31",
     "type": "ipa",
     "name": "ToonMe",
