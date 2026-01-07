@@ -72,6 +72,42 @@
     "lastSync": "2026-01-07T21:00:01.518Z"
   },
   {
+    "id": "ipa-com.ADPTVLTD.push-3.9.7",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/PUSH_3.9.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.7",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2026-01-07T22:00:02.217Z"
+  },
+  {
+    "id": "ipa-com.shapr3d.shapr-5.1013.0",
+    "type": "ipa",
+    "name": "Shapr3D",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shapr3d.shapr.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/Shapr3D_5.1013.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.1013.0",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "com.shapr3d.shapr",
+    "lastSync": "2026-01-07T22:00:02.218Z"
+  },
+  {
     "id": "ipa-com.bitsmedia.muslimpro-16.19.1",
     "type": "ipa",
     "name": "MuslimPro",
