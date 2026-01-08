@@ -288,6 +288,24 @@
     "lastSync": "2026-01-08T15:00:01.354Z"
   },
   {
+    "id": "ipa-co.noteplan.NotePlan3-3.20",
+    "type": "ipa",
+    "name": "NotePlan",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.noteplan.NotePlan3.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/NotePlan_3.20_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.20",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "co.noteplan.NotePlan3",
+    "lastSync": "2026-01-08T16:00:01.863Z"
+  },
+  {
     "id": "ipa-com.bitsmedia.muslimpro-16.19.1",
     "type": "ipa",
     "name": "MuslimPro",
