@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-app.mmap.mobile-2.8.0",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/Soundmap_2.8.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.0",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2026-01-08T20:00:01.925Z"
+  },
+  {
+    "id": "ipa-org.borrowedcache.ultimate531-5.17.6",
+    "type": "ipa",
+    "name": "KeyLifts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/KeyLifts_5.17.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.6",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "org.borrowedcache.ultimate531",
+    "lastSync": "2026-01-08T20:00:01.926Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.0",
     "type": "ipa",
     "name": "ShutEye",
