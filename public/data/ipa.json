@@ -126,6 +126,42 @@
     "lastSync": "2026-01-07T23:00:01.755Z"
   },
   {
+    "id": "ipa-com.alexanderben.RadioIn-40.7.1",
+    "type": "ipa",
+    "name": "TuneInRadio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alexanderben.RadioIn.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/TuneInRadio_40.7.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "40.7.1",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "com.alexanderben.RadioIn",
+    "lastSync": "2026-01-08T01:00:01.597Z"
+  },
+  {
+    "id": "ipa-com.mobivalley.LookAroundApp-1.48.0",
+    "type": "ipa",
+    "name": "PlaceGuesser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobivalley.LookAroundApp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/PlaceGuesser_1.48.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.48.0",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "com.mobivalley.LookAroundApp",
+    "lastSync": "2026-01-08T01:00:01.597Z"
+  },
+  {
     "id": "ipa-com.bitsmedia.muslimpro-16.19.1",
     "type": "ipa",
     "name": "MuslimPro",
