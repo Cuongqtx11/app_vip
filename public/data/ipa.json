@@ -486,6 +486,24 @@
     "lastSync": "2026-01-08T18:00:01.908Z"
   },
   {
+    "id": "ipa-com.shred.shredlabs-5.3.7",
+    "type": "ipa",
+    "name": "SHRED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shred.shredlabs.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/SHRED_5.3.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.7",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "com.shred.shredlabs",
+    "lastSync": "2026-01-08T19:00:01.527Z"
+  },
+  {
     "id": "ipa-com.bitsmedia.muslimpro-16.19.1",
     "type": "ipa",
     "name": "MuslimPro",
