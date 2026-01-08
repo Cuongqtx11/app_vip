@@ -468,6 +468,24 @@
     "lastSync": "2026-01-08T17:00:01.788Z"
   },
   {
+    "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0107.00",
+    "type": "ipa",
+    "name": "BrickOut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.puzzle1studio.ap.brickoutshoottheball.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-01-2026/BrickOut_26.0107.00_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.0107.00",
+    "developer": "khomodvip",
+    "date": "2026-01-08",
+    "source": "apptesters",
+    "bundleID": "com.puzzle1studio.ap.brickoutshoottheball",
+    "lastSync": "2026-01-08T18:00:01.908Z"
+  },
+  {
     "id": "ipa-com.bitsmedia.muslimpro-16.19.1",
     "type": "ipa",
     "name": "MuslimPro",
