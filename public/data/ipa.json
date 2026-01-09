@@ -288,6 +288,24 @@
     "lastSync": "2026-01-09T06:00:01.437Z"
   },
   {
+    "id": "ipa-com.hubx.noteai-1.0.36",
+    "type": "ipa",
+    "name": "NoteAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hubx.noteai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/NoteAI_1.0.36_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.36",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "com.hubx.noteai",
+    "lastSync": "2026-01-09T08:00:01.603Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.0",
     "type": "ipa",
     "name": "ShutEye",
