@@ -108,6 +108,24 @@
     "lastSync": "2026-01-08T23:00:01.464Z"
   },
   {
+    "id": "ipa-com.iteration-mobile.radarbot-free-ww-9.33",
+    "type": "ipa",
+    "name": "Radarbot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iteration-mobile.radarbot-free-ww.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/Radarbot_9.33_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.33",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "com.iteration-mobile.radarbot-free-ww",
+    "lastSync": "2026-01-09T00:00:01.925Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.0",
     "type": "ipa",
     "name": "ShutEye",
