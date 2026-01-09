@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.burbn.instagram-411.3.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-01-2026/Instagram_411.3.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "411.3.0",
+    "developer": "khomodvip",
+    "date": "2026-01-10",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-01-09T20:00:01.890Z"
+  },
+  {
     "id": "ipa-app.mmap.mobile-2.8.0",
     "type": "ipa",
     "name": "Soundmap",
