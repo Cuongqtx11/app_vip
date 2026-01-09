@@ -126,6 +126,42 @@
     "lastSync": "2026-01-09T00:00:01.925Z"
   },
   {
+    "id": "ipa-archery.storify-1.254.1",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/Mojo_1.254.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.254.1",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2026-01-09T01:00:01.664Z"
+  },
+  {
+    "id": "ipa-com.maplepop.bmcx-6.2.2",
+    "type": "ipa",
+    "name": "MapleReadCX",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.maplepop.bmcx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/MapleReadCX_6.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.2",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "com.maplepop.bmcx",
+    "lastSync": "2026-01-09T01:00:01.665Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.0",
     "type": "ipa",
     "name": "ShutEye",
