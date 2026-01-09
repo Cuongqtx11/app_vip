@@ -234,6 +234,60 @@
     "lastSync": "2026-01-09T04:00:01.918Z"
   },
   {
+    "id": "ipa-com.AppChief.ArabicArt-9.4.3",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/_9.4.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.4.3",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2026-01-09T06:00:01.436Z"
+  },
+  {
+    "id": "ipa-com.consumedbycode.slopes-2026.2",
+    "type": "ipa",
+    "name": "Slopes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.consumedbycode.slopes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/Slopes_2026.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.2",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "com.consumedbycode.slopes",
+    "lastSync": "2026-01-09T06:00:01.436Z"
+  },
+  {
+    "id": "ipa-in.muditbhargava.LookUp-12.0.6",
+    "type": "ipa",
+    "name": "LookUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/in.muditbhargava.LookUp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-01-2026/LookUp_12.0.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.6",
+    "developer": "khomodvip",
+    "date": "2026-01-09",
+    "source": "apptesters",
+    "bundleID": "in.muditbhargava.LookUp",
+    "lastSync": "2026-01-09T06:00:01.437Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.0",
     "type": "ipa",
     "name": "ShutEye",
