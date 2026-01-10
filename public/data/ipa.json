@@ -180,6 +180,24 @@
     "lastSync": "2026-01-10T15:00:01.370Z"
   },
   {
+    "id": "ipa-app.uplens-3.4.6",
+    "type": "ipa",
+    "name": "Uplens",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.uplens.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-01-2026/Uplens_3.4.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.6",
+    "developer": "khomodvip",
+    "date": "2026-01-10",
+    "source": "apptesters",
+    "bundleID": "app.uplens",
+    "lastSync": "2026-01-10T18:00:01.536Z"
+  },
+  {
     "id": "ipa-app.mmap.mobile-2.8.0",
     "type": "ipa",
     "name": "Soundmap",
