@@ -36,6 +36,60 @@
     "lastSync": "2026-01-11T22:00:01.785Z"
   },
   {
+    "id": "ipa-uni.cbum-4.1.26",
+    "type": "ipa",
+    "name": "Stndrd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uni.cbum.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Stndrd_4.1.26_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.26",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "uni.cbum",
+    "lastSync": "2026-01-11T23:00:01.840Z"
+  },
+  {
+    "id": "ipa-com.gunthermarktl.stepapp-8.6.4",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/StepsApp_8.6.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.4",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2026-01-11T23:00:01.841Z"
+  },
+  {
+    "id": "ipa-com.laubrothersllc.BabyArt-3.49.10",
+    "type": "ipa",
+    "name": "Precious",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Precious_3.49.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.49.10",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.laubrothersllc.BabyArt",
+    "lastSync": "2026-01-11T23:00:01.841Z"
+  },
+  {
     "id": "ipa-com.enjoy.VideoShow-6.0.00",
     "type": "ipa",
     "name": "VideoShow",
