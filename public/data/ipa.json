@@ -54,6 +54,24 @@
     "lastSync": "2026-01-11T09:00:01.713Z"
   },
   {
+    "id": "ipa-com.lightricks.Enlight-Photos-1.19.24",
+    "type": "ipa",
+    "name": "Lightleap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Enlight-Photos.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-01-2026/Lightleap_1.19.24_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.19.24",
+    "developer": "khomodvip",
+    "date": "2026-01-11",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Enlight-Photos",
+    "lastSync": "2026-01-11T10:00:01.843Z"
+  },
+  {
     "id": "ipa-com.burbn.instagram-411.3.0",
     "type": "ipa",
     "name": "Instagram",
