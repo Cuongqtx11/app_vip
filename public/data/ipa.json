@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-app.swiftgram.ios-12.3",
+    "type": "ipa",
+    "name": "Swiftgram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.swiftgram.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Swiftgram_12.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.3",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "app.swiftgram.ios",
+    "lastSync": "2026-01-11T21:00:01.421Z"
+  },
+  {
     "id": "ipa-com.enjoy.VideoShow-6.0.00",
     "type": "ipa",
     "name": "VideoShow",
