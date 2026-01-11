@@ -36,6 +36,24 @@
     "lastSync": "2026-01-11T04:00:01.712Z"
   },
   {
+    "id": "ipa-com.lightricks.Facetune2-3.115.1",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-01-2026/Facetune_3.115.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.115.1",
+    "developer": "khomodvip",
+    "date": "2026-01-11",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-01-11T09:00:01.713Z"
+  },
+  {
     "id": "ipa-com.burbn.instagram-411.3.0",
     "type": "ipa",
     "name": "Instagram",
