@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.enjoy.VideoShow-6.0.00",
+    "type": "ipa",
+    "name": "VideoShow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.enjoy.VideoShow.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-01-2026/VideoShow_6.0.00_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.00",
+    "developer": "khomodvip",
+    "date": "2026-01-11",
+    "source": "apptesters",
+    "bundleID": "com.enjoy.VideoShow",
+    "lastSync": "2026-01-11T00:00:01.520Z"
+  },
+  {
     "id": "ipa-com.burbn.instagram-411.3.0",
     "type": "ipa",
     "name": "Instagram",
