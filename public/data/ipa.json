@@ -252,6 +252,186 @@
     "lastSync": "2026-01-12T08:00:01.520Z"
   },
   {
+    "id": "ipa-com.mwm.sampler-app-4.14.00",
+    "type": "ipa",
+    "name": "BeatMakerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.sampler-app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/BeatMakerPro_4.14.00_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.14.00",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.mwm.sampler-app",
+    "lastSync": "2026-01-12T10:00:01.898Z"
+  },
+  {
+    "id": "ipa-archery.storify-1.255.0",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Mojo_1.255.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.255.0",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2026-01-12T10:00:01.899Z"
+  },
+  {
+    "id": "ipa-com.djitlabs.pixelcolor-5.47.00",
+    "type": "ipa",
+    "name": "PixelColor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.djitlabs.pixelcolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/PixelColor_5.47.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.47.00",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.djitlabs.pixelcolor",
+    "lastSync": "2026-01-12T10:00:01.899Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.57.16",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/ColorPop_2.57.16_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.57.16",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2026-01-12T10:00:01.900Z"
+  },
+  {
+    "id": "ipa-com.mwm.bananai-1.0.23",
+    "type": "ipa",
+    "name": "Bananai",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.bananai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Bananai_1.0.23_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.23",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.mwm.bananai",
+    "lastSync": "2026-01-12T10:00:01.900Z"
+  },
+  {
+    "id": "ipa-com.calisthenics.thenx-6.5.5",
+    "type": "ipa",
+    "name": "Thenx",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.calisthenics.thenx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Thenx_6.5.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.5",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.calisthenics.thenx",
+    "lastSync": "2026-01-12T10:00:01.900Z"
+  },
+  {
+    "id": "ipa-com.getmimo.mimo-10.2.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Mimo_10.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.2.0",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2026-01-12T10:00:01.900Z"
+  },
+  {
+    "id": "ipa-com.iaftt.flightplusfree-8.7.0",
+    "type": "ipa",
+    "name": "FlightTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iaftt.flightplusfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/FlightTracker_8.7.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.7.0",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.iaftt.flightplusfree",
+    "lastSync": "2026-01-12T10:00:01.901Z"
+  },
+  {
+    "id": "ipa-fitnessworkout.app-2.13.0",
+    "type": "ipa",
+    "name": "FitnessCoach",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fitnessworkout.app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/FitnessCoach_2.13.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.13.0",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "fitnessworkout.app",
+    "lastSync": "2026-01-12T10:00:01.901Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.wlf-4.18.15",
+    "type": "ipa",
+    "name": "Weather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.wlf.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Weather_4.18.15_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.18.15",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.wlf",
+    "lastSync": "2026-01-12T10:00:01.901Z"
+  },
+  {
     "id": "ipa-com.enjoy.VideoShow-6.0.00",
     "type": "ipa",
     "name": "VideoShow",
