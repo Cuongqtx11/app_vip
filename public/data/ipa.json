@@ -432,6 +432,42 @@
     "lastSync": "2026-01-12T10:00:01.901Z"
   },
   {
+    "id": "ipa-com.hasankassem.mockup-4.1",
+    "type": "ipa",
+    "name": "Mockup",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hasankassem.mockup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/Mockup_4.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.hasankassem.mockup",
+    "lastSync": "2026-01-12T11:00:01.875Z"
+  },
+  {
+    "id": "ipa-com.opentechiz.heavybagpro-2.5.1",
+    "type": "ipa",
+    "name": "HeavyBagPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.opentechiz.heavybagpro.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/HeavyBagPro_2.5.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.1",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "com.opentechiz.heavybagpro",
+    "lastSync": "2026-01-12T11:00:01.876Z"
+  },
+  {
     "id": "ipa-com.enjoy.VideoShow-6.0.00",
     "type": "ipa",
     "name": "VideoShow",
