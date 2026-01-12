@@ -90,6 +90,60 @@
     "lastSync": "2026-01-11T23:00:01.841Z"
   },
   {
+    "id": "ipa-solutions.wzp.translator-2025.12.5",
+    "type": "ipa",
+    "name": "TranslateNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/solutions.wzp.translator.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/TranslateNow_2025.12.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.12.5",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "solutions.wzp.translator",
+    "lastSync": "2026-01-12T02:00:01.656Z"
+  },
+  {
+    "id": "ipa-co.airapps.scannerapp-2025.12.5",
+    "type": "ipa",
+    "name": "ScannerAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.scannerapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/ScannerAir_2025.12.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.12.5",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "co.airapps.scannerapp",
+    "lastSync": "2026-01-12T02:00:01.657Z"
+  },
+  {
+    "id": "ipa-co.airapps.dictionary-2025.12.6",
+    "type": "ipa",
+    "name": "DictionaryAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.dictionary.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-01-2026/DictionaryAir_2025.12.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2025.12.6",
+    "developer": "khomodvip",
+    "date": "2026-01-12",
+    "source": "apptesters",
+    "bundleID": "co.airapps.dictionary",
+    "lastSync": "2026-01-12T02:00:01.657Z"
+  },
+  {
     "id": "ipa-com.enjoy.VideoShow-6.0.00",
     "type": "ipa",
     "name": "VideoShow",
