@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-co.visualsupply.cam-454.0.1",
+    "type": "ipa",
+    "name": "VSCO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.visualsupply.cam.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/VSCO_454.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "454.0.1",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "co.visualsupply.cam",
+    "lastSync": "2026-01-14T20:00:01.862Z"
+  },
+  {
+    "id": "ipa-boomer.Smart-Video-13.1.0",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Captions_13.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2026-01-14T20:00:01.863Z"
+  },
+  {
     "id": "ipa-com.wallpapershub.anime-4.1",
     "type": "ipa",
     "name": "Anime",
