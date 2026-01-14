@@ -558,6 +558,96 @@
     "lastSync": "2026-01-14T18:00:01.858Z"
   },
   {
+    "id": "ipa-com.stanga.projectKu-1.95.0",
+    "type": "ipa",
+    "name": "Walli",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.stanga.projectKu.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/Walli_1.95.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.95.0",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.stanga.projectKu",
+    "lastSync": "2026-01-14T19:00:02.121Z"
+  },
+  {
+    "id": "ipa-com.bandlab.bandlab.iphone-11.15.0",
+    "type": "ipa",
+    "name": "BandLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bandlab.bandlab.iphone.png",
+    "desc": "Injected with Boost Membership",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/BandLab_11.15.0_Boost_Membership_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.15.0",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.bandlab.bandlab.iphone",
+    "lastSync": "2026-01-14T19:00:02.122Z"
+  },
+  {
+    "id": "ipa-com.tiimo.app-3.38.1",
+    "type": "ipa",
+    "name": "Tiimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tiimo.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/Tiimo_3.38.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.38.1",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.tiimo.app",
+    "lastSync": "2026-01-14T19:00:02.122Z"
+  },
+  {
+    "id": "ipa-com.fluidtouch.noteshelf3-6.4",
+    "type": "ipa",
+    "name": "Noteshelf3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fluidtouch.noteshelf3.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/Noteshelf3_6.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.fluidtouch.noteshelf3",
+    "lastSync": "2026-01-14T19:00:02.123Z"
+  },
+  {
+    "id": "ipa-com.getmotobit.motobit-1.0.55",
+    "type": "ipa",
+    "name": "Motobit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmotobit.motobit.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/Motobit_1.0.55_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.55",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.getmotobit.motobit",
+    "lastSync": "2026-01-14T19:00:02.123Z"
+  },
+  {
     "id": "ipa-com.burbn.instagram-412.0.0",
     "type": "ipa",
     "name": "Instagram",
