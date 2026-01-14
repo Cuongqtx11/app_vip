@@ -540,6 +540,24 @@
     "lastSync": "2026-01-14T17:00:01.418Z"
   },
   {
+    "id": "ipa-com.path36.SpliceFree-4.28.57",
+    "type": "ipa",
+    "name": "Splice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.path36.SpliceFree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/Splice_4.28.57_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.28.57",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.path36.SpliceFree",
+    "lastSync": "2026-01-14T18:00:01.858Z"
+  },
+  {
     "id": "ipa-com.burbn.instagram-412.0.0",
     "type": "ipa",
     "name": "Instagram",
