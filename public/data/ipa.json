@@ -378,6 +378,42 @@
     "lastSync": "2026-01-14T02:00:01.879Z"
   },
   {
+    "id": "ipa-com.bbauman.Scripty-2.34",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/Coconote_2.34_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.34",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2026-01-14T04:00:01.601Z"
+  },
+  {
+    "id": "ipa-com.picretouch.photoeditor-1.1.3",
+    "type": "ipa",
+    "name": "AIRetouch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picretouch.photoeditor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-01-2026/AIRetouch_1.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.3",
+    "developer": "khomodvip",
+    "date": "2026-01-14",
+    "source": "apptesters",
+    "bundleID": "com.picretouch.photoeditor",
+    "lastSync": "2026-01-14T04:00:01.602Z"
+  },
+  {
     "id": "ipa-com.burbn.instagram-412.0.0",
     "type": "ipa",
     "name": "Instagram",
