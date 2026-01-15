@@ -270,6 +270,78 @@
     "lastSync": "2026-01-15T07:00:01.465Z"
   },
   {
+    "id": "ipa-org.iggymedia.periodtracker-9.96.0",
+    "type": "ipa",
+    "name": "Flo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.iggymedia.periodtracker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Flo_9.96.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.96.0",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "org.iggymedia.periodtracker",
+    "lastSync": "2026-01-15T09:00:01.702Z"
+  },
+  {
+    "id": "ipa-com.zerone.hidesktop-4.3.76",
+    "type": "ipa",
+    "name": "HiWidget",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zerone.hidesktop.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/HiWidget_4.3.76_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.76",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.zerone.hidesktop",
+    "lastSync": "2026-01-15T09:00:01.703Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.7.3",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/BlockBlast_6.7.3_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.7.3",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2026-01-15T09:00:01.706Z"
+  },
+  {
+    "id": "ipa-com.moonlab.unfoldstories-8.153.0",
+    "type": "ipa",
+    "name": "Unfold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonlab.unfoldstories.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Unfold_8.153.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.153.0",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.moonlab.unfoldstories",
+    "lastSync": "2026-01-15T09:00:01.706Z"
+  },
+  {
     "id": "ipa-com.wallpapershub.anime-4.1",
     "type": "ipa",
     "name": "Anime",
