@@ -342,6 +342,96 @@
     "lastSync": "2026-01-15T09:00:01.706Z"
   },
   {
+    "id": "ipa-eu.gowod-5.5.0",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/GOWOD_5.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.0",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2026-01-15T10:00:01.695Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.19.00",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/edjingMix_8.19.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.19.00",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2026-01-15T10:00:01.696Z"
+  },
+  {
+    "id": "ipa-io.veed.appstore-8.2.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/VEEDCaptions_8.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.2.0",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-01-15T10:00:01.696Z"
+  },
+  {
+    "id": "ipa-com.alphaprogression.alphaprogression-6.4",
+    "type": "ipa",
+    "name": "AlphaProgr",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alphaprogression.alphaprogression.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/AlphaProgr_6.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.alphaprogression.alphaprogression",
+    "lastSync": "2026-01-15T10:00:01.697Z"
+  },
+  {
+    "id": "ipa-com.laubrothersllc.BabyArt-3.49.11",
+    "type": "ipa",
+    "name": "Precious",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Precious_3.49.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.49.11",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.laubrothersllc.BabyArt",
+    "lastSync": "2026-01-15T10:00:01.697Z"
+  },
+  {
     "id": "ipa-com.wallpapershub.anime-4.1",
     "type": "ipa",
     "name": "Anime",
