@@ -1,7 +1,7 @@
 [
   {
-    "id": "notify-v1",
     "title": "Thông Báo Quan Trọng",
+    "list": "liên hệ tại đây"
     "message": "Chào mừng bạn đến với Kho App VIP!<br>Chúng tôi liên tục cập nhật thêm các ứng dụng mới.",
     "active": true
   }
