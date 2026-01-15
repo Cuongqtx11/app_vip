@@ -18,6 +18,150 @@
     "lastSync": "2026-01-15T20:00:01.391Z"
   },
   {
+    "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.1",
+    "type": "ipa",
+    "name": "ShutEye",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/ShutEye_3.3.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.1",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "health.sleep.sounds.tracker.alarm.calm",
+    "lastSync": "2026-01-15T21:00:01.974Z"
+  },
+  {
+    "id": "ipa-com.readdle.Scanner-8.33.2",
+    "type": "ipa",
+    "name": "ScannerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.Scanner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/ScannerPro_8.33.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.33.2",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.readdle.Scanner",
+    "lastSync": "2026-01-15T21:00:01.974Z"
+  },
+  {
+    "id": "ipa-com.kingsoft.office.g.wpsoffice-11.37.30",
+    "type": "ipa",
+    "name": "wpsoffice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kingsoft.office.g.wpsoffice.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/wpsoffice_11.37.30_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.37.30",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.kingsoft.office.g.wpsoffice",
+    "lastSync": "2026-01-15T21:00:01.977Z"
+  },
+  {
+    "id": "ipa-com.yengshine.proccd-5.3.2",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/ProCCD_5.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.2",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2026-01-15T21:00:01.977Z"
+  },
+  {
+    "id": "ipa-boomer.Smart-Video-13.1.1",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/Captions_13.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.1.1",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2026-01-15T21:00:01.978Z"
+  },
+  {
+    "id": "ipa-com.fifthstarlabs.skyguide-12.0.9",
+    "type": "ipa",
+    "name": "SkyGuide",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fifthstarlabs.skyguide.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/SkyGuide_12.0.9_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.9",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.fifthstarlabs.skyguide",
+    "lastSync": "2026-01-15T21:00:01.978Z"
+  },
+  {
+    "id": "ipa-com.picretouch.photoeditor-1.1.4",
+    "type": "ipa",
+    "name": "AIRetouch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picretouch.photoeditor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/AIRetouch_1.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.4",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.picretouch.photoeditor",
+    "lastSync": "2026-01-15T21:00:01.978Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx-0.1.559",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/RiseSleep_0.1.559_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.559",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2026-01-15T21:00:01.978Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-454.0.1",
     "type": "ipa",
     "name": "VSCO",
