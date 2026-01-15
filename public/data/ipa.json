@@ -180,6 +180,24 @@
     "lastSync": "2026-01-15T22:00:01.999Z"
   },
   {
+    "id": "ipa-com.wangyuehuan.vrtef-5.4.1",
+    "type": "ipa",
+    "name": "rPlayer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wangyuehuan.vrtef.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/rPlayer_5.4.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.1",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.wangyuehuan.vrtef",
+    "lastSync": "2026-01-15T23:00:01.699Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-454.0.1",
     "type": "ipa",
     "name": "VSCO",
