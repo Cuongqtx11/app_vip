@@ -450,6 +450,60 @@
     "lastSync": "2026-01-15T11:00:01.674Z"
   },
   {
+    "id": "ipa-com.glority.everlens-2.22.1",
+    "type": "ipa",
+    "name": "MobileScanner",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.glority.everlens.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/MobileScanner_2.22.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.22.1",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.glority.everlens",
+    "lastSync": "2026-01-15T12:00:01.757Z"
+  },
+  {
+    "id": "ipa-com.iPwners.Plonkan-13.22",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Buddy_13.22_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.22",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2026-01-15T12:00:01.758Z"
+  },
+  {
+    "id": "ipa-co.codeleap.bearable-1.0.582",
+    "type": "ipa",
+    "name": "Bearable",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.codeleap.bearable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Bearable_1.0.582_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.582",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "co.codeleap.bearable",
+    "lastSync": "2026-01-15T12:00:01.759Z"
+  },
+  {
     "id": "ipa-com.wallpapershub.anime-4.1",
     "type": "ipa",
     "name": "Anime",
