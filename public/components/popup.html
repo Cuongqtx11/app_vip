@@ -1,124 +1,221 @@
-<style>
-    /* 1. CSS Styles (Nằm ngay trong file này) */
-    .custom-popup-overlay {
-        position: fixed; top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(6px);
-        z-index: 10000; /* Layer cao nhất */
-        display: none; /* Mặc định ẩn */
-        justify-content: center; align-items: center;
-        opacity: 0; transition: opacity 0.3s ease;
-    }
-    
-    .custom-popup-overlay.show { opacity: 1; }
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Chào Mừng | Kho Vip</title>
 
-    .custom-popup-box {
-        background: #fff; width: 90%; max-width: 350px;
-        border-radius: 24px; padding: 25px;
-        text-align: center;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        transform: scale(0.9); transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
+    <style>
+        /* =========================
+           POPUP STYLES
+        ========================== */
 
-    .custom-popup-overlay.show .custom-popup-box { transform: scale(1); }
+        .custom-popup-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            z-index: 10000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-    /* Icon */
-    .cp-icon svg { width: 50px; height: 50px; fill: #007aff; margin-bottom: 15px; }
+        .custom-popup-overlay.show {
+            opacity: 1;
+        }
 
-    /* Text Styles */
-    .cp-title { font-size: 20px; font-weight: 700; color: #1d1d1f; margin: 0 0 10px 0; }
-    .cp-message { font-size: 15px; color: #3a3a3c; line-height: 1.5; margin-bottom: 8px; }
-    
-    /* Note (Chữ nhỏ) */
-    .cp-note { font-size: 12px; color: #86868b; font-style: italic; margin-bottom: 15px; }
+        .custom-popup-box {
+            background: #ffffff;
+            width: 90%;
+            max-width: 350px;
+            border-radius: 24px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transform: scale(0.9);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
 
-    /* Footer (Liên kết) */
-    .cp-footer { 
-        font-size: 13px; color: #3a3a3c; 
-        padding-top: 12px; margin-bottom: 20px;
-        border-top: 1px solid #e5e5ea; 
-    }
-    .cp-footer a { color: #007aff; text-decoration: none; font-weight: 600; }
+        .custom-popup-overlay.show .custom-popup-box {
+            transform: scale(1);
+        }
 
-    /* Buttons */
-    .cp-actions { display: flex; flex-direction: column; gap: 10px; }
-    
-    .cp-btn {
-        display: block; width: 100%; padding: 12px 0;
-        border-radius: 12px; font-size: 16px; font-weight: 600;
-        text-decoration: none; border: none; cursor: pointer;
-        transition: background 0.2s;
-    }
-    .cp-btn-primary { background: #007aff; color: white; }
-    .cp-btn-primary:active { background: #0056b3; }
-    
-    .cp-btn-secondary { background: #f2f2f7; color: #007aff; }
-    .cp-btn-secondary:active { background: #e5e5ea; }
+        /* Icon */
+        .cp-icon svg {
+            width: 50px;
+            height: 50px;
+            fill: #007aff;
+            margin-bottom: 15px;
+        }
 
-    /* Dark Mode */
-    @media (prefers-color-scheme: dark) {
-        .custom-popup-box { background: #1c1c1e; }
-        .cp-title { color: #fff; }
-        .cp-message { color: #aeaeb2; }
-        .cp-footer { color: #86868b; border-top-color: #38383a; }
-        .cp-btn-secondary { background: #2c2c2e; color: #0a84ff; }
-    }
-</style>
+        /* Text */
+        .cp-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin: 0 0 10px;
+        }
 
-<div id="custom-popup" class="custom-popup-overlay">
-    <div class="custom-popup-box">
-        <div class="cp-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-        </div>
+        .cp-message {
+            font-size: 15px;
+            color: #3a3a3c;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
 
-        <h3 class="cp-title">Chào mừng bạn đã đến Kho Vip</h3>
-        <p class="cp-message">
-            Chúng tôi liên tục cập nhật các file ipa, dylib, conf,… chất lượng hằng ngày
-        </p>
+        .cp-note {
+            font-size: 12px;
+            color: #86868b;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
 
-        <p class="cp-note">
-            (mọi người thông cảm vì file sẽ được gắn link liên kết nhằm duy trì website)
-        </p>
+        /* Footer */
+        .cp-footer {
+            font-size: 13px;
+            color: #3a3a3c;
+            padding-top: 12px;
+            margin-bottom: 20px;
+            border-top: 1px solid #e5e5ea;
+        }
 
-        <div class="cp-footer">
-            liên hệ mua key download vip và xem hướng dẫn cài đặt chi tiết 
-            <a href="https://www.p12.vn/pages/home" target="_blank">Tại đây</a>
-        </div>
+        .cp-footer a {
+            color: #007aff;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-        <div class="cp-actions">
-            <a href="https://cuios.shop" class="cp-btn cp-btn-primary">Web chứng chỉ</a>
-            <button id="cp-close-btn" class="cp-btn cp-btn-secondary">Đóng</button>
+        /* Buttons */
+        .cp-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .cp-btn {
+            width: 100%;
+            padding: 12px 0;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .cp-btn-primary {
+            background: #86868b;
+            color: #ffffff;
+        }
+
+        .cp-btn-primary:active {
+            background: #0056b3;
+        }
+
+        .cp-btn-secondary {
+            background: #f2f2f7;
+            color: #007aff;
+        }
+
+        .cp-btn-secondary:active {
+            background: #e5e5ea;
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            .custom-popup-box {
+                background: #1c1c1e;
+            }
+
+            .cp-title {
+                color: #ffffff;
+            }
+
+            .cp-message {
+                color: #aeaeb2;
+            }
+
+            .cp-footer {
+                color: #86868b;
+                border-top-color: #38383a;
+            }
+
+            .cp-btn-secondary {
+                background: #2c2c2e;
+                color: #0a84ff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         POPUP HTML
+    ========================== -->
+    <div id="custom-popup" class="custom-popup-overlay">
+        <div class="custom-popup-box">
+
+            <div class="cp-icon">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                </svg>
+            </div>
+
+            <h3 class="cp-title">Chào mừng bạn đã đến<br> Kho Mod Vip</h3>
+
+            <p class="cp-message">
+                Chúng tôi liên tục cập nhật các file ipa app mod - game hack, dylib, conf,… chất lượng hằng ngày
+            </p>
+
+            <p class="cp-note">
+                (Mọi người thông cảm vì file sẽ được gắn link liên kết nhằm duy trì website)
+            </p>
+
+            <div class="cp-footer">
+                Liên hệ mua key download VIP và xem hướng dẫn cài đặt chi tiết
+                <a href="https://www.p12.vn/pages/home" target="_blank">Tại đây</a>
+            </div>
+
+            <div class="cp-actions">
+                <a href="https://cuios.shop" class="cp-btn cp-btn-primary">Web chứng chỉ</a>
+                <button id="cp-close-btn" class="cp-btn cp-btn-secondary">Đóng</button>
+            </div>
+
         </div>
     </div>
-</div>
 
-<script>
-    (function() {
-        // ID phiên bản popup (Đổi tên này nếu bạn muốn hiện lại cho người cũ)
-        const POPUP_ID = 'popup_v1_welcome'; 
-        const popup = document.getElementById('custom-popup');
-        const closeBtn = document.getElementById('cp-close-btn');
+    <!-- =========================
+         POPUP SCRIPT
+    ========================== -->
+    <script>
+        (function () {
+            const POPUP_ID = 'popup_v1_welcome';
+            const popup = document.getElementById('custom-popup');
+            const closeBtn = document.getElementById('cp-close-btn');
 
-        // Kiểm tra xem đã đóng chưa
-        if (sessionStorage.getItem(POPUP_ID)) return;
+            if (sessionStorage.getItem(POPUP_ID)) return;
 
-        // Hiển thị Popup
-        if (popup) {
             popup.style.display = 'flex';
-            setTimeout(() => { popup.classList.add('show'); }, 100);
+            setTimeout(() => popup.classList.add('show'), 100);
 
-            // Hàm đóng
-            const closePopup = () => {
+            function closePopup() {
                 popup.classList.remove('show');
-                setTimeout(() => { popup.remove(); }, 300);
-                sessionStorage.setItem(POPUP_ID, 'true'); // Lưu lại đã xem
-            };
+                setTimeout(() => popup.remove(), 300);
+                sessionStorage.setItem(POPUP_ID, 'true');
+            }
 
-            // Gán sự kiện click
-            if(closeBtn) closeBtn.onclick = closePopup;
-            popup.onclick = (e) => { if (e.target === popup) closePopup(); };
-        }
-    })();
-</script>
+            closeBtn.onclick = closePopup;
+            popup.onclick = (e) => {
+                if (e.target === popup) closePopup();
+            };
+        })();
+    </script>
+
+</body>
+</html>
