@@ -162,6 +162,78 @@
     "lastSync": "2026-01-15T01:00:01.452Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-20.0.11",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Fitia_20.0.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.0.11",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-01-15T03:00:01.945Z"
+  },
+  {
+    "id": "ipa-com.hevyapp.hevy-2.5.7",
+    "type": "ipa",
+    "name": "Hevy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hevyapp.hevy.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Hevy_2.5.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.7",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.hevyapp.hevy",
+    "lastSync": "2026-01-15T03:00:01.945Z"
+  },
+  {
+    "id": "ipa-com.hitpaw.photoenhancer-1.96.0",
+    "type": "ipa",
+    "name": "AIMarvels",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hitpaw.photoenhancer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/AIMarvels_1.96.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.96.0",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.hitpaw.photoenhancer",
+    "lastSync": "2026-01-15T03:00:01.947Z"
+  },
+  {
+    "id": "ipa-com.gingerlabs.Notability-15.3.3",
+    "type": "ipa",
+    "name": "Notability",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gingerlabs.Notability.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-01-2026/Notability_15.3.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.3.3",
+    "developer": "khomodvip",
+    "date": "2026-01-15",
+    "source": "apptesters",
+    "bundleID": "com.gingerlabs.Notability",
+    "lastSync": "2026-01-15T03:00:01.947Z"
+  },
+  {
     "id": "ipa-com.wallpapershub.anime-4.1",
     "type": "ipa",
     "name": "Anime",
