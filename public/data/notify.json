@@ -1,8 +1,18 @@
 [
   {
-    "title": "Thông Báo Quan Trọng",
-    "list": "liên hệ tại đây"
-    "message": "Chào mừng bạn đến với Kho App VIP!<br>Chúng tôi liên tục cập nhật thêm các ứng dụng mới.",
-    "active": true
+    "id": "notify-001",
+    "title": "Thông Báo Bảo Trì",
+    "message": "Hệ thống sẽ tiến hành nâng cấp server vào lúc 00:00 ngày mai. Vui lòng quay lại sau!",
+    "date": "2024-01-15",
+    "active": true,
+    "type": "alert"
+  },
+  {
+    "id": "notify-002",
+    "title": "Cập Nhật App Mới",
+    "message": "Đã thêm 50+ ứng dụng mới vào kho IPA. Kiểm tra ngay!",
+    "date": "2024-01-16",
+    "active": false,
+    "type": "info"
   }
 ]
