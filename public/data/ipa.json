@@ -360,6 +360,24 @@
     "lastSync": "2026-01-16T09:00:01.290Z"
   },
   {
+    "id": "ipa-io.veed.appstore-8.2.1",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/VEEDCaptions_8.2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.2.1",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-01-16T16:00:01.575Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-454.0.1",
     "type": "ipa",
     "name": "VSCO",
