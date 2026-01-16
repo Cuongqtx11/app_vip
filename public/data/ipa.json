@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.cloud-compiler-5.9.12",
+    "type": "ipa",
+    "name": "CodeSnackIDE",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cloud-compiler.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-01-2026/CodeSnackIDE_5.9.12_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.9.12",
+    "developer": "khomodvip",
+    "date": "2026-01-17",
+    "source": "apptesters",
+    "bundleID": "com.cloud-compiler",
+    "lastSync": "2026-01-16T23:00:01.391Z"
+  },
+  {
     "id": "ipa-com.spotify.client-9.1.12",
     "type": "ipa",
     "name": "Spotify",
