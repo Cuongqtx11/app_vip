@@ -324,6 +324,42 @@
     "lastSync": "2026-01-16T04:00:01.658Z"
   },
   {
+    "id": "ipa-com.offlinemusic-3.7.9",
+    "type": "ipa",
+    "name": "OfflineMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.offlinemusic.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/OfflineMusic_3.7.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.9",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.offlinemusic",
+    "lastSync": "2026-01-16T09:00:01.288Z"
+  },
+  {
+    "id": "ipa-com.solveit.lut-studio-2.4.1",
+    "type": "ipa",
+    "name": "LUTStudio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.solveit.lut-studio.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/LUTStudio_2.4.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.1",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.solveit.lut-studio",
+    "lastSync": "2026-01-16T09:00:01.290Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-454.0.1",
     "type": "ipa",
     "name": "VSCO",
