@@ -216,6 +216,96 @@
     "lastSync": "2026-01-16T00:00:01.797Z"
   },
   {
+    "id": "ipa-uk.co.leeus.planefinderfree-2026.1.0",
+    "type": "ipa",
+    "name": "PlaneFinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uk.co.leeus.planefinderfree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/PlaneFinder_2026.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "uk.co.leeus.planefinderfree",
+    "lastSync": "2026-01-16T01:00:01.658Z"
+  },
+  {
+    "id": "ipa-com.shapr3d.shapr-5.1015.0",
+    "type": "ipa",
+    "name": "Shapr3D",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shapr3d.shapr.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/Shapr3D_5.1015.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.1015.0",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.shapr3d.shapr",
+    "lastSync": "2026-01-16T01:00:01.659Z"
+  },
+  {
+    "id": "ipa-de.komoot.berlinbikeapp-2026.03.1",
+    "type": "ipa",
+    "name": "Komoot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/Komoot_2026.03.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.03.1",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "de.komoot.berlinbikeapp",
+    "lastSync": "2026-01-16T01:00:01.659Z"
+  },
+  {
+    "id": "ipa-com.adobe.scan.ios-26.01.22",
+    "type": "ipa",
+    "name": "AdobeScan",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.scan.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/AdobeScan_26.01.22_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.01.22",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.adobe.scan.ios",
+    "lastSync": "2026-01-16T01:00:01.659Z"
+  },
+  {
+    "id": "ipa-com.cuilingshi.flipclock-6.17",
+    "type": "ipa",
+    "name": "flipclock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cuilingshi.flipclock.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/flipclock_6.17_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.17",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.cuilingshi.flipclock",
+    "lastSync": "2026-01-16T01:00:01.659Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-454.0.1",
     "type": "ipa",
     "name": "VSCO",
