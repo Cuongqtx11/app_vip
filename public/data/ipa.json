@@ -198,6 +198,24 @@
     "lastSync": "2026-01-15T23:00:01.699Z"
   },
   {
+    "id": "ipa-com.joytunes.asla-9.10.52",
+    "type": "ipa",
+    "name": "SimplyPiano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.asla.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/SimplyPiano_9.10.52_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.10.52",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.joytunes.asla",
+    "lastSync": "2026-01-16T00:00:01.797Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-454.0.1",
     "type": "ipa",
     "name": "VSCO",
