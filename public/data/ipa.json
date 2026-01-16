@@ -306,6 +306,24 @@
     "lastSync": "2026-01-16T01:00:01.659Z"
   },
   {
+    "id": "ipa-com.hevyapp.hevy-2.5.8",
+    "type": "ipa",
+    "name": "Hevy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hevyapp.hevy.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-01-2026/Hevy_2.5.8_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.8",
+    "developer": "khomodvip",
+    "date": "2026-01-16",
+    "source": "apptesters",
+    "bundleID": "com.hevyapp.hevy",
+    "lastSync": "2026-01-16T04:00:01.658Z"
+  },
+  {
     "id": "ipa-co.visualsupply.cam-454.0.1",
     "type": "ipa",
     "name": "VSCO",
