@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-net.whatsapp.WhatsAppSMB-25.37.76",
+    "type": "ipa",
+    "name": "WABusiness",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.whatsapp.WhatsAppSMB.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-01-2026/WABusiness_25.37.76_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.37.76",
+    "developer": "khomodvip",
+    "date": "2026-01-18",
+    "source": "apptesters",
+    "bundleID": "net.whatsapp.WhatsAppSMB",
+    "lastSync": "2026-01-17T21:00:01.732Z"
+  },
+  {
+    "id": "ipa-net.whatsapp.WhatsApp-25.37.76",
+    "type": "ipa",
+    "name": "WhatsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.whatsapp.WhatsApp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-01-2026/WhatsApp_25.37.76_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "25.37.76",
+    "developer": "khomodvip",
+    "date": "2026-01-18",
+    "source": "apptesters",
+    "bundleID": "net.whatsapp.WhatsApp",
+    "lastSync": "2026-01-17T21:00:01.732Z"
+  },
+  {
     "id": "ipa-com.cloud-compiler-5.9.12",
     "type": "ipa",
     "name": "CodeSnackIDE",
