@@ -1,18 +1,5 @@
 [
   {
-    "id": "auto_39296994",
-    "key": "3PPN-4SF2-HSI4-I1DK",
-    "package": "Gói Trải Nghiệm",
-    "transaction_code": "QR   X9BDMM   Ma giao dich  Trace147896 Trace 147896",
-    "amount": 5000.0,
-    "createdAt": "2026-01-18T20:00:18.654824",
-    "expiresAt": null,
-    "maxUses": 10,
-    "currentUses": 0,
-    "active": true,
-    "createdBy": "Auto_Bot_VPS"
-  },
-  {
     "id": "key_1768741191_6240",
     "key": "HPDJ-A0E3-6RWZ-ZWOT",
     "createdAt": "2026-01-18T12:59:51.546Z",
