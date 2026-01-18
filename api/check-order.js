@@ -1,25 +1,23 @@
 // api/check-order.js
 export default async function handler(req, res) {
-    // Chỉ nhận POST
+    // 1. Chỉ chấp nhận POST
     if (req.method !== 'POST') return res.status(405).send('Method Not Allowed');
 
     const { content } = req.body; 
     
-    // Nếu không có nội dung check -> Báo lỗi ngay
     if (!content || content.length < 4) {
         return res.status(400).json({ status: 'error', message: 'Mã giao dịch không hợp lệ' });
     }
 
     const SEPAY_API_TOKEN = process.env.SEPAY_API_TOKEN;
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-    const REPO_OWNER = 'cuongqtx11'; // Username của bạn
-    const REPO_NAME = 'app_vip';     // Repo của bạn
-    const FILE_PATH = 'public/data/keys.json'; // Đường dẫn file
+    const GITHUB_OWNER = process.env.GITHUB_OWNER || 'cuongqtx11'; 
+    const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
+    const FILE_PATH = 'public/data/keys.json';
 
     try {
-        // --- 1. GỌI SEPAY KIỂM TRA GIAO DỊCH ---
-        // Lấy 20 giao dịch gần nhất để chắc chắn không bị sót
-        const sepayUrl = `https://my.sepay.vn/userapi/transactions/list?limit=20`;
+        // --- BƯỚC 1: KIỂM TRA GIAO DỊCH VỚI SEPAY ---
+        const sepayUrl = `https://my.sepay.vn/userapi/transactions/list?limit=50`; // Lấy nhiều hơn để chắc chắn
         
         const sepayRes = await fetch(sepayUrl, {
             headers: { 
@@ -28,52 +26,44 @@ export default async function handler(req, res) {
             }
         });
 
-        if (!sepayRes.ok) {
-            throw new Error(`SePay API Error: ${sepayRes.statusText}`);
-        }
-
+        if (!sepayRes.ok) throw new Error(`SePay API Error: ${sepayRes.statusText}`);
         const sepayData = await sepayRes.json();
         
-        // Kiểm tra kỹ danh sách giao dịch
         if (!sepayData.transactions || sepayData.transactions.length === 0) {
             return res.status(200).json({ status: 'pending', message: 'Chưa có giao dịch nào' });
         }
 
-        // TÌM CHÍNH XÁC GIAO DỊCH (Quan trọng: Phải chứa đúng nội dung code)
-        // Convert cả 2 về chữ hoa để so sánh cho chuẩn
+        // Tìm giao dịch chứa mã code (content)
         const matchingTrans = sepayData.transactions.find(t => 
             t.transaction_content.toUpperCase().includes(content.toUpperCase())
         );
 
-        // Nếu KHÔNG tìm thấy giao dịch nào khớp code -> Trả về pending (Chưa thanh toán)
         if (!matchingTrans) {
             return res.status(200).json({ status: 'pending', message: 'Chưa tìm thấy tiền' });
         }
 
-        // --- 2. XÁC ĐỊNH GÓI CƯỚC ---
+        // --- BƯỚC 2: CẤU HÌNH GÓI CƯỚC (Logic chuẩn /create [days] [uses]) ---
         const amount = parseFloat(matchingTrans.amount_in);
-        let duration = '';
+        let days = 0;   // 0 = Không giới hạn thời gian
+        let uses = 0;   // 0 = Không giới hạn lượt dùng
         let packageName = '';
-        let maxDownloads = 999999; // Mặc định không giới hạn
-        let expiryDays = 0;
 
         if (amount >= 199000) { 
-            packageName = 'VIP 1 Năm'; duration = '365 ngày'; expiryDays = 365;
+            packageName = 'VIP 1 Năm'; days = 365; uses = 0;
         } else if (amount >= 149000) { 
-            packageName = 'VIP 6 Tháng'; duration = '180 ngày'; expiryDays = 180;
+            packageName = 'VIP 6 Tháng'; days = 180; uses = 0;
         } else if (amount >= 39000) { 
-            packageName = 'VIP 1 Tháng'; duration = '30 ngày'; expiryDays = 30;
+            packageName = 'VIP 1 Tháng'; days = 30; uses = 0;
         } else if (amount >= 19000) { 
-            packageName = 'VIP 1 Tuần'; duration = '7 ngày'; expiryDays = 7;
+            packageName = 'VIP 1 Tuần'; days = 7; uses = 0;
         } else if (amount >= 5000) { 
-            packageName = 'Gói Lẻ'; duration = '10 lượt tải'; maxDownloads = 10; expiryDays = 30;
+            packageName = 'Gói Lẻ'; days = 0; uses = 10; // Không giới hạn ngày, 10 lượt
         } else {
-            // Số tiền quá nhỏ hoặc không khớp
             return res.status(200).json({ status: 'error', message: 'Số tiền không khớp gói nào' });
         }
 
-        // --- 3. LẤY FILE KEYS.JSON CŨ TỪ GITHUB ---
-        const gitUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+        // --- BƯỚC 3: LẤY FILE KEYS TỪ GITHUB ---
+        const gitUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
         const gitRes = await fetch(gitUrl, { headers: { 'Authorization': `token ${GITHUB_TOKEN}` } });
         
         if (!gitRes.ok) throw new Error('Không đọc được file keys.json từ GitHub');
@@ -81,55 +71,51 @@ export default async function handler(req, res) {
         const gitData = await gitRes.json();
         const currentContent = Buffer.from(gitData.content, 'base64').toString('utf-8');
         let keysDB = [];
-        try {
-            keysDB = JSON.parse(currentContent);
-        } catch (e) {
-            keysDB = []; // Nếu file rỗng hoặc lỗi thì tạo mảng mới
-        }
+        try { keysDB = JSON.parse(currentContent); } catch (e) { keysDB = []; }
 
-        // Kiểm tra xem transaction này đã được cấp key chưa (Tránh spam F5 tạo nhiều key)
+        // Kiểm tra trùng lặp (nếu giao dịch này đã tạo key rồi thì trả lại key cũ)
         const existingKey = keysDB.find(k => k.transaction_code === content || k.transaction_id === matchingTrans.id);
         if (existingKey) {
-            return res.status(200).json({ 
-                status: 'success', 
-                key: existingKey.key, 
-                package: existingKey.package 
-            });
+            return res.status(200).json({ status: 'success', key: existingKey.key, package: existingKey.package });
         }
 
-        // --- 4. TẠO KEY ĐÚNG CHUẨN XXXX-XXXX-XXXX-XXXX ---
-        function generateFormattedKey() {
+        // --- BƯỚC 4: TẠO KEY MỚI (ĐÚNG FORMAT CỦA verify.js) ---
+        function generateKey() {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             const part = () => Array.from({length:4}, () => chars[Math.floor(Math.random() * chars.length)]).join('');
-            return `${part()}-${part()}-${part()}-${part()}`;
+            return `${part()}-${part()}-${part()}-${part()}`; // XXXX-XXXX-XXXX-XXXX
         }
         
-        const newKey = generateFormattedKey(); // Ví dụ: A1B2-C3D4-E5F6-G7H8
+        const newKeyStr = generateKey();
+        const now = new Date();
 
-        // Tính ngày hết hạn
-        const createdDate = new Date();
-        const expiryDate = new Date();
-        expiryDate.setDate(createdDate.getDate() + expiryDays);
+        // Tính ngày hết hạn (expiresAt)
+        let expiresAt = null;
+        if (days > 0) {
+            const expiryDate = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
+            expiresAt = expiryDate.toISOString();
+        }
 
-        // Tạo object key mới (Format chuẩn để web tải dùng được)
-        const newOrder = {
-            key: newKey,
+        // Cấu trúc Key chuẩn (CamelCase khớp với file keys.json của bạn)
+        const newKeyEntry = {
+            id: `key_${Math.floor(Date.now() / 1000)}_${Math.floor(Math.random() * 10000)}`,
+            key: newKeyStr,
+            createdAt: now.toISOString(),
+            expiresAt: expiresAt, // null nếu không giới hạn
+            maxUses: uses > 0 ? uses : null, // null nếu không giới hạn
+            currentUses: 0,
+            active: true,
+            createdBy: 'auto_payment',
+            transaction_code: content, // Lưu lại để đối chiếu
+            transaction_id: matchingTrans.id,
             package: packageName,
-            amount: amount,
-            transaction_code: content,      // Mã người dùng nhập (ABC123)
-            transaction_id: matchingTrans.id, // ID giao dịch ngân hàng
-            duration: duration,
-            max_downloads: maxDownloads,
-            downloads_used: 0,
-            created_at: createdDate.toISOString(),
-            expires_at: expiryDate.toISOString(),
-            status: "active"
+            notes: `${days > 0 ? days + ' days' : '∞ days'}, ${uses > 0 ? uses + ' uses' : '∞ uses'}`
         };
 
-        // Thêm vào danh sách
-        keysDB.push(newOrder);
+        // Thêm key mới vào đầu danh sách
+        keysDB.unshift(newKeyEntry);
 
-        // --- 5. LƯU LẠI LÊN GITHUB ---
+        // --- BƯỚC 5: LƯU LẠI LÊN GITHUB ---
         const newContentBase64 = Buffer.from(JSON.stringify(keysDB, null, 2)).toString('base64');
 
         await fetch(gitUrl, {
@@ -139,22 +125,21 @@ export default async function handler(req, res) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                message: `Auto-generated key for ${content} - ${amount}vnd`,
+                message: `Auto-generated key: ${newKeyStr} (${packageName})`,
                 content: newContentBase64,
                 sha: gitData.sha
             })
         });
 
-        // --- 6. TRẢ KẾT QUẢ VỀ CHO KHÁCH ---
+        // --- BƯỚC 6: TRẢ KẾT QUẢ ---
         return res.status(200).json({ 
             status: 'success', 
-            key: newKey, 
+            key: newKeyStr, 
             package: packageName 
         });
 
     } catch (error) {
         console.error("System Error:", error);
-        // Quan trọng: Trả về lỗi 500 để Frontend không báo thành công bậy bạ
-        return res.status(500).json({ error: 'Lỗi hệ thống kiểm tra: ' + error.message });
+        return res.status(500).json({ error: 'Lỗi hệ thống: ' + error.message });
     }
 }
