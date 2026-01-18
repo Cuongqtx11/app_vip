@@ -1,18 +1,5 @@
 [
   {
-    "id": "auto_39274187",
-    "key": "WSLZ-8ZD3-UN2D-GK3K",
-    "package": "Gói Trải Nghiệm",
-    "transaction_code": "QR   SX0GAF   Ma giao dich  Trace297325 Trace 297325",
-    "amount": 5000,
-    "createdAt": "2026-01-18T19:51:57.500825",
-    "expiresAt": null,
-    "maxUses": 10,
-    "currentUses": 0,
-    "active": true,
-    "createdBy": "Auto_Bot_VPS"
-  },
-  {
     "id": "key_1768466812_1684",
     "key": "35WP-MRE0-VFM7-4RXG",
     "createdAt": "2026-01-15T15:46:52.889982",
