@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <style>
-        /* CSS RIÊNG CHO TRANG PRICING (Dựa trên biến màu trong style.css) */
+        /* CSS RIÊNG CHO TRANG PAYMENT */
         body { padding-bottom: 80px; }
         
         .pricing-header {
@@ -28,7 +28,7 @@
             padding: 20px;
         }
 
-        /* Card gói cước (kế thừa style của app-card) */
+        /* Card gói cước */
         .pricing-card {
             background: var(--card-bg-light);
             border: 2px solid var(--border-light);
@@ -182,11 +182,41 @@
             background: transparent; border: none;
             color: var(--placeholder-light); font-size: 1.5rem; cursor: pointer;
         }
+
+        /* Nút trạng thái */
+        .status-btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 15px;
+            cursor: not-allowed;
+            background: #e2e8f0;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        /* Animation xoay xoay khi chờ */
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .spinner {
+            border: 3px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #64748b;
+            border-radius: 50%;
+            width: 18px; height: 18px;
+            animation: spin 1s linear infinite;
+        }
     </style>
 </head>
-<body class="light"> <div class="pricing-header">
+<body>
+
+    <div class="pricing-header">
         <h1>Nâng Cấp VIP</h1>
-        <p>Chọn gói phù hợp để trải nghiệm kho ứng dụng tốt nhất</p>
+        <p>Tự động kích hoạt ngay sau khi chuyển khoản</p>
     </div>
 
     <div class="pricing-container">
@@ -253,30 +283,53 @@
     <div id="paymentModal" class="payment-modal">
         <div class="payment-box">
             <button class="close-modal" onclick="closePayment()">&times;</button>
-            <h2 id="pkg-name" style="color: var(--primary); margin-bottom: 5px;">Tên Gói</h2>
-            <p style="font-size: 0.9em; opacity: 0.7;">Vui lòng quét mã bên dưới</p>
             
-            <div class="qr-frame">
-                <img id="qr-image" src="" alt="QR Code">
+            <div id="qr-area">
+                <h2 id="pkg-name" style="color: var(--primary); margin-bottom: 5px;">Tên Gói</h2>
+                <p style="font-size: 0.9em; opacity: 0.7;">Vui lòng quét mã bên dưới</p>
+                
+                <div class="qr-frame">
+                    <img id="qr-image" src="" alt="QR Code">
+                </div>
+
+                <p style="font-size: 0.85em; margin-bottom: 5px;">Nội dung chuyển khoản (Bắt buộc):</p>
+                <div id="trans-code" class="transfer-code" onclick="copyCode()" title="Bấm để sao chép">Loading...</div>
+                
+                <button class="status-btn">
+                    <div class="spinner"></div> Đang chờ thanh toán...
+                </button>
+                <p style="font-size: 0.8em; color: var(--placeholder-light); margin-top: 10px;">
+                    Không tắt tab này. Hệ thống sẽ tự động hiển thị Key ngay khi nhận được tiền.
+                </p>
             </div>
 
-            <p style="font-size: 0.85em; margin-bottom: 5px;">Nội dung chuyển khoản (Tự động):</p>
-            <div id="trans-code" class="transfer-code" onclick="copyCode()" title="Bấm để sao chép">Loading...</div>
-            <p style="font-size: 0.8em; color: var(--placeholder-light);">Hệ thống tự động kích hoạt sau 1-3 phút</p>
+            <div id="result-area" style="display: none; text-align: center;">
+                <div style="font-size: 60px; margin-bottom: 10px;">🎉</div>
+                <h2 style="color: #10b981; margin-bottom: 10px;">Thanh Toán Thành Công!</h2>
+                <p>Cảm ơn bạn đã ủng hộ. Đây là mã kích hoạt của bạn:</p>
+                
+                <div id="success-key" 
+                     style="background: #f0fdf4; color: #15803d; font-size: 20px; font-weight: 800; padding: 20px; border: 2px dashed #16a34a; border-radius: 12px; margin: 20px 0; word-break: break-all;">
+                     VIP-KEY-LOADING...
+                </div>
+                
+                <button class="plan-btn" style="background: var(--primary); color: white;" onclick="closePayment()">Hoàn tất</button>
+            </div>
 
-            <button class="download-btn" style="margin-top: 20px;" onclick="confirmPaid()">
-                <i class="material-icons">check_circle</i> Tôi đã chuyển tiền
-            </button>
         </div>
     </div>
 
     <script>
-        // --- CẤU HÌNH TÀI KHOẢN NGÂN HÀNG ---
+        // --- CẤU HÌNH NGÂN HÀNG CỦA BẠN ---
         const BANK_INFO = {
             id: 'MB',            // Mã ngân hàng (MB, VCB, ACB...)
             acc: '0862222849',    // Số tài khoản
             name: 'HO HUU CUONG' // Tên chủ tài khoản
         };
+
+        // Biến kiểm soát vòng lặp check tiền
+        let checkInterval;
+        let isChecking = false;
 
         // Hàm tạo nội dung ngẫu nhiên 6 ký tự
         function generateRandomCode() {
@@ -294,6 +347,10 @@
             const qrImg = document.getElementById('qr-image');
             const codeEl = document.getElementById('trans-code');
             const nameEl = document.getElementById('pkg-name');
+            
+            // Reset giao diện về trạng thái chờ
+            document.getElementById('qr-area').style.display = 'block';
+            document.getElementById('result-area').style.display = 'none';
 
             // 1. Tạo mã giao dịch mới
             const code = generateRandomCode();
@@ -303,22 +360,23 @@
             codeEl.innerText = code;
             
             // 3. Tạo Link QR VietQR
-            // Format: https://img.vietqr.io/image/<BANK>-<ACC>-<TEMPLATE>.png?amount=<TIEN>&addInfo=<NOI_DUNG>
             const qrUrl = `https://img.vietqr.io/image/${BANK_INFO.id}-${BANK_INFO.acc}-compact.jpg?amount=${amount}&addInfo=${code}&accountName=${encodeURIComponent(BANK_INFO.name)}`;
-            
-            // Set ảnh (dùng placeholder trong lúc load)
             qrImg.src = qrUrl;
 
             // 4. Hiển thị Modal
             modal.style.display = 'flex';
+
+            // 5. Bắt đầu kiểm tra tiền
+            startChecking(code);
         }
 
         // Đóng Modal
         function closePayment() {
             document.getElementById('paymentModal').style.display = 'none';
+            stopChecking(); // Dừng kiểm tra ngay
         }
 
-        // Copy mã nội dung
+        // Copy mã
         function copyCode() {
             const code = document.getElementById('trans-code').innerText;
             navigator.clipboard.writeText(code).then(() => {
@@ -326,14 +384,47 @@
             });
         }
 
-        // Giả lập xác nhận
-        function confirmPaid() {
-            alert('Hệ thống đang kiểm tra giao dịch...');
-            closePayment();
+        // --- LOGIC TỰ ĐỘNG CHECK TIỀN ---
+        function startChecking(contentCode) {
+            if (isChecking) return;
+            isChecking = true;
+            
+            // Gọi API mỗi 3 giây
+            checkInterval = setInterval(async () => {
+                try {
+                    // Gọi API Backend check-order.js
+                    const res = await fetch('/api/check-order', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ content: contentCode })
+                    });
+                    
+                    const data = await res.json();
+
+                    if (data.status === 'success') {
+                        // ==> Tiền đã về!
+                        stopChecking();
+                        showSuccess(data.key, data.package);
+                    }
+                    // Nếu pending thì kệ, đợi lần sau check tiếp
+                } catch (err) {
+                    console.error("Lỗi check:", err);
+                }
+            }, 3000); // 3 giây check 1 lần
         }
 
-        // Tự động nhận diện Dark Mode theo class của body (nếu trang web mẹ có script xử lý theme)
-        // Nếu không, đoạn script này sẽ check setting của trình duyệt
+        function stopChecking() {
+            clearInterval(checkInterval);
+            isChecking = false;
+        }
+
+        function showSuccess(key, pkgName) {
+            document.getElementById('qr-area').style.display = 'none';
+            document.getElementById('result-area').style.display = 'block';
+            document.getElementById('success-key').innerText = key;
+        }
+
+        // Tự động Dark Mode
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.body.classList.add('dark');
         }
