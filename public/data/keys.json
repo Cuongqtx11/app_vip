@@ -1,19 +1,5 @@
 [
   {
-    "id": "auto_39282990",
-    "key": "KOEK-0OTV-C2AB-KVHH",
-    "package": "VIP 6 Tháng",
-    "transaction_code": "QR   XY7E69- Ma GD ACSP/ IX599960",
-    "amount": 149000,
-    "createdAt": "2026-01-18T19:52:06.493295",
-    "expiresAt": "2026-07-17T19:52:06.493295",
-    "maxUses": null,
-    "currentUses": 1,
-    "active": true,
-    "createdBy": "Auto_Bot_VPS",
-    "lastUsedAt": "2026-01-18T12:53:48.551Z"
-  },
-  {
     "id": "auto_39282666",
     "key": "WTYC-ZVOA-OUZZ-H7IH",
     "package": "Gói Trải Nghiệm",
