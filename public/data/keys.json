@@ -1,18 +1,5 @@
 [
   {
-    "id": "auto_39279983",
-    "key": "XWDF-OACJ-D42I-60LN",
-    "package": "VIP 1 Tuần",
-    "transaction_code": "QR   NA7SKW   Ma giao dich  Trace511119 Trace 511119",
-    "amount": 19000.0,
-    "createdAt": "2026-01-18T20:25:20.960607",
-    "expiresAt": "2026-01-25T20:25:20.960607",
-    "maxUses": null,
-    "currentUses": 0,
-    "active": true,
-    "createdBy": "Auto_Bot_VPS"
-  },
-  {
     "id": "key_1768466812_1684",
     "key": "35WP-MRE0-VFM7-4RXG",
     "createdAt": "2026-01-15T15:46:52.889982",
