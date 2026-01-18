@@ -5,13 +5,14 @@
     "createdAt": "2026-01-18T14:45:33.348Z",
     "expiresAt": "2026-01-25T14:45:33.348Z",
     "maxUses": null,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "YCM1GG",
     "transaction_id": "39308402",
     "package": "VIP 1 Tuần",
-    "notes": "7 days, ∞ uses"
+    "notes": "7 days, ∞ uses",
+    "lastUsedAt": "2026-01-18T14:46:02.330Z"
   },
   {
     "id": "key_1768466812_1684",
