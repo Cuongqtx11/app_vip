@@ -5,13 +5,14 @@
     "createdAt": "2026-01-18T10:58:39.293Z",
     "expiresAt": "2026-07-17T10:58:39.293Z",
     "maxUses": null,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "XY7E69",
     "transaction_id": "39282990",
     "package": "VIP 6 Tháng",
-    "notes": "180 days, ∞ uses"
+    "notes": "180 days, ∞ uses",
+    "lastUsedAt": "2026-01-18T10:58:56.267Z"
   },
   {
     "id": "key_1768733785_1201",
