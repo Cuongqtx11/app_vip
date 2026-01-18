@@ -1,18 +1,5 @@
 [
   {
-    "id": "auto_39279727",
-    "key": "2W28-9TC7-2TC5-HRH4",
-    "package": "Gói Trải Nghiệm",
-    "transaction_code": "QR   ASODQN   Ma giao dich  Trace500661 Trace 500661",
-    "amount": 5000,
-    "createdAt": "2026-01-18T19:52:00.363634",
-    "expiresAt": null,
-    "maxUses": 10,
-    "currentUses": 0,
-    "active": true,
-    "createdBy": "Auto_Bot_VPS"
-  },
-  {
     "id": "auto_39274187",
     "key": "WSLZ-8ZD3-UN2D-GK3K",
     "package": "Gói Trải Nghiệm",
