@@ -1,18 +1,5 @@
 [
   {
-    "id": "auto_39296994",
-    "key": "MRY5-JA64-L4SZ-TSVQ",
-    "package": "Gói Trải Nghiệm",
-    "transaction_code": "QR   X9BDMM   Ma giao dich  Trace147896 Trace 147896",
-    "amount": 5000.0,
-    "createdAt": "2026-01-18T20:25:27.174490",
-    "expiresAt": null,
-    "maxUses": 10,
-    "currentUses": 0,
-    "active": true,
-    "createdBy": "Auto_Bot_VPS"
-  },
-  {
     "id": "auto_39279983",
     "key": "XWDF-OACJ-D42I-60LN",
     "package": "VIP 1 Tuần",
