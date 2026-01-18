@@ -1,5 +1,18 @@
 [
   {
+    "id": "auto_39282666",
+    "key": "WTYC-ZVOA-OUZZ-H7IH",
+    "package": "Gói Trải Nghiệm",
+    "transaction_code": "QR   I21HAR   Ma giao dich  Trace612036 Trace 612036",
+    "amount": 5000.0,
+    "createdAt": "2026-01-18T19:52:04.310466",
+    "expiresAt": null,
+    "maxUses": 10,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "Auto_Bot_VPS"
+  },
+  {
     "id": "auto_39279983",
     "key": "RUFU-1BIJ-Q90F-C06S",
     "package": "VIP 1 Tuần",
