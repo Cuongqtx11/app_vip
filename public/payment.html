@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán VIP</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <style>
+        /* CSS riêng cho trang thanh toán */
+        body { font-family: sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .pay-box { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 90%; }
+        .qr-img { width: 100%; border-radius: 8px; margin: 1rem 0; border: 1px solid #ddd; }
+        .code-block { background: #e9ecef; padding: 10px; border-radius: 6px; font-weight: bold; color: #0070f3; font-size: 1.2rem; letter-spacing: 2px; }
+        .btn { background: #0070f3; color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; cursor: pointer; font-size: 1rem; margin-top: 1rem; }
+        .btn:hover { background: #0051a2; }
+    </style>
+</head>
+<body>
+
+<div class="pay-box">
+    <h2>Nâng cấp tài khoản</h2>
+    <p>Vui lòng quét mã bên dưới để thanh toán</p>
+    
+    <img id="qr-code" class="qr-img" src="" alt="QR Code">
+
+    <p>Nội dung chuyển khoản (Bắt buộc):</p>
+    <div id="trans-content" class="code-block">LOADING...</div>
+    
+    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
+        Hệ thống sẽ tự động kích hoạt sau 1-3 phút khi nhận được tiền đúng nội dung.
+    </p>
+
+    <button class="btn" onclick="checkPayment()">Tôi đã chuyển tiền</button>
+</div>
+
+<script>
+    // --- CẤU HÌNH NGÂN HÀNG CỦA BẠN ---
+    const BANK_ID = 'MB';       // Mã ngân hàng (MB, VCB, ACB, v.v.)
+    const ACCOUNT_NO = '123456789'; // Số tài khoản của bạn
+    const ACCOUNT_NAME = 'NGUYEN VAN A'; // Tên chủ tài khoản
+    const AMOUNT = 50000;       // Số tiền
+    // ----------------------------------
+
+    // 1. Tạo mã ngẫu nhiên 6 ký tự (Chữ và Số)
+    function generateCode(length) {
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+            result += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return result;
+    }
+
+    const uniqueCode = generateCode(6);
+    
+    // 2. Hiển thị lên giao diện
+    document.getElementById('trans-content').innerText = uniqueCode;
+
+    // 3. Tạo QR Code (Dùng VietQR API)
+    // Cú pháp: https://img.vietqr.io/image/<BANK>-<ACC>-<TEMPLATE>.png?amount=<TIEN>&addInfo=<NOI_DUNG>
+    const qrUrl = `https://img.vietqr.io/image/${BANK_ID}-${ACCOUNT_NO}-compact.jpg?amount=${AMOUNT}&addInfo=${uniqueCode}&accountName=${encodeURIComponent(ACCOUNT_NAME)}`;
+    document.getElementById('qr-code').src = qrUrl;
+
+    // 4. Hàm kiểm tra (Bạn có thể nâng cấp để gọi API check trạng thái)
+    function checkPayment() {
+        alert("Hệ thống đang kiểm tra giao dịch: " + uniqueCode + "\nVui lòng đợi tin nhắn xác nhận.");
+    }
+</script>
+
+</body>
+</html>
