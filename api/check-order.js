@@ -49,15 +49,17 @@ export default async function handler(req, res) {
         let packageName = '';
 
         if (amount >= 199000) { 
-            packageName = 'VIP 1 Năm'; days = 365; uses = 0;
+            packageName = 'VIP 1 Năm'; days = 366; uses = 0;
         } else if (amount >= 149000) { 
-            packageName = 'VIP 6 Tháng'; days = 180; uses = 0;
+            packageName = 'VIP 6 Tháng'; days = 181; uses = 0;
         } else if (amount >= 39000) { 
-            packageName = 'VIP 1 Tháng'; days = 30; uses = 0;
+            packageName = 'VIP 1 Tháng'; days = 31; uses = 0;
         } else if (amount >= 19000) { 
-            packageName = 'VIP 1 Tuần'; days = 7; uses = 0;
+            packageName = 'VIP 1 Tuần'; days = 8; uses = 0;
         } else if (amount >= 5000) { 
             packageName = 'Gói Lẻ'; days = 0; uses = 10; // Không giới hạn ngày, 10 lượt
+        } else if (amount >= 4999000) { 
+            packageName = 'Vĩnh Viễn'; days = 0; uses = 0;
         } else {
             return res.status(200).json({ status: 'error', message: 'Số tiền không khớp gói nào' });
         }
