@@ -35,9 +35,10 @@
     "createdAt": "2026-01-18T19:52:02.556111",
     "expiresAt": "2026-01-25T19:52:02.556111",
     "maxUses": null,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
-    "createdBy": "Auto_Bot_VPS"
+    "createdBy": "Auto_Bot_VPS",
+    "lastUsedAt": "2026-01-18T12:54:27.046Z"
   },
   {
     "id": "auto_39279727",
