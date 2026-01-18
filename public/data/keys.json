@@ -5,13 +5,14 @@
     "createdAt": "2026-01-18T10:56:25.112Z",
     "expiresAt": null,
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "I21HAR",
     "transaction_id": "39282666",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 10 uses"
+    "notes": "∞ days, 10 uses",
+    "lastUsedAt": "2026-01-18T10:56:51.910Z"
   },
   {
     "id": "key_1768466812_1684",
