@@ -432,6 +432,24 @@
     "lastSync": "2026-01-19T13:00:01.440Z"
   },
   {
+    "id": "ipa-com.frontpocketsoftware.happyscale-2026.1",
+    "type": "ipa",
+    "name": "HappyScale",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontpocketsoftware.happyscale.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/HappyScale_2026.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "com.frontpocketsoftware.happyscale",
+    "lastSync": "2026-01-19T14:00:02.178Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsAppSMB-25.37.76",
     "type": "ipa",
     "name": "WABusiness",
