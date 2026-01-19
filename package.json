@@ -16,13 +16,9 @@
   "author": "Cuios",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.7.0",
-    "@octokit/rest": "^20.0.0"
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
     "vercel": "^33.0.0"
-  },
-  "engines": {
-    "node": "18.x"
   }
 }
