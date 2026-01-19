@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.joytunes.SimplyGuitar-10.13",
+    "type": "ipa",
+    "name": "SimplyGuitar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.SimplyGuitar.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/SimplyGuitar_10.13_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.13",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "com.joytunes.SimplyGuitar",
+    "lastSync": "2026-01-19T00:00:01.502Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsAppSMB-25.37.76",
     "type": "ipa",
     "name": "WABusiness",
