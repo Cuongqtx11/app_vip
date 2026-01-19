@@ -17,6 +17,7 @@ export default async function handler(req, res) {
     if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
     const { content, plan_days } = req.body; 
+
     console.log(`👉 [START] Khách check mã: "${content}"`);
 
     if (!content) return res.status(400).json({ status: 'error', message: 'Thiếu mã giao dịch' });
