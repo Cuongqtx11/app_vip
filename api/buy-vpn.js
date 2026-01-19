@@ -1,5 +1,4 @@
 import { Octokit } from "@octokit/rest";
-import fetch from 'node-fetch'; 
 
 // CẤU HÌNH
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN; 
@@ -18,16 +17,14 @@ export default async function handler(req, res) {
     if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
     const { content, plan_days } = req.body; 
-
-    // Log để kiểm tra trên Vercel
-    console.log(`👉 [START] Khách check mã 9 ký tự: "${content}"`);
+    console.log(`👉 [START] Khách check mã: "${content}"`);
 
     if (!content) return res.status(400).json({ status: 'error', message: 'Thiếu mã giao dịch' });
 
     try {
         const octokit = new Octokit({ auth: GITHUB_TOKEN });
         
-        // --- 2. ĐỌC KHO HÀNG TỪ GITHUB ---
+        // --- 2. ĐỌC KHO HÀNG ---
         let vpnList, sha;
         try {
             const { data } = await octokit.repos.getContent({
@@ -39,21 +36,20 @@ export default async function handler(req, res) {
             vpnList = JSON.parse(Buffer.from(data.content, 'base64').toString('utf-8'));
         } catch (e) {
             console.error("❌ Lỗi đọc GitHub:", e.message);
-            return res.status(500).json({ status: 'error', message: 'Lỗi hệ thống kho hàng' });
+            return res.status(500).json({ status: 'error', message: 'Lỗi kho hàng' });
         }
 
-        // --- 3. CHECK ĐÃ MUA (Chống trùng lặp) ---
-        // Chuẩn hóa: Xóa hết dấu cách, dấu chấm, viết hoa (VD: "Code 123" -> "CODE123")
-        const cleanInput = content.toUpperCase().replace(/[^A-Z0-9]/g, '');
+        // --- 3. CHECK ĐÃ MUA (Bỏ qua dấu cách, ký tự lạ) ---
+        // Hàm làm sạch chuỗi: Chỉ giữ lại CHỮ và SỐ, viết hoa hết
+        const cleanStr = (str) => str ? str.toUpperCase().replace(/[^A-Z0-9]/g, '') : '';
+        const cleanInput = cleanStr(content);
         
-        // Tìm xem mã này đã mua chưa
-        const existing = vpnList.find(k => k.owner_content && k.owner_content.toUpperCase().replace(/[^A-Z0-9]/g, '') === cleanInput);
+        const existing = vpnList.find(k => cleanStr(k.owner_content) === cleanInput);
         
         if (existing) {
-            console.log(`✅ Mã ${content} đã mua rồi -> Trả lại key cũ.`);
+            console.log(`✅ Mã ${content} đã mua -> Trả lại key cũ.`);
             return res.status(200).json({
-                status: 'success',
-                message: 'Đã mua rồi',
+                status: 'success', message: 'Đã mua rồi',
                 data: {
                     qr_image: existing.qr_image,
                     conf_text: existing.conf,
@@ -62,28 +58,21 @@ export default async function handler(req, res) {
             });
         }
 
-        // --- 4. CHECK SEPAY (Logic giống check-order.js nhưng thông minh hơn) ---
+        // --- 4. CHECK SEPAY (Dùng fetch native của Node.js 18+) ---
         if (!SEPAY_API_TOKEN) {
-            console.error("❌ Thiếu SEPAY_API_TOKEN");
-            return res.status(500).json({ status: 'error', message: 'Lỗi cấu hình Server' });
+            return res.status(500).json({ status: 'error', message: 'Thiếu Token SePay' });
         }
 
-        const isPaid = await checkSePaySmart(cleanInput, SEPAY_API_TOKEN);
+        const isPaid = await checkSePayNative(cleanInput, SEPAY_API_TOKEN);
         
         if (!isPaid) {
-            console.log(`⏳ Chưa thấy giao dịch khớp: ${cleanInput}`);
+            console.log(`⏳ Chưa thấy giao dịch khớp mã: ${cleanInput}`);
             return res.status(200).json({ status: 'pending', message: 'Chưa nhận được tiền' });
         }
 
-        console.log("💰 Tiền đã về! Đang xuất kho...");
-
         // --- 5. XUẤT KHO ---
         const keyIndex = vpnList.findIndex(k => k.status === 'available');
-
-        if (keyIndex === -1) {
-            console.error("❌ KHO HẾT HÀNG THỰC SỰ!");
-            return res.status(500).json({ status: 'error', message: 'Kho đang tạm hết, vui lòng nhắn Admin!' });
-        }
+        if (keyIndex === -1) return res.status(500).json({ status: 'error', message: 'Hết hàng tạm thời' });
 
         const soldKey = vpnList[keyIndex];
         const now = new Date();
@@ -93,22 +82,17 @@ export default async function handler(req, res) {
         vpnList[keyIndex] = {
             ...soldKey,
             status: 'sold',
-            owner_content: content.toUpperCase(), // Lưu mã gốc
+            owner_content: content.toUpperCase(),
             sold_at: now.toISOString(),
             expire_at: expireDate.toISOString()
         };
 
-        // Lưu lại GitHub
         await octokit.repos.createOrUpdateFileContents({
-            owner: REPO_OWNER,
-            repo: REPO_NAME,
-            path: DATA_PATH,
+            owner: REPO_OWNER, repo: REPO_NAME, path: DATA_PATH,
             message: `Sold VPN to ${content}`,
             content: Buffer.from(JSON.stringify(vpnList, null, 2)).toString('base64'),
             sha: sha
         });
-
-        console.log("✅ Giao dịch hoàn tất!");
 
         return res.status(200).json({
             status: 'success',
@@ -120,15 +104,16 @@ export default async function handler(req, res) {
         });
 
     } catch (error) {
-        console.error("❌ Lỗi Fatal:", error);
+        console.error("❌ Fatal Error:", error);
         return res.status(500).json({ status: 'error', message: error.message });
     }
 }
 
-// --- HÀM CHECK SEPAY SIÊU NHẠY ---
-async function checkSePaySmart(cleanCode, token) {
+// Hàm Check SePay KHÔNG DÙNG THƯ VIỆN NGOÀI
+async function checkSePayNative(cleanCode, token) {
     try {
-        const res = await fetch(`https://my.sepay.vn/userapi/transactions/list?limit=50`, {
+        // Dùng fetch có sẵn của Node.js
+        const res = await fetch('https://my.sepay.vn/userapi/transactions/list?limit=50', {
             headers: { 
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
@@ -143,30 +128,26 @@ async function checkSePaySmart(cleanCode, token) {
         const data = await res.json();
         const transactions = data.transactions || [];
 
-        // Log 1 giao dịch mới nhất để debug
+        // Log giao dịch mới nhất để debug (Xem trong Vercel Logs)
         if (transactions.length > 0) {
-            console.log(`🔎 GD mới nhất tại SePay: "${transactions[0].transaction_content}"`);
+            console.log(`🔎 GD mới nhất SePay: "${transactions[0].transaction_content}"`);
         }
 
-        // Logic quan trọng: Xóa sạch ký tự lạ trong nội dung Ngân Hàng trước khi so sánh
+        // Tìm giao dịch khớp (Logic: Nội dung chuyển khoản CHỨA mã code)
         const matching = transactions.find(t => {
             if (!t.transaction_content) return false;
-            
-            // Xóa hết dấu cách, ký tự đặc biệt, chỉ giữ Chữ và Số
-            const transContentClean = t.transaction_content.toUpperCase().replace(/[^A-Z0-9]/g, '');
-            
-            // So sánh xem có chứa mã code (đã làm sạch) không
-            return transContentClean.includes(cleanCode);
+            // Làm sạch nội dung từ ngân hàng (Xóa dấu cách, ký tự lạ)
+            const bankContentClean = t.transaction_content.toUpperCase().replace(/[^A-Z0-9]/g, '');
+            return bankContentClean.includes(cleanCode);
         });
 
         if (matching) {
             console.log(`✅ KHỚP GIAO DỊCH: ${matching.transaction_content}`);
             return true;
         }
-
         return false;
     } catch (e) {
-        console.error("Lỗi checkSePaySmart:", e);
+        console.error("Lỗi checkSePayNative:", e);
         return false;
     }
 }
