@@ -414,6 +414,24 @@
     "lastSync": "2026-01-19T12:00:01.457Z"
   },
   {
+    "id": "ipa-com.truesoftware.TrueCallerOther-26.2.5",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/Truecaller_26.2.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.2.5",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2026-01-19T13:00:01.440Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsAppSMB-25.37.76",
     "type": "ipa",
     "name": "WABusiness",
