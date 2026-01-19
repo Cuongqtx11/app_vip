@@ -22,7 +22,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Hiệu ứng load */
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         .spinner {
             display: inline-block;
@@ -225,10 +224,14 @@
         let checkInterval;
         let isChecking = false;
 
+        // [QUAN TRỌNG] Đã sửa thành 9 ký tự
         function generateRandomCode() {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let result = '';
-            for (let i = 0; i < 6; i++) result += chars.charAt(Math.floor(Math.random() * chars.length));
+            // Lặp 9 lần -> Tạo mã 9 ký tự
+            for (let i = 0; i < 9; i++) {
+                result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
             return result;
         }
 
@@ -247,18 +250,17 @@
             document.getElementById('qr-area').classList.remove('hidden');
             document.getElementById('result-area').classList.add('hidden');
             
-            const code = generateRandomCode(); // Mã này sẽ là Transaction Code
+            const code = generateRandomCode(); 
             
             nameEl.innerText = packageName;
             codeEl.innerText = code;
             
-            // Tạo QR VietQR chuẩn
+            // Tạo QR VietQR
             const qrUrl = `https://img.vietqr.io/image/${BANK_INFO.id}-${BANK_INFO.acc}-compact.jpg?amount=${amount}&addInfo=${code}&accountName=${encodeURIComponent(BANK_INFO.name)}`;
             qrImg.src = qrUrl;
 
             modal.classList.remove('hidden');
 
-            // Bắt đầu kiểm tra tiền
             startChecking(code, days);
         }
 
@@ -284,7 +286,6 @@
             
             checkInterval = setInterval(async () => {
                 try {
-                    // Gọi API kiểm tra và lấy key (API mới xử lý trùng lặp)
                     const res = await fetch('/api/buy-vpn', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
@@ -296,7 +297,6 @@
                     
                     const data = await res.json();
 
-                    // Nếu thành công (tiền đã về và server trả key)
                     if (data.status === 'success') {
                         clearInterval(checkInterval);
                         isChecking = false;
@@ -307,12 +307,10 @@
                         const container = document.getElementById('success-key-container');
                         container.innerHTML = '';
 
-                        // Hiển thị QR VPN
                         const qrImg = document.createElement('img');
                         qrImg.src = data.data.qr_image;
                         qrImg.className = "w-48 h-48 mx-auto rounded-xl shadow-lg mb-4 border-4 border-white";
                         
-                        // Hiển thị Config Text
                         const confText = document.createElement('textarea');
                         confText.id = "config-text-area";
                         confText.value = data.data.conf_text;
@@ -320,13 +318,11 @@
                         confText.readOnly = true;
                         confText.onclick = function() { this.select(); };
 
-                        // Thông tin hạn dùng
                         const expireText = document.createElement('p');
                         const date = new Date(data.data.expire);
                         expireText.className = "text-green-400 text-sm mb-4 font-bold flex justify-center items-center gap-2";
                         expireText.innerHTML = `<i class="fa-solid fa-clock"></i> Hết hạn: ${date.toLocaleDateString('vi-VN')}`;
 
-                        // Nút Copy
                         const btnCopy = document.createElement('button');
                         btnCopy.innerHTML = '<i class="fa-regular fa-copy"></i> Copy Cấu Hình';
                         btnCopy.className = "w-full py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold text-white transition shadow-lg shadow-blue-600/30";
@@ -337,12 +333,10 @@
                         container.appendChild(confText);
                         container.appendChild(btnCopy);
                     }
-                    // Nếu pending thì cứ tiếp tục lặp
-                    
                 } catch (err) {
                     console.error("Lỗi kết nối:", err);
                 }
-            }, 3000); // Check mỗi 3 giây
+            }, 3000); 
         }
     </script>
 </body>
