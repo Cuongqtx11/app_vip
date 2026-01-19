@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.soundcloud.TouchApp-8.44.0",
+    "type": "ipa",
+    "name": "SoundCloud",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.soundcloud.TouchApp.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/SoundCloud_8.44.0_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.44.0",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.soundcloud.TouchApp",
+    "lastSync": "2026-01-19T19:00:01.359Z"
+  },
+  {
     "id": "ipa-com.joytunes.SimplyGuitar-10.13",
     "type": "ipa",
     "name": "SimplyGuitar",
