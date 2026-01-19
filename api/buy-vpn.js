@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'; // Dùng đúng thư viện có sẵn trong package.json gốc
+import fetch from 'node-fetch'; // Dùng thư viện có sẵn trong package.json gốc
 
 // CẤU HÌNH
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN; 
@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     if (!content) return res.status(400).json({ status: 'error', message: 'Thiếu mã giao dịch' });
 
     try {
-        // --- 2. ĐỌC KHO HÀNG (Dùng fetch thay vì Octokit) ---
+        // --- 2. ĐỌC KHO HÀNG (Dùng fetch trực tiếp) ---
         const gitUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${DATA_PATH}`;
         const gitRes = await fetch(gitUrl, {
             headers: { 
@@ -98,7 +98,7 @@ export default async function handler(req, res) {
             expire_at: expireDate.toISOString()
         };
 
-        // Update file lên GitHub
+        // Update file lên GitHub bằng fetch
         const updateRes = await fetch(gitUrl, {
             method: 'PUT',
             headers: { 
