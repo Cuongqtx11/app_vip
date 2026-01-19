@@ -270,6 +270,60 @@
     "lastSync": "2026-01-19T09:00:01.664Z"
   },
   {
+    "id": "ipa-com.jakemor.firness-ai-15.3",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/FitnessAI_15.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.3",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2026-01-19T10:00:01.507Z"
+  },
+  {
+    "id": "ipa-com.thenovik.Presets-2.4.10",
+    "type": "ipa",
+    "name": "Edith",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thenovik.Presets.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/Edith_2.4.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.10",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "com.thenovik.Presets",
+    "lastSync": "2026-01-19T10:00:01.508Z"
+  },
+  {
+    "id": "ipa-com.yazio.ios.YAZIO-12.68.0",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/Yazio_12.68.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.68.0",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2026-01-19T10:00:01.509Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsAppSMB-25.37.76",
     "type": "ipa",
     "name": "WABusiness",
