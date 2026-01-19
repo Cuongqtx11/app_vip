@@ -378,6 +378,42 @@
     "lastSync": "2026-01-19T11:00:01.530Z"
   },
   {
+    "id": "ipa-com.dr1ven.eraser-2026.03.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/Photoroom_2026.03.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.03.01",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-01-19T12:00:01.456Z"
+  },
+  {
+    "id": "ipa-se.resenatverket.FlightRadar24-Free-10.22.0",
+    "type": "ipa",
+    "name": "Flightradar24",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/se.resenatverket.FlightRadar24-Free.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-01-2026/Flightradar24_10.22.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.22.0",
+    "developer": "khomodvip",
+    "date": "2026-01-19",
+    "source": "apptesters",
+    "bundleID": "se.resenatverket.FlightRadar24-Free",
+    "lastSync": "2026-01-19T12:00:01.457Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsAppSMB-25.37.76",
     "type": "ipa",
     "name": "WABusiness",
