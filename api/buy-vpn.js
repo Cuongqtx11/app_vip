@@ -1,4 +1,5 @@
 import { Octokit } from "@octokit/rest";
+import fetch from 'node-fetch'; // Giữ nguyên thư viện node-fetch bạn đang dùng
 
 // CẤU HÌNH
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN; 
@@ -8,7 +9,7 @@ const REPO_NAME = "app_vip";
 const DATA_PATH = "public/data/vpn_data.json";
 
 export default async function handler(req, res) {
-    // 1. Cấu hình CORS (Để trình duyệt không chặn)
+    // 1. Cấu hình CORS
     res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -22,8 +23,7 @@ export default async function handler(req, res) {
 
     const { content, plan_days } = req.body; 
 
-    // Log đầu vào
-    console.log(`👉 [START] Khách check mã: ${content}`);
+    console.log(`👉 [START] Khách check mã: "${content}"`);
 
     if (!content) return res.status(400).json({ status: 'error', message: 'Thiếu mã giao dịch' });
 
@@ -45,14 +45,15 @@ export default async function handler(req, res) {
             return res.status(500).json({ status: 'error', message: 'Lỗi hệ thống kho hàng' });
         }
 
-        // --- 3. CHECK ĐÃ MUA (Chống trùng lặp thông minh) ---
+        // --- 3. CHECK ĐÃ MUA (Chống trùng lặp thông minh - Bỏ qua dấu cách) ---
         // Chuẩn hóa: Viết hoa hết và xóa sạch dấu cách (VD: "Code 123" -> "CODE123")
-        const cleanContent = content.toUpperCase().replace(/\s/g, '');
+        const cleanInput = content.toUpperCase().replace(/\s/g, '');
         
-        const existing = vpnList.find(k => k.owner_content && k.owner_content.toUpperCase().replace(/\s/g, '') === cleanContent);
+        // Tìm xem mã này đã mua chưa (so sánh sau khi xóa dấu cách)
+        const existing = vpnList.find(k => k.owner_content && k.owner_content.toUpperCase().replace(/\s/g, '') === cleanInput);
         
         if (existing) {
-            console.log(`✅ Khách ${content} đã mua rồi -> Trả lại key cũ.`);
+            console.log(`✅ Mã ${content} đã mua rồi -> Trả lại key cũ.`);
             return res.status(200).json({
                 status: 'success',
                 message: 'Đã mua rồi',
@@ -64,17 +65,17 @@ export default async function handler(req, res) {
             });
         }
 
-        // --- 4. CHECK SEPAY (Kiểm tra tiền - Logic Mới) ---
+        // --- 4. CHECK SEPAY (Logic Mới: Bỏ qua dấu cách) ---
         if (!SEPAY_API_TOKEN) {
             console.error("❌ Thiếu SEPAY_API_TOKEN");
-            return res.status(500).json({ status: 'error', message: 'Lỗi cấu hình Server' });
+            return res.status(500).json({ status: 'error', message: 'Lỗi cấu hình Server (Thiếu Token SePay)' });
         }
 
         // Gọi hàm check thông minh
-        const isPaid = await checkSePaySmart(cleanContent, SEPAY_API_TOKEN);
+        const isPaid = await checkSePaySmart(cleanInput, SEPAY_API_TOKEN);
         
         if (!isPaid) {
-            console.log(`⏳ Chưa thấy tiền cho mã: ${cleanContent}`);
+            console.log(`⏳ Chưa thấy giao dịch khớp với mã: ${cleanInput}`);
             return res.status(200).json({ status: 'pending', message: 'Chưa nhận được tiền' });
         }
 
@@ -96,7 +97,7 @@ export default async function handler(req, res) {
         vpnList[keyIndex] = {
             ...soldKey,
             status: 'sold',
-            owner_content: content.toUpperCase(), // Lưu mã gốc
+            owner_content: content.toUpperCase(), // Lưu mã gốc để tra cứu
             sold_at: now.toISOString(),
             expire_at: expireDate.toISOString()
         };
@@ -131,7 +132,6 @@ export default async function handler(req, res) {
 // --- HÀM CHECK SEPAY THÔNG MINH (BỎ QUA DẤU CÁCH) ---
 async function checkSePaySmart(cleanCode, token) {
     try {
-        // Dùng fetch mặc định của Node 18+ (Không cần import)
         const res = await fetch(`https://my.sepay.vn/userapi/transactions/list?limit=50`, {
             headers: { 
                 'Authorization': `Bearer ${token}`,
@@ -147,7 +147,12 @@ async function checkSePaySmart(cleanCode, token) {
         const data = await res.json();
         const transactions = data.transactions || [];
 
-        // Tìm giao dịch khớp lệnh
+        // Log 3 giao dịch mới nhất để debug
+        if (transactions.length > 0) {
+            console.log(`🔎 GD mới nhất: "${transactions[0].transaction_content}" - Cần tìm: "${cleanCode}"`);
+        }
+
+        // Tìm giao dịch khớp lệnh (Logic quan trọng: xóa dấu cách cả 2 bên)
         const matching = transactions.find(t => {
             if (!t.transaction_content) return false;
             
@@ -159,7 +164,7 @@ async function checkSePaySmart(cleanCode, token) {
         });
 
         if (matching) {
-            console.log(`✅ Tìm thấy GD khớp: ${matching.transaction_content} (${matching.amount_in}đ)`);
+            console.log(`✅ KHỚP GIAO DỊCH: ${matching.transaction_content}`);
             return true;
         }
 
