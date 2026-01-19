@@ -224,11 +224,10 @@
         let checkInterval;
         let isChecking = false;
 
-        // [QUAN TRỌNG] Đã sửa thành 9 ký tự
+        // TẠO MÃ 9 KÝ TỰ (Thay vì 6)
         function generateRandomCode() {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let result = '';
-            // Lặp 9 lần -> Tạo mã 9 ký tự
             for (let i = 0; i < 9; i++) {
                 result += chars.charAt(Math.floor(Math.random() * chars.length));
             }
