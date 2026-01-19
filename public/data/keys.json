@@ -5,14 +5,14 @@
     "createdAt": "2026-01-19T12:07:18.887Z",
     "expiresAt": null,
     "maxUses": 10,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "P70ML1",
     "transaction_id": "39398918",
     "package": "Gói Lẻ",
     "notes": "∞ days, 10 uses",
-    "lastUsedAt": "2026-01-19T12:07:44.546Z"
+    "lastUsedAt": "2026-01-19T12:08:23.365Z"
   },
   {
     "id": "key_1768824369_1366",
