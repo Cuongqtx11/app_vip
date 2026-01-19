@@ -1,5 +1,4 @@
 import { Octokit } from "@octokit/rest";
-import fetch from 'node-fetch'; // [Quan trọng] Import thư viện fetch có sẵn trong package.json
 
 // CẤU HÌNH
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN; 
@@ -9,7 +8,7 @@ const REPO_NAME = "app_vip";
 const DATA_PATH = "public/data/vpn_data.json";
 
 export default async function handler(req, res) {
-    // Cho phép CORS để tránh lỗi kết nối từ trình duyệt
+    // 1. Cấu hình CORS (Để trình duyệt không chặn)
     res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -18,77 +17,75 @@ export default async function handler(req, res) {
         'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
     );
 
-    if (req.method === 'OPTIONS') {
-        res.status(200).end();
-        return;
-    }
-
+    if (req.method === 'OPTIONS') return res.status(200).end();
     if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
     const { content, plan_days } = req.body; 
 
-    // Log để kiểm tra xem request có tới nơi không
-    console.log("👉 Nhận Request Check: ", content);
+    // Log đầu vào
+    console.log(`👉 [START] Khách check mã: ${content}`);
 
     if (!content) return res.status(400).json({ status: 'error', message: 'Thiếu mã giao dịch' });
 
     try {
-        // --- 1. KẾT NỐI GITHUB ---
         const octokit = new Octokit({ auth: GITHUB_TOKEN });
         
-        let fileData, sha, vpnList;
+        // --- 2. ĐỌC KHO HÀNG TỪ GITHUB ---
+        let vpnList, sha;
         try {
             const { data } = await octokit.repos.getContent({
                 owner: REPO_OWNER,
                 repo: REPO_NAME,
                 path: DATA_PATH,
             });
-            fileData = data;
             sha = data.sha;
-            const jsonContent = Buffer.from(fileData.content, 'base64').toString('utf-8');
-            vpnList = JSON.parse(jsonContent);
+            vpnList = JSON.parse(Buffer.from(data.content, 'base64').toString('utf-8'));
         } catch (e) {
             console.error("❌ Lỗi đọc GitHub:", e.message);
-            return res.status(500).json({ status: 'error', message: 'Lỗi đọc kho hàng GitHub' });
+            return res.status(500).json({ status: 'error', message: 'Lỗi hệ thống kho hàng' });
         }
 
-        // --- 2. CHECK TRÙNG LẶP (Đã mua chưa?) ---
-        const existingPurchase = vpnList.find(k => k.owner_content && k.owner_content.toUpperCase() === content.toUpperCase());
-        if (existingPurchase) {
-            console.log("✅ Đã mua rồi, trả lại key cũ cho:", content);
+        // --- 3. CHECK ĐÃ MUA (Chống trùng lặp thông minh) ---
+        // Chuẩn hóa: Viết hoa hết và xóa sạch dấu cách (VD: "Code 123" -> "CODE123")
+        const cleanContent = content.toUpperCase().replace(/\s/g, '');
+        
+        const existing = vpnList.find(k => k.owner_content && k.owner_content.toUpperCase().replace(/\s/g, '') === cleanContent);
+        
+        if (existing) {
+            console.log(`✅ Khách ${content} đã mua rồi -> Trả lại key cũ.`);
             return res.status(200).json({
                 status: 'success',
                 message: 'Đã mua rồi',
                 data: {
-                    qr_image: existingPurchase.qr_image,
-                    conf_text: existingPurchase.conf,
-                    expire: existingPurchase.expire_at
+                    qr_image: existing.qr_image,
+                    conf_text: existing.conf,
+                    expire: existing.expire_at
                 }
             });
         }
 
-        // --- 3. CHECK SEPAY (Kiểm tra tiền) ---
-        // Nếu chưa cấu hình Token thì báo lỗi ngay
+        // --- 4. CHECK SEPAY (Kiểm tra tiền - Logic Mới) ---
         if (!SEPAY_API_TOKEN) {
-            console.error("❌ Thiếu SEPAY_API_TOKEN trong Environment Variables");
-            return res.status(500).json({ status: 'error', message: 'Lỗi cấu hình Server (Thiếu Token)' });
+            console.error("❌ Thiếu SEPAY_API_TOKEN");
+            return res.status(500).json({ status: 'error', message: 'Lỗi cấu hình Server' });
         }
 
-        const isPaid = await checkSePayPayment(content, SEPAY_API_TOKEN);
+        // Gọi hàm check thông minh
+        const isPaid = await checkSePaySmart(cleanContent, SEPAY_API_TOKEN);
         
         if (!isPaid) {
-            console.log("⏳ Chưa thấy tiền về cho mã:", content);
+            console.log(`⏳ Chưa thấy tiền cho mã: ${cleanContent}`);
             return res.status(200).json({ status: 'pending', message: 'Chưa nhận được tiền' });
         }
 
-        console.log("💰 Đã nhận được tiền! Tiến hành xuất kho...");
+        console.log("💰 Tiền đã về! Đang xuất kho...");
 
-        // --- 4. XUẤT KHO ---
+        // --- 5. XUẤT KHO ---
         const keyIndex = vpnList.findIndex(k => k.status === 'available');
 
         if (keyIndex === -1) {
-            console.error("❌ KHO HẾT HÀNG!");
-            return res.status(500).json({ status: 'error', message: 'Kho hết hàng tạm thời, vui lòng đợi 2 phút!' });
+            console.error("❌ KHO HẾT HÀNG THỰC SỰ!");
+            return res.status(500).json({ status: 'error', message: 'Kho đang tạm hết, vui lòng nhắn Admin!' });
         }
 
         const soldKey = vpnList[keyIndex];
@@ -99,12 +96,12 @@ export default async function handler(req, res) {
         vpnList[keyIndex] = {
             ...soldKey,
             status: 'sold',
-            owner_content: content.toUpperCase(),
+            owner_content: content.toUpperCase(), // Lưu mã gốc
             sold_at: now.toISOString(),
             expire_at: expireDate.toISOString()
         };
 
-        // Lưu GitHub
+        // Lưu lại GitHub
         await octokit.repos.createOrUpdateFileContents({
             owner: REPO_OWNER,
             repo: REPO_NAME,
@@ -114,7 +111,7 @@ export default async function handler(req, res) {
             sha: sha
         });
 
-        console.log("✅ Giao dịch thành công!");
+        console.log("✅ Giao dịch hoàn tất!");
 
         return res.status(200).json({
             status: 'success',
@@ -126,16 +123,16 @@ export default async function handler(req, res) {
         });
 
     } catch (error) {
-        console.error("❌ Lỗi hệ thống:", error);
+        console.error("❌ Lỗi Fatal:", error);
         return res.status(500).json({ status: 'error', message: error.message });
     }
 }
 
-// Hàm check SePay nâng cao (Có Log)
-async function checkSePayPayment(contentCode, token) {
+// --- HÀM CHECK SEPAY THÔNG MINH (BỎ QUA DẤU CÁCH) ---
+async function checkSePaySmart(cleanCode, token) {
     try {
-        const sepayUrl = `https://my.sepay.vn/userapi/transactions/list?limit=50`;
-        const res = await fetch(sepayUrl, {
+        // Dùng fetch mặc định của Node 18+ (Không cần import)
+        const res = await fetch(`https://my.sepay.vn/userapi/transactions/list?limit=50`, {
             headers: { 
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
@@ -143,32 +140,32 @@ async function checkSePayPayment(contentCode, token) {
         });
 
         if (!res.ok) {
-            console.error(`❌ Lỗi kết nối SePay: ${res.status} ${res.statusText}`);
+            console.error(`Lỗi kết nối SePay: ${res.status}`);
             return false;
         }
 
         const data = await res.json();
-        
-        // Log dữ liệu giao dịch mới nhất để debug (chỉ log 1 cái đầu tiên cho gọn)
-        if (data.transactions && data.transactions.length > 0) {
-            console.log(`🔎 Check SePay: Tìm mã '${contentCode}' trong ${data.transactions.length} giao dịch gần nhất.`);
-        } else {
-            console.log("🔎 Check SePay: Không có giao dịch nào.");
-            return false;
-        }
+        const transactions = data.transactions || [];
 
-        const matching = data.transactions.find(t => 
-            t.transaction_content.toUpperCase().includes(contentCode.toUpperCase())
-        );
+        // Tìm giao dịch khớp lệnh
+        const matching = transactions.find(t => {
+            if (!t.transaction_content) return false;
+            
+            // Xóa sạch dấu cách trong nội dung ngân hàng gửi về
+            const transContentClean = t.transaction_content.toUpperCase().replace(/\s/g, '');
+            
+            // Kiểm tra xem nội dung ngân hàng có CHỨA mã code (đã làm sạch) không
+            return transContentClean.includes(cleanCode);
+        });
 
         if (matching) {
-            console.log(`✅ TÌM THẤY GIAO DỊCH: ${matching.amount_in} VND - ${matching.transaction_content}`);
+            console.log(`✅ Tìm thấy GD khớp: ${matching.transaction_content} (${matching.amount_in}đ)`);
             return true;
         }
 
         return false;
     } catch (e) {
-        console.error("❌ Lỗi hàm checkSePayPayment:", e);
+        console.error("Lỗi checkSePaySmart:", e);
         return false;
     }
 }
