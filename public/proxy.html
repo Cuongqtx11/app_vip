@@ -172,10 +172,61 @@
         </div>
     </section>
 
+    <!-- GIỚI THIỆU CUỐI WEB -->
+<section class="w-full border-t border-white/5 bg-[#0B1120]/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 py-16 text-center">
+
+        <p class="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed mb-12">
+            Chúng tôi cung cấp giải pháp VPN <strong>IP Việt Nam Private</strong>, tối ưu riêng cho người Việt
+            đang sinh sống, làm việc và học tập ở nước ngoài.  
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-panel rounded-2xl p-6">
+                <i class="fa-solid fa-lock text-blue-400 text-3xl mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Bảo mật tuyệt đối</h3>
+                <p class="text-slate-400 text-sm">
+                    Giao thức Shadowrocket & WireGuard, mã hóa đầu cuối, không log, không theo dõi.
+                </p>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-6">
+                <i class="fa-solid fa-gauge-high text-yellow-400 text-3xl mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Tốc độ ổn định</h3>
+                <p class="text-slate-400 text-sm">
+                    Server 4G/Private, ping thấp, truy cập mượt VNeID, ngân hàng, website Việt Nam.
+                </p>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-6">
+                <i class="fa-solid fa-headset text-green-400 text-3xl mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Hỗ trợ nhanh 24/7</h3>
+                <p class="text-slate-400 text-sm">
+                    <a href="https://t.me/tomqtx1111" target="_blank"
+   						class="text-blue-400 text-sm font-medium inline-flex items-center justify-center gap-2">
+    					<i class="fa-brands fa-telegram text-blue-400"></i>
+    					Click vào đây để Liên hệ Admin để được hỗ trợ
+					</a>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12 text-sm text-slate-500">
+            © <span id="year"></span> VPNSTORE🇻🇳 • Hackmodvip System • All rights reserved
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+</script>
+
+
     <div id="paymentModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
         <div class="absolute inset-0 bg-black/90 backdrop-blur-md transition-opacity" onclick="closeModal()"></div>
         
-        <div class="relative bg-[#1e293b] w-full max-w-md rounded-3xl border border-white/10 p-8 shadow-2xl transform transition-all scale-100">
+			<div class="relative bg-[#1e293b] w-full max-w-md max-h-[90vh] overflow-y-auto rounded-3xl border border-white/10 p-6 md:p-8 shadow-2xl">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white w-10 h-10 flex items-center justify-center rounded-full bg-white/5 transition">
                 <i class="fa-solid fa-xmark text-xl"></i>
             </button>
@@ -204,7 +255,7 @@
                 
                 <div class="mt-6 text-xs text-slate-500 bg-red-500/5 p-3 rounded-lg border border-red-500/10">
                     <p class="text-red-400 font-semibold"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Lưu ý quan trọng:</p>
-                    <p>Không tắt tab này cho đến khi nhận được Key. Hệ thống sẽ tự động hiển thị ngay khi tiền về.</p>
+                    <p>Không tắt tab này cho đến khi nhận được Key. Hệ thống sẽ tự động hiển thị ngay khi tiền về.<br>hãy chụp lại màn hình ảnh qr vpn nếu thanh toán thành công</p>
                 </div>
             </div>
 
