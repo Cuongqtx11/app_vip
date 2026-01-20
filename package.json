@@ -1,6 +1,7 @@
 {
   "name": "kho-app-vip",
   "version": "2.0.0",
+  "type": "module",
   "description": "Kho ứng dụng VIP - IPA, Dylib, Shadowrocket Conf",
   "scripts": {
     "dev": "vercel dev",
