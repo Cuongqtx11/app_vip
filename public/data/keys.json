@@ -1,17 +1,5 @@
 [
   {
-    "id": "key_1768908899_6391",
-    "key": "H1LW-Q546-20EJ-2I3U",
-    "createdAt": "2026-01-20T11:34:59.359446+00:00",
-    "expiresAt": "2026-01-21T11:34:59.359446+00:00",
-    "maxUses": 5,
-    "currentUses": 1,
-    "active": true,
-    "createdBy": "telegram_bot",
-    "notes": "1 days, 5 uses",
-    "lastUsedAt": "2026-01-20T11:35:18.559Z"
-  },
-  {
     "id": "key_1768883035_8266",
     "key": "DY7B-VB44-0AAT-AXGE",
     "createdAt": "2026-01-20T04:23:55.846489+00:00",
