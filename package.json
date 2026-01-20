@@ -16,9 +16,7 @@
   ],
   "author": "Cuios",
   "license": "MIT",
-  "dependencies": {
-    "node-fetch": "^2.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "vercel": "^33.0.0"
   }
