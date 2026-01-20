@@ -432,6 +432,60 @@
     "lastSync": "2026-01-20T11:34:34.897Z"
   },
   {
+    "id": "ipa-com.dreamaichatbot.dreameai-3.5",
+    "type": "ipa",
+    "name": "Gronk",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dreamaichatbot.dreameai.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Gronk_3.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.5",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.dreamaichatbot.dreameai",
+    "lastSync": "2026-01-20T13:00:01.447Z"
+  },
+  {
+    "id": "ipa-com.withopal.opal-3.145",
+    "type": "ipa",
+    "name": "Opal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.withopal.opal.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Opal_3.145_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.145",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.withopal.opal",
+    "lastSync": "2026-01-20T13:00:01.448Z"
+  },
+  {
+    "id": "ipa-SimpleTools.Wallpaper-Workshop-2.2.7",
+    "type": "ipa",
+    "name": "Radiance",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/SimpleTools.Wallpaper-Workshop.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Radiance_2.2.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.7",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "SimpleTools.Wallpaper-Workshop",
+    "lastSync": "2026-01-20T13:00:01.450Z"
+  },
+  {
     "id": "ipa-com.joytunes.SimplyGuitar-10.13",
     "type": "ipa",
     "name": "SimplyGuitar",
