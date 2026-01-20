@@ -72,6 +72,366 @@
     "lastSync": "2026-01-20T08:00:01.391Z"
   },
   {
+    "id": "ipa-com.genau.JournalCircle-3.1.1",
+    "type": "ipa",
+    "name": "JournalCircle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.genau.JournalCircle.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/JournalCircle_3.1.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.1",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.genau.JournalCircle",
+    "lastSync": "2026-01-20T11:33:16.283Z"
+  },
+  {
+    "id": "ipa-com.moymer.falou-0.0.390",
+    "type": "ipa",
+    "name": "Falou",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moymer.falou.png",
+    "desc": "Injected with Satella",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Falou_0.0.390_Satella_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.0.390",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.moymer.falou",
+    "lastSync": "2026-01-20T11:33:16.284Z"
+  },
+  {
+    "id": "ipa-com.br.12min.mobile-2.8.16",
+    "type": "ipa",
+    "name": "12min",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.br.12min.mobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/12min_2.8.16_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.16",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.br.12min.mobile",
+    "lastSync": "2026-01-20T11:33:16.286Z"
+  },
+  {
+    "id": "ipa-com.thegenau.NoteCircle-4.49",
+    "type": "ipa",
+    "name": "NoteCircle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thegenau.NoteCircle.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/NoteCircle_4.49_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.49",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.thegenau.NoteCircle",
+    "lastSync": "2026-01-20T11:33:16.286Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.5.1",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/GOWOD_5.5.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.1",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2026-01-20T11:33:16.287Z"
+  },
+  {
+    "id": "ipa-com.gymstreak.GymStreakAI-6.2.4",
+    "type": "ipa",
+    "name": "GymStreak",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gymstreak.GymStreakAI.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/GymStreak_6.2.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.4",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.gymstreak.GymStreakAI",
+    "lastSync": "2026-01-20T11:33:16.287Z"
+  },
+  {
+    "id": "ipa-org.quiche.Browser-1.68.3",
+    "type": "ipa",
+    "name": "QuicheBrowser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.quiche.Browser.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/QuicheBrowser_1.68.3_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.68.3",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "org.quiche.Browser",
+    "lastSync": "2026-01-20T11:33:16.287Z"
+  },
+  {
+    "id": "ipa-com.elevateapp.elevate-5.223.0",
+    "type": "ipa",
+    "name": "Elevate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.elevate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Elevate_5.223.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.223.0",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.elevate",
+    "lastSync": "2026-01-20T11:33:16.287Z"
+  },
+  {
+    "id": "ipa-com.northstar.gratitude-5.3.2",
+    "type": "ipa",
+    "name": "Gratitude",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.northstar.gratitude.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Gratitude_5.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.2",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.northstar.gratitude",
+    "lastSync": "2026-01-20T11:33:16.287Z"
+  },
+  {
+    "id": "ipa-com.footballaddicts.livescoreaddicts-6.16.6",
+    "type": "ipa",
+    "name": "ForzaFootball",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.footballaddicts.livescoreaddicts.png",
+    "desc": "Injected with Mods",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/ForzaFootball_6.16.6_Mods_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.16.6",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.footballaddicts.livescoreaddicts",
+    "lastSync": "2026-01-20T11:33:16.288Z"
+  },
+  {
+    "id": "ipa-com.textasticapp.textastic-universal-10.9",
+    "type": "ipa",
+    "name": "Textastic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.textasticapp.textastic-universal.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Textastic_10.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.9",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.textasticapp.textastic-universal",
+    "lastSync": "2026-01-20T11:33:16.288Z"
+  },
+  {
+    "id": "ipa-com.neo.NeoMan-8.0.3",
+    "type": "ipa",
+    "name": "NeoServer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neo.NeoMan.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/NeoServer_8.0.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.3",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.neo.NeoMan",
+    "lastSync": "2026-01-20T11:33:16.289Z"
+  },
+  {
+    "id": "ipa-nutrition.coach-1.8.1",
+    "type": "ipa",
+    "name": "NutriCoach",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/nutrition.coach.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/NutriCoach_1.8.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.8.1",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "nutrition.coach",
+    "lastSync": "2026-01-20T11:33:16.289Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems-4.03.04",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Stemz_4.03.04_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.03.04",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2026-01-20T11:33:16.289Z"
+  },
+  {
+    "id": "ipa-fitnessworkout.app-2.13.1",
+    "type": "ipa",
+    "name": "FitnessCoach",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fitnessworkout.app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/FitnessCoach_2.13.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.13.1",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "fitnessworkout.app",
+    "lastSync": "2026-01-20T11:33:16.289Z"
+  },
+  {
+    "id": "ipa-com.mwm.piano-app-3.55.00",
+    "type": "ipa",
+    "name": "Piano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.piano-app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Piano_3.55.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.55.00",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.mwm.piano-app",
+    "lastSync": "2026-01-20T11:33:16.289Z"
+  },
+  {
+    "id": "ipa-com.busuu.english.app-29.29.0",
+    "type": "ipa",
+    "name": "Busuu",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/Busuu_29.29.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.29.0",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.busuu.english.app",
+    "lastSync": "2026-01-20T11:33:16.290Z"
+  },
+  {
+    "id": "ipa-com.frontierdesign.videostar-15.0.2",
+    "type": "ipa",
+    "name": "VideoStar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontierdesign.videostar.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/VideoStar_15.0.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.0.2",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.frontierdesign.videostar",
+    "lastSync": "2026-01-20T11:33:16.290Z"
+  },
+  {
+    "id": "ipa-org.borrowedcache.ultimate531-5.17.7",
+    "type": "ipa",
+    "name": "KeyLifts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/KeyLifts_5.17.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.7",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "org.borrowedcache.ultimate531",
+    "lastSync": "2026-01-20T11:33:16.290Z"
+  },
+  {
+    "id": "ipa-com.TickTick.task-8.0.10",
+    "type": "ipa",
+    "name": "TickTick",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.TickTick.task.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-01-2026/TickTick_8.0.10_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.10",
+    "developer": "khomodvip",
+    "date": "2026-01-20",
+    "source": "apptesters",
+    "bundleID": "com.TickTick.task",
+    "lastSync": "2026-01-20T11:33:16.290Z"
+  },
+  {
     "id": "ipa-com.joytunes.SimplyGuitar-10.13",
     "type": "ipa",
     "name": "SimplyGuitar",
