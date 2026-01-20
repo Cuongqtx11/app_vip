@@ -36,6 +36,60 @@
     "lastSync": "2026-01-20T20:00:01.737Z"
   },
   {
+    "id": "ipa-com.shantanu.YouCut-1.27.0",
+    "type": "ipa",
+    "name": "YouCut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shantanu.YouCut.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/YouCut_1.27.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.27.0",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.shantanu.YouCut",
+    "lastSync": "2026-01-20T21:00:01.675Z"
+  },
+  {
+    "id": "ipa-co.visualsupply.cam-455.0.0",
+    "type": "ipa",
+    "name": "VSCO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.visualsupply.cam.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/VSCO_455.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "455.0.0",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "co.visualsupply.cam",
+    "lastSync": "2026-01-20T21:00:01.675Z"
+  },
+  {
+    "id": "ipa-com.photoeditor.polish-2.1.3",
+    "type": "ipa",
+    "name": "Polish",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photoeditor.polish.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Polish_2.1.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.3",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.photoeditor.polish",
+    "lastSync": "2026-01-20T21:00:01.677Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.44.0",
     "type": "ipa",
     "name": "SoundCloud",
