@@ -90,6 +90,150 @@
     "lastSync": "2026-01-20T21:00:01.677Z"
   },
   {
+    "id": "ipa-com.zhiliaoapp.musically-43.5.0",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/TikTok_43.5.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "43.5.0",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-01-20T22:00:02.526Z"
+  },
+  {
+    "id": "ipa-com.headway.books-365.3",
+    "type": "ipa",
+    "name": "Headway",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.headway.books.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "books"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Headway_365.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "365.3",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.headway.books",
+    "lastSync": "2026-01-20T22:00:02.527Z"
+  },
+  {
+    "id": "ipa-com.lingodeer-3.1.4",
+    "type": "ipa",
+    "name": "LingoDeer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lingodeer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/LingoDeer_3.1.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.4",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.lingodeer",
+    "lastSync": "2026-01-20T22:00:02.528Z"
+  },
+  {
+    "id": "ipa-app.mmap.mobile-2.8.3",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Soundmap_2.8.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.3",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2026-01-20T22:00:02.528Z"
+  },
+  {
+    "id": "ipa-com.adobe.premiere.ios-26.2.0",
+    "type": "ipa",
+    "name": "Premiere",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.premiere.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Premiere_26.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.2.0",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.adobe.premiere.ios",
+    "lastSync": "2026-01-20T22:00:02.529Z"
+  },
+  {
+    "id": "ipa-es.monkimun.lingokids-26.4.0",
+    "type": "ipa",
+    "name": "Lingokids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/es.monkimun.lingokids.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Lingokids_26.4.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.4.0",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "es.monkimun.lingokids",
+    "lastSync": "2026-01-20T22:00:02.529Z"
+  },
+  {
+    "id": "ipa-com.laubrothersllc.BabyArt-3.49.12",
+    "type": "ipa",
+    "name": "Precious",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Precious_3.49.12_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.49.12",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.laubrothersllc.BabyArt",
+    "lastSync": "2026-01-20T22:00:02.529Z"
+  },
+  {
+    "id": "ipa-ru.routes.peakvisor-5.75",
+    "type": "ipa",
+    "name": "PeakVisor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ru.routes.peakvisor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/PeakVisor_5.75_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.75",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "ru.routes.peakvisor",
+    "lastSync": "2026-01-20T22:00:02.529Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.44.0",
     "type": "ipa",
     "name": "SoundCloud",
