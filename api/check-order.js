@@ -57,7 +57,7 @@ export default async function handler(req, res) {
         } else if (amount >= 19000) { 
             packageName = 'VIP 1 Tuần'; days = 8; uses = 0;
         } else if (amount >= 5000) { 
-            packageName = 'Gói Lẻ'; days = 0; uses = 10; // Không giới hạn ngày, 10 lượt
+            packageName = 'Gói Lẻ'; days = 0; uses = 20; // Không giới hạn ngày, 10 lượt
         } else if (amount >= 4999000) { 
             packageName = 'Vĩnh Viễn'; days = 0; uses = 0;
         } else {
