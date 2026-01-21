@@ -378,6 +378,24 @@
     "lastSync": "2026-01-21T05:00:01.425Z"
   },
   {
+    "id": "ipa-com.kinemaster.kios-8.0.17",
+    "type": "ipa",
+    "name": "KineMaster",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/KineMaster_8.0.17_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.17",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.kinemaster.kios",
+    "lastSync": "2026-01-21T07:00:01.505Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.44.0",
     "type": "ipa",
     "name": "SoundCloud",
