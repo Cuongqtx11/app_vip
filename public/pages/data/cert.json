@@ -4,7 +4,7 @@
     "type": "cert",
     "date": "2025-12-14",
     "filename": "Certificate file",
-    "check": "🟢 Good",
+    "check": "🔴 Thu hồi",
     "certname": "Wasu Media & Network",
     "size": "p12, .mobileprovision",
     "downloadUrl": "https://www.mediafire.com/file/apn55m26wdkl55m/Wasu+Media+++Network+Co.,+Ltd.zip/file",
