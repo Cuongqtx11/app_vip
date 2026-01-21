@@ -5,13 +5,14 @@
     "createdAt": "2026-01-20T22:55:22.164Z",
     "expiresAt": null,
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "IVSO14",
     "transaction_id": "39537799",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 10 uses"
+    "notes": "∞ days, 10 uses",
+    "lastUsedAt": "2026-01-21T08:05:39.668Z"
   },
   {
     "id": "key_1768831291_9873",
