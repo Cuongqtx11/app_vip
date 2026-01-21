@@ -36,6 +36,42 @@
     "lastSync": "2026-01-21T20:00:01.885Z"
   },
   {
+    "id": "ipa-com.bbauman.Scripty-2.35",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Coconote_2.35_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.35",
+    "developer": "khomodvip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2026-01-21T21:00:01.760Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Facetune2-3.116.1",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Facetune_3.116.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.116.1",
+    "developer": "khomodvip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-01-21T21:00:01.761Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.2.0",
     "type": "ipa",
     "name": "MyFitnessPal",
