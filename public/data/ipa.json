@@ -288,6 +288,78 @@
     "lastSync": "2026-01-20T23:00:01.181Z"
   },
   {
+    "id": "ipa-co.bergen.Darkroom-7.0.18",
+    "type": "ipa",
+    "name": "Darkroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bergen.Darkroom.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Darkroom_7.0.18_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.18",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "co.bergen.Darkroom",
+    "lastSync": "2026-01-21T00:00:01.645Z"
+  },
+  {
+    "id": "ipa-com.ibit.UNPOSED-4.6.3",
+    "type": "ipa",
+    "name": "Unscripted",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ibit.UNPOSED.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Unscripted_4.6.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.6.3",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.ibit.UNPOSED",
+    "lastSync": "2026-01-21T00:00:01.646Z"
+  },
+  {
+    "id": "ipa-com.fitbod-8.1.0",
+    "type": "ipa",
+    "name": "Fitbod",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fitbod.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Fitbod_8.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.fitbod",
+    "lastSync": "2026-01-21T00:00:01.647Z"
+  },
+  {
+    "id": "ipa-com.google.ios.youtubemusic-9.03.3",
+    "type": "ipa",
+    "name": "YouTubeMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtubemusic.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/YouTubeMusic_9.03.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.03.3",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.google.ios.youtubemusic",
+    "lastSync": "2026-01-21T00:00:01.647Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.44.0",
     "type": "ipa",
     "name": "SoundCloud",
