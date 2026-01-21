@@ -396,6 +396,60 @@
     "lastSync": "2026-01-21T07:00:01.505Z"
   },
   {
+    "id": "ipa-com.aiti.FitnessOnline-1.13.0",
+    "type": "ipa",
+    "name": "FitnessOnline",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aiti.FitnessOnline.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/FitnessOnline_1.13.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.13.0",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.aiti.FitnessOnline",
+    "lastSync": "2026-01-21T09:00:01.517Z"
+  },
+  {
+    "id": "ipa-com.skylum.luminaripad-3.1.3",
+    "type": "ipa",
+    "name": "Luminar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.skylum.luminaripad.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Luminar_3.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.3",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.skylum.luminaripad",
+    "lastSync": "2026-01-21T09:00:01.518Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.plants-2.62.28",
+    "type": "ipa",
+    "name": "Blossom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.plants.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Blossom_2.62.28_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.62.28",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.plants",
+    "lastSync": "2026-01-21T09:00:01.518Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.44.0",
     "type": "ipa",
     "name": "SoundCloud",
