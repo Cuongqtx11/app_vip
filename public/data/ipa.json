@@ -540,6 +540,42 @@
     "lastSync": "2026-01-21T13:00:01.937Z"
   },
   {
+    "id": "ipa-com.macpaw.iosgemini-2.11.1",
+    "type": "ipa",
+    "name": "CleanMyPhone",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.macpaw.iosgemini.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/CleanMyPhone_2.11.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.1",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "com.macpaw.iosgemini",
+    "lastSync": "2026-01-21T15:00:01.938Z"
+  },
+  {
+    "id": "ipa-app.tripsy.ios-3.7.4",
+    "type": "ipa",
+    "name": "Tripsy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.tripsy.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-01-2026/Tripsy_3.7.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.4",
+    "developer": "khomodvip",
+    "date": "2026-01-21",
+    "source": "apptesters",
+    "bundleID": "app.tripsy.ios",
+    "lastSync": "2026-01-21T15:00:01.939Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.44.0",
     "type": "ipa",
     "name": "SoundCloud",
