@@ -5,14 +5,14 @@
     "createdAt": "2026-01-21T19:06:05.637Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "IXIFQ1",
     "transaction_id": "39640065",
     "package": "Gói Lẻ",
     "notes": "∞ days, 20 uses",
-    "lastUsedAt": "2026-01-21T19:06:20.937Z"
+    "lastUsedAt": "2026-01-21T19:08:42.297Z"
   },
   {
     "id": "key_1769022276_3090",
