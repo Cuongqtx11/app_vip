@@ -90,6 +90,78 @@
     "lastSync": "2026-01-21T22:00:01.826Z"
   },
   {
+    "id": "ipa-com.waterminder.waterminder-7.2.4",
+    "type": "ipa",
+    "name": "WaterMinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.waterminder.waterminder.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/WaterMinder_7.2.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.2.4",
+    "developer": "khomodvip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.waterminder.waterminder",
+    "lastSync": "2026-01-21T23:00:01.610Z"
+  },
+  {
+    "id": "ipa-com.zynga.FarmVille2CountryEscape-29.2",
+    "type": "ipa",
+    "name": "FarmVille2",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zynga.FarmVille2CountryEscape.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/FarmVille2_29.2_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.2",
+    "developer": "khomodvip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.zynga.FarmVille2CountryEscape",
+    "lastSync": "2026-01-21T23:00:01.611Z"
+  },
+  {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.27.1",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "lifestyle"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/MergeCooking_1.27.1_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.27.1",
+    "developer": "khomodvip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2026-01-21T23:00:01.612Z"
+  },
+  {
+    "id": "ipa-ch.b-eng.tor-3.9.15",
+    "type": "ipa",
+    "name": "OrNETBrowser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ch.b-eng.tor.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/OrNETBrowser_3.9.15_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.15",
+    "developer": "khomodvip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "ch.b-eng.tor",
+    "lastSync": "2026-01-21T23:00:01.612Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.2.0",
     "type": "ipa",
     "name": "MyFitnessPal",
