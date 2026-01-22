@@ -20,14 +20,14 @@
     "createdAt": "2026-01-22T15:37:18.203Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 2,
+    "currentUses": 3,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "ZQLX9O",
     "transaction_id": "39736590",
     "package": "Gói Lẻ",
     "notes": "∞ days, 20 uses",
-    "lastUsedAt": "2026-01-22T15:44:33.295Z"
+    "lastUsedAt": "2026-01-22T15:46:01.754Z"
   },
   {
     "id": "key_1769092096_1679",
