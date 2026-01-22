@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.elevateapp.kamino.kamino-1.193.0",
+    "type": "ipa",
+    "name": "Balance",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.kamino.kamino.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/Balance_1.193.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.193.0",
+    "developer": "vip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.kamino.kamino",
+    "lastSync": "2026-01-22T19:00:02.087Z"
+  },
+  {
     "id": "ipa-com.khanov.BlockerX-6.4.1",
     "type": "ipa",
     "name": "1Blocker",
@@ -664,6 +682,24 @@
     "source": "apptesters",
     "bundleID": "com.shapr3d.shapr",
     "lastSync": "2026-01-22T18:00:01.986Z"
+  },
+  {
+    "id": "ipa-com.locket.locket-2.29.1",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Locket_2.29.1_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.29.1",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2026-01-22T19:00:02.087Z"
   },
   {
     "id": "ipa-com.myfitnesspal.mfp-26.2.0",
