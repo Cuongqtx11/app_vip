@@ -450,6 +450,78 @@
     "lastSync": "2026-01-22T16:00:01.558Z"
   },
   {
+    "id": "ipa-com.atebits.tweetie2-11.58",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/X_11.58_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.58",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2026-01-22T17:00:01.606Z"
+  },
+  {
+    "id": "ipa-com.ookla.speedtest-6.5.2",
+    "type": "ipa",
+    "name": "Speedtest",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ookla.speedtest.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Speedtest_6.5.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.2",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.ookla.speedtest",
+    "lastSync": "2026-01-22T17:00:01.606Z"
+  },
+  {
+    "id": "ipa-ideastudio.weather-on-the-way-2.4.0",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/OnTheWay_2.4.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.0",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2026-01-22T17:00:01.606Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.fitia-20.0.14",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Fitia_20.0.14_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20.0.14",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-01-22T17:00:01.606Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.2.0",
     "type": "ipa",
     "name": "MyFitnessPal",
