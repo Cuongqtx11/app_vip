@@ -36,6 +36,24 @@
     "lastSync": "2026-01-22T20:00:01.857Z"
   },
   {
+    "id": "ipa-co.detail.duo-5.5.4",
+    "type": "ipa",
+    "name": "Detail",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.detail.duo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/Detail_5.5.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.4",
+    "developer": "vip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "co.detail.duo",
+    "lastSync": "2026-01-22T22:00:01.345Z"
+  },
+  {
     "id": "ipa-com.khanov.BlockerX-6.4.1",
     "type": "ipa",
     "name": "1Blocker",
