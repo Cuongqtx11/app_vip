@@ -360,6 +360,78 @@
     "lastSync": "2026-01-22T13:00:02.177Z"
   },
   {
+    "id": "ipa-com.hevyapp.hevy-2.5.9",
+    "type": "ipa",
+    "name": "Hevy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hevyapp.hevy.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Hevy_2.5.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.9",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.hevyapp.hevy",
+    "lastSync": "2026-01-22T15:00:01.768Z"
+  },
+  {
+    "id": "ipa-com.internet-rocks.codescanner-2026.1.1",
+    "type": "ipa",
+    "name": "QrCode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/QrCode_2026.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.1",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.internet-rocks.codescanner",
+    "lastSync": "2026-01-22T15:00:01.768Z"
+  },
+  {
+    "id": "ipa-com.mwm.nota-1.4.4",
+    "type": "ipa",
+    "name": "Peanote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.nota.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Peanote_1.4.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.4",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.mwm.nota",
+    "lastSync": "2026-01-22T15:00:01.769Z"
+  },
+  {
+    "id": "ipa-com.linecorp.foodie-7.4.10",
+    "type": "ipa",
+    "name": "Foodie",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.Foodie.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-01-2026/Foodie_7.4.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4.10",
+    "developer": "vip",
+    "date": "2026-01-22",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.Foodie",
+    "lastSync": "2026-01-22T15:00:01.769Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.2.0",
     "type": "ipa",
     "name": "MyFitnessPal",
