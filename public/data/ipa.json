@@ -18,6 +18,24 @@
     "lastSync": "2026-01-22T19:00:02.087Z"
   },
   {
+    "id": "ipa-com.calculated.laurene-302",
+    "type": "ipa",
+    "name": "CMProCalc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.calculated.laurene.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/CMProCalc_302_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "302",
+    "developer": "vip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "com.calculated.laurene",
+    "lastSync": "2026-01-22T20:00:01.857Z"
+  },
+  {
     "id": "ipa-com.khanov.BlockerX-6.4.1",
     "type": "ipa",
     "name": "1Blocker",
