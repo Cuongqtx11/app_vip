@@ -360,6 +360,24 @@
     "lastSync": "2026-01-23T13:00:01.895Z"
   },
   {
+    "id": "ipa-co.codeleap.bearable-1.0.583",
+    "type": "ipa",
+    "name": "Bearable",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.codeleap.bearable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/Bearable_1.0.583_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.583",
+    "developer": "khomodvip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "co.codeleap.bearable",
+    "lastSync": "2026-01-23T15:00:02.133Z"
+  },
+  {
     "id": "ipa-com.khanov.BlockerX-6.4.1",
     "type": "ipa",
     "name": "1Blocker",
