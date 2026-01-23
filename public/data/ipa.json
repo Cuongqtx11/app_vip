@@ -144,6 +144,42 @@
     "lastSync": "2026-01-23T10:00:02.411Z"
   },
   {
+    "id": "ipa-com.adobe.PSMobile-26.3.0",
+    "type": "ipa",
+    "name": "PSExpress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.PSMobile.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/PSExpress_26.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.3.0",
+    "developer": "khomodvip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "com.adobe.PSMobile",
+    "lastSync": "2026-01-23T11:00:01.729Z"
+  },
+  {
+    "id": "ipa-com.leshko.cloudplayer-8.5",
+    "type": "ipa",
+    "name": "Evermusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.leshko.cloudplayer.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/Evermusic_8.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.5",
+    "developer": "khomodvip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "com.leshko.cloudplayer",
+    "lastSync": "2026-01-23T11:00:01.730Z"
+  },
+  {
     "id": "ipa-com.khanov.BlockerX-6.4.1",
     "type": "ipa",
     "name": "1Blocker",
