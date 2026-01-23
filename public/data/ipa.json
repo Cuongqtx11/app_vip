@@ -180,6 +180,60 @@
     "lastSync": "2026-01-23T11:00:01.730Z"
   },
   {
+    "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0121.00",
+    "type": "ipa",
+    "name": "BrickOut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.puzzle1studio.ap.brickoutshoottheball.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/BrickOut_26.0121.00_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.0121.00",
+    "developer": "khomodvip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "com.puzzle1studio.ap.brickoutshoottheball",
+    "lastSync": "2026-01-23T12:00:01.770Z"
+  },
+  {
+    "id": "ipa-com.bloomberg.Bloomberg-6.51.1",
+    "type": "ipa",
+    "name": "Bloomberg",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bloomberg.Bloomberg.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/Bloomberg_6.51.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.51.1",
+    "developer": "khomodvip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "com.bloomberg.Bloomberg",
+    "lastSync": "2026-01-23T12:00:01.771Z"
+  },
+  {
+    "id": "ipa-com.magmic.NYTCrosswords09-6.10.0",
+    "type": "ipa",
+    "name": "NYTGames",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.magmic.NYTCrosswords09.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-01-2026/NYTGames_6.10.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.10.0",
+    "developer": "khomodvip",
+    "date": "2026-01-23",
+    "source": "apptesters",
+    "bundleID": "com.magmic.NYTCrosswords09",
+    "lastSync": "2026-01-23T12:00:01.771Z"
+  },
+  {
     "id": "ipa-com.khanov.BlockerX-6.4.1",
     "type": "ipa",
     "name": "1Blocker",
