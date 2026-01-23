@@ -1,5 +1,59 @@
 [
   {
+    "id": "ipa-com.apalonapps.clrbook-1.5.6",
+    "type": "ipa",
+    "name": "ColoringBook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.clrbook.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "books"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-01-2026/ColoringBook_1.5.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.5.6",
+    "developer": "khomodvip",
+    "date": "2026-01-24",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.clrbook",
+    "lastSync": "2026-01-23T21:00:01.549Z"
+  },
+  {
+    "id": "ipa-com.agiletortoise.Drafts5-50.0.1",
+    "type": "ipa",
+    "name": "Drafts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.agiletortoise.Drafts5.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-01-2026/Drafts_50.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "50.0.1",
+    "developer": "khomodvip",
+    "date": "2026-01-24",
+    "source": "apptesters",
+    "bundleID": "com.agiletortoise.Drafts5",
+    "lastSync": "2026-01-23T21:00:01.550Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx-0.1.563",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-01-2026/RiseSleep_0.1.563_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.563",
+    "developer": "khomodvip",
+    "date": "2026-01-24",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2026-01-23T21:00:01.551Z"
+  },
+  {
     "id": "ipa-com.elevateapp.kamino.kamino-1.193.0",
     "type": "ipa",
     "name": "Balance",
