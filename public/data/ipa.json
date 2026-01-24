@@ -342,6 +342,24 @@
     "lastSync": "2026-01-24T13:00:01.431Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.3.13",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-01-2026/SnapEdit_6.3.13_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.13",
+    "developer": "khomodvip",
+    "date": "2026-01-24",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2026-01-24T19:00:01.589Z"
+  },
+  {
     "id": "ipa-com.elevateapp.kamino.kamino-1.193.0",
     "type": "ipa",
     "name": "Balance",
