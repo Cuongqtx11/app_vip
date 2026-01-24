@@ -324,6 +324,24 @@
     "lastSync": "2026-01-24T01:00:01.771Z"
   },
   {
+    "id": "ipa-com.future.kapi-3.36.1",
+    "type": "ipa",
+    "name": "Action",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.future.kapi.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-01-2026/Action_3.36.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.36.1",
+    "developer": "khomodvip",
+    "date": "2026-01-24",
+    "source": "apptesters",
+    "bundleID": "com.future.kapi",
+    "lastSync": "2026-01-24T13:00:01.431Z"
+  },
+  {
     "id": "ipa-com.elevateapp.kamino.kamino-1.193.0",
     "type": "ipa",
     "name": "Balance",
