@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.adobe.fresco.ios-7.1.2",
+    "type": "ipa",
+    "name": "AdobeFresco",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.fresco.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-01-2026/AdobeFresco_7.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.2",
+    "developer": "khomodvip",
+    "date": "2026-01-25",
+    "source": "apptesters",
+    "bundleID": "com.adobe.fresco.ios",
+    "lastSync": "2026-01-24T20:00:01.584Z"
+  },
+  {
     "id": "ipa-com.apalonapps.clrbook-1.5.6",
     "type": "ipa",
     "name": "ColoringBook",
