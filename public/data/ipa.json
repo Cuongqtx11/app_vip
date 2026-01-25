@@ -108,6 +108,24 @@
     "lastSync": "2026-01-25T01:00:01.920Z"
   },
   {
+    "id": "ipa-com.lightricks.Enlight-Editor-2.119",
+    "type": "ipa",
+    "name": "Photoleap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Enlight-Editor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-01-2026/Photoleap_2.119_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.119",
+    "developer": "khomodvip",
+    "date": "2026-01-25",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Enlight-Editor",
+    "lastSync": "2026-01-25T09:00:01.251Z"
+  },
+  {
     "id": "ipa-com.apalonapps.clrbook-1.5.6",
     "type": "ipa",
     "name": "ColoringBook",
