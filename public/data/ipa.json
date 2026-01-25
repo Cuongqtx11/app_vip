@@ -18,6 +18,42 @@
     "lastSync": "2026-01-25T19:00:01.472Z"
   },
   {
+    "id": "ipa-com.ahmetserdarkaradeniz.Phocus-3.0.9",
+    "type": "ipa",
+    "name": "Phocus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ahmetserdarkaradeniz.Phocus.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Phocus_3.0.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.0.9",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.ahmetserdarkaradeniz.Phocus",
+    "lastSync": "2026-01-25T22:00:01.416Z"
+  },
+  {
+    "id": "ipa-com.iViNi.BMWhatLite2-41.26.012015",
+    "type": "ipa",
+    "name": "Carly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iViNi.BMWhatLite2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Carly_41.26.012015_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "41.26.012015",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.iViNi.BMWhatLite2",
+    "lastSync": "2026-01-25T22:00:01.417Z"
+  },
+  {
     "id": "ipa-com.adobe.fresco.ios-7.1.2",
     "type": "ipa",
     "name": "AdobeFresco",
