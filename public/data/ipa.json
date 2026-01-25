@@ -36,6 +36,78 @@
     "lastSync": "2026-01-24T21:00:01.788Z"
   },
   {
+    "id": "ipa-com.mindsethealth.ibs-48.3",
+    "type": "ipa",
+    "name": "Nerva",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mindsethealth.ibs.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-01-2026/Nerva_48.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "48.3",
+    "developer": "khomodvip",
+    "date": "2026-01-25",
+    "source": "apptesters",
+    "bundleID": "com.mindsethealth.ibs",
+    "lastSync": "2026-01-25T01:00:01.918Z"
+  },
+  {
+    "id": "ipa-com.hhp.magicEraser-3.12.0",
+    "type": "ipa",
+    "name": "MagicEraser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hhp.magicEraser.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-01-2026/MagicEraser_3.12.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.12.0",
+    "developer": "khomodvip",
+    "date": "2026-01-25",
+    "source": "apptesters",
+    "bundleID": "com.hhp.magicEraser",
+    "lastSync": "2026-01-25T01:00:01.919Z"
+  },
+  {
+    "id": "ipa-uk.co.snappy-code.snappierIPTV-5.3.0",
+    "type": "ipa",
+    "name": "SnappierIPTV",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uk.co.snappy-code.snappierIPTV.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-01-2026/SnappierIPTV_5.3.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.0",
+    "developer": "khomodvip",
+    "date": "2026-01-25",
+    "source": "apptesters",
+    "bundleID": "uk.co.snappy-code.snappierIPTV",
+    "lastSync": "2026-01-25T01:00:01.920Z"
+  },
+  {
+    "id": "ipa-com.cuilingshi.flipclock-6.18",
+    "type": "ipa",
+    "name": "flipclock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cuilingshi.flipclock.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-01-2026/flipclock_6.18_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.18",
+    "developer": "khomodvip",
+    "date": "2026-01-25",
+    "source": "apptesters",
+    "bundleID": "com.cuilingshi.flipclock",
+    "lastSync": "2026-01-25T01:00:01.920Z"
+  },
+  {
     "id": "ipa-com.apalonapps.clrbook-1.5.6",
     "type": "ipa",
     "name": "ColoringBook",
