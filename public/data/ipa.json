@@ -54,6 +54,60 @@
     "lastSync": "2026-01-25T22:00:01.417Z"
   },
   {
+    "id": "ipa-uk.co.snappy-code.snappierIPTV-5.3.2",
+    "type": "ipa",
+    "name": "SnappierIPTV",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uk.co.snappy-code.snappierIPTV.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/SnappierIPTV_5.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.2",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "uk.co.snappy-code.snappierIPTV",
+    "lastSync": "2026-01-25T23:00:01.792Z"
+  },
+  {
+    "id": "ipa-org.borrowedcache.ultimate531-5.17.8",
+    "type": "ipa",
+    "name": "KeyLifts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/KeyLifts_5.17.8_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.8",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "org.borrowedcache.ultimate531",
+    "lastSync": "2026-01-25T23:00:01.793Z"
+  },
+  {
+    "id": "ipa-app.renovateai-4.4.72",
+    "type": "ipa",
+    "name": "RenovateAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.renovateai.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/RenovateAI_4.4.72_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.4.72",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "app.renovateai",
+    "lastSync": "2026-01-25T23:00:01.794Z"
+  },
+  {
     "id": "ipa-com.adobe.fresco.ios-7.1.2",
     "type": "ipa",
     "name": "AdobeFresco",
