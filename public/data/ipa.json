@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.busuu.english.app-29.30.0",
+    "type": "ipa",
+    "name": "Busuu",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Busuu_29.30.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.30.0",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.busuu.english.app",
+    "lastSync": "2026-01-25T19:00:01.472Z"
+  },
+  {
     "id": "ipa-com.adobe.fresco.ios-7.1.2",
     "type": "ipa",
     "name": "AdobeFresco",
