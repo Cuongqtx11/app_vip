@@ -522,6 +522,60 @@
     "lastSync": "2026-01-26T15:00:01.300Z"
   },
   {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.1.1",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/SnoreLab_6.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.1.1",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2026-01-26T16:00:03.404Z"
+  },
+  {
+    "id": "ipa-com.burbn.instagram-414.0.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Instagram_414.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "414.0.0",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-01-26T16:00:03.404Z"
+  },
+  {
+    "id": "ipa-com.elevateapp.elevate-5.224.0",
+    "type": "ipa",
+    "name": "Elevate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.elevate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Elevate_5.224.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.224.0",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.elevate",
+    "lastSync": "2026-01-26T16:00:03.406Z"
+  },
+  {
     "id": "ipa-com.adobe.fresco.ios-7.1.2",
     "type": "ipa",
     "name": "AdobeFresco",
