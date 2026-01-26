@@ -306,6 +306,60 @@
     "lastSync": "2026-01-26T10:00:01.818Z"
   },
   {
+    "id": "ipa-com.thenovik.Presets-2.4.11",
+    "type": "ipa",
+    "name": "Edith",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thenovik.Presets.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Edith_2.4.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.11",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.thenovik.Presets",
+    "lastSync": "2026-01-26T11:00:01.580Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2026.04.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Photoroom_2026.04.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.04.01",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-01-26T11:00:01.581Z"
+  },
+  {
+    "id": "ipa-instapreview-6.9.1",
+    "type": "ipa",
+    "name": "Inpreview",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/instapreview.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/Inpreview_6.9.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.9.1",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "instapreview",
+    "lastSync": "2026-01-26T11:00:01.582Z"
+  },
+  {
     "id": "ipa-com.adobe.fresco.ios-7.1.2",
     "type": "ipa",
     "name": "AdobeFresco",
