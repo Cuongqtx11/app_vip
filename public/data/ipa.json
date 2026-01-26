@@ -180,6 +180,24 @@
     "lastSync": "2026-01-26T06:00:01.706Z"
   },
   {
+    "id": "ipa-com.castpeer.audioroom.ios-2.10.4",
+    "type": "ipa",
+    "name": "SoundLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.castpeer.audioroom.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-01-2026/SoundLab_2.10.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.4",
+    "developer": "khomodvip",
+    "date": "2026-01-26",
+    "source": "apptesters",
+    "bundleID": "com.castpeer.audioroom.ios",
+    "lastSync": "2026-01-26T07:00:01.850Z"
+  },
+  {
     "id": "ipa-com.adobe.fresco.ios-7.1.2",
     "type": "ipa",
     "name": "AdobeFresco",
