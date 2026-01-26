@@ -54,6 +54,42 @@
     "lastSync": "2026-01-26T20:00:01.445Z"
   },
   {
+    "id": "ipa-com.locket.Locket-2.30.0",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-01-2026/Locket_2.30.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.30.0",
+    "developer": "khomodvip",
+    "date": "2026-01-27",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2026-01-26T21:00:01.745Z"
+  },
+  {
+    "id": "ipa-com.tripleglazedstudios.Weather-3.2",
+    "type": "ipa",
+    "name": "Mercury",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tripleglazedstudios.Weather.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-01-2026/Mercury_3.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2",
+    "developer": "khomodvip",
+    "date": "2026-01-27",
+    "source": "apptesters",
+    "bundleID": "com.tripleglazedstudios.Weather",
+    "lastSync": "2026-01-26T21:00:01.746Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.30.0",
     "type": "ipa",
     "name": "Busuu",
