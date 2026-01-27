@@ -108,6 +108,78 @@
     "lastSync": "2026-01-27T21:00:02.132Z"
   },
   {
+    "id": "ipa-com.adobe.photoshop.ios-7.3.2",
+    "type": "ipa",
+    "name": "Photoshop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.photoshop.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Photoshop_7.3.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.3.2",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.adobe.photoshop.ios",
+    "lastSync": "2026-01-27T22:00:01.767Z"
+  },
+  {
+    "id": "ipa-com.myfitnesspal.mfp-26.4.0",
+    "type": "ipa",
+    "name": "MyFitnessPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myfitnesspal.mfp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/MyFitnessPal_26.4.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.4.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.myfitnesspal.mfp",
+    "lastSync": "2026-01-27T22:00:01.768Z"
+  },
+  {
+    "id": "ipa-com.frontrow.vlog-2.1.0",
+    "type": "ipa",
+    "name": "VlogNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/VlogNow_2.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.frontrow.vlog",
+    "lastSync": "2026-01-27T22:00:01.769Z"
+  },
+  {
+    "id": "ipa-com.getupnote.ios-9.16.3",
+    "type": "ipa",
+    "name": "UpNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getupnote.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/UpNote_9.16.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.16.3",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.getupnote.ios",
+    "lastSync": "2026-01-27T22:00:01.769Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-50.0.2",
     "type": "ipa",
     "name": "Drafts",
