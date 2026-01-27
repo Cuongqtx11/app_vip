@@ -540,6 +540,24 @@
     "lastSync": "2026-01-27T12:00:01.396Z"
   },
   {
+    "id": "ipa-com.dopedevelopment.Panels-9.27.1",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-01-2026/SCRL_9.27.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.27.1",
+    "developer": "khomodvip",
+    "date": "2026-01-27",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2026-01-27T13:00:01.727Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.30.0",
     "type": "ipa",
     "name": "Busuu",
