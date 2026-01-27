@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0126.00",
+    "type": "ipa",
+    "name": "BrickOut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.puzzle1studio.ap.brickoutshoottheball.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/BrickOut_26.0126.00_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.0126.00",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.puzzle1studio.ap.brickoutshoottheball",
+    "lastSync": "2026-01-27T20:00:01.557Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-50.0.2",
     "type": "ipa",
     "name": "Drafts",
