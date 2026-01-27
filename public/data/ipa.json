@@ -612,6 +612,24 @@
     "lastSync": "2026-01-27T16:00:01.946Z"
   },
   {
+    "id": "ipa-tech.miidii.AlbumManager-2.2.2",
+    "type": "ipa",
+    "name": "KKPhoto",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.AlbumManager.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-01-2026/KKPhoto_2.2.2_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.2",
+    "developer": "khomodvip",
+    "date": "2026-01-27",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.AlbumManager",
+    "lastSync": "2026-01-27T17:00:01.698Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-29.30.0",
     "type": "ipa",
     "name": "Busuu",
