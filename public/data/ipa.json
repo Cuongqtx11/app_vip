@@ -18,6 +18,96 @@
     "lastSync": "2026-01-27T20:00:01.557Z"
   },
   {
+    "id": "ipa-com.bcanada.weedfirm2-4.1.12",
+    "type": "ipa",
+    "name": "WeedFirm2",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bcanada.weedfirm2.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/WeedFirm2_4.1.12_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.12",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.bcanada.weedfirm2",
+    "lastSync": "2026-01-27T21:00:02.130Z"
+  },
+  {
+    "id": "ipa-com.dubox.drive-4.11.5",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/TeraBox_4.11.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.11.5",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2026-01-27T21:00:02.131Z"
+  },
+  {
+    "id": "ipa-com.adobe.premiere.ios-26.4.0",
+    "type": "ipa",
+    "name": "Premiere",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.premiere.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Premiere_26.4.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.4.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.adobe.premiere.ios",
+    "lastSync": "2026-01-27T21:00:02.132Z"
+  },
+  {
+    "id": "ipa-com.bowery-digital.bend-7.1.1",
+    "type": "ipa",
+    "name": "Bend",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bowery-digital.bend.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Bend_7.1.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.1",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.bowery-digital.bend",
+    "lastSync": "2026-01-27T21:00:02.132Z"
+  },
+  {
+    "id": "ipa-com.tiimo.app-3.38.2",
+    "type": "ipa",
+    "name": "Tiimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tiimo.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Tiimo_3.38.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.38.2",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.tiimo.app",
+    "lastSync": "2026-01-27T21:00:02.132Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-50.0.2",
     "type": "ipa",
     "name": "Drafts",
