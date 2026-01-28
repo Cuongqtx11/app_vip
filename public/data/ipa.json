@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.picsart.studio-29.2.2",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-01-2026/PicsArt_29.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.2.2",
+    "developer": "khomodvip",
+    "date": "2026-01-29",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-01-28T19:00:01.455Z"
+  },
+  {
     "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0126.00",
     "type": "ipa",
     "name": "BrickOut",
