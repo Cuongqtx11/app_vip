@@ -216,6 +216,42 @@
     "lastSync": "2026-01-28T01:00:01.814Z"
   },
   {
+    "id": "ipa-PHCXZHD53T.com.enki.insights-2.40.7",
+    "type": "ipa",
+    "name": "Enki",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PHCXZHD53T.com.enki.insights.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Enki_2.40.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.40.7",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "PHCXZHD53T.com.enki.insights",
+    "lastSync": "2026-01-28T03:00:02.177Z"
+  },
+  {
+    "id": "ipa-com.zerone.hidesktop-4.3.81",
+    "type": "ipa",
+    "name": "HiWidget",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zerone.hidesktop.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/HiWidget_4.3.81_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.81",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.zerone.hidesktop",
+    "lastSync": "2026-01-28T03:00:02.178Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-50.0.2",
     "type": "ipa",
     "name": "Drafts",
