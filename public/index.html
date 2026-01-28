@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>Kho App Vip - Ultimate Store</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: { 
+            brand: '#7c3aed', 
+            brandDark: '#6d28d9',
+            bgLight: '#f4f4f5', 
+            bgDark: '#000000',
+            cardLight: '#ffffff',
+            cardDark: '#1c1c1e'
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.3s ease-out forwards',
+            'slide-up': 'slideUp 0.4s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { font-size: 85%; }
+    body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; user-select: none; width: 100%; overflow-x: hidden; }
+    
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Glass Header */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .dark .header-glass {
+      background: rgba(0, 0, 0, 0.75);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* VIP Tab Bar */
+    .vip-tab-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      height: calc(4.2rem + env(safe-area-inset-bottom)); 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(25px);
+      border-top: 1px solid rgba(0,0,0,0.05);
+      display: flex; justify-content: space-evenly; align-items: flex-start;
+      padding-top: 0.5rem; 
+      padding-bottom: env(safe-area-inset-bottom);
+      z-index: 50;
+    }
+    .dark .vip-tab-bar {
+      background: rgba(28, 28, 30, 0.95);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tab-btn {
+      flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.3rem; color: #999; transition: all 0.3s; background: none; border: none; cursor: pointer;
+    }
+    .tab-btn i { width: 1.5rem; height: 1.5rem; transition: transform 0.2s; } 
+    .tab-btn span { font-size: 0.7rem; font-weight: 700; transition: color 0.2s; }
+    .tab-btn.active { color: #7c3aed; }
+    .dark .tab-btn.active { color: #a78bfa; }
+    .tab-btn.active i { transform: translateY(-2px); }
+
+    /* Sub Tabs & Pagination (Logic Cũ) */
+    .sub-tab-container {
+      display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.25rem; margin-bottom: 1.25rem;
+      background: rgba(0,0,0,0.05); border-radius: 0.75rem;
+    }
+    .dark .sub-tab-container { background: rgba(255,255,255,0.05); }
+    
+    .sub-tab-btn {
+      flex: 1; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.8rem; font-weight: 600;
+      text-align: center; white-space: nowrap; transition: all 0.2s;
+    }
+    .sub-tab-btn.active { background: #fff; color: #7c3aed; shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .dark .sub-tab-btn.active { background: #2c2c2e; color: #fff; }
+
+    .page-btn {
+      width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center;
+      border-radius: 0.6rem; background: #fff; color: #666; font-weight: 600; font-size: 0.9rem;
+      border: 1px solid #eee; transition: all 0.2s;
+    }
+    .dark .page-btn { background: #1c1c1e; color: #aaa; border-color: #333; }
+    .page-btn.active { background: #7c3aed; color: #fff; border-color: #7c3aed; }
+
+    .pagination { display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 1.5rem; flex-wrap: wrap; width: 100%; padding-bottom: 2rem; }
+    .snap-x-mandatory { scroll-snap-type: x mandatory; }
+    .snap-center { scroll-snap-align: center; }
+  </style>
+</head>
+<body class="bg-bgLight dark:bg-bgDark text-gray-900 dark:text-white transition-colors duration-300 font-sans h-[100dvh] flex flex-col overflow-hidden">
+
+  <header class="header-glass fixed top-0 w-full z-40 h-[68px] flex items-center px-5 transition-all duration-300 justify-between">
+    <div class="flex items-center gap-4 w-full max-w-6xl mx-auto relative">
+      <div class="font-extrabold text-2xl tracking-tight text-brand dark:text-white flex items-center gap-3 cursor-pointer shrink-0" onclick="loadData();">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand to-purple-600 flex items-center justify-center text-white shadow-lg shadow-brand/30">
+           <i data-lucide="zap" class="w-6 h-6"></i>
+        </div>
+        Kho Vip
+      </div>
+
+      <div id="searchContainer" class="flex-1 flex justify-end ml-4 transition-all duration-300">
+         <div class="relative group w-full max-w-[260px]">
+            <i data-lucide="search" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="w-full h-11 pl-11 pr-5 bg-gray-100 dark:bg-white/10 text-base rounded-full outline-none focus:ring-2 focus:ring-brand/50 transition-all placeholder-gray-500 text-gray-700 dark:text-gray-200">
+         </div>
+      </div>
+
+      <div class="flex items-center gap-3 ml-auto">
+        <button onclick="toggleTheme()" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition">
+          <i data-lucide="moon" class="w-5 h-5 dark:text-yellow-400"></i>
+        </button>
+        <a href="pages/home.html" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition text-gray-600 dark:text-gray-300">
+          <i data-lucide="user" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContainer" class="flex-1 h-full overflow-y-auto overflow-x-hidden scrollbar-hide pt-[80px] pb-24 md:pb-10 relative scroll-smooth">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+       <div id="dynamicContent" class="min-h-[500px] animate-in fade-in duration-300">
+          <div class="flex flex-col items-center justify-center pt-32">
+             <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-brand"></div>
+          </div>
+       </div>
+    </div>
+  </main>
+
+  <nav class="vip-tab-bar">
+    <button onclick="switchTab('home')" class="tab-btn active" data-tab="home">
+      <i data-lucide="layout-grid"></i>
+      <span>Home</span>
+    </button>
+    <button onclick="switchTab('dylib')" class="tab-btn" data-tab="dylib">
+      <i data-lucide="cpu"></i>
+      <span>Dylib</span>
+    </button>
+    <button onclick="switchTab('ipa')" class="tab-btn" data-tab="ipa">
+      <i data-lucide="smartphone"></i>
+      <span>IPA</span>
+    </button>
+    <button onclick="switchTab('conf')" class="tab-btn" data-tab="conf">
+      <i data-lucide="shield-check"></i>
+      <span>Conf</span>
+    </button>
+    <button onclick="switchTab('cert')" class="tab-btn" data-tab="cert">
+      <i data-lucide="award"></i>
+      <span>Cert</span>
+    </button>
+  </nav>
+
+  <div id="appModal" class="fixed inset-0 z-[70] hidden flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 opacity-0 transition-all duration-300">
+    <div id="appModalPanel" class="bg-white dark:bg-[#1c1c1e] w-full max-w-md rounded-3xl shadow-2xl transform scale-95 transition-all duration-300 relative flex flex-col max-h-[85vh]">
+       
+       <div class="absolute top-4 right-4 z-10">
+          <button onclick="closeModal('appModal')" class="bg-gray-100/80 dark:bg-white/10 backdrop-blur p-2 rounded-full hover:scale-110 transition shadow-sm">
+             <i data-lucide="x" class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
+          </button>
+       </div>
+       
+       <div class="overflow-y-auto p-6 scrollbar-hide">
+          <div class="flex gap-5 mb-6 pt-2">
+             <img id="mIcon" class="w-24 h-24 rounded-[1.5rem] shadow-xl bg-gray-100 object-cover ring-1 ring-black/5 dark:ring-white/10" />
+             <div class="flex-1 flex flex-col justify-center">
+                <h2 id="mTitle" class="text-2xl font-black leading-tight mb-1 line-clamp-2 text-gray-900 dark:text-white">App Name</h2>
+                <p id="mSub" class="text-sm text-gray-500 dark:text-gray-400 mb-3 font-medium">Version • Dev</p>
+                <button onclick="showVipInput()" class="bg-brand text-white py-2.5 px-6 rounded-full font-bold text-sm shadow-lg shadow-brand/30 hover:bg-brandDark hover:scale-105 active:scale-95 transition w-fit">
+                   NHẬN
+                </button>
+             </div>
+          </div>
+
+          <div id="vipArea" class="hidden mb-6 animate-in slide-up fade-in">
+             <div class="bg-yellow-50 dark:bg-yellow-900/10 p-5 rounded-2xl border border-yellow-200 dark:border-yellow-800/30">
+                <p class="text-center text-xs font-bold text-yellow-600 dark:text-yellow-500 uppercase mb-3">Nhập mã VIP để tải</p>
+                <input type="text" id="vipKey" placeholder="XXXX-XXXX-XXXX-XXXX" class="w-full bg-white dark:bg-black/50 border border-yellow-200 dark:border-yellow-800 rounded-xl px-4 py-3 text-center font-mono text-sm uppercase outline-none focus:border-yellow-500 transition mb-3">
+                
+                <button onclick="verifyKey()" id="verifyBtn" class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-3 rounded-xl text-sm shadow-md hover:brightness-110 transition">
+                    XÁC NHẬN & TẢI
+                </button>
+                
+                <p id="vipMsg" class="text-center text-xs mt-3 font-semibold hidden"></p>
+                
+                <div class="mt-4 pt-0">
+                   <button onclick="downloadFree()" class="w-full py-3 rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 dark:from-white/10 dark:to-white/5 text-gray-900 dark:text-white font-bold text-sm shadow-sm hover:scale-[1.02] transition border border-gray-200 dark:border-white/10 flex items-center justify-center gap-2 group">
+                      <i data-lucide="gift" class="w-4 h-4 text-brand group-hover:scale-110 transition"></i>
+                      Tải xuống miễn phí
+                   </button>
+                </div>
+                <div class="text-center mt-4"><a href="https://p12.vn/payment" target="_blank" class="font-bold text-red-500/80 hover:text-red-600 underline text-[10px] tracking-wide">MUA KEY VIP DOWNLOAD</a></div>
+             </div>
+          </div>
+
+          <hr class="border-gray-100 dark:border-white/10 mb-6">
+          <div class="prose dark:prose-invert">
+            <h3 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Giới thiệu</h3>
+            <p id="mDesc" class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed whitespace-pre-line bg-gray-50 dark:bg-white/5 p-4 rounded-2xl"></p>
+          </div>
+       </div>
+    </div>
+  </div>
+
+  <script>
+    // --- STATE ---
+    const DB = { ipa: [], dylib: [], conf: [], cert_sign: [], cert_cert: [], cert_mod: [] };
+    // Khởi tạo KEYWORDS rỗng, sẽ fetch từ file keywords.json
+    let KEYWORDS = { movie: [], social: [], photo: [], game: [] };
+
+    const STATE = { 
+        currentTab: 'home', 
+        currentSubTab: 'sign', 
+        currentPage: 1, 
+        itemsPerPage: 24, 
+        currentItem: null,
+        currentFilter: 'all'
+    };
+
+    // --- CHECK WHITELIST (CHÍNH XÁC) ---
+    // Kiểm tra xem tên app (str) có nằm trong danh sách whitelist không
+    function checkKw(str, whitelist) {
+        if (!str || !whitelist) return false;
+        const s = str.trim().toLowerCase();
+        return whitelist.some(k => k.trim().toLowerCase() === s);
+    }
+
+    // Deduplication: Lọc app trùng, chỉ lấy bản mới nhất
+    function getUniqueApps(apps) {
+        const map = new Map();
+        apps.forEach(app => {
+            const key = (app.name || app.title || '').toLowerCase().trim();
+            if (!map.has(key)) map.set(key, app);
+        });
+        return Array.from(map.values());
+    }
+
+    // Sort theo ngày
+    function sortItemsByDate(items) {
+        return items.sort((a, b) => new Date(b.lastSync || b.date || 0) - new Date(a.lastSync || a.date || 0));
+    }
+
+    // --- LOAD DATA (ĐỌC 2 FILE) ---
+    async function loadData() {
+      
+      // 1. Tải Keywords.json (Chạy trước để có dữ liệu lọc)
+      try {
+        const kwRes = await fetch('keywords.json?t=' + Date.now());
+        if(kwRes.ok) {
+            KEYWORDS = await kwRes.json();
+            console.log('Đã tải Keywords thành công:', KEYWORDS);
+        } else {
+            console.warn('Không tìm thấy file keywords.json, dùng danh sách rỗng');
+        }
+      } catch (err) { console.error('Lỗi tải keywords.json', err); }
+
+      // 2. Tải Data Apps
+      const endpoints = [
+        {k: 'ipa', u: 'data/ipa.json'},
+        {k: 'dylib', u: 'data/dylib.json'},
+        {k: 'conf', u: 'data/conf.json'},
+        {k: 'cert_sign', u: 'pages/data/sign.json'},
+        {k: 'cert_cert', u: 'pages/data/cert.json'},
+        {k: 'cert_mod', u: 'pages/data/mod.json'}
+      ];
+      await Promise.all(endpoints.map(async e => {
+        try {
+          const res = await fetch(`${e.u}?t=${Date.now()}`);
+          if(res.ok) {
+              let data = await res.json();
+              DB[e.k] = sortItemsByDate(data);
+          }
+        } catch(err) { console.error(`Lỗi tải ${e.k}`, err); }
+      }));
+      
+      renderContent(document.getElementById('searchInput').value);
+      document.getElementById('searchContainer').style.display = 'none'; // Mặc định ẩn search ở Home
+    }
+
+    // --- FILTER ---
+    function setFilter(filter) {
+        STATE.currentFilter = filter;
+        STATE.currentPage = 1;
+        renderContent(document.getElementById('searchInput').value);
+    }
+
+    // --- TAB SWITCH ---
+    function switchTab(tabId) {
+      STATE.currentTab = tabId;
+      STATE.currentPage = 1;
+      STATE.currentFilter = 'all';
+      
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.tab === tabId);
+      });
+
+      // Ẩn/Hiện Search
+      const searchContainer = document.getElementById('searchContainer');
+      const searchInput = document.getElementById('searchInput');
+      if (tabId === 'home') {
+          searchContainer.style.display = 'none';
+      } else {
+          searchContainer.style.display = 'flex';
+          searchInput.value = '';
+          searchInput.placeholder = `Tìm trong ${tabId.toUpperCase()}...`;
+      }
+      
+      renderContent();
+      document.getElementById('mainContainer').scrollTop = 0;
+    }
+
+    function renderContent(query = '') {
+      const container = document.getElementById('dynamicContent');
+      let html = '';
+      let items = [];
+      const tab = STATE.currentTab;
+
+      // ============================================================
+      // 1. HOME TAB (LỌC THEO KEYWORDS TỪ FILE JSON)
+      // ============================================================
+      if (tab === 'home') {
+        let rawApps = [...DB.ipa, ...DB.cert_mod, ...DB.dylib].map(i=>({...i, _type:'IPA'}));
+        let uniqueApps = getUniqueApps(sortItemsByDate(rawApps));
+
+        // Lọc chính xác theo whitelist
+        const movieApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.movie));
+        const socialApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.social));
+        const photoApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.photo));
+        const gameApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.game));
+        
+        // Trending: Lấy các app hot (cứng) + whitelist social
+        const trendingList = ['YouTube','Facebook','TikTok','Messenger','Instagram','Spotify','Netflix','CapCut','Zalo'];
+        const trendingApps = uniqueApps.filter(i => checkKw(i.name, trendingList)).slice(0, 10);
+
+        const featured = uniqueApps.slice(0, 5);
+        const recent = uniqueApps.slice(5, 17);
+        
+        const hour = new Date().getHours();
+        let greeting = hour >= 18 ? "Chào buổi tối" : hour >= 12 ? "Chào buổi chiều" : "Chào buổi sáng";
+
+        html = `
+          <div class="mb-4 animate-slide-up">
+              <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">${new Date().toLocaleDateString('vi-VN', {weekday:'long', day:'numeric', month:'long'})}</p>
+              <div class="flex justify-between items-center">
+                  <h1 class="text-3xl font-black text-gray-900 dark:text-white flex items-center gap-2">
+                     ${greeting} <span class="text-brand">♥️</span>
+                  </h1>
+                  <div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-white/10 flex items-center justify-center cursor-pointer">
+                     <i data-lucide="bell" class="w-4 h-4"></i>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-8 -mx-4 px-4 md:mx-0 md:px-0 mb-2 animate-slide-up">
+             ${featured.map(i => createBigHero(i)).join('')}
+          </div>
+
+          <div class="grid grid-cols-4 gap-3 mb-8 animate-slide-up">
+             ${createQuickCat('Game Hack', 'sword', 'from-red-500 to-orange-500', 'game')}
+             ${createQuickCat('Chụp Ảnh', 'camera', 'from-blue-500 to-cyan-500', 'photo')}
+             ${createQuickCat('Xem Phim', 'clapperboard', 'from-purple-500 to-pink-500', 'movie')}
+             ${createQuickCat('Mạng XH', 'globe', 'from-indigo-500 to-blue-500', 'social')}
+          </div>
+
+          ${trendingApps.length ? `
+          <div class="mb-8 animate-slide-up">
+             <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-extrabold text-gray-900 dark:text-white flex items-center gap-2">
+                   <i data-lucide="flame" class="w-5 h-5 text-orange-500 fill-orange-500"></i> Xu hướng
+                </h3>
+             </div>
+             <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+                ${trendingApps.map(i => createTrendingItem(i)).join('')}
+             </div>
+             <hr class="border-gray-200 dark:border-white/5 mt-4">
+          </div>` : ''}
+
+          <div class="mt-4 animate-slide-up">
+             <div class="flex justify-between items-end mb-4">
+                <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">Mới cập nhật</h3>
+                <span class="text-brand text-xs font-bold bg-brand/10 px-2 py-1 rounded-md">HOT</span>
+             </div>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                ${recent.map(i => createGridItem(i)).join('')}
+             </div>
+          </div>
+          
+          <div class="pb-10 pt-6 text-center text-xs text-gray-400 font-medium">Designed by Kho Vip</div>
+        `;
+
+      // ============================================================
+      // 2. TAB CERT (LOGIC CŨ)
+      // ============================================================
+      } else if (tab === 'cert') {
+        const subTab = STATE.currentSubTab;
+        if (subTab === 'sign') items = DB.cert_sign;
+        else if (subTab === 'cert') items = DB.cert_cert;
+        else if (subTab === 'mod') items = DB.cert_mod;
+        
+        if(query) items = filterItems(items, query);
+
+        let gridHtml = '';
+        if (subTab === 'cert') {
+             gridHtml = items.length ? items.map(i => createCertItem(i)).join('') : emptyState();
+        } else {
+             gridHtml = items.length ? items.map(i => createGridItem(i, subTab.toUpperCase())).join('') : emptyState();
+        }
+
+        html = `
+          <h1 class="text-3xl font-black mb-4 text-gray-900 dark:text-white">Chứng Chỉ & Mod</h1>
+          <div class="sub-tab-container scrollbar-hide">
+             <button onclick="switchSubTab('sign')" class="sub-tab-btn ${subTab==='sign'?'active':''}">✍️ Sign App</button>
+             <button onclick="switchSubTab('cert')" class="sub-tab-btn ${subTab==='cert'?'active':''}">🎖️ Cert File</button>
+             <button onclick="switchSubTab('mod')" class="sub-tab-btn ${subTab==='mod'?'active':''}">📦 Hot Mod</button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 animate-in slide-in-from-bottom-2 duration-300">
+             ${gridHtml}
+          </div>
+        `;
+
+      // ============================================================
+      // 3. TAB IPA, DYLIB, CONF (LOGIC CŨ)
+      // ============================================================
+      } else {
+        if (tab === 'ipa') items = DB.ipa;
+        else if (tab === 'dylib') items = DB.dylib;
+        else if (tab === 'conf') items = DB.conf;
+        
+        if(query) items = filterItems(items, query);
+
+        if (STATE.currentFilter !== 'all') {
+            items = items.filter(i => i.tags && i.tags.includes(STATE.currentFilter));
+        }
+
+        const featured = items.slice(0, 5);
+        const totalPages = Math.ceil(items.length / STATE.itemsPerPage);
+        const start = (STATE.currentPage - 1) * STATE.itemsPerPage;
+        const pagedItems = items.slice(start, start + STATE.itemsPerPage);
+        const showFilter = (tab === 'ipa');
+
+        html = `
+           <h1 class="text-3xl font-black mb-6 text-gray-900 dark:text-white uppercase">${tab} Store</h1>
+           ${!query && STATE.currentFilter === 'all' ? `
+           <div class="mb-8">
+              <h3 class="text-lg font-bold mb-3 px-1">Nổi bật</h3>
+              <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-4 -mx-4 px-4 md:mx-0 md:px-0">
+                 ${featured.map(i => createSubPageHero(i)).join('')}
+              </div>
+           </div>` : ''}
+           
+           <div class="flex flex-col md:flex-row md:items-end justify-between mb-4 px-1 gap-3">
+              <div class="flex items-center gap-4 w-full md:w-auto justify-between md:justify-start">
+                  <h3 class="text-lg font-bold">Danh sách</h3>
+                  ${showFilter ? `
+                  <div class="flex bg-gray-200 dark:bg-white/10 rounded-lg p-1 gap-1">
+                      <button onclick="setFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'all' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Tất cả</button>
+                      <button onclick="setFilter('game')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'game' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Game</button>
+                      <button onclick="setFilter('social')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'social' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Social</button>
+                  </div>
+                  ` : ''}
+              </div>
+              <span class="text-xs text-gray-500">${items.length} apps</span>
+           </div>
+
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${pagedItems.length ? pagedItems.map(i => createGridItem(i, tab.toUpperCase())).join('') : emptyState()}
+           </div>
+           ${items.length > STATE.itemsPerPage ? createPagination(totalPages) : ''}
+        `;
+      }
+      container.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    // --- SUB PAGE RENDERER (CATEGORY VIEW) ---
+    function openCategory(catType, catName) {
+        const container = document.getElementById('dynamicContent');
+        
+        // LỌC CHÍNH XÁC THEO FILE JSON
+        const rawItems = DB.ipa.filter(i => checkKw(i.name, KEYWORDS[catType]));
+        const items = getUniqueApps(rawItems);
+        
+        container.innerHTML = `
+            <div class="animate-slide-up">
+                <button onclick="renderContent()" class="mb-4 flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-brand transition bg-gray-100 dark:bg-white/10 px-3 py-2 rounded-lg">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Quay lại Home
+                </button>
+                
+                <div class="flex items-center gap-3 mb-6">
+                    <h1 class="text-3xl font-black text-gray-900 dark:text-white">${catName}</h1>
+                    <span class="bg-brand/10 text-brand text-xs font-bold px-2 py-1 rounded-md border border-brand/20">${items.length} Apps</span>
+                </div>
+
+                ${items.length === 0 ? emptyState() : `
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-20">
+                    ${items.map(i => createGridItem(i, "IPA")).join('')}
+                </div>
+                `}
+            </div>
+        `;
+        lucide.createIcons();
+        window.scrollTo({top:0, behavior:'smooth'});
+    }
+
+    // --- UI COMPONENTS ---
+    function createTrendingItem(i) {
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
+            <div class="w-16 h-16 rounded-[14px] overflow-hidden shadow-md border border-gray-100 dark:border-white/10 relative bg-white dark:bg-cardDark">
+               <img src="${i.icon || i.iconUrl}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <h4 class="font-semibold text-gray-900 dark:text-white text-[10px] truncate w-full text-center">${i.name}</h4>
+         </div>
+       `;
+    }
+
+    function createQuickCat(name, icon, grad, type) {
+        return `
+        <button onclick="openCategory('${type}', '${name}')" class="flex flex-col items-center gap-2 cursor-pointer group bg-transparent border-0">
+            <div class="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br ${grad} flex items-center justify-center text-white shadow-lg group-active:scale-95 transition">
+                <i data-lucide="${icon}" class="w-7 h-7"></i>
+            </div>
+            <span class="text-[10px] font-bold text-gray-500 dark:text-gray-400 group-hover:text-brand transition">${name}</span>
+        </button>`;
+    }
+
+    function createBigHero(i) {
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[85%] md:w-[24rem] h-[15rem] relative rounded-[1.8rem] overflow-hidden shadow-xl group cursor-pointer bg-gray-900 border border-white/10">
+            <img src="${i.icon || i.iconUrl}" class="absolute inset-0 w-full h-full object-cover opacity-60 blur-xl scale-125 group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 w-full p-5 flex flex-col items-start gap-3">
+               <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase border border-white/20">MỚI NHẤT</span>
+               <div class="flex items-center gap-3 w-full">
+                  <img src="${i.icon || i.iconUrl}" class="w-14 h-14 rounded-xl shadow-lg border-2 border-white/20 bg-gray-800 object-cover">
+                  <div class="flex-1 min-w-0">
+                     <h2 class="text-xl font-bold text-white leading-tight truncate">${i.name || i.title}</h2>
+                     <p class="text-gray-300 text-xs line-clamp-1 mt-1">${i.desc || 'Trải nghiệm ngay'}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       `;
+    }
+    
+    function createSubPageHero(i) {
+       const title = i.name || i.title;
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[17.5rem] h-[10rem] relative rounded-3xl overflow-hidden shadow-lg group cursor-pointer border border-white/10">
+            <img src="${icon}" class="absolute inset-0 w-full h-full object-cover blur-md opacity-60 scale-125 group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 p-5 flex flex-col justify-end">
+                <div class="flex items-center gap-3">
+                  <img src="${icon}" class="w-12 h-12 rounded-xl shadow-md border border-white/20 bg-black/20 backdrop-blur-md">
+                  <div class="flex-1 min-w-0">
+                     <h4 class="font-bold text-white text-lg truncate">${title}</h4>
+                     <p class="text-[10px] text-gray-200 uppercase font-bold tracking-wider">Top Download</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       `;
+    }
+
+    function createGridItem(i, tag = 'APP') {
+       const title = i.name || i.title || i.filename || 'Unknown';
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       const desc = i.desc || i.description || i.certname || 'No description';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")}, "${tag}")' class="flex items-center gap-3 p-3.5 rounded-2xl bg-white dark:bg-cardDark border border-transparent hover:border-gray-200 dark:hover:border-white/10 transition-all cursor-pointer shadow-sm group">
+            <img src="${icon}" class="w-14 h-14 rounded-[12px] bg-gray-100 object-cover shadow-sm group-hover:scale-105 transition" onerror="this.src='https://placehold.co/100'"/>
+            <div class="flex-1 min-w-0">
+               <h4 class="font-bold text-gray-900 dark:text-white truncate text-sm">${title}</h4>
+               <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1 mt-0.5">${desc}</p>
+            </div>
+            <button class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center text-brand">
+               <i data-lucide="download" class="w-4 h-4"></i>
+            </button>
+         </div>
+       `;
+    }
+
+    function createCertItem(i) {
+       const title = i.name || i.title || 'Certificate';
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       const certName = i.desc || i.certname || 'Chưa cập nhật'; 
+       const status = i.status || 'Good'; 
+       const isGood = status.toLowerCase() === 'good';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")}, "CERT")' class="col-span-1 bg-white dark:bg-cardDark p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 relative overflow-hidden group hover:border-brand/50 transition-all cursor-pointer">
+            <div class="flex items-start gap-4 mb-4">
+                <img src="${icon}" class="w-14 h-14 rounded-2xl shadow-md object-cover bg-gray-100 dark:bg-gray-800">
+                <div class="flex-1 min-w-0 pt-1">
+                    <h3 class="text-lg font-extrabold text-gray-900 dark:text-white leading-tight mb-1">${title}</h3>
+                    <div class="flex items-center gap-1.5 text-sm font-semibold">
+                        <span class="${isGood?'text-green-500':'text-red-500'} flex items-center gap-1">
+                           ${isGood?'🟢':'🔴'} ${status}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-300 border-t border-gray-100 dark:border-white/5 pt-2">
+                <span class="font-medium">Cert:</span> ${certName}
+            </div>
+         </div>
+       `;
+    }
+
+    function createPagination(total) {
+       let btns = '';
+       const maxShow = 5;
+       let start = Math.max(1, STATE.currentPage - 2);
+       let end = Math.min(total, start + maxShow - 1);
+       if (total <= 1) return '';
+       btns += `<button onclick="changePage(${STATE.currentPage - 1})" class="page-btn" ${STATE.currentPage===1?'disabled':''}><i data-lucide="chevron-left" class="w-4 h-4"></i></button>`;
+       for(let p = start; p <= end; p++) btns += `<button onclick="changePage(${p})" class="page-btn ${p===STATE.currentPage?'active':''}">${p}</button>`;
+       btns += `<button onclick="changePage(${STATE.currentPage + 1})" class="page-btn" ${STATE.currentPage===total?'disabled':''}><i data-lucide="chevron-right" class="w-4 h-4"></i></button>`;
+       return `<div class="pagination">${btns}</div>`;
+    }
+
+    function emptyState() {
+       return `<div class="col-span-full py-10 text-center text-gray-400 flex flex-col items-center"><i data-lucide="package-open" class="w-10 h-10 mb-2 opacity-50"></i><p class="text-sm">Không tìm thấy dữ liệu</p></div>`;
+    }
+
+    // --- ACTIONS ---
+    function changePage(p) { STATE.currentPage = p; renderContent(); document.getElementById('mainContainer').scrollTo({ top: 0, behavior: 'smooth' }); }
+    function switchSubTab(sub) { STATE.currentSubTab = sub; renderContent(); }
+    function filterItems(items, q) { const lower = q.toLowerCase(); return items.filter(i => (i.name || i.title || i.filename || '').toLowerCase().includes(lower)); }
+    document.getElementById('searchInput').addEventListener('input', (e) => renderContent(e.target.value));
+
+    // --- MODAL ACTIONS ---
+    function openModal(i) {
+       STATE.currentItem = i;
+       document.getElementById('mTitle').innerText = i.name || i.title || i.filename;
+       document.getElementById('mSub').innerText = `${i.version || 'Latest'} • ${i.developer || 'Unknown'}`;
+       document.getElementById('mIcon').src = i.icon || i.iconUrl;
+       document.getElementById('mDesc').innerText = i.desc || i.description || i.usage || 'Không có mô tả chi tiết.';
+       
+       document.getElementById('vipArea').classList.add('hidden');
+       document.getElementById('vipMsg').classList.add('hidden');
+       document.getElementById('vipKey').value = '';
+       document.querySelector('#appModalPanel button[onclick*="showVipInput()"]').classList.remove('hidden');
+       
+       const verifyBtn = document.getElementById('verifyBtn');
+       verifyBtn.classList.remove('hidden');
+       verifyBtn.disabled = false;
+       verifyBtn.innerText = "XÁC NHẬN & TẢI";
+
+       const modal = document.getElementById('appModal');
+       const panel = document.getElementById('appModalPanel');
+       modal.classList.remove('hidden');
+       setTimeout(() => { 
+           modal.classList.remove('opacity-0'); 
+           panel.classList.remove('scale-95');
+           panel.classList.add('scale-100');
+       }, 10);
+    }
+
+    function closeModal(id) {
+       const modal = document.getElementById(id);
+       const panel = document.getElementById('appModalPanel');
+       panel.classList.remove('scale-100');
+       panel.classList.add('scale-95');
+       modal.classList.add('opacity-0');
+       setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    function showVipInput() {
+        document.getElementById('vipArea').classList.remove('hidden');
+        document.querySelector('#appModalPanel button[onclick*="showVipInput()"]').classList.add('hidden');
+    }
+
+    async function verifyKey() {
+       const k = document.getElementById('vipKey').value;
+       if(k.length < 5) return alert('Key lỗi');
+       
+       const btn = document.getElementById('verifyBtn');
+       const msg = document.getElementById('vipMsg');
+       btn.innerText = "ĐANG CHECK...";
+       btn.disabled = true;
+       
+       try {
+          const res = await fetch('/api/keys/verify', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({key:k}) });
+          const d = await res.json();
+          
+          if(d.success) {
+             const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
+             msg.classList.remove('hidden', 'text-red-500');
+             msg.classList.add('text-green-500');
+             msg.innerText = "✅ Đang chuyển hướng...";
+             btn.classList.add('hidden');
+             setTimeout(() => { window.location.href = link; }, 800);
+          } else {
+             msg.classList.remove('hidden', 'text-green-500');
+             msg.classList.add('text-red-500');
+             msg.innerText = d.error || "Mã không hợp lệ";
+             btn.disabled = false;
+             btn.innerText = "XÁC NHẬN & TẢI";
+          }
+       } catch(e) { 
+           alert('Lỗi kết nối API: '+e.message); 
+           btn.disabled = false;
+           btn.innerText = "XÁC NHẬN & TẢI";
+       }
+    }
+
+    function downloadFree() {
+       const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
+       window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank');
+       closeModal('appModal');
+    }
+
+    function toggleTheme() {
+       document.documentElement.classList.toggle('dark');
+       localStorage.setItem('theme', document.documentElement.classList.contains('dark')?'dark':'light');
+    }
+    if(localStorage.getItem('theme')==='dark') document.documentElement.classList.add('dark');
+
+    loadData();
+    lucide.createIcons();
+    
+    document.getElementById('vipKey').addEventListener('input', function(e) {
+      let v = e.target.value.replace(/[^A-Z0-9]/gi, '').toUpperCase();
+      let f = '';
+      for(let i=0; i<v.length && i<16; i++) {
+        if(i>0 && i%4===0) f+='-';
+        f+=v[i];
+      }
+      e.target.value = f;
+    });
+  </script>
+  <script src="js/notification.js"></script>
+</body>
+</html>
