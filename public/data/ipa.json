@@ -378,6 +378,186 @@
     "lastSync": "2026-01-28T09:00:01.702Z"
   },
   {
+    "id": "ipa-com.snowcorp.glowup-4.0.0",
+    "type": "ipa",
+    "name": "GlowUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.glowup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/GlowUp_4.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.glowup",
+    "lastSync": "2026-01-28T14:00:01.270Z"
+  },
+  {
+    "id": "ipa-archery.storify-1.257.0",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Mojo_1.257.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.257.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2026-01-28T14:00:01.271Z"
+  },
+  {
+    "id": "ipa-com.lexwarelabs.goodmorning-6.26.3",
+    "type": "ipa",
+    "name": "SleepCycle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lexwarelabs.goodmorning.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/SleepCycle_6.26.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.26.3",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.lexwarelabs.goodmorning",
+    "lastSync": "2026-01-28T14:00:01.272Z"
+  },
+  {
+    "id": "ipa-com.tripleglazedstudios.Weather-3.2.1",
+    "type": "ipa",
+    "name": "Mercury",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tripleglazedstudios.Weather.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Mercury_3.2.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.1",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.tripleglazedstudios.Weather",
+    "lastSync": "2026-01-28T14:00:01.272Z"
+  },
+  {
+    "id": "ipa-app.gentler.activity-5.11.1",
+    "type": "ipa",
+    "name": "GentlerStreak",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.gentler.activity.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/GentlerStreak_5.11.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.11.1",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "app.gentler.activity",
+    "lastSync": "2026-01-28T14:00:01.272Z"
+  },
+  {
+    "id": "ipa-com.aiti.FitnessOnline-1.13.1",
+    "type": "ipa",
+    "name": "FitnessOnline",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aiti.FitnessOnline.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/FitnessOnline_1.13.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.13.1",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.aiti.FitnessOnline",
+    "lastSync": "2026-01-28T14:00:01.273Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.wlf-4.0.0",
+    "type": "ipa",
+    "name": "Weather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.wlf.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Weather_4.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.wlf",
+    "lastSync": "2026-01-28T14:00:01.273Z"
+  },
+  {
+    "id": "ipa-com.iaftt.flightplusfree-8.7.1",
+    "type": "ipa",
+    "name": "FlightTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iaftt.flightplusfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/FlightTracker_8.7.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.7.1",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.iaftt.flightplusfree",
+    "lastSync": "2026-01-28T14:00:01.273Z"
+  },
+  {
+    "id": "ipa-co.bazaart.app-26.1.0",
+    "type": "ipa",
+    "name": "Bazaart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bazaart.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Bazaart_26.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "co.bazaart.app",
+    "lastSync": "2026-01-28T14:00:01.274Z"
+  },
+  {
+    "id": "ipa-com.yazio.ios.YAZIO-12.69.0",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-01-2026/Yazio_12.69.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.69.0",
+    "developer": "khomodvip",
+    "date": "2026-01-28",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2026-01-28T14:00:01.274Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-50.0.2",
     "type": "ipa",
     "name": "Drafts",
