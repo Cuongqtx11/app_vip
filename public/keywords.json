@@ -1,0 +1,29 @@
+{
+  "movie": [
+    "YouTube", "YouTube Studio", "Netflix", "Amazon Prime Video", "Disney+", 
+    "HBO Max", "Apple TV", "Viki: Asian Dramas & Movies", "iQIYI", "WeTV", 
+    "Viu", "Bilibili", "K+", "FPT Play", "VieON", "Clip TV", "Galaxy Play", 
+    "TV360", "MyTV", "VTV Go", "Plex", "Vimeo", "Dailymotion", "MX Player", 
+    "Tencent Video", "YOUKU", "MangoTV"
+  ],
+  "social": [
+    "Facebook", "Messenger", "Instagram", "Threads", "Zalo", "TikTok", "X", 
+    "Discord", "Telegram Messenger", "WhatsApp Messenger", "LINE", "Snapchat", 
+    "Weibo", "KakaoTalk", "Reddit", "Pinterest", "Tumblr", "Quora", 
+    "Clubhouse", "Signal", "Viber", "Skype", "QQ", "WeChat"
+  ],
+  "photo": [
+    "Camera", "PicsArt Photo Editor", "Adobe Lightroom", "Adobe Photoshop Express", 
+    "VSCO", "Snapseed", "B612", "Ulike", "SNOW", "Meitu", "BeautyPlus", 
+    "Remini", "Prequel", "Foodie", "Hypocam", "Focos", "Lightleap", 
+    "PhotoRoom", "Polarr", "Lensa", "Facetune", "Tezza", "Afterlight", "Darkroom"
+  ],
+  "game": [
+    "Garena Liên Quân Mobile", "PUBG MOBILE", "PUBG: New State", "Free Fire", 
+    "Free Fire MAX", "League of Legends: Wild Rift", "Roblox", "Minecraft", 
+    "Genshin Impact", "Call of Duty®: Mobile", "Among Us", "Clash of Clans", 
+    "Clash Royale", "Mobile Legends: Bang Bang", "Pokémon GO", "Brawl Stars", 
+    "Hay Day", "Stumble Guys", "Subway Surfers", "Temple Run 2", "8 Ball Pool", 
+    "FIFA Mobile", "eFootball™"
+  ]
+}
