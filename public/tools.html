@@ -4,33 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPA Signer VIP - P12.VN</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background: #0f172a; overflow-x: hidden; }
+        /* Cấu hình Font chữ Tiếng Việt chuẩn */
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #0f172a; 
+            color: #fff;
+            overflow-x: hidden; 
+        }
         
-        /* Glassmorphism */
+        /* Hiệu ứng kính mờ (Glassmorphism) */
         .glass-box {
-            background: rgba(30, 41, 59, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
-        /* App Card Selection */
-        .app-card { transition: all 0.3s ease; border: 1px solid transparent; }
-        .app-card:hover { transform: translateY(-2px); background: rgba(255,255,255,0.05); }
+        /* Hiệu ứng chọn App */
+        .app-card { 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .app-card:hover { 
+            transform: translateY(-3px); 
+            background: rgba(255,255,255,0.1); 
+        }
         .peer:checked + .app-card {
             border-color: #38bdf8;
             background: rgba(56, 189, 248, 0.15);
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
         }
+        .peer:checked + .app-card .check-icon { opacity: 1; transform: scale(1); }
         
-        .blob { position: absolute; border-radius: 50%; filter: blur(80px); z-index: -1; opacity: 0.4; }
-        .blob-1 { top: -10%; left: -10%; width: 300px; height: 300px; background: #38bdf8; }
-        .blob-2 { bottom: -10%; right: -10%; width: 300px; height: 300px; background: #818cf8; }
+        /* Hình nền trang trí */
+        .blob { position: absolute; border-radius: 50%; filter: blur(90px); z-index: -1; opacity: 0.5; }
+        .blob-1 { top: -10%; left: -20%; width: 400px; height: 400px; background: #0ea5e9; }
+        .blob-2 { bottom: -10%; right: -20%; width: 400px; height: 400px; background: #6366f1; }
+
+        /* Animation */
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .fa-spin-fast { animation: spin 0.8s linear infinite; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4 relative">
@@ -38,86 +58,109 @@
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
-    <div class="w-full max-w-lg glass-box rounded-2xl p-6 md:p-8 animate-fade-in-up">
+    <div class="w-full max-w-lg glass-box rounded-3xl p-6 md:p-8 relative overflow-hidden">
         
-        <div class="text-center mb-8">
-            <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400 mb-2">
-                IPA SIGNER <span class="text-xs bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded border border-sky-500/30">VIP</span>
+        <div class="text-center mb-8 relative z-10">
+            <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400 tracking-tight">
+                CÔNG CỤ KÝ IPA <span class="align-top text-[10px] bg-gradient-to-r from-sky-500 to-blue-600 text-white px-2 py-0.5 rounded-full shadow-lg shadow-sky-500/30">✍️</span>
             </h1>
-            <p class="text-slate-400 text-sm">Há» thá»ng kÃ½ tá»± Äá»ng - Server Pi 4</p>
+            <p class="text-slate-400 text-sm mt-2">Công cụ ký esign, gbox...  tự  động đọc chứng chỉ </p>
         </div>
 
-        <form id="signerForm" class="space-y-6">
+        <form id="signerForm" class="space-y-6 relative z-10">
             
             <div>
-                <label class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 block">BÆ°á»c 1: Chá»n App</label>
+                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <span class="w-5 h-5 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-[10px]">1</span> 
+                    Chọn Ứng Dụng
+                </label>
                 <div class="grid grid-cols-2 gap-3">
-                    <label class="cursor-pointer relative">
+                    <label class="cursor-pointer relative group">
                         <input type="radio" name="app" value="esign" checked class="peer hidden">
-                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
-                            <img src="https://esign.yyyue.xyz/ESignLogo200.png" class="w-10 h-10 rounded-lg shadow-sm">
-                            <div><div class="font-bold text-slate-200 text-sm">ESign</div><div class="text-[10px] text-slate-400">KhuyÃªn dÃ¹ng</div></div>
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/40">
+                            <img src="https://esign.yyyue.xyz/ESignLogo200.png" class="w-10 h-10 rounded-lg shadow-sm group-hover:scale-110 transition-transform">
+                            <div><div class="font-bold text-slate-200 text-sm">ESign</div><div class="text-[10px] text-slate-400">Khuyên dùng</div></div>
+                            <i class="check-icon fa-solid fa-circle-check text-sky-400 absolute top-2 right-2 opacity-0 transition-all text-xs"></i>
                         </div>
                     </label>
-                    <label class="cursor-pointer relative">
+                    <label class="cursor-pointer relative group">
                         <input type="radio" name="app" value="gbox" class="peer hidden">
-                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
-                            <img src="https://gbox.run/icon.png" class="w-10 h-10 rounded-lg shadow-sm">
-                            <div><div class="font-bold text-slate-200 text-sm">GBox</div><div class="text-[10px] text-slate-400">á»n Äá»nh</div></div>
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/40">
+                            <img src="https://gbox.run/Public/resources/icon256.png" class="w-10 h-10 rounded-lg shadow-sm group-hover:scale-110 transition-transform">
+                            <div><div class="font-bold text-slate-200 text-sm">GBox</div><div class="text-[10px] text-slate-400">Ổn định</div></div>
+                            <i class="check-icon fa-solid fa-circle-check text-sky-400 absolute top-2 right-2 opacity-0 transition-all text-xs"></i>
                         </div>
                     </label>
-                    <label class="cursor-pointer relative">
+                    <label class="cursor-pointer relative group">
                         <input type="radio" name="app" value="scarlet" class="peer hidden">
-                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
-                            <img src="https://resources.usescarlet.com/icon.png" class="w-10 h-10 rounded-lg shadow-sm">
-                            <div><div class="font-bold text-slate-200 text-sm">Scarlet</div><div class="text-[10px] text-slate-400">Giao diá»n Äáº¹p</div></div>
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/40">
+                            <img src="https://avatars.githubusercontent.com/u/175384029?v=4" class="w-10 h-10 rounded-lg shadow-sm group-hover:scale-110 transition-transform">
+                            <div><div class="font-bold text-slate-200 text-sm">Scarlet</div><div class="text-[10px] text-slate-400">Đẹp mắt</div></div>
+                            <i class="check-icon fa-solid fa-circle-check text-sky-400 absolute top-2 right-2 opacity-0 transition-all text-xs"></i>
                         </div>
                     </label>
-                    <label class="cursor-pointer relative">
+                    <label class="cursor-pointer relative group">
                         <input type="radio" name="app" value="feather" class="peer hidden">
-                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
-                            <img src="https://github.com/khcrysalis/Feather/raw/main/Resources/AppIcon.png" class="w-10 h-10 rounded-lg shadow-sm">
-                            <div><div class="font-bold text-slate-200 text-sm">Feather</div><div class="text-[10px] text-slate-400">SiÃªu nháº¹</div></div>
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/40">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGdDM-mMrohm_ydNM8tf40eHUW3xyGxkXT7D2bUO0Kw&s=10" class="w-10 h-10 rounded-lg shadow-sm group-hover:scale-110 transition-transform">
+                            <div><div class="font-bold text-slate-200 text-sm">Feather</div><div class="text-[10px] text-slate-400">ít người dùng</div></div>
+                            <i class="check-icon fa-solid fa-circle-check text-sky-400 absolute top-2 right-2 opacity-0 transition-all text-xs"></i>
                         </div>
                     </label>
                 </div>
             </div>
 
             <div>
-                <label class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 block">BÆ°á»c 2: Upload Zip</label>
+                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                    <span class="w-5 h-5 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-[10px]">2</span>
+                    Upload Chứng Chỉ (.zip)
+                </label>
                 <div class="relative group">
                     <input type="file" id="zipFile" accept=".zip" required class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20" onchange="updateFile(this)">
-                    <div id="dropZone" class="border-2 border-dashed border-slate-600 rounded-xl h-24 flex flex-col items-center justify-center bg-slate-800/30 group-hover:border-sky-500 group-hover:bg-slate-800/50 transition-all">
-                        <i class="fa-solid fa-cloud-arrow-up text-2xl text-slate-400 mb-2 group-hover:text-sky-400 transition"></i>
-                        <span id="fileName" class="text-sm text-slate-300 font-medium">Cháº¡m Äá» chá»n file Zip</span>
+                    <div id="dropZone" class="border-2 border-dashed border-slate-600 rounded-xl h-24 flex flex-col items-center justify-center bg-slate-800/30 group-hover:border-sky-500 group-hover:bg-slate-800/50 transition-all duration-300">
+                        <i class="fa-solid fa-cloud-arrow-up text-3xl text-slate-500 mb-2 group-hover:text-sky-400 group-hover:scale-110 transition-transform"></i>
+                        <span id="fileName" class="text-sm text-slate-300 font-medium">Chạm để chọn file Zip</span>
                     </div>
                 </div>
             </div>
 
-            <div id="manualPassBox" class="hidden">
-                <div class="bg-orange-500/10 border border-orange-500/30 rounded-lg p-3">
-                    <label class="text-xs font-bold text-orange-400 mb-1 block"><i class="fa-solid fa-key mr-1"></i> Nháº­p máº­t kháº©u thá»§ cÃ´ng</label>
-                    <input type="text" id="manualPass" placeholder="VÃ­ dá»¥: 2026..." class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:border-orange-500 outline-none">
+            <div id="manualPassBox" class="hidden animate-pulse">
+                <div class="bg-orange-500/10 border border-orange-500/50 rounded-lg p-3">
+                    <label class="text-xs font-bold text-orange-400 mb-2 block flex items-center gap-1">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Không tìm thấy mật khẩu? Nhập tay tại đây:
+                    </label>
+                    <input type="text" id="manualPass" placeholder="Nhập mật khẩu chứng chỉ..." class="w-full bg-slate-900 border border-slate-700 rounded p-2.5 text-sm text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all placeholder-slate-600">
                 </div>
             </div>
 
-            <button type="submit" id="btnSubmit" class="w-full bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
-                <i class="fa-solid fa-bolt"></i> KÃ & CÃ€I Äáº¶T
+            <button type="submit" id="btnSubmit" class="w-full bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-sky-900/40 transition-all transform active:scale-[0.98] flex items-center justify-center gap-2 group">
+                <span class="group-hover:tracking-wider transition-all">BẮT ĐẦU KÝ FILE</span> <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
             </button>
         </form>
 
-        <div id="resultBox" class="hidden mt-6 pt-6 border-t border-slate-700/50 text-center"></div>
+        <div id="resultBox" class="hidden mt-6 pt-6 border-t border-slate-700/50"></div>
+
+        <div class="mt-8 text-center">
+            <p class="text-[10px] text-slate-600">Powered by Cuios.shop  & P12.vn</p>
+        </div>
     </div>
 
     <script>
-        // --- Cáº¤U HÃNH DOMAIN ---
-        const API_URL = "https://api.p12.vn"; // Domain Tunnel chÃ­nh thá»©c
+        // --- CẤU HÌNH QUAN TRỌNG ---
+        const API_URL = "https://api.p12.vn"; // Link Tunnel xịn của bạn
 
         function updateFile(input) {
-            const name = input.files[0] ? input.files[0].name : "Cháº¡m Äá» chá»n file Zip";
-            document.getElementById('fileName').innerText = name;
-            document.getElementById('fileName').classList.add('text-sky-400');
-            document.getElementById('dropZone').classList.add('border-sky-500', 'bg-slate-800/50');
+            const name = input.files[0] ? input.files[0].name : "Chạm để chọn file Zip";
+            const dropZone = document.getElementById('dropZone');
+            const fileName = document.getElementById('fileName');
+            
+            fileName.innerText = name;
+            
+            if(input.files[0]) {
+                fileName.classList.add('text-sky-400');
+                dropZone.classList.add('border-sky-500', 'bg-slate-800/60');
+                dropZone.classList.remove('border-slate-600');
+            }
         }
 
         document.getElementById('signerForm').addEventListener('submit', async (e) => {
@@ -126,15 +169,21 @@
             const resultBox = document.getElementById('resultBox');
             const manualPassBox = document.getElementById('manualPassBox');
             
+            // Hiệu ứng loading
             btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Äang xá»­ lÃ½...';
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin-fast text-xl"></i> Đang xử lý...';
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
             resultBox.classList.add('hidden');
 
             const formData = new FormData();
             formData.append('app', document.querySelector('input[name="app"]:checked').value);
             formData.append('zip', document.getElementById('zipFile').files[0]);
+            
+            // Nếu người dùng nhập pass tay thì gửi kèm
             const pass = document.getElementById('manualPass').value;
-            if(pass) formData.append('pass', pass);
+            if(pass && !manualPassBox.classList.contains('hidden')) {
+                formData.append('pass', pass);
+            }
 
             try {
                 const res = await fetch(`${API_URL}/sign-zip`, { method: 'POST', body: formData });
@@ -142,30 +191,57 @@
 
                 if(data.success) {
                     manualPassBox.classList.add('hidden');
+                    // Giao diện thành công
                     resultBox.innerHTML = `
-                        <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 animate-bounce-in">
-                            <div class="text-green-400 font-bold text-lg mb-1"><i class="fa-solid fa-circle-check"></i> ThÃ nh CÃ´ng!</div>
-                            <div class="text-xs text-slate-400 mb-3">Pass: <span class="bg-slate-900 text-yellow-400 px-1 rounded font-mono">${data.pass_used}</span></div>
-                            <a href="${data.install_url}" class="block w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-lg shadow-lg transition-all">
-                                <i class="fa-brands fa-apple text-xl mr-1"></i> CÃ€I Äáº¶T
+                        <div class="bg-green-500/10 border border-green-500/30 rounded-2xl p-5 text-center">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3 text-green-400">
+                                <i class="fa-solid fa-check text-2xl"></i>
+                            </div>
+                            <h3 class="text-green-400 font-bold text-lg mb-1">Ký Thành Công!</h3>
+                            <p class="text-xs text-slate-400 mb-4">Mật khẩu chứng chỉ: <span class="text-yellow-400 font-mono font-bold">${data.pass_used}</span></p>
+                            
+                            <a href="${data.install_url}" class="block w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all transform active:scale-95 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-apple text-xl"></i> CÀI ĐẶT NGAY
                             </a>
+                            <p class="text-[10px] text-slate-500 mt-2">Link sẽ hết hạn sau 10 phút</p>
                         </div>`;
                 } else {
+                    // Xử lý lỗi
                     if(data.code === 'NEED_PASS') {
                         manualPassBox.classList.remove('hidden');
                         document.getElementById('manualPass').focus();
-                        resultBox.innerHTML = `<div class="text-orange-400 text-sm font-bold">â ï¸ Nháº­p máº­t kháº©u thá»§ cÃ´ng.</div>`;
+                        resultBox.innerHTML = `<div class="bg-orange-500/10 border border-orange-500/30 rounded-xl p-3 text-center text-orange-400 text-sm font-bold">⚠️ Vui lòng nhập mật khẩu chứng chỉ vào ô bên trên và thử lại.</div>`;
                     } else {
-                        resultBox.innerHTML = `<div class="text-red-400 text-sm font-bold">â Lá»i: ${data.msg}</div>`;
+                        resultBox.innerHTML = `
+                            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 flex items-center gap-3">
+                                <i class="fa-solid fa-circle-xmark text-red-500 text-xl"></i>
+                                <div class="text-left">
+                                    <div class="text-red-400 font-bold text-sm">Gặp Lỗi Rồi!</div>
+                                    <div class="text-red-300/70 text-xs">${data.msg}</div>
+                                </div>
+                            </div>`;
                     }
                 }
             } catch(err) {
-                resultBox.innerHTML = `<div class="text-red-400 text-sm">KhÃ´ng thá» káº¿t ná»i Server!</div>`;
+                resultBox.innerHTML = `
+                    <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-center">
+                        <div class="text-red-400 font-bold mb-1">Lỗi Kết Nối Server</div>
+                        <div class="text-xs text-slate-400">Vui lòng kiểm tra lại đường truyền hoặc thử lại sau.</div>
+                    </div>`;
             }
 
             resultBox.classList.remove('hidden');
-            btn.disabled = false;
-            btn.innerHTML = '<i class="fa-solid fa-bolt"></i> KÃ & CÃ€I Äáº¶T';
+            
+            // Reset nút bấm
+            if(document.getElementById('manualPass').value === "") { // Nếu chưa nhập pass thì cho bấm lại
+                 btn.disabled = false;
+                 btn.innerHTML = '<span class="group-hover:tracking-wider transition-all">THỬ LẠI</span> <i class="fa-solid fa-rotate-right"></i>';
+                 btn.classList.remove('opacity-75', 'cursor-not-allowed');
+            } else {
+                 btn.disabled = false;
+                 btn.innerHTML = 'BẮT ĐẦU KÝ FILE <i class="fa-solid fa-arrow-right"></i>';
+                 btn.classList.remove('opacity-75', 'cursor-not-allowed');
+            }
         });
     </script>
 </body>
