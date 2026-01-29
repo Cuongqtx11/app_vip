@@ -18,6 +18,24 @@
     "lastSync": "2026-01-28T19:00:01.455Z"
   },
   {
+    "id": "ipa-com.zhiliaoapp.musically-43.6.1",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-01-2026/TikTok_43.6.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "43.6.1",
+    "developer": "khomodvip",
+    "date": "2026-01-29",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-01-29T00:00:02.189Z"
+  },
+  {
     "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0126.00",
     "type": "ipa",
     "name": "BrickOut",
