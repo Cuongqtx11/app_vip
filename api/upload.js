@@ -1,7 +1,4 @@
-// api/upload.js - Bản Fix An Toàn (Critical Fix)
-// 1. Khôi phục đúng đường dẫn cho từng loại file.
-// 2. THROW ERROR nếu không đọc được data cũ (Ngăn chặn mất dữ liệu).
-
+// api/upload.js - Phiên bản hỗ trợ FILE LỚN (Sử dụng Blob API)
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -10,36 +7,24 @@ export default async function handler(req, res) {
   try {
     const { type, data } = req.body;
 
-    // --- AUTH CHECK ---
+    // 1. AUTH CHECK
     const hasAuthCookie = req.headers.cookie && (
       req.headers.cookie.includes('admin_token') || 
       req.headers.cookie.includes('auth')
     );
     
     if (!hasAuthCookie) {
-      return res.status(401).json({ 
-        error: 'Chưa đăng nhập hoặc phiên hết hạn',
-        code: 'NO_AUTH_COOKIE'
-      });
+      return res.status(401).json({ error: 'Chưa đăng nhập', code: 'NO_AUTH_COOKIE' });
     }
 
-    // --- VALIDATE ---
-    const VALID_TYPES = ['ipa', 'dylib', 'conf', 'cert', 'mod', 'sign'];
-    if (!type || !data || !VALID_TYPES.includes(type)) {
-      return res.status(400).json({ error: 'Dữ liệu không hợp lệ' });
-    }
-
+    // 2. CONFIG
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
     const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
 
-    if (!GITHUB_TOKEN) {
-      return res.status(500).json({ error: 'Server thiếu GITHUB_TOKEN' });
-    }
+    if (!GITHUB_TOKEN) return res.status(500).json({ error: 'Thiếu GITHUB_TOKEN' });
 
-    // --- XÁC ĐỊNH ĐƯỜNG DẪN CHUẨN (Theo cấu trúc của bạn) ---
-    // Nhóm 1: ipa, dylib, conf -> public/data/
-    // Nhóm 2: cert, mod, sign -> public/pages/data/
+    // Xác định đường dẫn file
     let FILE_PATH;
     if (['cert', 'mod', 'sign'].includes(type)) {
         FILE_PATH = `public/pages/data/${type}.json`;
@@ -47,89 +32,89 @@ export default async function handler(req, res) {
         FILE_PATH = `public/data/${type}.json`;
     }
 
-    console.log(`🚀 Uploading ${type} to: ${FILE_PATH}`);
+    console.log(`🚀 Bắt đầu xử lý file lớn: ${FILE_PATH}`);
 
-    // --- LẤY DỮ LIỆU CŨ TỪ GITHUB ---
-    const fileUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+    // headers dùng chung
     const headers = {
       'Authorization': `token ${GITHUB_TOKEN}`,
       'Accept': 'application/vnd.github.v3+json',
-      'Content-Type': 'application/json'
+      'User-Agent': 'Vercel-Serverless-Function'
     };
 
-    const getResponse = await fetch(fileUrl, { headers });
-
+    // 3. BƯỚC 1: LẤY SHA CỦA FILE HIỆN TẠI (Metadata)
+    // API này chỉ lấy thông tin, không lấy nội dung nên rất nhẹ
+    const metaUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+    const metaRes = await fetch(metaUrl, { headers });
+    
     let currentData = [];
     let sha = null;
 
-    if (getResponse.ok) {
-      const fileData = await getResponse.json();
-      sha = fileData.sha;
+    if (metaRes.ok) {
+      const meta = await metaRes.json();
+      sha = meta.sha;
 
-      // 🛑 KIỂM TRA AN TOÀN: Nếu file có size > 0 mà không có content -> Lỗi API hoặc file quá lớn
-      if (!fileData.content && fileData.size > 0) {
-          throw new Error('GitHub API không trả về nội dung file (File quá lớn?). Dừng upload để bảo toàn dữ liệu.');
-      }
+      // 4. BƯỚC 2: DÙNG BLOB API ĐỂ TẢI NỘI DUNG (Hỗ trợ tới 100MB)
+      // Thay vì lấy content trực tiếp, ta lấy qua SHA blob
+      const blobUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/blobs/${sha}`;
+      const blobRes = await fetch(blobUrl, { headers });
 
-      try {
-        // Xử lý content base64 (loại bỏ xuống dòng nếu có)
-        const cleanContent = fileData.content ? fileData.content.replace(/\n/g, '') : '';
-        const decoded = Buffer.from(cleanContent, 'base64').toString('utf-8');
+      if (blobRes.ok) {
+        const blobData = await blobRes.json();
+        // GitHub Blob trả về base64, cần giải mã
+        const rawContent = Buffer.from(blobData.content, 'base64').toString('utf-8');
         
-        // Parse JSON
-        currentData = JSON.parse(decoded);
-
-        // Kiểm tra xem có phải Array không
-        if (!Array.isArray(currentData)) {
-            throw new Error('Dữ liệu cũ không phải là mảng (Array).');
+        try {
+          currentData = JSON.parse(rawContent);
+          if (!Array.isArray(currentData)) throw new Error('Not an array');
+        } catch (e) {
+          console.error('❌ Lỗi Parse JSON:', e.message);
+          // Nếu file lỗi nhưng ta muốn cứu vãn để ghi data mới, có thể để mảng rỗng
+          // Nhưng an toàn nhất là báo lỗi để bạn check file tay
+           return res.status(500).json({ 
+             error: 'File JSON hiện tại bị lỗi cú pháp, không thể đọc.', 
+             details: e.message 
+           });
         }
-
-      } catch (parseError) {
-        // 🛑 CRITICAL: NẾU PARSE LỖI -> DỪNG NGAY. KHÔNG ĐƯỢC GHI ĐÈ.
-        console.error('❌ Lỗi đọc dữ liệu cũ:', parseError);
-        return res.status(500).json({ 
-          error: 'KHÔNG THỂ ĐỌC DỮ LIỆU CŨ. Dừng lại để tránh mất file.',
-          details: 'File JSON trên GitHub bị lỗi cú pháp hoặc không đọc được. Vui lòng kiểm tra thủ công.'
-        });
       }
-
-    } else if (getResponse.status === 404) {
-      console.log('✨ File chưa tồn tại, tạo mới...');
-      currentData = []; // Chỉ tạo mới khi chắc chắn 404
+    } else if (metaRes.status === 404) {
+      console.log('✨ File mới, khởi tạo mảng rỗng');
+      currentData = [];
     } else {
-      const errText = await getResponse.text();
-      return res.status(500).json({ error: 'Lỗi kết nối GitHub', details: errText });
+       // Lỗi khác
+       const err = await metaRes.text();
+       return res.status(500).json({ error: 'Lỗi lấy metadata', details: err });
     }
 
-    // --- CẬP NHẬT DỮ LIỆU ---
+    // 5. THÊM DỮ LIỆU MỚI VÀO ĐẦU
     currentData.unshift(data);
 
-    // --- UPLOAD LẠI ---
+    // 6. GHI LẠI FILE (Upload)
+    // Upload vẫn dùng API contents cũ vì nó hỗ trợ ghi đè file lớn tốt
     const newContent = Buffer.from(JSON.stringify(currentData, null, 2)).toString('base64');
     const commitName = data.name || data.title || data.filename || 'Item';
 
-    const putBody = {
+    const updateBody = {
       message: `Update ${type}: ${commitName}`,
       content: newContent,
       branch: 'main'
     };
-    if (sha) putBody.sha = sha;
+    if (sha) updateBody.sha = sha;
 
-    const putRes = await fetch(fileUrl, {
+    const updateRes = await fetch(metaUrl, {
       method: 'PUT',
       headers,
-      body: JSON.stringify(putBody)
+      body: JSON.stringify(updateBody)
     });
 
-    if (!putRes.ok) {
-      const errText = await putRes.text();
-      return res.status(500).json({ error: 'Lỗi khi lưu file lên GitHub', details: errText });
+    if (!updateRes.ok) {
+      const errText = await updateRes.text();
+      return res.status(500).json({ error: 'Lỗi khi lưu file', details: errText });
     }
 
     return res.status(200).json({ 
       success: true, 
       path: FILE_PATH,
-      message: 'Cập nhật thành công!' 
+      message: 'Đã update thành công vào file lớn!' 
     });
 
   } catch (error) {
