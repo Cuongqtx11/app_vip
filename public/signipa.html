@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KÃ½ IPA Online - VIP Tools</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body { padding-bottom: 80px; }
+        .upload-zone {
+            background: var(--card-bg-light); border: 2px dashed var(--primary);
+            border-radius: 20px; padding: 40px 20px; text-align: center;
+            margin: 30px auto; max-width: 600px; cursor: pointer; transition: 0.3s;
+        }
+        body.dark .upload-zone { background: var(--card-bg-dark); }
+        .upload-zone:hover { background: rgba(139, 92, 246, 0.05); }
+
+        .app-selection {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px; max-width: 600px; margin: 0 auto 30px;
+        }
+        .app-option {
+            background: var(--card-bg-light); border: 2px solid var(--border-light);
+            border-radius: 16px; padding: 15px; text-align: center; cursor: pointer; position: relative;
+        }
+        body.dark .app-option { background: var(--card-bg-dark); border-color: var(--border-dark); }
+        .app-option.selected { border-color: var(--primary); background: rgba(139, 92, 246, 0.1); }
+        .app-option img { width: 60px; height: 60px; border-radius: 14px; margin-bottom: 10px; object-fit: cover; }
+        
+        .status-log {
+            max-width: 600px; margin: 20px auto; background: #1e293b; color: #10b981;
+            font-family: monospace; padding: 15px; border-radius: 12px; display: none;
+        }
+        .install-btn {
+            display: none; background: #10b981; color: white; padding: 15px 40px;
+            border-radius: 50px; border: none; font-weight: bold; margin: 20px auto; cursor: pointer; width: 100%; max-width: 300px;
+            font-size: 1.1em; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-content"><a href="/" id="site-title">VIP Tools</a></div>
+        <button id="toggle-mode">ð</button>
+    </header>
+
+    <div class="pricing-header" style="margin-top: 80px;">
+        <h1>KÃ½ IPA Tá»c Äá» Cao</h1>
+        <p>Server riÃªng táº¡i VN - Tá»± xÃ³a file sau 10p</p>
+    </div>
+
+    <div class="pricing-container" style="display: block; padding: 20px;">
+        
+        <h3 style="text-align: center; color: var(--primary); margin-bottom: 15px;">1. Chá»n á»¨ng Dá»¥ng</h3>
+        <div class="app-selection">
+            <div class="app-option selected" onclick="selectApp('esign')">
+                <img src="https://vn-z.vn/attachments/esign-png.56456/" alt="ESign"><h4>ESign</h4>
+            </div>
+            <div class="app-option" onclick="selectApp('gbox')">
+                <img src="https://gbox.run/icon.png" alt="GBox"><h4>GBox</h4>
+            </div>
+            <div class="app-option" onclick="selectApp('scarlet')">
+                <img src="https://resources.usescarlet.com/icon.png" alt="Scarlet"><h4>Scarlet</h4>
+            </div>
+            <div class="app-option" onclick="selectApp('feather')">
+                <img src="https://github.com/khcrysalis/Feather/raw/main/App/Assets/AppIcon.png" alt="Feather"><h4>Feather</h4>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: var(--primary);">2. Upload Chá»©ng Chá» (.zip)</h3>
+        <div class="upload-zone" onclick="document.getElementById('cert-input').click()">
+            <input type="file" id="cert-input" accept=".zip" onchange="handleFileSelect(this)" style="display: none;">
+            <div id="upload-text">
+                <span style="font-size: 40px;">ð</span><br>
+                <strong>Nháº¥n Äá» chá»n file .zip</strong><br>
+                <span style="font-size: 0.85em; opacity: 0.7;">Tá»± giáº£i nÃ©n & tÃ¬m máº­t kháº©u</span>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <input type="text" id="cert-pass" placeholder="Máº­t kháº©u (Äá» trá»ng Äá» tá»± tÃ¬m)..." 
+                   style="padding: 12px; width: 100%; max-width: 300px; border-radius: 12px; border: 1px solid #ccc; background: var(--bg-light); color: var(--text-light);">
+            <br><br>
+            <button class="plan-btn" id="sign-btn" onclick="startSigning()" style="max-width: 300px; background: var(--primary); color: white;">
+                Báº®T Äáº¦U KÃ NGAY
+            </button>
+        </div>
+
+        <div class="status-log" id="log-area"></div>
+        <div style="text-align: center;">
+            <button class="install-btn" id="install-btn">ð² CÃ€I Äáº¶T NGAY</button>
+            <p id="timer-msg" style="display:none; color: #ef4444; font-size: 0.8em; margin-top: 10px;">â ï¸ Link sáº½ háº¿t háº¡n sau 10 phÃºt!</p>
+        </div>
+    </div>
+
+    <script>
+        const PI_API = "https://api.p12.vn"; 
+        let selectedApp = 'esign';
+        let selectedFile = null;
+
+        function selectApp(name) {
+            selectedApp = name;
+            document.querySelectorAll('.app-option').forEach(el => el.classList.remove('selected'));
+            event.currentTarget.classList.add('selected');
+        }
+
+        function handleFileSelect(input) {
+            if (input.files[0]) {
+                selectedFile = input.files[0];
+                document.getElementById('upload-text').innerHTML = `â <strong>${selectedFile.name}</strong>`;
+            }
+        }
+
+        function log(msg, isError = false) {
+            const el = document.getElementById('log-area');
+            el.style.display = 'block';
+            el.innerHTML += `<div style="color: ${isError ? '#ef4444' : '#10b981'}">> ${msg}</div>`;
+        }
+
+        async function startSigning() {
+            if (!selectedFile) return alert('Vui lÃ²ng chá»n file Zip!');
+            
+            const btn = document.getElementById('sign-btn');
+            btn.disabled = true; btn.innerText = 'Äang xá»­ lÃ½...';
+            document.getElementById('log-area').innerHTML = '';
+            document.getElementById('install-btn').style.display = 'none';
+            document.getElementById('timer-msg').style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('cert', selectedFile);
+            formData.append('app', selectedApp);
+            formData.append('password', document.getElementById('cert-pass').value);
+
+            log('Äang káº¿t ná»i Server... (Láº§n Äáº§u cÃ³ thá» máº¥t 30s Äá» táº£i App gá»c)');
+
+            try {
+                const res = await fetch(`${PI_API}/sign`, { method: 'POST', body: formData });
+                const data = await res.json();
+
+                if (data.success) {
+                    log(`â Máº­t kháº©u: ${data.password}`);
+                    log('â KÃ½ thÃ nh cÃ´ng!');
+                    document.getElementById('cert-pass').value = data.password;
+                    
+                    const installBtn = document.getElementById('install-btn');
+                    installBtn.style.display = 'inline-block';
+                    installBtn.onclick = () => window.location.href = data.installUrl;
+                    document.getElementById('timer-msg').style.display = 'block';
+                    
+                    btn.innerText = 'KÃ½ Láº¡i';
+                } else {
+                    log(`â Lá»i: ${data.message}`, true);
+                    btn.innerText = 'Thá»­ Láº¡i';
+                }
+            } catch (err) {
+                log(`â Lá»i káº¿t ná»i: ${err.message}`, true);
+            } finally {
+                btn.disabled = false;
+            }
+        }
+        
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.classList.add('dark');
+    </script>
+</body>
+</html>
