@@ -216,6 +216,60 @@
     "lastSync": "2026-01-29T08:00:01.500Z"
   },
   {
+    "id": "ipa-eu.gowod-5.5.2",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-01-2026/GOWOD_5.5.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.2",
+    "developer": "khomodvip",
+    "date": "2026-01-29",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2026-01-29T09:00:01.550Z"
+  },
+  {
+    "id": "ipa-com.macpaw.iosgemini-2.12.0",
+    "type": "ipa",
+    "name": "CleanMyPhone",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.macpaw.iosgemini.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-01-2026/CleanMyPhone_2.12.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.12.0",
+    "developer": "khomodvip",
+    "date": "2026-01-29",
+    "source": "apptesters",
+    "bundleID": "com.macpaw.iosgemini",
+    "lastSync": "2026-01-29T09:00:01.550Z"
+  },
+  {
+    "id": "ipa-uk.co.leeus.planefinderfree-2026.1.3",
+    "type": "ipa",
+    "name": "PlaneFinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uk.co.leeus.planefinderfree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-01-2026/PlaneFinder_2026.1.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.3",
+    "developer": "khomodvip",
+    "date": "2026-01-29",
+    "source": "apptesters",
+    "bundleID": "uk.co.leeus.planefinderfree",
+    "lastSync": "2026-01-29T09:00:01.552Z"
+  },
+  {
     "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0126.00",
     "type": "ipa",
     "name": "BrickOut",
