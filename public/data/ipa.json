@@ -1,50 +1,5 @@
 [
   {
-    "id": "ipa-1769661576747",
-    "type": "ipa",
-    "date": "2026-01-29",
-    "name": "GTA Vice City",
-    "icon": "https://taigtavicecity.com/wp-content/uploads/2025/02/Download-GTA-Vice-City-Viet-Hoa-Full-Huong-dan-cai-dat-chi-tiet-1.png",
-    "desc": "phiên bản free bản phí trên appstore và đã được Việt hoá 🇻🇳",
-    "version": "1",
-    "developer": "khomodvip",
-    "tags": [
-      "game"
-    ],
-    "badge": "trending",
-    "fileLink": "https://www.mediafire.com/file/a7cs0ana7gkz78o/GTA+Vice+City+Việt+Hoá.ipa/file"
-  },
-  {
-    "id": "ipa-1769661425344",
-    "type": "ipa",
-    "date": "2026-01-29",
-    "name": "Liên Quân Indo",
-    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRhlylC2nZ2dV2MYxu_8OKuKe5j1M85SivsZYDXvWsaL8bE4L6i162ww&s=10",
-    "desc": "hack map chấp tố sever indonesia",
-    "version": "0.0.1",
-    "developer": "khomodvip",
-    "tags": [
-      "game"
-    ],
-    "badge": "trending",
-    "fileLink": "https://www.mediafire.com/file/vqce43tx80y621f/Arena+of+Valor_1.61.11561513_1768465514.ipa/file"
-  },
-  {
-    "id": "ipa-1769657738977",
-    "type": "ipa",
-    "date": "2026-01-29",
-    "name": "Phim 4K",
-    "icon": "https://voz.vn/proxy.php?image=https%3A%2F%2Fcdn5.telesco.pe%2Ffile%2FVDrvzSfGVfdFH6GCyXRQb_4GLcNq3-Yc9Y8n_qMU56e_TiqFHzLUC6i70lIjd7HqdkrNh4oQGtHvRydxioeMdOI7lGhR6MGVIV3iwTtPV05bkGSglRhl_gwuYVCqFeHfVtqwXkS3s89O8YEGjrcLyhjbZkhHsqzj8JwXUELqu-ZAi8FYedwT2PU0km6cw1V9ZLRE6ZCiysegqaAi_rsIcTm2WtzUQj_h0Rbp13miERVlue0JwJO0bf0yg2HPRibGYLvovliW_QcqnVIsft9VSBhNt3sry6_t2RjmHKE9bHxWyBJs1E9Ovj7Gj547xJZ8wgwGJFJ4iO0pXG9PBNfc1Q.jpg&hash=d14bf8b03dcdadcde67e17779008be5e&return_error=1",
-    "desc": "app xem phim 4k chất lượng cao, tương tự rổ phim và không bị chặn vùng quốc gia, kho phim lậu, phim chiếu rạp,…",
-    "version": "1.9.7",
-    "developer": "",
-    "tags": [
-      "photo/video"
-    ],
-    "badge": "hot",
-    "fileLink": "https://www.mediafire.com/file/llyql73ihjhrs9w/Phim+4K_1.9.7.ipa/file"
-  },
-  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
@@ -97,6 +52,24 @@
     "source": "apptesters",
     "bundleID": "com.fujixweekly.fujixweeklyrecipes",
     "lastSync": "2026-01-29T02:00:01.305Z"
+  },
+  {
+    "id": "ipa-com.ahmetserdarkaradeniz.Phocus-3.1.0",
+    "type": "ipa",
+    "name": "Phocus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ahmetserdarkaradeniz.Phocus.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/29-01-2026/Phocus_3.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.0",
+    "developer": "khomodvip",
+    "date": "2026-01-29",
+    "source": "apptesters",
+    "bundleID": "com.ahmetserdarkaradeniz.Phocus",
+    "lastSync": "2026-01-29T07:00:01.629Z"
   },
   {
     "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0126.00",
@@ -34186,6 +34159,51 @@
     "version": "18.0.2",
     "developer": "cuios.shop",
     "date": "2025-11-28"
+  },
+  {
+    "id": "ipa-1769661576747",
+    "type": "ipa",
+    "date": "2026-01-29",
+    "name": "GTA Vice City",
+    "icon": "https://taigtavicecity.com/wp-content/uploads/2025/02/Download-GTA-Vice-City-Viet-Hoa-Full-Huong-dan-cai-dat-chi-tiet-1.png",
+    "desc": "phiên bản free bản phí trên appstore và đã được Việt hoá 🇻🇳",
+    "version": "1",
+    "developer": "khomodvip",
+    "tags": [
+      "game"
+    ],
+    "badge": "trending",
+    "fileLink": "https://www.mediafire.com/file/a7cs0ana7gkz78o/GTA+Vice+City+Việt+Hoá.ipa/file"
+  },
+  {
+    "id": "ipa-1769661425344",
+    "type": "ipa",
+    "date": "2026-01-29",
+    "name": "Liên Quân Indo",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRhlylC2nZ2dV2MYxu_8OKuKe5j1M85SivsZYDXvWsaL8bE4L6i162ww&s=10",
+    "desc": "hack map chấp tố sever indonesia",
+    "version": "0.0.1",
+    "developer": "khomodvip",
+    "tags": [
+      "game"
+    ],
+    "badge": "trending",
+    "fileLink": "https://www.mediafire.com/file/vqce43tx80y621f/Arena+of+Valor_1.61.11561513_1768465514.ipa/file"
+  },
+  {
+    "id": "ipa-1769657738977",
+    "type": "ipa",
+    "date": "2026-01-29",
+    "name": "Phim 4K",
+    "icon": "https://voz.vn/proxy.php?image=https%3A%2F%2Fcdn5.telesco.pe%2Ffile%2FVDrvzSfGVfdFH6GCyXRQb_4GLcNq3-Yc9Y8n_qMU56e_TiqFHzLUC6i70lIjd7HqdkrNh4oQGtHvRydxioeMdOI7lGhR6MGVIV3iwTtPV05bkGSglRhl_gwuYVCqFeHfVtqwXkS3s89O8YEGjrcLyhjbZkhHsqzj8JwXUELqu-ZAi8FYedwT2PU0km6cw1V9ZLRE6ZCiysegqaAi_rsIcTm2WtzUQj_h0Rbp13miERVlue0JwJO0bf0yg2HPRibGYLvovliW_QcqnVIsft9VSBhNt3sry6_t2RjmHKE9bHxWyBJs1E9Ovj7Gj547xJZ8wgwGJFJ4iO0pXG9PBNfc1Q.jpg&hash=d14bf8b03dcdadcde67e17779008be5e&return_error=1",
+    "desc": "app xem phim 4k chất lượng cao, tương tự rổ phim và không bị chặn vùng quốc gia, kho phim lậu, phim chiếu rạp,…",
+    "version": "1.9.7",
+    "developer": "",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "hot",
+    "fileLink": "https://www.mediafire.com/file/llyql73ihjhrs9w/Phim+4K_1.9.7.ipa/file"
   },
   {
     "id": "ipa-1764899504109",
