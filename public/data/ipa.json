@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1769657738977",
+    "type": "ipa",
+    "date": "2026-01-29",
+    "name": "Phim 4K",
+    "icon": "https://voz.vn/proxy.php?image=https%3A%2F%2Fcdn5.telesco.pe%2Ffile%2FVDrvzSfGVfdFH6GCyXRQb_4GLcNq3-Yc9Y8n_qMU56e_TiqFHzLUC6i70lIjd7HqdkrNh4oQGtHvRydxioeMdOI7lGhR6MGVIV3iwTtPV05bkGSglRhl_gwuYVCqFeHfVtqwXkS3s89O8YEGjrcLyhjbZkhHsqzj8JwXUELqu-ZAi8FYedwT2PU0km6cw1V9ZLRE6ZCiysegqaAi_rsIcTm2WtzUQj_h0Rbp13miERVlue0JwJO0bf0yg2HPRibGYLvovliW_QcqnVIsft9VSBhNt3sry6_t2RjmHKE9bHxWyBJs1E9Ovj7Gj547xJZ8wgwGJFJ4iO0pXG9PBNfc1Q.jpg&hash=d14bf8b03dcdadcde67e17779008be5e&return_error=1",
+    "desc": "app xem phim 4k chất lượng cao, tương tự rổ phim và không bị chặn vùng quốc gia, kho phim lậu, phim chiếu rạp,…",
+    "version": "1.9.7",
+    "developer": "",
+    "tags": [
+      "photo/video"
+    ],
+    "badge": "hot",
+    "fileLink": "https://www.mediafire.com/file/llyql73ihjhrs9w/Phim+4K_1.9.7.ipa/file"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
