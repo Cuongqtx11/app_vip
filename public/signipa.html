@@ -3,67 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP SIGNER AUTO</title>
+    <title>VIP SIGNER - HACKMODVIP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body { background-color: #0f172a; color: white; font-family: 'Segoe UI', sans-serif; }
-        .neon-box { border: 1px solid rgba(139, 92, 246, 0.5); transition: all 0.3s ease; }
-        .neon-box:hover, .selected-app { box-shadow: 0 0 20px rgba(139, 92, 246, 0.6); border-color: #8b5cf6; background-color: rgba(139, 92, 246, 0.1); }
-        .btn-grad { background-image: linear-gradient(to right, #8b5cf6 0%, #3b82f6 51%, #8b5cf6 100%); transition: 0.5s; background-size: 200% auto; }
+        .neon-box { border: 1px solid #334155; transition: all 0.2s; }
+        .neon-box:hover, .selected-app { 
+            border-color: #8b5cf6; 
+            background-color: rgba(139, 92, 246, 0.1); 
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+        }
+        .btn-grad { background-image: linear-gradient(to right, #8b5cf6 0%, #3b82f6 51%, #8b5cf6 100%); background-size: 200% auto; transition: 0.5s; }
         .btn-grad:hover { background-position: right center; }
     </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4">
 
-    <div class="w-full max-w-md space-y-6">
-        <div class="text-center mb-6">
-            <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">AUTO SIGNER</h1>
-            <p class="text-gray-400 text-sm">Tự động nhận diện mật khẩu & Ký siêu tốc</p>
+    <div class="w-full max-w-md space-y-5">
+        
+        <div class="text-center">
+            <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">VIP SIGNER</h1>
+            <p class="text-gray-400 text-xs mt-1">Hệ thống ký IPA tự động by Hackmodvip</p>
         </div>
 
-        <div class="grid grid-cols-2 gap-4">
-            <div onclick="selectApp('esign', this)" class="neon-box selected-app p-4 rounded-xl cursor-pointer text-center bg-slate-800">
-                <i class="fa-solid fa-bolt text-3xl text-yellow-400 mb-2"></i><div class="font-bold">ESign</div>
+        <div class="grid grid-cols-2 gap-3">
+            <div onclick="selectApp('esign', this)" class="neon-box selected-app p-3 rounded-xl cursor-pointer text-center bg-slate-800">
+                <i class="fa-solid fa-bolt text-2xl text-yellow-400 mb-1"></i>
+                <div class="font-bold text-sm">ESign</div>
             </div>
-            <div onclick="selectApp('scarlet', this)" class="neon-box p-4 rounded-xl cursor-pointer text-center bg-slate-800">
-                <i class="fa-solid fa-droplet text-3xl text-red-500 mb-2"></i><div class="font-bold">Scarlet</div>
+            <div onclick="selectApp('scarlet', this)" class="neon-box p-3 rounded-xl cursor-pointer text-center bg-slate-800">
+                <i class="fa-solid fa-droplet text-2xl text-red-500 mb-1"></i>
+                <div class="font-bold text-sm">Scarlet</div>
+            </div>
+            <div onclick="selectApp('gbox', this)" class="neon-box p-3 rounded-xl cursor-pointer text-center bg-slate-800">
+                <i class="fa-solid fa-box-open text-2xl text-green-400 mb-1"></i>
+                <div class="font-bold text-sm">GBox</div>
+            </div>
+            <div onclick="selectApp('feather', this)" class="neon-box p-3 rounded-xl cursor-pointer text-center bg-slate-800">
+                <i class="fa-solid fa-feather-pointed text-2xl text-blue-400 mb-1"></i>
+                <div class="font-bold text-sm">Feather</div>
             </div>
         </div>
         <input type="hidden" id="selectedAppName" value="esign">
 
-        <label class="neon-box flex flex-col items-center p-8 rounded-xl bg-slate-800 cursor-pointer border-dashed border-2 border-slate-600 hover:border-purple-500">
-            <i class="fa-solid fa-cloud-arrow-up text-4xl text-gray-400 mb-2"></i>
+        <label class="neon-box flex flex-col items-center p-6 rounded-xl bg-slate-800 cursor-pointer border-dashed border-2 border-slate-600">
+            <i class="fa-solid fa-cloud-arrow-up text-3xl text-gray-400 mb-2"></i>
             <span id="fileName" class="text-sm text-gray-400">Chọn file .zip chứng chỉ</span>
             <input type="file" id="certFile" accept=".zip" class="hidden" onchange="handleFile(this)">
         </label>
 
-        <div id="passwordArea" class="hidden space-y-2 animate-bounce">
-            <label class="text-red-400 font-bold text-sm"><i class="fa-solid fa-lock mr-1"></i> Không tìm thấy pass, vui lòng nhập:</label>
-            <input type="text" id="p12Password" placeholder="Nhập mật khẩu P12..." class="w-full bg-slate-900 border border-red-500 text-white rounded-lg p-3">
+        <div id="passwordArea" class="hidden animate-bounce">
+            <label class="text-red-400 font-bold text-xs ml-1">⚠️ Không tìm thấy pass, vui lòng nhập:</label>
+            <input type="text" id="p12Password" placeholder="Nhập mật khẩu P12..." class="w-full mt-1 bg-slate-900 border border-red-500 text-white rounded-lg p-3 focus:outline-none">
         </div>
 
-        <button onclick="startSigning()" id="signBtn" class="btn-grad w-full p-4 rounded-xl font-bold text-white shadow-lg text-lg">
+        <button onclick="startSigning()" id="signBtn" class="btn-grad w-full p-3 rounded-xl font-bold text-white shadow-lg">
             <i class="fa-solid fa-signature mr-2"></i> BẮT ĐẦU KÝ
         </button>
 
-        <div id="statusArea" class="hidden bg-slate-900 rounded-xl p-4 border border-slate-700 mt-4">
-            <div id="loadingState" class="hidden flex items-center space-x-3 text-yellow-400">
-                <i class="fa-solid fa-circle-notch fa-spin text-2xl"></i>
-                <span class="font-bold">Đang giải nén & Tìm mật khẩu...</span>
+        <div id="statusArea" class="hidden bg-slate-900 rounded-xl p-4 border border-slate-700">
+            
+            <div id="loadingState" class="hidden flex items-center justify-center space-x-3 text-yellow-400">
+                <i class="fa-solid fa-circle-notch fa-spin text-xl"></i>
+                <span class="font-bold text-sm">Đang tải & Ký (Đợi xíu)...</span>
             </div>
+
             <div id="successState" class="hidden text-center space-y-3">
                 <div class="text-green-400 font-bold text-lg">✅ KÝ THÀNH CÔNG!</div>
-                <a id="installLink" href="#" class="block w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl shadow-lg">
+                
+                <a id="installLink" href="#" class="block w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl shadow-lg transition transform active:scale-95">
                     📲 CÀI ĐẶT NGAY
                 </a>
-                <p class="text-xs text-gray-500">Link tự hủy sau 5 phút</p>
+                <p class="text-xs text-gray-500">Link hết hạn sau 5 phút</p>
             </div>
-            <div id="errorState" class="hidden text-red-500 font-bold text-center"></div>
+
+            <div id="errorState" class="hidden text-red-500 font-bold text-center text-sm"></div>
         </div>
     </div>
 
     <script>
+        // CẤU HÌNH DOMAIN API
         const API_URL = "https://api.p12.vn"; 
 
         function selectApp(name, el) {
@@ -82,20 +102,21 @@
             const btn = document.getElementById('signBtn');
             const statusArea = document.getElementById('statusArea');
 
-            if (!fileInput.files[0]) return alert("Chưa chọn file Zip!");
+            if (!fileInput.files[0]) return alert("Vui lòng chọn file Zip chứng chỉ!");
 
-            // UI Reset
+            // Reset UI
             btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Đang xử lý...';
             btn.classList.add('opacity-50');
             statusArea.classList.remove('hidden');
             document.getElementById('loadingState').classList.remove('hidden');
             document.getElementById('successState').classList.add('hidden');
             document.getElementById('errorState').classList.add('hidden');
+            document.getElementById('passwordArea').classList.add('hidden');
 
             const formData = new FormData();
             formData.append('cert', fileInput.files[0]);
             formData.append('app_name', document.getElementById('selectedAppName').value);
-            // Gửi pass (có thể rỗng nếu lần đầu)
             formData.append('password', passwordInput.value); 
 
             try {
@@ -105,29 +126,37 @@
                 document.getElementById('loadingState').classList.add('hidden');
 
                 if (data.success) {
-                    // Thành công
+                    // --- THÀNH CÔNG ---
                     document.getElementById('successState').classList.remove('hidden');
-                    document.getElementById('installLink').href = data.install_url;
-                    document.getElementById('passwordArea').classList.add('hidden'); // Ẩn lại nếu hiện
-                } else if (data.require_pass) {
-                    // Trường hợp server bó tay, đòi pass
-                    document.getElementById('errorState').classList.remove('hidden');
-                    document.getElementById('errorState').innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> ${data.message}`;
+                    // Quan trọng: Gán link vào nút
+                    const installBtn = document.getElementById('installLink');
+                    installBtn.href = data.install_url;
                     
-                    // HIỆN Ô NHẬP PASS
+                    // Fix lỗi click không ăn trên một số trình duyệt
+                    installBtn.onclick = function() {
+                        window.location.href = data.install_url;
+                    };
+
+                } else if (data.require_pass) {
+                    // --- CẦN PASS ---
+                    document.getElementById('errorState').classList.remove('hidden');
+                    document.getElementById('errorState').innerText = "⚠️ " + data.message;
                     document.getElementById('passwordArea').classList.remove('hidden');
                     passwordInput.focus();
                 } else {
-                    // Lỗi khác (File hỏng, sai pass...)
+                    // --- LỖI KHÁC ---
                     document.getElementById('errorState').classList.remove('hidden');
-                    document.getElementById('errorState').innerText = data.message;
+                    document.getElementById('errorState').innerHTML = `❌ ${data.message}`;
                 }
+
             } catch (e) {
                 document.getElementById('loadingState').classList.add('hidden');
                 document.getElementById('errorState').classList.remove('hidden');
-                document.getElementById('errorState').innerText = "Lỗi kết nối Server!";
+                document.getElementById('errorState').innerText = "Lỗi kết nối Server! Kiểm tra lại mạng.";
+                console.error(e);
             } finally {
                 btn.disabled = false;
+                btn.innerHTML = '<i class="fa-solid fa-signature mr-2"></i> BẮT ĐẦU KÝ';
                 btn.classList.remove('opacity-50');
             }
         }
