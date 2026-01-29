@@ -309,7 +309,7 @@
         if(url) document.getElementById('preview-icon').src = url;
     }
 
-    // === SUBMIT LOGIC ===
+    // === SUBMIT LOGIC (ĐÃ CẬP NHẬT) ===
     async function submitForm() {
         const type = document.getElementById('currentType').value;
         const name = document.getElementById('inp-name').value.trim();
@@ -321,12 +321,13 @@
         
         // Get Badge
         const badgeEl = document.querySelector('input[name="badge"]:checked');
-        const badge = badgeEl ? badgeEl.value : null;
+        const badge = badgeEl ? badgeEl.value : '';
 
         // Get Tags
         const tags = [];
         document.querySelectorAll('input[name="tags"]:checked').forEach(c => tags.push(c.value));
 
+        // Validate cơ bản
         if(!name || !link) {
             alert('⚠️ Vui lòng nhập ít nhất Tên và Link tải!');
             return;
@@ -335,9 +336,12 @@
         const btn = document.getElementById('submitBtn');
         const msg = document.getElementById('uploadMsg');
         
+        // UI Loading
         btn.disabled = true;
+        const originBtnContent = btn.innerHTML;
         btn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Đang xử lý...';
         lucide.createIcons();
+        msg.textContent = '';
 
         // Construct Data Object based on Type
         let appData = {
@@ -356,33 +360,30 @@
             appData.badge = badge;
             if (type === 'conf') appData.link = link; 
             else appData.fileLink = link;
-            if (type === 'conf') appData.usage = desc; // Conf usually uses desc as usage
+            if (type === 'conf') appData.usage = desc; 
         } 
         else if (type === 'cert') {
-            // Mapping for cert.json
             appData.filename = name;
-            appData.check = version || '🟢 Good'; // Version input is Check status
-            appData.certname = extra || 'Unknown'; // Extra input is Cert Name
-            appData.size = desc; // Use Description input for file format/size text
+            appData.check = version || '🟢 Good'; 
+            appData.certname = extra || 'Unknown'; 
+            appData.size = desc; 
             appData.downloadUrl = link;
             appData.iconUrl = icon;
             appData.tag = badge ? badge.toUpperCase() : 'NEW';
         } 
         else if (type === 'mod') {
-            // Mapping for mod.json
             appData.title = name;
             appData.version = version;
-            appData.description = desc; // Fix: Ensure description is passed
+            appData.description = desc; 
             appData.downloadUrl = link;
             appData.iconUrl = icon;
-            appData.tag = extra || badge; // Use extra input for Tag (e.g. Gold)
+            appData.tag = extra || badge || 'MOD'; 
         } 
         else if (type === 'sign') {
-            // Mapping for sign.json
             appData.title = name;
             appData.description = desc;
-            appData.size = version; // Version input is Size
-            appData.date = extra || appData.date; // Use extra input for Date override
+            appData.size = version; 
+            appData.date = extra || appData.date; 
             appData.downloadUrl = link;
             appData.iconUrl = icon;
             appData.tag = badge ? badge.toUpperCase() : 'NEW';
@@ -394,15 +395,21 @@
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({ type, data: appData })
             });
-            const result = await res.json();
+            
+            let result;
+            try {
+                result = await res.json();
+            } catch (jsonErr) {
+                throw new Error('Server trả về dữ liệu không hợp lệ.');
+            }
 
             if(res.ok) {
-                msg.textContent = '✅ Upload thành công!';
+                msg.innerHTML = `✅ Upload thành công!<br><span class="text-xs font-normal text-gray-500">Path: ${result.path}</span>`;
                 msg.className = 'mt-4 text-center text-sm font-bold text-green-500';
                 setTimeout(() => { 
                     msg.textContent = ''; 
                     resetForm();
-                }, 2000);
+                }, 3000);
             } else {
                 if(result.code === 'NO_AUTH_COOKIE') {
                     msg.textContent = '⚠️ Hết phiên đăng nhập. Vui lòng đăng nhập lại.';
@@ -413,11 +420,12 @@
                 msg.className = 'mt-4 text-center text-sm font-bold text-red-500';
             }
         } catch(e) {
+            console.error(e);
             msg.textContent = '❌ Lỗi kết nối: ' + e.message;
             msg.className = 'mt-4 text-center text-sm font-bold text-red-500';
         } finally {
             btn.disabled = false;
-            btn.innerHTML = '<i data-lucide="upload-cloud" class="w-5 h-5"></i> Đăng Tải';
+            btn.innerHTML = originBtnContent;
             lucide.createIcons();
         }
     }
