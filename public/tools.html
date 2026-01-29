@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPA Signer VIP - P12.VN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #0f172a; overflow-x: hidden; }
+        
+        /* Glassmorphism */
+        .glass-box {
+            background: rgba(30, 41, 59, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        /* App Card Selection */
+        .app-card { transition: all 0.3s ease; border: 1px solid transparent; }
+        .app-card:hover { transform: translateY(-2px); background: rgba(255,255,255,0.05); }
+        .peer:checked + .app-card {
+            border-color: #38bdf8;
+            background: rgba(56, 189, 248, 0.15);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+        }
+        
+        .blob { position: absolute; border-radius: 50%; filter: blur(80px); z-index: -1; opacity: 0.4; }
+        .blob-1 { top: -10%; left: -10%; width: 300px; height: 300px; background: #38bdf8; }
+        .blob-2 { bottom: -10%; right: -10%; width: 300px; height: 300px; background: #818cf8; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 relative">
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="w-full max-w-lg glass-box rounded-2xl p-6 md:p-8 animate-fade-in-up">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400 mb-2">
+                IPA SIGNER <span class="text-xs bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded border border-sky-500/30">VIP</span>
+            </h1>
+            <p class="text-slate-400 text-sm">Há» thá»ng kÃ½ tá»± Äá»ng - Server Pi 4</p>
+        </div>
+
+        <form id="signerForm" class="space-y-6">
+            
+            <div>
+                <label class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 block">BÆ°á»c 1: Chá»n App</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <label class="cursor-pointer relative">
+                        <input type="radio" name="app" value="esign" checked class="peer hidden">
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
+                            <img src="https://esign.yyyue.xyz/ESignLogo200.png" class="w-10 h-10 rounded-lg shadow-sm">
+                            <div><div class="font-bold text-slate-200 text-sm">ESign</div><div class="text-[10px] text-slate-400">KhuyÃªn dÃ¹ng</div></div>
+                        </div>
+                    </label>
+                    <label class="cursor-pointer relative">
+                        <input type="radio" name="app" value="gbox" class="peer hidden">
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
+                            <img src="https://gbox.run/icon.png" class="w-10 h-10 rounded-lg shadow-sm">
+                            <div><div class="font-bold text-slate-200 text-sm">GBox</div><div class="text-[10px] text-slate-400">á»n Äá»nh</div></div>
+                        </div>
+                    </label>
+                    <label class="cursor-pointer relative">
+                        <input type="radio" name="app" value="scarlet" class="peer hidden">
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
+                            <img src="https://resources.usescarlet.com/icon.png" class="w-10 h-10 rounded-lg shadow-sm">
+                            <div><div class="font-bold text-slate-200 text-sm">Scarlet</div><div class="text-[10px] text-slate-400">Giao diá»n Äáº¹p</div></div>
+                        </div>
+                    </label>
+                    <label class="cursor-pointer relative">
+                        <input type="radio" name="app" value="feather" class="peer hidden">
+                        <div class="app-card rounded-xl p-3 flex items-center gap-3 bg-slate-800/50">
+                            <img src="https://github.com/khcrysalis/Feather/raw/main/Resources/AppIcon.png" class="w-10 h-10 rounded-lg shadow-sm">
+                            <div><div class="font-bold text-slate-200 text-sm">Feather</div><div class="text-[10px] text-slate-400">SiÃªu nháº¹</div></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 block">BÆ°á»c 2: Upload Zip</label>
+                <div class="relative group">
+                    <input type="file" id="zipFile" accept=".zip" required class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20" onchange="updateFile(this)">
+                    <div id="dropZone" class="border-2 border-dashed border-slate-600 rounded-xl h-24 flex flex-col items-center justify-center bg-slate-800/30 group-hover:border-sky-500 group-hover:bg-slate-800/50 transition-all">
+                        <i class="fa-solid fa-cloud-arrow-up text-2xl text-slate-400 mb-2 group-hover:text-sky-400 transition"></i>
+                        <span id="fileName" class="text-sm text-slate-300 font-medium">Cháº¡m Äá» chá»n file Zip</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="manualPassBox" class="hidden">
+                <div class="bg-orange-500/10 border border-orange-500/30 rounded-lg p-3">
+                    <label class="text-xs font-bold text-orange-400 mb-1 block"><i class="fa-solid fa-key mr-1"></i> Nháº­p máº­t kháº©u thá»§ cÃ´ng</label>
+                    <input type="text" id="manualPass" placeholder="VÃ­ dá»¥: 2026..." class="w-full bg-slate-900 border border-slate-700 rounded p-2 text-sm text-white focus:border-orange-500 outline-none">
+                </div>
+            </div>
+
+            <button type="submit" id="btnSubmit" class="w-full bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-bolt"></i> KÃ & CÃ€I Äáº¶T
+            </button>
+        </form>
+
+        <div id="resultBox" class="hidden mt-6 pt-6 border-t border-slate-700/50 text-center"></div>
+    </div>
+
+    <script>
+        // --- Cáº¤U HÃNH DOMAIN ---
+        const API_URL = "https://api.p12.vn"; // Domain Tunnel chÃ­nh thá»©c
+
+        function updateFile(input) {
+            const name = input.files[0] ? input.files[0].name : "Cháº¡m Äá» chá»n file Zip";
+            document.getElementById('fileName').innerText = name;
+            document.getElementById('fileName').classList.add('text-sky-400');
+            document.getElementById('dropZone').classList.add('border-sky-500', 'bg-slate-800/50');
+        }
+
+        document.getElementById('signerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('btnSubmit');
+            const resultBox = document.getElementById('resultBox');
+            const manualPassBox = document.getElementById('manualPassBox');
+            
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Äang xá»­ lÃ½...';
+            resultBox.classList.add('hidden');
+
+            const formData = new FormData();
+            formData.append('app', document.querySelector('input[name="app"]:checked').value);
+            formData.append('zip', document.getElementById('zipFile').files[0]);
+            const pass = document.getElementById('manualPass').value;
+            if(pass) formData.append('pass', pass);
+
+            try {
+                const res = await fetch(`${API_URL}/sign-zip`, { method: 'POST', body: formData });
+                const data = await res.json();
+
+                if(data.success) {
+                    manualPassBox.classList.add('hidden');
+                    resultBox.innerHTML = `
+                        <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 animate-bounce-in">
+                            <div class="text-green-400 font-bold text-lg mb-1"><i class="fa-solid fa-circle-check"></i> ThÃ nh CÃ´ng!</div>
+                            <div class="text-xs text-slate-400 mb-3">Pass: <span class="bg-slate-900 text-yellow-400 px-1 rounded font-mono">${data.pass_used}</span></div>
+                            <a href="${data.install_url}" class="block w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-lg shadow-lg transition-all">
+                                <i class="fa-brands fa-apple text-xl mr-1"></i> CÃ€I Äáº¶T
+                            </a>
+                        </div>`;
+                } else {
+                    if(data.code === 'NEED_PASS') {
+                        manualPassBox.classList.remove('hidden');
+                        document.getElementById('manualPass').focus();
+                        resultBox.innerHTML = `<div class="text-orange-400 text-sm font-bold">â ï¸ Nháº­p máº­t kháº©u thá»§ cÃ´ng.</div>`;
+                    } else {
+                        resultBox.innerHTML = `<div class="text-red-400 text-sm font-bold">â Lá»i: ${data.msg}</div>`;
+                    }
+                }
+            } catch(err) {
+                resultBox.innerHTML = `<div class="text-red-400 text-sm">KhÃ´ng thá» káº¿t ná»i Server!</div>`;
+            }
+
+            resultBox.classList.remove('hidden');
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fa-solid fa-bolt"></i> KÃ & CÃ€I Äáº¶T';
+        });
+    </script>
+</body>
+</html>
