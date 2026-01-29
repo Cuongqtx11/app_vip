@@ -36,6 +36,24 @@
     "lastSync": "2026-01-29T21:00:01.847Z"
   },
   {
+    "id": "ipa-com.photomyne.photomyneapplite-32.3",
+    "type": "ipa",
+    "name": "Photomyne",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photomyne.photomyneapplite.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/Photomyne_32.3_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "32.3",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "com.photomyne.photomyneapplite",
+    "lastSync": "2026-01-29T22:00:02.151Z"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
