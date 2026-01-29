@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.risesci.nyx-0.1.564",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/RiseSleep_0.1.564_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.564",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2026-01-29T20:00:01.797Z"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
