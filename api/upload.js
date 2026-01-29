@@ -1,6 +1,4 @@
-// api/upload.js - Vercel Serverless Function với auth ổn định
-// FIX: Sửa lỗi đường dẫn File (FILE_PATH) cho các loại cert, mod, sign
-
+// api/upload.js - Vercel Serverless Function (Đã sửa lỗi đường dẫn)
 export default async function handler(req, res) {
   // Chỉ cho phép POST request
   if (req.method !== 'POST') {
@@ -10,55 +8,50 @@ export default async function handler(req, res) {
   try {
     const { type, data } = req.body;
 
-    // 🔐 AUTH CHECK - NHẸ NHÀNG nhưng hiệu quả
+    // 1. AUTH CHECK - Kiểm tra đăng nhập
     const hasAuthCookie = req.headers.cookie && (
       req.headers.cookie.includes('admin_token') || 
       req.headers.cookie.includes('auth')
     );
     
     if (!hasAuthCookie) {
-      console.log('⚠️  No auth cookie found');
+      console.log('⚠️ No auth cookie found');
       return res.status(401).json({ 
-        error: 'Unauthorized - Please login first',
+        error: 'Chưa đăng nhập hoặc phiên đã hết hạn',
         code: 'NO_AUTH_COOKIE'
       });
     }
 
-    // Validate input: Đã thêm 'cert', 'mod', 'sign'
-    if (!type || !data || !['ipa', 'dylib', 'conf', 'cert', 'mod', 'sign'].includes(type)) {
-      return res.status(400).json({ error: 'Invalid request data' });
+    // 2. VALIDATE INPUT
+    const VALID_TYPES = ['ipa', 'dylib', 'conf', 'cert', 'mod', 'sign'];
+    if (!type || !data || !VALID_TYPES.includes(type)) {
+      return res.status(400).json({ error: 'Dữ liệu không hợp lệ (Invalid type or data)' });
     }
 
-    // GitHub configuration từ environment variables
+    // GitHub Config
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const GITHUB_OWNER = process.env.GITHUB_OWNER || 'Cuongqtx11';
     const GITHUB_REPO = process.env.GITHUB_REPO || 'app_vip';
     
-    // 🎯 FIX LỖI ĐƯỜNG DẪN: ĐỊNH DẠNG LẠI FILE_PATH DỰA TRÊN LOẠI UPLOAD
-    let FILE_PATH;
-    if (['cert', 'mod', 'sign'].includes(type)) {
-        // Dùng đường dẫn: public/pages/data/ cho các loại mới (theo sơ đồ chuẩn)
-        FILE_PATH = `public/pages/data/${type}.json`;
-    } else {
-        // Dùng đường dẫn: public/data/ cho các loại cũ (ipa, dylib, conf)
-        FILE_PATH = `public/data/${type}.json`;
-    }
+    // === FIX QUAN TRỌNG: QUY HOẠCH VỀ MỘT ĐƯỜNG DẪN DUY NHẤT ===
+    // Tất cả file json sẽ nằm ở public/data/ để App đọc được
+    const FILE_PATH = `public/data/${type}.json`;
 
     if (!GITHUB_TOKEN) {
-      return res.status(500).json({ error: 'GitHub token not configured' });
+      return res.status(500).json({ error: 'Server chưa cấu hình GITHUB_TOKEN' });
     }
 
-    console.log('📡 GitHub Config:', { GITHUB_OWNER, GITHUB_REPO, FILE_PATH });
+    console.log(`🚀 Bắt đầu upload: ${type} -> ${FILE_PATH}`);
 
-    // 1. Lấy nội dung file hiện tại từ GitHub
-    const getFileUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+    // 3. LẤY DỮ LIỆU CŨ TỪ GITHUB
+    const fileUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
+    const headers = {
+      'Authorization': `token ${GITHUB_TOKEN}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json' // Quan trọng cho PUT request
+    };
     
-    const getResponse = await fetch(getFileUrl, {
-      headers: {
-        'Authorization': `token ${GITHUB_TOKEN}`,
-        'Accept': 'application/vnd.github.v3+json'
-      }
-    });
+    const getResponse = await fetch(fileUrl, { headers });
 
     let currentData = [];
     let sha = null;
@@ -66,31 +59,37 @@ export default async function handler(req, res) {
     if (getResponse.ok) {
       const fileData = await getResponse.json();
       sha = fileData.sha;
-      const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
-      currentData = JSON.parse(content);
-      console.log('📄 Current data length:', currentData.length);
+      try {
+        const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
+        currentData = JSON.parse(content);
+        // Đảm bảo dữ liệu luôn là mảng
+        if (!Array.isArray(currentData)) currentData = [];
+      } catch (e) {
+        console.warn('⚠️ File json cũ bị lỗi format, sẽ tạo mới mảng rỗng.');
+        currentData = [];
+      }
     } else if (getResponse.status === 404) {
-      console.log('📄 File not found, will create new');
+      console.log('✨ File chưa tồn tại, sẽ tạo mới...');
     } else {
       const errorText = await getResponse.text();
-      console.error('❌ GitHub fetch error:', getResponse.status, errorText);
+      console.error('❌ GitHub GET error:', errorText);
       return res.status(500).json({ 
-        error: 'Failed to fetch from GitHub', 
+        error: 'Lỗi khi lấy dữ liệu từ GitHub', 
         details: errorText 
       });
     }
 
-    // 2. Thêm data mới vào ĐẦU MẢNG
+    // 4. THÊM DATA MỚI VÀO ĐẦU MẢNG
     currentData.unshift(data);
 
-    // 3. Cập nhật file lên GitHub
+    // 5. UPLOAD (PUT) LẠI LÊN GITHUB
     const newContent = Buffer.from(JSON.stringify(currentData, null, 2)).toString('base64');
     
-    // Dùng data.name, data.title, data.filename để linh hoạt tạo commit message
+    // Tạo commit message dễ đọc
     const commitName = data.name || data.title || data.filename || 'Untitled Item'; 
     
     const updatePayload = {
-      message: `Add new ${type}: ${commitName}`,
+      message: `Update ${type}: ${commitName}`,
       content: newContent,
       branch: 'main'
     };
@@ -99,37 +98,33 @@ export default async function handler(req, res) {
       updatePayload.sha = sha;
     }
 
-    console.log('📤 Uploading to GitHub...');
-    const updateResponse = await fetch(getFileUrl, {
+    const updateResponse = await fetch(fileUrl, {
       method: 'PUT',
-      headers: {
-        'Authorization': `token ${GITHUB_TOKEN}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
-      },
+      headers, // Dùng lại headers đã khai báo ở trên
       body: JSON.stringify(updatePayload)
     });
 
     if (!updateResponse.ok) {
       const errorText = await updateResponse.text();
-      console.error('❌ GitHub upload error:', updateResponse.status, errorText);
+      console.error('❌ GitHub PUT error:', errorText);
       return res.status(500).json({ 
-        error: 'Failed to update GitHub', 
+        error: 'Lỗi khi ghi dữ liệu lên GitHub', 
         details: errorText 
       });
     }
 
-    console.log('✅ Upload successful!');
+    console.log('✅ Upload thành công!');
     return res.status(200).json({ 
       success: true, 
       message: 'Upload successful',
+      path: FILE_PATH, // Trả về đường dẫn để debug
       id: data.id 
     });
 
   } catch (error) {
-    console.error('💥 Upload error:', error);
+    console.error('💥 Server Error:', error);
     return res.status(500).json({ 
-      error: 'Internal server error', 
+      error: 'Lỗi Server nội bộ', 
       details: error.message 
     });
   }
