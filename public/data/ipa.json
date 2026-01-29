@@ -1,5 +1,20 @@
 [
   {
+    "id": "ipa-1769661425344",
+    "type": "ipa",
+    "date": "2026-01-29",
+    "name": "Liên Quân Indo",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRhlylC2nZ2dV2MYxu_8OKuKe5j1M85SivsZYDXvWsaL8bE4L6i162ww&s=10",
+    "desc": "hack map chấp tố sever indonesia",
+    "version": "0.0.1",
+    "developer": "khomodvip",
+    "tags": [
+      "game"
+    ],
+    "badge": "trending",
+    "fileLink": "https://www.mediafire.com/file/vqce43tx80y621f/Arena+of+Valor_1.61.11561513_1768465514.ipa/file"
+  },
+  {
     "id": "ipa-1769657738977",
     "type": "ipa",
     "date": "2026-01-29",
