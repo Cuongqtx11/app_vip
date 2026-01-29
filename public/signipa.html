@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KÃ½ IPA Online - VIP Tools</title>
+    <title>Ký IPA Online - VIP Tools</title>
     <link rel="stylesheet" href="/css/style.css">
     <style>
         body { padding-bottom: 80px; }
@@ -41,17 +41,17 @@
 <body>
     <header>
         <div id="header-content"><a href="/" id="site-title">VIP Tools</a></div>
-        <button id="toggle-mode">ð</button>
+        <button id="toggle-mode">🌓</button>
     </header>
 
     <div class="pricing-header" style="margin-top: 80px;">
-        <h1>KÃ½ IPA Tá»c Äá» Cao</h1>
-        <p>Server riÃªng táº¡i VN - Tá»± xÃ³a file sau 10p</p>
+        <h1>Ký IPA Tốc Độ Cao</h1>
+        <p>Server riêng tại VN - Tự xóa file sau 10p</p>
     </div>
 
     <div class="pricing-container" style="display: block; padding: 20px;">
         
-        <h3 style="text-align: center; color: var(--primary); margin-bottom: 15px;">1. Chá»n á»¨ng Dá»¥ng</h3>
+        <h3 style="text-align: center; color: var(--primary); margin-bottom: 15px;">1. Chọn Ứng Dụng</h3>
         <div class="app-selection">
             <div class="app-option selected" onclick="selectApp('esign')">
                 <img src="https://vn-z.vn/attachments/esign-png.56456/" alt="ESign"><h4>ESign</h4>
@@ -67,29 +67,29 @@
             </div>
         </div>
 
-        <h3 style="text-align: center; color: var(--primary);">2. Upload Chá»©ng Chá» (.zip)</h3>
+        <h3 style="text-align: center; color: var(--primary);">2. Upload Chứng Chỉ (.zip)</h3>
         <div class="upload-zone" onclick="document.getElementById('cert-input').click()">
             <input type="file" id="cert-input" accept=".zip" onchange="handleFileSelect(this)" style="display: none;">
             <div id="upload-text">
-                <span style="font-size: 40px;">ð</span><br>
-                <strong>Nháº¥n Äá» chá»n file .zip</strong><br>
-                <span style="font-size: 0.85em; opacity: 0.7;">Tá»± giáº£i nÃ©n & tÃ¬m máº­t kháº©u</span>
+                <span style="font-size: 40px;">📂</span><br>
+                <strong>Nhấn để chọn file .zip</strong><br>
+                <span style="font-size: 0.85em; opacity: 0.7;">Tự giải nén & tìm mật khẩu</span>
             </div>
         </div>
 
         <div style="text-align: center; margin-top: 20px;">
-            <input type="text" id="cert-pass" placeholder="Máº­t kháº©u (Äá» trá»ng Äá» tá»± tÃ¬m)..." 
+            <input type="text" id="cert-pass" placeholder="Mật khẩu (để trống để tự tìm)..." 
                    style="padding: 12px; width: 100%; max-width: 300px; border-radius: 12px; border: 1px solid #ccc; background: var(--bg-light); color: var(--text-light);">
             <br><br>
             <button class="plan-btn" id="sign-btn" onclick="startSigning()" style="max-width: 300px; background: var(--primary); color: white;">
-                Báº®T Äáº¦U KÃ NGAY
+                BẮT ĐẦU KÝ NGAY
             </button>
         </div>
 
         <div class="status-log" id="log-area"></div>
         <div style="text-align: center;">
-            <button class="install-btn" id="install-btn">ð² CÃ€I Äáº¶T NGAY</button>
-            <p id="timer-msg" style="display:none; color: #ef4444; font-size: 0.8em; margin-top: 10px;">â ï¸ Link sáº½ háº¿t háº¡n sau 10 phÃºt!</p>
+            <button class="install-btn" id="install-btn">📲 CÀI ĐẶT NGAY</button>
+            <p id="timer-msg" style="display:none; color: #ef4444; font-size: 0.8em; margin-top: 10px;">⚠️ Link sẽ hết hạn sau 10 phút!</p>
         </div>
     </div>
 
@@ -107,7 +107,7 @@
         function handleFileSelect(input) {
             if (input.files[0]) {
                 selectedFile = input.files[0];
-                document.getElementById('upload-text').innerHTML = `â <strong>${selectedFile.name}</strong>`;
+                document.getElementById('upload-text').innerHTML = `✅ <strong>${selectedFile.name}</strong>`;
             }
         }
 
@@ -118,10 +118,10 @@
         }
 
         async function startSigning() {
-            if (!selectedFile) return alert('Vui lÃ²ng chá»n file Zip!');
+            if (!selectedFile) return alert('Vui lòng chọn file Zip!');
             
             const btn = document.getElementById('sign-btn');
-            btn.disabled = true; btn.innerText = 'Äang xá»­ lÃ½...';
+            btn.disabled = true; btn.innerText = 'Đang xử lý...';
             document.getElementById('log-area').innerHTML = '';
             document.getElementById('install-btn').style.display = 'none';
             document.getElementById('timer-msg').style.display = 'none';
@@ -131,15 +131,15 @@
             formData.append('app', selectedApp);
             formData.append('password', document.getElementById('cert-pass').value);
 
-            log('Äang káº¿t ná»i Server... (Láº§n Äáº§u cÃ³ thá» máº¥t 30s Äá» táº£i App gá»c)');
+            log('Đang kết nối Server... (Lần đầu có thể mất 30s để tải App gốc)');
 
             try {
                 const res = await fetch(`${PI_API}/sign`, { method: 'POST', body: formData });
                 const data = await res.json();
 
                 if (data.success) {
-                    log(`â Máº­t kháº©u: ${data.password}`);
-                    log('â KÃ½ thÃ nh cÃ´ng!');
+                    log(`✅ Mật khẩu: ${data.password}`);
+                    log('✅ Ký thành công!');
                     document.getElementById('cert-pass').value = data.password;
                     
                     const installBtn = document.getElementById('install-btn');
@@ -147,13 +147,13 @@
                     installBtn.onclick = () => window.location.href = data.installUrl;
                     document.getElementById('timer-msg').style.display = 'block';
                     
-                    btn.innerText = 'KÃ½ Láº¡i';
+                    btn.innerText = 'Ký Lại';
                 } else {
-                    log(`â Lá»i: ${data.message}`, true);
-                    btn.innerText = 'Thá»­ Láº¡i';
+                    log(`❌ Lỗi: ${data.message}`, true);
+                    btn.innerText = 'Thử Lại';
                 }
             } catch (err) {
-                log(`â Lá»i káº¿t ná»i: ${err.message}`, true);
+                log(`❌ Lỗi kết nối: ${err.message}`, true);
             } finally {
                 btn.disabled = false;
             }
