@@ -234,6 +234,24 @@
     "lastSync": "2026-01-30T13:00:02.185Z"
   },
   {
+    "id": "ipa-com.picsart.studio-29.2.3",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/PicsArt_29.2.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.2.3",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-01-30T15:00:01.424Z"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
