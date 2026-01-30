@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.linecorp.Foodie-7.4.11",
+    "type": "ipa",
+    "name": "Foodie",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.Foodie.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-01-2026/Foodie_7.4.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4.11",
+    "developer": "khomodvip",
+    "date": "2026-01-31",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.Foodie",
+    "lastSync": "2026-01-30T20:00:01.643Z"
+  },
+  {
+    "id": "ipa-com.sugarmo.ScrollClip-3.16",
+    "type": "ipa",
+    "name": "Picsew",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sugarmo.ScrollClip.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-01-2026/Picsew_3.16_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.16",
+    "developer": "khomodvip",
+    "date": "2026-01-31",
+    "source": "apptesters",
+    "bundleID": "com.sugarmo.ScrollClip",
+    "lastSync": "2026-01-30T20:00:01.644Z"
+  },
+  {
     "id": "ipa-com.risesci.nyx-0.1.564",
     "type": "ipa",
     "name": "RiseSleep",
