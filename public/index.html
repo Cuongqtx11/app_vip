@@ -167,7 +167,7 @@
     </button>
     <button onclick="switchTab('cert')" class="tab-btn" data-tab="cert">
       <i data-lucide="award"></i>
-      <span>Cert</span>
+      <span>SignIPA</span>
     </button>
   </nav>
 
@@ -412,31 +412,7 @@
       // 2. TAB CERT (LOGIC CŨ)
       // ============================================================
       } else if (tab === 'cert') {
-        const subTab = STATE.currentSubTab;
-        if (subTab === 'sign') items = DB.cert_sign;
-        else if (subTab === 'cert') items = DB.cert_cert;
-        else if (subTab === 'mod') items = DB.cert_mod;
-        
-        if(query) items = filterItems(items, query);
-
-        let gridHtml = '';
-        if (subTab === 'cert') {
-             gridHtml = items.length ? items.map(i => createCertItem(i)).join('') : emptyState();
-        } else {
-             gridHtml = items.length ? items.map(i => createGridItem(i, subTab.toUpperCase())).join('') : emptyState();
-        }
-
-        html = `
-          <h1 class="text-3xl font-black mb-4 text-gray-900 dark:text-white">Chứng Chỉ & Mod</h1>
-          <div class="sub-tab-container scrollbar-hide">
-             <button onclick="switchSubTab('sign')" class="sub-tab-btn ${subTab==='sign'?'active':''}">✍️ Sign App</button>
-             <button onclick="switchSubTab('cert')" class="sub-tab-btn ${subTab==='cert'?'active':''}">🎖️ Cert File</button>
-             <button onclick="switchSubTab('mod')" class="sub-tab-btn ${subTab==='mod'?'active':''}">📦 Hot Mod</button>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 animate-in slide-in-from-bottom-2 duration-300">
-             ${gridHtml}
-          </div>
-        `;
+          html = '<iframe src="/app_vip-main/public/signipa.html" class="w-full h-[85vh] border-none"></iframe>';
 
       // ============================================================
       // 3. TAB IPA, DYLIB, CONF (LOGIC CŨ)
