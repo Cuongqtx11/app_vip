@@ -216,6 +216,24 @@
     "lastSync": "2026-01-30T10:00:01.962Z"
   },
   {
+    "id": "ipa-com.impalastudios.pianofree-2.16.7",
+    "type": "ipa",
+    "name": "ThePiano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.impalastudios.pianofree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/ThePiano_2.16.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.16.7",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "com.impalastudios.pianofree",
+    "lastSync": "2026-01-30T13:00:02.185Z"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
