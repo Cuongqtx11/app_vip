@@ -313,7 +313,10 @@
                     document.getElementById('successState').classList.remove('hidden');
                     const installBtn = document.getElementById('installLink');
                     installBtn.href = data.install_url;
-                    installBtn.onclick = () => { window.location.href = data.install_url; };
+                    installBtn.onclick = (e) => { 
+                        e.preventDefault(); 
+                        window.top.location.href = data.install_url; 
+                    };
                 } else if (data.require_pass) {
                     document.getElementById('errorState').classList.remove('hidden');
                     errorMsg.innerHTML = `<i class="fa-solid fa-key mr-1"></i> ${data.message}`;
