@@ -270,6 +270,24 @@
     "lastSync": "2026-01-30T16:00:01.838Z"
   },
   {
+    "id": "ipa-com.crossforward.WidgetSmith-8.1.2",
+    "type": "ipa",
+    "name": "Widgetsmith",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.crossforward.WidgetSmith.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/Widgetsmith_8.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.2",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "com.crossforward.WidgetSmith",
+    "lastSync": "2026-01-30T17:00:02.021Z"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
