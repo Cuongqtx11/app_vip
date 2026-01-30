@@ -72,6 +72,78 @@
     "lastSync": "2026-01-29T23:00:02.502Z"
   },
   {
+    "id": "ipa-io.stampapp.Stamp-9.21.0",
+    "type": "ipa",
+    "name": "FreeYourMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.stampapp.Stamp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/FreeYourMusic_9.21.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.21.0",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "io.stampapp.Stamp",
+    "lastSync": "2026-01-30T00:00:02.133Z"
+  },
+  {
+    "id": "ipa-com.dsrtech.colorsplash-3.21.43",
+    "type": "ipa",
+    "name": "PhotoSplash",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dsrtech.colorsplash.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/PhotoSplash_3.21.43_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.21.43",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "com.dsrtech.colorsplash",
+    "lastSync": "2026-01-30T00:00:02.134Z"
+  },
+  {
+    "id": "ipa-com.keiwando.toonsquid-2.0.18",
+    "type": "ipa",
+    "name": "ToonSquid",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.keiwando.toonsquid.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/ToonSquid_2.0.18_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.18",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "com.keiwando.toonsquid",
+    "lastSync": "2026-01-30T00:00:02.135Z"
+  },
+  {
+    "id": "ipa-org.iggymedia.periodtracker-9.97.0",
+    "type": "ipa",
+    "name": "Flo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.iggymedia.periodtracker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-01-2026/Flo_9.97.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.97.0",
+    "developer": "khomodvip",
+    "date": "2026-01-30",
+    "source": "apptesters",
+    "bundleID": "org.iggymedia.periodtracker",
+    "lastSync": "2026-01-30T00:00:02.135Z"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.2.2",
     "type": "ipa",
     "name": "PicsArt",
