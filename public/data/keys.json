@@ -5,13 +5,14 @@
     "createdAt": "2026-01-31T02:24:06.815Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "B4AKRU",
     "transaction_id": "40651941",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-01-31T02:24:21.640Z"
   },
   {
     "id": "key_1769803038_1215",
