@@ -5,14 +5,14 @@
     "createdAt": "2026-01-31T07:13:36.392Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "MK2MOJ",
     "transaction_id": "40684873",
     "package": "Gói Lẻ",
     "notes": "∞ days, 20 uses",
-    "lastUsedAt": "2026-01-31T07:14:08.236Z"
+    "lastUsedAt": "2026-01-31T07:24:02.443Z"
   },
   {
     "id": "key_1769842584_492",
