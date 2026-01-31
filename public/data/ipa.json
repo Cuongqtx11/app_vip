@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.sbs.diet-5.7.5",
+    "type": "ipa",
+    "name": "MacroFactor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.diet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-02-2026/MacroFactor_5.7.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.7.5",
+    "developer": "khomodvip",
+    "date": "2026-02-01",
+    "source": "apptesters",
+    "bundleID": "com.sbs.diet",
+    "lastSync": "2026-01-31T22:00:01.382Z"
+  },
+  {
+    "id": "ipa-com.sbs.train-1.1.2",
+    "type": "ipa",
+    "name": "Workouts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sbs.train.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-02-2026/Workouts_1.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.2",
+    "developer": "khomodvip",
+    "date": "2026-02-01",
+    "source": "apptesters",
+    "bundleID": "com.sbs.train",
+    "lastSync": "2026-01-31T22:00:01.382Z"
+  },
+  {
     "id": "ipa-com.linecorp.Foodie-7.4.11",
     "type": "ipa",
     "name": "Foodie",
