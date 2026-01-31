@@ -5,13 +5,14 @@
     "createdAt": "2026-01-31T06:56:24.024Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "NMT5QD",
     "transaction_id": "40683243",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-01-31T06:56:40.030Z"
   },
   {
     "id": "key_1769826246_1324",
