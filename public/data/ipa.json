@@ -90,6 +90,24 @@
     "lastSync": "2026-01-31T03:00:01.665Z"
   },
   {
+    "id": "ipa-com.ideation.Stress-2.4.18",
+    "type": "ipa",
+    "name": "StressWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Stress.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-01-2026/StressWatch_2.4.18_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.18",
+    "developer": "khomodvip",
+    "date": "2026-01-31",
+    "source": "apptesters",
+    "bundleID": "com.ideation.Stress",
+    "lastSync": "2026-01-31T07:00:01.211Z"
+  },
+  {
     "id": "ipa-com.risesci.nyx-0.1.564",
     "type": "ipa",
     "name": "RiseSleep",
