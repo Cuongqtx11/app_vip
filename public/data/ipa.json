@@ -306,6 +306,24 @@
     "lastSync": "2026-02-01T13:00:01.705Z"
   },
   {
+    "id": "ipa-com.andrespizabuckmann.MetadataEditor-3.3.0",
+    "type": "ipa",
+    "name": "MetadataEditor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andrespizabuckmann.MetadataEditor.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-02-2026/MetadataEditor_3.3.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.0",
+    "developer": "khomodvip",
+    "date": "2026-02-01",
+    "source": "apptesters",
+    "bundleID": "com.andrespizabuckmann.MetadataEditor",
+    "lastSync": "2026-02-01T16:00:01.377Z"
+  },
+  {
     "id": "ipa-com.linecorp.Foodie-7.4.11",
     "type": "ipa",
     "name": "Foodie",
