@@ -234,6 +234,42 @@
     "lastSync": "2026-02-01T06:00:01.828Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-21.0.1",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-02-2026/Fitia_21.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "21.0.1",
+    "developer": "khomodvip",
+    "date": "2026-02-01",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-02-01T11:00:01.545Z"
+  },
+  {
+    "id": "ipa-com.yazio.ios.YAZIO-12.70.0",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-02-2026/Yazio_12.70.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.70.0",
+    "developer": "khomodvip",
+    "date": "2026-02-01",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2026-02-01T11:00:01.546Z"
+  },
+  {
     "id": "ipa-com.linecorp.Foodie-7.4.11",
     "type": "ipa",
     "name": "Foodie",
