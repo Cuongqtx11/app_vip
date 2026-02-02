@@ -486,6 +486,24 @@
     "lastSync": "2026-02-02T18:00:01.513Z"
   },
   {
+    "id": "ipa-com.duolingo.DuolingoMobile-7.108.0",
+    "type": "ipa",
+    "name": "Duolingo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.duolingo.DuolingoMobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/Duolingo_7.108.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.108.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.duolingo.DuolingoMobile",
+    "lastSync": "2026-02-02T19:00:02.144Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.5",
     "type": "ipa",
     "name": "MacroFactor",
