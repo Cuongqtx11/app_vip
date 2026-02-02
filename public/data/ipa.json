@@ -1,5 +1,113 @@
 [
   {
+    "id": "ipa-com.iqraapp.Iqra-5.73.2",
+    "type": "ipa",
+    "name": "Tarteel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iqraapp.Iqra.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Tarteel_5.73.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.73.2",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.iqraapp.Iqra",
+    "lastSync": "2026-02-02T20:00:01.925Z"
+  },
+  {
+    "id": "ipa-com.endel.endel-4.49.34",
+    "type": "ipa",
+    "name": "Endel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.endel.endel.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Endel_4.49.34_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.49.34",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.endel.endel",
+    "lastSync": "2026-02-02T20:00:01.926Z"
+  },
+  {
+    "id": "ipa-com.headway.books-367.3",
+    "type": "ipa",
+    "name": "Headway",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.headway.books.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "books"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Headway_367.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "367.3",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.headway.books",
+    "lastSync": "2026-02-02T20:00:01.926Z"
+  },
+  {
+    "id": "ipa-com.photomyne.photomyneapplite-32.4",
+    "type": "ipa",
+    "name": "Photomyne",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photomyne.photomyneapplite.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Photomyne_32.4_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "32.4",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.photomyne.photomyneapplite",
+    "lastSync": "2026-02-02T20:00:01.927Z"
+  },
+  {
+    "id": "ipa-viral.vision.vids-1.130.2",
+    "type": "ipa",
+    "name": "Vids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/viral.vision.vids.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Vids_1.130.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.130.2",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "viral.vision.vids",
+    "lastSync": "2026-02-02T20:00:01.927Z"
+  },
+  {
+    "id": "ipa-com.soundcloud.TouchApp-8.46.0",
+    "type": "ipa",
+    "name": "SoundCloud",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.soundcloud.TouchApp.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/SoundCloud_8.46.0_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.46.0",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.soundcloud.TouchApp",
+    "lastSync": "2026-02-02T20:00:01.927Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.0.0",
     "type": "ipa",
     "name": "Busuu",
