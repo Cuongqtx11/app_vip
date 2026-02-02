@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1770003689_3470",
+    "key": "ED2X-HZ8Q-W8EU-UP4W",
+    "createdAt": "2026-02-02T03:41:29.499534+00:00",
+    "expiresAt": "2026-02-04T03:41:29.499534+00:00",
+    "maxUses": 1,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "2 days, 1 uses"
+  },
+  {
     "id": "key_1769945361_9766",
     "key": "S11J-698U-RUDF-XKWK",
     "createdAt": "2026-02-01T11:29:21.368199+00:00",
