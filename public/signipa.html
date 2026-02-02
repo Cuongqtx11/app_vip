@@ -203,33 +203,52 @@
                 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Hướng Dẫn</span>
                 <div class="h-px bg-gray-200 dark:bg-white/10 flex-1"></div>
             </div>
+            <div class="flex flex-col items-center justify-center pt-0,1 pb-0.1">
+                <p id="fileName" class="text-[11px] text-gray-500 dark:text-gray-400 font-semibold group-hover:text-brand">
+                    dưới đây là các bước để có thể ký được ipa
+                </p>
+            </div>
+            <br>
+
 
             <div class="grid grid-cols-2 gap-3">
                 <button onclick="openVideo('QLiVW2AEkNw')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
                     <i class="fa-solid fa-circle-play text-2xl text-red-500 group-hover:scale-110 transition"></i>
-                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">Cách lấy Cert</span>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B1- Cần có chứng chỉ</span>
                 </button>
 
-                <button onclick="openVideo('dQw4ư9ƯgXc')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
+                <button onclick="openVideo('fLw9nJMhGKs')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
                     <i class="fa-solid fa-wrench text-2xl text-blue-500 group-hover:scale-110 transition"></i>
-                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">Fix lỗi tin cậy</span>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B2- Ký app công cụ</span>
+                </button>
+            </div><br>
+            <div class="grid grid-cols-2 gap-3">
+                <button onclick="openVideo('becci7KqJnk')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
+                    <i class="fa-solid fa-wrench text-2xl text-blue-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B3- Tải và ký file IPA</span>
+                </button>
+                <button onclick="openVideo('vI6FwhrdF70')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
+                    <i class="fa-solid fa-circle-play text-2xl text-red-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B4- Cách nhân bản thêm</span>
                 </button>
             </div>
+        </div>
         </div>
         
     </div>
 
     <div id="videoModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-sm p-5">
-        <div class="relative w-full max-w-xl bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 ring-1 ring-white/10">
+        <div class="relative w-full max-w-sm bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 ring-1 ring-white/10">
             <button onclick="closeVideo()" class="absolute top-3 right-3 z-10 w-8 h-8 bg-black/50 hover:bg-white/20 rounded-full text-white flex items-center justify-center transition backdrop-blur-md">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <div class="aspect-video w-full">
+            <div class="aspect-[9/16] w-full">
                 <iframe id="youtubeIframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <div class="absolute inset-0 -z-10" onclick="closeVideo()"></div>
     </div>
+
 
     <script>
         const API_URL = "https://api.p12.vn"; 
