@@ -180,6 +180,24 @@
     "lastSync": "2026-02-02T08:00:02.239Z"
   },
   {
+    "id": "ipa-com.getmimo.mimo-11.2.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/Mimo_11.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.2.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2026-02-02T09:00:01.682Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.5",
     "type": "ipa",
     "name": "MacroFactor",
