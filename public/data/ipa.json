@@ -468,6 +468,24 @@
     "lastSync": "2026-02-02T16:00:01.864Z"
   },
   {
+    "id": "ipa-com.campmobile.snow-14.7.21",
+    "type": "ipa",
+    "name": "SNOW",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.campmobile.snow.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/SNOW_14.7.21_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "14.7.21",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.campmobile.snow",
+    "lastSync": "2026-02-02T18:00:01.513Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.5",
     "type": "ipa",
     "name": "MacroFactor",
