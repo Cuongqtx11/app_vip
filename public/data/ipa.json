@@ -216,6 +216,24 @@
     "lastSync": "2026-02-02T11:00:01.829Z"
   },
   {
+    "id": "ipa-com.lightricks.Facetune2-3.117",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/Facetune_3.117_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.117",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-02-02T12:00:01.955Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.5",
     "type": "ipa",
     "name": "MacroFactor",
