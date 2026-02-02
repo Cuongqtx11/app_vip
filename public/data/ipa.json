@@ -270,6 +270,168 @@
     "lastSync": "2026-02-02T14:00:01.812Z"
   },
   {
+    "id": "ipa-com.flipline.papasdonuteriatogo-1.0.1",
+    "type": "ipa",
+    "name": "PapasDonuteriaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papasdonuteriatogo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasDonuteriaToGo_1.0.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.1",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papasdonuteriatogo",
+    "lastSync": "2026-02-02T15:00:01.950Z"
+  },
+  {
+    "id": "ipa-com.flipline.papashotdoggeriatogo-1.1.0",
+    "type": "ipa",
+    "name": "PapasHotDoggeriaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papashotdoggeriatogo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasHotDoggeriaToGo_1.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papashotdoggeriatogo",
+    "lastSync": "2026-02-02T15:00:01.950Z"
+  },
+  {
+    "id": "ipa-com.flipline.papasscooperiatogo-1.1.0",
+    "type": "ipa",
+    "name": "PapasScooperiaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papasscooperiatogo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasScooperiaToGo_1.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papasscooperiatogo",
+    "lastSync": "2026-02-02T15:00:01.956Z"
+  },
+  {
+    "id": "ipa-com.flipline.papaspizzeriatogo-1.1.0",
+    "type": "ipa",
+    "name": "PapasPizzeriaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papaspizzeriatogo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasPizzeriaToGo_1.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papaspizzeriatogo",
+    "lastSync": "2026-02-02T15:00:01.957Z"
+  },
+  {
+    "id": "ipa-com.flipline.papasfreezeriatogo-1.2.0",
+    "type": "ipa",
+    "name": "PapasFreezeriaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papasfreezeriatogo.png",
+    "desc": "Injected with Unlocked All Functions",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasFreezeriaToGo_1.2.0_Unlocked_All_Functions_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.2.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papasfreezeriatogo",
+    "lastSync": "2026-02-02T15:00:01.957Z"
+  },
+  {
+    "id": "ipa-com.flipline.papassushiriatogo-1.0.0",
+    "type": "ipa",
+    "name": "PapasSushiriaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papassushiriatogo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasSushiriaToGo_1.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papassushiriatogo",
+    "lastSync": "2026-02-02T15:00:01.958Z"
+  },
+  {
+    "id": "ipa-com.flipline.papascluckeriatogo-1.0.1",
+    "type": "ipa",
+    "name": "PapasCluckeriaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papascluckeriatogo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasCluckeriaToGo_1.0.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.1",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papascluckeriatogo",
+    "lastSync": "2026-02-02T15:00:01.958Z"
+  },
+  {
+    "id": "ipa-com.flipline.papaspancakeriatogo-1.2.0",
+    "type": "ipa",
+    "name": "PapasPancakeriaToGo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flipline.papaspancakeriatogo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/PapasPancakeriaToGo_1.2.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.2.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.flipline.papaspancakeriatogo",
+    "lastSync": "2026-02-02T15:00:01.958Z"
+  },
+  {
+    "id": "ipa-com.hubx.noteai-1.2.0",
+    "type": "ipa",
+    "name": "NoteAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hubx.noteai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-02-2026/NoteAI_1.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.2.0",
+    "developer": "khomodvip",
+    "date": "2026-02-02",
+    "source": "apptesters",
+    "bundleID": "com.hubx.noteai",
+    "lastSync": "2026-02-02T15:00:01.958Z"
+  },
+  {
     "id": "ipa-com.sbs.diet-5.7.5",
     "type": "ipa",
     "name": "MacroFactor",
