@@ -396,6 +396,96 @@
     "lastSync": "2026-02-03T09:00:02.053Z"
   },
   {
+    "id": "ipa-com.truesoftware.TrueCallerOther-26.4.5",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Truecaller_26.4.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.4.5",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2026-02-03T11:00:01.769Z"
+  },
+  {
+    "id": "ipa-archery.storify-1.258.0",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Mojo_1.258.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.258.0",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2026-02-03T11:00:01.771Z"
+  },
+  {
+    "id": "ipa-co.airapps.dictionary-2026.1.3",
+    "type": "ipa",
+    "name": "DictionaryAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.dictionary.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/DictionaryAir_2026.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.3",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "co.airapps.dictionary",
+    "lastSync": "2026-02-03T11:00:01.772Z"
+  },
+  {
+    "id": "ipa-co.airapps.scannerapp-2026.1.3",
+    "type": "ipa",
+    "name": "ScannerAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.scannerapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/ScannerAir_2026.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.3",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "co.airapps.scannerapp",
+    "lastSync": "2026-02-03T11:00:01.772Z"
+  },
+  {
+    "id": "ipa-com.fujixweekly.fujixweeklyrecipes-1.13.2",
+    "type": "ipa",
+    "name": "FujiXWeekly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fujixweekly.fujixweeklyrecipes.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/FujiXWeekly_1.13.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.13.2",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.fujixweekly.fujixweeklyrecipes",
+    "lastSync": "2026-02-03T11:00:01.780Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.0.0",
     "type": "ipa",
     "name": "Busuu",
