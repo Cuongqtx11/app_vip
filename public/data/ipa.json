@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.opentechiz.heavybagpro-2.5.3",
+    "type": "ipa",
+    "name": "HeavyBagPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.opentechiz.heavybagpro.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/HeavyBagPro_2.5.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.3",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.opentechiz.heavybagpro",
+    "lastSync": "2026-02-03T19:00:01.702Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.73.2",
     "type": "ipa",
     "name": "Tarteel",
