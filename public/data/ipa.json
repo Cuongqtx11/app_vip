@@ -216,6 +216,24 @@
     "lastSync": "2026-02-03T00:00:01.967Z"
   },
   {
+    "id": "ipa-com.offlinemusic-3.8.0",
+    "type": "ipa",
+    "name": "OfflineMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.offlinemusic.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/OfflineMusic_3.8.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.0",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.offlinemusic",
+    "lastSync": "2026-02-03T01:00:01.929Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.0.0",
     "type": "ipa",
     "name": "Busuu",
