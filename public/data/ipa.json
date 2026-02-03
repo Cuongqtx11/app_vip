@@ -270,6 +270,24 @@
     "lastSync": "2026-02-03T02:00:02.238Z"
   },
   {
+    "id": "ipa-boomer.Smart-Video-13.3.1",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Captions_13.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.3.1",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2026-02-03T03:00:01.763Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.0.0",
     "type": "ipa",
     "name": "Busuu",
