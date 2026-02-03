@@ -18,6 +18,42 @@
     "lastSync": "2026-02-03T19:00:01.702Z"
   },
   {
+    "id": "ipa-com.consumedbycode.slopes-2026.4",
+    "type": "ipa",
+    "name": "Slopes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.consumedbycode.slopes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Slopes_2026.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.4",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.consumedbycode.slopes",
+    "lastSync": "2026-02-03T20:00:01.845Z"
+  },
+  {
+    "id": "ipa-com.getupnote.ios-9.16.4",
+    "type": "ipa",
+    "name": "UpNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getupnote.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/UpNote_9.16.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.16.4",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.getupnote.ios",
+    "lastSync": "2026-02-03T20:00:01.846Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.73.2",
     "type": "ipa",
     "name": "Tarteel",
