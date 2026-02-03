@@ -738,6 +738,24 @@
     "lastSync": "2026-02-03T17:00:02.261Z"
   },
   {
+    "id": "ipa-com.iPwners.Plonkan-13.24",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Buddy_13.24_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.24",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2026-02-03T18:00:01.694Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.0.0",
     "type": "ipa",
     "name": "Busuu",
