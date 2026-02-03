@@ -288,6 +288,24 @@
     "lastSync": "2026-02-03T03:00:01.763Z"
   },
   {
+    "id": "ipa-com.wiheads.paste-6.3.5",
+    "type": "ipa",
+    "name": "Paste",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wiheads.paste.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Paste_6.3.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.5",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.wiheads.paste",
+    "lastSync": "2026-02-03T06:00:01.555Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.0.0",
     "type": "ipa",
     "name": "Busuu",
