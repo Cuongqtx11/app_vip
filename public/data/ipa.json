@@ -72,6 +72,78 @@
     "lastSync": "2026-02-03T21:00:01.943Z"
   },
   {
+    "id": "ipa-com.myfitnesspal.mfp-26.5.0",
+    "type": "ipa",
+    "name": "MyFitnessPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myfitnesspal.mfp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/MyFitnessPal_26.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.5.0",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.myfitnesspal.mfp",
+    "lastSync": "2026-02-03T22:00:02.040Z"
+  },
+  {
+    "id": "ipa-com.ahmetserdarkaradeniz.Phocus-3.1.1",
+    "type": "ipa",
+    "name": "Phocus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ahmetserdarkaradeniz.Phocus.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Phocus_3.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.1",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.ahmetserdarkaradeniz.Phocus",
+    "lastSync": "2026-02-03T22:00:02.041Z"
+  },
+  {
+    "id": "ipa-com.hasankassem.mockup-4.1.2",
+    "type": "ipa",
+    "name": "Mockup",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hasankassem.mockup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Mockup_4.1.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.2",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.hasankassem.mockup",
+    "lastSync": "2026-02-03T22:00:02.042Z"
+  },
+  {
+    "id": "ipa-com.upskew.encode.ios-6.20.0",
+    "type": "ipa",
+    "name": "Encode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.upskew.encode.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Encode_6.20.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.20.0",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.upskew.encode.ios",
+    "lastSync": "2026-02-03T22:00:02.043Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.73.2",
     "type": "ipa",
     "name": "Tarteel",
