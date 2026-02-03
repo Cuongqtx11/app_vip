@@ -108,6 +108,114 @@
     "lastSync": "2026-02-02T20:00:01.927Z"
   },
   {
+    "id": "ipa-com.snowcorp.glowup-4.0.1",
+    "type": "ipa",
+    "name": "GlowUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.glowup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/GlowUp_4.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.1",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.glowup",
+    "lastSync": "2026-02-03T00:00:01.964Z"
+  },
+  {
+    "id": "ipa-com.google.ios.youtubemusic-9.05.2",
+    "type": "ipa",
+    "name": "YouTubeMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtubemusic.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/YouTubeMusic_9.05.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.05.2",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.google.ios.youtubemusic",
+    "lastSync": "2026-02-03T00:00:01.965Z"
+  },
+  {
+    "id": "ipa-com.burbn.instagram-415.0.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/Instagram_415.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "415.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-02-03T00:00:01.966Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx-0.1.565",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/RiseSleep_0.1.565_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.565",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2026-02-03T00:00:01.967Z"
+  },
+  {
+    "id": "ipa-com.imageline.FLStudioMobileHD-4.9.6",
+    "type": "ipa",
+    "name": "FLStudioMobile",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.imageline.FLStudioMobileHD.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/FLStudioMobile_4.9.6_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.9.6",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.imageline.FLStudioMobileHD",
+    "lastSync": "2026-02-03T00:00:01.967Z"
+  },
+  {
+    "id": "ipa-com.travelboast.travelboast-2.24",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-02-2026/TravelBoast_2.24_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.24",
+    "developer": "khomodvip",
+    "date": "2026-02-03",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-02-03T00:00:01.967Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.0.0",
     "type": "ipa",
     "name": "Busuu",
