@@ -216,6 +216,96 @@
     "lastSync": "2026-02-04T00:00:02.534Z"
   },
   {
+    "id": "ipa-com.noteful-technologies.noteful-1.4.34",
+    "type": "ipa",
+    "name": "Noteful",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.noteful-technologies.noteful.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Noteful_1.4.34_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.34",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.noteful-technologies.noteful",
+    "lastSync": "2026-02-04T01:00:01.996Z"
+  },
+  {
+    "id": "ipa-com.burbn.barcelona-415.0.0",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Threads_415.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "415.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2026-02-04T01:00:01.997Z"
+  },
+  {
+    "id": "ipa-com.facebook.Facebook-547.0.0",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Facebook_547.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "547.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2026-02-04T01:00:01.998Z"
+  },
+  {
+    "id": "ipa-com.tickettothemoon.video.persona-1.15.4",
+    "type": "ipa",
+    "name": "Persona",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tickettothemoon.video.persona.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Persona_1.15.4_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.15.4",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.tickettothemoon.video.persona",
+    "lastSync": "2026-02-04T01:00:01.998Z"
+  },
+  {
+    "id": "ipa-ideastudio.Weather-on-the-Way-2.4.2",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/OnTheWay_2.4.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.2",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2026-02-04T01:00:01.998Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.73.2",
     "type": "ipa",
     "name": "Tarteel",
