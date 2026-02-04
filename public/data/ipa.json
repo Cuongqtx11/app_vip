@@ -324,6 +324,42 @@
     "lastSync": "2026-02-04T03:00:01.361Z"
   },
   {
+    "id": "ipa-com.yazio.ios.YAZIO-12.70.1",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/Yazio_12.70.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.70.1",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2026-02-04T09:00:01.377Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.5.4",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/GOWOD_5.5.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.4",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2026-02-04T09:00:01.377Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.73.2",
     "type": "ipa",
     "name": "Tarteel",
