@@ -396,6 +396,24 @@
     "lastSync": "2026-02-04T10:00:01.759Z"
   },
   {
+    "id": "ipa-com.itwcalculator.worldradarfree-5.17.0",
+    "type": "ipa",
+    "name": "NOAARadar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-02-2026/NOAARadar_5.17.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.0",
+    "developer": "khomodvip",
+    "date": "2026-02-04",
+    "source": "apptesters",
+    "bundleID": "com.itwcalculator.worldradarfree",
+    "lastSync": "2026-02-04T12:00:01.369Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.73.2",
     "type": "ipa",
     "name": "Tarteel",
