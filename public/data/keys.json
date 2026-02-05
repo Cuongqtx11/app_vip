@@ -5,14 +5,14 @@
     "createdAt": "2026-02-05T12:07:48.686Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "S48XFE",
     "transaction_id": "41305376",
     "package": "Gói Lẻ",
     "notes": "∞ days, 20 uses",
-    "lastUsedAt": "2026-02-05T12:08:58.875Z"
+    "lastUsedAt": "2026-02-05T12:09:23.056Z"
   },
   {
     "id": "key_1770293206_8377",
