@@ -342,6 +342,24 @@
     "lastSync": "2026-02-05T16:00:01.479Z"
   },
   {
+    "id": "ipa-com.AppChief.ArabicArt-9.5.1",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-02-2026/_9.5.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.5.1",
+    "developer": "khomodvip",
+    "date": "2026-02-05",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2026-02-05T17:00:01.903Z"
+  },
+  {
     "id": "ipa-com.opentechiz.heavybagpro-2.5.3",
     "type": "ipa",
     "name": "HeavyBagPro",
