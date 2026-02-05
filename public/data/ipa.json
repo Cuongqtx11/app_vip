@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.textasticapp.textastic-universal-10.9.1",
+    "type": "ipa",
+    "name": "Textastic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.textasticapp.textastic-universal.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-02-2026/Textastic_10.9.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.9.1",
+    "developer": "khomodvip",
+    "date": "2026-02-06",
+    "source": "apptesters",
+    "bundleID": "com.textasticapp.textastic-universal",
+    "lastSync": "2026-02-05T20:00:01.389Z"
+  },
+  {
+    "id": "ipa-com.fifthstarlabs.skyguide-12.0.11",
+    "type": "ipa",
+    "name": "SkyGuide",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fifthstarlabs.skyguide.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-02-2026/SkyGuide_12.0.11_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.11",
+    "developer": "khomodvip",
+    "date": "2026-02-06",
+    "source": "apptesters",
+    "bundleID": "com.fifthstarlabs.skyguide",
+    "lastSync": "2026-02-05T20:00:01.390Z"
+  },
+  {
     "id": "ipa-com.frameoneapps.Crsel-1.3.3",
     "type": "ipa",
     "name": "Crsel",
