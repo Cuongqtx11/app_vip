@@ -342,6 +342,24 @@
     "lastSync": "2026-02-06T05:00:01.920Z"
   },
   {
+    "id": "ipa-myndarc.newFitnessApp-26.3.0",
+    "type": "ipa",
+    "name": "Athlytic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/myndarc.newFitnessApp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-02-2026/Athlytic_26.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.3.0",
+    "developer": "khomodvip",
+    "date": "2026-02-06",
+    "source": "apptesters",
+    "bundleID": "myndarc.newFitnessApp",
+    "lastSync": "2026-02-06T06:00:01.655Z"
+  },
+  {
     "id": "ipa-com.frameoneapps.Crsel-1.3.3",
     "type": "ipa",
     "name": "Crsel",
