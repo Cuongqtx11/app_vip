@@ -144,6 +144,24 @@
     "lastSync": "2026-02-06T22:00:01.575Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-21.1.1",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Fitia_21.1.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "21.1.1",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-02-06T23:00:02.057Z"
+  },
+  {
     "id": "ipa-com.textasticapp.textastic-universal-10.9.1",
     "type": "ipa",
     "name": "Textastic",
