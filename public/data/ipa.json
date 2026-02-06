@@ -1,5 +1,149 @@
 [
   {
+    "id": "ipa-com.travelboast.travelboast-2.25",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/TravelBoast_2.25_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.25",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-02-06T22:00:01.572Z"
+  },
+  {
+    "id": "ipa-app.benkyo.Benkyo-2.5.4",
+    "type": "ipa",
+    "name": "Benky",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.benkyo.Benkyo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Benky_2.5.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.4",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "app.benkyo.Benkyo",
+    "lastSync": "2026-02-06T22:00:01.573Z"
+  },
+  {
+    "id": "ipa-com.puzzle1studio.ap.brickoutshoottheball-26.0205.00",
+    "type": "ipa",
+    "name": "BrickOut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.puzzle1studio.ap.brickoutshoottheball.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/BrickOut_26.0205.00_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.0205.00",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.puzzle1studio.ap.brickoutshoottheball",
+    "lastSync": "2026-02-06T22:00:01.573Z"
+  },
+  {
+    "id": "ipa-ideastudio.Weather-on-the-Way-2.4.3",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/OnTheWay_2.4.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.3",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2026-02-06T22:00:01.574Z"
+  },
+  {
+    "id": "ipa-com.ibit.UNPOSED-4.7.0",
+    "type": "ipa",
+    "name": "Unscripted",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ibit.UNPOSED.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Unscripted_4.7.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.7.0",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.ibit.UNPOSED",
+    "lastSync": "2026-02-06T22:00:01.574Z"
+  },
+  {
+    "id": "ipa-com.bowery-digital.bend-7.1.2",
+    "type": "ipa",
+    "name": "Bend",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bowery-digital.bend.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Bend_7.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.2",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.bowery-digital.bend",
+    "lastSync": "2026-02-06T22:00:01.575Z"
+  },
+  {
+    "id": "ipa-com.tickettothemoon.video.persona-1.15.6",
+    "type": "ipa",
+    "name": "Persona",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tickettothemoon.video.persona.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Persona_1.15.6_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.15.6",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.tickettothemoon.video.persona",
+    "lastSync": "2026-02-06T22:00:01.575Z"
+  },
+  {
+    "id": "ipa-com.beelinguapp.beelinguapp-3.9.4",
+    "type": "ipa",
+    "name": "Beelinguapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beelinguapp.beelinguapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Beelinguapp_3.9.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.4",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.beelinguapp.beelinguapp",
+    "lastSync": "2026-02-06T22:00:01.575Z"
+  },
+  {
     "id": "ipa-com.textasticapp.textastic-universal-10.9.1",
     "type": "ipa",
     "name": "Textastic",
