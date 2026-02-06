@@ -288,6 +288,42 @@
     "lastSync": "2026-02-06T03:00:01.992Z"
   },
   {
+    "id": "ipa-com.iViNi.BMWhatLite2-41.26.020411",
+    "type": "ipa",
+    "name": "Carly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iViNi.BMWhatLite2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-02-2026/Carly_41.26.020411_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "41.26.020411",
+    "developer": "khomodvip",
+    "date": "2026-02-06",
+    "source": "apptesters",
+    "bundleID": "com.iViNi.BMWhatLite2",
+    "lastSync": "2026-02-06T04:00:01.963Z"
+  },
+  {
+    "id": "ipa-com.ideation.Stress-2.4.19",
+    "type": "ipa",
+    "name": "StressWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Stress.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-02-2026/StressWatch_2.4.19_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.19",
+    "developer": "khomodvip",
+    "date": "2026-02-06",
+    "source": "apptesters",
+    "bundleID": "com.ideation.Stress",
+    "lastSync": "2026-02-06T04:00:01.963Z"
+  },
+  {
     "id": "ipa-com.frameoneapps.Crsel-1.3.3",
     "type": "ipa",
     "name": "Crsel",
