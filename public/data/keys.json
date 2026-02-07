@@ -5,13 +5,14 @@
     "createdAt": "2026-02-07T16:43:55.747Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "NLVTBD",
     "transaction_id": "41586715",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-02-07T16:44:35.426Z"
   },
   {
     "id": "key_1770445353_8376",
