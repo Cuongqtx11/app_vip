@@ -216,6 +216,24 @@
     "lastSync": "2026-02-07T05:00:01.309Z"
   },
   {
+    "id": "ipa-com.tripleglazedstudios.Weather-3.3",
+    "type": "ipa",
+    "name": "Mercury",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tripleglazedstudios.Weather.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Mercury_3.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.tripleglazedstudios.Weather",
+    "lastSync": "2026-02-07T10:00:01.571Z"
+  },
+  {
     "id": "ipa-com.textasticapp.textastic-universal-10.9.1",
     "type": "ipa",
     "name": "Textastic",
