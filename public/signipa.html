@@ -75,6 +75,11 @@
         }
         .btn-primary:hover { background: #6d28d9; transform: translateY(-1px); }
         
+        /* Custom IPA Box Style */
+        .custom-ipa-box { border: 2px dashed #e5e7eb; transition: all 0.3s; }
+        .dark .custom-ipa-box { border-color: #3f3f46; }
+        .custom-ipa-selected { border-color: #7c3aed !important; background: rgba(124, 58, 237, 0.05); }
+
         /* Scrollbar ẩn */
         ::-webkit-scrollbar { width: 0px; background: transparent; }
     </style>
@@ -137,8 +142,26 @@
                         <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm transition-all opacity-0 scale-50"></i>
                     </div>
                 </div>
-                <input type="hidden" id="selectedAppName" value="esign">
             </div>
+
+            <div class="relative py-1">
+                <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200 dark:border-white/10"></div></div>
+                <div class="relative flex justify-center text-[10px] uppercase font-bold tracking-widest"><span class="bg-white dark:bg-cardDark px-2 text-gray-400">KÝ IPA KHÁC</span></div>
+            </div>
+
+            <div id="customAppSection" onclick="document.getElementById('ipaFile').click()" class="custom-ipa-box group relative p-3 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-4 hover:bg-gray-100 dark:hover:bg-white/10 transition">
+                <div class="w-10 h-10 rounded-xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300 group-hover:text-brand transition">
+                    <i class="fa-brands fa-apple text-xl"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="text-[10px] text-gray-500 dark:text-gray-400">VUI LÒNG TẢI LÊN FILE .IPA KHÁC ĐỂ KÝ</div>
+                    <div class="text-[10px] text-gray-500 dark:text-gray-400">Nhấn để chọn file .ipa từ máy</div>
+                </div>
+                <input type="file" id="ipaFile" accept=".ipa" class="hidden" onchange="handleIpaSelect(this)">
+                <i id="ipaCheckIcon" class="fa-solid fa-circle-check text-brand text-xl opacity-0 transition"></i>
+            </div>
+            
+            <input type="hidden" id="signType" value="preset"> <input type="hidden" id="selectedAppName" value="esign">
 
             <hr class="border-gray-100 dark:border-white/5">
 
@@ -213,8 +236,6 @@
                 </p>
             </div>
             <br>
-
-
             <div class="grid grid-cols-2 gap-3">
                 <button onclick="openVideo('QLiVW2AEkNw')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
                     <i class="fa-solid fa-circle-play text-2xl text-red-500 group-hover:scale-110 transition"></i>
@@ -276,8 +297,19 @@
             modal.classList.add('hidden');
         }
 
-        // --- LOGIC APP ---
+        // --- LOGIC CHỌN APP ---
         function selectApp(name, el) {
+            // Chuyển chế độ sang PRESET (Ký app có sẵn)
+            document.getElementById('signType').value = 'preset';
+            
+            // Reset giao diện Custom
+            const customBox = document.getElementById('customAppSection');
+            customBox.classList.remove('custom-ipa-selected');
+            document.getElementById('ipaCheckIcon').style.opacity = '0';
+            document.getElementById('ipaFile').value = ''; // Xóa file ipa nếu đã chọn
+            document.getElementById('ipaDisplayName').innerText = "Tải file IPA khác";
+
+            // Highlight Preset
             document.querySelectorAll('.selected-app').forEach(e => {
                 e.classList.remove('selected-app');
                 const check = e.querySelector('.check-icon');
@@ -291,6 +323,28 @@
             document.getElementById('selectedAppName').value = name;
         }
 
+        function handleIpaSelect(input) {
+            if (input.files[0]) {
+                const file = input.files[0];
+                // Chuyển chế độ sang CUSTOM (Ký app tải lên)
+                document.getElementById('signType').value = 'custom';
+                
+                // Bỏ chọn Preset
+                document.querySelectorAll('.selected-app').forEach(e => {
+                    e.classList.remove('selected-app');
+                    const check = e.querySelector('.check-icon');
+                    check.style.opacity = '0';
+                    check.style.transform = 'scale(0.5)';
+                });
+
+                // Highlight Custom Box
+                const box = document.getElementById('customAppSection');
+                box.classList.add('custom-ipa-selected');
+                document.getElementById('ipaDisplayName').innerText = file.name;
+                document.getElementById('ipaCheckIcon').style.opacity = '1';
+            }
+        }
+
         function handleFile(input) {
             if(input.files[0]) {
                 const name = input.files[0].name;
@@ -301,34 +355,47 @@
         }
 
         async function startSigning() {
-            const fileInput = document.getElementById('certFile');
+            const signType = document.getElementById('signType').value;
+            const certFile = document.getElementById('certFile');
             const passwordInput = document.getElementById('p12Password');
             const btn = document.getElementById('signBtn');
             const statusArea = document.getElementById('statusArea');
             const errorMsg = document.getElementById('errorMsg');
             const errorVideoBtn = document.getElementById('serverErrorVideoBtn');
 
-            if (!fileInput.files[0]) return alert("Vui lòng chọn file Zip chứng chỉ!");
+            // Validate
+            if (signType === 'custom' && !document.getElementById('ipaFile').files[0]) {
+                return alert("Vui lòng chọn file IPA cần ký!");
+            }
+            if (!certFile.files[0]) return alert("Vui lòng chọn file Zip chứng chỉ!");
 
             // UI Loading
             btn.disabled = true;
             btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> ĐANG XỬ LÝ...';
             btn.classList.add('opacity-70', 'cursor-not-allowed');
             
-            // Reset tất cả trạng thái về mặc định
+            // Reset trạng thái
             statusArea.classList.remove('hidden');
             document.getElementById('loadingState').classList.remove('hidden');
             document.getElementById('successState').classList.add('hidden');
             document.getElementById('errorState').classList.add('hidden');
             document.getElementById('passwordArea').classList.add('hidden');
-            errorVideoBtn.classList.add('hidden'); // Luôn ẩn nút video khi bắt đầu ký lại
+            errorVideoBtn.classList.add('hidden'); 
 
             statusArea.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
             const formData = new FormData();
-            formData.append('cert', fileInput.files[0]);
-            formData.append('app_name', document.getElementById('selectedAppName').value);
+            formData.append('cert', certFile.files[0]);
             formData.append('password', passwordInput.value); 
+
+            // Gửi đúng loại dữ liệu
+            if (signType === 'preset') {
+                formData.append('app_name', document.getElementById('selectedAppName').value);
+                formData.append('sign_mode', 'preset');
+            } else {
+                formData.append('ipa', document.getElementById('ipaFile').files[0]);
+                formData.append('sign_mode', 'custom');
+            }
 
             try {
                 const response = await fetch(`${API_URL}/sign`, { method: 'POST', body: formData });
@@ -349,19 +416,15 @@
                     errorMsg.innerHTML = `<i class="fa-solid fa-key mr-1"></i> ${data.message}`;
                     document.getElementById('passwordArea').classList.remove('hidden');
                     passwordInput.focus();
-                    // Lưu ý: Không hiện nút video ở đây vì đây là lỗi thiếu mật khẩu
                 } else {
                     document.getElementById('errorState').classList.remove('hidden');
                     errorMsg.innerText = data.message;
                 }
 
             } catch (e) {
-                // ĐÂY LÀ CHỖ XỬ LÝ LỖI KẾT NỐI SERVER
                 document.getElementById('loadingState').classList.add('hidden');
                 document.getElementById('errorState').classList.remove('hidden');
                 errorMsg.innerText = "Lỗi kết nối Server! Vui lòng thử lại.";
-                
-                // HIỂN THỊ NÚT VIDEO KHI GẶP LỖI NÀY
                 errorVideoBtn.classList.remove('hidden');
             } finally {
                 btn.disabled = false;
