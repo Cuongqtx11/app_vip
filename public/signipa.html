@@ -53,6 +53,7 @@
         }
         .app-card:active { transform: scale(0.98); }
         
+        /* Class khi được chọn */
         .selected-app {
             border-color: #7c3aed !important; /* Màu Brand */
             background: rgba(124, 58, 237, 0.08) !important;
@@ -61,8 +62,19 @@
             background: rgba(124, 58, 237, 0.15) !important;
         }
 
+        /* Ẩn hiện check icon */
+        .app-card .check-icon {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .selected-app .check-icon {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+
         .app-icon-img {
-            width: 48px; height: 48px; /* Thu nhỏ icon chút cho gọn */
+            width: 48px; height: 48px;
             border-radius: 12px;
             object-fit: cover;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -78,7 +90,20 @@
         /* Custom IPA Box Style */
         .custom-ipa-box { border: 2px dashed #e5e7eb; transition: all 0.3s; }
         .dark .custom-ipa-box { border-color: #3f3f46; }
-        .custom-ipa-selected { border-color: #7c3aed !important; background: rgba(124, 58, 237, 0.05); }
+        
+        .custom-ipa-selected { 
+            border-color: #7c3aed !important; 
+            background: rgba(124, 58, 237, 0.05); 
+        }
+        .custom-ipa-box #ipaCheckIcon {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.2s;
+        }
+        .custom-ipa-selected #ipaCheckIcon {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
 
         /* Scrollbar ẩn */
         ::-webkit-scrollbar { width: 0px; background: transparent; }
@@ -105,14 +130,14 @@
                     <span class="text-xs font-bold uppercase text-gray-500 dark:text-gray-400">Chọn Ứng Dụng Nền</span>
                 </div>
                 
-                <div class="grid grid-cols-2 gap-2">
+                <div class="grid grid-cols-2 gap-2" id="presetAppsContainer">
                     <div onclick="selectApp('esign', this)" class="app-card selected-app relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfA3KV_ZGf_dEFRBpejxO90d5fKvXS8CKbujwqVKVqQK5anSjOsnNt9O8&s=10" class="app-icon-img bg-white dark:bg-gray-800">
                         <div class="flex-1 min-w-0">
                             <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">ESign</div>
                             <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Khuyên dùng</div>
                         </div>
-                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm transition-all scale-100"></i>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
                     </div>
 
                     <div onclick="selectApp('scarlet', this)" class="app-card relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
@@ -121,7 +146,7 @@
                             <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">Scarlet</div>
                             <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Phổ biến</div>
                         </div>
-                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm transition-all opacity-0 scale-50"></i>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
                     </div>
 
                     <div onclick="selectApp('gbox', this)" class="app-card relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
@@ -130,7 +155,7 @@
                             <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">GBox</div>
                             <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Ổn định</div>
                         </div>
-                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm transition-all opacity-0 scale-50"></i>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
                     </div>
 
                     <div onclick="selectApp('feather', this)" class="app-card relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
@@ -139,14 +164,14 @@
                             <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">Feather</div>
                             <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Mới</div>
                         </div>
-                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm transition-all opacity-0 scale-50"></i>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
                     </div>
                 </div>
             </div>
 
             <div class="relative py-1">
                 <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200 dark:border-white/10"></div></div>
-                <div class="relative flex justify-center text-[10px] uppercase font-bold tracking-widest"><span class="bg-white dark:bg-cardDark px-2 text-gray-400">KÝ IPA KHÁC</span></div>
+                <div class="relative flex justify-center text-[10px] uppercase font-bold tracking-widest"><span class="bg-white dark:bg-cardDark px-2 text-gray-400">HOẶC</span></div>
             </div>
 
             <div id="customAppSection" onclick="document.getElementById('ipaFile').click()" class="custom-ipa-box group relative p-3 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-4 hover:bg-gray-100 dark:hover:bg-white/10 transition">
@@ -154,11 +179,11 @@
                     <i class="fa-brands fa-apple text-xl"></i>
                 </div>
                 <div class="flex-1">
-                    <div class="text-[10px] text-gray-500 dark:text-gray-400">VUI LÒNG TẢI LÊN FILE .IPA KHÁC ĐỂ KÝ</div>
-                    <div class="text-[10px] text-gray-500 dark:text-gray-400">Nhấn để chọn file .ipa từ máy</div>
+                    <div class="text-[10px] text-gray-500 dark:text-gray-400">NHẤN ĐỂ CHỌN FILE .IPA TỪ MÁY</div>
+                    <div class="text-[10px] text-gray-500 dark:text-gray-400">tự động đổi bundle tránh trùng lặp</div>
                 </div>
                 <input type="file" id="ipaFile" accept=".ipa" class="hidden" onchange="handleIpaSelect(this)">
-                <i id="ipaCheckIcon" class="fa-solid fa-circle-check text-brand text-xl opacity-0 transition"></i>
+                <i id="ipaCheckIcon" class="fa-solid fa-circle-check text-brand text-xl transition"></i>
             </div>
             
             <input type="hidden" id="signType" value="preset"> <input type="hidden" id="selectedAppName" value="esign">
@@ -230,12 +255,13 @@
                 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Hướng Dẫn</span>
                 <div class="h-px bg-gray-200 dark:bg-white/10 flex-1"></div>
             </div>
-            <div class="flex flex-col items-center justify-center pt-0,1 pb-0.1">
-                <p id="fileName" class="text-[11px] text-gray-500 dark:text-gray-400 font-semibold group-hover:text-brand">
-                    dưới đây là các bước để có thể ký được ipa
+            
+            <div class="flex flex-col items-center justify-center py-2">
+                <p class="text-[11px] text-gray-500 dark:text-gray-400 font-semibold text-center">
+                    Dưới đây là các bước để có thể ký được IPA:
                 </p>
             </div>
-            <br>
+
             <div class="grid grid-cols-2 gap-3">
                 <button onclick="openVideo('QLiVW2AEkNw')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
                     <i class="fa-solid fa-circle-play text-2xl text-red-500 group-hover:scale-110 transition"></i>
@@ -297,51 +323,50 @@
             modal.classList.add('hidden');
         }
 
-        // --- LOGIC CHỌN APP ---
+        // --- LOGIC CHỌN APP (ĐÃ FIX LỖI CLICK) ---
         function selectApp(name, el) {
-            // Chuyển chế độ sang PRESET (Ký app có sẵn)
+            // 1. Chuyển chế độ sang PRESET
             document.getElementById('signType').value = 'preset';
             
-            // Reset giao diện Custom
+            // 2. Tắt trạng thái của Custom Box (nếu đang chọn)
             const customBox = document.getElementById('customAppSection');
             customBox.classList.remove('custom-ipa-selected');
-            document.getElementById('ipaCheckIcon').style.opacity = '0';
-            document.getElementById('ipaFile').value = ''; // Xóa file ipa nếu đã chọn
+            document.getElementById('ipaCheckIcon').classList.remove('opacity-100', 'scale-100');
+            document.getElementById('ipaFile').value = ''; 
             document.getElementById('ipaDisplayName').innerText = "Tải file IPA khác";
 
-            // Highlight Preset
-            document.querySelectorAll('.selected-app').forEach(e => {
-                e.classList.remove('selected-app');
-                const check = e.querySelector('.check-icon');
-                check.style.opacity = '0';
-                check.style.transform = 'scale(0.5)';
+            // 3. Xóa trạng thái selected của TẤT CẢ các app mẫu
+            document.querySelectorAll('.app-card').forEach(card => {
+                card.classList.remove('selected-app');
+                // Tìm icon check trong card này và ẩn nó đi
+                // Lưu ý: class 'check-icon' được dùng để style
+                // Ta có thể dùng CSS selector trực tiếp
             });
+
+            // 4. Bật trạng thái selected cho app ĐƯỢC CLICK
             el.classList.add('selected-app');
-            const check = el.querySelector('.check-icon');
-            check.style.opacity = '1';
-            check.style.transform = 'scale(1)';
             document.getElementById('selectedAppName').value = name;
         }
 
         function handleIpaSelect(input) {
             if (input.files[0]) {
                 const file = input.files[0];
-                // Chuyển chế độ sang CUSTOM (Ký app tải lên)
+                // 1. Chuyển chế độ sang CUSTOM
                 document.getElementById('signType').value = 'custom';
                 
-                // Bỏ chọn Preset
-                document.querySelectorAll('.selected-app').forEach(e => {
-                    e.classList.remove('selected-app');
-                    const check = e.querySelector('.check-icon');
-                    check.style.opacity = '0';
-                    check.style.transform = 'scale(0.5)';
+                // 2. Bỏ chọn TẤT CẢ các app mẫu
+                document.querySelectorAll('.app-card').forEach(card => {
+                    card.classList.remove('selected-app');
                 });
 
-                // Highlight Custom Box
+                // 3. Bật trạng thái cho Custom Box
                 const box = document.getElementById('customAppSection');
                 box.classList.add('custom-ipa-selected');
                 document.getElementById('ipaDisplayName').innerText = file.name;
-                document.getElementById('ipaCheckIcon').style.opacity = '1';
+                
+                // Hiển thị icon check
+                const icon = document.getElementById('ipaCheckIcon');
+                icon.classList.add('opacity-100', 'scale-100');
             }
         }
 
