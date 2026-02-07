@@ -234,6 +234,42 @@
     "lastSync": "2026-02-07T10:00:01.571Z"
   },
   {
+    "id": "ipa-com.eifrig.blitzerdepro-400.3.2",
+    "type": "ipa",
+    "name": "BlitzerdePRO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.eifrig.blitzerdepro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/BlitzerdePRO_400.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "400.3.2",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.eifrig.blitzerdepro",
+    "lastSync": "2026-02-07T18:00:01.450Z"
+  },
+  {
+    "id": "ipa-com.alexanderben.RadioIn-40.8.1",
+    "type": "ipa",
+    "name": "TuneInRadio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alexanderben.RadioIn.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/TuneInRadio_40.8.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "40.8.1",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.alexanderben.RadioIn",
+    "lastSync": "2026-02-07T18:00:01.450Z"
+  },
+  {
     "id": "ipa-com.textasticapp.textastic-universal-10.9.1",
     "type": "ipa",
     "name": "Textastic",
