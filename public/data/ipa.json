@@ -162,6 +162,42 @@
     "lastSync": "2026-02-06T23:00:02.057Z"
   },
   {
+    "id": "ipa-com.adobe.photoshop.ios-7.3.3",
+    "type": "ipa",
+    "name": "Photoshop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.photoshop.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/Photoshop_7.3.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.3.3",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.adobe.photoshop.ios",
+    "lastSync": "2026-02-07T02:00:01.400Z"
+  },
+  {
+    "id": "ipa-com.sfun.snapedit-6.3.16",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-02-2026/SnapEdit_6.3.16_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.16",
+    "developer": "khomodvip",
+    "date": "2026-02-07",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2026-02-07T02:00:01.401Z"
+  },
+  {
     "id": "ipa-com.textasticapp.textastic-universal-10.9.1",
     "type": "ipa",
     "name": "Textastic",
