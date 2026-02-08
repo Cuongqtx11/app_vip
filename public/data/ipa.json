@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.1.4",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/SnoreLab_6.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.1.4",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2026-02-08T19:00:01.540Z"
+  },
+  {
     "id": "ipa-com.igliverec.app-4.7.1",
     "type": "ipa",
     "name": "GREC",
@@ -214,6 +232,24 @@
     "source": "apptesters",
     "bundleID": "com.sillens.iShape",
     "lastSync": "2026-02-08T16:00:01.858Z"
+  },
+  {
+    "id": "ipa-com.offlinemusic-3.8.1",
+    "type": "ipa",
+    "name": "OfflineMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.offlinemusic.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-02-2026/OfflineMusic_3.8.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.1",
+    "developer": "khomodvip",
+    "date": "2026-02-08",
+    "source": "apptesters",
+    "bundleID": "com.offlinemusic",
+    "lastSync": "2026-02-08T19:00:01.540Z"
   },
   {
     "id": "ipa-com.travelboast.travelboast-2.25",
