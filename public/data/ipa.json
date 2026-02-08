@@ -180,6 +180,42 @@
     "lastSync": "2026-02-08T15:00:01.653Z"
   },
   {
+    "id": "ipa-me.imgbase.videoday-3.7.0",
+    "type": "ipa",
+    "name": "VDIT",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-02-2026/VDIT_3.7.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.0",
+    "developer": "khomodvip",
+    "date": "2026-02-08",
+    "source": "apptesters",
+    "bundleID": "me.imgbase.videoday",
+    "lastSync": "2026-02-08T16:00:01.857Z"
+  },
+  {
+    "id": "ipa-com.sillens.iShape-23.5.1",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-02-2026/Lifesum_23.5.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.5.1",
+    "developer": "khomodvip",
+    "date": "2026-02-08",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2026-02-08T16:00:01.858Z"
+  },
+  {
     "id": "ipa-com.travelboast.travelboast-2.25",
     "type": "ipa",
     "name": "TravelBoast",
