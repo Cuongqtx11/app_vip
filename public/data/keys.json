@@ -5,13 +5,14 @@
     "createdAt": "2026-02-08T15:29:07.907Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "8NLMVY",
     "transaction_id": "41691234",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-02-08T15:29:40.746Z"
   },
   {
     "id": "key_1770543448_3248",
