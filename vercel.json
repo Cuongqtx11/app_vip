@@ -4,6 +4,10 @@
   "cleanUrls": true,
   "rewrites": [
     {
+      "source": "/signipa",
+      "destination": "/index.html"
+    },
+    {
       "source": "/install-dns",
       "destination": "https://api.p12.vn/install-dns"
     },
