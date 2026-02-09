@@ -234,6 +234,42 @@
     "lastSync": "2026-02-09T05:00:01.896Z"
   },
   {
+    "id": "ipa-com.camerasideas.InstaShot-1.94.0",
+    "type": "ipa",
+    "name": "InShot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.InstaShot.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/InShot_1.94.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.94.0",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.InstaShot",
+    "lastSync": "2026-02-09T08:00:01.603Z"
+  },
+  {
+    "id": "ipa-com.iaftt.flightplusfree-8.7.2",
+    "type": "ipa",
+    "name": "FlightTracker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iaftt.flightplusfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/FlightTracker_8.7.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.7.2",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.iaftt.flightplusfree",
+    "lastSync": "2026-02-09T08:00:01.604Z"
+  },
+  {
     "id": "ipa-com.igliverec.app-4.7.1",
     "type": "ipa",
     "name": "GREC",
