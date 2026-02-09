@@ -228,8 +228,15 @@
     // Khởi tạo KEYWORDS rỗng, sẽ fetch từ file keywords.json
     let KEYWORDS = { movie: [], social: [], photo: [], game: [] };
 
+    // Kiểm tra đường dẫn hiện tại
+    const path = window.location.pathname;
+    let initialTab = 'home';
+    // Nếu đường dẫn là /signipa thì set tab mặc định là cert
+    if (path.includes('/signipa')) {
+        initialTab = 'cert';
+    }
     const STATE = { 
-        currentTab: 'home', 
+        currentTab: initialTab, // Sử dụng biến vừa check
         currentSubTab: 'sign', 
         currentPage: 1, 
         itemsPerPage: 24, 
