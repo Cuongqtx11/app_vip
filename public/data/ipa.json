@@ -288,6 +288,60 @@
     "lastSync": "2026-02-09T09:00:02.196Z"
   },
   {
+    "id": "ipa-io.veed.appstore-8.4.1",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/VEEDCaptions_8.4.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.4.1",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-02-09T11:00:01.792Z"
+  },
+  {
+    "id": "ipa-com.busuu.english.app-30.1.0",
+    "type": "ipa",
+    "name": "Busuu",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/Busuu_30.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "30.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.busuu.english.app",
+    "lastSync": "2026-02-09T11:00:01.793Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.20.00",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/edjingMix_8.20.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.20.00",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2026-02-09T11:00:01.793Z"
+  },
+  {
     "id": "ipa-com.igliverec.app-4.7.1",
     "type": "ipa",
     "name": "GREC",
