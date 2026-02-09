@@ -198,6 +198,42 @@
     "lastSync": "2026-02-09T04:00:01.373Z"
   },
   {
+    "id": "ipa-com.picsart.studio-29.3.1",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/PicsArt_29.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.3.1",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-02-09T05:00:01.895Z"
+  },
+  {
+    "id": "ipa-com.icandiapps.nightsky-26.2",
+    "type": "ipa",
+    "name": "NightSky",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.icandiapps.nightsky.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/NightSky_26.2_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.2",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.icandiapps.nightsky",
+    "lastSync": "2026-02-09T05:00:01.896Z"
+  },
+  {
     "id": "ipa-com.igliverec.app-4.7.1",
     "type": "ipa",
     "name": "GREC",
