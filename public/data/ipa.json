@@ -72,6 +72,78 @@
     "lastSync": "2026-02-08T20:00:01.866Z"
   },
   {
+    "id": "ipa-co.airapps.finderbot-2026.1.4",
+    "type": "ipa",
+    "name": "FindAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.finderbot.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/FindAir_2026.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.4",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "co.airapps.finderbot",
+    "lastSync": "2026-02-09T01:00:01.322Z"
+  },
+  {
+    "id": "ipa-com.internet-rocks.codescanner-2026.1.4",
+    "type": "ipa",
+    "name": "QrCode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.internet-rocks.codescanner.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/QrCode_2026.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.4",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.internet-rocks.codescanner",
+    "lastSync": "2026-02-09T01:00:01.322Z"
+  },
+  {
+    "id": "ipa-co.airapps.dictionary-2026.1.4",
+    "type": "ipa",
+    "name": "DictionaryAir",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.airapps.dictionary.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/DictionaryAir_2026.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1.4",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "co.airapps.dictionary",
+    "lastSync": "2026-02-09T01:00:01.323Z"
+  },
+  {
+    "id": "ipa-app.tripsy.ios-3.7.6",
+    "type": "ipa",
+    "name": "Tripsy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.tripsy.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/Tripsy_3.7.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.6",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "app.tripsy.ios",
+    "lastSync": "2026-02-09T01:00:01.323Z"
+  },
+  {
     "id": "ipa-com.igliverec.app-4.7.1",
     "type": "ipa",
     "name": "GREC",
