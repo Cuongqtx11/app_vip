@@ -225,17 +225,18 @@
   <script>
     // --- STATE ---
     const DB = { ipa: [], dylib: [], conf: [], cert_sign: [], cert_cert: [], cert_mod: [] };
+    // Khởi tạo KEYWORDS rỗng, sẽ fetch từ file keywords.json
     let KEYWORDS = { movie: [], social: [], photo: [], game: [] };
 
-    // === 1. LOGIC ROUTING KHỞI TẠO ===
+    // Kiểm tra đường dẫn hiện tại
     const path = window.location.pathname;
     let initialTab = 'home';
+    // Nếu đường dẫn là /signipa thì set tab mặc định là cert
     if (path.includes('/signipa')) {
         initialTab = 'cert';
     }
-
     const STATE = { 
-        currentTab: initialTab, 
+        currentTab: initialTab, // Sử dụng biến vừa check
         currentSubTab: 'sign', 
         currentPage: 1, 
         itemsPerPage: 24, 
@@ -243,13 +244,15 @@
         currentFilter: 'all'
     };
 
-    // --- HELPER FUNCTIONS ---
+    // --- CHECK WHITELIST (CHÍNH XÁC) ---
+    // Kiểm tra xem tên app (str) có nằm trong danh sách whitelist không
     function checkKw(str, whitelist) {
         if (!str || !whitelist) return false;
         const s = str.trim().toLowerCase();
         return whitelist.some(k => k.trim().toLowerCase() === s);
     }
 
+    // Deduplication: Lọc app trùng, chỉ lấy bản mới nhất
     function getUniqueApps(apps) {
         const map = new Map();
         apps.forEach(app => {
@@ -259,19 +262,26 @@
         return Array.from(map.values());
     }
 
+    // Sort theo ngày
     function sortItemsByDate(items) {
         return items.sort((a, b) => new Date(b.lastSync || b.date || 0) - new Date(a.lastSync || a.date || 0));
     }
 
-    // --- LOAD DATA ---
+    // --- LOAD DATA (ĐỌC 2 FILE) ---
     async function loadData() {
-      // Tải Keywords
+      
+      // 1. Tải Keywords.json (Chạy trước để có dữ liệu lọc)
       try {
         const kwRes = await fetch('keywords.json?t=' + Date.now());
-        if(kwRes.ok) KEYWORDS = await kwRes.json();
-      } catch (err) { console.error('Lỗi tải keywords', err); }
+        if(kwRes.ok) {
+            KEYWORDS = await kwRes.json();
+            console.log('Đã tải Keywords thành công:', KEYWORDS);
+        } else {
+            console.warn('Không tìm thấy file keywords.json, dùng danh sách rỗng');
+        }
+      } catch (err) { console.error('Lỗi tải keywords.json', err); }
 
-      // Tải Data Apps
+      // 2. Tải Data Apps
       const endpoints = [
         {k: 'ipa', u: 'data/ipa.json'},
         {k: 'dylib', u: 'data/dylib.json'},
@@ -290,40 +300,28 @@
         } catch(err) { console.error(`Lỗi tải ${e.k}`, err); }
       }));
       
-      // UI Setup
-      const searchContainer = document.getElementById('searchContainer');
-      const searchInput = document.getElementById('searchInput');
-      
-      document.querySelectorAll('.tab-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.tab === STATE.currentTab);
-      });
-
-      if (STATE.currentTab === 'home') {
-          searchContainer.style.display = 'none';
-      } else {
-          searchContainer.style.display = 'flex';
-          searchInput.placeholder = `Tìm trong ${STATE.currentTab.toUpperCase()}...`;
-      }
-
       renderContent(document.getElementById('searchInput').value);
+      document.getElementById('searchContainer').style.display = 'none'; // Mặc định ẩn search ở Home
     }
 
-    // --- ROUTING ACTIONS ---
-    function switchTab(tabId, updateHistory = true) {
+    // --- FILTER ---
+    function setFilter(filter) {
+        STATE.currentFilter = filter;
+        STATE.currentPage = 1;
+        renderContent(document.getElementById('searchInput').value);
+    }
+
+    // --- TAB SWITCH ---
+    function switchTab(tabId) {
       STATE.currentTab = tabId;
       STATE.currentPage = 1;
       STATE.currentFilter = 'all';
-      
-      if (updateHistory) {
-          if (tabId === 'cert') history.pushState({tab: 'cert'}, '', '/signipa');
-          else if (tabId === 'home') history.pushState({tab: 'home'}, '', '/');
-          // Các tab khác có thể thêm nếu cần
-      }
       
       document.querySelectorAll('.tab-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.tab === tabId);
       });
 
+      // Ẩn/Hiện Search
       const searchContainer = document.getElementById('searchContainer');
       const searchInput = document.getElementById('searchInput');
       if (tabId === 'home') {
@@ -338,38 +336,32 @@
       document.getElementById('mainContainer').scrollTop = 0;
     }
 
-    window.addEventListener('popstate', (event) => {
-        if (event.state && event.state.tab) {
-            switchTab(event.state.tab, false);
-        } else {
-            const p = window.location.pathname;
-            if (p.includes('/signipa')) switchTab('cert', false);
-            else switchTab('home', false);
-        }
-    });
-
-    function setFilter(filter) {
-        STATE.currentFilter = filter;
-        STATE.currentPage = 1;
-        renderContent(document.getElementById('searchInput').value);
-    }
-
-    // --- RENDER CONTENT ---
     function renderContent(query = '') {
       const container = document.getElementById('dynamicContent');
       let html = '';
       let items = [];
       const tab = STATE.currentTab;
 
-      // 1. HOME TAB
+      // ============================================================
+      // 1. HOME TAB (LỌC THEO KEYWORDS TỪ FILE JSON)
+      // ============================================================
       if (tab === 'home') {
         let rawApps = [...DB.ipa, ...DB.cert_mod, ...DB.dylib].map(i=>({...i, _type:'IPA'}));
         let uniqueApps = getUniqueApps(sortItemsByDate(rawApps));
 
+        // Lọc chính xác theo whitelist
+        const movieApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.movie));
+        const socialApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.social));
+        const photoApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.photo));
+        const gameApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.game));
+        
+        // Trending: Lấy các app hot (cứng) + whitelist social
         const trendingList = ['YouTube','Facebook','TikTok','Messenger','Instagram','Spotify','Netflix','CapCut','Zalo'];
         const trendingApps = uniqueApps.filter(i => checkKw(i.name, trendingList)).slice(0, 10);
+
         const featured = uniqueApps.slice(0, 5);
         const recent = uniqueApps.slice(5, 17);
+        
         const hour = new Date().getHours();
         let greeting = hour >= 18 ? "Chào buổi tối" : hour >= 12 ? "Chào buổi chiều" : "Chào buổi sáng";
 
@@ -385,40 +377,63 @@
                   </div>
               </div>
           </div>
+          
           <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-8 -mx-4 px-4 md:mx-0 md:px-0 mb-2 animate-slide-up">
              ${featured.map(i => createBigHero(i)).join('')}
           </div>
+
           <div class="grid grid-cols-4 gap-3 mb-8 animate-slide-up">
              ${createQuickCat('Game Hack', 'sword', 'from-red-500 to-orange-500', 'game')}
              ${createQuickCat('Chụp Ảnh', 'camera', 'from-blue-500 to-cyan-500', 'photo')}
              ${createQuickCat('Xem Phim', 'clapperboard', 'from-purple-500 to-pink-500', 'movie')}
              ${createQuickCat('Mạng XH', 'globe', 'from-indigo-500 to-blue-500', 'social')}
           </div>
+
           ${trendingApps.length ? `
           <div class="mb-8 animate-slide-up">
-             <div class="flex justify-between items-center mb-4"><h3 class="text-xl font-extrabold text-gray-900 dark:text-white flex items-center gap-2"><i data-lucide="flame" class="w-5 h-5 text-orange-500 fill-orange-500"></i> Xu hướng</h3></div>
-             <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-2 -mx-4 px-4 md:mx-0 md:px-0">${trendingApps.map(i => createTrendingItem(i)).join('')}</div>
+             <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-extrabold text-gray-900 dark:text-white flex items-center gap-2">
+                   <i data-lucide="flame" class="w-5 h-5 text-orange-500 fill-orange-500"></i> Xu hướng
+                </h3>
+             </div>
+             <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+                ${trendingApps.map(i => createTrendingItem(i)).join('')}
+             </div>
              <hr class="border-gray-200 dark:border-white/5 mt-4">
           </div>` : ''}
+
           <div class="mt-4 animate-slide-up">
-             <div class="flex justify-between items-end mb-4"><h3 class="text-xl font-extrabold text-gray-900 dark:text-white">Mới cập nhật</h3><span class="text-brand text-xs font-bold bg-brand/10 px-2 py-1 rounded-md">HOT</span></div>
-             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">${recent.map(i => createGridItem(i)).join('')}</div>
+             <div class="flex justify-between items-end mb-4">
+                <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">Mới cập nhật</h3>
+                <span class="text-brand text-xs font-bold bg-brand/10 px-2 py-1 rounded-md">HOT</span>
+             </div>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                ${recent.map(i => createGridItem(i)).join('')}
+             </div>
           </div>
+          
           <div class="pb-10 pt-6 text-center text-xs text-gray-400 font-medium">Designed by Kho Vip</div>
         `;
 
-      // 2. TAB CERT (LƯU Ý: Đã đổi tên file thành embed_sign.html)
+      // ============================================================
+      // 2. TAB CERT (LOGIC CŨ)
+      // ============================================================
       } else if (tab === 'cert') {
-          html = '<iframe src="embed_sign.html" class="w-full h-[85vh] border-none" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation"></iframe>';
+          html = '<iframe src="signipa.html" class="w-full h-[85vh] border-none" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation"></iframe>';
 
-      // 3. OTHER TABS
+      // ============================================================
+      // 3. TAB IPA, DYLIB, CONF (LOGIC CŨ)
+      // ============================================================
       } else {
         if (tab === 'ipa') items = DB.ipa;
         else if (tab === 'dylib') items = DB.dylib;
         else if (tab === 'conf') items = DB.conf;
         
         if(query) items = filterItems(items, query);
-        if (STATE.currentFilter !== 'all') items = items.filter(i => i.tags && i.tags.includes(STATE.currentFilter));
+
+        if (STATE.currentFilter !== 'all') {
+            items = items.filter(i => i.tags && i.tags.includes(STATE.currentFilter));
+        }
 
         const featured = items.slice(0, 5);
         const totalPages = Math.ceil(items.length / STATE.itemsPerPage);
@@ -429,15 +444,30 @@
         html = `
            <h1 class="text-3xl font-black mb-6 text-gray-900 dark:text-white uppercase">${tab} Store</h1>
            ${!query && STATE.currentFilter === 'all' ? `
-           <div class="mb-8"><h3 class="text-lg font-bold mb-3 px-1">Nổi bật</h3><div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-4 -mx-4 px-4 md:mx-0 md:px-0">${featured.map(i => createSubPageHero(i)).join('')}</div></div>` : ''}
+           <div class="mb-8">
+              <h3 class="text-lg font-bold mb-3 px-1">Nổi bật</h3>
+              <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-4 -mx-4 px-4 md:mx-0 md:px-0">
+                 ${featured.map(i => createSubPageHero(i)).join('')}
+              </div>
+           </div>` : ''}
+           
            <div class="flex flex-col md:flex-row md:items-end justify-between mb-4 px-1 gap-3">
               <div class="flex items-center gap-4 w-full md:w-auto justify-between md:justify-start">
                   <h3 class="text-lg font-bold">Danh sách</h3>
-                  ${showFilter ? `<div class="flex bg-gray-200 dark:bg-white/10 rounded-lg p-1 gap-1"><button onclick="setFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'all' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Tất cả</button><button onclick="setFilter('game')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'game' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Game</button><button onclick="setFilter('social')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'social' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Social</button></div>` : ''}
+                  ${showFilter ? `
+                  <div class="flex bg-gray-200 dark:bg-white/10 rounded-lg p-1 gap-1">
+                      <button onclick="setFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'all' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Tất cả</button>
+                      <button onclick="setFilter('game')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'game' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Game</button>
+                      <button onclick="setFilter('social')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'social' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Social</button>
+                  </div>
+                  ` : ''}
               </div>
               <span class="text-xs text-gray-500">${items.length} apps</span>
            </div>
-           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">${pagedItems.length ? pagedItems.map(i => createGridItem(i, tab.toUpperCase())).join('') : emptyState()}</div>
+
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${pagedItems.length ? pagedItems.map(i => createGridItem(i, tab.toUpperCase())).join('') : emptyState()}
+           </div>
            ${items.length > STATE.itemsPerPage ? createPagination(totalPages) : ''}
         `;
       }
@@ -445,109 +475,261 @@
       lucide.createIcons();
     }
 
-    // --- COMPONENT HELPERS ---
+    // --- SUB PAGE RENDERER (CATEGORY VIEW) ---
     function openCategory(catType, catName) {
         const container = document.getElementById('dynamicContent');
+        
+        // LỌC CHÍNH XÁC THEO FILE JSON
         const rawItems = DB.ipa.filter(i => checkKw(i.name, KEYWORDS[catType]));
         const items = getUniqueApps(rawItems);
+        
         container.innerHTML = `
             <div class="animate-slide-up">
-                <button onclick="renderContent()" class="mb-4 flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-brand transition bg-gray-100 dark:bg-white/10 px-3 py-2 rounded-lg"><i data-lucide="arrow-left" class="w-4 h-4"></i> Quay lại Home</button>
-                <div class="flex items-center gap-3 mb-6"><h1 class="text-3xl font-black text-gray-900 dark:text-white">${catName}</h1><span class="bg-brand/10 text-brand text-xs font-bold px-2 py-1 rounded-md border border-brand/20">${items.length} Apps</span></div>
-                ${items.length === 0 ? emptyState() : `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-20">${items.map(i => createGridItem(i, "IPA")).join('')}</div>`}
-            </div>`;
+                <button onclick="renderContent()" class="mb-4 flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-brand transition bg-gray-100 dark:bg-white/10 px-3 py-2 rounded-lg">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Quay lại Home
+                </button>
+                
+                <div class="flex items-center gap-3 mb-6">
+                    <h1 class="text-3xl font-black text-gray-900 dark:text-white">${catName}</h1>
+                    <span class="bg-brand/10 text-brand text-xs font-bold px-2 py-1 rounded-md border border-brand/20">${items.length} Apps</span>
+                </div>
+
+                ${items.length === 0 ? emptyState() : `
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-20">
+                    ${items.map(i => createGridItem(i, "IPA")).join('')}
+                </div>
+                `}
+            </div>
+        `;
         lucide.createIcons();
         window.scrollTo({top:0, behavior:'smooth'});
     }
 
+    // --- UI COMPONENTS ---
     function createTrendingItem(i) {
-       return `<div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group"><div class="w-16 h-16 rounded-[14px] overflow-hidden shadow-md border border-gray-100 dark:border-white/10 relative bg-white dark:bg-cardDark"><img src="${i.icon || i.iconUrl}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div><h4 class="font-semibold text-gray-900 dark:text-white text-[10px] truncate w-full text-center">${i.name}</h4></div>`;
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
+            <div class="w-16 h-16 rounded-[14px] overflow-hidden shadow-md border border-gray-100 dark:border-white/10 relative bg-white dark:bg-cardDark">
+               <img src="${i.icon || i.iconUrl}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <h4 class="font-semibold text-gray-900 dark:text-white text-[10px] truncate w-full text-center">${i.name}</h4>
+         </div>
+       `;
     }
+
     function createQuickCat(name, icon, grad, type) {
-        return `<button onclick="openCategory('${type}', '${name}')" class="flex flex-col items-center gap-2 cursor-pointer group bg-transparent border-0"><div class="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br ${grad} flex items-center justify-center text-white shadow-lg group-active:scale-95 transition"><i data-lucide="${icon}" class="w-7 h-7"></i></div><span class="text-[10px] font-bold text-gray-500 dark:text-gray-400 group-hover:text-brand transition">${name}</span></button>`;
+        return `
+        <button onclick="openCategory('${type}', '${name}')" class="flex flex-col items-center gap-2 cursor-pointer group bg-transparent border-0">
+            <div class="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br ${grad} flex items-center justify-center text-white shadow-lg group-active:scale-95 transition">
+                <i data-lucide="${icon}" class="w-7 h-7"></i>
+            </div>
+            <span class="text-[10px] font-bold text-gray-500 dark:text-gray-400 group-hover:text-brand transition">${name}</span>
+        </button>`;
     }
+
     function createBigHero(i) {
-       return `<div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[85%] md:w-[24rem] h-[15rem] relative rounded-[1.8rem] overflow-hidden shadow-xl group cursor-pointer bg-gray-900 border border-white/10"><img src="${i.icon || i.iconUrl}" class="absolute inset-0 w-full h-full object-cover opacity-60 blur-xl scale-125 group-hover:scale-110 transition duration-700"><div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div><div class="absolute bottom-0 left-0 w-full p-5 flex flex-col items-start gap-3"><span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase border border-white/20">MỚI NHẤT</span><div class="flex items-center gap-3 w-full"><img src="${i.icon || i.iconUrl}" class="w-14 h-14 rounded-xl shadow-lg border-2 border-white/20 bg-gray-800 object-cover"><div class="flex-1 min-w-0"><h2 class="text-xl font-bold text-white leading-tight truncate">${i.name || i.title}</h2><p class="text-gray-300 text-xs line-clamp-1 mt-1">${i.desc || 'Trải nghiệm ngay'}</p></div></div></div></div>`;
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[85%] md:w-[24rem] h-[15rem] relative rounded-[1.8rem] overflow-hidden shadow-xl group cursor-pointer bg-gray-900 border border-white/10">
+            <img src="${i.icon || i.iconUrl}" class="absolute inset-0 w-full h-full object-cover opacity-60 blur-xl scale-125 group-hover:scale-110 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 w-full p-5 flex flex-col items-start gap-3">
+               <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase border border-white/20">MỚI NHẤT</span>
+               <div class="flex items-center gap-3 w-full">
+                  <img src="${i.icon || i.iconUrl}" class="w-14 h-14 rounded-xl shadow-lg border-2 border-white/20 bg-gray-800 object-cover">
+                  <div class="flex-1 min-w-0">
+                     <h2 class="text-xl font-bold text-white leading-tight truncate">${i.name || i.title}</h2>
+                     <p class="text-gray-300 text-xs line-clamp-1 mt-1">${i.desc || 'Trải nghiệm ngay'}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       `;
     }
+    
     function createSubPageHero(i) {
-       return `<div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[17.5rem] h-[10rem] relative rounded-3xl overflow-hidden shadow-lg group cursor-pointer border border-white/10"><img src="${i.icon||i.iconUrl}" class="absolute inset-0 w-full h-full object-cover blur-md opacity-60 scale-125 group-hover:scale-110 transition duration-500"><div class="absolute inset-0 bg-black/40"></div><div class="absolute inset-0 p-5 flex flex-col justify-end"><div class="flex items-center gap-3"><img src="${i.icon||i.iconUrl}" class="w-12 h-12 rounded-xl shadow-md border border-white/20 bg-black/20 backdrop-blur-md"><div class="flex-1 min-w-0"><h4 class="font-bold text-white text-lg truncate">${i.name||i.title}</h4><p class="text-[10px] text-gray-200 uppercase font-bold tracking-wider">Top Download</p></div></div></div></div>`;
+       const title = i.name || i.title;
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")})' class="snap-center shrink-0 w-[17.5rem] h-[10rem] relative rounded-3xl overflow-hidden shadow-lg group cursor-pointer border border-white/10">
+            <img src="${icon}" class="absolute inset-0 w-full h-full object-cover blur-md opacity-60 scale-125 group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 p-5 flex flex-col justify-end">
+                <div class="flex items-center gap-3">
+                  <img src="${icon}" class="w-12 h-12 rounded-xl shadow-md border border-white/20 bg-black/20 backdrop-blur-md">
+                  <div class="flex-1 min-w-0">
+                     <h4 class="font-bold text-white text-lg truncate">${title}</h4>
+                     <p class="text-[10px] text-gray-200 uppercase font-bold tracking-wider">Top Download</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       `;
     }
-    function createGridItem(i, tag='APP') {
-       return `<div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")}, "${tag}")' class="flex items-center gap-3 p-3.5 rounded-2xl bg-white dark:bg-cardDark border border-transparent hover:border-gray-200 dark:hover:border-white/10 transition-all cursor-pointer shadow-sm group"><img src="${i.icon||i.iconUrl}" class="w-14 h-14 rounded-[12px] bg-gray-100 object-cover shadow-sm group-hover:scale-105 transition" onerror="this.src='https://placehold.co/100'"/><div class="flex-1 min-w-0"><h4 class="font-bold text-gray-900 dark:text-white truncate text-sm">${i.name||i.title||i.filename}</h4><p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1 mt-0.5">${i.desc||i.description||'No description'}</p></div><button class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center text-brand"><i data-lucide="download" class="w-4 h-4"></i></button></div>`;
+
+    function createGridItem(i, tag = 'APP') {
+       const title = i.name || i.title || i.filename || 'Unknown';
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       const desc = i.desc || i.description || i.certname || 'No description';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")}, "${tag}")' class="flex items-center gap-3 p-3.5 rounded-2xl bg-white dark:bg-cardDark border border-transparent hover:border-gray-200 dark:hover:border-white/10 transition-all cursor-pointer shadow-sm group">
+            <img src="${icon}" class="w-14 h-14 rounded-[12px] bg-gray-100 object-cover shadow-sm group-hover:scale-105 transition" onerror="this.src='https://placehold.co/100'"/>
+            <div class="flex-1 min-w-0">
+               <h4 class="font-bold text-gray-900 dark:text-white truncate text-sm">${title}</h4>
+               <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1 mt-0.5">${desc}</p>
+            </div>
+            <button class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center text-brand">
+               <i data-lucide="download" class="w-4 h-4"></i>
+            </button>
+         </div>
+       `;
     }
+
+    function createCertItem(i) {
+       const title = i.name || i.title || 'Certificate';
+       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+       const certName = i.desc || i.certname || 'Chưa cập nhật'; 
+       const status = i.status || 'Good'; 
+       const isGood = status.toLowerCase() === 'good';
+       return `
+         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")}, "CERT")' class="col-span-1 bg-white dark:bg-cardDark p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 relative overflow-hidden group hover:border-brand/50 transition-all cursor-pointer">
+            <div class="flex items-start gap-4 mb-4">
+                <img src="${icon}" class="w-14 h-14 rounded-2xl shadow-md object-cover bg-gray-100 dark:bg-gray-800">
+                <div class="flex-1 min-w-0 pt-1">
+                    <h3 class="text-lg font-extrabold text-gray-900 dark:text-white leading-tight mb-1">${title}</h3>
+                    <div class="flex items-center gap-1.5 text-sm font-semibold">
+                        <span class="${isGood?'text-green-500':'text-red-500'} flex items-center gap-1">
+                           ${isGood?'🟢':'🔴'} ${status}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-300 border-t border-gray-100 dark:border-white/5 pt-2">
+                <span class="font-medium">Cert:</span> ${certName}
+            </div>
+         </div>
+       `;
+    }
+
     function createPagination(total) {
-       let btns = ''; const maxShow=5; let start=Math.max(1,STATE.currentPage-2); let end=Math.min(total,start+maxShow-1);
-       if(total<=1) return '';
-       btns+=`<button onclick="changePage(${STATE.currentPage-1})" class="page-btn" ${STATE.currentPage===1?'disabled':''}><i data-lucide="chevron-left" class="w-4 h-4"></i></button>`;
-       for(let p=start; p<=end; p++) btns+=`<button onclick="changePage(${p})" class="page-btn ${p===STATE.currentPage?'active':''}">${p}</button>`;
-       btns+=`<button onclick="changePage(${STATE.currentPage+1})" class="page-btn" ${STATE.currentPage===total?'disabled':''}><i data-lucide="chevron-right" class="w-4 h-4"></i></button>`;
+       let btns = '';
+       const maxShow = 5;
+       let start = Math.max(1, STATE.currentPage - 2);
+       let end = Math.min(total, start + maxShow - 1);
+       if (total <= 1) return '';
+       btns += `<button onclick="changePage(${STATE.currentPage - 1})" class="page-btn" ${STATE.currentPage===1?'disabled':''}><i data-lucide="chevron-left" class="w-4 h-4"></i></button>`;
+       for(let p = start; p <= end; p++) btns += `<button onclick="changePage(${p})" class="page-btn ${p===STATE.currentPage?'active':''}">${p}</button>`;
+       btns += `<button onclick="changePage(${STATE.currentPage + 1})" class="page-btn" ${STATE.currentPage===total?'disabled':''}><i data-lucide="chevron-right" class="w-4 h-4"></i></button>`;
        return `<div class="pagination">${btns}</div>`;
     }
+
     function emptyState() {
        return `<div class="col-span-full py-10 text-center text-gray-400 flex flex-col items-center"><i data-lucide="package-open" class="w-10 h-10 mb-2 opacity-50"></i><p class="text-sm">Không tìm thấy dữ liệu</p></div>`;
     }
 
-    // --- MAIN ACTIONS ---
+    // --- ACTIONS ---
     function changePage(p) { STATE.currentPage = p; renderContent(); document.getElementById('mainContainer').scrollTo({ top: 0, behavior: 'smooth' }); }
-    function filterItems(items, q) { const lower = q.toLowerCase(); return items.filter(i => (i.name||i.title||i.filename||'').toLowerCase().includes(lower)); }
+    function switchSubTab(sub) { STATE.currentSubTab = sub; renderContent(); }
+    function filterItems(items, q) { const lower = q.toLowerCase(); return items.filter(i => (i.name || i.title || i.filename || '').toLowerCase().includes(lower)); }
     document.getElementById('searchInput').addEventListener('input', (e) => renderContent(e.target.value));
 
-    // --- MODAL ---
+    // --- MODAL ACTIONS ---
     function openModal(i) {
        STATE.currentItem = i;
        document.getElementById('mTitle').innerText = i.name || i.title || i.filename;
        document.getElementById('mSub').innerText = `${i.version || 'Latest'} • ${i.developer || 'Unknown'}`;
        document.getElementById('mIcon').src = i.icon || i.iconUrl;
        document.getElementById('mDesc').innerText = i.desc || i.description || i.usage || 'Không có mô tả chi tiết.';
+       
        document.getElementById('vipArea').classList.add('hidden');
        document.getElementById('vipMsg').classList.add('hidden');
        document.getElementById('vipKey').value = '';
        document.querySelector('#appModalPanel button[onclick*="showVipInput()"]').classList.remove('hidden');
+       
        const verifyBtn = document.getElementById('verifyBtn');
-       verifyBtn.classList.remove('hidden'); verifyBtn.disabled = false; verifyBtn.innerText = "XÁC NHẬN & TẢI";
-       const modal = document.getElementById('appModal'); const panel = document.getElementById('appModalPanel');
-       modal.classList.remove('hidden'); setTimeout(() => { modal.classList.remove('opacity-0'); panel.classList.remove('scale-95'); panel.classList.add('scale-100'); }, 10);
+       verifyBtn.classList.remove('hidden');
+       verifyBtn.disabled = false;
+       verifyBtn.innerText = "XÁC NHẬN & TẢI";
+
+       const modal = document.getElementById('appModal');
+       const panel = document.getElementById('appModalPanel');
+       modal.classList.remove('hidden');
+       setTimeout(() => { 
+           modal.classList.remove('opacity-0'); 
+           panel.classList.remove('scale-95');
+           panel.classList.add('scale-100');
+       }, 10);
     }
+
     function closeModal(id) {
-       const modal = document.getElementById(id); const panel = document.getElementById('appModalPanel');
-       panel.classList.remove('scale-100'); panel.classList.add('scale-95'); modal.classList.add('opacity-0'); setTimeout(() => modal.classList.add('hidden'), 300);
+       const modal = document.getElementById(id);
+       const panel = document.getElementById('appModalPanel');
+       panel.classList.remove('scale-100');
+       panel.classList.add('scale-95');
+       modal.classList.add('opacity-0');
+       setTimeout(() => modal.classList.add('hidden'), 300);
     }
+
     function showVipInput() {
-        document.getElementById('vipArea').classList.remove('hidden'); document.querySelector('#appModalPanel button[onclick*="showVipInput()"]').classList.add('hidden');
+        document.getElementById('vipArea').classList.remove('hidden');
+        document.querySelector('#appModalPanel button[onclick*="showVipInput()"]').classList.add('hidden');
     }
+
     async function verifyKey() {
        const k = document.getElementById('vipKey').value;
        if(k.length < 5) return alert('Key lỗi');
-       const btn = document.getElementById('verifyBtn'); const msg = document.getElementById('vipMsg');
-       btn.innerText = "ĐANG CHECK..."; btn.disabled = true;
+       
+       const btn = document.getElementById('verifyBtn');
+       const msg = document.getElementById('vipMsg');
+       btn.innerText = "ĐANG CHECK...";
+       btn.disabled = true;
+       
        try {
           const res = await fetch('/api/keys/verify', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({key:k}) });
           const d = await res.json();
+          
           if(d.success) {
              const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
-             msg.classList.remove('hidden', 'text-red-500'); msg.classList.add('text-green-500'); msg.innerText = "✅ Đang chuyển hướng...";
-             btn.classList.add('hidden'); setTimeout(() => { window.location.href = link; }, 800);
+             msg.classList.remove('hidden', 'text-red-500');
+             msg.classList.add('text-green-500');
+             msg.innerText = "✅ Đang chuyển hướng...";
+             btn.classList.add('hidden');
+             setTimeout(() => { window.location.href = link; }, 800);
           } else {
-             msg.classList.remove('hidden', 'text-green-500'); msg.classList.add('text-red-500'); msg.innerText = d.error || "Mã không hợp lệ";
-             btn.disabled = false; btn.innerText = "XÁC NHẬN & TẢI";
+             msg.classList.remove('hidden', 'text-green-500');
+             msg.classList.add('text-red-500');
+             msg.innerText = d.error || "Mã không hợp lệ";
+             btn.disabled = false;
+             btn.innerText = "XÁC NHẬN & TẢI";
           }
-       } catch(e) { alert('Lỗi: '+e.message); btn.disabled = false; btn.innerText = "XÁC NHẬN & TẢI"; }
+       } catch(e) { 
+           alert('Lỗi kết nối API: '+e.message); 
+           btn.disabled = false;
+           btn.innerText = "XÁC NHẬN & TẢI";
+       }
     }
+
     function downloadFree() {
        const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
-       window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank'); closeModal('appModal');
+       window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank');
+       closeModal('appModal');
     }
+
     function toggleTheme() {
-       document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', document.documentElement.classList.contains('dark')?'dark':'light');
+       document.documentElement.classList.toggle('dark');
+       localStorage.setItem('theme', document.documentElement.classList.contains('dark')?'dark':'light');
     }
     if(localStorage.getItem('theme')==='dark') document.documentElement.classList.add('dark');
 
-    // --- INIT ---
     loadData();
     lucide.createIcons();
+    
     document.getElementById('vipKey').addEventListener('input', function(e) {
       let v = e.target.value.replace(/[^A-Z0-9]/gi, '').toUpperCase();
-      let f = ''; for(let i=0;i<v.length&&i<16;i++){ if(i>0&&i%4===0)f+='-'; f+=v[i]; }
+      let f = '';
+      for(let i=0; i<v.length && i<16; i++) {
+        if(i>0 && i%4===0) f+='-';
+        f+=v[i];
+      }
       e.target.value = f;
     });
   </script>
