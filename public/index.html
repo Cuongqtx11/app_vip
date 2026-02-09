@@ -225,18 +225,19 @@
   <script>
     // --- STATE ---
     const DB = { ipa: [], dylib: [], conf: [], cert_sign: [], cert_cert: [], cert_mod: [] };
-    // Khởi tạo KEYWORDS rỗng, sẽ fetch từ file keywords.json
+    // Khởi tạo KEYWORDS rỗng
     let KEYWORDS = { movie: [], social: [], photo: [], game: [] };
 
-    // Kiểm tra đường dẫn hiện tại
+    // === 1. LOGIC ROUTING KHỞI TẠO ===
+    // Kiểm tra ngay khi vào trang xem đang ở link nào
     const path = window.location.pathname;
     let initialTab = 'home';
-    // Nếu đường dẫn là /signipa thì set tab mặc định là cert
     if (path.includes('/signipa')) {
         initialTab = 'cert';
     }
+
     const STATE = { 
-        currentTab: initialTab, // Sử dụng biến vừa check
+        currentTab: initialTab, // Sử dụng tab vừa xác định
         currentSubTab: 'sign', 
         currentPage: 1, 
         itemsPerPage: 24, 
@@ -244,15 +245,14 @@
         currentFilter: 'all'
     };
 
-    // --- CHECK WHITELIST (CHÍNH XÁC) ---
-    // Kiểm tra xem tên app (str) có nằm trong danh sách whitelist không
+    // --- CHECK WHITELIST ---
     function checkKw(str, whitelist) {
         if (!str || !whitelist) return false;
         const s = str.trim().toLowerCase();
         return whitelist.some(k => k.trim().toLowerCase() === s);
     }
 
-    // Deduplication: Lọc app trùng, chỉ lấy bản mới nhất
+    // Deduplication
     function getUniqueApps(apps) {
         const map = new Map();
         apps.forEach(app => {
@@ -267,21 +267,18 @@
         return items.sort((a, b) => new Date(b.lastSync || b.date || 0) - new Date(a.lastSync || a.date || 0));
     }
 
-    // --- LOAD DATA (ĐỌC 2 FILE) ---
+    // --- LOAD DATA ---
     async function loadData() {
-      
-      // 1. Tải Keywords.json (Chạy trước để có dữ liệu lọc)
+      // Tải Keywords
       try {
         const kwRes = await fetch('keywords.json?t=' + Date.now());
         if(kwRes.ok) {
             KEYWORDS = await kwRes.json();
             console.log('Đã tải Keywords thành công:', KEYWORDS);
-        } else {
-            console.warn('Không tìm thấy file keywords.json, dùng danh sách rỗng');
         }
       } catch (err) { console.error('Lỗi tải keywords.json', err); }
 
-      // 2. Tải Data Apps
+      // Tải Data Apps
       const endpoints = [
         {k: 'ipa', u: 'data/ipa.json'},
         {k: 'dylib', u: 'data/dylib.json'},
@@ -300,8 +297,24 @@
         } catch(err) { console.error(`Lỗi tải ${e.k}`, err); }
       }));
       
+      // === CẬP NHẬT UI BAN ĐẦU DỰA TRÊN TAB ===
+      const searchContainer = document.getElementById('searchContainer');
+      const searchInput = document.getElementById('searchInput');
+      
+      // Active đúng nút tab ở dưới
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.tab === STATE.currentTab);
+      });
+
+      // Ẩn hiện thanh search theo tab
+      if (STATE.currentTab === 'home') {
+          searchContainer.style.display = 'none';
+      } else {
+          searchContainer.style.display = 'flex';
+          searchInput.placeholder = `Tìm trong ${STATE.currentTab.toUpperCase()}...`;
+      }
+
       renderContent(document.getElementById('searchInput').value);
-      document.getElementById('searchContainer').style.display = 'none'; // Mặc định ẩn search ở Home
     }
 
     // --- FILTER ---
@@ -311,11 +324,25 @@
         renderContent(document.getElementById('searchInput').value);
     }
 
-    // --- TAB SWITCH ---
-    function switchTab(tabId) {
+    // === 2. TAB SWITCH (CÓ XỬ LÝ URL) ===
+    // updateHistory = true: Có đổi URL trên thanh địa chỉ
+    // updateHistory = false: Không đổi (dùng cho nút Back)
+    function switchTab(tabId, updateHistory = true) {
       STATE.currentTab = tabId;
       STATE.currentPage = 1;
       STATE.currentFilter = 'all';
+      
+      // Xử lý đổi URL
+      if (updateHistory) {
+          if (tabId === 'cert') {
+              history.pushState({tab: 'cert'}, '', '/signipa');
+          } else if (tabId === 'home') {
+              history.pushState({tab: 'home'}, '', '/');
+          } else {
+              // Các tab khác giữ nguyên path hiện tại hoặc về home tuỳ ý
+              // history.pushState({tab: tabId}, '', '/'); 
+          }
+      }
       
       document.querySelectorAll('.tab-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.tab === tabId);
@@ -336,26 +363,34 @@
       document.getElementById('mainContainer').scrollTop = 0;
     }
 
+    // === 3. BẮT SỰ KIỆN NÚT BACK TRÌNH DUYỆT ===
+    window.addEventListener('popstate', (event) => {
+        if (event.state && event.state.tab) {
+            switchTab(event.state.tab, false);
+        } else {
+            // Nếu không có state (lần đầu vào), check lại đường dẫn
+            const p = window.location.pathname;
+            if (p.includes('/signipa')) switchTab('cert', false);
+            else switchTab('home', false);
+        }
+    });
+
     function renderContent(query = '') {
       const container = document.getElementById('dynamicContent');
       let html = '';
       let items = [];
       const tab = STATE.currentTab;
 
-      // ============================================================
-      // 1. HOME TAB (LỌC THEO KEYWORDS TỪ FILE JSON)
-      // ============================================================
+      // 1. HOME TAB
       if (tab === 'home') {
         let rawApps = [...DB.ipa, ...DB.cert_mod, ...DB.dylib].map(i=>({...i, _type:'IPA'}));
         let uniqueApps = getUniqueApps(sortItemsByDate(rawApps));
 
-        // Lọc chính xác theo whitelist
         const movieApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.movie));
         const socialApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.social));
         const photoApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.photo));
         const gameApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.game));
         
-        // Trending: Lấy các app hot (cứng) + whitelist social
         const trendingList = ['YouTube','Facebook','TikTok','Messenger','Instagram','Spotify','Netflix','CapCut','Zalo'];
         const trendingApps = uniqueApps.filter(i => checkKw(i.name, trendingList)).slice(0, 10);
 
@@ -415,15 +450,11 @@
           <div class="pb-10 pt-6 text-center text-xs text-gray-400 font-medium">Designed by Kho Vip</div>
         `;
 
-      // ============================================================
-      // 2. TAB CERT (LOGIC CŨ)
-      // ============================================================
+      // 2. TAB CERT (EMBED IFRAME)
       } else if (tab === 'cert') {
           html = '<iframe src="signipa.html" class="w-full h-[85vh] border-none" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation"></iframe>';
 
-      // ============================================================
-      // 3. TAB IPA, DYLIB, CONF (LOGIC CŨ)
-      // ============================================================
+      // 3. TAB KHÁC
       } else {
         if (tab === 'ipa') items = DB.ipa;
         else if (tab === 'dylib') items = DB.dylib;
@@ -475,11 +506,10 @@
       lucide.createIcons();
     }
 
-    // --- SUB PAGE RENDERER (CATEGORY VIEW) ---
+    // --- SUB PAGE RENDERER ---
     function openCategory(catType, catName) {
         const container = document.getElementById('dynamicContent');
         
-        // LỌC CHÍNH XÁC THEO FILE JSON
         const rawItems = DB.ipa.filter(i => checkKw(i.name, KEYWORDS[catType]));
         const items = getUniqueApps(rawItems);
         
@@ -580,32 +610,6 @@
             <button class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center text-brand">
                <i data-lucide="download" class="w-4 h-4"></i>
             </button>
-         </div>
-       `;
-    }
-
-    function createCertItem(i) {
-       const title = i.name || i.title || 'Certificate';
-       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
-       const certName = i.desc || i.certname || 'Chưa cập nhật'; 
-       const status = i.status || 'Good'; 
-       const isGood = status.toLowerCase() === 'good';
-       return `
-         <div onclick='openModal(${JSON.stringify(i).replace(/'/g, "&apos;")}, "CERT")' class="col-span-1 bg-white dark:bg-cardDark p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 relative overflow-hidden group hover:border-brand/50 transition-all cursor-pointer">
-            <div class="flex items-start gap-4 mb-4">
-                <img src="${icon}" class="w-14 h-14 rounded-2xl shadow-md object-cover bg-gray-100 dark:bg-gray-800">
-                <div class="flex-1 min-w-0 pt-1">
-                    <h3 class="text-lg font-extrabold text-gray-900 dark:text-white leading-tight mb-1">${title}</h3>
-                    <div class="flex items-center gap-1.5 text-sm font-semibold">
-                        <span class="${isGood?'text-green-500':'text-red-500'} flex items-center gap-1">
-                           ${isGood?'🟢':'🔴'} ${status}
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="text-sm text-gray-600 dark:text-gray-300 border-t border-gray-100 dark:border-white/5 pt-2">
-                <span class="font-medium">Cert:</span> ${certName}
-            </div>
          </div>
        `;
     }
