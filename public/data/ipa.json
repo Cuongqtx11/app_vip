@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-dazz.camera.vintagecamera-2.15",
+    "type": "ipa",
+    "name": "Dazz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/dazz.camera.vintagecamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/Dazz_2.15_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.15",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "dazz.camera.vintagecamera",
+    "lastSync": "2026-02-09T19:00:01.869Z"
+  },
+  {
+    "id": "ipa-com.bbauman.Scripty-2.38",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/Coconote_2.38_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.38",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2026-02-09T19:00:01.870Z"
+  },
+  {
     "id": "ipa-com.revivasoftworks.Snore-Lab-6.1.4",
     "type": "ipa",
     "name": "SnoreLab",
@@ -556,6 +592,24 @@
     "source": "apptesters",
     "bundleID": "health.sleep.sounds.tracker.alarm.calm",
     "lastSync": "2026-02-09T18:00:01.865Z"
+  },
+  {
+    "id": "ipa-com.frontpocketsoftware.happyscale-2026.2",
+    "type": "ipa",
+    "name": "HappyScale",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontpocketsoftware.happyscale.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/HappyScale_2026.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.2",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.frontpocketsoftware.happyscale",
+    "lastSync": "2026-02-09T19:00:01.871Z"
   },
   {
     "id": "ipa-com.igliverec.app-4.7.1",
