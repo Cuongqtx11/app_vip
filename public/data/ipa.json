@@ -54,6 +54,96 @@
     "lastSync": "2026-02-09T20:00:01.920Z"
   },
   {
+    "id": "ipa-pro.writer-7.3.4",
+    "type": "ipa",
+    "name": "iAWriter",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/pro.writer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/iAWriter_7.3.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.3.4",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "pro.writer",
+    "lastSync": "2026-02-09T23:00:01.477Z"
+  },
+  {
+    "id": "ipa-com.keiwando.toonsquid-2.0.19",
+    "type": "ipa",
+    "name": "ToonSquid",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.keiwando.toonsquid.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/ToonSquid_2.0.19_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.19",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.keiwando.toonsquid",
+    "lastSync": "2026-02-09T23:00:01.478Z"
+  },
+  {
+    "id": "ipa-com.tiimo.app-3.41.0",
+    "type": "ipa",
+    "name": "Tiimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tiimo.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/Tiimo_3.41.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.41.0",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.tiimo.app",
+    "lastSync": "2026-02-09T23:00:01.479Z"
+  },
+  {
+    "id": "ipa-com.beelinguapp.beelinguapp-3.9.5",
+    "type": "ipa",
+    "name": "Beelinguapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beelinguapp.beelinguapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/Beelinguapp_3.9.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.5",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.beelinguapp.beelinguapp",
+    "lastSync": "2026-02-09T23:00:01.479Z"
+  },
+  {
+    "id": "ipa-com.picsart.studio-29.3.2",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/PicsArt_29.3.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.3.2",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-02-09T23:00:01.479Z"
+  },
+  {
     "id": "ipa-com.revivasoftworks.Snore-Lab-6.1.4",
     "type": "ipa",
     "name": "SnoreLab",
