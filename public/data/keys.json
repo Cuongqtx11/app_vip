@@ -5,14 +5,14 @@
     "createdAt": "2026-02-09T16:46:32.984Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "CLFNP9",
     "transaction_id": "41815642",
     "package": "Gói Lẻ",
     "notes": "∞ days, 20 uses",
-    "lastUsedAt": "2026-02-09T16:46:45.595Z"
+    "lastUsedAt": "2026-02-09T16:57:12.783Z"
   },
   {
     "id": "key_1770653530_125",
