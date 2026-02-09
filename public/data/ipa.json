@@ -432,6 +432,60 @@
     "lastSync": "2026-02-09T14:00:01.885Z"
   },
   {
+    "id": "ipa-app.swiftgram.ios-12.3.3",
+    "type": "ipa",
+    "name": "Swiftgram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.swiftgram.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/Swiftgram_12.3.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.3.3",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "app.swiftgram.ios",
+    "lastSync": "2026-02-09T15:00:01.863Z"
+  },
+  {
+    "id": "ipa-com.kairos.duet-3.1.0",
+    "type": "ipa",
+    "name": "duet",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kairos.duet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/duet_3.1.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.kairos.duet",
+    "lastSync": "2026-02-09T15:00:01.864Z"
+  },
+  {
+    "id": "ipa-com.iViNi.BMWhatLite2-41.26.020913",
+    "type": "ipa",
+    "name": "Carly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iViNi.BMWhatLite2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/Carly_41.26.020913_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "41.26.020913",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.iViNi.BMWhatLite2",
+    "lastSync": "2026-02-09T15:00:01.866Z"
+  },
+  {
     "id": "ipa-com.igliverec.app-4.7.1",
     "type": "ipa",
     "name": "GREC",
