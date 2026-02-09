@@ -486,6 +486,60 @@
     "lastSync": "2026-02-09T15:00:01.866Z"
   },
   {
+    "id": "ipa-com.burbn.instagram-416.0.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/Instagram_416.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "416.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-02-09T17:00:01.739Z"
+  },
+  {
+    "id": "ipa-com.crossforward.WidgetSmith-8.1.3",
+    "type": "ipa",
+    "name": "Widgetsmith",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.crossforward.WidgetSmith.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/Widgetsmith_8.1.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.3",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.crossforward.WidgetSmith",
+    "lastSync": "2026-02-09T17:00:01.740Z"
+  },
+  {
+    "id": "ipa-com.edjing.edjingdjturntable-8.20.01",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-02-2026/edjingMix_8.20.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.20.01",
+    "developer": "khomodvip",
+    "date": "2026-02-09",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2026-02-09T17:00:01.741Z"
+  },
+  {
     "id": "ipa-com.igliverec.app-4.7.1",
     "type": "ipa",
     "name": "GREC",
