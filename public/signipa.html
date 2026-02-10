@@ -35,7 +35,7 @@
     
     <style>
         html { zoom: 85%; -webkit-text-size-adjust: 100%; }
-        body { transition: background-color 0.3s, color 0.3s; padding-bottom: 80px; /* Chừa chỗ cho menu */ }
+        body { transition: background-color 0.3s, color 0.3s; padding-bottom: 80px; }
 
         .glass-panel { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: all 0.3s ease; }
         .app-card { transition: all 0.2s ease; border: 2px solid transparent; }
@@ -47,14 +47,9 @@
         .app-icon-img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
         .btn-primary { background: #7c3aed; transition: all 0.3s; }
         .btn-primary:hover { background: #6d28d9; transform: translateY(-1px); }
-        .custom-ipa-box { border: 2px dashed #e5e7eb; transition: all 0.3s; }
-        .dark .custom-ipa-box { border-color: #3f3f46; }
-        .custom-ipa-selected { border-color: #7c3aed !important; background: rgba(124, 58, 237, 0.05); }
-        .custom-ipa-box #ipaCheckIcon { opacity: 0; transform: scale(0.5); transition: all 0.2s; }
-        .custom-ipa-selected #ipaCheckIcon { opacity: 1 !important; transform: scale(1) !important; }
         ::-webkit-scrollbar { width: 0px; background: transparent; }
 
-        /* --- CSS CHO MENU RIÊNG CỦA TRANG NÀY --- */
+        /* MENU STYLE */
         .vip-tab-bar {
             position: fixed; bottom: 0; left: 0; right: 0;
             height: calc(4.2rem + env(safe-area-inset-bottom)); 
@@ -162,24 +157,7 @@
                 </div>
             </div>
 
-            <div class="relative py-1">
-                <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200 dark:border-white/10"></div></div>
-                <div class="relative flex justify-center text-[10px] uppercase font-bold tracking-widest"><span class="bg-white dark:bg-cardDark px-2 text-gray-400">KÝ IPA KHÁC</span></div>
-            </div>
-
-            <div id="customAppSection" onclick="document.getElementById('ipaFile').click()" class="custom-ipa-box group relative p-3 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-4 hover:bg-gray-100 dark:hover:bg-white/10 transition">
-                <div class="w-10 h-10 rounded-xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-300 group-hover:text-brand transition">
-                    <i class="fa-brands fa-apple text-xl"></i>
-                </div>
-                <div class="flex-1">
-                    <div class="font-bold text-sm text-gray-900 dark:text-white" id="ipaDisplayName">Nhấn để tải lên file IPA khác</div>
-                    <div class="text-[10px] text-gray-500 dark:text-gray-400">tự động đổi bundle tránh trùng lặp</div>
-                </div>
-                <input type="file" id="ipaFile" accept=".ipa" class="hidden" onchange="handleIpaSelect(this)">
-                <i id="ipaCheckIcon" class="fa-solid fa-circle-check text-brand text-xl transition"></i>
-            </div>
-            
-            <input type="hidden" id="signType" value="preset"> <input type="hidden" id="selectedAppName" value="esign">
+            <input type="hidden" id="selectedAppName" value="esign">
 
             <hr class="border-gray-100 dark:border-white/5">
 
@@ -296,16 +274,13 @@
 
     <script>
         // === LOGIC TỰ ĐỘNG ẨN MENU KHI TRONG IFRAME ===
-        // Nếu trang này đang nằm trong iframe (cửa sổ con) của trang khác (p12.vn)
-        // thì ẩn menu đi để không bị trùng 2 menu.
         if (window.self !== window.top) {
             document.getElementById('standaloneMenu').style.display = 'none';
-            document.body.style.paddingBottom = '0px'; // Bỏ padding dưới
+            document.body.style.paddingBottom = '0px'; 
         } else {
-            // Nếu chạy độc lập thì hiện menu
             document.getElementById('standaloneMenu').classList.remove('hidden');
             document.getElementById('standaloneMenu').style.display = 'flex';
-            lucide.createIcons(); // Khởi tạo icon cho menu
+            lucide.createIcons();
         }
 
         const API_URL = "https://api.p12.vn"; 
@@ -331,34 +306,11 @@
 
         // --- LOGIC CHỌN APP ---
         function selectApp(name, el) {
-            document.getElementById('signType').value = 'preset';
-            const customBox = document.getElementById('customAppSection');
-            customBox.classList.remove('custom-ipa-selected');
-            document.getElementById('ipaCheckIcon').classList.remove('opacity-100', 'scale-100');
-            document.getElementById('ipaFile').value = ''; 
-            document.getElementById('ipaDisplayName').innerText = "Tải file IPA khác";
-
             document.querySelectorAll('.app-card').forEach(card => {
                 card.classList.remove('selected-app');
             });
-
             el.classList.add('selected-app');
             document.getElementById('selectedAppName').value = name;
-        }
-
-        function handleIpaSelect(input) {
-            if (input.files[0]) {
-                const file = input.files[0];
-                document.getElementById('signType').value = 'custom';
-                document.querySelectorAll('.app-card').forEach(card => {
-                    card.classList.remove('selected-app');
-                });
-                const box = document.getElementById('customAppSection');
-                box.classList.add('custom-ipa-selected');
-                document.getElementById('ipaDisplayName').innerText = file.name;
-                const icon = document.getElementById('ipaCheckIcon');
-                icon.classList.add('opacity-100', 'scale-100');
-            }
         }
 
         function handleFile(input) {
@@ -371,7 +323,6 @@
         }
 
         async function startSigning() {
-            const signType = document.getElementById('signType').value;
             const certFile = document.getElementById('certFile');
             const passwordInput = document.getElementById('p12Password');
             const btn = document.getElementById('signBtn');
@@ -379,9 +330,6 @@
             const errorMsg = document.getElementById('errorMsg');
             const errorVideoBtn = document.getElementById('serverErrorVideoBtn');
 
-            if (signType === 'custom' && !document.getElementById('ipaFile').files[0]) {
-                return alert("Vui lòng chọn file IPA cần ký!");
-            }
             if (!certFile.files[0]) return alert("Vui lòng chọn file Zip chứng chỉ!");
 
             btn.disabled = true;
@@ -400,14 +348,10 @@
             const formData = new FormData();
             formData.append('cert', certFile.files[0]);
             formData.append('password', passwordInput.value); 
-
-            if (signType === 'preset') {
-                formData.append('app_name', document.getElementById('selectedAppName').value);
-                formData.append('sign_mode', 'preset');
-            } else {
-                formData.append('ipa', document.getElementById('ipaFile').files[0]);
-                formData.append('sign_mode', 'custom');
-            }
+            
+            // Chỉ hỗ trợ chế độ Preset (App có sẵn)
+            formData.append('app_name', document.getElementById('selectedAppName').value);
+            formData.append('sign_mode', 'preset');
 
             try {
                 const response = await fetch(`${API_URL}/sign`, { method: 'POST', body: formData });
