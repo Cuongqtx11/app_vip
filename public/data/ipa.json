@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.getmimo.mimo-12.0.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-02-2026/Mimo_12.0.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-11",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2026-02-10T20:00:01.471Z"
+  },
+  {
+    "id": "ipa-com.zhiliaoapp.musically-43.8.0",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-02-2026/TikTok_43.8.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "43.8.0",
+    "developer": "khomodvip",
+    "date": "2026-02-11",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-02-10T20:00:01.472Z"
+  },
+  {
     "id": "ipa-dazz.camera.vintagecamera-2.15",
     "type": "ipa",
     "name": "Dazz",
