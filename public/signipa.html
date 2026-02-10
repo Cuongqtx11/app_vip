@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
         tailwind.config = {
@@ -25,7 +26,6 @@
                 }
             }
         }
-
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         } else {
@@ -35,78 +35,49 @@
     
     <style>
         html { zoom: 85%; -webkit-text-size-adjust: 100%; }
-        
-        body { 
-            transition: background-color 0.3s, color 0.3s;
-        }
+        body { transition: background-color 0.3s, color 0.3s; padding-bottom: 80px; /* Chừa chỗ cho menu */ }
 
-        .glass-panel {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            transition: all 0.3s ease;
-        }
-
-        /* App Card Styles */
-        .app-card {
-            transition: all 0.2s ease;
-            border: 2px solid transparent;
-        }
+        .glass-panel { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: all 0.3s ease; }
+        .app-card { transition: all 0.2s ease; border: 2px solid transparent; }
         .app-card:active { transform: scale(0.98); }
-        
-        /* Class khi được chọn */
-        .selected-app {
-            border-color: #7c3aed !important; /* Màu Brand */
-            background: rgba(124, 58, 237, 0.08) !important;
-        }
-        .dark .selected-app {
-            background: rgba(124, 58, 237, 0.15) !important;
-        }
-
-        /* Ẩn hiện check icon */
-        .app-card .check-icon {
-            opacity: 0;
-            transform: scale(0.5);
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .selected-app .check-icon {
-            opacity: 1 !important;
-            transform: scale(1) !important;
-        }
-
-        .app-icon-img {
-            width: 48px; height: 48px;
-            border-radius: 12px;
-            object-fit: cover;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        /* Buttons */
-        .btn-primary {
-            background: #7c3aed;
-            transition: all 0.3s;
-        }
+        .selected-app { border-color: #7c3aed !important; background: rgba(124, 58, 237, 0.08) !important; }
+        .dark .selected-app { background: rgba(124, 58, 237, 0.15) !important; }
+        .app-card .check-icon { opacity: 0; transform: scale(0.5); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .selected-app .check-icon { opacity: 1 !important; transform: scale(1) !important; }
+        .app-icon-img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .btn-primary { background: #7c3aed; transition: all 0.3s; }
         .btn-primary:hover { background: #6d28d9; transform: translateY(-1px); }
-        
-        /* Custom IPA Box Style */
         .custom-ipa-box { border: 2px dashed #e5e7eb; transition: all 0.3s; }
         .dark .custom-ipa-box { border-color: #3f3f46; }
-        
-        .custom-ipa-selected { 
-            border-color: #7c3aed !important; 
-            background: rgba(124, 58, 237, 0.05); 
-        }
-        .custom-ipa-box #ipaCheckIcon {
-            opacity: 0;
-            transform: scale(0.5);
-            transition: all 0.2s;
-        }
-        .custom-ipa-selected #ipaCheckIcon {
-            opacity: 1 !important;
-            transform: scale(1) !important;
-        }
-
-        /* Scrollbar ẩn */
+        .custom-ipa-selected { border-color: #7c3aed !important; background: rgba(124, 58, 237, 0.05); }
+        .custom-ipa-box #ipaCheckIcon { opacity: 0; transform: scale(0.5); transition: all 0.2s; }
+        .custom-ipa-selected #ipaCheckIcon { opacity: 1 !important; transform: scale(1) !important; }
         ::-webkit-scrollbar { width: 0px; background: transparent; }
+
+        /* --- CSS CHO MENU RIÊNG CỦA TRANG NÀY --- */
+        .vip-tab-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            height: calc(4.2rem + env(safe-area-inset-bottom)); 
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(25px);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            display: flex; justify-content: space-evenly; align-items: flex-start;
+            padding-top: 0.5rem; 
+            padding-bottom: env(safe-area-inset-bottom);
+            z-index: 50;
+        }
+        .dark .vip-tab-bar {
+            background: rgba(28, 28, 30, 0.95);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .tab-btn {
+            flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 0.3rem; color: #999; transition: all 0.3s; text-decoration: none;
+        }
+        .tab-btn i { width: 1.5rem; height: 1.5rem; transition: transform 0.2s; } 
+        .tab-btn span { font-size: 0.7rem; font-weight: 700; transition: color 0.2s; }
+        .tab-btn.active { color: #7c3aed; }
+        .dark .tab-btn.active { color: #a78bfa; }
     </style>
 </head>
 <body class="bg-bgLight dark:bg-black text-gray-900 dark:text-white font-sans min-h-screen flex justify-center selection:bg-brand selection:text-white pb-20">
@@ -122,8 +93,30 @@
             </p>
         </div>
 
+        <nav id="standaloneMenu" class="vip-tab-bar hidden">
+            <a href="/" class="tab-btn">
+              <i data-lucide="layout-grid"></i>
+              <span>Home</span>
+            </a>
+            <a href="/" class="tab-btn">
+              <i data-lucide="cpu"></i>
+              <span>Dylib</span>
+            </a>
+            <a href="/" class="tab-btn">
+              <i data-lucide="smartphone"></i>
+              <span>IPA</span>
+            </a>
+            <a href="/" class="tab-btn">
+              <i data-lucide="shield-check"></i>
+              <span>Conf</span>
+            </a>
+            <div class="tab-btn active">
+              <i data-lucide="award"></i>
+              <span>SignIPA</span>
+            </div>
+        </nav>
+
         <div class="glass-panel bg-white dark:bg-cardDark rounded-3xl p-5 shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-white/10 flex flex-col gap-5">
-            
             <div>
                 <div class="flex items-center gap-2 mb-3">
                     <div class="w-6 h-6 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold text-xs">1</div>
@@ -302,6 +295,19 @@
 
 
     <script>
+        // === LOGIC TỰ ĐỘNG ẨN MENU KHI TRONG IFRAME ===
+        // Nếu trang này đang nằm trong iframe (cửa sổ con) của trang khác (p12.vn)
+        // thì ẩn menu đi để không bị trùng 2 menu.
+        if (window.self !== window.top) {
+            document.getElementById('standaloneMenu').style.display = 'none';
+            document.body.style.paddingBottom = '0px'; // Bỏ padding dưới
+        } else {
+            // Nếu chạy độc lập thì hiện menu
+            document.getElementById('standaloneMenu').classList.remove('hidden');
+            document.getElementById('standaloneMenu').style.display = 'flex';
+            lucide.createIcons(); // Khởi tạo icon cho menu
+        }
+
         const API_URL = "https://api.p12.vn"; 
 
         window.addEventListener('storage', function(e) {
@@ -323,27 +329,19 @@
             modal.classList.add('hidden');
         }
 
-        // --- LOGIC CHỌN APP (ĐÃ FIX LỖI CLICK) ---
+        // --- LOGIC CHỌN APP ---
         function selectApp(name, el) {
-            // 1. Chuyển chế độ sang PRESET
             document.getElementById('signType').value = 'preset';
-            
-            // 2. Tắt trạng thái của Custom Box (nếu đang chọn)
             const customBox = document.getElementById('customAppSection');
             customBox.classList.remove('custom-ipa-selected');
             document.getElementById('ipaCheckIcon').classList.remove('opacity-100', 'scale-100');
             document.getElementById('ipaFile').value = ''; 
             document.getElementById('ipaDisplayName').innerText = "Tải file IPA khác";
 
-            // 3. Xóa trạng thái selected của TẤT CẢ các app mẫu
             document.querySelectorAll('.app-card').forEach(card => {
                 card.classList.remove('selected-app');
-                // Tìm icon check trong card này và ẩn nó đi
-                // Lưu ý: class 'check-icon' được dùng để style
-                // Ta có thể dùng CSS selector trực tiếp
             });
 
-            // 4. Bật trạng thái selected cho app ĐƯỢC CLICK
             el.classList.add('selected-app');
             document.getElementById('selectedAppName').value = name;
         }
@@ -351,20 +349,13 @@
         function handleIpaSelect(input) {
             if (input.files[0]) {
                 const file = input.files[0];
-                // 1. Chuyển chế độ sang CUSTOM
                 document.getElementById('signType').value = 'custom';
-                
-                // 2. Bỏ chọn TẤT CẢ các app mẫu
                 document.querySelectorAll('.app-card').forEach(card => {
                     card.classList.remove('selected-app');
                 });
-
-                // 3. Bật trạng thái cho Custom Box
                 const box = document.getElementById('customAppSection');
                 box.classList.add('custom-ipa-selected');
                 document.getElementById('ipaDisplayName').innerText = file.name;
-                
-                // Hiển thị icon check
                 const icon = document.getElementById('ipaCheckIcon');
                 icon.classList.add('opacity-100', 'scale-100');
             }
@@ -388,18 +379,15 @@
             const errorMsg = document.getElementById('errorMsg');
             const errorVideoBtn = document.getElementById('serverErrorVideoBtn');
 
-            // Validate
             if (signType === 'custom' && !document.getElementById('ipaFile').files[0]) {
                 return alert("Vui lòng chọn file IPA cần ký!");
             }
             if (!certFile.files[0]) return alert("Vui lòng chọn file Zip chứng chỉ!");
 
-            // UI Loading
             btn.disabled = true;
             btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> ĐANG XỬ LÝ...';
             btn.classList.add('opacity-70', 'cursor-not-allowed');
             
-            // Reset trạng thái
             statusArea.classList.remove('hidden');
             document.getElementById('loadingState').classList.remove('hidden');
             document.getElementById('successState').classList.add('hidden');
@@ -413,7 +401,6 @@
             formData.append('cert', certFile.files[0]);
             formData.append('password', passwordInput.value); 
 
-            // Gửi đúng loại dữ liệu
             if (signType === 'preset') {
                 formData.append('app_name', document.getElementById('selectedAppName').value);
                 formData.append('sign_mode', 'preset');
