@@ -144,6 +144,60 @@
     "lastSync": "2026-02-09T23:00:01.479Z"
   },
   {
+    "id": "ipa-com.dubox.drive-4.12.0",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/TeraBox_4.12.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.12.0",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2026-02-10T00:00:01.774Z"
+  },
+  {
+    "id": "ipa-com.badoo.BadooSPP-5.448.0",
+    "type": "ipa",
+    "name": "Badoo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.badoo.BadooSPP.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/Badoo_5.448.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.448.0",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.badoo.BadooSPP",
+    "lastSync": "2026-02-10T00:00:01.774Z"
+  },
+  {
+    "id": "ipa-com.algoriddim.djay-iphone-free-5.6.2",
+    "type": "ipa",
+    "name": "djay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.algoriddim.djay-iphone-free.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-02-2026/djay_5.6.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.2",
+    "developer": "khomodvip",
+    "date": "2026-02-10",
+    "source": "apptesters",
+    "bundleID": "com.algoriddim.djay-iphone-free",
+    "lastSync": "2026-02-10T00:00:01.776Z"
+  },
+  {
     "id": "ipa-com.revivasoftworks.Snore-Lab-6.1.4",
     "type": "ipa",
     "name": "SnoreLab",
