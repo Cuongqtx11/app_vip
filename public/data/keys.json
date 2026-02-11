@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1770782018_8392",
+    "key": "O04F-HHAR-P6Y2-OCUC",
+    "createdAt": "2026-02-11T03:53:38.693495+00:00",
+    "expiresAt": "2026-03-14T03:53:38.693495+00:00",
+    "maxUses": null,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "31 days, ∞ uses"
+  },
+  {
     "id": "key_1770743048_3162",
     "key": "8UWC-JLQA-KRDH-B4WB",
     "createdAt": "2026-02-10T17:04:08.792Z",
