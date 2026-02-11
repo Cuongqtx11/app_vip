@@ -5,13 +5,14 @@
     "createdAt": "2026-02-11T14:25:22.781Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "HSDPGW",
     "transaction_id": "42059581",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-02-11T14:25:39.045Z"
   },
   {
     "id": "key_1770782018_8392",
