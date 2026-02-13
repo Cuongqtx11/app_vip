@@ -792,6 +792,114 @@
     "lastSync": "2026-02-13T07:00:01.822Z"
   },
   {
+    "id": "ipa-com.alltrails.AllTrails-26.2.20",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/AllTrails_26.2.20_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.2.20",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2026-02-13T09:00:01.634Z"
+  },
+  {
+    "id": "ipa-com.abishkking.sixpack-1.46.0",
+    "type": "ipa",
+    "name": "SixPackAbsAbsWorkout",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.abishkking.sixpack.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/SixPackAbsAbsWorkout_1.46.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.46.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.abishkking.sixpack",
+    "lastSync": "2026-02-13T09:00:01.635Z"
+  },
+  {
+    "id": "ipa-com.atebits.Tweetie2-11.65",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/X_11.65_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.65",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2026-02-13T09:00:01.635Z"
+  },
+  {
+    "id": "ipa-com.bandlab.bandlab.iphone-11.17.0",
+    "type": "ipa",
+    "name": "BandLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bandlab.bandlab.iphone.png",
+    "desc": "Injected with Boost Membership",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/BandLab_11.17.0_Boost_Membership_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.17.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.bandlab.bandlab.iphone",
+    "lastSync": "2026-02-13T09:00:01.636Z"
+  },
+  {
+    "id": "ipa-com.ninjakiwi.bloonstd6-53.0",
+    "type": "ipa",
+    "name": "BloonsTD6",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ninjakiwi.bloonstd6.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/BloonsTD6_53.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "53.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.ninjakiwi.bloonstd6",
+    "lastSync": "2026-02-13T09:00:01.636Z"
+  },
+  {
+    "id": "ipa-com.facebook.Facebook-548.0.0",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Facebook_548.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "548.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2026-02-13T09:00:01.637Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.74.0",
     "type": "ipa",
     "name": "Tarteel",
