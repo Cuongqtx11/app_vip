@@ -90,6 +90,132 @@
     "lastSync": "2026-02-13T21:00:01.848Z"
   },
   {
+    "id": "ipa-com.sillens.iShape-23.6.0",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/Lifesum_23.6.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.6.0",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2026-02-13T22:00:01.646Z"
+  },
+  {
+    "id": "ipa-com.andyworks.camera-1.43",
+    "type": "ipa",
+    "name": "Camera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.camera.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/Camera_1.43_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.43",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.camera",
+    "lastSync": "2026-02-13T22:00:01.646Z"
+  },
+  {
+    "id": "ipa-com.andyworks.weather-3.44",
+    "type": "ipa",
+    "name": "simpleweather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.weather.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/simpleweather_3.44_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.44",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.weather",
+    "lastSync": "2026-02-13T22:00:01.647Z"
+  },
+  {
+    "id": "ipa-com.dreamer.Habits-3.28",
+    "type": "ipa",
+    "name": "Habits",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dreamer.Habits.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/Habits_3.28_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.28",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.dreamer.Habits",
+    "lastSync": "2026-02-13T22:00:01.647Z"
+  },
+  {
+    "id": "ipa-com.andyworks.calculator-3.21",
+    "type": "ipa",
+    "name": "andyworkscalculator",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.calculator.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/andyworkscalculator_3.21_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.21",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.calculator",
+    "lastSync": "2026-02-13T22:00:01.648Z"
+  },
+  {
+    "id": "ipa-com.andyworks.timer-3.19",
+    "type": "ipa",
+    "name": "simpletimer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.timer.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/simpletimer_3.19_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.19",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.timer",
+    "lastSync": "2026-02-13T22:00:01.648Z"
+  },
+  {
+    "id": "ipa-com.andyworks.vibes-1.23",
+    "type": "ipa",
+    "name": "Vibes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.vibes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/Vibes_1.23_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.23",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.vibes",
+    "lastSync": "2026-02-13T22:00:01.648Z"
+  },
+  {
     "id": "ipa-app.uplens-3.4.8",
     "type": "ipa",
     "name": "Uplens",
