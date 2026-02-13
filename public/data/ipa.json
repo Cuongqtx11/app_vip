@@ -1044,6 +1044,24 @@
     "lastSync": "2026-02-13T14:00:01.551Z"
   },
   {
+    "id": "ipa-com.spotify.client-9.1.22",
+    "type": "ipa",
+    "name": "Spotify",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.spotify.client.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Spotify_9.1.22_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.1.22",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.spotify.client",
+    "lastSync": "2026-02-13T16:00:01.543Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.74.0",
     "type": "ipa",
     "name": "Tarteel",
