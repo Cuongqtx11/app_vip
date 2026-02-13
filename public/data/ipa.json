@@ -1,5 +1,95 @@
 [
   {
+    "id": "ipa-com.AppChief.ArabicArt-9.5.3",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/_9.5.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.5.3",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2026-02-13T21:00:01.844Z"
+  },
+  {
+    "id": "ipa-com.offlinemusic-3.8.2",
+    "type": "ipa",
+    "name": "OfflineMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.offlinemusic.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/OfflineMusic_3.8.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.2",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.offlinemusic",
+    "lastSync": "2026-02-13T21:00:01.844Z"
+  },
+  {
+    "id": "ipa-com.abishkking.maleworkout-1.46.0",
+    "type": "ipa",
+    "name": "Homeworkouts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.abishkking.maleworkout.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/Homeworkouts_1.46.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.46.0",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.abishkking.maleworkout",
+    "lastSync": "2026-02-13T21:00:01.846Z"
+  },
+  {
+    "id": "ipa-com.outerspaceapps.itranslate-17.4.70",
+    "type": "ipa",
+    "name": "iTranslate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.outerspaceapps.itranslate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/iTranslate_17.4.70_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.4.70",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.outerspaceapps.itranslate",
+    "lastSync": "2026-02-13T21:00:01.847Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx-0.1.568",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/RiseSleep_0.1.568_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.568",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2026-02-13T21:00:01.848Z"
+  },
+  {
     "id": "ipa-app.uplens-3.4.8",
     "type": "ipa",
     "name": "Uplens",
