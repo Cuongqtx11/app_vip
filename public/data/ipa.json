@@ -558,6 +558,240 @@
     "lastSync": "2026-02-13T06:00:01.779Z"
   },
   {
+    "id": "ipa-co.visualsupply.cam-456.0.3",
+    "type": "ipa",
+    "name": "VSCO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.visualsupply.cam.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/VSCO_456.0.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "456.0.3",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "co.visualsupply.cam",
+    "lastSync": "2026-02-13T07:00:01.811Z"
+  },
+  {
+    "id": "ipa-com.future.kapi-3.38.0",
+    "type": "ipa",
+    "name": "Action",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.future.kapi.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Action_3.38.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.38.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.future.kapi",
+    "lastSync": "2026-02-13T07:00:01.812Z"
+  },
+  {
+    "id": "ipa-com.aoklab.fewerphotos-3.2.45",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/swipewipe_3.2.45_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.45",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2026-02-13T07:00:01.818Z"
+  },
+  {
+    "id": "ipa-com.readdle.CalendarsLite-5.37.20",
+    "type": "ipa",
+    "name": "Calendars",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.CalendarsLite.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Calendars_5.37.20_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.37.20",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.readdle.CalendarsLite",
+    "lastSync": "2026-02-13T07:00:01.819Z"
+  },
+  {
+    "id": "ipa-io.veed.appstore-8.5.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/VEEDCaptions_8.5.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.5.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-02-13T07:00:01.819Z"
+  },
+  {
+    "id": "ipa-com.wikiloc.wikiloc-3.26.2",
+    "type": "ipa",
+    "name": "Wikiloc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wikiloc.wikiloc.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Wikiloc_3.26.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.26.2",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.wikiloc.wikiloc",
+    "lastSync": "2026-02-13T07:00:01.820Z"
+  },
+  {
+    "id": "ipa-com.lexwarelabs.goodmorning-6.26.5",
+    "type": "ipa",
+    "name": "SleepCycle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lexwarelabs.goodmorning.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/SleepCycle_6.26.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.26.5",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.lexwarelabs.goodmorning",
+    "lastSync": "2026-02-13T07:00:01.820Z"
+  },
+  {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.19.4",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Documents_8.19.4_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.19.4",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2026-02-13T07:00:01.820Z"
+  },
+  {
+    "id": "ipa-app.cranberry.cure-2.1",
+    "type": "ipa",
+    "name": "Cure",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.cure.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Cure_2.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.cure",
+    "lastSync": "2026-02-13T07:00:01.820Z"
+  },
+  {
+    "id": "ipa-instapreview-6.10.0",
+    "type": "ipa",
+    "name": "Inpreview",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/instapreview.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Inpreview_6.10.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.10.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "instapreview",
+    "lastSync": "2026-02-13T07:00:01.821Z"
+  },
+  {
+    "id": "ipa-com.microblink.PhotoMath-8.46.0",
+    "type": "ipa",
+    "name": "Photomath",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.microblink.PhotoMath.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Photomath_8.46.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.46.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.microblink.PhotoMath",
+    "lastSync": "2026-02-13T07:00:01.821Z"
+  },
+  {
+    "id": "ipa-com.elevateapp.elevate-5.227.0",
+    "type": "ipa",
+    "name": "Elevate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.elevate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Elevate_5.227.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.227.0",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.elevate",
+    "lastSync": "2026-02-13T07:00:01.821Z"
+  },
+  {
+    "id": "ipa-tech.sketchar.ios-10.3.1",
+    "type": "ipa",
+    "name": "Sketchar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.sketchar.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "graphics & design"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-02-2026/Sketchar_10.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.3.1",
+    "developer": "khomodvip",
+    "date": "2026-02-13",
+    "source": "apptesters",
+    "bundleID": "tech.sketchar.ios",
+    "lastSync": "2026-02-13T07:00:01.822Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.74.0",
     "type": "ipa",
     "name": "Tarteel",
