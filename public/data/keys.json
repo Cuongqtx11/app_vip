@@ -80,14 +80,14 @@
     "createdAt": "2026-02-12T10:17:07.399Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "F6229E",
     "transaction_id": "42156107",
     "package": "Gói Lẻ",
     "notes": "∞ days, 20 uses",
-    "lastUsedAt": "2026-02-12T10:20:12.590Z"
+    "lastUsedAt": "2026-02-14T02:42:11.516Z"
   },
   {
     "id": "key_1770826833_6131",
