@@ -36,6 +36,24 @@
     "lastSync": "2026-02-14T19:00:01.453Z"
   },
   {
+    "id": "ipa-com.mobilefootie.fotmobpro-1226.0",
+    "type": "ipa",
+    "name": "FotMob",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobilefootie.fotmobpro.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-02-2026/FotMob_1226.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1226.0",
+    "developer": "khomodvip",
+    "date": "2026-02-15",
+    "source": "apptesters",
+    "bundleID": "com.mobilefootie.fotmobpro",
+    "lastSync": "2026-02-14T22:00:01.382Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.5.3",
     "type": "ipa",
     "name": "",
