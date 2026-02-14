@@ -216,6 +216,42 @@
     "lastSync": "2026-02-13T22:00:01.648Z"
   },
   {
+    "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.5",
+    "type": "ipa",
+    "name": "ShutEye",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/ShutEye_3.3.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.5",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "health.sleep.sounds.tracker.alarm.calm",
+    "lastSync": "2026-02-14T05:00:01.698Z"
+  },
+  {
+    "id": "ipa-com.vivacut.videoeditor-4.5.4",
+    "type": "ipa",
+    "name": "VivaCut",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vivacut.videoeditor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-02-2026/VivaCut_4.5.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.5.4",
+    "developer": "khomodvip",
+    "date": "2026-02-14",
+    "source": "apptesters",
+    "bundleID": "com.vivacut.videoeditor",
+    "lastSync": "2026-02-14T05:00:01.699Z"
+  },
+  {
     "id": "ipa-app.uplens-3.4.8",
     "type": "ipa",
     "name": "Uplens",
