@@ -54,6 +54,42 @@
     "lastSync": "2026-02-14T22:00:01.382Z"
   },
   {
+    "id": "ipa-de.komoot.berlinbikeapp-2026.7.1",
+    "type": "ipa",
+    "name": "Komoot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-02-2026/Komoot_2026.7.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.7.1",
+    "developer": "khomodvip",
+    "date": "2026-02-15",
+    "source": "apptesters",
+    "bundleID": "de.komoot.berlinbikeapp",
+    "lastSync": "2026-02-14T23:00:02.014Z"
+  },
+  {
+    "id": "ipa-com.kalavision.alfred-2026.3.2",
+    "type": "ipa",
+    "name": "AlfredCamera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kalavision.alfred.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-02-2026/AlfredCamera_2026.3.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.3.2",
+    "developer": "khomodvip",
+    "date": "2026-02-15",
+    "source": "apptesters",
+    "bundleID": "com.kalavision.alfred",
+    "lastSync": "2026-02-14T23:00:02.015Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.5.3",
     "type": "ipa",
     "name": "",
