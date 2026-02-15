@@ -90,6 +90,78 @@
     "lastSync": "2026-02-14T23:00:02.015Z"
   },
   {
+    "id": "ipa-com.astrio.Sofa-4.3.10",
+    "type": "ipa",
+    "name": "Sofa",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.astrio.Sofa.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-02-2026/Sofa_4.3.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.3.10",
+    "developer": "khomodvip",
+    "date": "2026-02-15",
+    "source": "apptesters",
+    "bundleID": "com.astrio.Sofa",
+    "lastSync": "2026-02-15T19:00:01.419Z"
+  },
+  {
+    "id": "ipa-com.upskew.encode.ios-6.20.2",
+    "type": "ipa",
+    "name": "Encode",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.upskew.encode.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-02-2026/Encode_6.20.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.20.2",
+    "developer": "khomodvip",
+    "date": "2026-02-15",
+    "source": "apptesters",
+    "bundleID": "com.upskew.encode.ios",
+    "lastSync": "2026-02-15T19:00:01.420Z"
+  },
+  {
+    "id": "ipa-com.bbauman.Scripty-2.39",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-02-2026/Coconote_2.39_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.39",
+    "developer": "khomodvip",
+    "date": "2026-02-15",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2026-02-15T19:00:01.430Z"
+  },
+  {
+    "id": "ipa-ru.routes.peakvisor-5.81",
+    "type": "ipa",
+    "name": "PeakVisor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ru.routes.peakvisor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-02-2026/PeakVisor_5.81_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.81",
+    "developer": "khomodvip",
+    "date": "2026-02-15",
+    "source": "apptesters",
+    "bundleID": "ru.routes.peakvisor",
+    "lastSync": "2026-02-15T19:00:01.430Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.5.3",
     "type": "ipa",
     "name": "",
