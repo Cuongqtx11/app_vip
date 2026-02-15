@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.keiwando.toonsquid-2.0.20",
+    "type": "ipa",
+    "name": "ToonSquid",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.keiwando.toonsquid.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/ToonSquid_2.0.20_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.20",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.keiwando.toonsquid",
+    "lastSync": "2026-02-15T21:00:01.389Z"
+  },
+  {
     "id": "ipa-com.hassantaleb.mockup-5.1",
     "type": "ipa",
     "name": "Animock",
