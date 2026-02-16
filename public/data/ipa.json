@@ -360,6 +360,60 @@
     "lastSync": "2026-02-16T16:00:01.909Z"
   },
   {
+    "id": "ipa-co.bazaart.app-26.1.2",
+    "type": "ipa",
+    "name": "Bazaart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bazaart.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Bazaart_26.1.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1.2",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "co.bazaart.app",
+    "lastSync": "2026-02-16T18:00:01.422Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Facetune2-3.119",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Facetune_3.119_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.119",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-02-16T18:00:01.422Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.radarfree-5.13.66",
+    "type": "ipa",
+    "name": "CLIME",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.radarfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/CLIME_5.13.66_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.13.66",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.radarfree",
+    "lastSync": "2026-02-16T18:00:01.423Z"
+  },
+  {
     "id": "ipa-com.hassantaleb.mockup-5.1",
     "type": "ipa",
     "name": "Animock",
