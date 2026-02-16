@@ -18,6 +18,78 @@
     "lastSync": "2026-02-15T21:00:01.389Z"
   },
   {
+    "id": "ipa-com.neybox.Pillow-6.2.7",
+    "type": "ipa",
+    "name": "Pillow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neybox.Pillow.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Pillow_6.2.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.7",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.neybox.Pillow",
+    "lastSync": "2026-02-16T07:00:01.255Z"
+  },
+  {
+    "id": "ipa-com.ADPTVLTD.push-3.10.2",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/PUSH_3.10.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.10.2",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2026-02-16T07:00:01.256Z"
+  },
+  {
+    "id": "ipa-uni.cbum-4.1.29",
+    "type": "ipa",
+    "name": "Stndrd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uni.cbum.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Stndrd_4.1.29_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.29",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "uni.cbum",
+    "lastSync": "2026-02-16T07:00:01.257Z"
+  },
+  {
+    "id": "ipa-com.firecore.infuse-8.3.8",
+    "type": "ipa",
+    "name": "Infuse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.firecore.infuse.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Infuse_8.3.8_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.3.8",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.firecore.infuse",
+    "lastSync": "2026-02-16T07:00:01.257Z"
+  },
+  {
     "id": "ipa-com.hassantaleb.mockup-5.1",
     "type": "ipa",
     "name": "Animock",
