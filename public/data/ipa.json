@@ -234,6 +234,24 @@
     "lastSync": "2026-02-16T10:00:02.822Z"
   },
   {
+    "id": "ipa-com.travelboast.travelboast-2.26",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/TravelBoast_2.26_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.26",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-02-16T11:00:03.160Z"
+  },
+  {
     "id": "ipa-com.hassantaleb.mockup-5.1",
     "type": "ipa",
     "name": "Animock",
