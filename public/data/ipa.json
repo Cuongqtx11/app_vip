@@ -36,6 +36,42 @@
     "lastSync": "2026-02-16T21:00:02.373Z"
   },
   {
+    "id": "ipa-com.atebits.Tweetie2-11.66",
+    "type": "ipa",
+    "name": "X",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atebits.Tweetie2.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/X_11.66_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.66",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "com.atebits.Tweetie2",
+    "lastSync": "2026-02-16T22:00:01.926Z"
+  },
+  {
+    "id": "ipa-gen.tech.impulse-1.42",
+    "type": "ipa",
+    "name": "Impulse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gen.tech.impulse.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/Impulse_1.42_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.42",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "gen.tech.impulse",
+    "lastSync": "2026-02-16T22:00:01.928Z"
+  },
+  {
     "id": "ipa-com.keiwando.toonsquid-2.0.20",
     "type": "ipa",
     "name": "ToonSquid",
