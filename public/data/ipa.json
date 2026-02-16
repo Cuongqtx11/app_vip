@@ -252,6 +252,96 @@
     "lastSync": "2026-02-16T11:00:03.160Z"
   },
   {
+    "id": "ipa-com.thenovik.Presets-2.4.12",
+    "type": "ipa",
+    "name": "Edith",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.thenovik.Presets.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Edith_2.4.12_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.12",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.thenovik.Presets",
+    "lastSync": "2026-02-16T14:00:01.346Z"
+  },
+  {
+    "id": "ipa-com.path36.SpliceFree-4.28.58",
+    "type": "ipa",
+    "name": "Splice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.path36.SpliceFree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Splice_4.28.58_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.28.58",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.path36.SpliceFree",
+    "lastSync": "2026-02-16T14:00:01.346Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.58.00",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/ColorPop_2.58.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.58.00",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2026-02-16T14:00:01.348Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems-4.03.05",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Stemz_4.03.05_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.03.05",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2026-02-16T14:00:01.348Z"
+  },
+  {
+    "id": "ipa-com.yazio.ios.YAZIO-12.72.0",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-02-2026/Yazio_12.72.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.72.0",
+    "developer": "khomodvip",
+    "date": "2026-02-16",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2026-02-16T14:00:01.348Z"
+  },
+  {
     "id": "ipa-com.hassantaleb.mockup-5.1",
     "type": "ipa",
     "name": "Animock",
