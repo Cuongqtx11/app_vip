@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.AppChief.ArabicArt-9.5.4",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/_9.5.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.5.4",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2026-02-16T20:00:01.485Z"
+  },
+  {
     "id": "ipa-com.keiwando.toonsquid-2.0.20",
     "type": "ipa",
     "name": "ToonSquid",
