@@ -216,6 +216,78 @@
     "lastSync": "2026-02-17T10:00:01.786Z"
   },
   {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.2",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/SnoreLab_6.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2026-02-17T12:00:01.454Z"
+  },
+  {
+    "id": "ipa-com.mwm.sampler-app-4.15.01",
+    "type": "ipa",
+    "name": "BeatMakerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.sampler-app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/BeatMakerPro_4.15.01_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.15.01",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "com.mwm.sampler-app",
+    "lastSync": "2026-02-17T12:00:01.455Z"
+  },
+  {
+    "id": "ipa-com.getupnote.ios-9.17.2",
+    "type": "ipa",
+    "name": "UpNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getupnote.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/UpNote_9.17.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.17.2",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "com.getupnote.ios",
+    "lastSync": "2026-02-17T12:00:01.456Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.58.01",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/ColorPop_2.58.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.58.01",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2026-02-17T12:00:01.461Z"
+  },
+  {
     "id": "ipa-com.keiwando.toonsquid-2.0.20",
     "type": "ipa",
     "name": "ToonSquid",
