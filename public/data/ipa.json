@@ -288,6 +288,24 @@
     "lastSync": "2026-02-17T12:00:01.461Z"
   },
   {
+    "id": "ipa-com.dr1ven.eraser-2026.07.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-02-2026/Photoroom_2026.07.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.07.01",
+    "developer": "khomodvip",
+    "date": "2026-02-17",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-02-17T15:00:01.468Z"
+  },
+  {
     "id": "ipa-com.keiwando.toonsquid-2.0.20",
     "type": "ipa",
     "name": "ToonSquid",
