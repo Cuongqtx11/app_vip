@@ -54,6 +54,60 @@
     "lastSync": "2026-02-18T13:00:01.458Z"
   },
   {
+    "id": "ipa-com.keiwando.toonsquid-2.0.21",
+    "type": "ipa",
+    "name": "ToonSquid",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.keiwando.toonsquid.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/ToonSquid_2.0.21_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.21",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.keiwando.toonsquid",
+    "lastSync": "2026-02-18T14:00:01.649Z"
+  },
+  {
+    "id": "ipa-com.ninjakiwi.bloonstd6-53.1",
+    "type": "ipa",
+    "name": "BloonsTD6",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ninjakiwi.bloonstd6.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/BloonsTD6_53.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "53.1",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.ninjakiwi.bloonstd6",
+    "lastSync": "2026-02-18T14:00:01.650Z"
+  },
+  {
+    "id": "ipa-com.luma-touch.LumaFusion-5.4.3",
+    "type": "ipa",
+    "name": "LumaFusion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.luma-touch.LumaFusion.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/LumaFusion_5.4.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.3",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.luma-touch.LumaFusion",
+    "lastSync": "2026-02-18T14:00:01.651Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.5.4",
     "type": "ipa",
     "name": "",
