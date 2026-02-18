@@ -126,6 +126,42 @@
     "lastSync": "2026-02-18T15:00:01.643Z"
   },
   {
+    "id": "ipa-com.tiimo.app-3.42.0",
+    "type": "ipa",
+    "name": "Tiimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tiimo.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/Tiimo_3.42.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.42.0",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.tiimo.app",
+    "lastSync": "2026-02-18T16:00:01.851Z"
+  },
+  {
+    "id": "ipa-com.bitsmedia.muslimpro-17.0.1",
+    "type": "ipa",
+    "name": "MuslimPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bitsmedia.muslimpro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/MuslimPro_17.0.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.0.1",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.bitsmedia.muslimpro",
+    "lastSync": "2026-02-18T16:00:01.852Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.5.4",
     "type": "ipa",
     "name": "",
