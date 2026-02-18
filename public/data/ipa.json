@@ -108,6 +108,24 @@
     "lastSync": "2026-02-18T14:00:01.651Z"
   },
   {
+    "id": "ipa-cn.danatech.xingseus-5.46.0",
+    "type": "ipa",
+    "name": "PictureThis",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/cn.danatech.xingseus.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/PictureThis_5.46.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.46.0",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "cn.danatech.xingseus",
+    "lastSync": "2026-02-18T15:00:01.643Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.5.4",
     "type": "ipa",
     "name": "",
