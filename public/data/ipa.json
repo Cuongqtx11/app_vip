@@ -1,5 +1,59 @@
 [
   {
+    "id": "ipa-com.iqraapp.Iqra-5.74.3",
+    "type": "ipa",
+    "name": "Tarteel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iqraapp.Iqra.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/Tarteel_5.74.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.74.3",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.iqraapp.Iqra",
+    "lastSync": "2026-02-18T13:00:01.456Z"
+  },
+  {
+    "id": "ipa-com.ibit.UNPOSED-4.7.2",
+    "type": "ipa",
+    "name": "Unscripted",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ibit.UNPOSED.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/Unscripted_4.7.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.7.2",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.ibit.UNPOSED",
+    "lastSync": "2026-02-18T13:00:01.457Z"
+  },
+  {
+    "id": "ipa-com.mindsethealth.ibs-49.0",
+    "type": "ipa",
+    "name": "Nerva",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mindsethealth.ibs.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-02-2026/Nerva_49.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "49.0",
+    "developer": "khomodvip",
+    "date": "2026-02-18",
+    "source": "apptesters",
+    "bundleID": "com.mindsethealth.ibs",
+    "lastSync": "2026-02-18T13:00:01.458Z"
+  },
+  {
     "id": "ipa-com.AppChief.ArabicArt-9.5.4",
     "type": "ipa",
     "name": "",
