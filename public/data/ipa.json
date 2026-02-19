@@ -144,6 +144,24 @@
     "lastSync": "2026-02-19T08:00:02.014Z"
   },
   {
+    "id": "ipa-com.fluidtouch.noteshelf3-6.7.1",
+    "type": "ipa",
+    "name": "Noteshelf3",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fluidtouch.noteshelf3.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-02-2026/Noteshelf3_6.7.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.7.1",
+    "developer": "khomodvip",
+    "date": "2026-02-19",
+    "source": "apptesters",
+    "bundleID": "com.fluidtouch.noteshelf3",
+    "lastSync": "2026-02-19T09:00:02.070Z"
+  },
+  {
     "id": "ipa-com.iqraapp.Iqra-5.74.3",
     "type": "ipa",
     "name": "Tarteel",
