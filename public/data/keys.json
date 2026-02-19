@@ -5,13 +5,14 @@
     "createdAt": "2026-02-19T07:10:06.251Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "S7FGHZ",
     "transaction_id": "42803212",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-02-19T07:10:21.398Z"
   },
   {
     "id": "key_1771428392_8257",
