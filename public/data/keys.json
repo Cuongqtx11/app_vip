@@ -1380,10 +1380,10 @@
     "createdAt": "2025-11-21T00:43:13.570172",
     "expiresAt": null,
     "maxUses": null,
-    "currentUses": 101,
+    "currentUses": 102,
     "active": true,
     "createdBy": "telegram_bot",
     "notes": "∞ days, ∞ uses",
-    "lastUsedAt": "2026-02-19T02:15:37.440Z"
+    "lastUsedAt": "2026-02-19T02:16:24.274Z"
   }
 ]
