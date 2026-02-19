@@ -5,13 +5,14 @@
     "createdAt": "2026-02-19T21:44:20.930Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "AIQH58",
     "transaction_id": "42838257",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-02-19T21:44:38.843Z"
   },
   {
     "id": "key_1771493354_7989",
