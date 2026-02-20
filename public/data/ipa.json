@@ -180,6 +180,42 @@
     "lastSync": "2026-02-20T09:00:01.486Z"
   },
   {
+    "id": "ipa-com.culturedcode.ThingsiPad-3.22.7",
+    "type": "ipa",
+    "name": "Things",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.culturedcode.ThingsiPad.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/Things_3.22.7_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.22.7",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.culturedcode.ThingsiPad",
+    "lastSync": "2026-02-20T13:00:01.731Z"
+  },
+  {
+    "id": "ipa-com.ninjakiwi.bloonstd6-53.2",
+    "type": "ipa",
+    "name": "BloonsTD6",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ninjakiwi.bloonstd6.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/BloonsTD6_53.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "53.2",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.ninjakiwi.bloonstd6",
+    "lastSync": "2026-02-20T13:00:01.732Z"
+  },
+  {
     "id": "ipa-com.cinegenix.filmic.pro-7.5.30",
     "type": "ipa",
     "name": "FilmicPro",
