@@ -1,5 +1,185 @@
 [
   {
+    "id": "ipa-com.adobe.fresco.ios-7.2.0",
+    "type": "ipa",
+    "name": "AdobeFresco",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.fresco.ios.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/AdobeFresco_7.2.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.2.0",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.adobe.fresco.ios",
+    "lastSync": "2026-02-20T09:00:01.483Z"
+  },
+  {
+    "id": "ipa-com.bandlab.bandlab.iphone-11.17.2",
+    "type": "ipa",
+    "name": "BandLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bandlab.bandlab.iphone.png",
+    "desc": "Injected with Boost Membership",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/BandLab_11.17.2_Boost_Membership_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.17.2",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.bandlab.bandlab.iphone",
+    "lastSync": "2026-02-20T09:00:01.484Z"
+  },
+  {
+    "id": "ipa-com.tickettothemoon.video.persona-1.15.8",
+    "type": "ipa",
+    "name": "Persona",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tickettothemoon.video.persona.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/Persona_1.15.8_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.15.8",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.tickettothemoon.video.persona",
+    "lastSync": "2026-02-20T09:00:01.484Z"
+  },
+  {
+    "id": "ipa-com.alltrails.AllTrails-26.2.30",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/AllTrails_26.2.30_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.2.30",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2026-02-20T09:00:01.485Z"
+  },
+  {
+    "id": "ipa-com.myscript.nebo-7.1.1",
+    "type": "ipa",
+    "name": "MyScriptNotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myscript.nebo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/MyScriptNotes_7.1.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.1",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.myscript.nebo",
+    "lastSync": "2026-02-20T09:00:01.485Z"
+  },
+  {
+    "id": "ipa-de.komoot.berlinbikeapp-2026.8.0",
+    "type": "ipa",
+    "name": "Komoot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/Komoot_2026.8.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.8.0",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "de.komoot.berlinbikeapp",
+    "lastSync": "2026-02-20T09:00:01.485Z"
+  },
+  {
+    "id": "ipa-com.feelty-4.21.0",
+    "type": "ipa",
+    "name": "FLTR",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.feelty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/FLTR_4.21.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.21.0",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.feelty",
+    "lastSync": "2026-02-20T09:00:01.485Z"
+  },
+  {
+    "id": "ipa-com.picsart.studio-29.4.1",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/PicsArt_29.4.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.4.1",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-02-20T09:00:01.486Z"
+  },
+  {
+    "id": "ipa-com.adobe.lrmobilephone-11.2.1",
+    "type": "ipa",
+    "name": "Lightroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.lrmobilephone.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/Lightroom_11.2.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.2.1",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.adobe.lrmobilephone",
+    "lastSync": "2026-02-20T09:00:01.486Z"
+  },
+  {
+    "id": "ipa-com.getmotobit.motobit-1.0.61",
+    "type": "ipa",
+    "name": "Motobit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmotobit.motobit.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-02-2026/Motobit_1.0.61_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.61",
+    "developer": "khomodvip",
+    "date": "2026-02-20",
+    "source": "apptesters",
+    "bundleID": "com.getmotobit.motobit",
+    "lastSync": "2026-02-20T09:00:01.486Z"
+  },
+  {
     "id": "ipa-com.cinegenix.filmic.pro-7.5.30",
     "type": "ipa",
     "name": "FilmicPro",
