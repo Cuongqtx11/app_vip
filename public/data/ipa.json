@@ -1,5 +1,149 @@
 [
   {
+    "id": "ipa-com.facebook.Facebook-549.0.0",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/Facebook_549.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "549.0.0",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2026-02-21T03:00:01.368Z"
+  },
+  {
+    "id": "ipa-com.facebook.Messenger-549.1.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/Messenger_549.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "549.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2026-02-21T03:00:01.369Z"
+  },
+  {
+    "id": "ipa-design.yugen.Flow-4.7.0",
+    "type": "ipa",
+    "name": "Flow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/design.yugen.Flow.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "graphics & design"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/Flow_4.7.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.7.0",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "design.yugen.Flow",
+    "lastSync": "2026-02-21T03:00:01.370Z"
+  },
+  {
+    "id": "ipa-com.khanov.BlockerX-6.4.3",
+    "type": "ipa",
+    "name": "1Blocker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.khanov.BlockerX.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/1Blocker_6.4.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4.3",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "com.khanov.BlockerX",
+    "lastSync": "2026-02-21T03:00:01.371Z"
+  },
+  {
+    "id": "ipa-com.castpeer.audioroom.ios-2.10.5",
+    "type": "ipa",
+    "name": "SoundLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.castpeer.audioroom.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/SoundLab_2.10.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.5",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "com.castpeer.audioroom.ios",
+    "lastSync": "2026-02-21T03:00:01.371Z"
+  },
+  {
+    "id": "ipa-ideastudio.Weather-on-the-Way-2.4.4",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/OnTheWay_2.4.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.4",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2026-02-21T03:00:01.371Z"
+  },
+  {
+    "id": "ipa-com.ocho.SudokuaDay-2.2.0",
+    "type": "ipa",
+    "name": "Sudoku",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ocho.SudokuaDay.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/Sudoku_2.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.0",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "com.ocho.SudokuaDay",
+    "lastSync": "2026-02-21T03:00:01.371Z"
+  },
+  {
+    "id": "ipa-co.lovetap.Female-by-Design-6.6.0",
+    "type": "ipa",
+    "name": "Life",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.lovetap.Female-by-Design.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "graphics & design"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-02-2026/Life_6.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.0",
+    "developer": "khomodvip",
+    "date": "2026-02-21",
+    "source": "apptesters",
+    "bundleID": "co.lovetap.Female-by-Design",
+    "lastSync": "2026-02-21T03:00:01.372Z"
+  },
+  {
     "id": "ipa-com.adobe.fresco.ios-7.2.0",
     "type": "ipa",
     "name": "AdobeFresco",
