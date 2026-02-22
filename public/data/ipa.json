@@ -90,6 +90,24 @@
     "lastSync": "2026-02-22T12:00:01.606Z"
   },
   {
+    "id": "ipa-filmcamera.vintagecamera.retro.cam.analog-1.0.8",
+    "type": "ipa",
+    "name": "FilmCamPublic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/filmcamera.vintagecamera.retro.cam.analog.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-02-2026/FilmCamPublic_1.0.8_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.0.8",
+    "developer": "khomodvip",
+    "date": "2026-02-22",
+    "source": "apptesters",
+    "bundleID": "filmcamera.vintagecamera.retro.cam.analog",
+    "lastSync": "2026-02-22T19:00:01.405Z"
+  },
+  {
     "id": "ipa-com.facebook.Facebook-549.0.0",
     "type": "ipa",
     "name": "Facebook",
