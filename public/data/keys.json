@@ -5,13 +5,14 @@
     "createdAt": "2026-02-22T13:12:25.827Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "auto_payment",
     "transaction_code": "YUCP3X",
     "transaction_id": "43032977",
     "package": "Gói Lẻ",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-02-22T13:12:42.349Z"
   },
   {
     "id": "key_1771700160_4038",
