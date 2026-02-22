@@ -1,5 +1,95 @@
 [
   {
+    "id": "ipa-com.iteration-mobile.radarbot-free-ww-9.35",
+    "type": "ipa",
+    "name": "Radarbot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iteration-mobile.radarbot-free-ww.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-02-2026/Radarbot_9.35_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.35",
+    "developer": "khomodvip",
+    "date": "2026-02-22",
+    "source": "apptesters",
+    "bundleID": "com.iteration-mobile.radarbot-free-ww",
+    "lastSync": "2026-02-22T12:00:01.604Z"
+  },
+  {
+    "id": "ipa-com.nextgen.reelsapp-7.5",
+    "type": "ipa",
+    "name": "ReelsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nextgen.reelsapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-02-2026/ReelsApp_7.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.5",
+    "developer": "khomodvip",
+    "date": "2026-02-22",
+    "source": "apptesters",
+    "bundleID": "com.nextgen.reelsapp",
+    "lastSync": "2026-02-22T12:00:01.605Z"
+  },
+  {
+    "id": "ipa-io.yogger.Yogger-5.3.0",
+    "type": "ipa",
+    "name": "Yogger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.yogger.Yogger.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-02-2026/Yogger_5.3.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.0",
+    "developer": "khomodvip",
+    "date": "2026-02-22",
+    "source": "apptesters",
+    "bundleID": "io.yogger.Yogger",
+    "lastSync": "2026-02-22T12:00:01.605Z"
+  },
+  {
+    "id": "ipa-com.gunthermarktl.stepapp-8.6.8",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-02-2026/StepsApp_8.6.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.8",
+    "developer": "khomodvip",
+    "date": "2026-02-22",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2026-02-22T12:00:01.606Z"
+  },
+  {
+    "id": "ipa-com.grey.swiftcamera-2.5.51",
+    "type": "ipa",
+    "name": "NoFusion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.grey.swiftcamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-02-2026/NoFusion_2.5.51_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.51",
+    "developer": "khomodvip",
+    "date": "2026-02-22",
+    "source": "apptesters",
+    "bundleID": "com.grey.swiftcamera",
+    "lastSync": "2026-02-22T12:00:01.606Z"
+  },
+  {
     "id": "ipa-com.facebook.Facebook-549.0.0",
     "type": "ipa",
     "name": "Facebook",
