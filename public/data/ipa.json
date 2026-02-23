@@ -18,6 +18,42 @@
     "lastSync": "2026-02-23T01:00:01.689Z"
   },
   {
+    "id": "ipa-com.cocologics.ProCamera-26.1.3",
+    "type": "ipa",
+    "name": "ProCamera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cocologics.ProCamera.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/ProCamera_26.1.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1.3",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.cocologics.ProCamera",
+    "lastSync": "2026-02-23T13:00:02.618Z"
+  },
+  {
+    "id": "ipa-com.elf-audio.koala-1.4150",
+    "type": "ipa",
+    "name": "koala",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elf-audio.koala.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/koala_1.4150_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4150",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.elf-audio.koala",
+    "lastSync": "2026-02-23T13:00:02.619Z"
+  },
+  {
     "id": "ipa-com.iteration-mobile.radarbot-free-ww-9.35",
     "type": "ipa",
     "name": "Radarbot",
