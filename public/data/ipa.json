@@ -54,6 +54,132 @@
     "lastSync": "2026-02-23T13:00:02.619Z"
   },
   {
+    "id": "ipa-com.moneycontrol.mc-11.1.0",
+    "type": "ipa",
+    "name": "moneycontrol",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moneycontrol.mc.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/moneycontrol_11.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.moneycontrol.mc",
+    "lastSync": "2026-02-23T17:00:01.559Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems-4.03.06",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/Stemz_4.03.06_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.03.06",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2026-02-23T17:00:01.560Z"
+  },
+  {
+    "id": "ipa-com.mobilefootie.fotmobpro-1227.0",
+    "type": "ipa",
+    "name": "FotMob",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mobilefootie.fotmobpro.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/FotMob_1227.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1227.0",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.mobilefootie.fotmobpro",
+    "lastSync": "2026-02-23T17:00:01.561Z"
+  },
+  {
+    "id": "ipa-com.atistudios.MondlyLanguages-10.66.0",
+    "type": "ipa",
+    "name": "Mondly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.atistudios.MondlyLanguages.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/Mondly_10.66.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.66.0",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.atistudios.MondlyLanguages",
+    "lastSync": "2026-02-23T17:00:01.561Z"
+  },
+  {
+    "id": "ipa-io.betterhalf.app-2.71.0",
+    "type": "ipa",
+    "name": "Paired",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.betterhalf.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/Paired_2.71.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.71.0",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "io.betterhalf.app",
+    "lastSync": "2026-02-23T17:00:01.561Z"
+  },
+  {
+    "id": "ipa-com.picsart.studio-29.4.2",
+    "type": "ipa",
+    "name": "PicsArt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/PicsArt_29.4.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.4.2",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-02-23T17:00:01.561Z"
+  },
+  {
+    "id": "ipa-com.osmose-it.osmosis-6.0.3",
+    "type": "ipa",
+    "name": "Osmosis",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.osmose-it.osmosis.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/Osmosis_6.0.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.3",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.osmose-it.osmosis",
+    "lastSync": "2026-02-23T17:00:01.562Z"
+  },
+  {
     "id": "ipa-com.iteration-mobile.radarbot-free-ww-9.35",
     "type": "ipa",
     "name": "Radarbot",
