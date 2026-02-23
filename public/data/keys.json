@@ -514,11 +514,11 @@
     "createdAt": "2026-02-11T03:53:38.693495+00:00",
     "expiresAt": "2026-03-14T03:53:38.693495+00:00",
     "maxUses": null,
-    "currentUses": 16,
+    "currentUses": 17,
     "active": true,
     "createdBy": "telegram_bot",
     "notes": "31 days, ∞ uses",
-    "lastUsedAt": "2026-02-23T11:56:03.276Z"
+    "lastUsedAt": "2026-02-23T11:56:58.177Z"
   },
   {
     "id": "key_1770743048_3162",
