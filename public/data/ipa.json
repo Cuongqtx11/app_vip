@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.noctuasoftware.stellarium-mobile-plus-1.15.5",
+    "type": "ipa",
+    "name": "Stellarium",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.noctuasoftware.stellarium-mobile-plus.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-02-2026/Stellarium_1.15.5_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.15.5",
+    "developer": "khomodvip",
+    "date": "2026-02-23",
+    "source": "apptesters",
+    "bundleID": "com.noctuasoftware.stellarium-mobile-plus",
+    "lastSync": "2026-02-23T01:00:01.689Z"
+  },
+  {
     "id": "ipa-com.iteration-mobile.radarbot-free-ww-9.35",
     "type": "ipa",
     "name": "Radarbot",
