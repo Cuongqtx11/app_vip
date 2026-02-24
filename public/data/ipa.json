@@ -144,6 +144,42 @@
     "lastSync": "2026-02-24T00:00:01.435Z"
   },
   {
+    "id": "ipa-com.elevateapp.elevate-5.229.0",
+    "type": "ipa",
+    "name": "Elevate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.elevate.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Elevate_5.229.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.229.0",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.elevate",
+    "lastSync": "2026-02-24T01:00:01.558Z"
+  },
+  {
+    "id": "ipa-com.dsrtech.colorsplash-3.21.44",
+    "type": "ipa",
+    "name": "PhotoSplash",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dsrtech.colorsplash.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/PhotoSplash_3.21.44_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.21.44",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "com.dsrtech.colorsplash",
+    "lastSync": "2026-02-24T01:00:01.559Z"
+  },
+  {
     "id": "ipa-com.noctuasoftware.stellarium-mobile-plus-1.15.5",
     "type": "ipa",
     "name": "Stellarium",
