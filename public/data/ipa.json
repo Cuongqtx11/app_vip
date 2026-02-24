@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.soundcloud.TouchApp-8.49.1",
+    "type": "ipa",
+    "name": "SoundCloud",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.soundcloud.TouchApp.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-02-2026/SoundCloud_8.49.1_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.49.1",
+    "developer": "khomodvip",
+    "date": "2026-02-25",
+    "source": "apptesters",
+    "bundleID": "com.soundcloud.TouchApp",
+    "lastSync": "2026-02-24T21:00:01.751Z"
+  },
+  {
     "id": "ipa-app.uplens-3.4.9",
     "type": "ipa",
     "name": "Uplens",
