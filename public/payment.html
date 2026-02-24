@@ -162,6 +162,10 @@
             border-radius: 16px;
             margin: 20px 0;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            min-height: 200px; /* Thêm để tránh giật khi loading */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .qr-frame img { width: 100%; display: block; border-radius: 8px; }
 
@@ -245,7 +249,7 @@
                 <li><span class="check-icon">✓</span> Tốc độ cao</li>
                 <li><span class="check-icon">✓</span> Hỗ trợ cơ bản</li>
             </ul>
-            <button class="plan-btn" onclick="openPayment(5000, 'Gói 10 lượt')">Chọn Gói Này</button>
+            <button class="plan-btn" onclick="openPayment(5000, 'Gói 20 lượt')">Chọn Gói Này</button>
         </div>
 
         <div class="pricing-card">
@@ -318,10 +322,7 @@
             	<img src="https://i.imgur.com/ZkJvVT9.png" style="height: 52px; width: 52px;"><br>
         	</a>
     	</div>
-		<p style="font-size: 0.8em; color: red; margin-top: 5px;">Nếu trường hợp bị quên và không chép và lưu được key kịp thời vui lòng truy cập vào <a href="https://t.me/keyvipdownloadp12_bot" style="font-weight: bold; color: red; text-decoration: underline;">bot telegram</a> để lấy lại key</p>
-
-				
-				
+		<p style="font-size: 0.8em; color: red; margin-top: 5px; text-align: center;">Nếu trường hợp bị quên và không chép và lưu được key kịp thời vui lòng truy cập vào <a href="https://t.me/keyvipdownloadp12_bot" style="font-weight: bold; color: red; text-decoration: underline;">bot telegram</a> để lấy lại key</p>
 
     </div>
 
@@ -334,7 +335,10 @@
                 <p style="font-size: 0.9em; opacity: 0.7;">Vui lòng quét mã bên dưới</p>
                 
                 <div class="qr-frame">
-                    <img id="qr-image" src="" alt="QR Code">
+                    <div id="qr-loading" style="color: var(--primary); font-weight: bold;">
+                        <span class="spinner"></span> Đang tạo mã QR...
+                    </div>
+                    <img id="qr-image" src="" alt="QR Code" style="display: none;">
                 </div>
 
                 <p style="font-size: 0.85em; margin-bottom: 5px;">Nội dung chuyển khoản (Bắt buộc):</p>
@@ -367,16 +371,6 @@
     </div>
 
     <script>
-        // ============================================
-        // CẤU HÌNH TÀI KHOẢN NGÂN HÀNG CỦA BẠN
-        // ============================================
-        const BANK_INFO = {
-            id: 'MB',            // Mã ngân hàng (VD: MB, VCB, ACB, TPB...)
-            acc: '0862222849',    // Số tài khoản của bạn
-            name: 'HO HUU CUONG' // Tên chủ tài khoản (Viết hoa không dấu)
-        };
-        // ============================================
-
         let checkInterval;
         let isChecking = false;
 
@@ -390,10 +384,11 @@
             return result;
         }
 
-        // Mở Modal Thanh Toán
+        // Mở Modal Thanh Toán (Đã tích hợp API PayOS)
         function openPayment(amount, packageName) {
             const modal = document.getElementById('paymentModal');
             const qrImg = document.getElementById('qr-image');
+            const qrLoading = document.getElementById('qr-loading');
             const codeEl = document.getElementById('trans-code');
             const nameEl = document.getElementById('pkg-name');
             
@@ -401,6 +396,8 @@
             document.getElementById('qr-area').style.display = 'block';
             document.getElementById('result-area').style.display = 'none';
             document.getElementById('status-text').innerHTML = '<span class="spinner"></span> Đang chờ tiền về...';
+            qrImg.style.display = 'none';
+            qrLoading.style.display = 'block';
 
             // 2. Tạo mã giao dịch mới
             const code = generateRandomCode();
@@ -409,16 +406,35 @@
             nameEl.innerText = packageName;
             codeEl.innerText = code;
             
-            // 4. Tạo Link QR VietQR
-            // Dùng encodeURIComponent để đảm bảo tên tài khoản hiển thị đúng
-            const qrUrl = `https://img.vietqr.io/image/${BANK_INFO.id}-${BANK_INFO.acc}-compact.jpg?amount=${amount}&addInfo=${code}&accountName=${encodeURIComponent(BANK_INFO.name)}`;
-            qrImg.src = qrUrl;
-
-            // 5. Hiển thị Modal
+            // Hiển thị Modal ngay để người dùng thấy trạng thái loading
             modal.style.display = 'flex';
 
-            // 6. Bắt đầu gọi Server để kiểm tra tiền
-            startChecking(code);
+            // 4. Gọi API PayOS để lấy mã QR động
+            fetch('/api/payos-create', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: amount, content: code })
+            })
+            .then(res => res.json())
+            .then(data => {
+                qrLoading.style.display = 'none';
+                if(data.qrCode) {
+                    // Hiển thị QR thông qua QuickChart
+                    qrImg.src = `https://quickchart.io/qr?size=300&text=${encodeURIComponent(data.qrCode)}`;
+                    qrImg.style.display = 'block';
+                    
+                    // 5. Bắt đầu gọi Server để kiểm tra tiền (Chỉ bắt đầu khi đã tạo QR thành công)
+                    startChecking(code);
+                } else {
+                    alert("Lỗi tạo mã QR PayOS: " + (data.error || "Không xác định"));
+                    closePayment();
+                }
+            })
+            .catch(err => {
+                qrLoading.style.display = 'none';
+                alert("Lỗi kết nối máy chủ thanh toán!");
+                closePayment();
+            });
         }
 
         // Đóng Modal
@@ -435,22 +451,19 @@
             });
         }
 
-        // --- LOGIC TỰ ĐỘNG CHECK TIỀN (QUAN TRỌNG) ---
+        // --- LOGIC TỰ ĐỘNG CHECK TIỀN ---
         function startChecking(contentCode) {
-            if (isChecking) return; // Nếu đang check rồi thì không chạy chồng chéo
+            if (isChecking) return; 
             isChecking = true;
             
-            // Cài đặt vòng lặp: Cứ 3 giây gọi Server 1 lần
             checkInterval = setInterval(async () => {
                 try {
-                    // Gọi API Backend: /api/check-order
                     const res = await fetch('/api/check-order', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ content: contentCode })
                     });
                     
-                    // Nếu Server trả về lỗi (VD: 500), dừng xử lý lượt này
                     if (!res.ok) {
                         console.warn("Server đang xử lý hoặc gặp lỗi tạm thời.");
                         return;
@@ -458,12 +471,10 @@
 
                     const data = await res.json();
 
-                    // Nếu Backend trả về 'success' -> Có nghĩa là tiền ĐÃ VỀ THẬT
                     if (data.status === 'success') {
-                        stopChecking(); // Dừng vòng lặp
-                        showSuccess(data.key); // Hiển thị Key
+                        stopChecking(); 
+                        showSuccess(data.key); 
                     }
-                    // Nếu status là 'pending' hoặc 'error' -> Kệ nó, đợi 3 giây sau check tiếp
 
                 } catch (err) {
                     console.error("Lỗi kết nối:", err);
@@ -477,15 +488,11 @@
         }
 
         function showSuccess(key) {
-            // Ẩn phần QR
             document.getElementById('qr-area').style.display = 'none';
-            // Hiện phần Kết quả
             document.getElementById('result-area').style.display = 'block';
-            // Điền Key vào ô
             document.getElementById('success-key').innerText = key;
         }
 
-        // Tự động kích hoạt Dark Mode nếu hệ điều hành người dùng đang để Dark Mode
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.body.classList.add('dark');
         }
