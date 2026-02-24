@@ -5,10 +5,11 @@
     "createdAt": "2026-02-24T04:31:20.146816+00:00",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "telegram_bot",
-    "notes": "∞ days, 20 uses"
+    "notes": "∞ days, 20 uses",
+    "lastUsedAt": "2026-02-24T13:16:24.241Z"
   },
   {
     "id": "key_1771900582",
