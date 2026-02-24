@@ -5,12 +5,13 @@
     "createdAt": "2026-02-24T02:36:22.294Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "KIQGBZ",
     "package": "Gói Trải Nghiệm",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-02-24T02:36:58.466Z"
   },
   {
     "id": "key_1771899983",
