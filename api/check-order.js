@@ -4,8 +4,8 @@ export default async function handler(req, res) {
     if (!content) return res.status(400).json({ error: 'Thiếu mã giao dịch' });
 
     try {
-        // Lưu ý: Sửa đường dẫn database/keys.json nếu cần
-        const url = `https://api.github.com/repos/cuongqtx11/app_vip/contents/database/keys.json`;
+        // ĐÃ SỬA: Trỏ đúng về public/data/keys.json
+        const url = `https://api.github.com/repos/cuongqtx11/app_vip/contents/public/data/keys.json`;
         const gitRes = await fetch(url, { headers: { 'Authorization': `token ${process.env.GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }});
         if (!gitRes.ok) return res.status(200).json({ status: 'pending' });
         
