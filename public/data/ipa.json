@@ -1,5 +1,149 @@
 [
   {
+    "id": "ipa-app.uplens-3.4.9",
+    "type": "ipa",
+    "name": "Uplens",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.uplens.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Uplens_3.4.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.9",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "app.uplens",
+    "lastSync": "2026-02-24T00:00:01.432Z"
+  },
+  {
+    "id": "ipa-es.monkimun.lingokids-26.9.0",
+    "type": "ipa",
+    "name": "Lingokids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/es.monkimun.lingokids.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Lingokids_26.9.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.9.0",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "es.monkimun.lingokids",
+    "lastSync": "2026-02-24T00:00:01.433Z"
+  },
+  {
+    "id": "ipa-gen.tech.impulse-1.43",
+    "type": "ipa",
+    "name": "Impulse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gen.tech.impulse.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Impulse_1.43_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.43",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "gen.tech.impulse",
+    "lastSync": "2026-02-24T00:00:01.434Z"
+  },
+  {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.19.5",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Documents_8.19.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.19.5",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2026-02-24T00:00:01.434Z"
+  },
+  {
+    "id": "ipa-com.burbn.barcelona-418.1.0",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Threads_418.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "418.1.0",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2026-02-24T00:00:01.434Z"
+  },
+  {
+    "id": "ipa-io.veed.appstore-8.6.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/VEEDCaptions_8.6.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.0",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-02-24T00:00:01.435Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2026.08.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/Photoroom_2026.08.01_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.08.01",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-02-24T00:00:01.435Z"
+  },
+  {
+    "id": "ipa-net.quochuywdm.collanote496-4.0.6",
+    "type": "ipa",
+    "name": "CollaNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-02-2026/CollaNote_4.0.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.0.6",
+    "developer": "khomodvip",
+    "date": "2026-02-24",
+    "source": "apptesters",
+    "bundleID": "net.quochuywdm.collanote496",
+    "lastSync": "2026-02-24T00:00:01.435Z"
+  },
+  {
     "id": "ipa-com.noctuasoftware.stellarium-mobile-plus-1.15.5",
     "type": "ipa",
     "name": "Stellarium",
