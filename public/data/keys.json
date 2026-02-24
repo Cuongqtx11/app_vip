@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1771898904_1511",
+    "key": "DNND-UXW9-8KK1-J6BW",
+    "createdAt": "2026-02-24T02:08:24.321264+00:00",
+    "expiresAt": "2026-02-25T02:08:24.321264+00:00",
+    "maxUses": 5,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "1 days, 5 uses"
+  },
+  {
     "id": "key_1771821494_6725",
     "key": "YUIT-UZRT-SIRK-ZKZ9",
     "createdAt": "2026-02-23T04:38:14.790Z",
