@@ -40,12 +40,13 @@ export default async function handler(req, res) {
 
         // --- XỬ LÝ MUA KEY APP (6 KÝ TỰ) ---
         if (content.length === 6) {
-            // Lưu ý: Đổi chữ 'database/keys.json' thành 'public/data/keys.json' nếu bạn chưa di chuyển thư mục bảo mật
-            const git = await readGit('database/keys.json'); 
+            // ĐÃ SỬA: Trỏ đúng về public/data/keys.json
+            const git = await readGit('public/data/keys.json'); 
             if(!git || git.data.find(k => k.transaction_code === content)) return;
 
             let days = 0, uses = 0, pkg = '';
-            if (amount >= 199000) { pkg = 'VIP 1 Năm'; days = 365; }
+            if (amount >= 4999000) { pkg = 'Gói Vĩnh Viễn'; days = 36500; } // Thêm gói vĩnh viễn (100 năm)
+            else if (amount >= 199000) { pkg = 'VIP 1 Năm'; days = 365; }
             else if (amount >= 149000) { pkg = 'VIP 6 Tháng'; days = 180; }
             else if (amount >= 39000) { pkg = 'VIP 1 Tháng'; days = 30; }
             else if (amount >= 19000) { pkg = 'VIP 1 Tuần'; days = 7; }
@@ -71,7 +72,8 @@ export default async function handler(req, res) {
         
         // --- XỬ LÝ MUA VPN (9 KÝ TỰ) ---
         else if (content.length === 9) {
-            const git = await readGit('database/vpn_data.json');
+            // ĐÃ SỬA: Trỏ đúng về public/data/vpn_data.json
+            const git = await readGit('public/data/vpn_data.json');
             if(!git || git.data.find(k => k.owner_content === content)) return;
 
             const idx = git.data.findIndex(k => k.status === 'available');
@@ -83,5 +85,7 @@ export default async function handler(req, res) {
             git.data[idx] = { ...git.data[idx], status: 'sold', owner_content: content, sold_at: now.toISOString(), expire_at: exp.toISOString() };
             await writeGit(git.url, git.data, git.sha, `PayOS: Sold VPN for ${content}`);
         }
-    } catch(e) {}
+    } catch(e) {
+        console.error("Webhook Error: ", e);
+    }
 }
