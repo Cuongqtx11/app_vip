@@ -1,26 +1,20 @@
 export default async function handler(req, res) {
-    // Đảm bảo chỉ nhận phương thức POST từ PayOS
     if (req.method !== 'POST') return res.status(405).json({ error: 'Chỉ hỗ trợ POST' });
 
     try {
-        console.log("========== BẮT ĐẦU NHẬN WEBHOOK TỪ PAYOS ==========");
-        
+        console.log("========== BẮT ĐẦU XỬ LÝ ==========");
         const { data, success } = req.body;
         
-        // 1. Kiểm tra dữ liệu đầu vào
         if (!success || !data || !data.description) {
-            console.log("❌ Webhook không hợp lệ hoặc thiếu thông tin description.");
             return res.status(200).json({ success: true });
         }
 
         const fullDescription = String(data.description).toUpperCase();
         const amount = parseInt(data.amount);
-        console.log(`💵 Số tiền nạp: ${amount} | 📝 Nội dung chuyển khoản: "${fullDescription}"`);
+        console.log(`💵 Tiền: ${amount} | 📝 Nội dung: "${fullDescription}"`);
 
-        // 2. TÌM MÃ 6 KÝ TỰ (KEY APP) HOẶC 9 KÝ TỰ (VPN)
         const parts = fullDescription.split(/[^A-Z0-9]+/);
-        let transCode = null;
-        let codeType = null;
+        let transCode = null, codeType = null;
 
         for (const part of parts) {
             if (part.length === 6) { transCode = part; codeType = 'key'; break; } 
@@ -28,68 +22,78 @@ export default async function handler(req, res) {
         }
 
         if (!transCode) {
-            console.log("❌ LỖI: Không tìm thấy mã 6 hoặc 9 ký tự nào!");
+            console.log("❌ Bỏ qua vì không thấy mã 6/9 ký tự.");
             return res.status(200).json({ success: true }); 
         }
 
-        console.log(`✅ Đã bắt được mã giao dịch: [ ${transCode} ] - Loại: ${codeType}`);
+        console.log(`✅ Mã GD: [ ${transCode} ]`);
 
-        // 3. KẾT NỐI GITHUB ĐỂ ĐỌC/GHI FILE
         const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-        if (!GITHUB_TOKEN) {
-            console.log("❌ LỖI: Chưa có biến môi trường GITHUB_TOKEN trên Vercel!");
-            return res.status(200).json({ success: true });
-        }
-
         const OWNER = 'cuongqtx11';
         const REPO = 'app_vip';
 
-        // Hàm đọc file GitHub
+        // HÀM ĐỌC GITHUB SIÊU BẮT LỖI
         async function readGit(path) {
-            console.log(`📂 Đang mở file từ GitHub: ${path}...`);
-            const gitRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`, {
-                headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
-            });
-            if(!gitRes.ok) {
-                console.log(`❌ Lỗi đọc file. Mã lỗi: ${gitRes.status}`);
+            console.log(`📂 Đang gọi API GitHub để đọc: ${path}...`);
+            try {
+                const gitRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`, {
+                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
+                });
+                
+                console.log(`📡 Phản hồi từ GitHub: HTTP ${gitRes.status}`);
+                
+                if(!gitRes.ok) {
+                    const errText = await gitRes.text();
+                    console.log(`❌ LỖI GITHUB TỪ CHỐI: ${errText}`);
+                    return null;
+                }
+                
+                const d = await gitRes.json();
+                let fileContent = '';
+                try {
+                    fileContent = Buffer.from(d.content, 'base64').toString('utf-8');
+                    const parsedData = JSON.parse(fileContent);
+                    console.log(`✅ Đọc thành công! Đang có ${parsedData.length} dòng dữ liệu.`);
+                    return { data: parsedData, sha: d.sha, url: d.url };
+                } catch (parseError) {
+                    console.log(`❌ LỖI ĐỊNH DẠNG FILE JSON: File keys.json bị sai hoặc trống trơn. Nội dung hiện tại: "${fileContent}"`);
+                    return null;
+                }
+            } catch (networkErr) {
+                console.log(`❌ LỖI MẠNG KHI KẾT NỐI GITHUB:`, networkErr.message);
                 return null;
             }
-            const d = await gitRes.json();
-            return { data: JSON.parse(Buffer.from(d.content, 'base64').toString('utf-8')), sha: d.sha, url: d.url };
         }
 
-        // Hàm ghi file GitHub
         async function writeGit(url, dataObj, sha, msg) {
-            console.log(`✍️ Đang ghi Key mới vào GitHub...`);
+            console.log(`✍️ Đang tiến hành lưu lên GitHub...`);
             const gitRes = await fetch(url, {
                 method: 'PUT',
                 headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: msg, content: Buffer.from(JSON.stringify(dataObj, null, 2)).toString('base64'), sha })
             });
-            if (gitRes.ok) console.log("✅ LƯU FILE LÊN GITHUB THÀNH CÔNG!");
-            else console.log("❌ LỖI KHI LƯU FILE:", gitRes.status);
+            if (gitRes.ok) console.log("✅ LƯU FILE LÊN GITHUB THÀNH CÔNG RỰC RỠ!");
+            else {
+                const errText = await gitRes.text();
+                console.log(`❌ LỖI KHI GHI FILE: HTTP ${gitRes.status} - Chi tiết: ${errText}`);
+            }
         }
 
-        // Hàm tự động sinh Key định dạng XXXX-XXXX-XXXX-XXXX
         function genKey() {
             const c = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             const p = () => Array.from({length:4}, () => c[Math.floor(Math.random()*c.length)]).join('');
             return `${p()}-${p()}-${p()}-${p()}`;
         }
 
-        // 4. XỬ LÝ MUA GÓI KEY APP (6 KÝ TỰ)
         if (codeType === 'key') {
-            const path = 'public/data/keys.json'; // Đọc đúng từ file khoá của bạn
-            const git = await readGit(path); 
+            const git = await readGit('public/data/keys.json'); 
             if(!git) return res.status(200).json({ success: true });
 
-            // Chống cộng dồn (Nếu mã này đã xử lý rồi thì bỏ qua)
             if (git.data.find(k => k.transaction_code === transCode)) {
-                console.log("⚠️ Mã giao dịch này đã được tạo Key trước đó rồi. Bỏ qua.");
+                console.log("⚠️ Key đã được tạo rồi.");
                 return res.status(200).json({ success: true });
             }
 
-            // Phân loại gói theo số tiền
             let days = 0, uses = 0, pkg = '';
             if (amount >= 4999000) { pkg = 'Gói Vĩnh Viễn'; days = 36500; }
             else if (amount >= 199000) { pkg = 'Gói 1 Năm'; days = 365; }
@@ -98,11 +102,10 @@ export default async function handler(req, res) {
             else if (amount >= 19000) { pkg = 'Gói Tuần VIP'; days = 7; }
             else if (amount >= 5000) { pkg = 'Gói Trải Nghiệm'; uses = 20; }
             else {
-                console.log(`❌ Số tiền ${amount}đ không khớp với gói nào, tạo key thất bại!`);
+                console.log(`❌ Số tiền không khớp!`);
                 return res.status(200).json({ success: true });
             }
 
-            // Tạo dữ liệu Key mới
             const now = new Date();
             const newKey = genKey();
             git.data.unshift({
@@ -119,25 +122,15 @@ export default async function handler(req, res) {
                 notes: "Auto PayOS"
             });
             
-            // Ghi dữ liệu đã cập nhật lên GitHub
-            await writeGit(git.url, git.data, git.sha, `PayOS: Tự động tạo Key cho đơn ${transCode}`);
-            console.log(`🎉 HOÀN TẤT! ĐÃ TẠO VÀ LƯU KEY: ${newKey}`);
+            await writeGit(git.url, git.data, git.sha, `PayOS: Tạo Key ${transCode}`);
+            console.log(`🎉 HOÀN TẤT TẠO KEY: ${newKey}`);
         }
         
-        // 5. XỬ LÝ MUA VPN (9 KÝ TỰ) NẾU CÓ DÙNG
-        else if (codeType === 'vpn') {
-            const path = 'public/data/vpn_data.json';
-            const git = await readGit(path);
-            if(!git) return res.status(200).json({ success: true });
+        console.log("========== KẾT THÚC ==========");
+        return res.status(200).json({ success: true });
 
-            if (git.data.find(k => k.owner_content === transCode)) {
-                return res.status(200).json({ success: true });
-            }
-
-            const idx = git.data.findIndex(k => k.status === 'available');
-            if(idx !== -1) {
-                const now = new Date();
-                const exp = new Date(now.getTime() + 30*86400000); 
-                git.data[idx] = { ...git.data[idx], status: 'sold', owner_content: transCode, sold_at: now.toISOString(), expire_at: exp.toISOString() };
-                await writeGit(git.url, git.data, git.sha, `PayOS: Bán VPN cho đơn ${transCode}`);
-                console.log(`🎉 HOÀN TẤT! ĐÃ CẤP VPN CHO ĐƠN: ${transCode}`);
+    } catch(e) {
+        console.log("❌ LỖI KHÔNG XÁC ĐỊNH:", e.message);
+        return res.status(200).json({ success: true });
+    }
+}
