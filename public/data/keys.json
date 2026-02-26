@@ -632,11 +632,11 @@
     "createdAt": "2026-02-11T03:53:38.693495+00:00",
     "expiresAt": "2026-03-14T03:53:38.693495+00:00",
     "maxUses": null,
-    "currentUses": 29,
+    "currentUses": 30,
     "active": true,
     "createdBy": "telegram_bot",
     "notes": "31 days, ∞ uses",
-    "lastUsedAt": "2026-02-26T11:38:00.228Z"
+    "lastUsedAt": "2026-02-26T11:41:39.358Z"
   },
   {
     "id": "key_1770743048_3162",
