@@ -5,13 +5,13 @@
     "createdAt": "2026-02-26T18:35:37.334Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "MYW9ZY",
     "package": "Gói Trải Nghiệm",
     "notes": "Auto PayOS",
-    "lastUsedAt": "2026-02-26T18:35:53.378Z"
+    "lastUsedAt": "2026-02-26T18:36:21.279Z"
   },
   {
     "id": "key_1771964474",
