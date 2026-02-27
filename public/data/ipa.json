@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.zhiliaoapp.musically-43.9.0",
+    "type": "ipa",
+    "name": "BHTikTokPlus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/BHTikTokPlus_43.9.0_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "43.9.0",
+    "developer": "khomodvip",
+    "date": "2026-02-27",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-02-27T08:00:02.274Z"
+  },
+  {
+    "id": "ipa-fi.twomenandadog.zombiecatchers-1.61.2",
+    "type": "ipa",
+    "name": "ZombieCatchers",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fi.twomenandadog.zombiecatchers.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/ZombieCatchers_1.61.2_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.61.2",
+    "developer": "khomodvip",
+    "date": "2026-02-27",
+    "source": "apptesters",
+    "bundleID": "fi.twomenandadog.zombiecatchers",
+    "lastSync": "2026-02-27T08:00:02.275Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.49.1",
     "type": "ipa",
     "name": "SoundCloud",
