@@ -36,6 +36,24 @@
     "lastSync": "2026-02-27T08:00:02.275Z"
   },
   {
+    "id": "ipa-com.firecore.infuse-8.3.9",
+    "type": "ipa",
+    "name": "Infuse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.firecore.infuse.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-02-2026/Infuse_8.3.9_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.3.9",
+    "developer": "khomodvip",
+    "date": "2026-02-27",
+    "source": "apptesters",
+    "bundleID": "com.firecore.infuse",
+    "lastSync": "2026-02-27T10:00:01.484Z"
+  },
+  {
     "id": "ipa-com.soundcloud.TouchApp-8.49.1",
     "type": "ipa",
     "name": "SoundCloud",
