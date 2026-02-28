@@ -5,12 +5,13 @@
     "createdAt": "2026-02-28T17:30:12.882Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "JSL125",
     "package": "Gói Trải Nghiệm",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-02-28T17:30:37.629Z"
   },
   {
     "id": "key_1772219337",
