@@ -1,5 +1,95 @@
 [
   {
+    "id": "ipa-com.headway.books-371.2",
+    "type": "ipa",
+    "name": "Headway",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.headway.books.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "books"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/Headway_371.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "371.2",
+    "developer": "khomodvip",
+    "date": "2026-03-02",
+    "source": "apptesters",
+    "bundleID": "com.headway.books",
+    "lastSync": "2026-03-02T14:00:02.063Z"
+  },
+  {
+    "id": "ipa-com.travelboast.travelboast-2.28",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/TravelBoast_2.28_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.28",
+    "developer": "khomodvip",
+    "date": "2026-03-02",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-03-02T14:00:02.063Z"
+  },
+  {
+    "id": "ipa-com.jps.gpspeedhud-8.0.4",
+    "type": "ipa",
+    "name": "Speedometer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jps.gpspeedhud.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/Speedometer_8.0.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.4",
+    "developer": "khomodvip",
+    "date": "2026-03-02",
+    "source": "apptesters",
+    "bundleID": "com.jps.gpspeedhud",
+    "lastSync": "2026-03-02T14:00:02.070Z"
+  },
+  {
+    "id": "ipa-com.moonlab.unfoldstories-8.155.0",
+    "type": "ipa",
+    "name": "Unfold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonlab.unfoldstories.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/Unfold_8.155.0_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.155.0",
+    "developer": "khomodvip",
+    "date": "2026-03-02",
+    "source": "apptesters",
+    "bundleID": "com.moonlab.unfoldstories",
+    "lastSync": "2026-03-02T14:00:02.070Z"
+  },
+  {
+    "id": "ipa-com.rickharrison.narwhal-2026.1",
+    "type": "ipa",
+    "name": "Narwhal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.rickharrison.narwhal.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-03-2026/Narwhal_2026.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1",
+    "developer": "khomodvip",
+    "date": "2026-03-02",
+    "source": "apptesters",
+    "bundleID": "com.rickharrison.narwhal",
+    "lastSync": "2026-03-02T14:00:02.071Z"
+  },
+  {
     "id": "ipa-com.getmimo.mimo-12.2.0",
     "type": "ipa",
     "name": "Mimo",
