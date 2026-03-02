@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1772454644_5194",
+    "key": "VUCL-LN9Q-93KU-POKP",
+    "createdAt": "2026-03-02T12:30:44.318919+00:00",
+    "expiresAt": "2026-03-05T12:30:44.318919+00:00",
+    "maxUses": 5,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "3 days, 5 uses"
+  },
+  {
     "id": "key_1772438678",
     "key": "KVML-IMJ0-2X0D-YURB",
     "createdAt": "2026-03-02T08:04:38.203Z",
