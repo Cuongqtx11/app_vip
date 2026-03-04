@@ -1,5 +1,95 @@
 [
   {
+    "id": "ipa-viral.vision.vids-1.132.0",
+    "type": "ipa",
+    "name": "Vids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/viral.vision.vids.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Vids_1.132.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.132.0",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "viral.vision.vids",
+    "lastSync": "2026-03-04T22:00:01.844Z"
+  },
+  {
+    "id": "ipa-com.alltrails.AllTrails-26.3.10",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/AllTrails_26.3.10_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.3.10",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2026-03-04T22:00:01.845Z"
+  },
+  {
+    "id": "ipa-com.myfitnesspal.mfp-26.9.0",
+    "type": "ipa",
+    "name": "MyFitnessPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myfitnesspal.mfp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/MyFitnessPal_26.9.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.9.0",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.myfitnesspal.mfp",
+    "lastSync": "2026-03-04T22:00:01.846Z"
+  },
+  {
+    "id": "ipa-com.mindsethealth.ibs-49.1",
+    "type": "ipa",
+    "name": "Nerva",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mindsethealth.ibs.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Nerva_49.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "49.1",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.mindsethealth.ibs",
+    "lastSync": "2026-03-04T22:00:01.846Z"
+  },
+  {
+    "id": "ipa-com.fitbod-8.6.0",
+    "type": "ipa",
+    "name": "Fitbod",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fitbod.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Fitbod_8.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.6.0",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.fitbod",
+    "lastSync": "2026-03-04T22:00:01.846Z"
+  },
+  {
     "id": "ipa-com.burbn.barcelona-419.0.0",
     "type": "ipa",
     "name": "Threads",
