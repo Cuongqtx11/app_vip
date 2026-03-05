@@ -581,10 +581,7 @@
         <!-- Action Buttons -->
         <div class="modal-actions">
           <button class="btn-action btn-vip" onclick="showVipInput()">
-            ⚡ Tải VIP
-          </button>
-          <button class="btn-action btn-free" onclick="downloadFree()">
-            🆓 Miễn phí
+            ⬇️ Tải xuống
           </button>
         </div>
 
@@ -592,9 +589,9 @@
         <div class="vip-input-zone" id="vipArea">
           <div class="vip-input-label">Nhập mã VIP để tải về</div>
           <input type="text" id="vipKey" class="vip-input-field" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19">
-          <button class="vip-confirm-btn" onclick="verifyKey()" id="verifyBtn">XÁC NHẬN & TẢI</button>
+          <button class="vip-confirm-btn" id="verifyBtn" onclick="verifyKey()">XÁC NHẬN & TẢI</button>
           <p id="vipMsg" class="hidden"></p>
-          <button class="free-dl-btn" onclick="downloadFree()">
+          <button class="free-dl-btn" id="freeDlBtn" onclick="downloadFree()">
             <i data-lucide="gift" style="width:15px;height:15px;color:#7c3aed;"></i>
             Tải xuống miễn phí
           </button>
@@ -1114,23 +1111,22 @@
       STATE.currentItem = item;
 
       const modal = document.getElementById('appModal');
-      const panel = document.getElementById('appModalPanel');
 
-      // Reset trạng thái
+      // Giữ nguyên data GỐC từ ipa.json — không bao giờ override tên/icon
       document.getElementById('mTitle').textContent = item.name || item.title || item.filename || '...';
-      document.getElementById('mDev').textContent = item.developer || 'Đang tải...';
+      document.getElementById('mDev').textContent = item.developer || '-';
       document.getElementById('mIcon').src = item.icon || item.iconUrl || 'https://placehold.co/96x96/f2f2f7/7c3aed?text=App';
       document.getElementById('mVersion').textContent = item.version ? 'v' + item.version : '-';
-      document.getElementById('mSize').textContent = '-';
+      document.getElementById('mSize').textContent = item.size || '-';
       document.getElementById('mRating').textContent = '-';
       document.getElementById('mAge').textContent = '4+';
-      document.getElementById('mDesc').textContent = item.desc || item.description || 'Đang tải mô tả...';
+      document.getElementById('mDesc').textContent = item.desc || item.description || 'Không có mô tả.';
       document.getElementById('mDesc').classList.remove('expanded');
       document.getElementById('descMoreBtn').textContent = 'Xem thêm';
       document.getElementById('mGenreTag').style.display = 'none';
       document.getElementById('mItunesBadge').style.display = 'none';
 
-      // Reset VIP area
+      // Reset VIP area — LUÔN hiển thị lại đầy đủ mỗi lần mở
       document.getElementById('vipArea').classList.remove('show');
       document.getElementById('vipKey').value = '';
       document.getElementById('vipMsg').classList.add('hidden');
@@ -1138,22 +1134,24 @@
       const verifyBtn = document.getElementById('verifyBtn');
       verifyBtn.disabled = false;
       verifyBtn.textContent = 'XÁC NHẬN & TẢI';
+      verifyBtn.style.display = '';           // ← reset lại hiển thị
+      document.getElementById('freeDlBtn').style.display = '';  // ← reset lại
 
-      // Reset screenshots - skeleton
+      // Reset screenshots skeleton
       document.getElementById('mScreenshots').innerHTML = `
         <div class="screenshot-skeleton"></div>
         <div class="screenshot-skeleton"></div>
         <div class="screenshot-skeleton"></div>
       `;
 
-      // Reset info table
+      // Reset info table với data gốc
       document.getElementById('iDev').textContent = item.developer || '-';
-      document.getElementById('iCat').textContent = '-';
+      document.getElementById('iCat').textContent = (item.tags || []).join(', ') || '-';
       document.getElementById('iLang').textContent = '-';
       document.getElementById('iUpdated').textContent = formatDate(item.date || item.lastSync);
       document.getElementById('iCompat').textContent = '-';
 
-      // Show modal
+      // Hiện modal
       modal.classList.remove('hidden');
       modal.classList.add('modal-visible');
       document.body.style.overflow = 'hidden';
@@ -1185,17 +1183,13 @@
 
       fetchITunes(appName, bundleID).then(info => {
         if (!info) {
-          document.getElementById('mDesc').textContent = item.desc || item.description || 'Không có mô tả.';
-          document.getElementById('mScreenshots').innerHTML = '<div style="color:#aeaeb2;font-size:12px;font-weight:600;padding:20px 0;">Không tìm thấy trên App Store</div>';
+          // Không tìm được trên App Store — giữ nguyên data gốc
+          document.getElementById('mScreenshots').innerHTML = '<div style="color:#aeaeb2;font-size:12px;font-weight:600;padding:20px 0;text-align:center;">Không tìm thấy trên App Store</div>';
           return;
         }
 
-        if (info.artworkUrl512 || info.artworkUrl100) {
-          document.getElementById('mIcon').src = info.artworkUrl512 || info.artworkUrl100;
-        }
-
-        document.getElementById('mTitle').textContent = info.trackName || appName;
-        document.getElementById('mDev').textContent = info.sellerName || info.artistName || item.developer || '-';
+        // CHỈ cập nhật stats + screenshots + desc từ iTunes
+        // KHÔNG override tên, icon, developer (giữ data gốc từ ipa.json)
         document.getElementById('mVersion').textContent = info.version ? 'v' + info.version : (item.version ? 'v' + item.version : '-');
         document.getElementById('mSize').textContent = formatFileSize(info.fileSizeBytes);
         document.getElementById('mRating').textContent = formatRating(info.averageUserRating);
@@ -1206,20 +1200,22 @@
           tag.textContent = info.primaryGenreName;
           tag.style.display = 'inline-block';
         }
-
         document.getElementById('mItunesBadge').style.display = 'inline-flex';
 
-        if (info.description) {
+        // Chỉ dùng desc iTunes nếu data gốc trống/ngắn
+        const origDesc = item.desc || item.description || '';
+        if (info.description && origDesc.length < 30) {
           document.getElementById('mDesc').textContent = info.description;
         }
 
-        document.getElementById('iDev').textContent = info.sellerName || info.artistName || '-';
+        // Info table — dùng data iTunes cho các field kỹ thuật
         document.getElementById('iCat').textContent = info.primaryGenreName || '-';
         const langs = (info.languageCodesISO2A || []).slice(0, 4).join(', ');
         document.getElementById('iLang').textContent = langs || '-';
         document.getElementById('iUpdated').textContent = formatDate(info.currentVersionReleaseDate || info.releaseDate);
         document.getElementById('iCompat').textContent = info.minimumOsVersion ? 'iOS ' + info.minimumOsVersion + '+' : '-';
 
+        // Screenshots
         const shots = info.screenshotUrls || [];
         const screenshotsEl = document.getElementById('mScreenshots');
         if (shots.length > 0) {
@@ -1229,7 +1225,7 @@
             </div>
           `).join('');
         } else {
-          screenshotsEl.innerHTML = '<div style="color:#aeaeb2;font-size:12px;font-weight:600;padding:20px 0;">Không có ảnh xem trước</div>';
+          screenshotsEl.innerHTML = '<div style="color:#aeaeb2;font-size:12px;font-weight:600;padding:20px 0;text-align:center;">Không có ảnh xem trước</div>';
         }
       });
     }
@@ -1278,7 +1274,7 @@
           msg.classList.remove('hidden');
           msg.style.color = '#30d158';
           msg.textContent = '✅ Đang chuyển hướng...';
-          btn.classList.add('hidden');
+          verifyBtn.disabled = true;
           setTimeout(() => { window.location.href = link; }, 800);
         } else {
           msg.classList.remove('hidden');
