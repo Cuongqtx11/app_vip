@@ -695,6 +695,8 @@
 
     // iTunes API cache
     const iTunesCache = {};
+    // Track các app đang được fetch để không gọi 2 lần
+    const iTunesFetching = {};
 
     // ============================================================
     // ITUNES API
@@ -702,42 +704,59 @@
     async function fetchITunes(appName, bundleID) {
       const cacheKey = bundleID || appName;
       if (iTunesCache[cacheKey]) return iTunesCache[cacheKey];
+      // Nếu đang fetch rồi thì chờ kết quả đó luôn
+      if (iTunesFetching[cacheKey]) return iTunesFetching[cacheKey];
 
-      try {
-        // Thử tìm theo bundleID trước (chính xác nhất)
-        if (bundleID) {
-          const r = await fetch(`https://itunes.apple.com/lookup?bundleId=${encodeURIComponent(bundleID)}&country=vn&limit=1`);
-          if (r.ok) {
-            const j = await r.json();
-            if (j.results && j.results.length > 0) {
-              iTunesCache[cacheKey] = j.results[0];
-              return j.results[0];
+      const doFetch = async () => {
+        try {
+          if (bundleID) {
+            const r = await fetch(`https://itunes.apple.com/lookup?bundleId=${encodeURIComponent(bundleID)}&country=vn&limit=1`);
+            if (r.ok) {
+              const j = await r.json();
+              if (j.results && j.results.length > 0) {
+                iTunesCache[cacheKey] = j.results[0];
+                prefetchImages(j.results[0].screenshotUrls || []);
+                return j.results[0];
+              }
             }
           }
-        }
+          const cleanName = (appName || '')
+            .replace(/\+\+$/,'').replace(/\s*mod\s*/gi,'')
+            .replace(/\s*hack\s*/gi,'').replace(/\s*premium\s*/gi,'')
+            .replace(/\s*pro\s*$/gi,'').trim();
+          if (!cleanName) return null;
+          const r2 = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(cleanName)}&country=vn&entity=software&limit=3`);
+          if (!r2.ok) return null;
+          const j2 = await r2.json();
+          if (!j2.results || j2.results.length === 0) return null;
+          const best = j2.results.find(x => x.trackName.toLowerCase() === cleanName.toLowerCase()) || j2.results[0];
+          iTunesCache[cacheKey] = best;
+          prefetchImages(best.screenshotUrls || []);
+          return best;
+        } catch (e) { return null; }
+        finally { delete iTunesFetching[cacheKey]; }
+      };
 
-        // Fallback: tìm theo tên app
-        const cleanName = (appName || '')
-          .replace(/\+\+$/,'').replace(/\s*mod\s*/gi,'')
-          .replace(/\s*hack\s*/gi,'').replace(/\s*premium\s*/gi,'')
-          .replace(/\s*pro\s*$/gi,'').trim();
+      iTunesFetching[cacheKey] = doFetch();
+      return iTunesFetching[cacheKey];
+    }
 
-        if (!cleanName) return null;
+    // Preload ảnh vào browser cache ngầm
+    function prefetchImages(urls) {
+      urls.slice(0, 6).forEach(url => {
+        const img = new Image();
+        img.src = url;
+      });
+    }
 
-        const r2 = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(cleanName)}&country=vn&entity=software&limit=3`);
-        if (!r2.ok) return null;
-        const j2 = await r2.json();
-        if (!j2.results || j2.results.length === 0) return null;
-
-        // Chọn kết quả khớp nhất
-        const best = j2.results.find(x => 
-          x.trackName.toLowerCase() === cleanName.toLowerCase()
-        ) || j2.results[0];
-
-        iTunesCache[cacheKey] = best;
-        return best;
-      } catch (e) {
-        return null;
+    // Prefetch toàn bộ IPA ngầm sau khi trang load — theo từng batch nhỏ
+    async function backgroundPrefetch(ipaList) {
+      const BATCH = 4; // fetch 4 app cùng lúc, tránh spam API
+      const DELAY = 600; // ms giữa các batch
+      for (let i = 0; i < ipaList.length; i += BATCH) {
+        const batch = ipaList.slice(i, i + BATCH);
+        await Promise.all(batch.map(app => fetchITunes(app.name || '', app.bundleID || '')));
+        if (i + BATCH < ipaList.length) await new Promise(r => setTimeout(r, DELAY));
       }
     }
 
@@ -810,6 +829,9 @@
       
       renderContent(document.getElementById('searchInput').value);
       document.getElementById('searchContainer').style.display = 'none';
+
+      // Prefetch iTunes ngầm cho toàn bộ IPA — lần sau mở modal là có ngay
+      setTimeout(() => backgroundPrefetch(DB.ipa.slice(0, 50)), 1500);
     }
 
     // ============================================================
