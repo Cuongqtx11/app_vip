@@ -288,6 +288,78 @@
     "lastSync": "2026-03-04T23:00:01.693Z"
   },
   {
+    "id": "ipa-com.elf-audio.koala-1.4152",
+    "type": "ipa",
+    "name": "koala",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elf-audio.koala.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/koala_1.4152_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4152",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.elf-audio.koala",
+    "lastSync": "2026-03-05T00:00:01.866Z"
+  },
+  {
+    "id": "ipa-com.alexanderben.RadioIn-41.0.1",
+    "type": "ipa",
+    "name": "TuneInRadio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alexanderben.RadioIn.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/TuneInRadio_41.0.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "41.0.1",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.alexanderben.RadioIn",
+    "lastSync": "2026-03-05T00:00:01.867Z"
+  },
+  {
+    "id": "ipa-com.badoo.BadooSPP-5.451.0",
+    "type": "ipa",
+    "name": "Badoo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.badoo.BadooSPP.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Badoo_5.451.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.451.0",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.badoo.BadooSPP",
+    "lastSync": "2026-03-05T00:00:01.868Z"
+  },
+  {
+    "id": "ipa-com.culturedcode.ThingsiPad-3.22.8",
+    "type": "ipa",
+    "name": "Things",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.culturedcode.ThingsiPad.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-03-2026/Things_3.22.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.22.8",
+    "developer": "khomodvip",
+    "date": "2026-03-05",
+    "source": "apptesters",
+    "bundleID": "com.culturedcode.ThingsiPad",
+    "lastSync": "2026-03-05T00:00:01.869Z"
+  },
+  {
     "id": "ipa-com.burbn.barcelona-419.0.0",
     "type": "ipa",
     "name": "Threads",
