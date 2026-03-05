@@ -751,15 +751,18 @@
       });
     }
 
-    // Prefetch toàn bộ IPA ngầm sau khi trang load — theo từng batch nhỏ
-    async function backgroundPrefetch(ipaList) {
-      const BATCH = 4; // fetch 4 app cùng lúc, tránh spam API
-      const DELAY = 600; // ms giữa các batch
-      for (let i = 0; i < ipaList.length; i += BATCH) {
-        const batch = ipaList.slice(i, i + BATCH);
-        await Promise.all(batch.map(app => fetchITunes(app.name || '', app.bundleID || '')));
-        if (i + BATCH < ipaList.length) await new Promise(r => setTimeout(r, DELAY));
+    // Prefetch AGGRESSIVELY — không delay, tất cả song song theo nhóm 10
+    function backgroundPrefetch(ipaList) {
+      const unique = [];
+      const seen = new Set();
+      for (const app of ipaList) {
+        const key = app.bundleID || app.name || '';
+        if (key && !seen.has(key)) { seen.add(key); unique.push(app); }
       }
+      // Fetch tất cả song song, không chờ nhau
+      unique.forEach(app => {
+        fetchITunes(app.name || '', app.bundleID || '');
+      });
     }
 
     function formatFileSize(bytes) {
@@ -832,8 +835,9 @@
       renderContent(document.getElementById('searchInput').value);
       document.getElementById('searchContainer').style.display = 'none';
 
-      // Prefetch iTunes ngầm cho toàn bộ IPA — lần sau mở modal là có ngay
-      setTimeout(() => backgroundPrefetch(DB.ipa.slice(0, 50)), 1500);
+      // Prefetch ngay lập tức — không chờ, toàn bộ IPA
+      const idle = window.requestIdleCallback || (cb => setTimeout(cb, 100));
+      idle(() => backgroundPrefetch(DB.ipa));
     }
 
     // ============================================================
@@ -990,7 +994,16 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            ${pagedItems.length ? pagedItems.map(i => createGridItem(i, tab.toUpperCase())).join('') : emptyState()}
+            ${pagedItems.length ? pagedItems.map(i => createGridItem(i, tab.toUpperCase())).join('') : (() => {
+              const suggestion = query ? getSuggestion(DB[tab] || [], query) : null;
+              return `<div class="col-span-full py-10 text-center text-gray-400 flex flex-col items-center gap-3">
+                <i data-lucide="package-open" class="w-10 h-10 opacity-50"></i>
+                <p class="text-sm">Không tìm thấy "<b>${query}</b>"</p>
+                ${suggestion ? `<button onclick="document.getElementById('searchInput').value='${suggestion}';renderContent('${suggestion}')" class="text-sm font-bold text-brand bg-brand/10 px-4 py-2 rounded-full border border-brand/20 hover:bg-brand/20 transition">
+                  Ý bạn là: <u>${suggestion}</u>?
+                </button>` : ''}
+              </div>`;
+            })()}
           </div>
           ${items.length > STATE.itemsPerPage ? createPagination(totalPages) : ''}
         `;
@@ -1031,8 +1044,13 @@
     // UI COMPONENTS (giữ nguyên)
     // ============================================================
     function createTrendingItem(i) {
+      const name = (i.name||'').replace(/'/g,'');
+      const bid = (i.bundleID||'').replace(/'/g,'');
       return `
-        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, true)' class="snap-center shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
+        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, true)'
+             onmouseenter="fetchITunes('${name}','${bid}')"
+             ontouchstart="fetchITunes('${name}','${bid}')"
+             class="snap-center shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
           <div class="w-16 h-16 rounded-[14px] overflow-hidden shadow-md border border-gray-100 dark:border-white/10 relative bg-white dark:bg-cardDark">
             <img src="${i.icon || i.iconUrl}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
           </div>
@@ -1094,10 +1112,13 @@
       const title = i.name || i.title || i.filename || 'Unknown';
       const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
       const desc = i.desc || i.description || i.certname || 'No description';
-      // Chỉ IPA và Home (IPA) mới dùng App Store modal
       const isIpa = tag === 'IPA' || tag === 'APP' || i.type === 'ipa';
+      // Prefetch khi hover/touch — trước khi bấm
+      const prefetchAttr = isIpa
+        ? `onmouseenter="fetchITunes('${(i.name||'').replace(/'/g,'')}','${(i.bundleID||'').replace(/'/g,'')}');"`
+        : '';
       return `
-        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, ${isIpa})' class="flex items-center gap-3 p-3.5 rounded-2xl bg-white dark:bg-cardDark border border-transparent hover:border-gray-200 dark:hover:border-white/10 transition-all cursor-pointer shadow-sm group">
+        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, ${isIpa})' ${prefetchAttr} class="flex items-center gap-3 p-3.5 rounded-2xl bg-white dark:bg-cardDark border border-transparent hover:border-gray-200 dark:hover:border-white/10 transition-all cursor-pointer shadow-sm group">
           <img src="${icon}" class="w-14 h-14 rounded-[12px] bg-gray-100 object-cover shadow-sm group-hover:scale-105 transition" onerror="this.src='https://placehold.co/100'"/>
           <div class="flex-1 min-w-0">
             <h4 class="font-bold text-gray-900 dark:text-white truncate text-sm">${title}</h4>
@@ -1340,12 +1361,102 @@
       document.getElementById('mainContainer').scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function filterItems(items, q) {
-      const lower = q.toLowerCase();
-      return items.filter(i => (i.name || i.title || i.filename || '').toLowerCase().includes(lower));
+    // ============================================================
+    // SEARCH ENGINE — fuzzy, không dấu, gợi ý lỗi chính tả
+    // ============================================================
+
+    // Bỏ dấu tiếng Việt
+    function removeAccents(str) {
+      return (str || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd').replace(/Đ/g, 'D')
+        .toLowerCase().trim();
     }
 
-    document.getElementById('searchInput').addEventListener('input', (e) => renderContent(e.target.value));
+    // Tính độ giống nhau giữa 2 chuỗi (Levenshtein distance)
+    function levenshtein(a, b) {
+      const m = a.length, n = b.length;
+      if (m === 0) return n; if (n === 0) return m;
+      const dp = Array.from({length: m+1}, (_, i) => [i]);
+      for (let j = 1; j <= n; j++) dp[0][j] = j;
+      for (let i = 1; i <= m; i++)
+        for (let j = 1; j <= n; j++)
+          dp[i][j] = a[i-1] === b[j-1]
+            ? dp[i-1][j-1]
+            : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+      return dp[m][n];
+    }
+
+    // Kiểm tra xem query có "gần giống" tên không
+    function fuzzyMatch(name, query) {
+      if (!name || !query) return { match: false, score: 0 };
+      const n = removeAccents(name);
+      const q = removeAccents(query);
+
+      // 1. Exact / contains
+      if (n.includes(q) || q.includes(n)) return { match: true, score: 100 };
+
+      // 2. Mỗi từ trong query khớp với tên
+      const qWords = q.split(/\s+/).filter(Boolean);
+      const nWords = n.split(/\s+/).filter(Boolean);
+      const allWordsMatch = qWords.every(qw =>
+        nWords.some(nw => nw.includes(qw) || qw.includes(nw))
+      );
+      if (allWordsMatch && qWords.length > 0) return { match: true, score: 90 };
+
+      // 3. Fuzzy — cho phép lỗi chính tả tối đa ceil(len/4) ký tự
+      const maxErr = Math.ceil(Math.min(q.length, n.length) / 4);
+      const dist = levenshtein(q, n.substring(0, q.length + maxErr));
+      if (dist <= maxErr) return { match: true, score: 80 - dist * 10 };
+
+      // 4. Từng từ query fuzzy với tên
+      const anyWordFuzzy = qWords.some(qw =>
+        nWords.some(nw => levenshtein(qw, nw) <= Math.ceil(qw.length / 3))
+      );
+      if (anyWordFuzzy) return { match: true, score: 60 };
+
+      return { match: false, score: 0 };
+    }
+
+    function filterItems(items, q) {
+      if (!q || !q.trim()) return items;
+
+      const results = items
+        .map(i => {
+          const name = i.name || i.title || i.filename || '';
+          const { match, score } = fuzzyMatch(name, q);
+          // Cũng tìm trong desc/tags
+          const inDesc = removeAccents(i.desc || i.description || '').includes(removeAccents(q));
+          const inTags = (i.tags || []).some(t => removeAccents(t).includes(removeAccents(q)));
+          return { item: i, match: match || inDesc || inTags, score: inDesc || inTags ? Math.max(score, 40) : score };
+        })
+        .filter(x => x.match)
+        .sort((a, b) => b.score - a.score)
+        .map(x => x.item);
+
+      return results;
+    }
+
+    // Gợi ý khi không tìm thấy
+    function getSuggestion(items, q) {
+      if (!q || q.length < 2) return null;
+      let best = null, bestScore = Infinity;
+      for (const i of items) {
+        const name = i.name || i.title || '';
+        const dist = levenshtein(removeAccents(q), removeAccents(name).substring(0, removeAccents(q).length + 3));
+        if (dist < bestScore && dist <= Math.ceil(q.length / 2)) {
+          bestScore = dist; best = name;
+        }
+      }
+      return best;
+    }
+
+    let searchDebounce;
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(() => renderContent(e.target.value), 180);
+    });
 
     // Swipe down để đóng modal
     let touchStartY = 0;
