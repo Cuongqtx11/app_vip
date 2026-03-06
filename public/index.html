@@ -37,8 +37,17 @@
   </script>
 
   <style>
+    /* UI nhỏ gọn 85% như cũ */
     :root { font-size: 85%; }
-    body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; user-select: none; width: 100%; overflow-x: hidden; }
+
+    /* Nhưng input LUÔN 16px thực tế để iOS không zoom
+       16px / 0.85 = 18.8px — bù lại việc root bị scale */
+    input, textarea, select {
+      font-size: 18.8px !important;
+      -webkit-text-size-adjust: 100%;
+      touch-action: manipulation;
+    }
+    body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; user-select: none; width: 100%; overflow-x: hidden; touch-action: manipulation; }
     
     .scrollbar-hide::-webkit-scrollbar { display: none; }
     .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
@@ -278,7 +287,7 @@
       padding: 12px 14px;
       text-align: center;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 15px;
+      font-size: 16px; /* iOS zoom khi < 16px — giữ đúng 16px */
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -286,6 +295,9 @@
       outline: none;
       transition: border-color 0.2s;
       margin-bottom: 10px;
+      /* Chặn iOS auto-zoom khi focus */
+      -webkit-text-size-adjust: 100%;
+      touch-action: manipulation;
     }
     .dark .vip-input-field {
       background: #2c2c2e;
@@ -1362,8 +1374,25 @@
     }
 
     // ============================================================
-    // SEARCH ENGINE — fuzzy, không dấu, gợi ý lỗi chính tả
+    // CHẶN ZOOM HOÀN TOÀN (pinch, double-tap, keyboard zoom)
     // ============================================================
+    // Chặn pinch-to-zoom
+    document.addEventListener('gesturestart', e => e.preventDefault(), { passive: false });
+    document.addEventListener('gesturechange', e => e.preventDefault(), { passive: false });
+    document.addEventListener('gestureend', e => e.preventDefault(), { passive: false });
+
+    // Chặn double-tap zoom
+    let lastTap = 0;
+    document.addEventListener('touchend', e => {
+      const now = Date.now();
+      if (now - lastTap < 300) e.preventDefault();
+      lastTap = now;
+    }, { passive: false });
+
+    // Chặn touchmove multi-finger (pinch)
+    document.addEventListener('touchmove', e => {
+      if (e.touches.length > 1) e.preventDefault();
+    }, { passive: false });
 
     // Bỏ dấu tiếng Việt
     function removeAccents(str) {
