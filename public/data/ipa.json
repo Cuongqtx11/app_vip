@@ -1,5 +1,95 @@
 [
   {
+    "id": "ipa-com.kalavision.alfred-2026.4.0",
+    "type": "ipa",
+    "name": "AlfredCamera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kalavision.alfred.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/AlfredCamera_2026.4.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.4.0",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "com.kalavision.alfred",
+    "lastSync": "2026-03-06T11:00:01.473Z"
+  },
+  {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.19.6",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/Documents_8.19.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.19.6",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2026-03-06T11:00:01.473Z"
+  },
+  {
+    "id": "ipa-com.neocortext.doublicatapp-6.2.0",
+    "type": "ipa",
+    "name": "Reface",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neocortext.doublicatapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/Reface_6.2.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.0",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "com.neocortext.doublicatapp",
+    "lastSync": "2026-03-06T11:00:01.475Z"
+  },
+  {
+    "id": "ipa-com.sfun.snapedit-6.4.3",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/SnapEdit_6.4.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4.3",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2026-03-06T11:00:01.475Z"
+  },
+  {
+    "id": "ipa-io.betterhalf.app-2.73.0",
+    "type": "ipa",
+    "name": "Paired",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.betterhalf.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/Paired_2.73.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.73.0",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "io.betterhalf.app",
+    "lastSync": "2026-03-06T11:00:01.476Z"
+  },
+  {
     "id": "ipa-viral.vision.vids-1.132.0",
     "type": "ipa",
     "name": "Vids",
