@@ -90,6 +90,60 @@
     "lastSync": "2026-03-06T11:00:01.476Z"
   },
   {
+    "id": "ipa-com.joytunes.Sing-3.0.1",
+    "type": "ipa",
+    "name": "SimplySing",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.Sing.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/SimplySing_3.0.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.0.1",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "com.joytunes.Sing",
+    "lastSync": "2026-03-06T12:00:01.747Z"
+  },
+  {
+    "id": "ipa-com.facebook.Messenger-551.0.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/Messenger_551.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "551.0.0",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2026-03-06T12:00:01.748Z"
+  },
+  {
+    "id": "ipa-boomer.Smart-Video-13.8.0",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-03-2026/Captions_13.8.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.8.0",
+    "developer": "khomodvip",
+    "date": "2026-03-06",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2026-03-06T12:00:01.749Z"
+  },
+  {
     "id": "ipa-viral.vision.vids-1.132.0",
     "type": "ipa",
     "name": "Vids",
