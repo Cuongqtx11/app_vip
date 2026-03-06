@@ -18,6 +18,42 @@
     "lastSync": "2026-03-06T21:00:01.490Z"
   },
   {
+    "id": "ipa-com.picretouch.photoeditor-1.1.5",
+    "type": "ipa",
+    "name": "AIRetouch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picretouch.photoeditor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/AIRetouch_1.1.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.1.5",
+    "developer": "khomodvip",
+    "date": "2026-03-07",
+    "source": "apptesters",
+    "bundleID": "com.picretouch.photoeditor",
+    "lastSync": "2026-03-06T22:00:02.313Z"
+  },
+  {
+    "id": "ipa-com.tripleglazedstudios.Weather-3.4.3",
+    "type": "ipa",
+    "name": "Mercury",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tripleglazedstudios.Weather.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-03-2026/Mercury_3.4.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.3",
+    "developer": "khomodvip",
+    "date": "2026-03-07",
+    "source": "apptesters",
+    "bundleID": "com.tripleglazedstudios.Weather",
+    "lastSync": "2026-03-06T22:00:02.313Z"
+  },
+  {
     "id": "ipa-com.kalavision.alfred-2026.4.0",
     "type": "ipa",
     "name": "AlfredCamera",
