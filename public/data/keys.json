@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1772807499_3435",
+    "key": "1VWO-5A29-7T9N-2YWQ",
+    "createdAt": "2026-03-06T14:31:39.747935+00:00",
+    "expiresAt": "2026-04-05T14:31:39.747935+00:00",
+    "maxUses": 30,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "30 days, 30 uses"
+  },
+  {
     "id": "key_1772711210",
     "key": "9WYK-ZETH-WGQL-8OOV",
     "createdAt": "2026-03-05T11:46:50.849Z",
