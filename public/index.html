@@ -1339,18 +1339,9 @@
           const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
           msg.classList.remove('hidden');
           msg.style.color = '#30d158';
-          msg.textContent = '✅ Đang tải xuống...';
-          btn.disabled = true;
-          btn.textContent = '✅ ĐÃ XÁC NHẬN';
-          setTimeout(() => {
-            openDownload(link);
-            // Reset lại nút sau 3s để dùng lại được
-            setTimeout(() => {
-              btn.disabled = false;
-              btn.textContent = 'XÁC NHẬN & TẢI';
-              msg.classList.add('hidden');
-            }, 3000);
-          }, 800);
+          msg.textContent = '✅ Đang chuyển hướng...';
+          verifyBtn.disabled = true;
+          setTimeout(() => { window.location.href = link; }, 800);
         } else {
           msg.classList.remove('hidden');
           msg.style.color = '#ef4444';
@@ -1367,21 +1358,10 @@
       }
     }
 
-    // ============================================================
-    // DOWNLOAD HANDLER
-    // ============================================================
-    function openDownload(url) {
-      if (!url) { alert('Không tìm thấy link tải!'); return; }
-      // Luôn dùng window.open — hoạt động cả web lẫn app
-      // KHÔNG dùng window.location.href vì sẽ làm mất trang
-      window.open(url, '_blank');
-    }
-
     function downloadFree() {
       const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
-      const adLink = `https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`;
-      openDownload(adLink);
-      // KHÔNG closeModal — để user thấy modal vẫn còn
+      window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank');
+      closeModal('appModal');
     }
 
     // ============================================================
