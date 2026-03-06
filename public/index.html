@@ -1339,9 +1339,12 @@
           const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
           msg.classList.remove('hidden');
           msg.style.color = '#30d158';
-          msg.textContent = '✅ Đang chuyển hướng...';
+          msg.textContent = '✅ Đang tải xuống...';
           verifyBtn.disabled = true;
-          setTimeout(() => { window.location.href = link; }, 800);
+          setTimeout(() => {
+            closeModal('appModal');
+            openDownload(link);
+          }, 800);
         } else {
           msg.classList.remove('hidden');
           msg.style.color = '#ef4444';
@@ -1358,9 +1361,28 @@
       }
     }
 
+    // ============================================================
+    // DOWNLOAD HANDLER — mở Safari khi trong app, window.open khi trên web
+    // ============================================================
+    const isCapacitorApp = !!(window.Capacitor || window.webkit?.messageHandlers);
+
+    function openDownload(url) {
+      if (!url) { alert('Không tìm thấy link tải!'); return; }
+
+      if (isCapacitorApp) {
+        // Trong app → mở Safari để tải (Safari có download manager iOS)
+        // Dùng capacitor Browser plugin hoặc location trick
+        window.location.href = url;
+      } else {
+        // Trên web thường → mở tab mới
+        window.open(url, '_blank');
+      }
+    }
+
     function downloadFree() {
       const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
-      window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank');
+      const adLink = `https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`;
+      openDownload(adLink);
       closeModal('appModal');
     }
 
