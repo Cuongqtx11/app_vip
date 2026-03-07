@@ -5,12 +5,13 @@
     "createdAt": "2026-03-07T06:53:23.229Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "R9T4H3",
     "package": "Gói Trải Nghiệm",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-03-07T06:53:46.959Z"
   },
   {
     "id": "key_1772859027",
