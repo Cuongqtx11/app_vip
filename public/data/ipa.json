@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.getupnote.ios-9.17.6",
+    "type": "ipa",
+    "name": "UpNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getupnote.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-03-2026/UpNote_9.17.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.17.6",
+    "developer": "khomodvip",
+    "date": "2026-03-08",
+    "source": "apptesters",
+    "bundleID": "com.getupnote.ios",
+    "lastSync": "2026-03-08T01:00:01.453Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.6",
     "type": "ipa",
     "name": "ShutEye",
