@@ -5,7 +5,7 @@
     "createdAt": "2026-03-12T14:20:28.651Z",
     "expiresAt": "2026-03-19T14:20:24.070Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "336I89",
