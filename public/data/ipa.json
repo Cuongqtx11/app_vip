@@ -522,6 +522,24 @@
     "lastSync": "2026-03-12T15:00:01.814Z"
   },
   {
+    "id": "ipa-com.andyworks.weather-3.46",
+    "type": "ipa",
+    "name": "simpleweather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.weather.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-03-2026/simpleweather_3.46_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.46",
+    "developer": "khomodvip",
+    "date": "2026-03-12",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.weather",
+    "lastSync": "2026-03-12T17:00:01.347Z"
+  },
+  {
     "id": "ipa-com.adobe.post-29.8.1",
     "type": "ipa",
     "name": "AdobeExpress",
