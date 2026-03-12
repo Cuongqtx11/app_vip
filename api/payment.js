@@ -113,23 +113,36 @@ export default async function handler(req, res) {
     // 3. WEBHOOK (Nhận thông báo từ PayOS)
     // ============================================================
     if (action === 'webhook' && req.method === 'POST') {
-        console.log('[Webhook] Body:', JSON.stringify(req.body));
+        console.log('--- [WEBHOOK START] ---');
+        console.log('[Webhook] Full Body:', JSON.stringify(req.body));
+        
         try {
             const webhookData = req.body.data || req.body;
             const orderCode = String(webhookData.orderCode || req.body.orderCode);
+            const amount = webhookData.amount || req.body.amount;
+
+            console.log(`[Webhook] Processing Order: ${orderCode}, Amount: ${amount}`);
             
             if (!orderCode || orderCode === 'undefined') {
+                console.log('[Webhook] Invalid OrderCode, skipping.');
                 return res.status(200).json({ success: true });
             }
 
+            // Tìm đơn hàng pending
             const { data: orderData, error: orderError } = await supabase.from('orders').select('*').eq('order_code', orderCode).eq('status', 'pending').single();
 
-            if (orderError || !orderData) return res.status(200).json({ success: true });
+            if (orderError || !orderData) {
+                console.log(`[Webhook] Order not found or not pending: ${orderCode}`);
+                return res.status(200).json({ success: true });
+            }
+
+            console.log(`[Webhook] Found Order in DB: ${orderData.package_name} for User: ${orderData.user_id}`);
 
             const userId = orderData.user_id;
             const transferCode = orderData.transaction_code;
-            const pkg = orderData.package_name || 'Gói VIP';
+            let pkg = orderData.package_name || 'Gói VIP';
 
+            // Logic tính ngày và lượt tải
             let days = 0, maxUses = 9999;
             if (pkg.includes('Năm')) days = 365;
             else if (pkg.includes('Tháng')) days = 30;
@@ -137,10 +150,12 @@ export default async function handler(req, res) {
             else if (pkg.includes('6 Tháng')) days = 180;
             else if (pkg.includes('Vĩnh Viễn')) days = 0;
             
-            // Thêm 2 gói mới theo yêu cầu [3]
-            const amount = webhookData.amount || req.body.amount;
-            if (amount >= 5000 && amount < 19000) { pkg='Gói 5K'; days=0; maxUses=20; }
-            if (amount >= 2000 && amount < 5000) { pkg='Gói 2K'; days=7; maxUses=10; }
+            // Ưu tiên ghi đè theo số tiền thực tế (đề phòng khách chuyển sai gói)
+            if (amount >= 5000 && amount < 19000) { pkg='Gói 5K (20 Lượt)'; days=0; maxUses=20; }
+            else if (amount >= 2000 && amount < 5000) { pkg='Gói 2K (10 Lượt)'; days=7; maxUses=10; }
+            else if (amount >= 19000 && amount < 39000) { pkg='Gói Tuần'; days=7; maxUses=9999; }
+            else if (amount >= 39000 && amount < 199000) { pkg='Gói Tháng'; days=30; maxUses=9999; }
+            else if (amount >= 199000) { pkg='Gói Năm'; days=365; maxUses=9999; }
 
             const genKey = () => {
                 const part = () => Array.from({length:4}, () => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'[Math.floor(Math.random()*36)]).join('');
@@ -149,6 +164,9 @@ export default async function handler(req, res) {
             const newKey = genKey();
             const expiresAt = days > 0 ? new Date(Date.now() + days*86400000).toISOString() : null;
 
+            console.log(`[Webhook] Generating Key: ${newKey}, Expiry: ${expiresAt}`);
+
+            // Insert Key
             const { error: insertError } = await supabase.from('user_keys').insert([{
                 key_code: newKey,
                 user_id: userId,
@@ -161,45 +179,61 @@ export default async function handler(req, res) {
                 updated_at: new Date().toISOString()
             }]);
 
-            if (!insertError) {
-                await supabase.from('orders').update({ status: 'completed' }).eq('id', orderData.id);
-                // GitHub Sync (Silent)
-                try {
-                    const token = process.env.GITHUB_TOKEN;
-                    if (token) {
-                        const url = `https://api.github.com/repos/Cuongqtx11/app_vip/contents/public/data/keys.json`;
-                        const gitRes = await fetch(url, { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }});
-                        if (gitRes.ok) {
-                            const file = await gitRes.json();
-                            const currentKeys = JSON.parse(Buffer.from(file.content, 'base64').toString('utf-8'));
-                            currentKeys.unshift({
-                                id: `key_${Math.floor(Date.now() / 1000)}`,
-                                key: newKey,
-                                createdAt: new Date().toISOString(),
-                                expiresAt: expiresAt,
-                                maxUses: maxUses >= 9000 ? null : maxUses,
-                                currentUses: 0,
-                                active: true,
-                                createdBy: "payos_webhook",
-                                transaction_code: transferCode,
-                                package: pkg,
-                                notes: "Auto PayOS"
-                            });
-                            await fetch(url, {
-                                method: 'PUT',
-                                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
-                                body: JSON.stringify({
-                                    message: `Auto-Sync Key: ${transferCode}`,
-                                    content: Buffer.from(JSON.stringify(currentKeys, null, 2)).toString('base64'),
-                                    sha: file.sha
-                                })
-                            });
-                        }
-                    }
-                } catch (gitErr) {}
+            if (insertError) {
+                console.error('[Webhook] Error inserting key:', insertError.message);
+                return res.status(200).json({ success: true });
             }
+
+            // Update Order
+            const { error: updateError } = await supabase.from('orders').update({ status: 'completed' }).eq('id', orderData.id);
+            if (updateError) {
+                console.error('[Webhook] Error updating order status:', updateError.message);
+            }
+
+            console.log(`[Webhook] SUCCESS: Order ${orderCode} completed.`);
+            
+            // GitHub Sync (Silent)
+            try {
+                const gToken = process.env.GITHUB_TOKEN;
+                if (gToken) {
+                    console.log('[Webhook] Syncing to GitHub...');
+                    const url = `https://api.github.com/repos/Cuongqtx11/app_vip/contents/public/data/keys.json`;
+                    const gitRes = await fetch(url, { headers: { 'Authorization': `token ${gToken}`, 'Accept': 'application/vnd.github.v3+json' }});
+                    if (gitRes.ok) {
+                        const file = await gitRes.json();
+                        const currentKeys = JSON.parse(Buffer.from(file.content, 'base64').toString('utf-8'));
+                        currentKeys.unshift({
+                            id: `key_${Math.floor(Date.now() / 1000)}`,
+                            key: newKey,
+                            createdAt: new Date().toISOString(),
+                            expiresAt: expiresAt,
+                            maxUses: maxUses >= 9000 ? null : maxUses,
+                            currentUses: 0,
+                            active: true,
+                            createdBy: "payos_webhook",
+                            transaction_code: transferCode,
+                            package: pkg,
+                            notes: "Auto PayOS"
+                        });
+                        await fetch(url, {
+                            method: 'PUT',
+                            headers: { 'Authorization': `token ${gToken}`, 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                message: `Auto-Sync Key: ${transferCode}`,
+                                content: Buffer.from(JSON.stringify(currentKeys, null, 2)).toString('base64'),
+                                sha: file.sha
+                            })
+                        });
+                        console.log('[Webhook] GitHub Sync Done.');
+                    }
+                }
+            } catch (gitErr) { console.error('[Webhook] GitHub Sync Error:', gitErr.message); }
+
             return res.status(200).json({ success: true });
-        } catch(e) { return res.status(200).json({ success: true }); }
+        } catch(e) { 
+            console.error('[Webhook] Critical Error:', e.message);
+            return res.status(200).json({ success: true }); 
+        }
     }
 
     // ============================================================
