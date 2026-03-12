@@ -42,16 +42,17 @@ export default async function handler(req, res) {
     // --- 3. XÁC MINH UDID (VERIFY UDID) ---
     if (action === 'verify-udid' && req.method === 'POST') {
         const { udid } = req.body;
-        const isValidUDID = /^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{16}$/.test(udid) || /^[0-9A-Fa-f]{40}$/.test(udid);
+        const normalizedUDID = (udid || '').toUpperCase();
+        const isValidUDID = /^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{16}$/.test(normalizedUDID) || /^[0-9A-Fa-f]{40}$/.test(normalizedUDID);
         if (!isValidUDID) return res.status(400).json({ error: 'Định dạng UDID không hợp lệ' });
 
+        const udidTransCode = 'UDID:' + normalizedUDID;
+
         // A. Kiểm tra trong verifications
-        const { data: verified } = await supabase.from('udid_verifications').select('*').eq('udid', udid).single();
+        const { data: verified } = await supabase.from('udid_verifications').select('*').eq('udid', normalizedUDID).single();
         
         if (verified) {
-            const udidTransCode = 'UDID:' + udid.toUpperCase();
-
-            // B. Tìm xem UDID này đã từng có ai kích hoạt chưa (Để lấy hạn dùng gốc)
+            // B. Tìm xem UDID này đã từng có Key nào được tạo chưa (Toàn hệ thống)
             const { data: firstKey } = await supabase.from('user_keys')
                 .select('*')
                 .eq('transaction_code', udidTransCode)
@@ -59,59 +60,97 @@ export default async function handler(req, res) {
                 .limit(1)
                 .single();
 
-            let expiresAt;
+            let finalKeyCode, finalExpiresAt;
+
             if (firstKey) {
-                // Đã có người kích hoạt -> Lấy đúng hạn dùng của người đầu tiên
-                expiresAt = firstKey.expires_at;
+                // ĐÃ CÓ KEY CHO UDID NÀY: Dùng lại mã Key và hạn cũ
+                finalKeyCode = firstKey.key_code;
+                finalExpiresAt = firstKey.expires_at;
             } else {
-                // CHƯA AI KÍCH HOẠT -> Thiết lập 30 NGÀY từ bây giờ (Cố định cho UDID này)
-                expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+                // CHƯA CÓ KEY: Tạo mới mã Key và hạn 30 ngày (Cố định cho UDID này)
+                const genKey = () => {
+                    const part = () => Array.from({length:4}, () => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'[Math.floor(Math.random()*36)]).join('');
+                    return `${part()}-${part()}-${part()}-${part()}`;
+                };
+                finalKeyCode = genKey();
+                finalExpiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
             }
 
-            // C. Kiểm tra user hiện tại đã nhận key cho UDID này chưa
-            const { data: userKey } = await supabase.from('user_keys')
+            // C. Kiểm tra user hiện tại đã có bản ghi Key này trong túi đồ chưa
+            const { data: userRecord } = await supabase.from('user_keys')
                 .select('*')
                 .eq('user_id', userId)
-                .eq('transaction_code', udidTransCode)
+                .eq('key_code', finalKeyCode)
                 .single();
 
-            if (userKey) {
-                return res.json({ status: 'already_claimed', key_code: userKey.key_code, expires_at: userKey.expires_at });
+            if (!userRecord) {
+                // Nếu chưa có, insert bản ghi mới cho user này (với mã key cố định của UDID)
+                const { error: insErr } = await supabase.from('user_keys').insert([{ 
+                    key_code: finalKeyCode, 
+                    user_id: userId, 
+                    package_name: 'Gói UDID Free (1 Tháng)', 
+                    status: 'active', 
+                    usage_count: 0, 
+                    max_usage: 999999, 
+                    expires_at: finalExpiresAt, 
+                    transaction_code: udidTransCode 
+                }]);
+                if (insErr) return res.status(500).json({ error: 'Lỗi gán mã VIP' });
+
+                // D. ĐỒNG BỘ LÊN GITHUB (Chỉ khi mã Key này mới hoàn toàn hoặc để backup)
+                try {
+                    const gToken = process.env.GITHUB_TOKEN;
+                    if (gToken) {
+                        const url = `https://api.github.com/repos/Cuongqtx11/app_vip/contents/public/data/keys.json`;
+                        const gitRes = await fetch(url, { headers: { 'Authorization': `token ${gToken}`, 'Accept': 'application/vnd.github.v3+json' }});
+                        if (gitRes.ok) {
+                            const file = await gitRes.json();
+                            const currentKeys = JSON.parse(Buffer.from(file.content, 'base64').toString('utf-8'));
+                            
+                            // Kiểm tra mã key đã có trên GitHub chưa
+                            if (!currentKeys.find(k => k.key === finalKeyCode)) {
+                                currentKeys.unshift({
+                                    id: `udid_${Math.floor(Date.now() / 1000)}`,
+                                    key: finalKeyCode,
+                                    createdAt: new Date().toISOString(),
+                                    expiresAt: finalExpiresAt,
+                                    maxUses: null,
+                                    currentUses: 0,
+                                    active: true,
+                                    createdBy: "udid_verify",
+                                    transaction_code: udidTransCode,
+                                    package: 'Gói UDID Free',
+                                    notes: "Auto UDID Verify"
+                                });
+                                await fetch(url, {
+                                    method: 'PUT',
+                                    headers: { 'Authorization': `token ${gToken}`, 'Content-Type': 'application/json' },
+                                    body: JSON.stringify({
+                                        message: `Sync UDID Key: ${normalizedUDID}`,
+                                        content: Buffer.from(JSON.stringify(currentKeys, null, 2)).toString('base64'),
+                                        sha: file.sha
+                                    })
+                                });
+                            }
+                        }
+                    }
+                } catch (gitErr) { console.error('GitHub Sync Error (UDID):', gitErr.message); }
             }
 
-            // Kiểm tra nếu hạn dùng gốc đã hết
-            if (new Date(expiresAt) < new Date()) {
+            // Kiểm tra hạn dùng
+            if (new Date(finalExpiresAt) < new Date()) {
                 return res.json({ status: 'expired' });
             }
 
-            // D. Tạo key mới cho user này (Dùng chung expiresAt cố định)
-            const genKey = () => {
-                const part = () => Array.from({length:4}, () => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'[Math.floor(Math.random()*36)]).join('');
-                return `${part()}-${part()}-${part()}-${part()}`;
-            };
-            const newKey = genKey();
-
-            const { error: insErr } = await supabase.from('user_keys').insert([{ 
-                key_code: newKey, 
-                user_id: userId, 
-                package_name: 'Gói UDID Free (1 Tháng)', 
-                status: 'active', 
-                usage_count: 0, 
-                max_usage: 999999, 
-                expires_at: expiresAt, 
-                transaction_code: udidTransCode 
-            }]);
-
-            if (insErr) return res.status(500).json({ error: 'Lỗi gán mã VIP' });
-            return res.json({ status: 'success', key_code: newKey, expires_at: expiresAt });
+            return res.json({ status: 'success', key_code: finalKeyCode, expires_at: finalExpiresAt });
         }
 
-        // D. Nếu chưa có trong verifications -> Kiểm tra pending
-        const { data: pending } = await supabase.from('udid_pending').select('*').eq('udid', udid).single();
+        // E. Nếu chưa có trong verifications -> Kiểm tra pending
+        const { data: pending } = await supabase.from('udid_pending').select('*').eq('udid', normalizedUDID).single();
         if (pending) return res.json({ status: 'pending' });
 
-        // E. Thêm mới vào pending nếu chưa có
-        await supabase.from('udid_pending').insert([{ udid, user_id: userId, status: 'pending' }]);
+        // F. Thêm mới vào pending nếu chưa có
+        await supabase.from('udid_pending').insert([{ udid: normalizedUDID, user_id: userId, status: 'pending' }]);
         return res.json({ status: 'pending' });
     }
 
