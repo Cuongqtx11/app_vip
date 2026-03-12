@@ -1,0 +1,28 @@
+{
+  "name": "kho-app-vip",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Kho ứng dụng VIP - IPA, Dylib, Shadowrocket Conf",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build complete'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "ipa",
+    "dylib",
+    "shadowrocket",
+    "ios"
+  ],
+  "author": "Cuios",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.98.0",
+    "bcryptjs": "^3.0.3",
+    "cookie": "^1.1.1",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}

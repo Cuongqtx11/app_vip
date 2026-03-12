@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Đăng nhập | Kho App VIP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+        }
+        .dark body {
+            background-color: #000000;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass-card {
+            background: rgba(28, 28, 30, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .input-field {
+            transition: all 0.2s ease;
+        }
+        .input-field:focus {
+            box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+        }
+        .tab-active {
+            color: #7c3aed;
+            border-bottom: 2px solid #7c3aed;
+        }
+    </style>
+</head>
+<body class="transition-colors duration-300">
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="max-w-md w-full animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <!-- Logo & Title -->
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 text-white shadow-xl shadow-purple-500/20 mb-4 cursor-pointer" onclick="location.href='/'">
+                    <i data-lucide="crown" class="w-8 h-8"></i>
+                </div>
+                <h1 class="text-3xl font-black tracking-tight text-gray-900 dark:text-white uppercase">Kho App Vip</h1>
+                <p class="text-gray-500 dark:text-gray-400 mt-2 font-medium">Đăng nhập để quản lý mã VIP của bạn</p>
+            </div>
+
+            <!-- Auth Card -->
+            <div class="glass-card rounded-[2.5rem] shadow-2xl p-8 md:p-10">
+                <!-- Tabs -->
+                <div class="flex border-b border-gray-100 dark:border-white/5 mb-8">
+                    <button id="tabLogin" onclick="switchTab('login')" class="flex-1 pb-4 text-sm font-bold uppercase tracking-wider tab-active transition-all">Đăng nhập</button>
+                    <button id="tabRegister" onclick="switchTab('register')" class="flex-1 pb-4 text-sm font-bold uppercase tracking-wider text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-all">Đăng ký</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" onsubmit="handleAuth(event, 'login')" class="space-y-5">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest ml-1">Tên đăng nhập</label>
+                        <div class="relative">
+                            <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                            <input type="text" id="loginUser" required class="w-full h-14 pl-12 pr-4 bg-gray-50 dark:bg-white/5 border border-transparent focus:border-purple-500 rounded-2xl outline-none input-field dark:text-white font-semibold" placeholder="Nhập username">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest ml-1">Mật khẩu</label>
+                        <div class="relative">
+                            <i data-lucide="lock" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                            <input type="password" id="loginPass" required class="w-full h-14 pl-12 pr-4 bg-gray-50 dark:bg-white/5 border border-transparent focus:border-purple-500 rounded-2xl outline-none input-field dark:text-white font-semibold" placeholder="••••••••">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between text-xs pt-1">
+                        <label class="flex items-center gap-2 font-bold text-gray-500 dark:text-gray-400 cursor-pointer">
+                            <input type="checkbox" checked class="w-4 h-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500 bg-gray-50 dark:bg-white/5">
+                            Ghi nhớ
+                        </label>
+                        <a href="forgot-password.html" class="font-bold text-purple-600 hover:text-purple-500">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" id="loginBtn" class="w-full h-14 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-black rounded-2xl shadow-lg shadow-purple-500/25 active:scale-95 transition-all uppercase tracking-widest">Xác nhận đăng nhập</button>
+                </form>
+
+                <!-- Register Form -->
+                <form id="registerForm" onsubmit="handleAuth(event, 'signup')" class="hidden space-y-5">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest ml-1">Tên đăng nhập</label>
+                        <div class="relative">
+                            <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                            <input type="text" id="regUser" required class="w-full h-14 pl-12 pr-4 bg-gray-50 dark:bg-white/5 border border-transparent focus:border-purple-500 rounded-2xl outline-none input-field dark:text-white font-semibold" placeholder="Chọn username">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest ml-1">Email (để khôi phục mật khẩu)</label>
+                        <div class="relative">
+                            <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                            <input type="email" id="regEmail" class="w-full h-14 pl-12 pr-4 bg-gray-50 dark:bg-white/5 border border-transparent focus:border-purple-500 rounded-2xl outline-none input-field dark:text-white font-semibold" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest ml-1">Mật khẩu</label>
+                        <div class="relative">
+                            <i data-lucide="lock" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                            <input type="password" id="regPass" required class="w-full h-14 pl-12 pr-4 bg-gray-50 dark:bg-white/5 border border-transparent focus:border-purple-500 rounded-2xl outline-none input-field dark:text-white font-semibold" placeholder="Tối thiểu 6 ký tự">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest ml-1">Xác nhận mật khẩu</label>
+                        <div class="relative">
+                            <i data-lucide="shield-check" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                            <input type="password" id="regPassConfirm" required class="w-full h-14 pl-12 pr-4 bg-gray-50 dark:bg-white/5 border border-transparent focus:border-purple-500 rounded-2xl outline-none input-field dark:text-white font-semibold" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <button type="submit" id="regBtn" class="w-full h-14 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-black rounded-2xl shadow-lg shadow-purple-500/25 active:scale-95 transition-all uppercase tracking-widest">Tạo tài khoản ngay</button>
+                </form>
+            </div>
+
+            <!-- Back to Home -->
+            <div class="text-center mt-8">
+                <a href="/" class="inline-flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-purple-600 transition-colors">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Quay lại trang chủ
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Theme init
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+
+        function switchTab(type) {
+            const loginForm = document.getElementById('loginForm');
+            const regForm = document.getElementById('registerForm');
+            const tabLogin = document.getElementById('tabLogin');
+            const tabRegister = document.getElementById('tabRegister');
+
+            if (type === 'login') {
+                loginForm.classList.remove('hidden');
+                regForm.classList.add('hidden');
+                tabLogin.classList.add('tab-active');
+                tabLogin.classList.remove('text-gray-400');
+                tabRegister.classList.remove('tab-active');
+                tabRegister.classList.add('text-gray-400');
+            } else {
+                loginForm.classList.add('hidden');
+                regForm.classList.remove('hidden');
+                tabLogin.classList.remove('tab-active');
+                tabLogin.classList.add('text-gray-400');
+                tabRegister.classList.add('tab-active');
+                tabRegister.classList.remove('text-gray-400');
+            }
+        }
+
+        async function handleAuth(event, type) {
+            event.preventDefault();
+            const u = type === 'login' ? document.getElementById('loginUser').value : document.getElementById('regUser').value;
+            const p = type === 'login' ? document.getElementById('loginPass').value : document.getElementById('regPass').value;
+            let payload = { username: u, password: p };
+
+            if (type === 'signup') {
+                const cp = document.getElementById('regPassConfirm').value;
+                const email = document.getElementById('regEmail').value;
+                if (p !== cp) return alert('❌ Mật khẩu xác nhận không khớp!');
+                if (email) payload.email = email;
+            }
+
+            const btn = type === 'login' ? document.getElementById('loginBtn') : document.getElementById('regBtn');
+            const originalText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'ĐANG XỬ LÝ...';
+
+            try {
+                const res = await fetch(`/api/auth?action=${type}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                const d = await res.json();
+                
+                if (d.success) {
+                    if (type === 'signup') {
+                        alert('✅ ' + (d.message || 'Đăng ký thành công!'));
+                        switchTab('login');
+                    } else {
+                        // Đăng nhập thành công
+                        if (d.token) localStorage.setItem('auth_token', d.token);
+                        if (d.user) localStorage.setItem('vip_user', JSON.stringify(d.user));
+                        
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const redirect = urlParams.get('redirect') || '/';
+                        location.href = redirect;
+                    }
+                } else {
+                    alert('❌ ' + (d.error || 'Thất bại'));
+                }
+            } catch (e) {
+                alert('💥 Lỗi kết nối server');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = originalText;
+            }
+        }
+    </script>
+</body>
+</html>

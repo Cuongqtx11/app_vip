@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCM System - Sign • Cert • Mod</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* --- CẤU HÌNH MÀU SẮC --- */
+        :root {
+            /* Mặc định: Chế độ Sáng */
+            --bg-body: #f8fafc;
+            --text-color: #1e293b;
+            --nav-bg: rgba(255, 255, 255, 0.85);
+            --nav-border: rgba(0,0,0,0.1);
+            --nav-item-color: #64748b;
+            --nav-item-hover-bg: rgba(96, 165, 250, 0.1);
+            --nav-item-active-bg: rgba(96, 165, 250, 0.2);
+        }
+
+        body.dark {
+            /* Chế độ Tối: GIỮ NGUYÊN MÀU GỐC CỦA BẠN */
+            --bg-body: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+            --text-color: white;
+            --nav-bg: rgba(0,0,0,0.4);
+            --nav-border: rgba(255,255,255,0.1);
+            --nav-item-color: #94a3b8;
+            --nav-item-hover-bg: rgba(96, 165, 250, 0.1);
+            --nav-item-active-bg: rgba(96, 165, 250, 0.2);
+        }
+
+        body {
+            font-family: "Poppins", -apple-system, sans-serif;
+            background: var(--bg-body);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Navigation */
+        .top-menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(12px);
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--nav-border);
+            z-index: 1000;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            color: var(--nav-item-color);
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-item:hover {
+            color: #60a5fa;
+            background: var(--nav-item-hover-bg);
+            transform: translateY(-3px);
+        }
+
+        .nav-item.active {
+            color: #60a5fa;
+            background: var(--nav-item-active-bg);
+            transform: scale(1.05);
+        }
+
+        .nav-item i {
+            font-size: 1.5rem;
+        }
+
+        .nav-item span {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        /* Frame Container */
+        #content-frame {
+            width: 100%;
+            height: calc(100vh - 80px);
+            margin-top: 80px;
+            border: none;
+            display: block;
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 999;
+        }
+
+        .loading i {
+            font-size: 3rem;
+            color: #60a5fa;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0.75rem 1rem;
+            }
+            
+            .nav-item {
+                padding: 0.5rem 1rem;
+            }
+
+            .nav-item i {
+                font-size: 1.25rem;
+            }
+
+            .nav-item span {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-menu">
+        <div class="nav-container">
+            <a class="nav-item active" data-page="sign" onclick="loadPage('sign')">
+                <i class="fa-solid fa-pen-nib"></i>
+                <span>SIGN</span>
+            </a>
+            <a class="nav-item" data-page="cert" onclick="loadPage('cert')">
+                <i class="fa-solid fa-certificate"></i>
+                <span>CERT</span>
+            </a>
+            <a class="nav-item" data-page="mod" onclick="loadPage('mod')">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>MOD</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="loading" id="loading" style="display: none;">
+        <i class="fa-solid fa-spinner"></i>
+    </div>
+
+    <iframe id="content-frame"></iframe>
+
+    <script>
+        const contentFrame = document.getElementById('content-frame');
+        const loading = document.getElementById('loading');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        // Hàm áp dụng theme
+        function applyTheme(theme) {
+            // Cập nhật body của trang mẹ
+            document.body.classList.toggle('dark', theme === 'dark');
+            
+            // Gửi theme xuống iframe con
+            if (contentFrame.contentWindow) {
+                contentFrame.contentWindow.postMessage({
+                    type: 'themeChange',
+                    theme: theme
+                }, '*');
+            }
+        }
+
+        // 1. Lắng nghe từ window cha (index.html)
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'themeChange') {
+                applyTheme(event.data.theme);
+            }
+        });
+
+        // 2. Kiểm tra sessionStorage khi load (để đồng bộ nếu F5)
+        const savedTheme = sessionStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        // Navigation logic
+        function loadPage(page) {
+            // Update active state
+            navItems.forEach(nav => nav.classList.remove('active'));
+            document.querySelector(`[data-page="${page}"]`).classList.add('active');
+
+            // Show loading
+            loading.style.display = 'block';
+
+            // Load sub-page
+            contentFrame.src = `page/${page}.html`;
+        }
+
+        // Hide loading when frame loads & Resync theme
+        contentFrame.addEventListener('load', () => {
+            loading.style.display = 'none';
+            
+            // Khi iframe mới load xong, gửi ngay theme hiện tại xuống
+            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+            if (contentFrame.contentWindow) {
+                contentFrame.contentWindow.postMessage({
+                    type: 'themeChange',
+                    theme: currentTheme
+                }, '*');
+            }
+        });
+
+        // Initial load
+        window.addEventListener('load', () => {
+            loadPage('sign');
+        });
+
+        function forceZoom() {
+            const isMobile = window.innerWidth <= 768;
+            if (!isMobile) {
+                document.body.style.zoom = "0.75"; 
+            } else {
+                document.body.style.zoom = "1.0"; 
+            }
+        }
+        document.addEventListener("DOMContentLoaded", forceZoom);
+        window.addEventListener("resize", forceZoom);
+        window.addEventListener("orientationchange", forceZoom);
+
+        function forceZoom() {
+    	document.body.style.zoom = "0.75";}
+    	document.addEventListener("DOMContentLoaded", forceZoom);
+    	window.addEventListener("resize", forceZoom);
+    	window.addEventListener("orientationchange", forceZoom);
+    </script>
+</body>
+</html>

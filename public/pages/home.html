@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang Chủ - Kho App VIP</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Hiệu ứng mờ nền (Glassmorphism) tùy chỉnh */
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .dark .glass-panel {
+      background: rgba(30, 30, 35, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Animation đơn giản */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    
+    /* Ẩn thanh cuộn nhưng vẫn cuộn được */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .dark ::-webkit-scrollbar-thumb { background: #475569; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-[#0f0f11] dark:text-gray-100 min-h-screen p-4">
+
+  <div class="max-w-3xl mx-auto space-y-6 animate-fade-in">
+
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 to-purple-700 p-8 text-white shadow-xl shadow-indigo-500/20">
+      <div class="relative z-10">
+        <h1 class="text-3xl font-extrabold mb-3 leading-tight tracking-tight">Chào mừng đến với <br/>Kho App VIP! 🚀</h1>
+        <p class="text-indigo-100 text-sm md:text-base leading-relaxed mb-6 max-w-lg">
+          Khám phá thế giới của các ứng dụng, dylib (mod) và cấu hình VPN (Conf) độc quyền. 
+          Công cụ mạnh mẽ giúp nâng cao trải nghiệm di động của bạn.
+        </p>
+        
+        <a href="https://p12.vn/payment" target="_parent"
+           class="inline-flex items-center gap-2 bg-white text-indigo-700 px-6 py-3 rounded-xl text-sm font-bold hover:bg-gray-50 transition-all shadow-lg active:scale-95 transform">
+           <span>MUA KEY VIP DOWNLOAD</span>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          
+        </a>
+          
+      </div>
+      
+      <div class="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+      <div class="absolute bottom-0 left-0 w-32 h-32 bg-purple-500/30 rounded-full blur-2xl -ml-10 -mb-10"></div>
+    </div>
+
+    <div>
+      <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#EF4444" stroke="none"/></svg>
+        Hướng dẫn sử dụng
+      </h3>
+      
+      <div class="flex flex-col gap-3">
+        <button class="tutorial-button w-full group relative p-4 rounded-2xl glass-panel text-left flex items-center justify-between transition-all hover:bg-white dark:hover:bg-white/5 active:scale-[0.98]" 
+                data-video-id="UoTyismkkfw">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-red-500/10 text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-800 dark:text-gray-200">Hướng dẫn IPA</h4>
+              <span class="text-xs text-gray-500">Cách cài đặt và sử dụng</span>
+            </div>
+          </div>
+          <div class="text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </button>
+
+        <button class="tutorial-button w-full group relative p-4 rounded-2xl glass-panel text-left flex items-center justify-between transition-all hover:bg-white dark:hover:bg-white/5 active:scale-[0.98]" 
+                data-video-id="4jchr9wnNzA">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-red-500/10 text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-800 dark:text-gray-200">Hướng dẫn Dylib</h4>
+              <span class="text-xs text-gray-500">Tùy chỉnh ứng dụng</span>
+            </div>
+          </div>
+          <div class="text-gray-400">
+             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </button>
+
+        <button class="tutorial-button w-full group relative p-4 rounded-2xl glass-panel text-left flex items-center justify-between transition-all hover:bg-white dark:hover:bg-white/5 active:scale-[0.98]" 
+                data-video-id="Qxox6mxr80w">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-red-500/10 text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-800 dark:text-gray-200">Hướng dẫn Conf</h4>
+              <span class="text-xs text-gray-500">Cấu hình Shadowrocket</span>
+            </div>
+          </div>
+          <div class="text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </button>
+      </div>
+    </div>
+
+      <div>
+      <h3 class="font-bold text-lg mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Khám phá kho tàng
+      </h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div class="glass-panel p-4 rounded-2xl flex md:flex-col md:items-start items-center gap-4 transition-all hover:scale-[1.02]">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-blue-500/10 text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <span class="font-medium text-sm text-gray-700 dark:text-gray-200">IPA Modded<br/><span class="text-xs opacity-70 font-normal">Chất lượng cao</span></span>
+        </div>
+
+        <div class="glass-panel p-4 rounded-2xl flex md:flex-col md:items-start items-center gap-4 transition-all hover:scale-[1.02]">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-pink-500/10 text-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <span class="font-medium text-sm text-gray-700 dark:text-gray-200">Dylib<br/><span class="text-xs opacity-70 font-normal">Tùy chỉnh App</span></span>
+        </div>
+
+        <div class="glass-panel p-4 rounded-2xl flex md:flex-col md:items-start items-center gap-4 transition-all hover:scale-[1.02]">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-green-500/10 text-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="font-medium text-sm text-gray-700 dark:text-gray-200">VPN Conf<br/><span class="text-xs opacity-70 font-normal">An toàn & Nhanh</span></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-8 text-center pb-4 relative z-50">
+      <p class="text-[10px] text-gray-400/40 dark:text-gray-600/40 font-medium select-none">
+        
+        <a href="admin.html" 
+           class="cursor-default no-underline text-inherit hover:text-inherit relative z-50 transition-opacity active:opacity-50"
+           title="">
+           Kho
+        </a> 
+        
+        mod vip - ©2024 - cuios.shop
+      </p>
+    </div>
+
+  </div> 
+
+  <div id="videoPopup" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 invisible transition-all duration-300">
+    <div class="relative w-full max-w-3xl bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-white/10 transform scale-95 transition-all duration-300" id="videoPopupContent">
+      <div class="flex justify-between items-center p-4 border-b border-white/10 bg-white/5">
+        <h3 class="text-white font-bold flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#EF4444" stroke="none"/></svg>
+          Đang xem video
+        </h3>
+        <button id="closeVideoPopup" class="p-1 hover:bg-white/10 rounded-full text-gray-400 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      
+      <div class="aspect-video w-full bg-black">
+        <iframe id="youtubePlayer" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Logic nhận tín hiệu Dark Mode từ trang mẹ (index.html)
+    window.addEventListener('message', (event) => {
+        if (event.data.type === 'themeChange') {
+            if (event.data.theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+    });
+
+    // Kiểm tra theme đã lưu
+    const savedTheme = sessionStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+
+    // 2. Logic Popup Video (Vanilla JS thuần)
+    const videoPopup = document.getElementById('videoPopup');
+    const videoPopupContent = document.getElementById('videoPopupContent');
+    const closeVideoPopupBtn = document.getElementById('closeVideoPopup');
+    const youtubePlayer = document.getElementById('youtubePlayer');
+    const tutorialButtons = document.querySelectorAll('.tutorial-button');
+
+    // Mở popup
+    tutorialButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const videoId = button.dataset.videoId;
+            if (videoId) {
+                youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?rel=0&autoplay=1`;
+                
+                // Hiển thị modal
+                videoPopup.classList.remove('invisible', 'opacity-0');
+                videoPopupContent.classList.remove('scale-95');
+                videoPopupContent.classList.add('scale-100');
+            }
+        });
+    });
+
+    // Đóng popup
+    function closePopup() {
+        // Ẩn modal
+        videoPopup.classList.add('opacity-0', 'invisible');
+        videoPopupContent.classList.remove('scale-100');
+        videoPopupContent.classList.add('scale-95');
+        
+        // Dừng video sau 300ms (đợi animation đóng xong)
+        setTimeout(() => {
+            youtubePlayer.src = '';
+        }, 300);
+    }
+
+    closeVideoPopupBtn.addEventListener('click', closePopup);
+
+    // Đóng khi click ra ngoài
+    videoPopup.addEventListener('click', (event) => {
+        if (event.target === videoPopup) {
+            closePopup();
+        }
+    });
+  </script>
+</body>
+</html>

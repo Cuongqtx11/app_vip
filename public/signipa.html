@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VIP SIGNER - P12.VN</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: { 
+                        brand: '#7c3aed', 
+                        brandDark: '#6d28d9',
+                        bgLight: '#f4f4f5', 
+                        cardLight: '#ffffff',
+                        cardDark: '#1c1c1e'
+                    }
+                }
+            }
+        }
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    
+    <style>
+        html { zoom: 85%; -webkit-text-size-adjust: 100%; }
+        body { transition: background-color 0.3s, color 0.3s; padding-bottom: 80px; }
+
+        .glass-panel { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: all 0.3s ease; }
+        .app-card { transition: all 0.2s ease; border: 2px solid transparent; }
+        .app-card:active { transform: scale(0.98); }
+        .selected-app { border-color: #7c3aed !important; background: rgba(124, 58, 237, 0.08) !important; }
+        .dark .selected-app { background: rgba(124, 58, 237, 0.15) !important; }
+        .app-card .check-icon { opacity: 0; transform: scale(0.5); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .selected-app .check-icon { opacity: 1 !important; transform: scale(1) !important; }
+        .app-icon-img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .btn-primary { background: #7c3aed; transition: all 0.3s; }
+        .btn-primary:hover { background: #6d28d9; transform: translateY(-1px); }
+        ::-webkit-scrollbar { width: 0px; background: transparent; }
+
+        /* MENU STYLE */
+        .vip-tab-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            height: calc(4.2rem + env(safe-area-inset-bottom)); 
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(25px);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            display: flex; justify-content: space-evenly; align-items: flex-start;
+            padding-top: 0.5rem; 
+            padding-bottom: env(safe-area-inset-bottom);
+            z-index: 50;
+        }
+        .dark .vip-tab-bar {
+            background: rgba(28, 28, 30, 0.95);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .tab-btn {
+            flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 0.3rem; color: #999; transition: all 0.3s; text-decoration: none;
+        }
+        .tab-btn i { width: 1.5rem; height: 1.5rem; transition: transform 0.2s; } 
+        .tab-btn span { font-size: 0.7rem; font-weight: 700; transition: color 0.2s; }
+        .tab-btn.active { color: #7c3aed; }
+        .dark .tab-btn.active { color: #a78bfa; }
+    </style>
+</head>
+<body class="bg-bgLight dark:bg-black text-gray-900 dark:text-white font-sans min-h-screen flex justify-center selection:bg-brand selection:text-white pb-20">
+
+    <div class="w-full max-w-[500px] p-4 flex flex-col gap-5">
+        
+        <div class="text-center mt-2">
+            <h1 class="text-2xl font-black tracking-tight text-gray-900 dark:text-white uppercase">
+                SIGN <span class="text-brand">APP</span>
+            </h1>
+            <p class="text-gray-500 dark:text-gray-400 text-[10px] font-bold tracking-widest mt-0.5 uppercase">
+                Powered by Cuios.shop
+            </p>
+        </div>
+
+        <nav id="standaloneMenu" class="vip-tab-bar hidden">
+            <a href="/" class="tab-btn">
+              <i data-lucide="layout-grid"></i>
+              <span>Home</span>
+            </a>
+            <a href="/" class="tab-btn">
+              <i data-lucide="cpu"></i>
+              <span>Dylib</span>
+            </a>
+            <a href="/" class="tab-btn">
+              <i data-lucide="smartphone"></i>
+              <span>IPA</span>
+            </a>
+            <a href="/" class="tab-btn">
+              <i data-lucide="shield-check"></i>
+              <span>Conf</span>
+            </a>
+            <div class="tab-btn active">
+              <i data-lucide="award"></i>
+              <span>SignIPA</span>
+            </div>
+        </nav>
+
+        <div class="glass-panel bg-white dark:bg-cardDark rounded-3xl p-5 shadow-xl shadow-gray-200/50 dark:shadow-none border border-gray-100 dark:border-white/10 flex flex-col gap-5">
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-6 h-6 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold text-xs">1</div>
+                    <span class="text-xs font-bold uppercase text-gray-500 dark:text-gray-400">Chọn Ứng Dụng Nền</span>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-2" id="presetAppsContainer">
+                    <div onclick="selectApp('esign', this)" class="app-card selected-app relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfA3KV_ZGf_dEFRBpejxO90d5fKvXS8CKbujwqVKVqQK5anSjOsnNt9O8&s=10" class="app-icon-img bg-white dark:bg-gray-800">
+                        <div class="flex-1 min-w-0">
+                            <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">ESign</div>
+                            <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Khuyên dùng</div>
+                        </div>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
+                    </div>
+
+                    <div onclick="selectApp('scarlet', this)" class="app-card relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
+                        <img src="https://avatars.githubusercontent.com/u/175384029?v=4" class="app-icon-img bg-white dark:bg-gray-800">
+                        <div class="flex-1 min-w-0">
+                            <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">Scarlet</div>
+                            <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Phổ biến</div>
+                        </div>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
+                    </div>
+
+                    <div onclick="selectApp('gbox', this)" class="app-card relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
+                        <img src="https://gbox.run/Public/resources/icon256.png" class="app-icon-img bg-white dark:bg-gray-800">
+                        <div class="flex-1 min-w-0">
+                            <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">GBox</div>
+                            <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Ổn định</div>
+                        </div>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
+                    </div>
+
+                    <div onclick="selectApp('feather', this)" class="app-card relative p-2.5 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 flex items-center gap-3 group hover:bg-gray-100 dark:hover:bg-white/10">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRebvWXUtWq5q9w7Iv2eHvdXf8JGd_Dw80PDpK95rcbyn-bWd_KVM0eOT8B&s=10" class="app-icon-img bg-white dark:bg-gray-800">
+                        <div class="flex-1 min-w-0">
+                            <div class="font-bold text-sm leading-tight text-gray-900 dark:text-white">Feather</div>
+                            <div class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Mới</div>
+                        </div>
+                        <i class="check-icon fa-solid fa-circle-check absolute top-2 right-2 text-brand text-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <input type="hidden" id="selectedAppName" value="esign">
+
+            <hr class="border-gray-100 dark:border-white/5">
+
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-6 h-6 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold text-xs">2</div>
+                    <span class="text-xs font-bold uppercase text-gray-500 dark:text-gray-400">Tải lên Chứng Chỉ (Zip)</span>
+                </div>
+                
+                <label class="group flex flex-col items-center justify-center w-full h-24 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-2xl cursor-pointer bg-gray-50 dark:bg-white/5 hover:bg-brand/5 hover:border-brand/50 dark:hover:border-brand/50 transition">
+                    <div class="flex flex-col items-center justify-center pt-2 pb-3">
+                        <i class="fa-solid fa-cloud-arrow-up text-2xl text-gray-400 group-hover:text-brand mb-2 transition transform group-hover:scale-110"></i>
+                        <p id="fileName" class="text-[11px] text-gray-500 dark:text-gray-400 font-semibold group-hover:text-brand">
+                            Chọn file .zip (chứa .p12 & mobileprovision)
+                        </p>
+                    </div>
+                    <input id="certFile" type="file" accept=".zip" class="hidden" onchange="handleFile(this)" />
+                </label>
+            </div>
+
+            <div id="passwordArea" class="hidden animate-bounce bg-red-50 dark:bg-red-900/10 p-3 rounded-xl border border-red-200 dark:border-red-800/30">
+                <label class="block text-[10px] font-bold text-red-500 dark:text-red-400 mb-1 uppercase tracking-wide">
+                    <i class="fa-solid fa-lock mr-1"></i> Yêu cầu mật khẩu P12
+                </label>
+                <input type="text" id="p12Password" class="bg-white dark:bg-black/50 border border-red-200 dark:border-red-800/50 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 outline-none font-medium placeholder-gray-400" placeholder="Nhập mật khẩu chứng chỉ...">
+            </div>
+
+            <button onclick="startSigning()" id="signBtn" class="btn-primary w-full py-3.5 rounded-xl text-white font-bold text-sm shadow-lg shadow-brand/30 transform active:scale-[0.98] flex items-center justify-center gap-2 uppercase tracking-wide">
+                <i class="fa-solid fa-signature"></i> Ký Chứng Chỉ Ngay
+            </button>
+        </div>
+
+        <div id="statusArea" class="hidden glass-panel bg-white dark:bg-cardDark p-5 rounded-2xl border-l-4 border-brand shadow-xl">
+            <div id="loadingState" class="hidden flex flex-col items-center text-center py-2">
+                <i class="fa-solid fa-circle-notch fa-spin text-2xl text-brand mb-2"></i>
+                <h3 class="font-bold text-gray-900 dark:text-white text-sm">Đang xử lý...</h3>
+                <p class="text-[10px] text-gray-500 dark:text-gray-400">Hệ thống đang ký file IPA của bạn</p>
+            </div>
+
+            <div id="successState" class="hidden text-center space-y-3">
+                <div class="inline-flex items-center justify-center w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full text-green-600 dark:text-green-400 animate-pulse">
+                    <i class="fa-solid fa-check text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Hoàn Tất!</h3>
+                    <p class="text-[10px] text-gray-500">Liên kết cài đặt sẽ hết hạn sau 5 phút</p>
+                </div>
+                <a id="installLink" href="#" class="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm">
+                    <i class="fa-brands fa-apple text-lg"></i>
+                    CÀI ĐẶT NGAY
+                </a>
+            </div>
+
+            <div id="errorState" class="hidden bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-800/30 p-3 rounded-xl text-center">
+                <div class="text-red-500 dark:text-red-400 font-bold text-xs" id="errorMsg">Lỗi không xác định</div>
+                
+                <button id="serverErrorVideoBtn" onclick="openVideo('ScVYtBvEhq0')" class="hidden mt-3 w-full bg-red-100 hover:bg-red-200 dark:bg-red-800/40 dark:hover:bg-red-800/60 text-red-600 dark:text-red-300 font-bold py-2 rounded-lg text-xs transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-circle-play"></i> Server lỗi - xem hướng dẫn thay thế
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center gap-3 mb-3">
+                <div class="h-px bg-gray-200 dark:bg-white/10 flex-1"></div>
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Hướng Dẫn</span>
+                <div class="h-px bg-gray-200 dark:bg-white/10 flex-1"></div>
+            </div>
+            
+            <div class="flex flex-col items-center justify-center py-2">
+                <p class="text-[11px] text-gray-500 dark:text-gray-400 font-semibold text-center">
+                    Dưới đây là các bước để có thể ký được IPA:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <button onclick="openVideo('QLiVW2AEkNw')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
+                    <i class="fa-solid fa-circle-play text-2xl text-red-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B1- Cần có chứng chỉ</span>
+                </button>
+
+                <button onclick="openVideo('fLw9nJMhGKs')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
+                    <i class="fa-solid fa-wrench text-2xl text-blue-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B2- Ký app công cụ</span>
+                </button>
+            </div><br>
+            <div class="grid grid-cols-2 gap-3">
+                <button onclick="openVideo('becci7KqJnk')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
+                    <i class="fa-solid fa-wrench text-2xl text-blue-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B3- Tải và ký file IPA</span>
+                </button>
+                <button onclick="openVideo('vI6FwhrdF70')" class="bg-white dark:bg-cardDark border border-gray-100 dark:border-white/5 p-3 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-brand/50 transition shadow-sm group">
+                    <i class="fa-solid fa-circle-play text-2xl text-red-500 group-hover:scale-110 transition"></i>
+                    <span class="text-[10px] font-bold text-gray-600 dark:text-gray-300">B4- Cách nhân bản thêm</span>
+                </button>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+    <div id="videoModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-sm p-5">
+        <div class="relative max-w-sm bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 ring-1 ring-white/10">
+            <button onclick="closeVideo()" class="absolute top-3 right-3 z-10 w-8 h-8 bg-black/50 hover:bg-white/20 rounded-full text-white flex items-center justify-center transition backdrop-blur-md">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="aspect-[9/16] w-full">
+                <iframe id="youtubeIframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="absolute inset-0 -z-10" onclick="closeVideo()"></div>
+    </div>
+
+
+    <script>
+        // === LOGIC TỰ ĐỘNG ẨN MENU KHI TRONG IFRAME ===
+        if (window.self !== window.top) {
+            document.getElementById('standaloneMenu').style.display = 'none';
+            document.body.style.paddingBottom = '0px'; 
+        } else {
+            document.getElementById('standaloneMenu').classList.remove('hidden');
+            document.getElementById('standaloneMenu').style.display = 'flex';
+            lucide.createIcons();
+        }
+
+        const API_URL = "https://api.p12.vn"; 
+
+        window.addEventListener('storage', function(e) {
+            if (e.key === 'theme') {
+                if(e.newValue === 'dark') document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // --- VIDEO ---
+        function openVideo(videoId) {
+            const modal = document.getElementById('videoModal');
+            document.getElementById('youtubeIframe').src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+            modal.classList.remove('hidden');
+        }
+        function closeVideo() {
+            const modal = document.getElementById('videoModal');
+            document.getElementById('youtubeIframe').src = '';
+            modal.classList.add('hidden');
+        }
+
+        // --- LOGIC CHỌN APP ---
+        function selectApp(name, el) {
+            document.querySelectorAll('.app-card').forEach(card => {
+                card.classList.remove('selected-app');
+            });
+            el.classList.add('selected-app');
+            document.getElementById('selectedAppName').value = name;
+        }
+
+        function handleFile(input) {
+            if(input.files[0]) {
+                const name = input.files[0].name;
+                document.getElementById('fileName').innerHTML = `
+                    File: <span class="text-brand font-bold">${name}</span>
+                `;
+            }
+        }
+
+        async function startSigning() {
+            const certFile = document.getElementById('certFile');
+            const passwordInput = document.getElementById('p12Password');
+            const btn = document.getElementById('signBtn');
+            const statusArea = document.getElementById('statusArea');
+            const errorMsg = document.getElementById('errorMsg');
+            const errorVideoBtn = document.getElementById('serverErrorVideoBtn');
+
+            if (!certFile.files[0]) return alert("Vui lòng chọn file Zip chứng chỉ!");
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> ĐANG XỬ LÝ...';
+            btn.classList.add('opacity-70', 'cursor-not-allowed');
+            
+            statusArea.classList.remove('hidden');
+            document.getElementById('loadingState').classList.remove('hidden');
+            document.getElementById('successState').classList.add('hidden');
+            document.getElementById('errorState').classList.add('hidden');
+            document.getElementById('passwordArea').classList.add('hidden');
+            errorVideoBtn.classList.add('hidden'); 
+
+            statusArea.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+            const formData = new FormData();
+            formData.append('cert', certFile.files[0]);
+            formData.append('password', passwordInput.value); 
+            
+            // Chỉ hỗ trợ chế độ Preset (App có sẵn)
+            formData.append('app_name', document.getElementById('selectedAppName').value);
+            formData.append('sign_mode', 'preset');
+
+            try {
+                const response = await fetch(`${API_URL}/sign`, { method: 'POST', body: formData });
+                const data = await response.json();
+
+                document.getElementById('loadingState').classList.add('hidden');
+
+                if (data.success) {
+                    document.getElementById('successState').classList.remove('hidden');
+                    const installBtn = document.getElementById('installLink');
+                    installBtn.href = data.install_url;
+                    installBtn.onclick = (e) => { 
+                        e.preventDefault(); 
+                        window.top.location.href = data.install_url; 
+                    };
+                } else if (data.require_pass) {
+                    document.getElementById('errorState').classList.remove('hidden');
+                    errorMsg.innerHTML = `<i class="fa-solid fa-key mr-1"></i> ${data.message}`;
+                    document.getElementById('passwordArea').classList.remove('hidden');
+                    passwordInput.focus();
+                } else {
+                    document.getElementById('errorState').classList.remove('hidden');
+                    errorMsg.innerText = data.message;
+                }
+
+            } catch (e) {
+                document.getElementById('loadingState').classList.add('hidden');
+                document.getElementById('errorState').classList.remove('hidden');
+                errorMsg.innerText = "Lỗi kết nối Server! Vui lòng thử lại.";
+                errorVideoBtn.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fa-solid fa-signature"></i> KÝ CHỨNG CHỈ NGAY';
+                btn.classList.remove('opacity-70', 'cursor-not-allowed');
+            }
+        }
+    </script>
+</body>
+</html>

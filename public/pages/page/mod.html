@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD - SCM System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            /* Light Mode */
+            --bg-color: transparent;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --card-border: rgba(0, 0, 0, 0.08);
+            --card-shadow-hover: rgba(236, 72, 153, 0.2);
+            --highlight: #ec4899; /* Pink for Mod */
+            --highlight-gradient-start: #8b5cf6;
+            --highlight-gradient-end: #ec4899;
+            --btn-hover-bg: linear-gradient(90deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+            --popup-bg: #ffffff;
+            --popup-text: #1e293b;
+            --input-bg: #f1f5f9;
+            --border-light: rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark {
+            /* Dark Mode */
+            --text-main: white;
+            --text-sub: #94a3b8;
+            --card-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(51, 65, 85, 0.3));
+            --card-border: rgba(255, 255, 255, 0.05);
+            --card-shadow-hover: rgba(139, 92, 246, 0.2);
+            --btn-hover-bg: linear-gradient(90deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.15));
+            --popup-bg: #1e293b; /* Solid color for popup in dark mode to match dylib style */
+            --popup-text: white;
+            --input-bg: rgba(15, 23, 42, 0.6);
+            --border-light: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: "Poppins", -apple-system, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            padding: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        .header { text-align: center; margin-bottom: 2.5rem; animation: fadeIn 0.6s ease; }
+        .header h1 {
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--highlight-gradient-start), var(--highlight-gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.4rem;
+            font-weight: 800;
+        }
+        .header p { color: var(--text-sub); font-size: 1.0rem; }
+
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .item-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+            border-radius: 18px;
+            padding: 1.25rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: slideUp 0.6s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .item-card:hover {
+            transform: translateY(-5px) scale(1.01);
+            border-color: rgba(139, 92, 246, 0.3);
+            box-shadow: 0 15px 30px var(--card-shadow-hover);
+        }
+        
+        .item-card:hover::before {
+             content: '';
+             position: absolute; top:0; left:0; width:100%; height:100%;
+             background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(236, 72, 153, 0.08));
+             z-index: -1; opacity: 0; transition: opacity 0.3s;
+        }
+        .item-card:hover::before { opacity: 1; }
+
+        .card-app-header { display: flex; align-items: flex-start; gap: 0.8rem; margin-bottom: 0.5rem; position: relative; }
+        .icon-wrapper { width: 70px; height: 70px; flex-shrink: 0; border-radius: 14px; overflow: visible; position: relative; box-shadow: 0 3px 8px rgba(0,0,0,0.2); }
+        .app-icon { width: 100%; height: 100%; object-fit: cover; background-color: #334155; border-radius: 14px; }
+        .app-tag {
+            position: absolute; top: -5px; left: -5px; background: var(--highlight); color: white;
+            font-size: 0.65rem; font-weight: 700; padding: 2px 7px; border-radius: 6px; z-index: 20;
+            box-shadow: 0 0 8px rgba(236, 72, 153, 0.8); transform: rotate(-5deg);
+        }
+
+        .card-title { font-size: 1.35rem; font-weight: 700; color: var(--text-main); line-height: 1.2; margin-bottom: 0.25rem; transition: color 0.3s; }
+        .item-card:hover .card-title { color: #8b5cf6; }
+        
+        .card-version { color: var(--text-sub); font-size: 0.9rem; margin-bottom: 1rem; }
+        .metadata { list-style: none; padding: 0; margin: 0; }
+        .metadata li { display: flex; align-items: center; color: var(--text-sub); font-size: 0.85rem; margin-bottom: 0.3rem; }
+        .metadata li i { color: var(--highlight); width: 18px; text-align: center; margin-right: 6px; }
+
+        .card-footer { margin-top: 1rem; border-top: 1px solid var(--card-border); padding-top: 1rem; }
+        .download-btn-card {
+            background: transparent; border: 2px solid #8b5cf6; color: #8b5cf6;
+            width: 100%; padding: 0.7rem 1rem; border-radius: 12px; font-size: 1.0rem; font-weight: 700;
+            cursor: pointer; transition: all 0.3s ease; display: flex; justify-content: center; align-items: center;
+        }
+        .download-btn-card:hover { background: var(--btn-hover-bg); color: var(--text-main); box-shadow: 0 6px 15px rgba(139, 92, 246, 0.4); }
+
+        /* --- NEW DYLIB-STYLE POPUP CSS --- */
+        .download-popup {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px);
+            z-index: 2000; display: none; justify-content: center; align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+        .download-popup.active { display: flex; }
+        
+        .download-popup-content {
+            background: var(--popup-bg); border-radius: 24px; padding: 35px 30px;
+            width: 90%; max-width: 450px; max-height: 85vh; overflow-y: auto;
+            box-shadow: 0 25px 70px rgba(236, 72, 153, 0.3); position: relative;
+            animation: slideUp 0.4s ease; color: var(--popup-text);
+        }
+        .download-popup-content::-webkit-scrollbar { width: 8px; }
+        .download-popup-content::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); border-radius: 10px; }
+        .download-popup-content::-webkit-scrollbar-thumb { background: var(--highlight); border-radius: 10px; }
+
+        .download-popup .close-btn {
+            position: absolute; top: 15px; right: 15px;
+            background: rgba(236, 72, 153, 0.1); border: none; width: 36px; height: 36px;
+            border-radius: 10px; font-size: 1.5em; cursor: pointer; color: var(--text-main);
+            transition: all 0.3s ease; z-index: 1; display: flex; align-items: center; justify-content: center;
+        }
+        .download-popup .close-btn:hover { background: var(--highlight); color: white; transform: rotate(90deg) scale(1.1); }
+
+        .download-header { text-align: center; margin-bottom: 25px; }
+        .download-header img { width: 80px; height: 80px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); margin-bottom: 15px; object-fit: cover; }
+        .download-header h2 { color: var(--highlight); font-size: 1.5em; margin-bottom: 5px; }
+        .download-header p { color: var(--text-sub); font-size: 0.9em; opacity: 0.8; }
+
+        .download-options { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; }
+        .download-option {
+            display: flex; flex-direction: column; background: rgba(236, 72, 153, 0.05);
+            border: 2px solid var(--border-light); border-radius: 16px; padding: 20px;
+            cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden;
+        }
+        .download-option:hover { border-color: var(--highlight); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(236, 72, 153, 0.2); }
+        .download-option-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+        .download-option-icon { font-size: 2em; }
+        .download-option-title { font-size: 1.1em; font-weight: 700; color: var(--highlight); }
+        .download-option-desc { font-size: 0.9em; color: var(--text-sub); opacity: 0.8; line-height: 1.5; }
+        .download-option-badge {
+            position: absolute; top: 10px; right: 10px;
+            background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+            color: white; padding: 4px 10px; border-radius: 8px; font-size: 0.7em; font-weight: 600;
+        }
+
+        .vip-key-section {
+            display: none; margin-top: 20px; padding: 20px;
+            background: rgba(255, 215, 0, 0.08); border: 2px dashed var(--highlight);
+            border-radius: 16px; animation: slideDown 0.3s ease;
+        }
+        .vip-key-section.active { display: block; }
+        @keyframes slideDown { from { opacity: 0; max-height: 0; } to { opacity: 1; max-height: 1000px; } }
+
+        .vip-key-input { display: flex; gap: 10px; margin-top: 15px; }
+        .vip-key-input input {
+            flex: 1; padding: 12px 15px; border: 2px solid var(--border-light);
+            border-radius: 10px; font-size: 1em; text-transform: uppercase;
+            letter-spacing: 1px; font-weight: 600; background: var(--input-bg);
+            color: var(--popup-text); transition: all 0.3s ease;
+        }
+        .vip-key-input input:focus { outline: none; border-color: var(--highlight); box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1); }
+        
+        .vip-key-input button {
+            padding: 12px 25px; background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+            color: white; border: none; border-radius: 10px; font-weight: 700;
+            cursor: pointer; transition: all 0.3s ease; white-space: nowrap;
+        }
+        .vip-key-input button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4); }
+        .vip-key-input button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+        .key-message {
+            margin-top: 15px; padding: 12px; border-radius: 10px; font-size: 0.9em;
+            font-weight: 600; text-align: center; display: none; white-space: pre-line; line-height: 1.6;
+        }
+        .key-message.success { background: rgba(46, 204, 113, 0.15); color: #27ae60; border: 1px solid #27ae60; display: block; }
+        .key-message.error { background: rgba(231, 76, 60, 0.15); color: #e74c3c; border: 1px solid #e74c3c; display: block; }
+
+        .download-direct-btn {
+            margin-top: 20px; padding: 15px 30px; width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white; border: none; border-radius: 12px; font-size: 1.1em;
+            font-weight: 700; cursor: pointer; transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4); text-align: center; display: none;
+        }
+        .download-direct-btn.show { display: block !important; animation: bounceIn 0.5s ease; }
+        .download-direct-btn:hover { background: linear-gradient(135deg, #059669 0%, #047857 100%); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6); }
+
+        .spinner { display: inline-block; width: 16px; height: 16px; border: 3px solid rgba(255,255,255,.3); border-radius: 50%; border-top-color: #fff; animation: spin 0.8s ease-in-out infinite; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes bounceIn { 0% { opacity: 0; transform: scale(0.9) translateY(20px); } 50% { transform: scale(1.05) translateY(-5px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        @media (max-width: 768px) { body { padding: 1rem; } .items-grid { grid-template-columns: 1fr; } .vip-key-input { flex-direction: column; gap: 10px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📦 MOD</h1>
+            <p>Ứng dụng Hot tải nhiều nhất</p>
+        </div>
+        <div class="items-grid" id="items-container"></div>
+    </div>
+
+    <div class="download-popup" id="downloadPopup">
+        <div class="download-popup-content">
+            <button class="close-btn" onclick="closeDownloadPopup()">&times;</button>
+            <div class="download-header">
+                <img id="popup-icon" src="" alt="MOD Icon" />
+                <h2 id="popup-name">Name</h2>
+                <p id="popup-info">Info</p>
+            </div>
+            <div class="download-options">
+                <div class="download-option" onclick="handleFreeDownload()">
+                    <div class="download-option-header">
+                        <span class="download-option-icon">🆓</span>
+                        <span class="download-option-title">Tải Miễn Phí</span>
+                    </div>
+                    <p class="download-option-desc">Vượt link quảng cáo để tải xuống (3-5 giây) mọi người vượt link giúp mình duy trì web nhé❤️</p>
+                </div>
+                <div class="download-option" onclick="toggleVipKeyInput()">
+                    <span class="download-option-badge">VIP</span>
+                    <div class="download-option-header">
+                        <span class="download-option-icon">⚡</span>
+                        <span class="download-option-title">Tải VIP</span>
+                    </div>
+                    <p class="download-option-desc">Nhập mã VIP để tải trực tiếp không quảng cáo</p>
+                </div>
+            </div>
+            <div class="vip-key-section" id="vipKeySection">
+                <p style="text-align: center; margin-bottom: 10px; font-weight: 600; color: var(--highlight);">🔑 Nhập mã VIP của bạn</p>
+                <div class="vip-key-input">
+                    <input type="text" id="vipKeyInput" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19"/>
+                    <button onclick="verifyAndDownload()" id="verifyBtn">Xác Nhận</button>
+                </div>
+                <div class="key-message" id="keyMessage"></div>
+                <button class="download-direct-btn" id="downloadDirectBtn" onclick="handleDirectDownload()"><span>⬇️</span> Tải Xuống Ngay</button>
+                <p style="text-align: center; margin-top: 15px; font-size: 0.85em; color: var(--text-sub); opacity: 0.7;">💡 Liên hệ admin để mua mã VIP</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- LOGIC THEME ---
+        function applyTheme(theme) {
+            document.body.classList.toggle('dark', theme === 'dark');
+        }
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'themeChange') applyTheme(event.data.theme);
+        });
+        const savedTheme = sessionStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        // --- LOGIC GỐC + UPDATED POPUP LOGIC ---
+        let currentDownloadUrl = '';
+        let currentItem = {};
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/mod.json'); 
+                const data = await response.json();
+                renderItems(data);
+            } catch (error) {
+                document.getElementById('items-container').innerHTML = '<p style="color:#e74c3c;text-align:center;">❌ Lỗi tải dữ liệu.</p>';
+            }
+        }
+
+        function renderItems(items) {
+            const container = document.getElementById('items-container');
+            container.innerHTML = items.map(item => `
+                <div class="item-card">
+                    <div class="card-content">
+                        <div class="card-app-header">
+                            <div class="icon-wrapper">
+                                <img src="${item.iconUrl || 'https://placehold.co/70x70/8b5cf6/ffffff?text=MOD'}" alt="${item.title}" class="app-icon" onerror="this.src='https://placehold.co/70x70/8b5cf6/ffffff?text=MOD';">
+                                ${item.tag ? `<span class="app-tag">${item.tag}</span>` : ''}
+                            </div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">${item.title}</h3>
+                                <p class="card-version">Version: ${item.version || 'N/A'}</p>
+                            </div>
+                        </div>
+                        <ul class="metadata">
+                            <li><i class="fas fa-info-circle"></i> Mô tả: ${item.description || 'N/A'}</li>
+                            <li><i class="fas fa-calendar-alt"></i> Ngày cập nhật: ${item.date || 'N/A'}</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="download-btn-card" onclick='event.stopPropagation(); showDownloadPopup(${JSON.stringify(item).replace(/'/g, "&apos;")})'>
+                            Download <i class="fas fa-arrow-alt-circle-down"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function showDownloadPopup(item) {
+            currentItem = item;
+            document.getElementById('popup-name').textContent = item.title;
+            document.getElementById('popup-info').textContent = `v${item.version || 'N/A'} • ${item.date || 'N/A'}`;
+            document.getElementById('popup-icon').src = item.iconUrl || 'https://placehold.co/70x70/8b5cf6/ffffff?text=MOD';
+            currentDownloadUrl = item.downloadUrl;
+            
+            const vipSection = document.getElementById('vipKeySection');
+            const downloadBtn = document.getElementById('downloadDirectBtn');
+            const keyMessage = document.getElementById('keyMessage');
+            const keyInput = document.getElementById('vipKeyInput');
+
+            vipSection.classList.remove('active');
+            downloadBtn.classList.remove('show');
+            keyMessage.className = 'key-message';
+            keyMessage.textContent = '';
+            keyInput.value = '';
+            
+            document.getElementById('downloadPopup').classList.add('active');
+            document.querySelector('.download-popup-content').scrollTop = 0;
+        }
+
+        function closeDownloadPopup() { document.getElementById('downloadPopup').classList.remove('active'); }
+
+        function handleFreeDownload() {
+            if (!currentDownloadUrl) {
+                alert('❌ Link tải không khả dụng!');
+                return;
+            }
+            window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(currentDownloadUrl)}`, '_blank');
+            setTimeout(() => closeDownloadPopup(), 1000);
+        }
+
+        function toggleVipKeyInput() {
+            const section = document.getElementById('vipKeySection');
+            section.classList.toggle('active');
+            if (section.classList.contains('active')) {
+                setTimeout(() => {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    document.getElementById('vipKeyInput').focus();
+                }, 100);
+            }
+        }
+
+        document.getElementById('vipKeyInput').addEventListener('input', (e) => {
+            let value = e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+            let formatted = '';
+            for (let i = 0; i < value.length && i < 16; i++) {
+                if (i > 0 && i % 4 === 0) formatted += '-';
+                formatted += value[i];
+            }
+            e.target.value = formatted;
+        });
+
+        async function verifyAndDownload() {
+            const keyInput = document.getElementById('vipKeyInput');
+            const verifyBtn = document.getElementById('verifyBtn');
+            const keyMessage = document.getElementById('keyMessage');
+            const downloadBtn = document.getElementById('downloadDirectBtn');
+            const key = keyInput.value.trim();
+
+            if (!key || key.length < 19) {
+                keyMessage.className = 'key-message error';
+                keyMessage.textContent = '❌ Vui lòng nhập đầy đủ mã VIP!';
+                return;
+            }
+
+            verifyBtn.disabled = true;
+            verifyBtn.innerHTML = '<span class="spinner"></span> Đang xác thực...';
+            keyMessage.className = 'key-message';
+            keyMessage.textContent = '';
+            downloadBtn.classList.remove('show');
+
+            try {
+                const response = await fetch('/api/keys/verify', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ key: key })
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    keyMessage.className = 'key-message success';
+                    let successMsg = '✅ Xác thực thành công!\n';
+                    successMsg += result.remainingUses !== null ? `📊 Còn lại: ${result.remainingUses} lượt` : '\n♾️ Không giới hạn lượt';
+                    
+                    keyMessage.textContent = successMsg;
+                    downloadBtn.classList.add('show');
+                    setTimeout(() => downloadBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 200);
+                } else {
+                    keyMessage.className = 'key-message error';
+                    keyMessage.textContent = '❌ ' + (result.error || 'Mã không hợp lệ');
+                }
+            } catch (error) {
+                keyMessage.className = 'key-message error';
+                keyMessage.textContent = '❌ Lỗi kết nối!';
+            } finally {
+                verifyBtn.disabled = false;
+                verifyBtn.textContent = 'Xác Nhận';
+            }
+        }
+
+        function handleDirectDownload() {
+            window.open(currentDownloadUrl, '_blank');
+            const keyMessage = document.getElementById('keyMessage');
+            keyMessage.className = 'key-message success';
+            keyMessage.textContent = '✅ Đã mở link tải xuống!\n\n🔄 Popup sẽ tự động đóng...';
+            setTimeout(() => closeDownloadPopup(), 2000);
+        }
+
+        document.getElementById('downloadPopup').addEventListener('click', (event) => {
+            if (event.target === document.getElementById('downloadPopup')) closeDownloadPopup();
+        });
+
+        loadData();
+        
+        function forceZoom() {
+            const isMobile = window.innerWidth <= 768;
+            if (!isMobile) document.body.style.zoom = "0.75"; 
+            else document.body.style.zoom = "1.0"; 
+        }
+        document.addEventListener("DOMContentLoaded", forceZoom);
+        window.addEventListener("resize", forceZoom);
+
+        function forceZoom() {
+    	document.body.style.zoom = "0.75";}
+    	document.addEventListener("DOMContentLoaded", forceZoom);
+    	window.addEventListener("resize", forceZoom);
+    	window.addEventListener("orientationchange", forceZoom);
+    </script>
+</body>
+</html>

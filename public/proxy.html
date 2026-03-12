@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Store - Hackmodvip System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .spinner {
+            display: inline-block;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #38bdf8;
+            border-radius: 50%;
+            width: 24px; height: 24px;
+            animation: spin 1s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#0B1120] text-white min-h-screen flex flex-col relative overflow-x-hidden selection:bg-blue-500/30">
+
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+        <div class="absolute top-[-10%] left-[-10%] w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[800px] h-[800px] bg-purple-600/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <header class="w-full py-6 px-6 md:px-12 flex justify-between items-center border-b border-white/5 bg-[#0B1120]/80 backdrop-blur-md sticky top-0 z-50">
+        <a href="/" class="text-2xl font-extrabold tracking-tight flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+                <i class="fa-solid fa-shield-halved text-white text-lg"></i>
+            </div>
+            <span>VPN<span class="text-blue-500">STORE🇻🇳</span></span>
+        </a>
+        <div class="flex items-center gap-4">
+             <a href="https://t.me/tomqtx1111" target="_blank" class="hidden md:flex px-6 py-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition font-medium items-center gap-2">
+                <i class="fa-regular fa-paper-plane text-blue-400"></i> Liên hệ Admin
+            </a>
+        </div>
+    </header>
+
+    <section class="text-center py-16 px-4 relative z-10">
+        <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-bold uppercase tracking-wider">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            Hệ thống Server Riêng Biệt
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
+           🇻🇳 IP VN 🇻🇳 <br>
+            <span class="gradient-text">Tốc Độ & Bảo Mật</span>
+        </h1>
+        <p class="text-slate-400 max-w-3xl mx-auto text-xl mb-10 leading-relaxed">
+            Giải pháp Shadowrocket & WireGuard 4G Private. 
+            IP Việt Nam, Ping ổn định, hỗ trợ truy cập ứng dụng của VN bị chặn tại nước ngoài như VNeID, Rổ Phim,... và 1 số website chặn truy cập tại nước ngoài <br><br> hiện tại hỗ trợ sử dụng trên Shadownrocket dành cho iphone/ipad
+        </p>
+    </section>
+
+    <section class="w-full max-w-[1800px] mx-auto px-4 md:px-8 pb-32 z-10 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+
+            <div class="glass-panel rounded-[2rem] p-8 flex flex-col hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="mb-6 flex justify-between items-start">
+                    <span class="bg-slate-800/80 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700">TEST</span>
+                    <i class="fa-solid fa-bolt text-slate-600 group-hover:text-yellow-400 transition text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-200">Gói Trải Nghiệm</h3>
+                <div class="my-6">
+                    <span class="text-4xl font-bold text-white">39k</span> 
+                    <span class="text-slate-500 font-medium">/ 7 ngày</span>
+                </div>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <ul class="text-base text-slate-400 space-y-4 mb-8 flex-1">
+                    <li class="flex items-center"><i class="fa-solid fa-check text-green-400 w-6"></i> 1 Thiết bị</li>
+                    <li class="flex items-center"><i class="fa-solid fa-bolt text-yellow-400 w-6"></i> Tốc độ 10-50 Mbps</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-400 w-6"></i> <strong> IP Việt Nam</strong></li>
+
+                </ul>
+                <button onclick="openPayment(39000, 'Gói Test 7 Ngày')" class="w-full py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition font-bold text-lg">Mua Ngay</button>
+            </div>
+
+            <div class="glass-panel rounded-[2rem] p-8 flex flex-col relative border-blue-500/50 shadow-2xl shadow-blue-500/10 transform md:-translate-y-6 z-10 bg-[#131d33]">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                    🔥 KHUYÊN DÙNG
+                </div>
+                <h3 class="text-2xl font-bold text-white mt-4">Gói 1 Tháng</h3>
+                <div class="my-6">
+                    <span class="text-5xl font-bold text-blue-400">69k</span> 
+                    <span class="text-slate-400 font-medium">/ tháng</span>
+                </div>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <ul class="text-base text-slate-300 space-y-4 mb-8 flex-1">
+                    <li class="flex items-center"><i class="fa-solid fa-check text-green-400 w-6"></i> 1 Thiết bị</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-400 w-6"></i> <strong> IP Việt Nam</strong></li>
+                    <li class="flex items-center"><i class="fa-solid fa-bolt text-yellow-400 w-6"></i> Tốc độ 10-50 Mbps</li>
+                    <li class="flex items-center"><i class="fa-solid fa-headset text-slate-400 w-6"></i> Hỗ trợ 24/7</li>
+                </ul>
+                <button onclick="openPayment(69000, 'Gói 1 Tháng')" class="w-full py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 transition font-bold text-lg shadow-lg shadow-blue-600/25">Đăng Ký Ngay</button>
+            </div>
+
+            <div class="glass-panel rounded-[2rem] p-8 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                <div class="mb-6 flex justify-between items-start">
+                    <span class="bg-purple-500/10 text-purple-400 border border-purple-500/20 text-xs font-bold px-3 py-1.5 rounded-lg">TIẾT KIỆM</span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-200">Gói 6 Tháng</h3>
+                <div class="my-6"><span class="text-4xl font-bold text-white">369k</span></div>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <ul class="text-base text-slate-400 space-y-4 mb-8 flex-1">
+                    <li class="flex items-center"><i class="fa-solid fa-check text-green-400 w-6"></i> 1 thiết bị</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-green-400 w-6"></i> Ổn định lâu dài</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-400 w-6"></i> <strong> IP Việt Nam</strong></li>
+                    <li class="flex items-center"><i class="fa-solid fa-bolt text-yellow-400 w-6"></i> Tốc độ 10-50 Mbps</li>
+                    <li class="flex items-center"><i class="fa-solid fa-headset text-slate-400 w-6"></i> Hỗ trợ 24/7</li>
+                </ul>
+                <button onclick="openPayment(369000, 'Gói 6 Tháng')" class="w-full py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 transition font-bold text-lg">Mua Ngay</button>
+            </div>
+
+            <div class="glass-panel rounded-[2rem] p-8 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                <div class="mb-6 flex justify-between items-start">
+                    <span class="bg-green-500/10 text-green-400 border border-green-500/20 text-xs font-bold px-3 py-1.5 rounded-lg">BEST VALUE</span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-200">Gói 1 Năm</h3>
+                <div class="my-6"><span class="text-4xl font-bold text-white">699k</span></div>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <ul class="text-base text-slate-400 space-y-4 mb-8 flex-1">
+                    <li class="flex items-center"><i class="fa-solid fa-check text-green-400 w-6"></i> Tiết kiệm hơn</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-green-400 w-6"></i> 1 thiết bị</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-400 w-6"></i> <strong> IP Việt Nam</strong></li>
+                    <li class="flex items-center"><i class="fa-solid fa-bolt text-yellow-400 w-6"></i> Tốc độ 10-50 Mbps</li>
+                    <li class="flex items-center"><i class="fa-solid fa-headset text-slate-400 w-6"></i> Ưu tiên hỗ trợ</li>
+
+                </ul>
+                <button onclick="openPayment(699000, 'Gói 1 Năm')" class="w-full py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 transition font-bold text-lg">Mua Ngay</button>
+            </div>
+
+            <div class="glass-panel rounded-[2rem] p-8 flex flex-col hover:-translate-y-2 transition-transform duration-300 border border-yellow-500/30 bg-yellow-900/5">
+                <div class="mb-6 flex justify-between items-start">
+                    <span class="bg-yellow-500 text-black text-xs font-bold px-3 py-1.5 rounded-lg">VVIP</span>
+                    <i class="fa-solid fa-crown text-yellow-500 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-yellow-500">GÓI VĨNH VIỄN</h3>
+                <div class="my-6"><span class="text-4xl font-bold text-white">4.999k</span></div>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <ul class="text-base text-slate-400 space-y-4 mb-8 flex-1">
+                    <li class="flex items-center"><i class="fa-solid fa-infinity text-yellow-500 w-6"></i> Dùng trọn đời tới Sập</li>
+                    <li class="flex items-center"><i class="fa-solid fa-server text-yellow-500 w-6"></i> Slot Server Riêng</li>
+                    <li class="flex items-center"><i class="fa-solid fa-bolt text-yellow-400 w-6"></i> Tốc độ cao tối ưu</li>
+                    <li class="flex items-center"><i class="fa-solid fa-star text-yellow-500 w-6"></i> Support 1:1 Riêng</li>
+                    <li class="flex items-center"><i class="fa-solid fa-star text-yellow-500 w-6"></i> Hỗ trợ tải Shadownrocket</li>
+                    <li class="flex items-center"><i class="fa-solid fa-infinity text-yellow-500 w-6"></i> Tạo riêng 5 thiết bị</li>
+
+                </ul>
+                <button onclick="openPayment(4999000, 'VIP TRỌN ĐỜI')" class="w-full py-4 rounded-2xl bg-yellow-500 hover:bg-yellow-400 text-black transition font-bold text-lg shadow-lg shadow-yellow-500/20">Mua Ngay</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GIỚI THIỆU CUỐI WEB -->
+<section class="w-full border-t border-white/5 bg-[#0B1120]/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 py-16 text-center">
+
+        <p class="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed mb-12">
+            Chúng tôi cung cấp giải pháp VPN <strong>IP Việt Nam Private</strong>, tối ưu riêng cho người Việt
+            đang sinh sống, làm việc và học tập ở nước ngoài.  
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-panel rounded-2xl p-6">
+                <i class="fa-solid fa-lock text-blue-400 text-3xl mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Bảo mật tuyệt đối</h3>
+                <p class="text-slate-400 text-sm">
+                    Giao thức Shadowrocket & WireGuard, mã hóa đầu cuối, không log, không theo dõi.
+                </p>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-6">
+                <i class="fa-solid fa-gauge-high text-yellow-400 text-3xl mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Tốc độ ổn định</h3>
+                <p class="text-slate-400 text-sm">
+                    Server 4G/Private, ping thấp, truy cập mượt VNeID, ngân hàng, website Việt Nam.
+                </p>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-6">
+                <i class="fa-solid fa-headset text-green-400 text-3xl mb-4"></i>
+                <h3 class="text-lg font-bold text-white mb-2">Hỗ trợ nhanh 24/7</h3>
+                <p class="text-slate-400 text-sm">
+                    <a href="https://t.me/tomqtx1111" target="_blank"
+   						class="text-blue-400 text-sm font-medium inline-flex items-center justify-center gap-2">
+    					<i class="fa-brands fa-telegram text-blue-400"></i>
+    					Click vào đây để Liên hệ Admin để được hỗ trợ
+					</a>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12 text-sm text-slate-500">
+            © <span id="year"></span> VPNSTORE🇻🇳 • Hackmodvip System • All rights reserved
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+</script>
+
+
+    <div id="paymentModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-md transition-opacity" onclick="closeModal()"></div>
+        
+			<div class="relative bg-[#1e293b] w-full max-w-md max-h-[90vh] overflow-y-auto rounded-3xl border border-white/10 p-6 md:p-8 shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white w-10 h-10 flex items-center justify-center rounded-full bg-white/5 transition">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            
+            <div id="qr-area" class="text-center">
+                <h3 class="text-2xl font-bold text-white mb-1">Thanh Toán</h3>
+                <p id="pkg-name" class="text-blue-400 font-bold text-lg mb-6">...</p>
+                
+                <div class="bg-white p-4 rounded-2xl shadow-inner mb-6 mx-auto w-fit">
+                    <img id="qr-image" src="" alt="QR Code" class="w-56 h-56 object-contain rounded-xl">
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-white/5">
+                        <p class="text-slate-400 text-xs uppercase font-bold tracking-wider mb-2">Nội dung chuyển khoản (Bắt buộc)</p>
+                        <div id="trans-code" onclick="copyCode()" class="text-blue-400 font-mono text-2xl font-bold cursor-pointer hover:text-blue-300 transition select-all">
+                            LOADING...
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-1">(Bấm vào mã để copy)</p>
+                    </div>
+                    
+                    <div id="status-text" class="flex items-center justify-center gap-3 text-slate-300 font-medium py-3 bg-blue-600/10 rounded-xl border border-blue-600/20">
+                        <span class="spinner"></span> Đang chờ thanh toán...
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-xs text-slate-500 bg-red-500/5 p-3 rounded-lg border border-red-500/10">
+                    <p class="text-red-400 font-semibold"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Lưu ý quan trọng:</p>
+                    <p>Không tắt tab này cho đến khi nhận được Key. Hệ thống sẽ tự động hiển thị ngay khi tiền về.<br>hãy chụp lại màn hình ảnh qr vpn nếu thanh toán thành công</p>
+                </div>
+            </div>
+
+            <div id="result-area" class="hidden text-center py-2">
+                <div class="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-green-500/20">
+                    <i class="fa-solid fa-check text-3xl text-green-500"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-2">Thành Công!</h2>
+                <p class="text-slate-400 text-sm mb-6">Tài khoản của bạn đã được kích hoạt.</p>
+                
+                <div class="bg-slate-900 border border-slate-700 rounded-2xl p-6 mb-6">
+                    <div id="success-key-container"></div>
+                </div>
+                
+                <button onclick="closeModal()" class="w-full py-4 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-bold transition">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const BANK_INFO = {
+            id: 'MB',            
+            acc: '0862222849',    
+            name: 'HO HUU CUONG' 
+        };
+
+        let checkInterval;
+        let isChecking = false;
+
+        // TẠO MÃ 9 KÝ TỰ (Bảo mật)
+        function generateRandomCode() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let result = '';
+            for (let i = 0; i < 9; i++) {
+                result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return result;
+        }
+
+        function openPayment(amount, packageName) {
+            let days = 30;
+            if (packageName.includes('7 Ngày')) days = 7;
+            if (packageName.includes('6 Tháng')) days = 180;
+            if (packageName.includes('1 Năm')) days = 365;
+            if (packageName.includes('TRỌN ĐỜI')) days = 3650;
+
+            const modal = document.getElementById('paymentModal');
+            const qrImg = document.getElementById('qr-image');
+            const codeEl = document.getElementById('trans-code');
+            const nameEl = document.getElementById('pkg-name');
+            
+            document.getElementById('qr-area').classList.remove('hidden');
+            document.getElementById('result-area').classList.add('hidden');
+            
+            const code = generateRandomCode(); 
+            
+            nameEl.innerText = packageName;
+            codeEl.innerText = code;
+            
+            const qrUrl = `https://img.vietqr.io/image/${BANK_INFO.id}-${BANK_INFO.acc}-compact.jpg?amount=${amount}&addInfo=${code}&accountName=${encodeURIComponent(BANK_INFO.name)}`;
+            qrImg.src = qrUrl;
+
+            modal.classList.remove('hidden');
+
+            startChecking(code, days);
+        }
+
+        function closeModal() {
+            document.getElementById('paymentModal').classList.add('hidden');
+            if (checkInterval) clearInterval(checkInterval);
+            isChecking = false;
+        }
+
+        function copyCode() {
+            const code = document.getElementById('trans-code').innerText;
+            navigator.clipboard.writeText(code).then(() => alert('Đã sao chép nội dung: ' + code));
+        }
+
+        function copyLinkVPN() {
+            const linkInput = document.getElementById('vpn-link-input');
+            linkInput.select();
+            linkInput.setSelectionRange(0, 99999); /* Cho mobile */
+            navigator.clipboard.writeText(linkInput.value).then(() => alert('Đã sao chép liên kết Shadowrocket!'));
+        }
+
+        async function startChecking(contentCode, planDays) {
+            if (isChecking) return;
+            isChecking = true;
+            
+            checkInterval = setInterval(async () => {
+                try {
+                    const res = await fetch('/api/payment?action=buy', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ 
+                            content: contentCode,
+                            plan_days: planDays 
+                        })
+                    });
+                    
+                    const data = await res.json();
+
+                    if (data.status === 'success') {
+                        clearInterval(checkInterval);
+                        isChecking = false;
+                        
+                        document.getElementById('qr-area').classList.add('hidden');
+                        document.getElementById('result-area').classList.remove('hidden');
+                        
+                        const container = document.getElementById('success-key-container');
+                        container.innerHTML = '';
+
+                        // 1. Ảnh QR Code Cấu Hình (Để quét máy phụ)
+                        const qrImg = document.createElement('img');
+                        qrImg.src = data.data.qr_image;
+                        qrImg.className = "w-48 h-48 mx-auto rounded-xl shadow-lg mb-4 border-4 border-white bg-white";
+                        
+                        // 2. Ô Input chứa Link wg:// (Thay vì Textarea config cũ)
+                        const linkInput = document.createElement('input');
+                        linkInput.type = "text";
+                        linkInput.id = "vpn-link-input";
+                        // Backend giờ trả về Link wg:// trong conf_text (hoặc conf)
+                        linkInput.value = data.data.conf_text; 
+                        linkInput.className = "w-full bg-slate-800 text-slate-300 p-3 rounded-xl text-sm font-mono mb-4 focus:outline-none border border-slate-700 text-center";
+                        linkInput.readOnly = true;
+                        linkInput.onclick = function() { this.select(); };
+
+                        // 3. Thông báo hạn sử dụng
+                        const expireText = document.createElement('p');
+                        const date = new Date(data.data.expire);
+                        expireText.className = "text-green-400 text-xs mb-4 font-bold flex justify-center items-center gap-2";
+                        expireText.innerHTML = `<i class="fa-solid fa-clock"></i> Hết hạn: ${date.toLocaleDateString('vi-VN')}`;
+
+                        // 4. Nút Sao Chép Link
+                        const btnCopy = document.createElement('button');
+                        btnCopy.innerHTML = '<i class="fa-solid fa-link"></i> Sao Chép Liên Kết Shadowrocket';
+                        btnCopy.className = "w-full py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold text-white transition shadow-lg shadow-blue-600/30 text-sm";
+                        btnCopy.onclick = copyLinkVPN;
+
+                        container.appendChild(qrImg);
+                        container.appendChild(expireText);
+                        container.appendChild(linkInput);
+                        container.appendChild(btnCopy);
+                    }
+                } catch (err) {
+                    console.error("Lỗi kết nối:", err);
+                }
+            }, 3000); 
+        }
+    </script>
+</body>
+</html>

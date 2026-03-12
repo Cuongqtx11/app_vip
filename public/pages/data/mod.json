@@ -1,0 +1,88 @@
+[
+  {
+    "id": "mod-1768630922595",
+    "type": "mod",
+    "date": "2026-01-17",
+    "title": "Liên Quân Indo",
+    "version": "1.1.1.1",
+    "description": "chấp tố indo",
+    "downloadUrl": "https://www.mediafire.com/file/vqce43tx80y621f/Arena+of+Valor_1.61.11561513_1768465514.ipa/file",
+    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRhlylC2nZ2dV2MYxu_8OKuKe5j1M85SivsZYDXvWsaL8bE4L6i162ww&s=10",
+    "tag": "dev"
+  },
+  {
+    "id": "mod-1764897486424",
+    "type": "mod",
+    "date": "2025-12-05",
+    "title": "Zombie Tsunami",
+    "version": "4.3.0",
+    "description": "Không quảng cáo - Mua hàng miễn phí - Bấm mua rồi huỷ - Mod Tiếng việt",
+    "downloadUrl": "https://www.mediafire.com/file/660lh5wk4na1fx6/Zombie_Tsunami_4.3.0.ipa/file",
+    "iconUrl": "https://play-lh.googleusercontent.com/y2v9w4KjUe4djmd3yYgj2_XrDIt_D9JO2c2NkYdxtYyE6cGl21JgU4aMqTEcoQzQorLD",
+    "tag": "Vip"
+  },
+  {
+    "id": "mod-1764836453031",
+    "type": "mod",
+    "icon": "https://taigtavicecity.com/wp-content/uploads/2025/02/Download-GTA-Vice-City-Viet-Hoa-Full-Huong-dan-cai-dat-chi-tiet-1.png",
+    "source": "manual",
+    "title": "GTA vice city",
+    "version": "0.0.1",
+    "downloadUrl": "https://www.mediafire.com/file/a7cs0ana7gkz78o/GTA+Vice+City+Việt+Hoá.ipa/file",
+    "date": "2025-12-04",
+    "iconUrl": "https://taigtavicecity.com/wp-content/uploads/2025/02/Download-GTA-Vice-City-Viet-Hoa-Full-Huong-dan-cai-dat-chi-tiet-1.png",
+    "tag": "Vip"
+  },
+  {
+    "id": "mod-1764410359414",
+    "type": "mod",
+    "icon": "https://img.tapimg.net/market/images/67940346183b8daef7c9cf66f4fdecb1.jpg",
+    "source": "manual",
+    "title": "INSIDE",
+    "version": "1.1.10",
+    "downloadUrl": "https://www.mediafire.com/file/7mh2sqerec3p9gq/Inside+full_1.1.10.ipa/file",
+    "date": "2025-11-29",
+    "iconUrl": "https://img.tapimg.net/market/images/67940346183b8daef7c9cf66f4fdecb1.jpg",
+    "tag": "HOT"
+  },
+  {
+    "id": 1,
+    "title": "Rổ Phim",
+    "description": "kho phim miễn phí, app ro phim mod RoX sử dụng vip tới 2099",
+    "version": "1.0.5",
+    "downloadUrl": "https://www.mediafire.com/file/0ss1rj0spozj8ug/ro+phim_1.0.5_1760452615.ipa/file",
+    "date": "2025-11-27",
+    "iconUrl": "https://i.imgur.com/ysrsn4L.jpeg",
+    "tag": "HOT"
+  },
+  {
+    "id": 1,
+    "title": "Locket Gold",
+    "description": "Xoá bản gốc mới có thể đăng nhập. quay video 5-15s",
+    "version": "2.23.0",
+    "downloadUrl": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2025/Locket_2.23.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "date": "2025-11-27",
+    "iconUrl": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "tag": "Gold"
+  },
+  {
+    "id": 2,
+    "title": "Spotify Premium",
+    "description": "Nghe nhạc không quảng cáo, các chức năng premium",
+    "version": "9.1.0",
+    "downloadUrl": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-11-2025/Spotify_9.1.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "date": "2025-11-29",
+    "iconUrl": "https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=w240-h480-rw",
+    "tag": "Pre"
+  },
+  {
+    "id": 3,
+    "title": "YouTube",
+    "description": "Chặn quảng cáo, phát nền, picture-in-picture. các chức năng premium.",
+    "version": "20.47.3",
+    "downloadUrl": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-11-2025/YouTubeOLED_20.47.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "date": "2025-11-29",
+    "iconUrl": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.google.ios.youtube.png",
+    "tag": "pre"
+  }
+]

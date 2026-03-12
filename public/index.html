@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>Kho App Vip - Ultimate Store</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: { 
+            brand: '#7c3aed', 
+            brandDark: '#6d28d9',
+            bgLight: '#f4f4f5', 
+            bgDark: '#000000',
+            cardLight: '#ffffff',
+            cardDark: '#1c1c1e'
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.3s ease-out forwards',
+            'slide-up': 'slideUp 0.4s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* UI nhỏ gọn 85% như cũ */
+    :root { font-size: 85%; }
+
+    /* Nhưng input LUÔN 16px thực tế để iOS không zoom
+       16px / 0.85 = 18.8px — bù lại việc root bị scale */
+    input, textarea, select {
+      font-size: 18.8px !important;
+      -webkit-text-size-adjust: 100%;
+      touch-action: manipulation;
+    }
+    body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; user-select: none; width: 100%; overflow-x: hidden; touch-action: manipulation; }
+    
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+    .header-glass {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .dark .header-glass {
+      background: rgba(0, 0, 0, 0.75);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .vip-tab-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      height: calc(4.2rem + env(safe-area-inset-bottom)); 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(25px);
+      border-top: 1px solid rgba(0,0,0,0.05);
+      display: flex; justify-content: space-evenly; align-items: flex-start;
+      padding-top: 0.5rem; 
+      padding-bottom: env(safe-area-inset-bottom);
+      z-index: 50;
+    }
+    .dark .vip-tab-bar {
+      background: rgba(28, 28, 30, 0.95);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tab-btn {
+      flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.3rem; color: #999; transition: all 0.3s; background: none; border: none; cursor: pointer;
+    }
+    .tab-btn i { width: 1.5rem; height: 1.5rem; transition: transform 0.2s; } 
+    .tab-btn span { font-size: 0.7rem; font-weight: 700; transition: color 0.2s; }
+    .tab-btn.active { color: #7c3aed; }
+    .dark .tab-btn.active { color: #a78bfa; }
+    .tab-btn.active i { transform: translateY(-2px); }
+
+    .sub-tab-container {
+      display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.25rem; margin-bottom: 1.25rem;
+      background: rgba(0,0,0,0.05); border-radius: 0.75rem;
+    }
+    .dark .sub-tab-container { background: rgba(255,255,255,0.05); }
+    
+    .sub-tab-btn {
+      flex: 1; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.8rem; font-weight: 600;
+      text-align: center; white-space: nowrap; transition: all 0.2s;
+    }
+    .sub-tab-btn.active { background: #fff; color: #7c3aed; shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .dark .sub-tab-btn.active { background: #2c2c2e; color: #fff; }
+
+    .page-btn {
+      width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center;
+      border-radius: 0.6rem; background: #fff; color: #666; font-weight: 600; font-size: 0.9rem;
+      border: 1px solid #eee; transition: all 0.2s;
+    }
+    .dark .page-btn { background: #1c1c1e; color: #aaa; border-color: #333; }
+    .page-btn.active { background: #7c3aed; color: #fff; border-color: #7c3aed; }
+
+    .pagination { display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 1.5rem; flex-wrap: wrap; width: 100%; padding-bottom: 2rem; }
+    .snap-x-mandatory { scroll-snap-type: x mandatory; }
+    .snap-center { scroll-snap-align: center; }
+
+    /* ============================================================
+       APP STORE MODAL - NÂNG CẤP MỚI
+    ============================================================ */
+
+    /* Overlay */
+    #appModal {
+      position: fixed;
+      inset: 0;
+      z-index: 70;
+      display: flex;
+      align-items: flex-end;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    #appModal.modal-visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+    #appModal.hidden { display: none; }
+
+    /* Panel - bottom sheet */
+    #appModalPanel {
+      width: 100%;
+      max-height: 92dvh;
+      background: #fff;
+      border-radius: 26px 26px 0 0;
+      display: flex;
+      flex-direction: column;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+      border-top: 1px solid rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    .dark #appModalPanel {
+      background: #1c1c1e;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    #appModal.modal-visible #appModalPanel {
+      transform: translateY(0);
+    }
+
+    /* Handle */
+    .modal-handle-bar {
+      width: 36px; height: 5px;
+      background: #d1d1d6;
+      border-radius: 3px;
+      margin: 10px auto 0;
+      flex-shrink: 0;
+    }
+    .dark .modal-handle-bar { background: #48484a; }
+
+    /* Scrollable inner */
+    #modalScroll {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      flex: 1;
+      scrollbar-width: none;
+    }
+    #modalScroll::-webkit-scrollbar { display: none; }
+
+    /* Header block */
+    .modal-app-header {
+      padding: 16px 20px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .modal-app-icon {
+      width: 96px; height: 96px;
+      border-radius: 22px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #f2f2f7;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .dark .modal-app-icon {
+      background: #2c2c2e;
+      border-color: rgba(255,255,255,0.08);
+    }
+    .modal-title-col { flex: 1; min-width: 0; padding-top: 4px; }
+    .modal-app-name {
+      font-size: 20px; font-weight: 800; line-height: 1.2;
+      color: #1c1c1e;
+      overflow: hidden; text-overflow: ellipsis;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    }
+    .dark .modal-app-name { color: #fff; }
+    .modal-app-dev { font-size: 13px; color: #636366; font-weight: 600; margin-top: 4px; }
+    .dark .modal-app-dev { color: #aeaeb2; }
+    .modal-app-genre-tag {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 11px; font-weight: 700;
+      color: #7c3aed;
+      background: rgba(124,58,237,0.08);
+      padding: 3px 8px; border-radius: 6px;
+    }
+
+    /* Action buttons */
+    .modal-actions {
+      padding: 14px 20px 0;
+      display: flex;
+      gap: 9px;
+    }
+    .btn-action {
+      border: none;
+      border-radius: 14px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .btn-vip {
+      flex: 1;
+      padding: 14px;
+      font-size: 15px;
+      background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+      color: #fff;
+      box-shadow: 0 4px 18px rgba(124,58,237,0.35);
+    }
+    .btn-vip:active { transform: scale(0.97); box-shadow: 0 2px 8px rgba(124,58,237,0.3); }
+    .btn-free {
+      padding: 14px 18px;
+      font-size: 13px;
+      background: #f2f2f7;
+      color: #636366;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .dark .btn-free {
+      background: #2c2c2e;
+      color: #aeaeb2;
+      border-color: rgba(255,255,255,0.08);
+    }
+    .btn-free:active { transform: scale(0.97); }
+
+    /* VIP input */
+    .vip-input-zone {
+      margin: 10px 20px 0;
+      border-radius: 16px;
+      background: #faf5ff;
+      border: 1px solid rgba(124,58,237,0.15);
+      padding: 14px;
+      display: none;
+      animation: slideDown 0.22s ease;
+    }
+    .dark .vip-input-zone {
+      background: rgba(124,58,237,0.08);
+      border-color: rgba(124,58,237,0.25);
+    }
+    .vip-input-zone.show { display: block; }
+    @keyframes slideDown { from { opacity:0; transform:translateY(-6px); } to { opacity:1; transform:translateY(0); } }
+
+    .vip-input-label {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; color: #7c3aed; text-align: center; margin-bottom: 10px;
+    }
+    .vip-input-field {
+      width: 100%;
+      background: #fff;
+      border: 1.5px solid rgba(124,58,237,0.2);
+      border-radius: 12px;
+      padding: 12px 14px;
+      text-align: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px; /* iOS zoom khi < 16px — giữ đúng 16px */
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #1c1c1e;
+      outline: none;
+      transition: border-color 0.2s;
+      margin-bottom: 10px;
+      /* Chặn iOS auto-zoom khi focus */
+      -webkit-text-size-adjust: 100%;
+      touch-action: manipulation;
+    }
+    .dark .vip-input-field {
+      background: #2c2c2e;
+      color: #fff;
+      border-color: rgba(124,58,237,0.3);
+    }
+    .vip-input-field:focus { border-color: #7c3aed; }
+    .vip-confirm-btn {
+      width: 100%;
+      padding: 13px;
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px; font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .vip-confirm-btn:active { transform: scale(0.98); }
+    #vipMsg {
+      text-align: center; font-size: 12px; font-weight: 700;
+      margin-top: 8px;
+    }
+    .buy-key-link {
+      display: block; text-align: center; margin-top: 10px;
+      font-size: 11px; font-weight: 700; color: #ef4444;
+      text-decoration: underline; opacity: 0.8;
+    }
+
+    /* Free download btn inside vip zone */
+    .free-dl-btn {
+      width: 100%; margin-top: 8px; padding: 12px;
+      background: #f2f2f7; border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 12px; cursor: pointer;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px; font-weight: 700; color: #3a3a3c;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      transition: all 0.2s;
+    }
+    .dark .free-dl-btn { background: #3a3a3c; color: #fff; border-color: rgba(255,255,255,0.08); }
+    .free-dl-btn:active { transform: scale(0.98); }
+
+    /* Stats row - App Store style */
+    .modal-stats-row {
+      display: flex;
+      margin: 18px 20px 0;
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .dark .modal-stats-row { border-color: rgba(255,255,255,0.08); }
+    .stat-cell {
+      flex: 1;
+      padding: 12px 4px;
+      text-align: center;
+      background: #f9f9fb;
+      border-right: 1px solid rgba(0,0,0,0.07);
+      position: relative;
+    }
+    .dark .stat-cell {
+      background: #2c2c2e;
+      border-right-color: rgba(255,255,255,0.08);
+    }
+    .stat-cell:last-child { border-right: none; }
+    .stat-val {
+      font-size: 15px; font-weight: 800;
+      color: #1c1c1e;
+      display: block; line-height: 1.2;
+    }
+    .dark .stat-val { color: #fff; }
+    .stat-lbl {
+      font-size: 9px; font-weight: 700;
+      color: #aeaeb2; text-transform: uppercase;
+      letter-spacing: 0.4px; margin-top: 2px; display: block;
+    }
+
+    /* Screenshots */
+    .modal-section { padding: 20px 20px 0; }
+    .modal-section-title {
+      font-size: 19px; font-weight: 800; color: #1c1c1e; margin-bottom: 12px;
+    }
+    .dark .modal-section-title { color: #fff; }
+
+    .screenshots-scroll {
+      display: flex; gap: 10px;
+      overflow-x: auto; -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; padding-bottom: 2px;
+    }
+    .screenshots-scroll::-webkit-scrollbar { display: none; }
+
+    .screenshot-frame {
+      flex-shrink: 0;
+      border-radius: 16px; overflow: hidden;
+      height: 220px; width: auto;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: #f2f2f7;
+      position: relative;
+    }
+    .dark .screenshot-frame { border-color: rgba(255,255,255,0.06); background: #2c2c2e; }
+    .screenshot-frame img {
+      height: 100%; width: auto; display: block; object-fit: cover;
+    }
+    .screenshot-skeleton {
+      height: 220px; width: 110px; border-radius: 16px;
+      background: linear-gradient(90deg, #f2f2f7 25%, #e5e5ea 50%, #f2f2f7 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      flex-shrink: 0;
+    }
+    .dark .screenshot-skeleton {
+      background: linear-gradient(90deg, #2c2c2e 25%, #3a3a3c 50%, #2c2c2e 75%);
+      background-size: 200% 100%;
+    }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+    /* Loading state */
+    .modal-loading {
+      padding: 40px 20px;
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+    }
+    .modal-spinner {
+      width: 28px; height: 28px;
+      border: 2.5px solid rgba(124,58,237,0.2);
+      border-top-color: #7c3aed;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .modal-loading p { font-size: 13px; color: #aeaeb2; font-weight: 600; }
+
+    /* Description */
+    .desc-box {
+      font-size: 14px; line-height: 1.7; color: #636366;
+      max-height: 80px; overflow: hidden;
+      position: relative; transition: max-height 0.35s ease;
+    }
+    .dark .desc-box { color: #aeaeb2; }
+    .desc-box.expanded { max-height: 800px; }
+    .desc-box::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 32px;
+      background: linear-gradient(transparent, #fff);
+      pointer-events: none; transition: opacity 0.3s;
+    }
+    .dark .desc-box::after { background: linear-gradient(transparent, #1c1c1e); }
+    .desc-box.expanded::after { opacity: 0; }
+    .desc-more-btn {
+      background: none; border: none; padding: 6px 0; cursor: pointer;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px; font-weight: 700; color: #7c3aed;
+    }
+
+    /* Info table */
+    .info-table { }
+    .info-row-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,0.05); font-size: 13px;
+    }
+    .dark .info-row-item { border-bottom-color: rgba(255,255,255,0.06); }
+    .info-row-item:last-child { border-bottom: none; }
+    .info-k { color: #8e8e93; font-weight: 600; }
+    .info-v { color: #1c1c1e; font-weight: 700; text-align: right; max-width: 58%; }
+    .dark .info-v { color: #fff; }
+
+    /* Rating stars */
+    .rating-stars { color: #ff9f0a; font-size: 13px; }
+
+    /* Divider */
+    .modal-divider {
+      height: 1px; background: rgba(0,0,0,0.05);
+      margin: 18px 20px 0;
+    }
+    .dark .modal-divider { background: rgba(255,255,255,0.06); }
+
+    /* iTunes badge */
+    .itunes-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 10px; font-weight: 700; color: #aeaeb2;
+      background: rgba(0,0,0,0.04); border-radius: 6px;
+      padding: 3px 8px; margin-top: 2px;
+    }
+    .dark .itunes-badge { background: rgba(255,255,255,0.06); }
+
+    /* Bottom pad */
+    .modal-bottom-pad { height: 24px; }
+
+    /* Close btn */
+    .modal-close-btn {
+      position: absolute; top: 14px; right: 16px; z-index: 10;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: rgba(0,0,0,0.07); border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s;
+    }
+    .dark .modal-close-btn { background: rgba(255,255,255,0.12); }
+    .modal-close-btn:active { transform: scale(0.9); }
+  </style>
+</head>
+<body class="bg-bgLight dark:bg-bgDark text-gray-900 dark:text-white transition-colors duration-300 font-sans h-[100dvh] flex flex-col overflow-hidden">
+
+  <header class="header-glass fixed top-0 w-full z-40 h-[68px] flex items-center px-5 transition-all duration-300 justify-between">
+    <div class="flex items-center gap-4 w-full max-w-6xl mx-auto relative">
+      <div class="font-extrabold text-2xl tracking-tight text-brand dark:text-white flex items-center gap-3 cursor-pointer shrink-0" onclick="loadData();">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand to-purple-600 flex items-center justify-center text-white shadow-lg shadow-brand/30">
+           <i data-lucide="zap" class="w-6 h-6"></i>
+        </div>
+        Kho Vip
+      </div>
+
+      <div id="searchContainer" class="flex-1 flex justify-end ml-4 transition-all duration-300">
+         <div class="relative group w-full max-w-[260px]">
+            <i data-lucide="search" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="w-full h-11 pl-11 pr-5 bg-gray-100 dark:bg-white/10 text-base rounded-full outline-none focus:ring-2 focus:ring-brand/50 transition-all placeholder-gray-500 text-gray-700 dark:text-gray-200">
+         </div>
+      </div>
+
+      <div class="flex items-center gap-3 ml-auto">
+        <button onclick="toggleTheme()" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition">
+          <i data-lucide="moon" class="w-5 h-5 dark:text-yellow-400"></i>
+        </button>
+        <button onclick="openAuthModal()" id="userIconBtn" class="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center active:scale-95 transition text-gray-600 dark:text-gray-300">
+          <i data-lucide="user" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContainer" class="flex-1 h-full overflow-y-auto overflow-x-hidden scrollbar-hide pt-[80px] pb-24 md:pb-10 relative scroll-smooth">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+       <div id="dynamicContent" class="min-h-[500px] animate-in fade-in duration-300">
+          <div class="flex flex-col items-center justify-center pt-32">
+             <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-brand"></div>
+          </div>
+       </div>
+    </div>
+  </main>
+
+  <nav class="vip-tab-bar">
+    <button onclick="switchTab('home')" class="tab-btn active" data-tab="home">
+      <i data-lucide="layout-grid"></i>
+      <span>Home</span>
+    </button>
+    <button onclick="switchTab('dylib')" class="tab-btn" data-tab="dylib">
+      <i data-lucide="cpu"></i>
+      <span>Dylib</span>
+    </button>
+    <button onclick="switchTab('ipa')" class="tab-btn" data-tab="ipa">
+      <i data-lucide="smartphone"></i>
+      <span>IPA</span>
+    </button>
+    <button onclick="switchTab('conf')" class="tab-btn" data-tab="conf">
+      <i data-lucide="shield-check"></i>
+      <span>Conf</span>
+    </button>
+    <button onclick="switchTab('cert')" class="tab-btn" data-tab="cert">
+      <i data-lucide="award"></i>
+      <span>SignIPA</span>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       APP STORE MODAL - NÂNG CẤP
+  ============================================================ -->
+  <div id="appModal" class="hidden">
+    <div id="appModalPanel">
+      
+      <!-- Handle -->
+      <div class="modal-handle-bar"></div>
+
+      <!-- Close button -->
+      <button class="modal-close-btn" onclick="closeModal('appModal')">
+        <i data-lucide="x" style="width:16px;height:16px;color:#636366;"></i>
+      </button>
+
+      <!-- Scrollable content -->
+      <div id="modalScroll">
+
+        <!-- App Header -->
+        <div class="modal-app-header">
+          <img id="mIcon" class="modal-app-icon" src="" onerror="this.src='https://placehold.co/96x96/f2f2f7/7c3aed?text=App'">
+          <div class="modal-title-col">
+            <div class="modal-app-name" id="mTitle">Đang tải...</div>
+            <div class="modal-app-dev" id="mDev">-</div>
+            <div id="mGenreTag" class="modal-app-genre-tag" style="display:none"></div>
+            <div id="mItunesBadge" style="display:none" class="itunes-badge">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="#aeaeb2"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 16.5v-9l7 4.5-7 4.5z"/></svg>
+              App Store
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="modal-actions">
+          <button class="btn-action btn-vip" onclick="showVipInput()">
+            ⬇️ Tải xuống
+          </button>
+        </div>
+
+        <!-- VIP Input Zone -->
+        <div class="vip-input-zone" id="vipArea">
+          <div class="vip-input-label">Nhập mã VIP để tải về</div>
+          <input type="text" id="vipKey" class="vip-input-field" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19">
+          <button class="vip-confirm-btn" id="verifyBtn" onclick="verifyKey()">XÁC NHẬN & TẢI</button>
+          <p id="vipMsg" class="hidden"></p>
+          <a href="payment.html" class="buy-key-link">MUA KEY VIP DOWNLOAD</a>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="modal-stats-row" id="mStatsRow">
+          <div class="stat-cell">
+            <span class="stat-val" id="mRating">-</span>
+            <span class="stat-lbl">Đánh giá</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-val" id="mVersion">-</span>
+            <span class="stat-lbl">Phiên bản</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-val" id="mSize">-</span>
+            <span class="stat-lbl">Dung lượng</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-val" id="mAge">4+</span>
+            <span class="stat-lbl">Độ tuổi</span>
+          </div>
+        </div>
+
+        <!-- Screenshots Section (chỉ hiện khi có data từ iTunes) -->
+        <div class="modal-section" id="screenshotsSection">
+          <div class="modal-section-title">Xem trước</div>
+          <div class="screenshots-scroll" id="mScreenshots">
+            <div class="screenshot-skeleton"></div>
+            <div class="screenshot-skeleton"></div>
+            <div class="screenshot-skeleton"></div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="modal-divider"></div>
+
+        <!-- Description -->
+        <div class="modal-section">
+          <div class="modal-section-title">Mô tả</div>
+          <div class="desc-box" id="mDesc">Đang tải thông tin...</div>
+          <button class="desc-more-btn" id="descMoreBtn" onclick="toggleDesc()">Xem thêm</button>
+        </div>
+
+        <!-- Divider -->
+        <div class="modal-divider" id="infoSectionDivider"></div>
+
+        <!-- Info Table (chỉ hiện khi có data iTunes) -->
+        <div class="modal-section" id="infoSection">
+          <div class="modal-section-title">Thông tin</div>
+          <div class="info-table">
+            <div class="info-row-item">
+              <span class="info-k">Nhà phát triển</span>
+              <span class="info-v" id="iDev">-</span>
+            </div>
+            <div class="info-row-item">
+              <span class="info-k">Thể loại</span>
+              <span class="info-v" id="iCat">-</span>
+            </div>
+            <div class="info-row-item">
+              <span class="info-k">Ngôn ngữ</span>
+              <span class="info-v" id="iLang">-</span>
+            </div>
+            <div class="info-row-item">
+              <span class="info-k">Cập nhật</span>
+              <span class="info-v" id="iUpdated">-</span>
+            </div>
+            <div class="info-row-item">
+              <span class="info-k">Yêu cầu iOS</span>
+              <span class="info-v" id="iCompat">-</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-bottom-pad"></div>
+      </div><!-- end modalScroll -->
+    </div><!-- end panel -->
+  </div><!-- end modal -->
+
+  <script>
+    // ============================================================
+    // STATE & DATA
+    // ============================================================
+    const DB = { ipa: [], dylib: [], conf: [], cert_sign: [], cert_cert: [], cert_mod: [] };
+    let KEYWORDS = { movie: [], social: [], photo: [], game: [] };
+
+    const path = window.location.pathname;
+    let initialTab = 'home';
+    if (path.includes('/signipa')) initialTab = 'cert';
+
+    const STATE = { 
+      currentTab: initialTab,
+      currentSubTab: 'sign', 
+      currentPage: 1, 
+      itemsPerPage: 24, 
+      currentItem: null,
+      currentFilter: 'all'
+    };
+
+    // iTunes API cache
+    const iTunesCache = {};
+    // Track các app đang được fetch để không gọi 2 lần
+    const iTunesFetching = {};
+
+    // ============================================================
+    // ITUNES API
+    // ============================================================
+    async function fetchITunes(appName, bundleID) {
+      const cacheKey = bundleID || appName;
+      if (iTunesCache[cacheKey]) return iTunesCache[cacheKey];
+      // Nếu đang fetch rồi thì chờ kết quả đó luôn
+      if (iTunesFetching[cacheKey]) return iTunesFetching[cacheKey];
+
+      const doFetch = async () => {
+        try {
+          if (bundleID) {
+            const r = await fetch(`https://itunes.apple.com/lookup?bundleId=${encodeURIComponent(bundleID)}&country=vn&limit=1`);
+            if (r.ok) {
+              const j = await r.json();
+              if (j.results && j.results.length > 0) {
+                iTunesCache[cacheKey] = j.results[0];
+                prefetchImages(j.results[0].screenshotUrls || []);
+                return j.results[0];
+              }
+            }
+          }
+          const cleanName = (appName || '')
+            .replace(/\+\+$/,'').replace(/\s*mod\s*/gi,'')
+            .replace(/\s*hack\s*/gi,'').replace(/\s*premium\s*/gi,'')
+            .replace(/\s*pro\s*$/gi,'').trim();
+          if (!cleanName) return null;
+          const r2 = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(cleanName)}&country=vn&entity=software&limit=3`);
+          if (!r2.ok) return null;
+          const j2 = await r2.json();
+          if (!j2.results || j2.results.length === 0) return null;
+          const best = j2.results.find(x => x.trackName.toLowerCase() === cleanName.toLowerCase()) || j2.results[0];
+          iTunesCache[cacheKey] = best;
+          prefetchImages(best.screenshotUrls || []);
+          return best;
+        } catch (e) { return null; }
+        finally { delete iTunesFetching[cacheKey]; }
+      };
+
+      iTunesFetching[cacheKey] = doFetch();
+      return iTunesFetching[cacheKey];
+    }
+
+    // Preload ảnh vào browser cache ngầm — dùng thumb size
+    function prefetchImages(urls) {
+      urls.slice(0, 4).forEach(url => {
+        const thumb = url.replace(/\/(\d+)x(\d+)bb\.(\w+)$/, '/392x696bb.webp');
+        const img = new Image();
+        img.decoding = 'async';
+        img.src = thumb;
+      });
+    }
+
+    // Prefetch AGGRESSIVELY — không delay, tất cả song song theo nhóm 10
+    function backgroundPrefetch(ipaList) {
+      const unique = [];
+      const seen = new Set();
+      for (const app of ipaList) {
+        const key = app.bundleID || app.name || '';
+        if (key && !seen.has(key)) { seen.add(key); unique.push(app); }
+      }
+      // Fetch tất cả song song, không chờ nhau
+      unique.forEach(app => {
+        fetchITunes(app.name || '', app.bundleID || '');
+      });
+    }
+
+    function formatFileSize(bytes) {
+      if (!bytes) return '-';
+      const mb = bytes / 1048576;
+      return mb >= 1024 ? (mb/1024).toFixed(1) + ' GB' : Math.round(mb) + ' MB';
+    }
+
+    function formatDate(str) {
+      if (!str) return '-';
+      try {
+        return new Date(str).toLocaleDateString('vi-VN', { day:'2-digit', month:'2-digit', year:'numeric' });
+      } catch { return '-'; }
+    }
+
+    function formatRating(n) {
+      if (!n) return '-';
+      return parseFloat(n).toFixed(1) + ' ★';
+    }
+
+    // ============================================================
+    // HELPER FUNCTIONS (giữ nguyên từ code cũ)
+    // ============================================================
+    function checkKw(str, whitelist) {
+      if (!str || !whitelist) return false;
+      const s = str.trim().toLowerCase();
+      return whitelist.some(k => k.trim().toLowerCase() === s);
+    }
+
+    function getUniqueApps(apps) {
+      const map = new Map();
+      apps.forEach(app => {
+        const key = (app.name || app.title || '').toLowerCase().trim();
+        if (!map.has(key)) map.set(key, app);
+      });
+      return Array.from(map.values());
+    }
+
+    function sortItemsByDate(items) {
+      return items.sort((a, b) => new Date(b.lastSync || b.date || 0) - new Date(a.lastSync || a.date || 0));
+    }
+
+    // ============================================================
+    // LOAD DATA
+    // ============================================================
+    async function loadData() {
+      try {
+        const kwRes = await fetch('keywords.json?t=' + Date.now());
+        if (kwRes.ok) KEYWORDS = await kwRes.json();
+      } catch (e) {}
+
+      const endpoints = [
+        {k:'ipa', u:'data/ipa.json'},
+        {k:'dylib', u:'data/dylib.json'},
+        {k:'conf', u:'data/conf.json'},
+        {k:'cert_sign', u:'pages/data/sign.json'},
+        {k:'cert_cert', u:'pages/data/cert.json'},
+        {k:'cert_mod', u:'pages/data/mod.json'}
+      ];
+      await Promise.all(endpoints.map(async e => {
+        try {
+          const res = await fetch(`${e.u}?t=${Date.now()}`);
+          if (res.ok) {
+            let data = await res.json();
+            DB[e.k] = sortItemsByDate(data);
+          }
+        } catch(err) {}
+      }));
+      
+      renderContent(document.getElementById('searchInput').value);
+      document.getElementById('searchContainer').style.display = 'none';
+
+      // Prefetch ngay lập tức — không chờ, toàn bộ IPA
+      const idle = window.requestIdleCallback || (cb => setTimeout(cb, 100));
+      idle(() => backgroundPrefetch(DB.ipa));
+    }
+
+    // ============================================================
+    // FILTER & TAB
+    // ============================================================
+    function setFilter(filter) {
+      STATE.currentFilter = filter;
+      STATE.currentPage = 1;
+      renderContent(document.getElementById('searchInput').value);
+    }
+
+    function switchTab(tabId) {
+      STATE.currentTab = tabId;
+      STATE.currentPage = 1;
+      STATE.currentFilter = 'all';
+      
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.tab === tabId);
+      });
+
+      const searchContainer = document.getElementById('searchContainer');
+      const searchInput = document.getElementById('searchInput');
+      if (tabId === 'home') {
+        searchContainer.style.display = 'none';
+      } else {
+        searchContainer.style.display = 'flex';
+        searchInput.value = '';
+        searchInput.placeholder = `Tìm trong ${tabId.toUpperCase()}...`;
+      }
+      
+      renderContent();
+      document.getElementById('mainContainer').scrollTop = 0;
+    }
+
+    // ============================================================
+    // RENDER CONTENT (giữ nguyên logic cũ)
+    // ============================================================
+    function renderContent(query = '') {
+      const container = document.getElementById('dynamicContent');
+      let html = '';
+      let items = [];
+      const tab = STATE.currentTab;
+
+      if (tab === 'home') {
+        let rawApps = [...DB.ipa, ...DB.cert_mod, ...DB.dylib].map(i=>({...i, _type:'IPA'}));
+        let uniqueApps = getUniqueApps(sortItemsByDate(rawApps));
+
+        const movieApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.movie));
+        const socialApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.social));
+        const photoApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.photo));
+        const gameApps = uniqueApps.filter(i => checkKw(i.name, KEYWORDS.game));
+        
+        const trendingList = ['YouTube','Facebook','TikTok','Messenger','Instagram','Spotify','Netflix','CapCut','Zalo'];
+        const trendingApps = uniqueApps.filter(i => checkKw(i.name, trendingList)).slice(0, 10);
+
+        const featured = uniqueApps.slice(0, 5);
+        const recent = uniqueApps.slice(5, 17);
+        
+        const hour = new Date().getHours();
+        let greeting = hour >= 18 ? "Chào buổi tối" : hour >= 12 ? "Chào buổi chiều" : "Chào buổi sáng";
+
+        html = `
+          <div class="mb-4 animate-slide-up">
+            <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">${new Date().toLocaleDateString('vi-VN', {weekday:'long', day:'numeric', month:'long'})}</p>
+            <div class="flex justify-between items-center">
+              <h1 class="text-3xl font-black text-gray-900 dark:text-white flex items-center gap-2">
+                ${greeting} <span class="text-brand">♥️</span>
+              </h1>
+              <div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-white/10 flex items-center justify-center cursor-pointer">
+                <i data-lucide="bell" class="w-4 h-4"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-8 -mx-4 px-4 md:mx-0 md:px-0 mb-2 animate-slide-up">
+            ${featured.map(i => createBigHero(i)).join('')}
+          </div>
+
+          <div class="grid grid-cols-4 gap-3 mb-8 animate-slide-up">
+            ${createQuickCat('Game Hack', 'sword', 'from-red-500 to-orange-500', 'game')}
+            ${createQuickCat('Chụp Ảnh', 'camera', 'from-blue-500 to-cyan-500', 'photo')}
+            ${createQuickCat('Xem Phim', 'clapperboard', 'from-purple-500 to-pink-500', 'movie')}
+            ${createQuickCat('Mạng XH', 'globe', 'from-indigo-500 to-blue-500', 'social')}
+          </div>
+
+          ${trendingApps.length ? `
+          <div class="mb-8 animate-slide-up">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-xl font-extrabold text-gray-900 dark:text-white flex items-center gap-2">
+                <i data-lucide="flame" class="w-5 h-5 text-orange-500 fill-orange-500"></i> Xu hướng
+              </h3>
+            </div>
+            <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+              ${trendingApps.map(i => createTrendingItem(i)).join('')}
+            </div>
+            <hr class="border-gray-200 dark:border-white/5 mt-4">
+          </div>` : ''}
+
+          <div class="mt-4 animate-slide-up">
+            <div class="flex justify-between items-end mb-4">
+              <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">Mới cập nhật</h3>
+              <span class="text-brand text-xs font-bold bg-brand/10 px-2 py-1 rounded-md">HOT</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${recent.map(i => createGridItem(i)).join('')}
+            </div>
+          </div>
+          
+          <div class="pb-10 pt-6 text-center text-xs text-gray-400 font-medium">Designed by Kho Vip</div>
+        `;
+
+      } else if (tab === 'cert') {
+        html = '<iframe src="signipa.html" class="w-full h-[85vh] border-none" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation"></iframe>';
+
+      } else {
+        if (tab === 'ipa') items = DB.ipa;
+        else if (tab === 'dylib') items = DB.dylib;
+        else if (tab === 'conf') items = DB.conf;
+        
+        if (query) items = filterItems(items, query);
+
+        if (STATE.currentFilter !== 'all') {
+          items = items.filter(i => i.tags && i.tags.includes(STATE.currentFilter));
+        }
+
+        const featured = items.slice(0, 5);
+        const totalPages = Math.ceil(items.length / STATE.itemsPerPage);
+        const start = (STATE.currentPage - 1) * STATE.itemsPerPage;
+        const pagedItems = items.slice(start, start + STATE.itemsPerPage);
+        const showFilter = (tab === 'ipa');
+
+        html = `
+          <h1 class="text-3xl font-black mb-6 text-gray-900 dark:text-white uppercase">${tab} Store</h1>
+          ${!query && STATE.currentFilter === 'all' ? `
+          <div class="mb-8">
+            <h3 class="text-lg font-bold mb-3 px-1">Nổi bật</h3>
+            <div class="flex gap-4 overflow-x-auto snap-x-mandatory scrollbar-hide pb-4 -mx-4 px-4 md:mx-0 md:px-0">
+              ${featured.map(i => createSubPageHero(i)).join('')}
+            </div>
+          </div>` : ''}
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-4 px-1 gap-3">
+            <div class="flex items-center gap-4 w-full md:w-auto justify-between md:justify-start">
+              <h3 class="text-lg font-bold">Danh sách</h3>
+              ${showFilter ? `
+              <div class="flex bg-gray-200 dark:bg-white/10 rounded-lg p-1 gap-1">
+                <button onclick="setFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'all' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Tất cả</button>
+                <button onclick="setFilter('game')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'game' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Game</button>
+                <button onclick="setFilter('social')" class="px-3 py-1.5 text-xs font-bold rounded-md transition-all ${STATE.currentFilter === 'social' ? 'bg-white dark:bg-gray-700 text-brand shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700'}">Social</button>
+              </div>
+              ` : ''}
+            </div>
+            <span class="text-xs text-gray-500">${items.length} apps</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            ${pagedItems.length ? pagedItems.map(i => createGridItem(i, tab.toUpperCase())).join('') : (() => {
+              const suggestion = query ? getSuggestion(DB[tab] || [], query) : null;
+              return `<div class="col-span-full py-10 text-center text-gray-400 flex flex-col items-center gap-3">
+                <i data-lucide="package-open" class="w-10 h-10 opacity-50"></i>
+                <p class="text-sm">Không tìm thấy "<b>${query}</b>"</p>
+                ${suggestion ? `<button onclick="document.getElementById('searchInput').value='${suggestion}';renderContent('${suggestion}')" class="text-sm font-bold text-brand bg-brand/10 px-4 py-2 rounded-full border border-brand/20 hover:bg-brand/20 transition">
+                  Ý bạn là: <u>${suggestion}</u>?
+                </button>` : ''}
+              </div>`;
+            })()}
+          </div>
+          ${items.length > STATE.itemsPerPage ? createPagination(totalPages) : ''}
+        `;
+      }
+
+      container.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    // ============================================================
+    // CATEGORY VIEW (giữ nguyên)
+    // ============================================================
+    function openCategory(catType, catName) {
+      const container = document.getElementById('dynamicContent');
+      const rawItems = DB.ipa.filter(i => checkKw(i.name, KEYWORDS[catType]));
+      const items = getUniqueApps(rawItems);
+      
+      container.innerHTML = `
+        <div class="animate-slide-up">
+          <button onclick="renderContent()" class="mb-4 flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-brand transition bg-gray-100 dark:bg-white/10 px-3 py-2 rounded-lg">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i> Quay lại Home
+          </button>
+          <div class="flex items-center gap-3 mb-6">
+            <h1 class="text-3xl font-black text-gray-900 dark:text-white">${catName}</h1>
+            <span class="bg-brand/10 text-brand text-xs font-bold px-2 py-1 rounded-md border border-brand/20">${items.length} Apps</span>
+          </div>
+          ${items.length === 0 ? emptyState() : `
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-20">
+            ${items.map(i => createGridItem(i, "IPA")).join('')}
+          </div>`}
+        </div>
+      `;
+      lucide.createIcons();
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+
+    // ============================================================
+    // UI COMPONENTS (giữ nguyên)
+    // ============================================================
+    function createTrendingItem(i) {
+      const name = (i.name||'').replace(/'/g,'');
+      const bid = (i.bundleID||'').replace(/'/g,'');
+      return `
+        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, true)'
+             onmouseenter="fetchITunes('${name}','${bid}')"
+             ontouchstart="fetchITunes('${name}','${bid}')"
+             class="snap-center shrink-0 w-20 flex flex-col items-center gap-1 cursor-pointer group">
+          <div class="w-16 h-16 rounded-[14px] overflow-hidden shadow-md border border-gray-100 dark:border-white/10 relative bg-white dark:bg-cardDark">
+            <img src="${i.icon || i.iconUrl}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <h4 class="font-semibold text-gray-900 dark:text-white text-[10px] truncate w-full text-center">${i.name}</h4>
+        </div>
+      `;
+    }
+
+    function createQuickCat(name, icon, grad, type) {
+      return `
+        <button onclick="openCategory('${type}', '${name}')" class="flex flex-col items-center gap-2 cursor-pointer group bg-transparent border-0">
+          <div class="w-14 h-14 rounded-[1.2rem] bg-gradient-to-br ${grad} flex items-center justify-center text-white shadow-lg group-active:scale-95 transition">
+            <i data-lucide="${icon}" class="w-7 h-7"></i>
+          </div>
+          <span class="text-[10px] font-bold text-gray-500 dark:text-gray-400 group-hover:text-brand transition">${name}</span>
+        </button>`;
+    }
+
+    function createBigHero(i) {
+      return `
+        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, true)' class="snap-center shrink-0 w-[85%] md:w-[24rem] h-[15rem] relative rounded-[1.8rem] overflow-hidden shadow-xl group cursor-pointer bg-gray-900 border border-white/10">
+          <img src="${i.icon || i.iconUrl}" class="absolute inset-0 w-full h-full object-cover opacity-60 blur-xl scale-125 group-hover:scale-110 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 w-full p-5 flex flex-col items-start gap-3">
+            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase border border-white/20">MỚI NHẤT</span>
+            <div class="flex items-center gap-3 w-full">
+              <img src="${i.icon || i.iconUrl}" class="w-14 h-14 rounded-xl shadow-lg border-2 border-white/20 bg-gray-800 object-cover">
+              <div class="flex-1 min-w-0">
+                <h2 class="text-xl font-bold text-white leading-tight truncate">${i.name || i.title}</h2>
+                <p class="text-gray-300 text-xs line-clamp-1 mt-1">${i.desc || 'Trải nghiệm ngay'}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    
+    function createSubPageHero(i) {
+      const title = i.name || i.title;
+      const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+      return `
+        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, ${STATE.currentTab === "ipa"})' class="snap-center shrink-0 w-[17.5rem] h-[10rem] relative rounded-3xl overflow-hidden shadow-lg group cursor-pointer border border-white/10">
+          <img src="${icon}" class="absolute inset-0 w-full h-full object-cover blur-md opacity-60 scale-125 group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/40"></div>
+          <div class="absolute inset-0 p-5 flex flex-col justify-end">
+            <div class="flex items-center gap-3">
+              <img src="${icon}" class="w-12 h-12 rounded-xl shadow-md border border-white/20 bg-black/20 backdrop-blur-md">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-bold text-white text-lg truncate">${title}</h4>
+                <p class="text-[10px] text-gray-200 uppercase font-bold tracking-wider">Top Download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function createGridItem(i, tag = 'APP') {
+      const title = i.name || i.title || i.filename || 'Unknown';
+      const icon = i.icon || i.iconUrl || 'https://placehold.co/100';
+      const desc = i.desc || i.description || i.certname || 'No description';
+      const isIpa = tag === 'IPA' || tag === 'APP' || i.type === 'ipa';
+      // Prefetch khi hover/touch — trước khi bấm
+      const prefetchAttr = isIpa
+        ? `onmouseenter="fetchITunes('${(i.name||'').replace(/'/g,'')}','${(i.bundleID||'').replace(/'/g,'')}');"`
+        : '';
+      return `
+        <div onclick='openModal(${JSON.stringify(i).replace(/'/g,"&apos;")}, ${isIpa})' ${prefetchAttr} class="flex items-center gap-3 p-3.5 rounded-2xl bg-white dark:bg-cardDark border border-transparent hover:border-gray-200 dark:hover:border-white/10 transition-all cursor-pointer shadow-sm group">
+          <img src="${icon}" class="w-14 h-14 rounded-[12px] bg-gray-100 object-cover shadow-sm group-hover:scale-105 transition" onerror="this.src='https://placehold.co/100'"/>
+          <div class="flex-1 min-w-0">
+            <h4 class="font-bold text-gray-900 dark:text-white truncate text-sm">${title}</h4>
+            <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1 mt-0.5">${desc}</p>
+          </div>
+          <button class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center text-brand">
+            <i data-lucide="download" class="w-4 h-4"></i>
+          </button>
+        </div>
+      `;
+    }
+
+    function createPagination(total) {
+      let btns = '';
+      const maxShow = 5;
+      let start = Math.max(1, STATE.currentPage - 2);
+      let end = Math.min(total, start + maxShow - 1);
+      if (total <= 1) return '';
+      btns += `<button onclick="changePage(${STATE.currentPage - 1})" class="page-btn" ${STATE.currentPage===1?'disabled':''}><i data-lucide="chevron-left" class="w-4 h-4"></i></button>`;
+      for(let p = start; p <= end; p++) btns += `<button onclick="changePage(${p})" class="page-btn ${p===STATE.currentPage?'active':''}">${p}</button>`;
+      btns += `<button onclick="changePage(${STATE.currentPage + 1})" class="page-btn" ${STATE.currentPage===total?'disabled':''}><i data-lucide="chevron-right" class="w-4 h-4"></i></button>`;
+      return `<div class="pagination">${btns}</div>`;
+    }
+
+    function emptyState() {
+      return `<div class="col-span-full py-10 text-center text-gray-400 flex flex-col items-center"><i data-lucide="package-open" class="w-10 h-10 mb-2 opacity-50"></i><p class="text-sm">Không tìm thấy dữ liệu</p></div>`;
+    }
+
+    // ============================================================
+    // MODAL - App Store style CHỈ cho IPA
+    // useAppStore = true  → fetch iTunes API (screenshots, rating, desc...)
+    // useAppStore = false → modal đơn giản (Dylib, Conf)
+    // ============================================================
+    async function openModal(item, useAppStore = false) {
+      STATE.currentItem = item;
+
+      const modal = document.getElementById('appModal');
+
+      // Giữ nguyên data GỐC từ ipa.json — không bao giờ override tên/icon
+      document.getElementById('mTitle').textContent = item.name || item.title || item.filename || '...';
+      document.getElementById('mDev').textContent = item.developer || '-';
+      document.getElementById('mIcon').src = item.icon || item.iconUrl || 'https://placehold.co/96x96/f2f2f7/7c3aed?text=App';
+      document.getElementById('mVersion').textContent = item.version ? 'v' + item.version : '-';
+      document.getElementById('mSize').textContent = item.size || '-';
+      document.getElementById('mRating').textContent = '-';
+      document.getElementById('mAge').textContent = '4+';
+      document.getElementById('mDesc').textContent = item.desc || item.description || 'Không có mô tả.';
+      document.getElementById('mDesc').classList.remove('expanded');
+      document.getElementById('descMoreBtn').textContent = 'Xem thêm';
+      document.getElementById('mGenreTag').style.display = 'none';
+      document.getElementById('mItunesBadge').style.display = 'none';
+
+      // Reset VIP area — LUÔN hiển thị lại đầy đủ mỗi lần mở
+      document.getElementById('vipArea').classList.remove('show');
+      document.getElementById('vipKey').value = '';
+      document.getElementById('vipMsg').classList.add('hidden');
+      document.getElementById('vipMsg').textContent = '';
+      const verifyBtn = document.getElementById('verifyBtn');
+      verifyBtn.disabled = false;
+      verifyBtn.textContent = 'XÁC NHẬN & TẢI';
+      verifyBtn.style.display = '';           // ← reset lại hiển thị
+
+      // Reset screenshots skeleton
+      document.getElementById('mScreenshots').innerHTML = `
+        <div class="screenshot-skeleton"></div>
+        <div class="screenshot-skeleton"></div>
+        <div class="screenshot-skeleton"></div>
+      `;
+
+      // Reset info table với data gốc
+      document.getElementById('iDev').textContent = item.developer || '-';
+      document.getElementById('iCat').textContent = (item.tags || []).join(', ') || '-';
+      document.getElementById('iLang').textContent = '-';
+      document.getElementById('iUpdated').textContent = formatDate(item.date || item.lastSync);
+      document.getElementById('iCompat').textContent = '-';
+
+      // Hiện modal
+      modal.classList.remove('hidden');
+      modal.classList.add('modal-visible');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('modalScroll').scrollTop = 0;
+      lucide.createIcons();
+
+      // Fetch iTunes data bất đồng bộ — CHỈ cho IPA
+      const appName = item.name || item.title || '';
+      const bundleID = item.bundleID || '';
+
+      if (!useAppStore) {
+        // Dylib / Conf: ẩn screenshots và info table, dùng mô tả gốc
+        document.getElementById('screenshotsSection').style.display = 'none';
+        document.getElementById('infoSection').style.display = 'none';
+        document.getElementById('infoSectionDivider').style.display = 'none';
+        document.getElementById('mDesc').textContent = item.desc || item.description || 'Không có mô tả.';
+        document.getElementById('mDev').textContent = item.developer || '-';
+        document.getElementById('mVersion').textContent = item.version ? 'v' + item.version : '-';
+        document.getElementById('mSize').textContent = item.size || '-';
+        document.getElementById('mRating').textContent = '-';
+        document.getElementById('mAge').textContent = '-';
+        return;
+      }
+
+      // IPA: hiện đầy đủ, fetch iTunes
+      document.getElementById('screenshotsSection').style.display = '';
+      document.getElementById('infoSection').style.display = '';
+      document.getElementById('infoSectionDivider').style.display = '';
+
+      fetchITunes(appName, bundleID).then(info => {
+        if (!info) {
+          // Không tìm được trên App Store — giữ nguyên data gốc
+          document.getElementById('mScreenshots').innerHTML = '<div style="color:#aeaeb2;font-size:12px;font-weight:600;padding:20px 0;text-align:center;">Không tìm thấy trên App Store</div>';
+          return;
+        }
+
+        // CHỈ cập nhật stats + screenshots + desc từ iTunes
+        // KHÔNG override tên, icon, developer (giữ data gốc từ ipa.json)
+        document.getElementById('mVersion').textContent = info.version ? 'v' + info.version : (item.version ? 'v' + item.version : '-');
+        document.getElementById('mSize').textContent = formatFileSize(info.fileSizeBytes);
+        document.getElementById('mRating').textContent = formatRating(info.averageUserRating);
+        document.getElementById('mAge').textContent = info.contentAdvisoryRating || '4+';
+
+        if (info.primaryGenreName) {
+          const tag = document.getElementById('mGenreTag');
+          tag.textContent = info.primaryGenreName;
+          tag.style.display = 'inline-block';
+        }
+        document.getElementById('mItunesBadge').style.display = 'inline-flex';
+
+        // Chỉ dùng desc iTunes nếu data gốc trống/ngắn
+        const origDesc = item.desc || item.description || '';
+        if (info.description && origDesc.length < 30) {
+          document.getElementById('mDesc').textContent = info.description;
+        }
+
+        // Info table — dùng data iTunes cho các field kỹ thuật
+        document.getElementById('iCat').textContent = info.primaryGenreName || '-';
+        const langs = (info.languageCodesISO2A || []).slice(0, 4).join(', ');
+        document.getElementById('iLang').textContent = langs || '-';
+        document.getElementById('iUpdated').textContent = formatDate(info.currentVersionReleaseDate || info.releaseDate);
+        document.getElementById('iCompat').textContent = info.minimumOsVersion ? 'iOS ' + info.minimumOsVersion + '+' : '-';
+
+        // Screenshots — dùng URL resize của Apple CDN (~10x nhỏ hơn)
+        const shots = info.screenshotUrls || [];
+        const screenshotsEl = document.getElementById('mScreenshots');
+        if (shots.length > 0) {
+          screenshotsEl.innerHTML = shots.slice(0, 6).map(url => {
+            // Apple CDN hỗ trợ resize: thêm /NNxNNN-75.jpg vào cuối URL
+            const thumb = url.replace(/\/(\d+)x(\d+)bb\.(\w+)$/, '/392x696bb.webp');
+            return `
+            <div class="screenshot-frame">
+              <img src="${thumb}"
+                   loading="eager"
+                   decoding="async"
+                   style="opacity:0;transition:opacity 0.25s ease"
+                   onload="this.style.opacity='1'"
+                   onerror="this.src='${url}';this.style.opacity='1'"
+                   alt="Screenshot">
+            </div>`;
+          }).join('');
+        } else {
+          screenshotsEl.innerHTML = '<div style="color:#aeaeb2;font-size:12px;font-weight:600;padding:20px 0;text-align:center;">Không có ảnh xem trước</div>';
+        }
+      });
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById('appModal');
+      modal.classList.remove('modal-visible');
+      document.body.style.overflow = '';
+      setTimeout(() => modal.classList.add('hidden'), 380);
+    }
+
+    function showVipInput() {
+      // Kiểm tra đăng nhập trước
+      if (!AUTH.isLoggedIn) {
+        showNotification('⚠️ Bạn cần đăng nhập để tải ứng dụng!', 'info');
+        setTimeout(() => { location.href = 'login.html?redirect=' + encodeURIComponent(location.href); }, 1200);
+        return;
+      }
+      const zone = document.getElementById('vipArea');
+      zone.classList.toggle('show');
+      if (zone.classList.contains('show')) {
+        // Nếu đã có key active thì tự điền vào
+        const activeKey = AUTH.keys && AUTH.keys.find(k => {
+          const exp = k.expires_at ? new Date(k.expires_at) : null;
+          return k.status === 'active' && (!exp || exp > new Date());
+        });
+        if (activeKey) {
+          document.getElementById('vipKey').value = activeKey.key_code;
+        }
+        setTimeout(() => document.getElementById('vipKey').focus(), 150);
+      }
+    }
+
+    function toggleDesc() {
+      const el = document.getElementById('mDesc');
+      const btn = document.getElementById('descMoreBtn');
+      el.classList.toggle('expanded');
+      btn.textContent = el.classList.contains('expanded') ? 'Thu gọn' : 'Xem thêm';
+    }
+
+    async function verifyKey() {
+      const k = document.getElementById('vipKey').value;
+      if (k.replace(/-/g,'').length < 5) return;
+      
+      const btn = document.getElementById('verifyBtn');
+      const msg = document.getElementById('vipMsg');
+      btn.textContent = 'ĐANG KIỂM TRA...';
+      btn.disabled = true;
+      
+      try {
+        const res = await fetch('/api/keys?action=verify', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({key: k})
+        });
+        const d = await res.json();
+        
+        if (d.success) {
+          const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
+          msg.classList.remove('hidden');
+          msg.style.color = '#30d158';
+          msg.textContent = '✅ Key hợp lệ! Đang tải...';
+          verifyBtn.disabled = true;
+          setTimeout(() => {
+            const a = document.createElement('a');
+            a.href = link;
+            a.download = '';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          }, 800);
+        } else {
+          msg.classList.remove('hidden');
+          msg.style.color = '#ef4444';
+          msg.textContent = d.error || '❌ Mã không hợp lệ';
+          btn.disabled = false;
+          btn.textContent = 'XÁC NHẬN & TẢI';
+        }
+      } catch(e) {
+        msg.classList.remove('hidden');
+        msg.style.color = '#ef4444';
+        msg.textContent = '❌ Lỗi kết nối';
+        btn.disabled = false;
+        btn.textContent = 'XÁC NHẬN & TẢI';
+      }
+    }
+
+    function downloadFree() {
+      // Đã xóa tính năng vượt link — yêu cầu đăng nhập và key VIP
+      if (!AUTH.isLoggedIn) {
+        showNotification('⚠️ Bạn cần đăng nhập để tải!', 'info');
+        setTimeout(() => { location.href = 'login.html?redirect=' + encodeURIComponent(location.href); }, 1000);
+      } else {
+        showNotification('Bạn cần mua gói VIP để tải!', 'error');
+      }
+    }
+
+    // ============================================================
+    // NAVIGATION & MISC
+    // ============================================================
+    function changePage(p) {
+      STATE.currentPage = p;
+      renderContent();
+      document.getElementById('mainContainer').scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ============================================================
+    // CHẶN ZOOM HOÀN TOÀN (pinch, double-tap, keyboard zoom)
+    // ============================================================
+    // Chặn pinch-to-zoom
+    document.addEventListener('gesturestart', e => e.preventDefault(), { passive: false });
+    document.addEventListener('gesturechange', e => e.preventDefault(), { passive: false });
+    document.addEventListener('gestureend', e => e.preventDefault(), { passive: false });
+
+    // Chặn double-tap zoom
+    let lastTap = 0;
+    document.addEventListener('touchend', e => {
+      const now = Date.now();
+      if (now - lastTap < 300) e.preventDefault();
+      lastTap = now;
+    }, { passive: false });
+
+    // Chặn touchmove multi-finger (pinch)
+    document.addEventListener('touchmove', e => {
+      if (e.touches.length > 1) e.preventDefault();
+    }, { passive: false });
+
+    // Bỏ dấu tiếng Việt
+    function removeAccents(str) {
+      return (str || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd').replace(/Đ/g, 'D')
+        .toLowerCase().trim();
+    }
+
+    // Tính độ giống nhau giữa 2 chuỗi (Levenshtein distance)
+    function levenshtein(a, b) {
+      const m = a.length, n = b.length;
+      if (m === 0) return n; if (n === 0) return m;
+      const dp = Array.from({length: m+1}, (_, i) => [i]);
+      for (let j = 1; j <= n; j++) dp[0][j] = j;
+      for (let i = 1; i <= m; i++)
+        for (let j = 1; j <= n; j++)
+          dp[i][j] = a[i-1] === b[j-1]
+            ? dp[i-1][j-1]
+            : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+      return dp[m][n];
+    }
+
+    // Kiểm tra xem query có "gần giống" tên không
+    function fuzzyMatch(name, query) {
+      if (!name || !query) return { match: false, score: 0 };
+      const n = removeAccents(name);
+      const q = removeAccents(query);
+
+      // 1. Exact / contains
+      if (n.includes(q) || q.includes(n)) return { match: true, score: 100 };
+
+      // 2. Mỗi từ trong query khớp với tên
+      const qWords = q.split(/\s+/).filter(Boolean);
+      const nWords = n.split(/\s+/).filter(Boolean);
+      const allWordsMatch = qWords.every(qw =>
+        nWords.some(nw => nw.includes(qw) || qw.includes(nw))
+      );
+      if (allWordsMatch && qWords.length > 0) return { match: true, score: 90 };
+
+      // 3. Fuzzy — cho phép lỗi chính tả tối đa ceil(len/4) ký tự
+      const maxErr = Math.ceil(Math.min(q.length, n.length) / 4);
+      const dist = levenshtein(q, n.substring(0, q.length + maxErr));
+      if (dist <= maxErr) return { match: true, score: 80 - dist * 10 };
+
+      // 4. Từng từ query fuzzy với tên
+      const anyWordFuzzy = qWords.some(qw =>
+        nWords.some(nw => levenshtein(qw, nw) <= Math.ceil(qw.length / 3))
+      );
+      if (anyWordFuzzy) return { match: true, score: 60 };
+
+      return { match: false, score: 0 };
+    }
+
+    function filterItems(items, q) {
+      if (!q || !q.trim()) return items;
+
+      const results = items
+        .map(i => {
+          const name = i.name || i.title || i.filename || '';
+          const { match, score } = fuzzyMatch(name, q);
+          // Cũng tìm trong desc/tags
+          const inDesc = removeAccents(i.desc || i.description || '').includes(removeAccents(q));
+          const inTags = (i.tags || []).some(t => removeAccents(t).includes(removeAccents(q)));
+          return { item: i, match: match || inDesc || inTags, score: inDesc || inTags ? Math.max(score, 40) : score };
+        })
+        .filter(x => x.match)
+        .sort((a, b) => b.score - a.score)
+        .map(x => x.item);
+
+      return results;
+    }
+
+    // Gợi ý khi không tìm thấy
+    function getSuggestion(items, q) {
+      if (!q || q.length < 2) return null;
+      let best = null, bestScore = Infinity;
+      for (const i of items) {
+        const name = i.name || i.title || '';
+        const dist = levenshtein(removeAccents(q), removeAccents(name).substring(0, removeAccents(q).length + 3));
+        if (dist < bestScore && dist <= Math.ceil(q.length / 2)) {
+          bestScore = dist; best = name;
+        }
+      }
+      return best;
+    }
+
+    let searchDebounce;
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(() => renderContent(e.target.value), 180);
+    });
+
+    // Swipe down để đóng modal
+    let touchStartY = 0;
+    const modalPanel = document.getElementById('appModalPanel');
+    modalPanel.addEventListener('touchstart', e => {
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    modalPanel.addEventListener('touchend', e => {
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      const scroll = document.getElementById('modalScroll');
+      if (dy > 90 && scroll.scrollTop <= 0) closeModal('appModal');
+    }, { passive: true });
+
+    // Click overlay để đóng
+    document.getElementById('appModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal('appModal');
+    });
+
+    // Make checkLoginStatus global so it can be called from iframe
+    window.checkLoginStatus = checkLoginStatus;
+
+    window.addEventListener('message', (event) => {
+        if (event.data.type === 'paymentSuccess') {
+            window.checkLoginStatus();
+        }
+    });
+
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    }
+    if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+
+    // VIP key formatter
+    document.getElementById('vipKey').addEventListener('input', function(e) {
+      let v = e.target.value.replace(/[^A-Z0-9]/gi, '').toUpperCase();
+      let f = '';
+      for (let i = 0; i < v.length && i < 16; i++) {
+        if (i > 0 && i % 4 === 0) f += '-';
+        f += v[i];
+      }
+      e.target.value = f;
+    });
+
+    // ============================================================
+    // AUTHENTICATION SYSTEM (SENIOR INTEGRATION)
+    // ============================================================
+    // ============================================================
+    // UTILS & NOTIFICATIONS
+    // ============================================================
+    function showNotification(msg, type = 'info') {
+      const emoji = type === 'success' ? '✅' : (type === 'error' ? '❌' : 'ℹ️');
+      alert(`${emoji} ${msg}`);
+    }
+
+    const AUTH = { isLoggedIn: false, user: null, keys: [] };
+    let isLoggingOut = false;
+
+    // Kiểm tra trạng thái và tự động Refresh Token
+    async function checkLoginStatus() {
+      if (isLoggingOut) return;
+      try {
+        const token = localStorage.getItem('auth_token');
+        const res = await fetch('/api/user?action=profile', {
+          headers: token ? { 'Authorization': `Bearer ${token}` } : {}
+        });
+        
+        // Token hết hạn -> Thử Refresh tự động
+        if (res.status === 401) {
+          const refreshRes = await fetch('/api/auth?action=refresh');
+          if (refreshRes.ok) {
+            const refreshData = await refreshRes.json();
+            if (refreshData.token) localStorage.setItem('auth_token', refreshData.token);
+            return await checkLoginStatus(); // Thử lại sau khi refresh
+          }
+          
+          // Refresh thất bại -> Xóa trạng thái
+          AUTH.isLoggedIn = false;
+          AUTH.user = null;
+          AUTH.keys = [];
+          localStorage.clear();
+          updateUIForLoggedInUser();
+          return;
+        }
+
+        const data = await res.json();
+        if (data.success && !isLoggingOut) {
+          AUTH.isLoggedIn = true;
+          AUTH.user = data.user;
+          AUTH.keys = data.keys;
+          updateUIForLoggedInUser();
+          localStorage.setItem('vip_user', JSON.stringify(data.user));
+        }
+      } catch (e) { console.error("Auth check failed:", e); }
+    }
+
+    function openAuthModal() {
+      if (AUTH.isLoggedIn) location.href = 'profile.html';
+      else location.href = 'login.html';
+    }
+
+    function closeAuthModal() {
+      const modal = document.getElementById('authModal');
+      modal.classList.remove('modal-visible');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    // Xử lý Đăng nhập / Đăng ký
+    async function handleAuth(type) {
+      const u = document.getElementById('authUsername').value;
+      const p = document.getElementById('authPassword').value;
+      if (!u || !p) return showNotification('Nhập đủ thông tin!', 'error');
+      
+      const btn = document.getElementById('authSubmitBtn');
+      btn.disabled = true; 
+      const originText = btn.textContent;
+      btn.textContent = '...';
+
+      try {
+        const res = await fetch(`/api/auth?action=${type}`, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ username: u, password: p })
+        });
+        
+        const d = await res.json();
+        if (d.success) {
+          if (type === 'signup') { 
+            showNotification(d.message || 'Đăng ký thành công!', 'success');
+            toggleAuthType('login'); 
+          } else { 
+            closeAuthModal(); 
+            showNotification('Đăng nhập thành công!', 'success');
+            if (d.token) localStorage.setItem('auth_token', d.token);
+            await checkLoginStatus(); 
+          }
+        } else {
+          showNotification(d.error || 'Thất bại', 'error');
+        }
+      } catch (e) { 
+        showNotification('Lỗi kết nối server', 'error');
+      } finally {
+        btn.disabled = false; btn.textContent = originText;
+      }
+    }
+
+    function toggleAuthType(type) {
+      const title = document.getElementById('authModalTitle');
+      const btn = document.getElementById('authSubmitBtn');
+      const link = document.getElementById('authToggleLink');
+      if (type === 'signup') {
+        title.textContent = 'TẠO TÀI KHOẢN'; btn.onclick = () => handleAuth('signup');
+        btn.textContent = 'ĐĂNG KÝ NGAY';
+        link.innerHTML = 'Đã có tài khoản? <span class="text-brand underline cursor-pointer" onclick="toggleAuthType(\'login\')">Đăng nhập</span>';
+      } else {
+        title.textContent = 'ĐĂNG NHẬP'; btn.onclick = () => handleAuth('login');
+        btn.textContent = 'XÁC NHẬN';
+        link.innerHTML = 'Chưa có tài khoản? <span class="text-brand underline cursor-pointer" onclick="toggleAuthType(\'signup\')">Đăng ký mới</span>';
+      }
+    }
+
+    function updateUIForLoggedInUser() {
+      const btn = document.getElementById('userIconBtn');
+      if (!btn) return;
+      if (AUTH.isLoggedIn && AUTH.user) {
+        btn.innerHTML = `<div class="w-8 h-8 rounded-full bg-brand text-white flex items-center justify-center font-bold text-xs uppercase shadow-sm border-2 border-white/20">${AUTH.user.username[0]}</div>`;
+      } else {
+        btn.innerHTML = `<i data-lucide="user" class="w-5 h-5"></i>`;
+        lucide.createIcons();
+      }
+    }
+
+    function showProfileModal() {
+      const list = document.getElementById('profileKeysList');
+      if (!list || !AUTH.user) return;
+
+      document.getElementById('profileUsername').textContent = AUTH.user.username;
+      document.getElementById('profileAvatar').textContent = AUTH.user.username[0];
+      
+      const totalKeys = AUTH.keys ? AUTH.keys.length : 0;
+      const totalUsage = AUTH.keys ? AUTH.keys.reduce((s, k) => s + (k.usage_count || 0), 0) : 0;
+      
+      let maxDaysLeft = 0;
+      if (totalKeys > 0) {
+        const now = new Date();
+        AUTH.keys.forEach(k => {
+          if (k.expires_at) {
+            const exp = new Date(k.expires_at);
+            const diff = Math.ceil((exp - now) / (1000 * 60 * 60 * 24));
+            if (diff > maxDaysLeft) maxDaysLeft = diff;
+          } else if (k.package_name && k.package_name.includes('Vĩnh Viễn')) {
+            maxDaysLeft = 9999;
+          }
+        });
+      }
+
+      const daysDisplay = maxDaysLeft === 9999 ? 'Vĩnh viễn' : `${maxDaysLeft > 0 ? maxDaysLeft : 0} ngày`;
+
+      let html = '';
+      if (totalKeys > 0) {
+        html = AUTH.keys.map(k => {
+          const expires = k.expires_at ? new Date(k.expires_at) : null;
+          const now = new Date();
+          const isExpired = k.status !== 'active' || (expires && expires < now);
+          const expiryStr = expires ? expires.toLocaleDateString('vi-VN') : 'Vĩnh viễn';
+          const maxUsage = k.max_usage || 0;
+          const used = k.usage_count || 0;
+          const remaining = maxUsage - used;
+          const usageStr = maxUsage > 9000 ? 'Không giới hạn' : `${remaining > 0 ? remaining : 0} lượt`;
+          
+          return `
+            <div class="p-4 bg-gray-50 dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm mb-3">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-[10px] font-black bg-brand/10 text-brand px-2 py-0.5 rounded uppercase tracking-wider">${k.package_name || 'Gói VIP'}</span>
+                <span class="text-[9px] font-bold ${isExpired ? 'text-red-500' : 'text-green-500'}">${isExpired ? 'HẾT HẠN' : 'ĐANG DÙNG'}</span>
+              </div>
+              <div class="font-mono text-base font-black tracking-[0.15em] text-center text-gray-800 dark:text-white mb-3 bg-white dark:bg-black/20 py-2 rounded-lg border border-dashed border-gray-200 dark:border-white/10 select-all">${k.key_code}</div>
+              <div class="grid grid-cols-1 gap-2 text-[10px] font-bold text-gray-500 uppercase mb-3 px-1">
+                <div class="flex items-center gap-1"><i data-lucide="calendar" class="w-3 h-3"></i> Hạn dùng: <span class="text-gray-700 dark:text-gray-300 ml-1">${expiryStr}</span></div>
+                <div class="flex items-center gap-1"><i data-lucide="refresh-cw" class="w-3 h-3"></i> Còn lại: <span class="text-gray-700 dark:text-gray-300 ml-1">${usageStr} (Đã dùng ${used})</span></div>
+              </div>
+              <button onclick="copyToClipboard('${k.key_code}')" class="w-full btn-profile-action btn-copy-key py-2.5 hover:bg-gray-200 dark:hover:bg-white/10 transition">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i> SAO CHÉP MÃ KEY
+              </button>
+            </div>
+          `;
+        }).join('');
+      } else {
+        html = `
+          <div class="py-8 text-center text-gray-400 font-bold text-xs uppercase opacity-80 bg-gray-50 dark:bg-white/5 rounded-2xl border border-dashed border-gray-200 dark:border-white/10">
+            <i data-lucide="info" class="w-8 h-8 mx-auto mb-2 opacity-30"></i>
+            Chưa có mã Key nào
+            <p class="mt-1 text-[10px] lowercase normal-case font-normal">Hạn dùng: 0 ngày | Số key: 0</p>
+          </div>
+        `;
+      }
+      list.innerHTML = html;
+      document.getElementById('totalKeysBought').textContent = totalKeys;
+      document.getElementById('totalUsage').textContent = totalUsage;
+      document.getElementById('profileStatusLine').textContent = `Hạn dùng: ${daysDisplay}`;
+
+      const modal = document.getElementById('profileModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.add('modal-visible'), 10);
+      lucide.createIcons();
+    }
+
+    function closeProfileModal() {
+      const modal = document.getElementById('profileModal');
+      modal.classList.remove('modal-visible');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        showNotification('Đã sao chép mã Key!', 'success');
+      });
+    }
+
+    async function handleLogout() {
+      if (isLoggingOut) return;
+      isLoggingOut = true;
+
+      // 1. UI Clear ngay lập tức (Mượt mà)
+      AUTH.isLoggedIn = false;
+      AUTH.user = null;
+      AUTH.keys = [];
+      updateUIForLoggedInUser();
+      closeProfileModal();
+      showNotification('👋 Đã đăng xuất', 'success');
+
+      try { await fetch('/api/auth?action=logout'); } catch(e){}
+      
+      localStorage.clear();
+      sessionStorage.clear();
+      
+      // Xóa client cookies
+      document.cookie.split(";").forEach(c => {
+        document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/;domain=" + window.location.hostname);
+      });
+
+      // Cho phép đăng nhập tài khoản khác ngay lập tức
+      setTimeout(() => {
+          isLoggingOut = false;
+          openAuthModal(); // Mở modal cho người dùng đăng nhập nick khác
+      }, 400);
+    }
+
+    // Init
+    const originalLoadData = loadData;
+    loadData = async () => { await originalLoadData(); checkLoginStatus(); };
+    loadData();
+    lucide.createIcons();
+  </script>
+  <!-- ============================================================
+       AUTH & PROFILE MODALS (CENTERED)
+  ============================================================ -->
+  <style>
+    .modal-center {
+      position: fixed; inset: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.6); backdrop-filter: blur(8px);
+      opacity: 0; pointer-events: none; transition: all 0.3s ease;
+    }
+    .modal-center.modal-visible { opacity: 1; pointer-events: all; }
+    .modal-panel-center {
+      width: 90%; max-width: 400px;
+      background: #fff; border-radius: 24px; padding: 24px;
+      transform: scale(0.9); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    .dark .modal-panel-center { background: #1c1c1e; color: #fff; }
+    .modal-center.modal-visible .modal-panel-center { transform: scale(1); }
+    .modal-center-close {
+      position: absolute; top: 16px; right: 16px;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: #f2f2f7; display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+    }
+    .dark .modal-center-close { background: #2c2c2e; }
+    .btn-profile-action {
+      padding: 12px; border-radius: 12px; font-size: 12px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s;
+    }
+    .btn-copy-key { background: #f2f2f7; color: #1c1c1e; }
+    .dark .btn-copy-key { background: #2c2c2e; color: #fff; }
+    .btn-buy-more { background: linear-gradient(135deg, #7c3aed, #6366f1); color: #fff; }
+  </style>
+
+  <div id="authModal" class="modal-center hidden">
+    <div class="modal-panel-center">
+      <div class="modal-center-close" onclick="closeAuthModal()"><i data-lucide="x" class="w-4 h-4"></i></div>
+      <h2 id="authModalTitle" class="text-xl font-black mb-6 uppercase">Đăng nhập</h2>
+      <div class="space-y-4">
+        <input type="text" id="authUsername" class="w-full h-12 px-4 rounded-xl bg-gray-100 dark:bg-white/5 border border-transparent focus:border-brand outline-none transition font-bold" placeholder="Tên đăng nhập">
+        <input type="password" id="authPassword" class="w-full h-12 px-4 rounded-xl bg-gray-100 dark:bg-white/5 border border-transparent focus:border-brand outline-none transition font-bold" placeholder="Mật khẩu">
+        <button id="authSubmitBtn" onclick="handleAuth('login')" class="w-full h-14 bg-brand text-white font-black rounded-xl shadow-lg shadow-brand/30 transition-all active:scale-95">ĐĂNG NHẬP</button>
+        <p id="authToggleLink" class="text-center text-sm text-gray-500 font-medium">Chưa có tài khoản? <span class="text-brand underline cursor-pointer" onclick="toggleAuthType('signup')">Đăng ký mới</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="profileModal" class="modal-center hidden">
+    <div class="modal-panel-center">
+      <div class="modal-center-close" onclick="closeProfileModal()"><i data-lucide="x" class="w-4 h-4"></i></div>
+      <div class="flex items-center gap-4 mb-6">
+        <div id="profileAvatar" class="w-14 h-14 rounded-2xl bg-brand text-white flex items-center justify-center text-xl font-black uppercase">C</div>
+        <div>
+          <h3 id="profileUsername" class="text-lg font-extrabold">-</h3>
+          <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest" id="profileStatusLine">Hạn dùng: 0 ngày</p>
+        </div>
+      </div>
+      <div id="profileKeysList" class="max-h-[240px] overflow-y-auto scrollbar-hide mb-6 space-y-3"></div>
+      <div class="grid grid-cols-2 gap-3 mb-6">
+        <div class="p-3 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 text-center">
+          <span class="block text-xl font-black text-brand" id="totalKeysBought">0</span>
+          <span class="text-[9px] font-bold text-gray-400 uppercase">Tổng Key</span>
+        </div>
+        <div class="p-3 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 text-center">
+          <span class="block text-xl font-black text-green-500" id="totalUsage">0</span>
+          <span class="text-[9px] font-bold text-gray-400 uppercase">Lượt dùng</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="handleLogout()" class="flex-1 h-12 bg-red-50 dark:bg-red-500/10 text-red-500 font-bold rounded-xl text-xs uppercase">Đăng xuất</button>
+        <a href="payment.html" class="btn-profile-action btn-buy-more flex-1 h-12">MUA THÊM KEY</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/notification.js"></script>
+</body>
+</html>
