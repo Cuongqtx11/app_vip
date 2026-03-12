@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.phantom.fantengmu-2.1.2",
+    "type": "ipa",
+    "name": "FELFishEyeLens",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.phantom.fantengmu.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/FELFishEyeLens_2.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.2",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.phantom.fantengmu",
+    "lastSync": "2026-03-12T19:00:01.693Z"
+  },
+  {
     "id": "ipa-com.merge.cooking.theme.restaurant.food-1.32.1",
     "type": "ipa",
     "name": "MergeCooking",
