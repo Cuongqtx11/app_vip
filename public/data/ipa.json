@@ -288,6 +288,114 @@
     "lastSync": "2026-03-12T09:00:01.944Z"
   },
   {
+    "id": "ipa-com.joytunes.Draw-1.6.15",
+    "type": "ipa",
+    "name": "SimplyDraw",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.joytunes.Draw.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "graphics & design"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-03-2026/SimplyDraw_1.6.15_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.6.15",
+    "developer": "khomodvip",
+    "date": "2026-03-12",
+    "source": "apptesters",
+    "bundleID": "com.joytunes.Draw",
+    "lastSync": "2026-03-12T10:00:01.780Z"
+  },
+  {
+    "id": "ipa-com.gunthermarktl.stepapp-8.7.0",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-03-2026/StepsApp_8.7.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.7.0",
+    "developer": "khomodvip",
+    "date": "2026-03-12",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2026-03-12T10:00:01.781Z"
+  },
+  {
+    "id": "ipa-com.alltrails.AllTrails-26.3.20",
+    "type": "ipa",
+    "name": "AllTrails",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alltrails.AllTrails.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-03-2026/AllTrails_26.3.20_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.3.20",
+    "developer": "khomodvip",
+    "date": "2026-03-12",
+    "source": "apptesters",
+    "bundleID": "com.alltrails.AllTrails",
+    "lastSync": "2026-03-12T10:00:01.782Z"
+  },
+  {
+    "id": "ipa-ideastudio.Weather-on-the-Way-2.5.1",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-03-2026/OnTheWay_2.5.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.1",
+    "developer": "khomodvip",
+    "date": "2026-03-12",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2026-03-12T10:00:01.782Z"
+  },
+  {
+    "id": "ipa-com.fitbod-8.8.0",
+    "type": "ipa",
+    "name": "Fitbod",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.fitbod.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-03-2026/Fitbod_8.8.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.8.0",
+    "developer": "khomodvip",
+    "date": "2026-03-12",
+    "source": "apptesters",
+    "bundleID": "com.fitbod",
+    "lastSync": "2026-03-12T10:00:01.782Z"
+  },
+  {
+    "id": "ipa-com.stanga.projectKu-2.0.3",
+    "type": "ipa",
+    "name": "Walli",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.stanga.projectKu.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-03-2026/Walli_2.0.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.3",
+    "developer": "khomodvip",
+    "date": "2026-03-12",
+    "source": "apptesters",
+    "bundleID": "com.stanga.projectKu",
+    "lastSync": "2026-03-12T10:00:01.783Z"
+  },
+  {
     "id": "ipa-com.adobe.post-29.8.1",
     "type": "ipa",
     "name": "AdobeExpress",
