@@ -26,8 +26,19 @@ export default async function handler(req, res) {
     if (!action || action === 'profile') {
       const { data: user, error: userError } = await supabase.from('users').select('id, username, email, created_at').eq('id', userId).single();
       if (userError || !user) return res.status(404).json({ error: 'User not found' });
-      const { data: keys } = await supabase.from('user_keys').select('id, key_code, package_name, status, usage_count, max_usage, expires_at, created_at').eq('user_id', userId).order('created_at', { ascending: false });
-      return res.json({ success: true, user, keys });
+      
+      const { data: keys } = await supabase.from('user_keys')
+        .select('id, key_code, package_name, status, usage_count, max_usage, expires_at, created_at')
+        .eq('user_id', userId)
+        .order('created_at', { ascending: false });
+      
+      // Xử lý Key Code để xóa hậu tố # (nếu có) trước khi trả về
+      const cleanedKeys = (keys || []).map(k => ({
+        ...k,
+        key_code: k.key_code.split('#')[0]
+      }));
+
+      return res.json({ success: true, user, keys: cleanedKeys });
     }
 
     // --- 2. KÍCH HOẠT KEY (ADD KEY) ---
@@ -60,7 +71,7 @@ export default async function handler(req, res) {
                 .limit(1)
                 .single();
 
-            let finalKeyCode, finalExpiresAt;
+            let finalKeyCode, finalExpiresAt, isNewForAll = false;
 
             if (firstKey) {
                 // ĐÃ CÓ KEY CHO UDID NÀY: Dùng lại mã Key và hạn cũ
@@ -74,19 +85,27 @@ export default async function handler(req, res) {
                 };
                 finalKeyCode = genKey();
                 finalExpiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+                isNewForAll = true;
             }
 
-            // C. Kiểm tra user hiện tại đã có bản ghi Key này trong túi đồ chưa
+            // C. Kiểm tra user hiện tại đã có bản ghi Key này chưa
+            // Vì Key Code là UNIQUE trong DB, ta sẽ dùng một thủ thuật: 
+            // - User đầu tiên giữ Key nguyên gốc: XXXX-XXXX
+            // - User sau vẫn dùng mã đó nhưng thêm dấu cách hoặc ID user để DB không báo lỗi, 
+            // - NHƯNG khi trả về JSON cho frontend, ta sẽ cắt bỏ phần hậu tố để khách thấy GIỐNG HỆT NHAU.
+            
+            const dbKeyCode = firstKey ? `${finalKeyCode}#${userId}` : finalKeyCode;
+
             const { data: userRecord } = await supabase.from('user_keys')
                 .select('*')
                 .eq('user_id', userId)
-                .eq('key_code', finalKeyCode)
+                .eq('transaction_code', udidTransCode)
                 .single();
 
             if (!userRecord) {
-                // Nếu chưa có, insert bản ghi mới cho user này (với mã key cố định của UDID)
+                // Insert cho user hiện tại
                 const { error: insErr } = await supabase.from('user_keys').insert([{ 
-                    key_code: finalKeyCode, 
+                    key_code: dbKeyCode, 
                     user_id: userId, 
                     package_name: 'Gói UDID Free (1 Tháng)', 
                     status: 'active', 
@@ -95,20 +114,21 @@ export default async function handler(req, res) {
                     expires_at: finalExpiresAt, 
                     transaction_code: udidTransCode 
                 }]);
-                if (insErr) return res.status(500).json({ error: 'Lỗi gán mã VIP' });
+                if (insErr) {
+                    console.error('Error adding key to user:', insErr.message);
+                    return res.status(500).json({ error: 'Lỗi gán mã VIP' });
+                }
 
-                // D. ĐỒNG BỘ LÊN GITHUB (Chỉ khi mã Key này mới hoàn toàn hoặc để backup)
-                try {
-                    const gToken = process.env.GITHUB_TOKEN;
-                    if (gToken) {
-                        const url = `https://api.github.com/repos/Cuongqtx11/app_vip/contents/public/data/keys.json`;
-                        const gitRes = await fetch(url, { headers: { 'Authorization': `token ${gToken}`, 'Accept': 'application/vnd.github.v3+json' }});
-                        if (gitRes.ok) {
-                            const file = await gitRes.json();
-                            const currentKeys = JSON.parse(Buffer.from(file.content, 'base64').toString('utf-8'));
-                            
-                            // Kiểm tra mã key đã có trên GitHub chưa
-                            if (!currentKeys.find(k => k.key === finalKeyCode)) {
+                // D. ĐỒNG BỘ LÊN GITHUB (Chỉ khi mã Key này mới hoàn toàn)
+                if (isNewForAll) {
+                    try {
+                        const gToken = process.env.GITHUB_TOKEN;
+                        if (gToken) {
+                            const url = `https://api.github.com/repos/Cuongqtx11/app_vip/contents/public/data/keys.json`;
+                            const gitRes = await fetch(url, { headers: { 'Authorization': `token ${gToken}`, 'Accept': 'application/vnd.github.v3+json' }});
+                            if (gitRes.ok) {
+                                const file = await gitRes.json();
+                                const currentKeys = JSON.parse(Buffer.from(file.content, 'base64').toString('utf-8'));
                                 currentKeys.unshift({
                                     id: `udid_${Math.floor(Date.now() / 1000)}`,
                                     key: finalKeyCode,
@@ -133,8 +153,8 @@ export default async function handler(req, res) {
                                 });
                             }
                         }
-                    }
-                } catch (gitErr) { console.error('GitHub Sync Error (UDID):', gitErr.message); }
+                    } catch (gitErr) {}
+                }
             }
 
             // Kiểm tra hạn dùng
