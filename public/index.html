@@ -1567,26 +1567,36 @@
     // Kiểm tra trạng thái và tự động Refresh Token
     async function checkLoginStatus() {
       if (isLoggingOut) return;
+
+      const btn = document.getElementById('userIconBtn');
+      
+      // --- BƯỚC 1: HIỂN THỊ TỨC THỜI TỪ CACHE ---
+      const cachedUser = localStorage.getItem('vip_user');
+      if (cachedUser && btn) {
+        try {
+          const user = JSON.parse(cachedUser);
+          AUTH.isLoggedIn = true;
+          AUTH.user = user;
+          btn.innerHTML = `<div class="w-8 h-8 rounded-full bg-brand text-white flex items-center justify-center font-bold text-xs uppercase shadow-sm border-2 border-white/20">${user.username[0]}</div>`;
+        } catch (e) { localStorage.removeItem('vip_user'); }
+      }
+
+      // --- BƯỚC 2: KIỂM TRA THỰC TẾ TỪ SERVER ---
       try {
         const token = localStorage.getItem('auth_token');
         const res = await fetch('/api/user?action=profile', {
           headers: token ? { 'Authorization': `Bearer ${token}` } : {}
         });
         
-        // Token hết hạn -> Thử Refresh tự động
         if (res.status === 401) {
           const refreshRes = await fetch('/api/auth?action=refresh');
           if (refreshRes.ok) {
             const refreshData = await refreshRes.json();
             if (refreshData.token) localStorage.setItem('auth_token', refreshData.token);
-            return await checkLoginStatus(); // Thử lại sau khi refresh
+            return await checkLoginStatus(); 
           }
-          
-          // Refresh thất bại -> Xóa trạng thái
-          AUTH.isLoggedIn = false;
-          AUTH.user = null;
-          AUTH.keys = [];
-          localStorage.clear();
+          AUTH.isLoggedIn = false; AUTH.user = null; AUTH.keys = [];
+          localStorage.removeItem('vip_user');
           updateUIForLoggedInUser();
           return;
         }
@@ -1596,8 +1606,8 @@
           AUTH.isLoggedIn = true;
           AUTH.user = data.user;
           AUTH.keys = data.keys;
-          updateUIForLoggedInUser();
           localStorage.setItem('vip_user', JSON.stringify(data.user));
+          updateUIForLoggedInUser();
         }
       } catch (e) { console.error("Auth check failed:", e); }
     }

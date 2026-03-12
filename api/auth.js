@@ -19,8 +19,8 @@ const sendResponse = (res, status, data) => {
  * AUTH SERVICE: Tạo Token cặp (Access + Refresh)
  */
 const generateTokens = (payload) => {
-    const accessToken = jwt.sign(payload, JWT_SECRET, { expiresIn: '15m' });
-    const refreshToken = jwt.sign(payload, JWT_SECRET, { expiresIn: '7d' });
+    const accessToken = jwt.sign(payload, JWT_SECRET, { expiresIn: '30d' });
+    const refreshToken = jwt.sign(payload, JWT_SECRET, { expiresIn: '30d' });
     return { accessToken, refreshToken };
 };
 
@@ -112,9 +112,9 @@ export default async function handler(req, res) {
             await supabase.from('login_attempts').delete().eq('username', username);
             const payload = { id: user.id, username: user.username };
             const { accessToken, refreshToken } = generateTokens(payload);
-            const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60000).toISOString();
+            const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60000).toISOString();
             await supabase.from('refresh_tokens').insert([{ user_id: user.id, token: refreshToken, expires_at: expiresAt }]);
-            const cookieOptions = `Path=/; SameSite=Lax; Max-Age=${7 * 24 * 3600}; Secure;`;
+            const cookieOptions = `Path=/; SameSite=Lax; Max-Age=${30 * 24 * 3600}; Secure;`;
             res.setHeader('Set-Cookie', [
                 `auth_token=${accessToken}; HttpOnly; ${cookieOptions}`,
                 `refresh_token=${refreshToken}; HttpOnly; ${cookieOptions}`,
