@@ -49,23 +49,42 @@ export default async function handler(req, res) {
         const { data: verified } = await supabase.from('udid_verifications').select('*').eq('udid', udid).single();
         
         if (verified) {
-            // B. Kiểm tra user hiện tại đã nhận key cho UDID này chưa
-            const { data: existingUserKey } = await supabase.from('user_keys')
+            const udidTransCode = 'UDID:' + udid.toUpperCase();
+
+            // B. Tìm xem UDID này đã từng có ai kích hoạt chưa (Để lấy hạn dùng gốc)
+            const { data: firstKey } = await supabase.from('user_keys')
                 .select('*')
-                .eq('user_id', userId)
-                .eq('transaction_code', 'UDID:' + udid)
+                .eq('transaction_code', udidTransCode)
+                .order('created_at', { ascending: true })
+                .limit(1)
                 .single();
 
-            if (existingUserKey) {
-                return res.json({ status: 'already_claimed', key_code: existingUserKey.key_code, expires_at: existingUserKey.expires_at });
+            let expiresAt;
+            if (firstKey) {
+                // Đã có người kích hoạt -> Lấy đúng hạn dùng của người đầu tiên
+                expiresAt = firstKey.expires_at;
+            } else {
+                // CHƯA AI KÍCH HOẠT -> Thiết lập 30 NGÀY từ bây giờ (Cố định cho UDID này)
+                expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
             }
 
-            // Kiểm tra hạn dùng từ bảng verified
-            if (verified.expires_at && new Date(verified.expires_at) < new Date()) {
+            // C. Kiểm tra user hiện tại đã nhận key cho UDID này chưa
+            const { data: userKey } = await supabase.from('user_keys')
+                .select('*')
+                .eq('user_id', userId)
+                .eq('transaction_code', udidTransCode)
+                .single();
+
+            if (userKey) {
+                return res.json({ status: 'already_claimed', key_code: userKey.key_code, expires_at: userKey.expires_at });
+            }
+
+            // Kiểm tra nếu hạn dùng gốc đã hết
+            if (new Date(expiresAt) < new Date()) {
                 return res.json({ status: 'expired' });
             }
 
-            // C. Tạo key mới cho user này nhưng dùng expires_at từ verified
+            // D. Tạo key mới cho user này (Dùng chung expiresAt cố định)
             const genKey = () => {
                 const part = () => Array.from({length:4}, () => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'[Math.floor(Math.random()*36)]).join('');
                 return `${part()}-${part()}-${part()}-${part()}`;
@@ -75,16 +94,16 @@ export default async function handler(req, res) {
             const { error: insErr } = await supabase.from('user_keys').insert([{ 
                 key_code: newKey, 
                 user_id: userId, 
-                package_name: 'Gói UDID Free', 
+                package_name: 'Gói UDID Free (1 Tháng)', 
                 status: 'active', 
                 usage_count: 0, 
                 max_usage: 999999, 
-                expires_at: verified.expires_at, 
-                transaction_code: 'UDID:' + udid 
+                expires_at: expiresAt, 
+                transaction_code: udidTransCode 
             }]);
 
             if (insErr) return res.status(500).json({ error: 'Lỗi gán mã VIP' });
-            return res.json({ status: 'success', key_code: newKey, expires_at: verified.expires_at });
+            return res.json({ status: 'success', key_code: newKey, expires_at: expiresAt });
         }
 
         // D. Nếu chưa có trong verifications -> Kiểm tra pending
