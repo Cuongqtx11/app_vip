@@ -288,6 +288,60 @@
     "lastSync": "2026-03-13T09:00:01.400Z"
   },
   {
+    "id": "ipa-com.camerasideas.InstaShot-1.94.2",
+    "type": "ipa",
+    "name": "InShot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.InstaShot.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/InShot_1.94.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.94.2",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.InstaShot",
+    "lastSync": "2026-03-13T10:00:01.579Z"
+  },
+  {
+    "id": "ipa-com.ahaf.mshion-7.37.1",
+    "type": "ipa",
+    "name": "ism",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ahaf.mshion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/ism_7.37.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.37.1",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.ahaf.mshion",
+    "lastSync": "2026-03-13T10:00:01.580Z"
+  },
+  {
+    "id": "ipa-com.snowcorp.epik-7.0.130",
+    "type": "ipa",
+    "name": "EPIK",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.epik.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/EPIK_7.0.130_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.0.130",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.epik",
+    "lastSync": "2026-03-13T10:00:01.582Z"
+  },
+  {
     "id": "ipa-com.merge.cooking.theme.restaurant.food-1.32.1",
     "type": "ipa",
     "name": "MergeCooking",
