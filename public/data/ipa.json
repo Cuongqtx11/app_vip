@@ -396,6 +396,42 @@
     "lastSync": "2026-03-13T11:00:01.704Z"
   },
   {
+    "id": "ipa-com.wangyuehuan.vrtef-6.0.0",
+    "type": "ipa",
+    "name": "rPlayer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wangyuehuan.vrtef.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/rPlayer_6.0.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.0",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.wangyuehuan.vrtef",
+    "lastSync": "2026-03-13T15:00:02.091Z"
+  },
+  {
+    "id": "ipa-com.newmarketinglab.ImageCompressor-2.14",
+    "type": "ipa",
+    "name": "Compress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.newmarketinglab.ImageCompressor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/Compress_2.14_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.14",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.newmarketinglab.ImageCompressor",
+    "lastSync": "2026-03-13T15:00:02.092Z"
+  },
+  {
     "id": "ipa-com.merge.cooking.theme.restaurant.food-1.32.1",
     "type": "ipa",
     "name": "MergeCooking",
