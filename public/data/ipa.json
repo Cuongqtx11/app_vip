@@ -108,6 +108,114 @@
     "lastSync": "2026-03-13T00:00:02.113Z"
   },
   {
+    "id": "ipa-com.bbauman.Scripty-2.42",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/Coconote_2.42_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.42",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2026-03-13T01:00:01.842Z"
+  },
+  {
+    "id": "ipa-com.peoplefun.wordcross-3.9.2",
+    "type": "ipa",
+    "name": "Wordscapes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.peoplefun.wordcross.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/Wordscapes_3.9.2_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.2",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.peoplefun.wordcross",
+    "lastSync": "2026-03-13T01:00:01.843Z"
+  },
+  {
+    "id": "ipa-org.borrowedcache.ultimate531-5.19.2",
+    "type": "ipa",
+    "name": "KeyLifts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/KeyLifts_5.19.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.19.2",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "org.borrowedcache.ultimate531",
+    "lastSync": "2026-03-13T01:00:01.844Z"
+  },
+  {
+    "id": "ipa-com.itimeteo.webssh-31.0",
+    "type": "ipa",
+    "name": "WebSSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itimeteo.webssh.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/WebSSH_31.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "31.0",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.itimeteo.webssh",
+    "lastSync": "2026-03-13T01:00:01.845Z"
+  },
+  {
+    "id": "ipa-com.beelinguapp.beelinguapp-3.9.10",
+    "type": "ipa",
+    "name": "Beelinguapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beelinguapp.beelinguapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/Beelinguapp_3.9.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.10",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.beelinguapp.beelinguapp",
+    "lastSync": "2026-03-13T01:00:01.845Z"
+  },
+  {
+    "id": "ipa-com.facebook.Facebook-552.0.0",
+    "type": "ipa",
+    "name": "Facebook",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Facebook.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/Facebook_552.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "552.0.0",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Facebook",
+    "lastSync": "2026-03-13T01:00:01.845Z"
+  },
+  {
     "id": "ipa-com.merge.cooking.theme.restaurant.food-1.32.1",
     "type": "ipa",
     "name": "MergeCooking",
