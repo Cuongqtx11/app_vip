@@ -342,6 +342,60 @@
     "lastSync": "2026-03-13T10:00:01.582Z"
   },
   {
+    "id": "ipa-com.dopedevelopment.Panels-9.28.3",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/SCRL_9.28.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.28.3",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2026-03-13T11:00:01.701Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.pdffree-2.11.3",
+    "type": "ipa",
+    "name": "Scanner",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.pdffree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/Scanner_2.11.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.3",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.pdffree",
+    "lastSync": "2026-03-13T11:00:01.702Z"
+  },
+  {
+    "id": "ipa-com.camerasideas.Peachy-2.10.2",
+    "type": "ipa",
+    "name": "Peachy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.Peachy.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-03-2026/Peachy_2.10.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.2",
+    "developer": "khomodvip",
+    "date": "2026-03-13",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.Peachy",
+    "lastSync": "2026-03-13T11:00:01.704Z"
+  },
+  {
     "id": "ipa-com.merge.cooking.theme.restaurant.food-1.32.1",
     "type": "ipa",
     "name": "MergeCooking",
