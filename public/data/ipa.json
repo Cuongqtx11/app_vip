@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.ulisesolave.Fitia-22.0.4",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-03-2026/Fitia_22.0.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "22.0.4",
+    "developer": "khomodvip",
+    "date": "2026-03-14",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-03-13T20:00:01.848Z"
+  },
+  {
     "id": "ipa-com.phantom.fantengmu-2.1.2",
     "type": "ipa",
     "name": "FELFishEyeLens",
