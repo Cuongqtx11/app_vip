@@ -18,6 +18,60 @@
     "lastSync": "2026-03-14T21:00:01.513Z"
   },
   {
+    "id": "ipa-com.alevioos.app-2.4.6",
+    "type": "ipa",
+    "name": "AlevioOS",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alevioos.app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-03-2026/AlevioOS_2.4.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.6",
+    "developer": "khomodvip",
+    "date": "2026-03-15",
+    "source": "apptesters",
+    "bundleID": "com.alevioos.app",
+    "lastSync": "2026-03-14T22:00:01.711Z"
+  },
+  {
+    "id": "ipa-com.lampa.photo-2.0.2",
+    "type": "ipa",
+    "name": "Lampa",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lampa.photo.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-03-2026/Lampa_2.0.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.0.2",
+    "developer": "khomodvip",
+    "date": "2026-03-15",
+    "source": "apptesters",
+    "bundleID": "com.lampa.photo",
+    "lastSync": "2026-03-14T22:00:01.712Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.Fitia-22.1",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-03-2026/Fitia_22.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "22.1",
+    "developer": "khomodvip",
+    "date": "2026-03-15",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-03-14T22:00:01.714Z"
+  },
+  {
     "id": "ipa-com.ulisesolave.Fitia-22.0.4",
     "type": "ipa",
     "name": "Fitia",
