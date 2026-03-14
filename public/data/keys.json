@@ -5,7 +5,7 @@
     "createdAt": "2026-03-14T08:03:29.900Z",
     "expiresAt": "2026-03-21T08:03:28.236Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "NBAOVN",
