@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.busuu.english.app-30.5.0",
+    "type": "ipa",
+    "name": "Busuu",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Busuu_30.5.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "30.5.0",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.busuu.english.app",
+    "lastSync": "2026-03-15T19:00:01.597Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-51.0.1",
     "type": "ipa",
     "name": "Drafts",
