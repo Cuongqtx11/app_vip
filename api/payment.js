@@ -29,10 +29,13 @@ export default async function handler(req, res) {
                 } catch (e) {}
             }
 
-            const orderCode = Number(Date.now().toString() + Math.floor(100 + Math.random() * 900).toString());
+            // Chuẩn hóa orderCode: 9 số cuối timestamp + 5 số ngẫu nhiên = 14 chữ số (An toàn cho mọi Bank)
+            const orderCode = Number(Date.now().toString().slice(-9) + Math.floor(10000 + Math.random() * 90000).toString());
+            
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-            let transferCode = '';
-            for (let i = 0; i < 6; i++) { transferCode += chars.charAt(Math.floor(Math.random() * chars.length)); }
+            let codePart = '';
+            for (let i = 0; i < 6; i++) { codePart += chars.charAt(Math.floor(Math.random() * chars.length)); }
+            const transferCode = `MA${codePart}`; // Thêm tiền tố MA để tránh bị bộ lọc bank chặn
 
             const host = `https://${req.headers.host}`;
             const body = {
