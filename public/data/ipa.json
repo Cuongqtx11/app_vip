@@ -180,6 +180,60 @@
     "lastSync": "2026-03-15T10:00:01.471Z"
   },
   {
+    "id": "ipa-net.mkswap.Dropshare-iOS-3.60",
+    "type": "ipa",
+    "name": "Dropshare",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.mkswap.Dropshare-iOS.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-03-2026/Dropshare_3.60_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.60",
+    "developer": "khomodvip",
+    "date": "2026-03-15",
+    "source": "apptesters",
+    "bundleID": "net.mkswap.Dropshare-iOS",
+    "lastSync": "2026-03-15T15:00:01.699Z"
+  },
+  {
+    "id": "ipa-com.mutaeb.OVF-Editor-6.1.0",
+    "type": "ipa",
+    "name": "OVFEditor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mutaeb.OVF-Editor.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-03-2026/OVFEditor_6.1.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.1.0",
+    "developer": "khomodvip",
+    "date": "2026-03-15",
+    "source": "apptesters",
+    "bundleID": "com.mutaeb.OVF-Editor",
+    "lastSync": "2026-03-15T15:00:01.700Z"
+  },
+  {
+    "id": "ipa-com.jps.gpspeedhud-8.0.7",
+    "type": "ipa",
+    "name": "Speedometer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jps.gpspeedhud.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-03-2026/Speedometer_8.0.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.7",
+    "developer": "khomodvip",
+    "date": "2026-03-15",
+    "source": "apptesters",
+    "bundleID": "com.jps.gpspeedhud",
+    "lastSync": "2026-03-15T15:00:01.702Z"
+  },
+  {
     "id": "ipa-com.ulisesolave.Fitia-22.0.4",
     "type": "ipa",
     "name": "Fitia",
