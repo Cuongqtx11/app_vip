@@ -18,6 +18,24 @@
     "lastSync": "2026-03-15T19:00:01.597Z"
   },
   {
+    "id": "ipa-com.iPwners.Plonkan-13.29",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Buddy_13.29_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.29",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2026-03-15T23:00:01.243Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-51.0.1",
     "type": "ipa",
     "name": "Drafts",
