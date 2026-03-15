@@ -5,7 +5,7 @@
     "createdAt": "2026-03-15T14:16:43.634Z",
     "expiresAt": "2026-03-22T14:16:42.503Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "IQK0CZ",
