@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1773557145_1427",
+    "key": "ZB3H-3HUF-ZGG7-DYRN",
+    "createdAt": "2026-03-15T06:45:45.111611+00:00",
+    "expiresAt": "2026-03-16T06:45:45.111611+00:00",
+    "maxUses": 5,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "telegram_bot",
+    "notes": "1 days, 5 uses"
+  },
+  {
     "id": "key_1773556663",
     "key": "S2L3-30WB-4PDJ-SPRN",
     "createdAt": "2026-03-15T06:37:43.533Z",
