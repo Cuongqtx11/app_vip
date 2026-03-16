@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.elevateapp.elevate-5.232.0",
+    "type": "ipa",
+    "name": "Elevate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.elevate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Elevate_5.232.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.232.0",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.elevate",
+    "lastSync": "2026-03-16T22:00:01.605Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.5.0",
     "type": "ipa",
     "name": "Busuu",
