@@ -1381,7 +1381,8 @@
 
     function downloadFree() {
       const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
-      window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank');
+      // Gọi qua API bí mật trên Server để ẩn mã API Key
+      window.open(`/api/get-free-link?url=${encodeURIComponent(link)}`, '_blank');
       closeModal('appModal');
     }
 
