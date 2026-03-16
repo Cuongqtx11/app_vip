@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-phim4k.ios-2.0.11",
+    "type": "ipa",
+    "name": "Phim 4K",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPtK0-asU3mfXCeGJse8nn77uQYk6VIJXztfwwMF-_Wi27wci2rRcG51D&s=10",
+    "desc": "app xem phim mới update. chất lượng 4k kho phim mới nè",
+    "tags": [
+      "manual"
+    ],
+    "badge": "new",
+    "fileLink": "https://www.mediafire.com/file/0pyy8k6ycr6bx4g/Phim4K-v2.0.11.ipa/file",
+    "version": "2.0.11",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "manual",
+    "bundleID": "phim4k.ios",
+    "lastSync": "2026-03-16T18:04:21.478986Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.5.0",
     "type": "ipa",
     "name": "Busuu",
