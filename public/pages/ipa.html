@@ -775,8 +775,8 @@
         return;
       }
       
-      const link4mUrl = `https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(currentAppLink)}`;
-      window.open(link4mUrl, '_blank');
+      const proxyUrl = `/api/get-free-link?url=${encodeURIComponent(currentAppLink)}`;
+      window.open(proxyUrl, '_blank');
       
       setTimeout(() => closeDownloadPopup(), 1000);
     }
