@@ -603,6 +603,10 @@
           <input type="text" id="vipKey" class="vip-input-field" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19">
           <button class="vip-confirm-btn" id="verifyBtn" onclick="verifyKey()">XÁC NHẬN & TẢI</button>
           <p id="vipMsg" class="hidden"></p>
+          <button class="free-dl-btn" id="freeDlBtn" onclick="downloadFree()">
+            <i data-lucide="gift" style="width:15px;height:15px;color:#7c3aed;"></i>
+            Tải xuống miễn phí
+          </button>
           <a href="payment.html" class="buy-key-link">MUA KEY VIP DOWNLOAD</a>
         </div>
 
@@ -1188,6 +1192,7 @@
       verifyBtn.disabled = false;
       verifyBtn.textContent = 'XÁC NHẬN & TẢI';
       verifyBtn.style.display = '';           // ← reset lại hiển thị
+      document.getElementById('freeDlBtn').style.display = '';  // ← reset lại
 
       // Reset screenshots skeleton
       document.getElementById('mScreenshots').innerHTML = `
@@ -1375,13 +1380,9 @@
     }
 
     function downloadFree() {
-      // Đã xóa tính năng vượt link — yêu cầu đăng nhập và key VIP
-      if (!AUTH.isLoggedIn) {
-        showNotification('⚠️ Bạn cần đăng nhập để tải!', 'info');
-        setTimeout(() => { location.href = 'login.html?redirect=' + encodeURIComponent(location.href); }, 1000);
-      } else {
-        showNotification('Bạn cần mua gói VIP để tải!', 'error');
-      }
+      const link = STATE.currentItem.fileLink || STATE.currentItem.downloadUrl || STATE.currentItem.link;
+      window.open(`https://link4m.co/st?api=691e7751f7bfff4e4434ecd5&url=${encodeURIComponent(link)}`, '_blank');
+      closeModal('appModal');
     }
 
     // ============================================================
