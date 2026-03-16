@@ -126,42 +126,6 @@
     "lastSync": "2026-03-16T10:00:01.787Z"
   },
   {
-    "id": "ipa-com.mwm.stems-5.00.00",
-    "type": "ipa",
-    "name": "Stemz",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
-    "desc": "Injected with Pro",
-    "tags": [
-      "utilities"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Stemz_5.00.00_Pro_%40thisismanpreets_apptesters.org.ipa",
-    "version": "5.00.00",
-    "developer": "khomodvip",
-    "date": "2026-03-16",
-    "source": "apptesters",
-    "bundleID": "com.mwm.stems",
-    "lastSync": "2026-03-16T11:00:01.586Z"
-  },
-  {
-    "id": "ipa-com.itwcalculator.worldradarfree-5.17.2",
-    "type": "ipa",
-    "name": "NOAARadar",
-    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png",
-    "desc": "Injected with Subscription Unlocked",
-    "tags": [
-      "utilities"
-    ],
-    "badge": "new",
-    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/NOAARadar_5.17.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
-    "version": "5.17.2",
-    "developer": "khomodvip",
-    "date": "2026-03-16",
-    "source": "apptesters",
-    "bundleID": "com.itwcalculator.worldradarfree",
-    "lastSync": "2026-03-16T11:00:01.586Z"
-  },
-  {
     "id": "ipa-com.agiletortoise.Drafts5-51.0.1",
     "type": "ipa",
     "name": "Drafts",
@@ -48543,17 +48507,6 @@
     "date": "2025-11-28"
   },
   {
-    "id": "mod-1768630922594",
-    "type": "mod",
-    "date": "2026-03-16",
-    "title": "Phim 4K",
-    "version": "2.0.11",
-    "description": "app xem phim mới update. chất lượng 4k kho phim mới",
-    "downloadUrl": "https://www.mediafire.com/file/0pyy8k6ycr6bx4g/Phim4K-v2.0.11.ipa/file",
-    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPtK0-asU3mfXCeGJse8nn77uQYk6VIJXztfwwMF-_Wi27wci2rRcG51D&s=10",
-    "tag": "Hot"
-  },
-  {
     "id": "ipa-1769661576747",
     "type": "ipa",
     "date": "2026-01-29",
@@ -48582,21 +48535,6 @@
     ],
     "badge": "trending",
     "fileLink": "https://www.mediafire.com/file/vqce43tx80y621f/Arena+of+Valor_1.61.11561513_1768465514.ipa/file"
-  },
-  {
-    "id": "ipa-1769657738977",
-    "type": "ipa",
-    "date": "2026-01-29",
-    "name": "Phim 4K",
-    "icon": "https://voz.vn/proxy.php?image=https%3A%2F%2Fcdn5.telesco.pe%2Ffile%2FVDrvzSfGVfdFH6GCyXRQb_4GLcNq3-Yc9Y8n_qMU56e_TiqFHzLUC6i70lIjd7HqdkrNh4oQGtHvRydxioeMdOI7lGhR6MGVIV3iwTtPV05bkGSglRhl_gwuYVCqFeHfVtqwXkS3s89O8YEGjrcLyhjbZkhHsqzj8JwXUELqu-ZAi8FYedwT2PU0km6cw1V9ZLRE6ZCiysegqaAi_rsIcTm2WtzUQj_h0Rbp13miERVlue0JwJO0bf0yg2HPRibGYLvovliW_QcqnVIsft9VSBhNt3sry6_t2RjmHKE9bHxWyBJs1E9Ovj7Gj547xJZ8wgwGJFJ4iO0pXG9PBNfc1Q.jpg&hash=d14bf8b03dcdadcde67e17779008be5e&return_error=1",
-    "desc": "app xem phim 4k chất lượng cao, tương tự rổ phim và không bị chặn vùng quốc gia, kho phim lậu, phim chiếu rạp,…",
-    "version": "1.9.7",
-    "developer": "",
-    "tags": [
-      "photo/video"
-    ],
-    "badge": "hot",
-    "fileLink": "https://www.mediafire.com/file/llyql73ihjhrs9w/Phim+4K_1.9.7.ipa/file"
   },
   {
     "id": "ipa-1764899504109",
