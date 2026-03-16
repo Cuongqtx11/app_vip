@@ -133,7 +133,7 @@
     "createdAt": "2026-03-15T06:37:43.533Z",
     "expiresAt": "2026-03-22T06:37:42.373Z",
     "maxUses": 10,
-    "currentUses": 6,
+    "currentUses": 7,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "LDC3C0",
