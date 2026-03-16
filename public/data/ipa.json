@@ -450,6 +450,24 @@
     "lastSync": "2026-03-16T18:00:01.780Z"
   },
   {
+    "id": "ipa-com.burbn.instagram-421.0.6",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Instagram_421.0.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "421.0.6",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-03-16T19:00:01.965Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-51.0.1",
     "type": "ipa",
     "name": "Drafts",
