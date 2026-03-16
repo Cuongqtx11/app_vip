@@ -1,16 +1,5 @@
 [
   {
-    "id": "mod-1768630922594",
-    "type": "mod",
-    "date": "2026-03-16",
-    "title": "Phim 4K",
-    "version": "2.0.11",
-    "description": "app xem phim mới update. chất lượng 4k kho phim mới",
-    "downloadUrl": "https://www.mediafire.com/file/0pyy8k6ycr6bx4g/Phim4K-v2.0.11.ipa/file",
-    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPtK0-asU3mfXCeGJse8nn77uQYk6VIJXztfwwMF-_Wi27wci2rRcG51D&s=10",
-    "tag": "Hot"
-  },
-  {
     "id": "ipa-com.busuu.english.app-30.5.0",
     "type": "ipa",
     "name": "Busuu",
@@ -135,6 +124,42 @@
     "source": "apptesters",
     "bundleID": "com.readdle.Scanner",
     "lastSync": "2026-03-16T10:00:01.787Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems-5.00.00",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Stemz_5.00.00_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.00.00",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2026-03-16T11:00:01.586Z"
+  },
+  {
+    "id": "ipa-com.itwcalculator.worldradarfree-5.17.2",
+    "type": "ipa",
+    "name": "NOAARadar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/NOAARadar_5.17.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.2",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.itwcalculator.worldradarfree",
+    "lastSync": "2026-03-16T11:00:01.586Z"
   },
   {
     "id": "ipa-com.agiletortoise.Drafts5-51.0.1",
@@ -48516,6 +48541,17 @@
     "version": "18.0.2",
     "developer": "cuios.shop",
     "date": "2025-11-28"
+  },
+  {
+    "id": "mod-1768630922594",
+    "type": "mod",
+    "date": "2026-03-16",
+    "title": "Phim 4K",
+    "version": "2.0.11",
+    "description": "app xem phim mới update. chất lượng 4k kho phim mới",
+    "downloadUrl": "https://www.mediafire.com/file/0pyy8k6ycr6bx4g/Phim4K-v2.0.11.ipa/file",
+    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPtK0-asU3mfXCeGJse8nn77uQYk6VIJXztfwwMF-_Wi27wci2rRcG51D&s=10",
+    "tag": "Hot"
   },
   {
     "id": "ipa-1769661576747",
