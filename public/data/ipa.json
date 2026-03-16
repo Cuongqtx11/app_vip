@@ -252,6 +252,60 @@
     "lastSync": "2026-03-16T13:00:01.193Z"
   },
   {
+    "id": "ipa-com.museworks.swipemix-2.12.1",
+    "type": "ipa",
+    "name": "SwipeMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.museworks.swipemix.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/SwipeMix_2.12.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.12.1",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.museworks.swipemix",
+    "lastSync": "2026-03-16T14:00:01.723Z"
+  },
+  {
+    "id": "ipa-com.aoklab.fewerphotos-3.3.0",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/swipewipe_3.3.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.0",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2026-03-16T14:00:01.723Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.59.00",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/ColorPop_2.59.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.59.00",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2026-03-16T14:00:01.725Z"
+  },
+  {
     "id": "ipa-com.agiletortoise.Drafts5-51.0.1",
     "type": "ipa",
     "name": "Drafts",
