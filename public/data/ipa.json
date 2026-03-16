@@ -1,23 +1,5 @@
 [
   {
-    "id": "ipa-phim4k.ios-2.0.11",
-    "type": "ipa",
-    "name": "Phim 4K",
-    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPtK0-asU3mfXCeGJse8nn77uQYk6VIJXztfwwMF-_Wi27wci2rRcG51D&s=10",
-    "desc": "app xem phim mới update. chất lượng 4k kho phim mới nè",
-    "tags": [
-      "manual"
-    ],
-    "badge": "new",
-    "fileLink": "https://www.mediafire.com/file/0pyy8k6ycr6bx4g/Phim4K-v2.0.11.ipa/file",
-    "version": "2.0.11",
-    "developer": "khomodvip",
-    "date": "2026-03-16",
-    "source": "manual",
-    "bundleID": "phim4k.ios",
-    "lastSync": "2026-03-16T18:04:21.478986Z"
-  },
-  {
     "id": "ipa-com.busuu.english.app-30.5.0",
     "type": "ipa",
     "name": "Busuu",
@@ -142,6 +124,78 @@
     "source": "apptesters",
     "bundleID": "com.readdle.Scanner",
     "lastSync": "2026-03-16T10:00:01.787Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2026.11.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Photoroom_2026.11.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.11.01",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-03-16T12:00:01.666Z"
+  },
+  {
+    "id": "ipa-com.wikiloc.wikiloc-3.26.5",
+    "type": "ipa",
+    "name": "Wikiloc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wikiloc.wikiloc.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Wikiloc_3.26.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.26.5",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.wikiloc.wikiloc",
+    "lastSync": "2026-03-16T12:00:01.667Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems-5.00.00",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/Stemz_5.00.00_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.00.00",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2026-03-16T12:00:01.675Z"
+  },
+  {
+    "id": "ipa-com.itwcalculator.worldradarfree-5.17.2",
+    "type": "ipa",
+    "name": "NOAARadar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-03-2026/NOAARadar_5.17.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.2",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "apptesters",
+    "bundleID": "com.itwcalculator.worldradarfree",
+    "lastSync": "2026-03-16T12:00:01.676Z"
   },
   {
     "id": "ipa-com.agiletortoise.Drafts5-51.0.1",
@@ -48507,6 +48561,24 @@
     "source": "apptesters",
     "bundleID": "com.eup.heyjapan",
     "lastSync": "2026-03-11T19:00:01.631Z"
+  },
+  {
+    "id": "ipa-phim4k.ios-2.0.11",
+    "type": "ipa",
+    "name": "Phim 4K",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPtK0-asU3mfXCeGJse8nn77uQYk6VIJXztfwwMF-_Wi27wci2rRcG51D&s=10",
+    "desc": "app xem phim mới update. chất lượng 4k kho phim mới nè",
+    "tags": [
+      "manual"
+    ],
+    "badge": "new",
+    "fileLink": "https://www.mediafire.com/file/0pyy8k6ycr6bx4g/Phim4K-v2.0.11.ipa/file",
+    "version": "2.0.11",
+    "developer": "khomodvip",
+    "date": "2026-03-16",
+    "source": "manual",
+    "bundleID": "phim4k.ios",
+    "lastSync": "2026-03-16T18:04:21.478986Z"
   },
   {
     "id": "ipa-1764302023121",
