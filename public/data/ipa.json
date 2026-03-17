@@ -576,6 +576,42 @@
     "lastSync": "2026-03-17T17:00:01.760Z"
   },
   {
+    "id": "ipa-com.wiheads.paste-6.3.12",
+    "type": "ipa",
+    "name": "Paste",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wiheads.paste.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Paste_6.3.12_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.12",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.wiheads.paste",
+    "lastSync": "2026-03-17T18:00:01.981Z"
+  },
+  {
+    "id": "ipa-com.duolingo.DuolingoMobile-7.114.1",
+    "type": "ipa",
+    "name": "Duolingo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.duolingo.DuolingoMobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Duolingo_7.114.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.114.1",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.duolingo.DuolingoMobile",
+    "lastSync": "2026-03-17T18:00:01.983Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.5.0",
     "type": "ipa",
     "name": "Busuu",
