@@ -90,6 +90,60 @@
     "lastSync": "2026-03-17T22:00:01.335Z"
   },
   {
+    "id": "ipa-com.alevioos.app-2.4.7",
+    "type": "ipa",
+    "name": "AlevioOS",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alevioos.app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/AlevioOS_2.4.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.7",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.alevioos.app",
+    "lastSync": "2026-03-17T23:00:02.078Z"
+  },
+  {
+    "id": "ipa-com.burbn.instagram-421.1.6",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/Instagram_421.1.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "421.1.6",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-03-17T23:00:02.078Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.Fitia-22.2",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/Fitia_22.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "22.2",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-03-17T23:00:02.080Z"
+  },
+  {
     "id": "ipa-com.elevateapp.elevate-5.232.0",
     "type": "ipa",
     "name": "Elevate",
