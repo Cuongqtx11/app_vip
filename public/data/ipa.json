@@ -18,6 +18,78 @@
     "lastSync": "2026-03-17T20:00:01.548Z"
   },
   {
+    "id": "ipa-com.zhiliaoapp.musically-44.3.0",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/TikTok_44.3.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "44.3.0",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-03-17T22:00:01.332Z"
+  },
+  {
+    "id": "ipa-com.locket.Locket-2.37.0",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/Locket_2.37.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.37.0",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2026-03-17T22:00:01.333Z"
+  },
+  {
+    "id": "ipa-com.myfitnesspal.mfp-26.11.0",
+    "type": "ipa",
+    "name": "MyFitnessPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myfitnesspal.mfp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/MyFitnessPal_26.11.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.11.0",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.myfitnesspal.mfp",
+    "lastSync": "2026-03-17T22:00:01.334Z"
+  },
+  {
+    "id": "ipa-at.stefanstangl.CuteWeather-5.2.31",
+    "type": "ipa",
+    "name": "CuteWeather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/at.stefanstangl.CuteWeather.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/CuteWeather_5.2.31_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.2.31",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "at.stefanstangl.CuteWeather",
+    "lastSync": "2026-03-17T22:00:01.335Z"
+  },
+  {
     "id": "ipa-com.elevateapp.elevate-5.232.0",
     "type": "ipa",
     "name": "Elevate",
