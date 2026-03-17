@@ -180,6 +180,42 @@
     "lastSync": "2026-03-16T23:00:01.978Z"
   },
   {
+    "id": "ipa-com.gingerlabs.Notability-15.5",
+    "type": "ipa",
+    "name": "Notability",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gingerlabs.Notability.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Notability_15.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.5",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.gingerlabs.Notability",
+    "lastSync": "2026-03-17T00:00:01.713Z"
+  },
+  {
+    "id": "ipa-com.coach.zing-1.121.0",
+    "type": "ipa",
+    "name": "Zing",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.coach.zing.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Zing_1.121.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.121.0",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.coach.zing",
+    "lastSync": "2026-03-17T00:00:01.714Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.5.0",
     "type": "ipa",
     "name": "Busuu",
