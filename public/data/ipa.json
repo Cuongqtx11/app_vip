@@ -306,6 +306,114 @@
     "lastSync": "2026-03-17T08:00:01.354Z"
   },
   {
+    "id": "ipa-com.photomyne.photomyneapplite-32.6",
+    "type": "ipa",
+    "name": "Photomyne",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photomyne.photomyneapplite.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Photomyne_32.6_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "32.6",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.photomyne.photomyneapplite",
+    "lastSync": "2026-03-17T10:00:01.409Z"
+  },
+  {
+    "id": "ipa-app.mmap.mobile-2.9.12",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Soundmap_2.9.12_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.9.12",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2026-03-17T10:00:01.410Z"
+  },
+  {
+    "id": "ipa-com.linecorp.b612-15.0.10",
+    "type": "ipa",
+    "name": "B612",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.b612.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/B612_15.0.10_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.0.10",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.b612",
+    "lastSync": "2026-03-17T10:00:01.410Z"
+  },
+  {
+    "id": "ipa-com.mcdiamondfinder.app-9.0.1",
+    "type": "ipa",
+    "name": "DiamondFinder",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mcdiamondfinder.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/DiamondFinder_9.0.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.0.1",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.mcdiamondfinder.app",
+    "lastSync": "2026-03-17T10:00:01.411Z"
+  },
+  {
+    "id": "ipa-com.moonly.Moonly-2.7.0",
+    "type": "ipa",
+    "name": "Moonly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonly.Moonly.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Moonly_2.7.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.7.0",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "com.moonly.Moonly",
+    "lastSync": "2026-03-17T10:00:01.411Z"
+  },
+  {
+    "id": "ipa-app.cranberry.cure-2.2",
+    "type": "ipa",
+    "name": "Cure",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.cranberry.cure.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-03-2026/Cure_2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2",
+    "developer": "khomodvip",
+    "date": "2026-03-17",
+    "source": "apptesters",
+    "bundleID": "app.cranberry.cure",
+    "lastSync": "2026-03-17T10:00:01.412Z"
+  },
+  {
     "id": "ipa-com.busuu.english.app-30.5.0",
     "type": "ipa",
     "name": "Busuu",
