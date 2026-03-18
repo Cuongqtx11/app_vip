@@ -180,6 +180,60 @@
     "lastSync": "2026-03-18T05:00:01.463Z"
   },
   {
+    "id": "ipa-com.lightricks.Facetune2-26.1",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/Facetune_26.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-03-18T08:00:01.460Z"
+  },
+  {
+    "id": "ipa-com.khanov.BlockerX-6.5",
+    "type": "ipa",
+    "name": "1Blocker",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.khanov.BlockerX.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/1Blocker_6.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.khanov.BlockerX",
+    "lastSync": "2026-03-18T08:00:01.461Z"
+  },
+  {
+    "id": "ipa-tech.miidii.MDClock-2.66",
+    "type": "ipa",
+    "name": "MDClock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.MDClock.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/MDClock_2.66_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.66",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.MDClock",
+    "lastSync": "2026-03-18T08:00:01.462Z"
+  },
+  {
     "id": "ipa-com.elevateapp.elevate-5.232.0",
     "type": "ipa",
     "name": "Elevate",
