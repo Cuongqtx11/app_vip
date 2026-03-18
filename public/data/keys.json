@@ -599,7 +599,7 @@
     "createdAt": "2026-03-10T16:06:43.326Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "QAHYBQ",
