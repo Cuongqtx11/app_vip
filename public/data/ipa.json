@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-net.whatsapp.WhatsApp-26.10.73",
+    "type": "ipa",
+    "name": "WhatsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.whatsapp.WhatsApp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/WhatsApp_26.10.73_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.10.73",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "net.whatsapp.WhatsApp",
+    "lastSync": "2026-03-18T20:00:01.631Z"
+  },
+  {
+    "id": "ipa-net.whatsapp.WhatsAppSMB-26.9.75",
+    "type": "ipa",
+    "name": "WABusiness",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.whatsapp.WhatsAppSMB.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/WABusiness_26.9.75_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.9.75",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "net.whatsapp.WhatsAppSMB",
+    "lastSync": "2026-03-18T20:00:01.632Z"
+  },
+  {
     "id": "ipa-com.markodevcic.js-code-pad-1.8.20",
     "type": "ipa",
     "name": "JSCodePad",
