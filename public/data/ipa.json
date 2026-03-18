@@ -126,6 +126,96 @@
     "lastSync": "2026-03-18T22:00:02.425Z"
   },
   {
+    "id": "ipa-com.gunthermarktl.stepapp-8.7.1",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/StepsApp_8.7.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.7.1",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2026-03-18T23:00:01.690Z"
+  },
+  {
+    "id": "ipa-com.elf-audio.koala-1.4155",
+    "type": "ipa",
+    "name": "koala",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elf-audio.koala.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/koala_1.4155_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4155",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "com.elf-audio.koala",
+    "lastSync": "2026-03-18T23:00:01.690Z"
+  },
+  {
+    "id": "ipa-com.playgendary.ktbremaster-2.16.1",
+    "type": "ipa",
+    "name": "KTBSecondKick",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.playgendary.ktbremaster.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/KTBSecondKick_2.16.1_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.16.1",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "com.playgendary.ktbremaster",
+    "lastSync": "2026-03-18T23:00:01.691Z"
+  },
+  {
+    "id": "ipa-io.yogger.Yogger-5.3.2",
+    "type": "ipa",
+    "name": "Yogger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.yogger.Yogger.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/Yogger_5.3.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.3.2",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "io.yogger.Yogger",
+    "lastSync": "2026-03-18T23:00:01.692Z"
+  },
+  {
+    "id": "ipa-com.hemin.mp3editor-5.72",
+    "type": "ipa",
+    "name": "AudioEditor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hemin.mp3editor.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/AudioEditor_5.72_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.72",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "com.hemin.mp3editor",
+    "lastSync": "2026-03-18T23:00:01.692Z"
+  },
+  {
     "id": "ipa-com.markodevcic.js-code-pad-1.8.20",
     "type": "ipa",
     "name": "JSCodePad",
