@@ -234,6 +234,42 @@
     "lastSync": "2026-03-18T08:00:01.462Z"
   },
   {
+    "id": "ipa-com.lexwarelabs.goodmorning-6.26.10",
+    "type": "ipa",
+    "name": "SleepCycle",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lexwarelabs.goodmorning.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/SleepCycle_6.26.10_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.26.10",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.lexwarelabs.goodmorning",
+    "lastSync": "2026-03-18T09:00:01.676Z"
+  },
+  {
+    "id": "ipa-com.moonly.Moonly-2.7.1",
+    "type": "ipa",
+    "name": "Moonly",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonly.Moonly.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-03-2026/Moonly_2.7.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.7.1",
+    "developer": "khomodvip",
+    "date": "2026-03-18",
+    "source": "apptesters",
+    "bundleID": "com.moonly.Moonly",
+    "lastSync": "2026-03-18T09:00:01.677Z"
+  },
+  {
     "id": "ipa-com.elevateapp.elevate-5.232.0",
     "type": "ipa",
     "name": "Elevate",
