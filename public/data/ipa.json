@@ -486,6 +486,78 @@
     "lastSync": "2026-03-19T22:00:01.744Z"
   },
   {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.33.0",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "lifestyle"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/MergeCooking_1.33.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.33.0",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2026-03-19T23:00:01.973Z"
+  },
+  {
+    "id": "ipa-com.actowise.browser-3.6",
+    "type": "ipa",
+    "name": "Zoomable",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.actowise.browser.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/Zoomable_3.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.6",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.actowise.browser",
+    "lastSync": "2026-03-19T23:00:01.974Z"
+  },
+  {
+    "id": "ipa-org.borrowedcache.ultimate531-5.19.3",
+    "type": "ipa",
+    "name": "KeyLifts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.borrowedcache.ultimate531.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/KeyLifts_5.19.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.19.3",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "org.borrowedcache.ultimate531",
+    "lastSync": "2026-03-19T23:00:01.981Z"
+  },
+  {
+    "id": "ipa-com.lingodeer-3.1.8",
+    "type": "ipa",
+    "name": "LingoDeer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lingodeer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/LingoDeer_3.1.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.1.8",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.lingodeer",
+    "lastSync": "2026-03-19T23:00:01.982Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsApp-26.10.73",
     "type": "ipa",
     "name": "WhatsApp",
