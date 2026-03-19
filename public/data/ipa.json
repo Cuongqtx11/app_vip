@@ -522,6 +522,78 @@
     "lastSync": "2026-03-19T10:00:01.777Z"
   },
   {
+    "id": "ipa-com.aoklab.fewerphotos-3.3.1",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/swipewipe_3.3.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.1",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2026-03-19T11:00:01.714Z"
+  },
+  {
+    "id": "ipa-com.beHappy.Productive-3.26.39",
+    "type": "ipa",
+    "name": "Productive",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beHappy.Productive.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/Productive_3.26.39_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.26.39",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "com.beHappy.Productive",
+    "lastSync": "2026-03-19T11:00:01.715Z"
+  },
+  {
+    "id": "ipa-com.adguard.AdguardExtension-4.5.18",
+    "type": "ipa",
+    "name": "AdGuard",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adguard.AdguardExtension.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/AdGuard_4.5.18_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.5.18",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "com.adguard.AdguardExtension",
+    "lastSync": "2026-03-19T11:00:01.716Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.6.1",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-03-2026/GOWOD_5.6.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.1",
+    "developer": "khomodvip",
+    "date": "2026-03-19",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2026-03-19T11:00:01.716Z"
+  },
+  {
     "id": "ipa-com.markodevcic.js-code-pad-1.8.20",
     "type": "ipa",
     "name": "JSCodePad",
