@@ -684,6 +684,60 @@
     "lastSync": "2026-03-20T10:24:52.312Z"
   },
   {
+    "id": "ipa-com.jakemor.firness-ai-16.0",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/FitnessAI_16.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.0",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2026-03-20T11:24:52.258Z"
+  },
+  {
+    "id": "ipa-io.veed.appstore-8.8.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/VEEDCaptions_8.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.8.0",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-03-20T11:24:52.259Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2026.12.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/Photoroom_2026.12.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.12.01",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-03-20T11:24:52.260Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsApp-26.10.73",
     "type": "ipa",
     "name": "WhatsApp",
