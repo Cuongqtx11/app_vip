@@ -666,6 +666,24 @@
     "lastSync": "2026-03-20T07:00:02.139Z"
   },
   {
+    "id": "ipa-com.apalonapps.pdffree-2.11.4",
+    "type": "ipa",
+    "name": "Scanner",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.pdffree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/Scanner_2.11.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.4",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.pdffree",
+    "lastSync": "2026-03-20T10:24:52.312Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsApp-26.10.73",
     "type": "ipa",
     "name": "WhatsApp",
