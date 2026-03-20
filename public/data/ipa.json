@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.bpmhealth.boostfitness-253",
+    "type": "ipa",
+    "name": "Boostcamp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bpmhealth.boostfitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-03-2026/Boostcamp_253_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "253",
+    "developer": "khomodvip",
+    "date": "2026-03-21",
+    "source": "apptesters",
+    "bundleID": "com.bpmhealth.boostfitness",
+    "lastSync": "2026-03-20T21:49:17.921Z"
+  },
+  {
+    "id": "ipa-com.linecorp.Foodie-7.4.31",
+    "type": "ipa",
+    "name": "Foodie",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.Foodie.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-03-2026/Foodie_7.4.31_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4.31",
+    "developer": "khomodvip",
+    "date": "2026-03-21",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.Foodie",
+    "lastSync": "2026-03-20T21:49:17.922Z"
+  },
+  {
     "id": "ipa-com.TetianaKolomiichuk.Reel-Templates-3.8",
     "type": "ipa",
     "name": "Reels",
