@@ -738,6 +738,42 @@
     "lastSync": "2026-03-20T11:24:52.260Z"
   },
   {
+    "id": "ipa-com.roehl.habitkit-1.14.7",
+    "type": "ipa",
+    "name": "HabitKit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.roehl.habitkit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/HabitKit_1.14.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.14.7",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.roehl.habitkit",
+    "lastSync": "2026-03-20T14:00:11.799Z"
+  },
+  {
+    "id": "ipa-com.pixite.pigment-3.10.1",
+    "type": "ipa",
+    "name": "Pigment",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.pixite.pigment.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-03-2026/Pigment_3.10.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.10.1",
+    "developer": "khomodvip",
+    "date": "2026-03-20",
+    "source": "apptesters",
+    "bundleID": "com.pixite.pigment",
+    "lastSync": "2026-03-20T14:00:11.800Z"
+  },
+  {
     "id": "ipa-net.whatsapp.WhatsApp-26.10.73",
     "type": "ipa",
     "name": "WhatsApp",
