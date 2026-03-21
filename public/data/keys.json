@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1774096197_4763",
+    "key": "L8VO-E0BK-I0ZZ-43MN",
+    "createdAt": "2026-03-21T12:29:57.575885+00:00",
+    "expiresAt": "2026-03-23T12:29:57.575885+00:00",
+    "maxUses": 2,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "tool_gop",
+    "notes": "2 days, 2 uses"
+  },
+  {
     "id": "key_1774089719_2992",
     "key": "3NM1-62KN-YPAN-HD0N",
     "createdAt": "2026-03-21T10:41:59.690950+00:00",
