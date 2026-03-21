@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quảng cáo Săn Ngon</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    body {
+      pointer-events: none;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    #ad-layer {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .floating-ad {
+      position: absolute;
+      width: var(--size, 24px);
+      height: var(--size, 24px);
+      opacity: 0;
+      transform: translate3d(0,0,0) scale(0.9);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+      pointer-events: none;
+      will-change: transform, opacity;
+    }
+
+    .floating-ad.is-visible {
+      opacity: 0.94;
+      transform: translate3d(0,0,0) scale(1);
+      pointer-events: auto;
+    }
+
+    .floating-ad a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      pointer-events: auto;
+      border-radius: 999px;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.18));
+    }
+
+    .floating-ad img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .floating-ad.is-visible a {
+      animation: wiggle var(--wiggle, 1.8s) ease-in-out infinite,
+                 drift var(--drift, 3.4s) ease-in-out infinite;
+      animation-delay: var(--delay, 0s), calc(var(--delay, 0s) / 2);
+      transform-origin: center center;
+    }
+
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      20% { transform: rotate(-8deg) scale(1.02); }
+      40% { transform: rotate(7deg) scale(0.99); }
+      60% { transform: rotate(-5deg) scale(1.03); }
+      80% { transform: rotate(4deg) scale(1); }
+    }
+
+    @keyframes drift {
+      0%, 100% { translate: 0 0; }
+      25% { translate: 1px -3px; }
+      50% { translate: -2px 2px; }
+      75% { translate: 2px -2px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="ad-layer"></div>
+
+  <script>
+    const AD_URL = 'https://sanngon.net';
+    const ICON_SRC = './logo-sanngon-v2.svg';
+    const ICON_COUNT = 7;
+    const SHOW_MIN = 3000;
+    const SHOW_MAX = 6500;
+    const HIDE_MIN = 5000;
+    const HIDE_MAX = 10000;
+
+    const layer = document.getElementById('ad-layer');
+
+    function rand(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function placeAd(el) {
+      const vw = window.innerWidth || 390;
+      const vh = window.innerHeight || 844;
+      const size = rand(18, 28);
+      const safeTop = 84;
+      const safeBottom = 94;
+      const left = rand(8, Math.max(12, vw - size - 8));
+      const top = rand(safeTop, Math.max(safeTop + 10, vh - safeBottom - size));
+
+      el.style.setProperty('--size', size + 'px');
+      el.style.setProperty('--wiggle', (rand(140, 240) / 100) + 's');
+      el.style.setProperty('--drift', (rand(260, 420) / 100) + 's');
+      el.style.setProperty('--delay', (rand(0, 90) / 100) + 's');
+      el.style.left = clamp(left, 8, Math.max(8, vw - size - 8)) + 'px';
+      el.style.top = clamp(top, safeTop, Math.max(safeTop, vh - safeBottom - size)) + 'px';
+    }
+
+    function cycleAd(el) {
+      const show = () => {
+        placeAd(el);
+        el.classList.add('is-visible');
+        setTimeout(hide, rand(SHOW_MIN, SHOW_MAX));
+      };
+
+      const hide = () => {
+        el.classList.remove('is-visible');
+        setTimeout(show, rand(HIDE_MIN, HIDE_MAX));
+      };
+
+      setTimeout(show, rand(400, 2600));
+    }
+
+    function createAd() {
+      const wrap = document.createElement('div');
+      wrap.className = 'floating-ad';
+
+      const link = document.createElement('a');
+      link.href = AD_URL;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer sponsored';
+      link.setAttribute('aria-label', 'Mở Săn Ngon');
+
+      const img = document.createElement('img');
+      img.src = ICON_SRC;
+      img.alt = 'Săn Ngon';
+      img.draggable = false;
+
+      link.appendChild(img);
+      wrap.appendChild(link);
+      layer.appendChild(wrap);
+      cycleAd(wrap);
+      return wrap;
+    }
+
+    const ads = Array.from({ length: ICON_COUNT }, createAd);
+
+    window.addEventListener('resize', () => {
+      ads.forEach(ad => {
+        if (ad.classList.contains('is-visible')) placeAd(ad);
+      });
+    });
+  </script>
+</body>
+</html>
