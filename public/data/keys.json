@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1774089535_6924",
+    "key": "F91E-BGML-0EZN-ZPVW",
+    "createdAt": "2026-03-21T10:38:55.033291+00:00",
+    "expiresAt": null,
+    "maxUses": null,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "tool_gop",
+    "notes": "∞ days, ∞ uses"
+  },
+  {
     "id": "key_1774054628",
     "key": "BIJQ-AZG9-R90O-EUPO",
     "createdAt": "2026-03-21T00:57:08.398Z",
