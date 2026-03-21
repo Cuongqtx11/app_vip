@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1774089719_2992",
+    "key": "3NM1-62KN-YPAN-HD0N",
+    "createdAt": "2026-03-21T10:41:59.690950+00:00",
+    "expiresAt": "2026-03-22T10:41:59.690950+00:00",
+    "maxUses": 7,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "tool_gop",
+    "notes": "1 days, 7 uses"
+  },
+  {
     "id": "key_1774089535_6924",
     "key": "F91E-BGML-0EZN-ZPVW",
     "createdAt": "2026-03-21T10:38:55.033291+00:00",
