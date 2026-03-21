@@ -126,6 +126,24 @@
     "lastSync": "2026-03-21T14:46:11.707Z"
   },
   {
+    "id": "ipa-com.facebook.Messenger-553.0.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-03-2026/Messenger_553.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "553.0.0",
+    "developer": "khomodvip",
+    "date": "2026-03-21",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2026-03-21T15:46:11.936Z"
+  },
+  {
     "id": "ipa-com.TetianaKolomiichuk.Reel-Templates-3.8",
     "type": "ipa",
     "name": "Reels",
