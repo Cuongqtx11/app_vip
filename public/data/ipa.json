@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.beelinguapp.beelinguapp-3.9.11",
+    "type": "ipa",
+    "name": "Beelinguapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beelinguapp.beelinguapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-03-2026/Beelinguapp_3.9.11_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.9.11",
+    "developer": "khomodvip",
+    "date": "2026-03-22",
+    "source": "apptesters",
+    "bundleID": "com.beelinguapp.beelinguapp",
+    "lastSync": "2026-03-21T19:46:11.585Z"
+  },
+  {
     "id": "ipa-com.bpmhealth.boostfitness-253",
     "type": "ipa",
     "name": "Boostcamp",
