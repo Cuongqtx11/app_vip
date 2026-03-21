@@ -144,6 +144,24 @@
     "lastSync": "2026-03-21T15:46:11.936Z"
   },
   {
+    "id": "ipa-com.ahmetserdarkaradeniz.Phocus-3.2.0",
+    "type": "ipa",
+    "name": "Phocus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ahmetserdarkaradeniz.Phocus.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-03-2026/Phocus_3.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.2.0",
+    "developer": "khomodvip",
+    "date": "2026-03-21",
+    "source": "apptesters",
+    "bundleID": "com.ahmetserdarkaradeniz.Phocus",
+    "lastSync": "2026-03-21T16:46:11.879Z"
+  },
+  {
     "id": "ipa-com.TetianaKolomiichuk.Reel-Templates-3.8",
     "type": "ipa",
     "name": "Reels",
