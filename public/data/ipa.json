@@ -72,6 +72,60 @@
     "lastSync": "2026-03-21T01:49:18.221Z"
   },
   {
+    "id": "ipa-gen.tech.impulse-1.44.2",
+    "type": "ipa",
+    "name": "Impulse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gen.tech.impulse.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-03-2026/Impulse_1.44.2_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.44.2",
+    "developer": "khomodvip",
+    "date": "2026-03-21",
+    "source": "apptesters",
+    "bundleID": "gen.tech.impulse",
+    "lastSync": "2026-03-21T14:46:11.705Z"
+  },
+  {
+    "id": "ipa-com.myscript.nebo-7.1.4",
+    "type": "ipa",
+    "name": "MyScriptNotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myscript.nebo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-03-2026/MyScriptNotes_7.1.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.1.4",
+    "developer": "khomodvip",
+    "date": "2026-03-21",
+    "source": "apptesters",
+    "bundleID": "com.myscript.nebo",
+    "lastSync": "2026-03-21T14:46:11.706Z"
+  },
+  {
+    "id": "ipa-design.yugen.Flow-4.8.0",
+    "type": "ipa",
+    "name": "Flow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/design.yugen.Flow.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "graphics & design"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-03-2026/Flow_4.8.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.8.0",
+    "developer": "khomodvip",
+    "date": "2026-03-21",
+    "source": "apptesters",
+    "bundleID": "design.yugen.Flow",
+    "lastSync": "2026-03-21T14:46:11.707Z"
+  },
+  {
     "id": "ipa-com.TetianaKolomiichuk.Reel-Templates-3.8",
     "type": "ipa",
     "name": "Reels",
