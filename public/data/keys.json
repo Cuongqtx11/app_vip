@@ -5,12 +5,13 @@
     "createdAt": "2026-03-22T17:52:53.524Z",
     "expiresAt": "2026-04-21T17:52:52.392Z",
     "maxUses": null,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "udid_verify",
     "transaction_code": "UDID:B90A10836D7F4BA1AB8F7CE4D57168CFE2631246",
     "package": "Gói UDID Free",
-    "notes": "Auto UDID Verify"
+    "notes": "Auto UDID Verify",
+    "lastUsedAt": "2026-03-22T17:53:12.576Z"
   },
   {
     "id": "key_1774199216",
