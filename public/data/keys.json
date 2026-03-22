@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1774177670_4369",
+    "key": "SQU2-50FG-TIFG-3ZHK",
+    "createdAt": "2026-03-22T11:07:50.076551+00:00",
+    "expiresAt": "2026-03-27T11:07:50.076551+00:00",
+    "maxUses": 5,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "tool_gop",
+    "notes": "5 days, 5 uses"
+  },
+  {
     "id": "key_1774176827",
     "key": "01I6-SXQ8-UF4Y-BWRT",
     "createdAt": "2026-03-22T10:53:47.428Z",
