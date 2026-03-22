@@ -5,10 +5,11 @@
     "createdAt": "2026-03-22T09:44:54.812410+00:00",
     "expiresAt": "2026-03-23T09:44:54.812410+00:00",
     "maxUses": 4,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "tool_gop",
-    "notes": "1 days, 4 uses"
+    "notes": "1 days, 4 uses",
+    "lastUsedAt": "2026-03-22T09:45:15.966Z"
   },
   {
     "id": "key_1774167684_8384",
