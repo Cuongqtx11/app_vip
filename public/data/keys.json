@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1774167684_8384",
+    "key": "9GYP-FB5G-ET4U-MTQ3",
+    "createdAt": "2026-03-22T08:21:24.142489+00:00",
+    "expiresAt": "2026-03-23T08:21:24.142489+00:00",
+    "maxUses": 5,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "tool_gop",
+    "notes": "1 days, 5 uses"
+  },
+  {
     "id": "key_1774167403_8816",
     "key": "Q36G-WU2A-NCZ8-6XEI",
     "createdAt": "2026-03-22T08:16:43.404634+00:00",
