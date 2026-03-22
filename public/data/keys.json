@@ -1,5 +1,16 @@
 [
   {
+    "id": "key_1774165700_6581",
+    "key": "TY0G-2T4D-FYQX-M2DX",
+    "createdAt": "2026-03-22T07:48:20.863145+00:00",
+    "expiresAt": "2026-03-23T07:48:20.863145+00:00",
+    "maxUses": 2,
+    "currentUses": 0,
+    "active": true,
+    "createdBy": "tool_gop",
+    "notes": "1 days, 2 uses"
+  },
+  {
     "id": "key_1774143763",
     "key": "7EGE-QYMR-HI2L-MLTV",
     "createdAt": "2026-03-22T01:42:43.355Z",
