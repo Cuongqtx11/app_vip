@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.picsart.studio-29.5.2",
+    "type": "ipa",
+    "name": "Picsart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/Picsart_29.5.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.5.2",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-03-22T19:46:11.702Z"
+  },
+  {
+    "id": "ipa-com.busuu.english.app-30.6.0",
+    "type": "ipa",
+    "name": "Busuu",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/Busuu_30.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "30.6.0",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.busuu.english.app",
+    "lastSync": "2026-03-22T19:46:11.703Z"
+  },
+  {
     "id": "ipa-com.beelinguapp.beelinguapp-3.9.11",
     "type": "ipa",
     "name": "Beelinguapp",
