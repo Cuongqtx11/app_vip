@@ -90,6 +90,60 @@
     "lastSync": "2026-03-23T02:46:11.785Z"
   },
   {
+    "id": "ipa-com.TickTick.task-8.0.40",
+    "type": "ipa",
+    "name": "TickTick",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.TickTick.task.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/TickTick_8.0.40_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.40",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.TickTick.task",
+    "lastSync": "2026-03-23T06:46:12.508Z"
+  },
+  {
+    "id": "ipa-com.mutaeb.OVF-Editor-6.1.2",
+    "type": "ipa",
+    "name": "OVFEditor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mutaeb.OVF-Editor.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/OVFEditor_6.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.1.2",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.mutaeb.OVF-Editor",
+    "lastSync": "2026-03-23T06:46:12.509Z"
+  },
+  {
+    "id": "ipa-com.benchu.ARMCPUZ-1.8.3",
+    "type": "ipa",
+    "name": "ARMCPUZ",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.benchu.ARMCPUZ.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/ARMCPUZ_1.8.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.8.3",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.benchu.ARMCPUZ",
+    "lastSync": "2026-03-23T06:46:12.510Z"
+  },
+  {
     "id": "ipa-com.beelinguapp.beelinguapp-3.9.11",
     "type": "ipa",
     "name": "Beelinguapp",
