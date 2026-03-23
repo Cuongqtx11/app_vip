@@ -378,6 +378,24 @@
     "lastSync": "2026-03-23T12:46:13.472Z"
   },
   {
+    "id": "ipa-com.truesoftware.TrueCallerOther-26.11.5",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/Truecaller_26.11.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.11.5",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2026-03-23T13:46:12.029Z"
+  },
+  {
     "id": "ipa-com.beelinguapp.beelinguapp-3.9.11",
     "type": "ipa",
     "name": "Beelinguapp",
