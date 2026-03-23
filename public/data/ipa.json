@@ -360,6 +360,24 @@
     "lastSync": "2026-03-23T11:46:11.699Z"
   },
   {
+    "id": "ipa-com.outerspaceapps.itranslate-17.4.72",
+    "type": "ipa",
+    "name": "iTranslate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.outerspaceapps.itranslate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/iTranslate_17.4.72_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.4.72",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.outerspaceapps.itranslate",
+    "lastSync": "2026-03-23T12:46:13.472Z"
+  },
+  {
     "id": "ipa-com.beelinguapp.beelinguapp-3.9.11",
     "type": "ipa",
     "name": "Beelinguapp",
