@@ -288,6 +288,78 @@
     "lastSync": "2026-03-23T09:46:11.728Z"
   },
   {
+    "id": "ipa-com.wikiloc.wikiloc-3.26.6",
+    "type": "ipa",
+    "name": "Wikiloc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wikiloc.wikiloc.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/Wikiloc_3.26.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.26.6",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.wikiloc.wikiloc",
+    "lastSync": "2026-03-23T11:46:11.697Z"
+  },
+  {
+    "id": "ipa-se.resenatverket.FlightRadar24-Free-11.2.0",
+    "type": "ipa",
+    "name": "Flightradar24",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/se.resenatverket.FlightRadar24-Free.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/Flightradar24_11.2.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.2.0",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "se.resenatverket.FlightRadar24-Free",
+    "lastSync": "2026-03-23T11:46:11.698Z"
+  },
+  {
+    "id": "ipa-com.flyingnayeem.nmVideoMergerJune-5.4.32",
+    "type": "ipa",
+    "name": "BackgroundMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flyingnayeem.nmVideoMergerJune.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/BackgroundMusic_5.4.32_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.32",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.flyingnayeem.nmVideoMergerJune",
+    "lastSync": "2026-03-23T11:46:11.698Z"
+  },
+  {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.2.6",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/SnoreLab_6.2.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.6",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2026-03-23T11:46:11.699Z"
+  },
+  {
     "id": "ipa-com.beelinguapp.beelinguapp-3.9.11",
     "type": "ipa",
     "name": "Beelinguapp",
