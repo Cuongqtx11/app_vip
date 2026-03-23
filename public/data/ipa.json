@@ -198,6 +198,96 @@
     "lastSync": "2026-03-23T08:46:11.532Z"
   },
   {
+    "id": "ipa-com.dopedevelopment.Panels-9.29",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/SCRL_9.29_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.29",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2026-03-23T09:46:11.726Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.6.2",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/GOWOD_5.6.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.2",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2026-03-23T09:46:11.727Z"
+  },
+  {
+    "id": "ipa-com.alightcreative.motion-6.2.50",
+    "type": "ipa",
+    "name": "AlightMotion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/AlightMotion_6.2.50_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.50",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.alightcreative.motion",
+    "lastSync": "2026-03-23T09:46:11.727Z"
+  },
+  {
+    "id": "ipa-com.moonlab.unfoldstories-8.156.0",
+    "type": "ipa",
+    "name": "Unfold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonlab.unfoldstories.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/Unfold_8.156.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.156.0",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.moonlab.unfoldstories",
+    "lastSync": "2026-03-23T09:46:11.728Z"
+  },
+  {
+    "id": "ipa-com.mwm.procolor-2.60.00",
+    "type": "ipa",
+    "name": "ColorPop",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.procolor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-03-2026/ColorPop_2.60.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.60.00",
+    "developer": "khomodvip",
+    "date": "2026-03-23",
+    "source": "apptesters",
+    "bundleID": "com.mwm.procolor",
+    "lastSync": "2026-03-23T09:46:11.728Z"
+  },
+  {
     "id": "ipa-com.beelinguapp.beelinguapp-3.9.11",
     "type": "ipa",
     "name": "Beelinguapp",
