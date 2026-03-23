@@ -5,12 +5,13 @@
     "createdAt": "2026-03-23T09:42:00.279Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "Y6PL01",
     "package": "Gói 5K (20 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-03-23T09:43:46.887Z"
   },
   {
     "id": "udid_1774201973",
