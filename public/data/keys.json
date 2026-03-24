@@ -5,13 +5,13 @@
     "createdAt": "2026-03-24T00:42:46.312Z",
     "expiresAt": "2026-03-31T00:42:44.848Z",
     "maxUses": 10,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "ZMPE3H",
     "package": "Gói 2K (10 Lượt)",
     "notes": "Auto PayOS",
-    "lastUsedAt": "2026-03-24T00:43:41.213Z"
+    "lastUsedAt": "2026-03-24T00:50:15.781Z"
   },
   {
     "id": "key_1774270484",
