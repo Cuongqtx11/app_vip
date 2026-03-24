@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.madarsoft.fitness-17.5",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-03-2026/_17.5_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.5",
+    "developer": "khomodvip",
+    "date": "2026-03-25",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2026-03-24T19:46:11.828Z"
+  },
+  {
     "id": "ipa-com.duolingo.DuolingoMobile-7.115.0",
     "type": "ipa",
     "name": "Duolingo",
@@ -646,6 +664,24 @@
     "source": "apptesters",
     "bundleID": "myndarc.newFitnessApp",
     "lastSync": "2026-03-24T16:46:12.089Z"
+  },
+  {
+    "id": "ipa-com.madarsoft.fitness-3.12.3",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-03-2026/_3.12.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.12.3",
+    "developer": "khomodvip",
+    "date": "2026-03-24",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2026-03-24T19:46:11.832Z"
   },
   {
     "id": "ipa-com.picsart.studio-29.5.2",
