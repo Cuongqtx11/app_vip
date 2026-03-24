@@ -198,6 +198,42 @@
     "lastSync": "2026-03-24T01:46:11.941Z"
   },
   {
+    "id": "ipa-com.andyworks.camera-1.46",
+    "type": "ipa",
+    "name": "Camera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.camera.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-03-2026/Camera_1.46_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.46",
+    "developer": "khomodvip",
+    "date": "2026-03-24",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.camera",
+    "lastSync": "2026-03-24T02:46:12.871Z"
+  },
+  {
+    "id": "ipa-com.bbauman.Scripty-2.44",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-03-2026/Coconote_2.44_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.44",
+    "developer": "khomodvip",
+    "date": "2026-03-24",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2026-03-24T02:46:12.872Z"
+  },
+  {
     "id": "ipa-com.picsart.studio-29.5.2",
     "type": "ipa",
     "name": "Picsart",
