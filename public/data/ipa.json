@@ -306,6 +306,24 @@
     "lastSync": "2026-03-25T07:46:11.830Z"
   },
   {
+    "id": "ipa-com.dopedevelopment.Panels-9.29.1",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-03-2026/SCRL_9.29.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.29.1",
+    "developer": "khomodvip",
+    "date": "2026-03-25",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2026-03-25T08:46:11.857Z"
+  },
+  {
     "id": "ipa-com.duolingo.DuolingoMobile-7.115.0",
     "type": "ipa",
     "name": "Duolingo",
