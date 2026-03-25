@@ -324,6 +324,42 @@
     "lastSync": "2026-03-25T08:46:11.857Z"
   },
   {
+    "id": "ipa-overlook.fing-12.11.9",
+    "type": "ipa",
+    "name": "Fing",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/overlook.fing.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-03-2026/Fing_12.11.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.11.9",
+    "developer": "khomodvip",
+    "date": "2026-03-25",
+    "source": "apptesters",
+    "bundleID": "overlook.fing",
+    "lastSync": "2026-03-25T09:46:12.022Z"
+  },
+  {
+    "id": "ipa-com.alightcreative.motion-6.2.52",
+    "type": "ipa",
+    "name": "AlightMotion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-03-2026/AlightMotion_6.2.52_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.52",
+    "developer": "khomodvip",
+    "date": "2026-03-25",
+    "source": "apptesters",
+    "bundleID": "com.alightcreative.motion",
+    "lastSync": "2026-03-25T09:46:12.023Z"
+  },
+  {
     "id": "ipa-com.duolingo.DuolingoMobile-7.115.0",
     "type": "ipa",
     "name": "Duolingo",
