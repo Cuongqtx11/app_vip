@@ -576,6 +576,42 @@
     "lastSync": "2026-03-25T17:46:11.718Z"
   },
   {
+    "id": "ipa-com.endel.endel-4.49.100",
+    "type": "ipa",
+    "name": "Endel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.endel.endel.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-03-2026/Endel_4.49.100_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.49.100",
+    "developer": "khomodvip",
+    "date": "2026-03-25",
+    "source": "apptesters",
+    "bundleID": "com.endel.endel",
+    "lastSync": "2026-03-25T18:46:11.850Z"
+  },
+  {
+    "id": "ipa-com.gingerlabs.Notability-16.0.1",
+    "type": "ipa",
+    "name": "Notability",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gingerlabs.Notability.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-03-2026/Notability_16.0.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16.0.1",
+    "developer": "khomodvip",
+    "date": "2026-03-25",
+    "source": "apptesters",
+    "bundleID": "com.gingerlabs.Notability",
+    "lastSync": "2026-03-25T18:46:11.851Z"
+  },
+  {
     "id": "ipa-com.duolingo.DuolingoMobile-7.115.0",
     "type": "ipa",
     "name": "Duolingo",
