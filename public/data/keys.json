@@ -5,12 +5,13 @@
     "createdAt": "2026-03-25T05:09:37.160Z",
     "expiresAt": "2026-04-01T05:09:34.850Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "R3MNKI",
     "package": "Gói 2K (10 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-03-25T05:10:10.809Z"
   },
   {
     "id": "udid_1774404386",
