@@ -72,6 +72,24 @@
     "lastSync": "2026-03-26T00:46:11.970Z"
   },
   {
+    "id": "ipa-PhotoEditor.PhotoCollage.inCollage-2.2.32",
+    "type": "ipa",
+    "name": "InCollage",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PhotoEditor.PhotoCollage.inCollage.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-03-2026/InCollage_2.2.32_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.32",
+    "developer": "khomodvip",
+    "date": "2026-03-26",
+    "source": "apptesters",
+    "bundleID": "PhotoEditor.PhotoCollage.inCollage",
+    "lastSync": "2026-03-26T01:46:11.899Z"
+  },
+  {
     "id": "ipa-com.madarsoft.fitness-17.5",
     "type": "ipa",
     "name": "",
