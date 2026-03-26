@@ -144,6 +144,42 @@
     "lastSync": "2026-03-26T07:46:11.564Z"
   },
   {
+    "id": "ipa-com.focos-2.11.38",
+    "type": "ipa",
+    "name": "Focos",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.focos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-03-2026/Focos_2.11.38_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.38",
+    "developer": "khomodvip",
+    "date": "2026-03-26",
+    "source": "apptesters",
+    "bundleID": "com.focos",
+    "lastSync": "2026-03-26T08:46:11.850Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Enlight-Photos-1.21",
+    "type": "ipa",
+    "name": "Lightleap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Enlight-Photos.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-03-2026/Lightleap_1.21_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.21",
+    "developer": "khomodvip",
+    "date": "2026-03-26",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Enlight-Photos",
+    "lastSync": "2026-03-26T08:46:11.851Z"
+  },
+  {
     "id": "ipa-com.madarsoft.fitness-17.5",
     "type": "ipa",
     "name": "",
