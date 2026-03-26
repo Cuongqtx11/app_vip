@@ -216,6 +216,60 @@
     "lastSync": "2026-03-26T10:46:12.014Z"
   },
   {
+    "id": "ipa-io.veed.appstore-8.9.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-03-2026/VEEDCaptions_8.9.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.9.0",
+    "developer": "khomodvip",
+    "date": "2026-03-26",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-03-26T12:46:11.866Z"
+  },
+  {
+    "id": "ipa-tech.sketchar.ios-10.4",
+    "type": "ipa",
+    "name": "Sketchar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.sketchar.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "graphics & design"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-03-2026/Sketchar_10.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.4",
+    "developer": "khomodvip",
+    "date": "2026-03-26",
+    "source": "apptesters",
+    "bundleID": "tech.sketchar.ios",
+    "lastSync": "2026-03-26T12:46:11.867Z"
+  },
+  {
+    "id": "ipa-co.detail.duo-5.5.11",
+    "type": "ipa",
+    "name": "Detail",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.detail.duo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-03-2026/Detail_5.5.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.11",
+    "developer": "khomodvip",
+    "date": "2026-03-26",
+    "source": "apptesters",
+    "bundleID": "co.detail.duo",
+    "lastSync": "2026-03-26T12:46:11.867Z"
+  },
+  {
     "id": "ipa-com.madarsoft.fitness-17.5",
     "type": "ipa",
     "name": "",
