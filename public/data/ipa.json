@@ -90,6 +90,24 @@
     "lastSync": "2026-03-26T01:46:11.899Z"
   },
   {
+    "id": "ipa-com.hitpaw.photoenhancer-1.101.0",
+    "type": "ipa",
+    "name": "AIMarvels",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hitpaw.photoenhancer.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-03-2026/AIMarvels_1.101.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.101.0",
+    "developer": "khomodvip",
+    "date": "2026-03-26",
+    "source": "apptesters",
+    "bundleID": "com.hitpaw.photoenhancer",
+    "lastSync": "2026-03-26T02:46:12.403Z"
+  },
+  {
     "id": "ipa-com.madarsoft.fitness-17.5",
     "type": "ipa",
     "name": "",
