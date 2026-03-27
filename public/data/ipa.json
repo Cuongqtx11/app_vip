@@ -108,6 +108,96 @@
     "lastSync": "2026-03-27T21:30:11.398Z"
   },
   {
+    "id": "ipa-com.zijayrate.analogcam-8.4.5",
+    "type": "ipa",
+    "name": "OldRoll",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zijayrate.analogcam.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-03-2026/OldRoll_8.4.5_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.4.5",
+    "developer": "khomodvip",
+    "date": "2026-03-28",
+    "source": "apptesters",
+    "bundleID": "com.zijayrate.analogcam",
+    "lastSync": "2026-03-27T22:30:11.582Z"
+  },
+  {
+    "id": "ipa-com.sleepmonitor.aio-2.7.3",
+    "type": "ipa",
+    "name": "SleepMonitor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sleepmonitor.aio.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-03-2026/SleepMonitor_2.7.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.7.3",
+    "developer": "khomodvip",
+    "date": "2026-03-28",
+    "source": "apptesters",
+    "bundleID": "com.sleepmonitor.aio",
+    "lastSync": "2026-03-27T22:30:11.583Z"
+  },
+  {
+    "id": "ipa-com.ibit.UNPOSED-4.8.2",
+    "type": "ipa",
+    "name": "Unscripted",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ibit.UNPOSED.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-03-2026/Unscripted_4.8.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.8.2",
+    "developer": "khomodvip",
+    "date": "2026-03-28",
+    "source": "apptesters",
+    "bundleID": "com.ibit.UNPOSED",
+    "lastSync": "2026-03-27T22:30:11.584Z"
+  },
+  {
+    "id": "ipa-com.kwalee.drawit-2.1.2",
+    "type": "ipa",
+    "name": "DrawIt",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kwalee.drawit.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "graphics & design"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-03-2026/DrawIt_2.1.2_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.1.2",
+    "developer": "khomodvip",
+    "date": "2026-03-28",
+    "source": "apptesters",
+    "bundleID": "com.kwalee.drawit",
+    "lastSync": "2026-03-27T22:30:11.584Z"
+  },
+  {
+    "id": "ipa-com.wiheads.paste-6.4.0",
+    "type": "ipa",
+    "name": "Paste",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wiheads.paste.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-03-2026/Paste_6.4.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4.0",
+    "developer": "khomodvip",
+    "date": "2026-03-28",
+    "source": "apptesters",
+    "bundleID": "com.wiheads.paste",
+    "lastSync": "2026-03-27T22:30:11.585Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.8",
     "type": "ipa",
     "name": "ShutEye",
