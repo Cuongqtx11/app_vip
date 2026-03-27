@@ -450,6 +450,24 @@
     "lastSync": "2026-03-27T03:30:11.213Z"
   },
   {
+    "id": "ipa-com.maplepop.bmcx-6.3",
+    "type": "ipa",
+    "name": "MapleReadCX",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.maplepop.bmcx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/MapleReadCX_6.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "com.maplepop.bmcx",
+    "lastSync": "2026-03-27T05:30:10.660Z"
+  },
+  {
     "id": "ipa-com.wikiloc.wikiloc-3.27.0",
     "type": "ipa",
     "name": "Wikiloc",
