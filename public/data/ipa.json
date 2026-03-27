@@ -702,6 +702,78 @@
     "lastSync": "2026-03-27T08:30:10.950Z"
   },
   {
+    "id": "ipa-com.alightcreative.motion-6.2.53",
+    "type": "ipa",
+    "name": "AlightMotion",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.alightcreative.motion.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/AlightMotion_6.2.53_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.53",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "com.alightcreative.motion",
+    "lastSync": "2026-03-27T09:30:11.001Z"
+  },
+  {
+    "id": "ipa-reels-maker-one-1.23.0",
+    "type": "ipa",
+    "name": "BEAT",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/reels-maker-one.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/BEAT_1.23.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.23.0",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "reels-maker-one",
+    "lastSync": "2026-03-27T09:30:11.001Z"
+  },
+  {
+    "id": "ipa-com.cinegenix.filmic.pro-7.5.33",
+    "type": "ipa",
+    "name": "FilmicPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.cinegenix.filmic.pro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/FilmicPro_7.5.33_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.5.33",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "com.cinegenix.filmic.pro",
+    "lastSync": "2026-03-27T09:30:11.002Z"
+  },
+  {
+    "id": "ipa-com.readdle.ReaddleDocsIPad-8.19.9",
+    "type": "ipa",
+    "name": "Documents",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.ReaddleDocsIPad.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/Documents_8.19.9_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.19.9",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "com.readdle.ReaddleDocsIPad",
+    "lastSync": "2026-03-27T09:30:11.002Z"
+  },
+  {
     "id": "ipa-com.wikiloc.wikiloc-3.27.0",
     "type": "ipa",
     "name": "Wikiloc",
