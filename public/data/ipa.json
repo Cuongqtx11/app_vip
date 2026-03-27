@@ -774,6 +774,42 @@
     "lastSync": "2026-03-27T09:30:11.002Z"
   },
   {
+    "id": "ipa-camera.lux.kino-1.4.2",
+    "type": "ipa",
+    "name": "Kino",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/camera.lux.kino.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/Kino_1.4.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.4.2",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "camera.lux.kino",
+    "lastSync": "2026-03-27T11:30:10.697Z"
+  },
+  {
+    "id": "ipa-com.culturedcode.ThingsiPad-3.22.9",
+    "type": "ipa",
+    "name": "Things",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.culturedcode.ThingsiPad.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/Things_3.22.9_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.22.9",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "com.culturedcode.ThingsiPad",
+    "lastSync": "2026-03-27T11:30:10.698Z"
+  },
+  {
     "id": "ipa-com.wikiloc.wikiloc-3.27.0",
     "type": "ipa",
     "name": "Wikiloc",
