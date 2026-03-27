@@ -378,6 +378,24 @@
     "lastSync": "2026-03-27T00:30:11.039Z"
   },
   {
+    "id": "ipa-com.youssef.developer.Full-Browser-10.6.3",
+    "type": "ipa",
+    "name": "TORSuite",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.youssef.developer.Full-Browser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-03-2026/TORSuite_10.6.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.6.3",
+    "developer": "khomodvip",
+    "date": "2026-03-27",
+    "source": "apptesters",
+    "bundleID": "com.youssef.developer.Full-Browser",
+    "lastSync": "2026-03-27T01:30:11.010Z"
+  },
+  {
     "id": "ipa-com.wikiloc.wikiloc-3.27.0",
     "type": "ipa",
     "name": "Wikiloc",
