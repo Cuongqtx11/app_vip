@@ -216,6 +216,24 @@
     "lastSync": "2026-03-28T00:30:11.050Z"
   },
   {
+    "id": "ipa-boomer.Smart-Video-13.10.1",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-03-2026/Captions_13.10.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.10.1",
+    "developer": "khomodvip",
+    "date": "2026-03-28",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2026-03-28T02:30:10.703Z"
+  },
+  {
     "id": "ipa-health.sleep.sounds.tracker.alarm.calm-3.3.8",
     "type": "ipa",
     "name": "ShutEye",
