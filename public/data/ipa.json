@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-nt.nb.ios-66.293",
+    "type": "ipa",
+    "name": "NBv66293",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/nt.nb.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-03-2026/NBv66293_66.293_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "66.293",
+    "developer": "khomodvip",
+    "date": "2026-03-30",
+    "source": "apptesters",
+    "bundleID": "nt.nb.ios",
+    "lastSync": "2026-03-29T20:30:11.026Z"
+  },
+  {
     "id": "ipa-com.consumedbycode.slopes-2026.10",
     "type": "ipa",
     "name": "Slopes",
