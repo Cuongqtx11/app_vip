@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.elevateapp.kamino.kamino-1.200.0",
+    "type": "ipa",
+    "name": "Balance",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.kamino.kamino.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/Balance_1.200.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.200.0",
+    "developer": "khomodvip",
+    "date": "2026-03-31",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.kamino.kamino",
+    "lastSync": "2026-03-30T19:49:34.196Z"
+  },
+  {
+    "id": "ipa-com.duolingo.DuolingoMobile-7.116.0",
+    "type": "ipa",
+    "name": "Duolingo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.duolingo.DuolingoMobile.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/Duolingo_7.116.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.116.0",
+    "developer": "khomodvip",
+    "date": "2026-03-31",
+    "source": "apptesters",
+    "bundleID": "com.duolingo.DuolingoMobile",
+    "lastSync": "2026-03-30T19:49:34.197Z"
+  },
+  {
     "id": "ipa-nt.nb.ios-66.293",
     "type": "ipa",
     "name": "NBv66293",
