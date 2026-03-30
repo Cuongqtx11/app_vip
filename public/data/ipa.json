@@ -378,6 +378,24 @@
     "lastSync": "2026-03-30T10:49:31.469Z"
   },
   {
+    "id": "ipa-com.lightricks.Facetune2-26.5",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-03-2026/Facetune_26.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.5",
+    "developer": "khomodvip",
+    "date": "2026-03-30",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-03-30T11:49:31.827Z"
+  },
+  {
     "id": "ipa-com.consumedbycode.slopes-2026.10",
     "type": "ipa",
     "name": "Slopes",
