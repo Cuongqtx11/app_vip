@@ -162,6 +162,96 @@
     "lastSync": "2026-03-30T07:49:31.850Z"
   },
   {
+    "id": "ipa-com.travelboast.travelboast-2.32",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-03-2026/TravelBoast_2.32_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.32",
+    "developer": "khomodvip",
+    "date": "2026-03-30",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-03-30T08:49:32.189Z"
+  },
+  {
+    "id": "ipa-app.gentler.activity-5.12",
+    "type": "ipa",
+    "name": "GentlerStreak",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.gentler.activity.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-03-2026/GentlerStreak_5.12_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.12",
+    "developer": "khomodvip",
+    "date": "2026-03-30",
+    "source": "apptesters",
+    "bundleID": "app.gentler.activity",
+    "lastSync": "2026-03-30T08:49:32.190Z"
+  },
+  {
+    "id": "ipa-com.vigorapps.30DayFitness-6.29.24",
+    "type": "ipa",
+    "name": "30DayFitness",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.vigorapps.30DayFitness.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-03-2026/30DayFitness_6.29.24_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.29.24",
+    "developer": "khomodvip",
+    "date": "2026-03-30",
+    "source": "apptesters",
+    "bundleID": "com.vigorapps.30DayFitness",
+    "lastSync": "2026-03-30T08:49:32.191Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.clrbook-4.50.27",
+    "type": "ipa",
+    "name": "ColoringBookforMe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.clrbook.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "books"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-03-2026/ColoringBookforMe_4.50.27_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.50.27",
+    "developer": "khomodvip",
+    "date": "2026-03-30",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.clrbook",
+    "lastSync": "2026-03-30T08:49:32.191Z"
+  },
+  {
+    "id": "ipa-com.getmimo.mimo-12.6.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/30-03-2026/Mimo_12.6.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.6.0",
+    "developer": "khomodvip",
+    "date": "2026-03-30",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2026-03-30T08:49:32.191Z"
+  },
+  {
     "id": "ipa-com.consumedbycode.slopes-2026.10",
     "type": "ipa",
     "name": "Slopes",
