@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.myfitnesspal.mfp-26.13.0",
+    "type": "ipa",
+    "name": "MyFitnessPal",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.myfitnesspal.mfp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-04-2026/MyFitnessPal_26.13.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.13.0",
+    "developer": "khomodvip",
+    "date": "2026-04-01",
+    "source": "apptesters",
+    "bundleID": "com.myfitnesspal.mfp",
+    "lastSync": "2026-03-31T21:49:31.650Z"
+  },
+  {
+    "id": "ipa-com.AppChief.ArabicArt-9.6",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-04-2026/_9.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.6",
+    "developer": "khomodvip",
+    "date": "2026-04-01",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2026-03-31T21:49:31.651Z"
+  },
+  {
     "id": "ipa-com.elevateapp.kamino.kamino-1.200.0",
     "type": "ipa",
     "name": "Balance",
