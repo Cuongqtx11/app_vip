@@ -288,6 +288,24 @@
     "lastSync": "2026-03-31T11:49:32.055Z"
   },
   {
+    "id": "ipa-com.evolve.helm-3.179.0",
+    "type": "ipa",
+    "name": "Rest",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.evolve.helm.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/Rest_3.179.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.179.0",
+    "developer": "khomodvip",
+    "date": "2026-03-31",
+    "source": "apptesters",
+    "bundleID": "com.evolve.helm",
+    "lastSync": "2026-03-31T13:49:31.660Z"
+  },
+  {
     "id": "ipa-nt.nb.ios-66.293",
     "type": "ipa",
     "name": "NBv66293",
