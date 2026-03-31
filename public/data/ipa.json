@@ -342,6 +342,42 @@
     "lastSync": "2026-03-31T16:49:32.054Z"
   },
   {
+    "id": "ipa-com.yengshine.proccd-5.7.2",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/ProCCD_5.7.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.7.2",
+    "developer": "khomodvip",
+    "date": "2026-03-31",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2026-03-31T17:49:32.050Z"
+  },
+  {
+    "id": "ipa-me.imgbase.videoday-3.8.0",
+    "type": "ipa",
+    "name": "VDIT",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/me.imgbase.videoday.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/31-03-2026/VDIT_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.0",
+    "developer": "khomodvip",
+    "date": "2026-03-31",
+    "source": "apptesters",
+    "bundleID": "me.imgbase.videoday",
+    "lastSync": "2026-03-31T17:49:32.050Z"
+  },
+  {
     "id": "ipa-nt.nb.ios-66.293",
     "type": "ipa",
     "name": "NBv66293",
