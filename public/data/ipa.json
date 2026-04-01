@@ -36,6 +36,42 @@
     "lastSync": "2026-03-31T21:49:31.651Z"
   },
   {
+    "id": "ipa-com.bbauman.Scripty-2.45",
+    "type": "ipa",
+    "name": "Coconote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bbauman.Scripty.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-04-2026/Coconote_2.45_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.45",
+    "developer": "khomodvip",
+    "date": "2026-04-01",
+    "source": "apptesters",
+    "bundleID": "com.bbauman.Scripty",
+    "lastSync": "2026-04-01T04:49:31.582Z"
+  },
+  {
+    "id": "ipa-com.wellocution.iosapp-3.7.0",
+    "type": "ipa",
+    "name": "BoldVoice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wellocution.iosapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-04-2026/BoldVoice_3.7.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.0",
+    "developer": "khomodvip",
+    "date": "2026-04-01",
+    "source": "apptesters",
+    "bundleID": "com.wellocution.iosapp",
+    "lastSync": "2026-04-01T04:49:31.583Z"
+  },
+  {
     "id": "ipa-com.elevateapp.kamino.kamino-1.200.0",
     "type": "ipa",
     "name": "Balance",
