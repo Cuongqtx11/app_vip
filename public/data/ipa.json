@@ -126,6 +126,24 @@
     "lastSync": "2026-04-01T12:49:31.568Z"
   },
   {
+    "id": "ipa-com.frameoneapps.Crsel-1.3.603",
+    "type": "ipa",
+    "name": "Crsel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-04-2026/Crsel_1.3.603_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.3.603",
+    "developer": "khomodvip",
+    "date": "2026-04-01",
+    "source": "apptesters",
+    "bundleID": "com.frameoneapps.Crsel",
+    "lastSync": "2026-04-01T14:49:31.557Z"
+  },
+  {
     "id": "ipa-com.elevateapp.kamino.kamino-1.200.0",
     "type": "ipa",
     "name": "Balance",
