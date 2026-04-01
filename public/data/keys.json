@@ -5,13 +5,13 @@
     "createdAt": "2026-04-01T08:19:02.666Z",
     "expiresAt": "2026-04-08T08:19:01.274Z",
     "maxUses": 10,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "X8SHPN",
     "package": "Gói 2K (10 Lượt)",
     "notes": "Auto PayOS",
-    "lastUsedAt": "2026-04-01T08:19:29.351Z"
+    "lastUsedAt": "2026-04-01T08:20:07.145Z"
   },
   {
     "id": "udid_1774943447",
