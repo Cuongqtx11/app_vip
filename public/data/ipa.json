@@ -378,6 +378,24 @@
     "lastSync": "2026-04-01T16:49:31.969Z"
   },
   {
+    "id": "ipa-com.dopedevelopment.Panels-9.30.1",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/01-04-2026/SCRL_9.30.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.30.1",
+    "developer": "khomodvip",
+    "date": "2026-04-01",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2026-04-01T17:49:31.869Z"
+  },
+  {
     "id": "ipa-com.elevateapp.kamino.kamino-1.200.0",
     "type": "ipa",
     "name": "Balance",
