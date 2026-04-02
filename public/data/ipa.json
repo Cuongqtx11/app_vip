@@ -108,6 +108,42 @@
     "lastSync": "2026-04-02T08:49:32.148Z"
   },
   {
+    "id": "ipa-com.flyingnayeem.nmVideoMergerJune-3.7.22",
+    "type": "ipa",
+    "name": "VideoMusic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.flyingnayeem.nmVideoMergerJune.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-04-2026/VideoMusic_3.7.22_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.22",
+    "developer": "khomodvip",
+    "date": "2026-04-02",
+    "source": "apptesters",
+    "bundleID": "com.flyingnayeem.nmVideoMergerJune",
+    "lastSync": "2026-04-02T09:49:32.054Z"
+  },
+  {
+    "id": "ipa-com.macpaw.iosgemini-2.13.0",
+    "type": "ipa",
+    "name": "CleanMyPhone",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.macpaw.iosgemini.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-04-2026/CleanMyPhone_2.13.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.13.0",
+    "developer": "khomodvip",
+    "date": "2026-04-02",
+    "source": "apptesters",
+    "bundleID": "com.macpaw.iosgemini",
+    "lastSync": "2026-04-02T09:49:32.055Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.13.0",
     "type": "ipa",
     "name": "MyFitnessPal",
