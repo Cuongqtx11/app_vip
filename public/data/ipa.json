@@ -54,6 +54,24 @@
     "lastSync": "2026-04-02T02:49:31.895Z"
   },
   {
+    "id": "ipa-com.iPwners.Plonkan-13.31",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-04-2026/Buddy_13.31_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.31",
+    "developer": "khomodvip",
+    "date": "2026-04-02",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2026-04-02T06:49:31.585Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.13.0",
     "type": "ipa",
     "name": "MyFitnessPal",
