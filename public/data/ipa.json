@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.tripleglazedstudios.Weather-3.4.6",
+    "type": "ipa",
+    "name": "Mercury",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tripleglazedstudios.Weather.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/Mercury_3.4.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.4.6",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.tripleglazedstudios.Weather",
+    "lastSync": "2026-04-02T20:49:31.698Z"
+  },
+  {
     "id": "ipa-com.hevyapp.hevy-3.0.5",
     "type": "ipa",
     "name": "Hevy",
