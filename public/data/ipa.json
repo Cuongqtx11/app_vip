@@ -306,6 +306,60 @@
     "lastSync": "2026-04-02T13:49:31.871Z"
   },
   {
+    "id": "ipa-app.mmap.mobile-2.10.3",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-04-2026/Soundmap_2.10.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.3",
+    "developer": "khomodvip",
+    "date": "2026-04-02",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2026-04-02T14:49:32.093Z"
+  },
+  {
+    "id": "ipa-com.travelboast.travelboast-2.33",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-04-2026/TravelBoast_2.33_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.33",
+    "developer": "khomodvip",
+    "date": "2026-04-02",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-04-02T14:49:32.094Z"
+  },
+  {
+    "id": "ipa-com.facebook.Messenger-555.0.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-04-2026/Messenger_555.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "555.0.0",
+    "developer": "khomodvip",
+    "date": "2026-04-02",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2026-04-02T14:49:32.094Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.13.0",
     "type": "ipa",
     "name": "MyFitnessPal",
