@@ -36,6 +36,24 @@
     "lastSync": "2026-04-01T21:49:32.292Z"
   },
   {
+    "id": "ipa-com.ideation.Stress-3.0.1",
+    "type": "ipa",
+    "name": "StressWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Stress.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/02-04-2026/StressWatch_3.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.0.1",
+    "developer": "khomodvip",
+    "date": "2026-04-02",
+    "source": "apptesters",
+    "bundleID": "com.ideation.Stress",
+    "lastSync": "2026-04-02T02:49:31.895Z"
+  },
+  {
     "id": "ipa-com.myfitnesspal.mfp-26.13.0",
     "type": "ipa",
     "name": "MyFitnessPal",
