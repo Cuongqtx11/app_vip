@@ -18,6 +18,42 @@
     "lastSync": "2026-04-02T20:49:31.698Z"
   },
   {
+    "id": "ipa-com.andyworks.camera-1.47",
+    "type": "ipa",
+    "name": "Camera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.camera.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/Camera_1.47_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.47",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.camera",
+    "lastSync": "2026-04-02T21:49:32.135Z"
+  },
+  {
+    "id": "ipa-com.oribot.origami-4.72",
+    "type": "ipa",
+    "name": "Origami",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.oribot.origami.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/Origami_4.72_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.72",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.oribot.origami",
+    "lastSync": "2026-04-02T21:49:32.136Z"
+  },
+  {
     "id": "ipa-com.hevyapp.hevy-3.0.5",
     "type": "ipa",
     "name": "Hevy",
