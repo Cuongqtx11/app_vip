@@ -108,6 +108,42 @@
     "lastSync": "2026-04-03T08:17:21.832Z"
   },
   {
+    "id": "ipa-com.adobe.PSMobile-26.14.0",
+    "type": "ipa",
+    "name": "PSExpress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.PSMobile.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/PSExpress_26.14.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.14.0",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.adobe.PSMobile",
+    "lastSync": "2026-04-03T09:17:22.248Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.pdffree-2.11.6",
+    "type": "ipa",
+    "name": "Scanner",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.pdffree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/Scanner_2.11.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.6",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.pdffree",
+    "lastSync": "2026-04-03T09:17:22.250Z"
+  },
+  {
     "id": "ipa-com.hevyapp.hevy-3.0.5",
     "type": "ipa",
     "name": "Hevy",
