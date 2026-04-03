@@ -198,6 +198,42 @@
     "lastSync": "2026-04-03T16:17:21.881Z"
   },
   {
+    "id": "ipa-com.astrio.Sofa-5.0.1",
+    "type": "ipa",
+    "name": "Sofa",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.astrio.Sofa.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/Sofa_5.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.0.1",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.astrio.Sofa",
+    "lastSync": "2026-04-03T17:17:22.159Z"
+  },
+  {
+    "id": "ipa-com.sugarmo.ScrollClip-3.16.1",
+    "type": "ipa",
+    "name": "Picsew",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sugarmo.ScrollClip.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/Picsew_3.16.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.16.1",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.sugarmo.ScrollClip",
+    "lastSync": "2026-04-03T17:17:22.160Z"
+  },
+  {
     "id": "ipa-com.hevyapp.hevy-3.0.5",
     "type": "ipa",
     "name": "Hevy",
