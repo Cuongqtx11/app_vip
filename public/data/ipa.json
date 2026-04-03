@@ -36,6 +36,24 @@
     "lastSync": "2026-04-03T19:17:22.143Z"
   },
   {
+    "id": "ipa-com.videobrowser.ios-622200",
+    "type": "ipa",
+    "name": "VideoLite",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.videobrowser.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-04-2026/VideoLite_622200_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "622200",
+    "developer": "khomodvip",
+    "date": "2026-04-04",
+    "source": "apptesters",
+    "bundleID": "com.videobrowser.ios",
+    "lastSync": "2026-04-03T20:17:22.216Z"
+  },
+  {
     "id": "ipa-com.tripleglazedstudios.Weather-3.4.6",
     "type": "ipa",
     "name": "Mercury",
