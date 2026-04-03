@@ -252,6 +252,24 @@
     "lastSync": "2026-04-03T21:17:22.127Z"
   },
   {
+    "id": "ipa-com.risesci.nyx-0.1.579",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-04-2026/RiseSleep_0.1.579_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.579",
+    "developer": "khomodvip",
+    "date": "2026-04-04",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2026-04-03T22:17:22.525Z"
+  },
+  {
     "id": "ipa-com.tripleglazedstudios.Weather-3.4.6",
     "type": "ipa",
     "name": "Mercury",
