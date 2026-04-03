@@ -234,6 +234,24 @@
     "lastSync": "2026-04-03T17:17:22.160Z"
   },
   {
+    "id": "ipa-com.apalonapps.wallpaperspys-2.4.3",
+    "type": "ipa",
+    "name": "Wallpapers",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.wallpaperspys.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/03-04-2026/Wallpapers_2.4.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4.3",
+    "developer": "khomodvip",
+    "date": "2026-04-03",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.wallpaperspys",
+    "lastSync": "2026-04-03T18:17:22.114Z"
+  },
+  {
     "id": "ipa-com.hevyapp.hevy-3.0.5",
     "type": "ipa",
     "name": "Hevy",
