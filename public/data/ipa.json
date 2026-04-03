@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.edjing.edjingdjturntable-8.21.05",
+    "type": "ipa",
+    "name": "edjingMix",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.edjing.edjingdjturntable.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-04-2026/edjingMix_8.21.05_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.21.05",
+    "developer": "khomodvip",
+    "date": "2026-04-04",
+    "source": "apptesters",
+    "bundleID": "com.edjing.edjingdjturntable",
+    "lastSync": "2026-04-03T19:17:22.141Z"
+  },
+  {
+    "id": "ipa-com.castpeer.audioroom.ios-2.10.9",
+    "type": "ipa",
+    "name": "SoundLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.castpeer.audioroom.ios.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-04-2026/SoundLab_2.10.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.9",
+    "developer": "khomodvip",
+    "date": "2026-04-04",
+    "source": "apptesters",
+    "bundleID": "com.castpeer.audioroom.ios",
+    "lastSync": "2026-04-03T19:17:22.143Z"
+  },
+  {
     "id": "ipa-com.tripleglazedstudios.Weather-3.4.6",
     "type": "ipa",
     "name": "Mercury",
