@@ -108,6 +108,24 @@
     "lastSync": "2026-04-04T22:17:21.853Z"
   },
   {
+    "id": "ipa-com.wellocution.iosapp-3.7.1",
+    "type": "ipa",
+    "name": "BoldVoice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wellocution.iosapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-04-2026/BoldVoice_3.7.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.1",
+    "developer": "khomodvip",
+    "date": "2026-04-05",
+    "source": "apptesters",
+    "bundleID": "com.wellocution.iosapp",
+    "lastSync": "2026-04-04T23:17:22.129Z"
+  },
+  {
     "id": "ipa-com.edjing.edjingdjturntable-8.21.05",
     "type": "ipa",
     "name": "edjingMix",
