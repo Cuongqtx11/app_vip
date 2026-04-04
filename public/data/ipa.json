@@ -414,6 +414,24 @@
     "lastSync": "2026-04-04T09:17:21.815Z"
   },
   {
+    "id": "ipa-com.aiby.wtcoin-1.24",
+    "type": "ipa",
+    "name": "CoinID",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aiby.wtcoin.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-04-2026/CoinID_1.24_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.24",
+    "developer": "khomodvip",
+    "date": "2026-04-04",
+    "source": "apptesters",
+    "bundleID": "com.aiby.wtcoin",
+    "lastSync": "2026-04-04T15:17:21.902Z"
+  },
+  {
     "id": "ipa-com.tripleglazedstudios.Weather-3.4.6",
     "type": "ipa",
     "name": "Mercury",
