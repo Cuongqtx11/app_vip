@@ -1,5 +1,77 @@
 [
   {
+    "id": "ipa-com.merge.cooking.theme.restaurant.food-1.35.1",
+    "type": "ipa",
+    "name": "MergeCooking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.merge.cooking.theme.restaurant.food.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "lifestyle"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-04-2026/MergeCooking_1.35.1_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.35.1",
+    "developer": "khomodvip",
+    "date": "2026-04-05",
+    "source": "apptesters",
+    "bundleID": "com.merge.cooking.theme.restaurant.food",
+    "lastSync": "2026-04-04T19:17:22.168Z"
+  },
+  {
+    "id": "ipa-com.consumedbycode.slopes-2026.11",
+    "type": "ipa",
+    "name": "Slopes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.consumedbycode.slopes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-04-2026/Slopes_2026.11_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.11",
+    "developer": "khomodvip",
+    "date": "2026-04-05",
+    "source": "apptesters",
+    "bundleID": "com.consumedbycode.slopes",
+    "lastSync": "2026-04-04T19:17:22.169Z"
+  },
+  {
+    "id": "ipa-com.jps.gpspeedhud-8.0.14",
+    "type": "ipa",
+    "name": "Speedometer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jps.gpspeedhud.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-04-2026/Speedometer_8.0.14_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.0.14",
+    "developer": "khomodvip",
+    "date": "2026-04-05",
+    "source": "apptesters",
+    "bundleID": "com.jps.gpspeedhud",
+    "lastSync": "2026-04-04T19:17:22.170Z"
+  },
+  {
+    "id": "ipa-com.spycamera.app-2.4",
+    "type": "ipa",
+    "name": "SpyCamera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.spycamera.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-04-2026/SpyCamera_2.4_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.4",
+    "developer": "khomodvip",
+    "date": "2026-04-05",
+    "source": "apptesters",
+    "bundleID": "com.spycamera.app",
+    "lastSync": "2026-04-04T19:17:22.170Z"
+  },
+  {
     "id": "ipa-com.edjing.edjingdjturntable-8.21.05",
     "type": "ipa",
     "name": "edjingMix",
