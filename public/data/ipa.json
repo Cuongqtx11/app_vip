@@ -324,6 +324,42 @@
     "lastSync": "2026-04-03T23:17:22.489Z"
   },
   {
+    "id": "ipa-com.parallaxlabs.ShiftCalendar-2026.1",
+    "type": "ipa",
+    "name": "PunchClock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.parallaxlabs.ShiftCalendar.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-04-2026/PunchClock_2026.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.1",
+    "developer": "khomodvip",
+    "date": "2026-04-04",
+    "source": "apptesters",
+    "bundleID": "com.parallaxlabs.ShiftCalendar",
+    "lastSync": "2026-04-04T02:17:21.682Z"
+  },
+  {
+    "id": "ipa-com.neybox.Pillow-6.2.13",
+    "type": "ipa",
+    "name": "Pillow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neybox.Pillow.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/04-04-2026/Pillow_6.2.13_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.2.13",
+    "developer": "khomodvip",
+    "date": "2026-04-04",
+    "source": "apptesters",
+    "bundleID": "com.neybox.Pillow",
+    "lastSync": "2026-04-04T02:17:21.683Z"
+  },
+  {
     "id": "ipa-com.tripleglazedstudios.Weather-3.4.6",
     "type": "ipa",
     "name": "Mercury",
