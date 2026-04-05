@@ -144,6 +144,24 @@
     "lastSync": "2026-04-05T09:59:47.513Z"
   },
   {
+    "id": "ipa-com.lightricks.Facetune2-26.6",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/05-04-2026/Facetune_26.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.6",
+    "developer": "khomodvip",
+    "date": "2026-04-05",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-04-05T12:59:47.956Z"
+  },
+  {
     "id": "ipa-com.edjing.edjingdjturntable-8.21.05",
     "type": "ipa",
     "name": "edjingMix",
