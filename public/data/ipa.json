@@ -90,6 +90,24 @@
     "lastSync": "2026-04-06T07:59:47.942Z"
   },
   {
+    "id": "ipa-com.AppChief.ArabicArt-9.6.1",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.AppChief.ArabicArt.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/06-04-2026/_9.6.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.6.1",
+    "developer": "khomodvip",
+    "date": "2026-04-06",
+    "source": "apptesters",
+    "bundleID": "com.AppChief.ArabicArt",
+    "lastSync": "2026-04-06T08:59:47.900Z"
+  },
+  {
     "id": "ipa-com.merge.cooking.theme.restaurant.food-1.35.1",
     "type": "ipa",
     "name": "MergeCooking",
