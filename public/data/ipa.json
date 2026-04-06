@@ -108,6 +108,42 @@
     "lastSync": "2026-04-06T22:59:47.833Z"
   },
   {
+    "id": "ipa-com.hasankassem.mockup-4.1.4",
+    "type": "ipa",
+    "name": "Mockup",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hasankassem.mockup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/Mockup_4.1.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.4",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "com.hasankassem.mockup",
+    "lastSync": "2026-04-06T23:59:47.895Z"
+  },
+  {
+    "id": "ipa-org.powerthesaurus.powerthesaurus-2.10.0",
+    "type": "ipa",
+    "name": "PowerThesaurus",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.powerthesaurus.powerthesaurus.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/PowerThesaurus_2.10.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.0",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "org.powerthesaurus.powerthesaurus",
+    "lastSync": "2026-04-06T23:59:47.897Z"
+  },
+  {
     "id": "ipa-app.uplens-3.5.0",
     "type": "ipa",
     "name": "Uplens",
