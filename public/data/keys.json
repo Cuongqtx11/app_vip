@@ -5,13 +5,13 @@
     "createdAt": "2026-04-06T08:23:46.972Z",
     "expiresAt": "2026-04-13T08:23:45.531Z",
     "maxUses": 10,
-    "currentUses": 1,
+    "currentUses": 2,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "NK6BUX",
     "package": "Gói 2K (10 Lượt)",
     "notes": "Auto PayOS",
-    "lastUsedAt": "2026-04-06T08:24:16.770Z"
+    "lastUsedAt": "2026-04-06T08:24:58.562Z"
   },
   {
     "id": "key_1775456691",
