@@ -1271,12 +1271,13 @@
     "createdAt": "2026-03-12T19:38:11.993Z",
     "expiresAt": "2026-04-11T19:38:11.358Z",
     "maxUses": null,
-    "currentUses": 6,
+    "currentUses": 7,
     "active": true,
     "createdBy": "udid_verify",
     "transaction_code": "UDID:00008110-000121140ED1401E",
     "package": "Gói UDID Free",
-    "notes": "Auto UDID Verify"
+    "notes": "Auto UDID Verify",
+    "lastUsedAt": "2026-04-06T03:04:22.536Z"
   },
   {
     "id": "udid_1773339251",
