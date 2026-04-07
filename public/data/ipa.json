@@ -324,6 +324,60 @@
     "lastSync": "2026-04-07T07:59:48.429Z"
   },
   {
+    "id": "ipa-io.veed.appstore-8.10.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/VEEDCaptions_8.10.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.10.0",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-04-07T08:59:48.067Z"
+  },
+  {
+    "id": "ipa-com.dopedevelopment.Panels-9.31",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/SCRL_9.31_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.31",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2026-04-07T08:59:48.068Z"
+  },
+  {
+    "id": "ipa-com.apalonapps.wlf-4.18.18",
+    "type": "ipa",
+    "name": "Weather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.wlf.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/Weather_4.18.18_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.18.18",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.wlf",
+    "lastSync": "2026-04-07T08:59:48.068Z"
+  },
+  {
     "id": "ipa-app.uplens-3.5.0",
     "type": "ipa",
     "name": "Uplens",
