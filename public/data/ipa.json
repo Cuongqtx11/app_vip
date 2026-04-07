@@ -378,6 +378,60 @@
     "lastSync": "2026-04-07T08:59:48.068Z"
   },
   {
+    "id": "ipa-com.picsart.studio-29.7.1",
+    "type": "ipa",
+    "name": "Picsart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.picsart.studio.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/Picsart_29.7.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.7.1",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "com.picsart.studio",
+    "lastSync": "2026-04-07T09:59:47.972Z"
+  },
+  {
+    "id": "ipa-com.moonlab.unfoldstories-8.156.2",
+    "type": "ipa",
+    "name": "Unfold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonlab.unfoldstories.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/Unfold_8.156.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.156.2",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "com.moonlab.unfoldstories",
+    "lastSync": "2026-04-07T09:59:47.972Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2026.14.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-04-2026/Photoroom_2026.14.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.14.01",
+    "developer": "khomodvip",
+    "date": "2026-04-07",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-04-07T09:59:47.973Z"
+  },
+  {
     "id": "ipa-app.uplens-3.5.0",
     "type": "ipa",
     "name": "Uplens",
