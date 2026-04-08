@@ -180,6 +180,24 @@
     "lastSync": "2026-04-08T09:54:06.955Z"
   },
   {
+    "id": "ipa-com.yazio.ios.YAZIO-12.79.1",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/08-04-2026/Yazio_12.79.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.79.1",
+    "developer": "khomodvip",
+    "date": "2026-04-08",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2026-04-08T13:39:02.766Z"
+  },
+  {
     "id": "ipa-com.adobe.premiere.ios-26.9.0",
     "type": "ipa",
     "name": "Premiere",
