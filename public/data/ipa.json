@@ -90,6 +90,96 @@
     "lastSync": "2026-04-08T19:39:02.869Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-22.3.7",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/Fitia_22.3.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "22.3.7",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-04-08T20:39:02.801Z"
+  },
+  {
+    "id": "ipa-com.iPwners.Plonkan-13.32",
+    "type": "ipa",
+    "name": "Buddy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iPwners.Plonkan.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/Buddy_13.32_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.32",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "com.iPwners.Plonkan",
+    "lastSync": "2026-04-08T20:39:02.802Z"
+  },
+  {
+    "id": "ipa-com.icandiapps.nightsky-26.3",
+    "type": "ipa",
+    "name": "NightSky",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.icandiapps.nightsky.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/NightSky_26.3_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.3",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "com.icandiapps.nightsky",
+    "lastSync": "2026-04-08T20:39:02.803Z"
+  },
+  {
+    "id": "ipa-com.aidana.cardriving.ios-4.9.8",
+    "type": "ipa",
+    "name": "CarParking",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aidana.cardriving.ios.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/CarParking_4.9.8_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.9.8",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "com.aidana.cardriving.ios",
+    "lastSync": "2026-04-08T20:39:02.803Z"
+  },
+  {
+    "id": "ipa-io.betterhalf.app-2.76.0",
+    "type": "ipa",
+    "name": "Paired",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.betterhalf.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/Paired_2.76.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.76.0",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "io.betterhalf.app",
+    "lastSync": "2026-04-08T20:39:02.804Z"
+  },
+  {
     "id": "ipa-com.astrio.Sofa-5.0.2",
     "type": "ipa",
     "name": "Sofa",
