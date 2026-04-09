@@ -126,6 +126,60 @@
     "lastSync": "2026-04-09T22:51:16.348Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.4.8",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-04-2026/SnapEdit_6.4.8_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4.8",
+    "developer": "khomodvip",
+    "date": "2026-04-10",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2026-04-09T23:51:16.449Z"
+  },
+  {
+    "id": "ipa-com.shred.shredlabs-5.4.2",
+    "type": "ipa",
+    "name": "SHRED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shred.shredlabs.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-04-2026/SHRED_5.4.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.2",
+    "developer": "khomodvip",
+    "date": "2026-04-10",
+    "source": "apptesters",
+    "bundleID": "com.shred.shredlabs",
+    "lastSync": "2026-04-09T23:51:16.451Z"
+  },
+  {
+    "id": "ipa-com.elevateapp.elevate-5.235.1",
+    "type": "ipa",
+    "name": "Elevate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.elevate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-04-2026/Elevate_5.235.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.235.1",
+    "developer": "khomodvip",
+    "date": "2026-04-10",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.elevate",
+    "lastSync": "2026-04-09T23:51:16.452Z"
+  },
+  {
     "id": "ipa-com.picretouch.photoeditor-1.1.6",
     "type": "ipa",
     "name": "AIRetouch",
