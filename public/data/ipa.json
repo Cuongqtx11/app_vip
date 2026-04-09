@@ -180,6 +180,78 @@
     "lastSync": "2026-04-08T20:39:02.804Z"
   },
   {
+    "id": "ipa-net.quochuywdm.collanote496-4.1.0",
+    "type": "ipa",
+    "name": "CollaNote",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/net.quochuywdm.collanote496.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/CollaNote_4.1.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.0",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "net.quochuywdm.collanote496",
+    "lastSync": "2026-04-09T04:02:25.256Z"
+  },
+  {
+    "id": "ipa-app.tripsy.ios-3.8.4",
+    "type": "ipa",
+    "name": "Tripsy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.tripsy.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/Tripsy_3.8.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.4",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "app.tripsy.ios",
+    "lastSync": "2026-04-09T04:02:25.257Z"
+  },
+  {
+    "id": "ipa-boomer.Smart-Video-13.12.0",
+    "type": "ipa",
+    "name": "Captions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/boomer.Smart-Video.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/Captions_13.12.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "13.12.0",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "boomer.Smart-Video",
+    "lastSync": "2026-04-09T04:02:25.258Z"
+  },
+  {
+    "id": "ipa-ru.routes.peakvisor-5.93",
+    "type": "ipa",
+    "name": "PeakVisor",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ru.routes.peakvisor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/PeakVisor_5.93_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.93",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "ru.routes.peakvisor",
+    "lastSync": "2026-04-09T04:02:25.258Z"
+  },
+  {
     "id": "ipa-com.astrio.Sofa-5.0.2",
     "type": "ipa",
     "name": "Sofa",
