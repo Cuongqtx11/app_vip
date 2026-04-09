@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.wellocution.iosapp-3.7.5",
+    "type": "ipa",
+    "name": "BoldVoice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wellocution.iosapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-04-2026/BoldVoice_3.7.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.5",
+    "developer": "khomodvip",
+    "date": "2026-04-10",
+    "source": "apptesters",
+    "bundleID": "com.wellocution.iosapp",
+    "lastSync": "2026-04-09T18:51:16.457Z"
+  },
+  {
     "id": "ipa-com.picretouch.photoeditor-1.1.6",
     "type": "ipa",
     "name": "AIRetouch",
@@ -412,6 +430,42 @@
     "source": "apptesters",
     "bundleID": "com.risesci.nyx",
     "lastSync": "2026-04-09T16:51:16.592Z"
+  },
+  {
+    "id": "ipa-com.photoeditor.polish-2.2.0",
+    "type": "ipa",
+    "name": "Polish",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photoeditor.polish.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/Polish_2.2.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.0",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "com.photoeditor.polish",
+    "lastSync": "2026-04-09T18:51:16.458Z"
+  },
+  {
+    "id": "ipa-xyz.gingertech.fitnotes-16",
+    "type": "ipa",
+    "name": "FitNotes",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/xyz.gingertech.fitnotes.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/09-04-2026/FitNotes_16_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "16",
+    "developer": "khomodvip",
+    "date": "2026-04-09",
+    "source": "apptesters",
+    "bundleID": "xyz.gingertech.fitnotes",
+    "lastSync": "2026-04-09T18:51:16.459Z"
   },
   {
     "id": "ipa-com.astrio.Sofa-5.0.2",
