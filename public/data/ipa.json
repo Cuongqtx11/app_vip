@@ -486,6 +486,42 @@
     "lastSync": "2026-04-10T13:44:26.442Z"
   },
   {
+    "id": "ipa-com.photoeditor.polish-2.2.1",
+    "type": "ipa",
+    "name": "Polish",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.photoeditor.polish.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-04-2026/Polish_2.2.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.2.1",
+    "developer": "khomodvip",
+    "date": "2026-04-10",
+    "source": "apptesters",
+    "bundleID": "com.photoeditor.polish",
+    "lastSync": "2026-04-10T15:44:26.911Z"
+  },
+  {
+    "id": "ipa-com.book.summaries.reading-1.2.2",
+    "type": "ipa",
+    "name": "GrowMe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.book.summaries.reading.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "books"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/10-04-2026/GrowMe_1.2.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.2.2",
+    "developer": "khomodvip",
+    "date": "2026-04-10",
+    "source": "apptesters",
+    "bundleID": "com.book.summaries.reading",
+    "lastSync": "2026-04-10T15:44:26.912Z"
+  },
+  {
     "id": "ipa-com.picretouch.photoeditor-1.1.6",
     "type": "ipa",
     "name": "AIRetouch",
