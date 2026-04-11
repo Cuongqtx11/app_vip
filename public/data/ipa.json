@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.wellocution.iosapp-3.7.6",
+    "type": "ipa",
+    "name": "BoldVoice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wellocution.iosapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-04-2026/BoldVoice_3.7.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.6",
+    "developer": "khomodvip",
+    "date": "2026-04-12",
+    "source": "apptesters",
+    "bundleID": "com.wellocution.iosapp",
+    "lastSync": "2026-04-11T23:09:16.223Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.5.1",
     "type": "ipa",
     "name": "Luminar",
@@ -88,6 +106,60 @@
     "source": "apptesters",
     "bundleID": "tech.miidii.MDClock",
     "lastSync": "2026-04-11T03:44:26.781Z"
+  },
+  {
+    "id": "ipa-co.bazaart.app-26.1.6",
+    "type": "ipa",
+    "name": "Bazaart",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.bazaart.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-04-2026/Bazaart_26.1.6_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.1.6",
+    "developer": "khomodvip",
+    "date": "2026-04-11",
+    "source": "apptesters",
+    "bundleID": "co.bazaart.app",
+    "lastSync": "2026-04-11T23:09:16.224Z"
+  },
+  {
+    "id": "ipa-com.camerasideas.Peachy-2.11.0",
+    "type": "ipa",
+    "name": "Peachy",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.Peachy.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-04-2026/Peachy_2.11.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.0",
+    "developer": "khomodvip",
+    "date": "2026-04-11",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.Peachy",
+    "lastSync": "2026-04-11T23:09:16.225Z"
+  },
+  {
+    "id": "ipa-com.jakemor.firness-ai-17.0",
+    "type": "ipa",
+    "name": "FitnessAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.jakemor.firness-ai.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-04-2026/FitnessAI_17.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.0",
+    "developer": "khomodvip",
+    "date": "2026-04-11",
+    "source": "apptesters",
+    "bundleID": "com.jakemor.firness-ai",
+    "lastSync": "2026-04-11T23:09:16.225Z"
   },
   {
     "id": "ipa-com.wellocution.iosapp-3.7.5",
