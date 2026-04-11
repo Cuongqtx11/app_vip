@@ -72,6 +72,24 @@
     "lastSync": "2026-04-11T02:44:26.715Z"
   },
   {
+    "id": "ipa-tech.miidii.MDClock-2.67.1",
+    "type": "ipa",
+    "name": "MDClock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.MDClock.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/11-04-2026/MDClock_2.67.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.67.1",
+    "developer": "khomodvip",
+    "date": "2026-04-11",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.MDClock",
+    "lastSync": "2026-04-11T03:44:26.781Z"
+  },
+  {
     "id": "ipa-com.wellocution.iosapp-3.7.5",
     "type": "ipa",
     "name": "BoldVoice",
