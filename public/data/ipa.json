@@ -36,6 +36,60 @@
     "lastSync": "2026-04-12T04:09:15.919Z"
   },
   {
+    "id": "ipa-com.neocortext.doublicatapp-6.4.1",
+    "type": "ipa",
+    "name": "Reface",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neocortext.doublicatapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-04-2026/Reface_6.4.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.4.1",
+    "developer": "khomodvip",
+    "date": "2026-04-12",
+    "source": "apptesters",
+    "bundleID": "com.neocortext.doublicatapp",
+    "lastSync": "2026-04-12T05:09:16.401Z"
+  },
+  {
+    "id": "ipa-nt.nc.ios-18.200.19",
+    "type": "ipa",
+    "name": "NCv1820019",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/nt.nc.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-04-2026/NCv1820019_18.200.19_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "18.200.19",
+    "developer": "khomodvip",
+    "date": "2026-04-12",
+    "source": "apptesters",
+    "bundleID": "nt.nc.ios",
+    "lastSync": "2026-04-12T05:09:16.402Z"
+  },
+  {
+    "id": "ipa-com.dubox.drive-4.15.0",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/12-04-2026/TeraBox_4.15.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.15.0",
+    "developer": "khomodvip",
+    "date": "2026-04-12",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2026-04-12T05:09:16.403Z"
+  },
+  {
     "id": "ipa-com.skylum.luminaripad-3.5.1",
     "type": "ipa",
     "name": "Luminar",
