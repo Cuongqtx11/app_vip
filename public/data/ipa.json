@@ -90,6 +90,96 @@
     "lastSync": "2026-04-13T04:09:15.914Z"
   },
   {
+    "id": "ipa-co.detail.duo-5.5.14",
+    "type": "ipa",
+    "name": "Detail",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.detail.duo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Detail_5.5.14_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.14",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "co.detail.duo",
+    "lastSync": "2026-04-13T08:09:15.925Z"
+  },
+  {
+    "id": "ipa-com.mwm.guitartuner-4.00.05",
+    "type": "ipa",
+    "name": "TunerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.guitartuner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/TunerPro_4.00.05_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.00.05",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.mwm.guitartuner",
+    "lastSync": "2026-04-13T08:09:15.927Z"
+  },
+  {
+    "id": "ipa-com.mwm.stems-5.01.03",
+    "type": "ipa",
+    "name": "Stemz",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.stems.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Stemz_5.01.03_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.01.03",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.mwm.stems",
+    "lastSync": "2026-04-13T08:09:15.927Z"
+  },
+  {
+    "id": "ipa-com.hubx.imagination-4.4.9",
+    "type": "ipa",
+    "name": "DaVinci",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hubx.imagination.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/DaVinci_4.4.9_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.4.9",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.hubx.imagination",
+    "lastSync": "2026-04-13T08:09:15.928Z"
+  },
+  {
+    "id": "ipa-com.getmimo.mimo-12.8.0",
+    "type": "ipa",
+    "name": "Mimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.getmimo.mimo.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Mimo_12.8.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.8.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.getmimo.mimo",
+    "lastSync": "2026-04-13T08:09:15.928Z"
+  },
+  {
     "id": "ipa-com.wellocution.iosapp-3.7.6",
     "type": "ipa",
     "name": "BoldVoice",
