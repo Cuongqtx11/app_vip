@@ -198,6 +198,24 @@
     "lastSync": "2026-04-13T09:09:16.140Z"
   },
   {
+    "id": "ipa-com.yazio.ios.YAZIO-12.80.0",
+    "type": "ipa",
+    "name": "Yazio",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yazio.ios.YAZIO.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Yazio_12.80.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.80.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.yazio.ios.YAZIO",
+    "lastSync": "2026-04-13T11:09:15.908Z"
+  },
+  {
     "id": "ipa-com.wellocution.iosapp-3.7.6",
     "type": "ipa",
     "name": "BoldVoice",
