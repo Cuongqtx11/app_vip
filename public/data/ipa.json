@@ -396,6 +396,150 @@
     "lastSync": "2026-04-13T17:09:16.054Z"
   },
   {
+    "id": "ipa-de.my-fit-coach.myfitcoach-ios-1.21.2",
+    "type": "ipa",
+    "name": "MyFitCoach",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.my-fit-coach.myfitcoach-ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/MyFitCoach_1.21.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.21.2",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "de.my-fit-coach.myfitcoach-ios",
+    "lastSync": "2026-04-13T18:09:16.028Z"
+  },
+  {
+    "id": "ipa-com.burbn.barcelona-425.0.0",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Threads_425.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "425.0.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2026-04-13T18:09:16.029Z"
+  },
+  {
+    "id": "ipa-de.komoot.berlinbikeapp-2026.15.4",
+    "type": "ipa",
+    "name": "Komoot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Komoot_2026.15.4_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.15.4",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "de.komoot.berlinbikeapp",
+    "lastSync": "2026-04-13T18:09:16.030Z"
+  },
+  {
+    "id": "ipa-com.parallaxlabs.ShiftCalendar-2026.2",
+    "type": "ipa",
+    "name": "PunchClock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.parallaxlabs.ShiftCalendar.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/PunchClock_2026.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.2",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.parallaxlabs.ShiftCalendar",
+    "lastSync": "2026-04-13T18:09:16.030Z"
+  },
+  {
+    "id": "ipa-com.wikiloc.wikiloc-3.28.0",
+    "type": "ipa",
+    "name": "Wikiloc",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wikiloc.wikiloc.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Wikiloc_3.28.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.28.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.wikiloc.wikiloc",
+    "lastSync": "2026-04-13T18:09:16.031Z"
+  },
+  {
+    "id": "ipa-com.gunthermarktl.stepapp-8.8.0",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/StepsApp_8.8.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.8.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2026-04-13T18:09:16.031Z"
+  },
+  {
+    "id": "ipa-com.shred.shredlabs-5.4.3",
+    "type": "ipa",
+    "name": "SHRED",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shred.shredlabs.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/SHRED_5.4.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.4.3",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.shred.shredlabs",
+    "lastSync": "2026-04-13T18:09:16.032Z"
+  },
+  {
+    "id": "ipa-com.yengshine.proccd-5.8.0",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/ProCCD_5.8.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.8.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2026-04-13T18:09:16.032Z"
+  },
+  {
     "id": "ipa-com.wellocution.iosapp-3.7.6",
     "type": "ipa",
     "name": "BoldVoice",
