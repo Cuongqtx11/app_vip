@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.locket.Locket-2.42.0",
+    "type": "ipa",
+    "name": "Locket",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.locket.Locket.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/Locket_2.42.0_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.42.0",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.locket.Locket",
+    "lastSync": "2026-04-13T19:09:16.037Z"
+  },
+  {
+    "id": "ipa-com.bpmhealth.boostfitness-254",
+    "type": "ipa",
+    "name": "Boostcamp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bpmhealth.boostfitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/Boostcamp_254_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "254",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.bpmhealth.boostfitness",
+    "lastSync": "2026-04-13T19:09:16.038Z"
+  },
+  {
     "id": "ipa-com.waterminder.waterminder-7.2.12",
     "type": "ipa",
     "name": "WaterMinder",
