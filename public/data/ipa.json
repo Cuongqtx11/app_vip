@@ -324,6 +324,78 @@
     "lastSync": "2026-04-13T16:09:16.140Z"
   },
   {
+    "id": "ipa-com.sillens.iShape-23.8.0",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Lifesum_23.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.8.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2026-04-13T17:09:16.052Z"
+  },
+  {
+    "id": "ipa-com.burbn.instagram-425.0.0",
+    "type": "ipa",
+    "name": "Instagram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.instagram.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Instagram_425.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "425.0.0",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.burbn.instagram",
+    "lastSync": "2026-04-13T17:09:16.053Z"
+  },
+  {
+    "id": "ipa-app.swiftgram.ios-12.6.2",
+    "type": "ipa",
+    "name": "Swiftgram",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.swiftgram.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Swiftgram_12.6.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "12.6.2",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "app.swiftgram.ios",
+    "lastSync": "2026-04-13T17:09:16.054Z"
+  },
+  {
+    "id": "ipa-com.readdle.Scanner-8.36.1",
+    "type": "ipa",
+    "name": "ScannerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.Scanner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/ScannerPro_8.36.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.36.1",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.readdle.Scanner",
+    "lastSync": "2026-04-13T17:09:16.054Z"
+  },
+  {
     "id": "ipa-com.wellocution.iosapp-3.7.6",
     "type": "ipa",
     "name": "BoldVoice",
