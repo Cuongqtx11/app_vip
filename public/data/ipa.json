@@ -306,6 +306,24 @@
     "lastSync": "2026-04-13T15:09:16.050Z"
   },
   {
+    "id": "ipa-com.textasticapp.textastic-universal-10.9.4",
+    "type": "ipa",
+    "name": "Textastic",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.textasticapp.textastic-universal.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/13-04-2026/Textastic_10.9.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "10.9.4",
+    "developer": "khomodvip",
+    "date": "2026-04-13",
+    "source": "apptesters",
+    "bundleID": "com.textasticapp.textastic-universal",
+    "lastSync": "2026-04-13T16:09:16.140Z"
+  },
+  {
     "id": "ipa-com.wellocution.iosapp-3.7.6",
     "type": "ipa",
     "name": "BoldVoice",
