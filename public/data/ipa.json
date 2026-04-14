@@ -90,6 +90,24 @@
     "lastSync": "2026-04-14T22:09:15.946Z"
   },
   {
+    "id": "ipa-com.videobrowser.ios-622300",
+    "type": "ipa",
+    "name": "VideoLite",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.videobrowser.ios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/VideoLite_622300_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "622300",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "com.videobrowser.ios",
+    "lastSync": "2026-04-14T23:09:15.937Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.42.0",
     "type": "ipa",
     "name": "Locket",
