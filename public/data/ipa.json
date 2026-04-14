@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.neo.NeoMan-8.1.6",
+    "type": "ipa",
+    "name": "NeoServer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neo.NeoMan.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/NeoServer_8.1.6_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.6",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "com.neo.NeoMan",
+    "lastSync": "2026-04-14T20:09:15.981Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.42.0",
     "type": "ipa",
     "name": "Locket",
