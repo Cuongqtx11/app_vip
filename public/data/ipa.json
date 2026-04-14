@@ -18,6 +18,24 @@
     "lastSync": "2026-04-14T20:09:15.981Z"
   },
   {
+    "id": "ipa-uni.cbum-4.1.34",
+    "type": "ipa",
+    "name": "Stndrd",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/uni.cbum.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/Stndrd_4.1.34_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.1.34",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "uni.cbum",
+    "lastSync": "2026-04-14T21:09:16.199Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.42.0",
     "type": "ipa",
     "name": "Locket",
