@@ -414,6 +414,24 @@
     "lastSync": "2026-04-14T13:09:16.090Z"
   },
   {
+    "id": "ipa-archery.storify-1.263.0",
+    "type": "ipa",
+    "name": "Mojo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/archery.storify.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/Mojo_1.263.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.263.0",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "archery.storify",
+    "lastSync": "2026-04-14T15:09:16.063Z"
+  },
+  {
     "id": "ipa-com.waterminder.waterminder-7.2.12",
     "type": "ipa",
     "name": "WaterMinder",
