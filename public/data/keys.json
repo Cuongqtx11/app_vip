@@ -5,12 +5,13 @@
     "createdAt": "2026-04-14T08:32:40.504Z",
     "expiresAt": "2026-04-21T08:32:38.531Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "OAK2IX",
     "package": "Gói 2K (10 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-04-14T08:33:04.710Z"
   },
   {
     "id": "key_1776135581",
