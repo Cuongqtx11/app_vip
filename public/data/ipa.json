@@ -432,6 +432,24 @@
     "lastSync": "2026-04-14T15:09:16.063Z"
   },
   {
+    "id": "ipa-com.revivasoftworks.Snore-Lab-6.3.1",
+    "type": "ipa",
+    "name": "SnoreLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.revivasoftworks.Snore-Lab.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/SnoreLab_6.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.3.1",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.revivasoftworks.Snore-Lab",
+    "lastSync": "2026-04-14T16:09:16.045Z"
+  },
+  {
     "id": "ipa-com.waterminder.waterminder-7.2.12",
     "type": "ipa",
     "name": "WaterMinder",
