@@ -252,6 +252,96 @@
     "lastSync": "2026-04-14T08:09:16.044Z"
   },
   {
+    "id": "ipa-com.ADPTVLTD.push-3.10.5",
+    "type": "ipa",
+    "name": "PUSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ADPTVLTD.push.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/PUSH_3.10.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.10.5",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.ADPTVLTD.push",
+    "lastSync": "2026-04-14T11:09:15.912Z"
+  },
+  {
+    "id": "ipa-com.aoklab.fewerphotos-3.3.7",
+    "type": "ipa",
+    "name": "swipewipe",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.aoklab.fewerphotos.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/swipewipe_3.3.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.3.7",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.aoklab.fewerphotos",
+    "lastSync": "2026-04-14T11:09:15.913Z"
+  },
+  {
+    "id": "ipa-com.dr1ven.eraser-2026.15.01",
+    "type": "ipa",
+    "name": "Photoroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dr1ven.eraser.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/Photoroom_2026.15.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.15.01",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.dr1ven.eraser",
+    "lastSync": "2026-04-14T11:09:15.913Z"
+  },
+  {
+    "id": "ipa-com.adguard.AdguardExtension-4.5.19",
+    "type": "ipa",
+    "name": "AdGuard",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adguard.AdguardExtension.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/AdGuard_4.5.19_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.5.19",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.adguard.AdguardExtension",
+    "lastSync": "2026-04-14T11:09:15.914Z"
+  },
+  {
+    "id": "ipa-com.frontrow.vlog-2.3.1",
+    "type": "ipa",
+    "name": "VlogNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/14-04-2026/VlogNow_2.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.3.1",
+    "developer": "khomodvip",
+    "date": "2026-04-14",
+    "source": "apptesters",
+    "bundleID": "com.frontrow.vlog",
+    "lastSync": "2026-04-14T11:09:15.914Z"
+  },
+  {
     "id": "ipa-com.waterminder.waterminder-7.2.12",
     "type": "ipa",
     "name": "WaterMinder",
