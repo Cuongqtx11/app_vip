@@ -102,12 +102,13 @@
     "createdAt": "2026-04-10T02:43:04.966Z",
     "expiresAt": "2026-04-17T02:43:03.504Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "ISM4CU",
     "package": "Gói 2K (10 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-04-14T08:39:57.298Z"
   },
   {
     "id": "key_1775788558",
