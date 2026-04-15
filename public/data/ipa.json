@@ -162,6 +162,96 @@
     "lastSync": "2026-04-15T09:09:16.000Z"
   },
   {
+    "id": "ipa-com.dubox.drive-4.15.5",
+    "type": "ipa",
+    "name": "TeraBox",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dubox.drive.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/TeraBox_4.15.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.15.5",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "com.dubox.drive",
+    "lastSync": "2026-04-15T10:09:16.619Z"
+  },
+  {
+    "id": "ipa-com.agiletortoise.Drafts5-51.0.5",
+    "type": "ipa",
+    "name": "Drafts",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.agiletortoise.Drafts5.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/Drafts_51.0.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "51.0.5",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "com.agiletortoise.Drafts5",
+    "lastSync": "2026-04-15T10:09:16.621Z"
+  },
+  {
+    "id": "ipa-es.monkimun.lingokids-26.16.0",
+    "type": "ipa",
+    "name": "Lingokids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/es.monkimun.lingokids.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/Lingokids_26.16.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.16.0",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "es.monkimun.lingokids",
+    "lastSync": "2026-04-15T10:09:16.621Z"
+  },
+  {
+    "id": "ipa-app.renovateai-5.1.2",
+    "type": "ipa",
+    "name": "RenovateAI",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.renovateai.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/RenovateAI_5.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.1.2",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "app.renovateai",
+    "lastSync": "2026-04-15T10:09:16.622Z"
+  },
+  {
+    "id": "ipa-instapreview-6.11.0",
+    "type": "ipa",
+    "name": "Inpreview",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/instapreview.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/Inpreview_6.11.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.11.0",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "instapreview",
+    "lastSync": "2026-04-15T10:09:16.622Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.42.0",
     "type": "ipa",
     "name": "Locket",
