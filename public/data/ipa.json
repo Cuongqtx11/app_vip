@@ -324,6 +324,42 @@
     "lastSync": "2026-04-15T11:09:15.925Z"
   },
   {
+    "id": "ipa-ee.keel24.Lingvist-2.65.3",
+    "type": "ipa",
+    "name": "Lingvist",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ee.keel24.Lingvist.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/Lingvist_2.65.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.65.3",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "ee.keel24.Lingvist",
+    "lastSync": "2026-04-15T12:09:16.069Z"
+  },
+  {
+    "id": "ipa-com.adobe.lrmobilephone-11.3.0",
+    "type": "ipa",
+    "name": "Lightroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.lrmobilephone.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/Lightroom_11.3.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.3.0",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "com.adobe.lrmobilephone",
+    "lastSync": "2026-04-15T12:09:16.070Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.42.0",
     "type": "ipa",
     "name": "Locket",
