@@ -5,13 +5,13 @@
     "createdAt": "2026-04-15T16:31:13.765Z",
     "expiresAt": "2026-04-22T16:31:11.602Z",
     "maxUses": 10,
-    "currentUses": 2,
+    "currentUses": 3,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "GDFFRR",
     "package": "Gói 2K (10 Lượt)",
     "notes": "Auto PayOS",
-    "lastUsedAt": "2026-04-15T16:34:29.949Z"
+    "lastUsedAt": "2026-04-15T16:37:57.098Z"
   },
   {
     "id": "udid_1776251220",
