@@ -396,6 +396,24 @@
     "lastSync": "2026-04-15T14:09:15.754Z"
   },
   {
+    "id": "ipa-com.andyworks.weather-3.48",
+    "type": "ipa",
+    "name": "simpleweather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.weather.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/15-04-2026/simpleweather_3.48_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.48",
+    "developer": "khomodvip",
+    "date": "2026-04-15",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.weather",
+    "lastSync": "2026-04-15T15:09:16.364Z"
+  },
+  {
     "id": "ipa-com.locket.Locket-2.42.0",
     "type": "ipa",
     "name": "Locket",
