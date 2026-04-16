@@ -450,6 +450,24 @@
     "lastSync": "2026-04-16T14:33:59.447Z"
   },
   {
+    "id": "ipa-com.itwcalculator.worldradarfree-5.17.3",
+    "type": "ipa",
+    "name": "NOAARadar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itwcalculator.worldradarfree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-04-2026/NOAARadar_5.17.3_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.17.3",
+    "developer": "khomodvip",
+    "date": "2026-04-16",
+    "source": "apptesters",
+    "bundleID": "com.itwcalculator.worldradarfree",
+    "lastSync": "2026-04-16T15:33:59.172Z"
+  },
+  {
     "id": "ipa-com.neo.NeoMan-8.1.6",
     "type": "ipa",
     "name": "NeoServer",
