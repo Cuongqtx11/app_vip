@@ -306,6 +306,60 @@
     "lastSync": "2026-04-16T08:33:59.382Z"
   },
   {
+    "id": "ipa-com.apalonapps.pdffree-2.11.8",
+    "type": "ipa",
+    "name": "Scanner",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.apalonapps.pdffree.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-04-2026/Scanner_2.11.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.11.8",
+    "developer": "khomodvip",
+    "date": "2026-04-16",
+    "source": "apptesters",
+    "bundleID": "com.apalonapps.pdffree",
+    "lastSync": "2026-04-16T09:33:59.288Z"
+  },
+  {
+    "id": "ipa-com.mwm.piano-app-3.57.00",
+    "type": "ipa",
+    "name": "Piano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.piano-app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-04-2026/Piano_3.57.00_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.57.00",
+    "developer": "khomodvip",
+    "date": "2026-04-16",
+    "source": "apptesters",
+    "bundleID": "com.mwm.piano-app",
+    "lastSync": "2026-04-16T09:33:59.289Z"
+  },
+  {
+    "id": "ipa-io.veed.appstore-8.11.0",
+    "type": "ipa",
+    "name": "VEEDCaptions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/io.veed.appstore.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-04-2026/VEEDCaptions_8.11.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.11.0",
+    "developer": "khomodvip",
+    "date": "2026-04-16",
+    "source": "apptesters",
+    "bundleID": "io.veed.appstore",
+    "lastSync": "2026-04-16T09:33:59.290Z"
+  },
+  {
     "id": "ipa-com.neo.NeoMan-8.1.6",
     "type": "ipa",
     "name": "NeoServer",
