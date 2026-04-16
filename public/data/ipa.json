@@ -396,6 +396,60 @@
     "lastSync": "2026-04-16T13:33:59.168Z"
   },
   {
+    "id": "ipa-com.kinemaster.kios-8.1.6",
+    "type": "ipa",
+    "name": "KineMaster",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.kinemaster.kios.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-04-2026/KineMaster_8.1.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.6",
+    "developer": "khomodvip",
+    "date": "2026-04-16",
+    "source": "apptesters",
+    "bundleID": "com.kinemaster.kios",
+    "lastSync": "2026-04-16T14:33:59.445Z"
+  },
+  {
+    "id": "ipa-com.madarsoft.fitness-17.6",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-04-2026/_17.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.6",
+    "developer": "khomodvip",
+    "date": "2026-04-16",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2026-04-16T14:33:59.446Z"
+  },
+  {
+    "id": "ipa-com.lightricks.Facetune2-26.7.1",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-04-2026/Facetune_26.7.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.7.1",
+    "developer": "khomodvip",
+    "date": "2026-04-16",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-04-16T14:33:59.447Z"
+  },
+  {
     "id": "ipa-com.neo.NeoMan-8.1.6",
     "type": "ipa",
     "name": "NeoServer",
