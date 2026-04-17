@@ -324,6 +324,96 @@
     "lastSync": "2026-04-17T09:50:18.446Z"
   },
   {
+    "id": "ipa-com.zynga.FarmVille2CountryEscape-29.8",
+    "type": "ipa",
+    "name": "FarmVille2",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zynga.FarmVille2CountryEscape.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/FarmVille2_29.8_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "29.8",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "com.zynga.FarmVille2CountryEscape",
+    "lastSync": "2026-04-17T11:50:18.002Z"
+  },
+  {
+    "id": "ipa-de.komoot.berlinbikeapp-2026.16.0",
+    "type": "ipa",
+    "name": "Komoot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/de.komoot.berlinbikeapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/Komoot_2026.16.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2026.16.0",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "de.komoot.berlinbikeapp",
+    "lastSync": "2026-04-17T11:50:18.004Z"
+  },
+  {
+    "id": "ipa-co.windyapp.Windy-15.5.9",
+    "type": "ipa",
+    "name": "Windyapp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.windyapp.Windy.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/Windyapp_15.5.9_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.5.9",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "co.windyapp.Windy",
+    "lastSync": "2026-04-17T11:50:18.004Z"
+  },
+  {
+    "id": "ipa-gen.tech.impulse-1.46",
+    "type": "ipa",
+    "name": "Impulse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gen.tech.impulse.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/Impulse_1.46_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.46",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "gen.tech.impulse",
+    "lastSync": "2026-04-17T11:50:18.005Z"
+  },
+  {
+    "id": "ipa-fi.twomenandadog.zombiecatchers-1.64.32",
+    "type": "ipa",
+    "name": "ZombieCatchers",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/fi.twomenandadog.zombiecatchers.png",
+    "desc": "Injected with IGG",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/ZombieCatchers_1.64.32_IGG_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.64.32",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "fi.twomenandadog.zombiecatchers",
+    "lastSync": "2026-04-17T11:50:18.005Z"
+  },
+  {
     "id": "ipa-com.ulisesolave.Fitia-22.3.9",
     "type": "ipa",
     "name": "Fitia",
