@@ -234,6 +234,60 @@
     "lastSync": "2026-04-17T05:50:17.966Z"
   },
   {
+    "id": "ipa-com.bandlab.bandlab.iphone-11.21.2",
+    "type": "ipa",
+    "name": "BandLab",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bandlab.bandlab.iphone.png",
+    "desc": "Injected with Boost Membership",
+    "tags": [
+      "music"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/BandLab_11.21.2_Boost_Membership_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.21.2",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "com.bandlab.bandlab.iphone",
+    "lastSync": "2026-04-17T07:50:18.055Z"
+  },
+  {
+    "id": "ipa-com.bitsmedia.muslimpro-17.2",
+    "type": "ipa",
+    "name": "MuslimPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bitsmedia.muslimpro.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/MuslimPro_17.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.2",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "com.bitsmedia.muslimpro",
+    "lastSync": "2026-04-17T07:50:18.056Z"
+  },
+  {
+    "id": "ipa-com.blockpuzzle.us.ios-6.9.7",
+    "type": "ipa",
+    "name": "BlockBlast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.blockpuzzle.us.ios.png",
+    "desc": "Injected with noads",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/BlockBlast_6.9.7_noads_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.9.7",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "com.blockpuzzle.us.ios",
+    "lastSync": "2026-04-17T07:50:18.056Z"
+  },
+  {
     "id": "ipa-com.ulisesolave.Fitia-22.3.9",
     "type": "ipa",
     "name": "Fitia",
