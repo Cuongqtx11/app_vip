@@ -216,6 +216,24 @@
     "lastSync": "2026-04-17T04:49:06.346Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.5.0",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/17-04-2026/SnapEdit_6.5.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.0",
+    "developer": "khomodvip",
+    "date": "2026-04-17",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2026-04-17T05:50:17.966Z"
+  },
+  {
     "id": "ipa-com.ulisesolave.Fitia-22.3.9",
     "type": "ipa",
     "name": "Fitia",
