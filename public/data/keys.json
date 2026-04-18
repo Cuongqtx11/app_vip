@@ -5,12 +5,13 @@
     "createdAt": "2026-04-18T00:40:55.067Z",
     "expiresAt": "2026-04-25T00:40:52.991Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "59YG6M",
     "package": "Gói 2K (10 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-04-18T00:41:25.605Z"
   },
   {
     "id": "key_1776455021",
