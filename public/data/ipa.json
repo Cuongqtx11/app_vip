@@ -72,6 +72,24 @@
     "lastSync": "2026-04-18T00:50:18.555Z"
   },
   {
+    "id": "ipa-com.sfun.snapedit-6.5.1",
+    "type": "ipa",
+    "name": "SnapEdit",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sfun.snapedit.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-04-2026/SnapEdit_6.5.1_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.5.1",
+    "developer": "khomodvip",
+    "date": "2026-04-18",
+    "source": "apptesters",
+    "bundleID": "com.sfun.snapedit",
+    "lastSync": "2026-04-18T04:50:17.950Z"
+  },
+  {
     "id": "ipa-com.hassantaleb.mockup-5.2",
     "type": "ipa",
     "name": "Animock",
