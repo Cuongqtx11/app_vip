@@ -18,6 +18,78 @@
     "lastSync": "2026-04-18T18:50:18.013Z"
   },
   {
+    "id": "ipa-com.shapr3d.shapr-26.51.0",
+    "type": "ipa",
+    "name": "Shapr3D",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.shapr3d.shapr.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-04-2026/Shapr3D_26.51.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.51.0",
+    "developer": "khomodvip",
+    "date": "2026-04-19",
+    "source": "apptesters",
+    "bundleID": "com.shapr3d.shapr",
+    "lastSync": "2026-04-18T19:50:18.356Z"
+  },
+  {
+    "id": "ipa-com.wellocution.iosapp-3.7.7",
+    "type": "ipa",
+    "name": "BoldVoice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wellocution.iosapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-04-2026/BoldVoice_3.7.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.7.7",
+    "developer": "khomodvip",
+    "date": "2026-04-19",
+    "source": "apptesters",
+    "bundleID": "com.wellocution.iosapp",
+    "lastSync": "2026-04-18T19:50:18.357Z"
+  },
+  {
+    "id": "ipa-com.hhp.magicEraser-3.13.0",
+    "type": "ipa",
+    "name": "MagicEraser",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.hhp.magicEraser.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-04-2026/MagicEraser_3.13.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.13.0",
+    "developer": "khomodvip",
+    "date": "2026-04-19",
+    "source": "apptesters",
+    "bundleID": "com.hhp.magicEraser",
+    "lastSync": "2026-04-18T19:50:18.358Z"
+  },
+  {
+    "id": "ipa-app.mmap.mobile-2.10.6",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-04-2026/Soundmap_2.10.6_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.6",
+    "developer": "khomodvip",
+    "date": "2026-04-19",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2026-04-18T19:50:18.359Z"
+  },
+  {
     "id": "ipa-boomer.Smart-Video-13.13.1",
     "type": "ipa",
     "name": "Captions",
