@@ -54,6 +54,114 @@
     "lastSync": "2026-04-19T20:50:18.762Z"
   },
   {
+    "id": "ipa-com.travelboast.travelboast-2.35",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/TravelBoast_2.35_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.35",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-04-19T21:50:18.555Z"
+  },
+  {
+    "id": "ipa-com.unicostudio.braintest2-1.24.05",
+    "type": "ipa",
+    "name": "BrainTest2",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.unicostudio.braintest2.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/BrainTest2_1.24.05_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.24.05",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.unicostudio.braintest2",
+    "lastSync": "2026-04-19T21:50:18.556Z"
+  },
+  {
+    "id": "ipa-app.mmap.mobile-2.10.7",
+    "type": "ipa",
+    "name": "Soundmap",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.mmap.mobile.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Soundmap_2.10.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.10.7",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "app.mmap.mobile",
+    "lastSync": "2026-04-19T21:50:18.557Z"
+  },
+  {
+    "id": "ipa-com.laubrothersllc.BabyArt-3.51.8",
+    "type": "ipa",
+    "name": "Precious",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.laubrothersllc.BabyArt.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Precious_3.51.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.51.8",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.laubrothersllc.BabyArt",
+    "lastSync": "2026-04-19T21:50:18.557Z"
+  },
+  {
+    "id": "ipa-biser.stories-8.5.5",
+    "type": "ipa",
+    "name": "Leto",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/biser.stories.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Leto_8.5.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.5.5",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "biser.stories",
+    "lastSync": "2026-04-19T21:50:18.558Z"
+  },
+  {
+    "id": "ipa-ideastudio.Weather-on-the-Way-2.5.3",
+    "type": "ipa",
+    "name": "OnTheWay",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ideastudio.Weather-on-the-Way.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/OnTheWay_2.5.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.5.3",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "ideastudio.Weather-on-the-Way",
+    "lastSync": "2026-04-19T21:50:18.558Z"
+  },
+  {
     "id": "ipa-com.mobilefootie.fotmobpro-1231.0",
     "type": "ipa",
     "name": "FotMob",
