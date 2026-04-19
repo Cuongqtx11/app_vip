@@ -252,6 +252,24 @@
     "lastSync": "2026-04-19T17:50:18.134Z"
   },
   {
+    "id": "ipa-com.busuu.english.app-30.10.0",
+    "type": "ipa",
+    "name": "Busuu",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.busuu.english.app.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "education"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-04-2026/Busuu_30.10.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "30.10.0",
+    "developer": "khomodvip",
+    "date": "2026-04-19",
+    "source": "apptesters",
+    "bundleID": "com.busuu.english.app",
+    "lastSync": "2026-04-19T18:50:18.284Z"
+  },
+  {
     "id": "ipa-boomer.Smart-Video-13.13.1",
     "type": "ipa",
     "name": "Captions",
