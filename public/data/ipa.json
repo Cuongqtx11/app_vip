@@ -216,6 +216,42 @@
     "lastSync": "2026-04-19T14:50:18.014Z"
   },
   {
+    "id": "ipa-com.madarsoft.fitness-17.7",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-04-2026/_17.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "17.7",
+    "developer": "khomodvip",
+    "date": "2026-04-19",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2026-04-19T17:50:18.132Z"
+  },
+  {
+    "id": "ipa-com.madarsoft.fitness-9.6.3",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.madarsoft.fitness.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/19-04-2026/_9.6.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.6.3",
+    "developer": "khomodvip",
+    "date": "2026-04-19",
+    "source": "apptesters",
+    "bundleID": "com.madarsoft.fitness",
+    "lastSync": "2026-04-19T17:50:18.134Z"
+  },
+  {
     "id": "ipa-boomer.Smart-Video-13.13.1",
     "type": "ipa",
     "name": "Captions",
