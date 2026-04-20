@@ -252,6 +252,42 @@
     "lastSync": "2026-04-20T03:50:18.380Z"
   },
   {
+    "id": "ipa-com.moonlab.unfoldstories-8.157.0",
+    "type": "ipa",
+    "name": "Unfold",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moonlab.unfoldstories.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Unfold_8.157.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.157.0",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.moonlab.unfoldstories",
+    "lastSync": "2026-04-20T06:50:18.099Z"
+  },
+  {
+    "id": "ipa-co.visualsupply.cam-460.0.1",
+    "type": "ipa",
+    "name": "VSCO",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.visualsupply.cam.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/VSCO_460.0.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "460.0.1",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "co.visualsupply.cam",
+    "lastSync": "2026-04-20T06:50:18.100Z"
+  },
+  {
     "id": "ipa-com.mobilefootie.fotmobpro-1231.0",
     "type": "ipa",
     "name": "FotMob",
