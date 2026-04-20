@@ -504,6 +504,42 @@
     "lastSync": "2026-04-20T11:50:18.386Z"
   },
   {
+    "id": "ipa-com.dopedevelopment.Panels-9.33",
+    "type": "ipa",
+    "name": "SCRL",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dopedevelopment.Panels.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/SCRL_9.33_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.33",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.dopedevelopment.Panels",
+    "lastSync": "2026-04-20T12:50:18.458Z"
+  },
+  {
+    "id": "ipa-com.mwm.piano-app-3.57.01",
+    "type": "ipa",
+    "name": "Piano",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.mwm.piano-app.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Piano_3.57.01_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.57.01",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.mwm.piano-app",
+    "lastSync": "2026-04-20T12:50:18.459Z"
+  },
+  {
     "id": "ipa-com.mobilefootie.fotmobpro-1231.0",
     "type": "ipa",
     "name": "FotMob",
