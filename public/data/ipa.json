@@ -198,6 +198,60 @@
     "lastSync": "2026-04-20T02:50:18.050Z"
   },
   {
+    "id": "ipa-com.intsig.CamScannerLite-7.16.0",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.intsig.CamScannerLite.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/_7.16.0_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.16.0",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.intsig.CamScannerLite",
+    "lastSync": "2026-04-20T03:50:18.378Z"
+  },
+  {
+    "id": "ipa-com.nixwang.decision-26.4",
+    "type": "ipa",
+    "name": "TinyDecisions",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.nixwang.decision.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/TinyDecisions_26.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.4",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.nixwang.decision",
+    "lastSync": "2026-04-20T03:50:18.379Z"
+  },
+  {
+    "id": "ipa-com.yengshine.proccd-5.8.2",
+    "type": "ipa",
+    "name": "ProCCD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.yengshine.proccd.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/ProCCD_5.8.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.8.2",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.yengshine.proccd",
+    "lastSync": "2026-04-20T03:50:18.380Z"
+  },
+  {
     "id": "ipa-com.mobilefootie.fotmobpro-1231.0",
     "type": "ipa",
     "name": "FotMob",
