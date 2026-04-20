@@ -5,12 +5,13 @@
     "createdAt": "2026-04-20T23:55:03.867Z",
     "expiresAt": "2026-04-27T23:55:02.243Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "S7FVZT",
     "package": "Gói 2K (10 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-04-20T23:55:29.525Z"
   },
   {
     "id": "udid_1776682319",
