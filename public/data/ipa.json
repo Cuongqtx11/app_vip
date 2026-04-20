@@ -648,6 +648,24 @@
     "lastSync": "2026-04-20T15:50:18.248Z"
   },
   {
+    "id": "ipa-com.moodtools.thoughtdiary-5.5.19",
+    "type": "ipa",
+    "name": "Clarity",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.moodtools.thoughtdiary.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Clarity_5.5.19_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.19",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.moodtools.thoughtdiary",
+    "lastSync": "2026-04-20T16:50:17.962Z"
+  },
+  {
     "id": "ipa-com.mobilefootie.fotmobpro-1231.0",
     "type": "ipa",
     "name": "FotMob",
