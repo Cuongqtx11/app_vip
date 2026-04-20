@@ -324,6 +324,60 @@
     "lastSync": "2026-04-20T07:50:18.282Z"
   },
   {
+    "id": "ipa-com.path36.SpliceFree-4.28.62",
+    "type": "ipa",
+    "name": "Splice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.path36.SpliceFree.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Splice_4.28.62_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.28.62",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.path36.SpliceFree",
+    "lastSync": "2026-04-20T08:50:18.322Z"
+  },
+  {
+    "id": "ipa-com.spacegab.slideshow-5.6.47",
+    "type": "ipa",
+    "name": "SlideShow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.spacegab.slideshow.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/SlideShow_5.6.47_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.6.47",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.spacegab.slideshow",
+    "lastSync": "2026-04-20T08:50:18.323Z"
+  },
+  {
+    "id": "ipa-com.adobe.lrmobilephone-11.3.1",
+    "type": "ipa",
+    "name": "Lightroom",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.adobe.lrmobilephone.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/20-04-2026/Lightroom_11.3.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "11.3.1",
+    "developer": "khomodvip",
+    "date": "2026-04-20",
+    "source": "apptesters",
+    "bundleID": "com.adobe.lrmobilephone",
+    "lastSync": "2026-04-20T08:50:18.324Z"
+  },
+  {
     "id": "ipa-com.mobilefootie.fotmobpro-1231.0",
     "type": "ipa",
     "name": "FotMob",
