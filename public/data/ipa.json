@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-com.firecore.infuse-8.4.3",
+    "type": "ipa",
+    "name": "Infuse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.firecore.infuse.png",
+    "desc": "Injected with Plus",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-04-2026/Infuse_8.4.3_Plus_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.4.3",
+    "developer": "khomodvip",
+    "date": "2026-04-22",
+    "source": "apptesters",
+    "bundleID": "com.firecore.infuse",
+    "lastSync": "2026-04-21T18:50:18.396Z"
+  },
+  {
     "id": "ipa-com.sillens.iShape-23.8.1",
     "type": "ipa",
     "name": "Lifesum",
@@ -340,6 +358,42 @@
     "source": "apptesters",
     "bundleID": "com.yazio.ios.YAZIO",
     "lastSync": "2026-04-21T17:50:18.112Z"
+  },
+  {
+    "id": "ipa-com.linecorp.Foodie-7.4.40",
+    "type": "ipa",
+    "name": "Foodie",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.linecorp.Foodie.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-04-2026/Foodie_7.4.40_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4.40",
+    "developer": "khomodvip",
+    "date": "2026-04-21",
+    "source": "apptesters",
+    "bundleID": "com.linecorp.Foodie",
+    "lastSync": "2026-04-21T18:50:18.397Z"
+  },
+  {
+    "id": "ipa-com.andyworks.weather-3.49",
+    "type": "ipa",
+    "name": "simpleweather",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.weather.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "productivity"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-04-2026/simpleweather_3.49_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.49",
+    "developer": "khomodvip",
+    "date": "2026-04-21",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.weather",
+    "lastSync": "2026-04-21T18:50:18.398Z"
   },
   {
     "id": "ipa-com.aiarlabs.prequel-2.92.0",
