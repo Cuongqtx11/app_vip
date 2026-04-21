@@ -180,6 +180,42 @@
     "lastSync": "2026-04-21T07:50:18.640Z"
   },
   {
+    "id": "ipa-co.detail.duo-5.5.15",
+    "type": "ipa",
+    "name": "Detail",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/co.detail.duo.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-04-2026/Detail_5.5.15_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.5.15",
+    "developer": "khomodvip",
+    "date": "2026-04-21",
+    "source": "apptesters",
+    "bundleID": "co.detail.duo",
+    "lastSync": "2026-04-21T08:50:18.479Z"
+  },
+  {
+    "id": "ipa-com.truesoftware.TrueCallerOther-26.15.5",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-04-2026/Truecaller_26.15.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.15.5",
+    "developer": "khomodvip",
+    "date": "2026-04-21",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2026-04-21T08:50:18.481Z"
+  },
+  {
     "id": "ipa-com.aiarlabs.prequel-2.92.0",
     "type": "ipa",
     "name": "PREQUEL",
