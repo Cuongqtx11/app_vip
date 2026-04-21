@@ -216,6 +216,24 @@
     "lastSync": "2026-04-21T08:50:18.481Z"
   },
   {
+    "id": "ipa-com.zhiliaoapp.musically-44.8.0",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/21-04-2026/TikTok_44.8.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "44.8.0",
+    "developer": "khomodvip",
+    "date": "2026-04-21",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-04-21T09:50:18.464Z"
+  },
+  {
     "id": "ipa-com.aiarlabs.prequel-2.92.0",
     "type": "ipa",
     "name": "PREQUEL",
