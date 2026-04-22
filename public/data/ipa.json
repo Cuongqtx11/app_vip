@@ -504,6 +504,78 @@
     "lastSync": "2026-04-22T10:35:12.576Z"
   },
   {
+    "id": "ipa-com.ideation.Peak-2.6.1",
+    "type": "ipa",
+    "name": "PeakWatch",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ideation.Peak.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-04-2026/PeakWatch_2.6.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.6.1",
+    "developer": "khomodvip",
+    "date": "2026-04-22",
+    "source": "apptesters",
+    "bundleID": "com.ideation.Peak",
+    "lastSync": "2026-04-22T13:35:12.509Z"
+  },
+  {
+    "id": "ipa-com.planblabs.drops.italian-39.8",
+    "type": "ipa",
+    "name": "Drops",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.planblabs.drops.italian.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-04-2026/Drops_39.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "39.8",
+    "developer": "khomodvip",
+    "date": "2026-04-22",
+    "source": "apptesters",
+    "bundleID": "com.planblabs.drops.italian",
+    "lastSync": "2026-04-22T13:35:12.510Z"
+  },
+  {
+    "id": "ipa-ylee.studio.instories-5.108.2",
+    "type": "ipa",
+    "name": "Instories",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/ylee.studio.instories.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-04-2026/Instories_5.108.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.108.2",
+    "developer": "khomodvip",
+    "date": "2026-04-22",
+    "source": "apptesters",
+    "bundleID": "ylee.studio.instories",
+    "lastSync": "2026-04-22T13:35:12.510Z"
+  },
+  {
+    "id": "ipa-app.getmoshi.ios-2.8.2",
+    "type": "ipa",
+    "name": "Moshi",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.getmoshi.ios.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-04-2026/Moshi_2.8.2_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.8.2",
+    "developer": "khomodvip",
+    "date": "2026-04-22",
+    "source": "apptesters",
+    "bundleID": "app.getmoshi.ios",
+    "lastSync": "2026-04-22T13:35:12.511Z"
+  },
+  {
     "id": "ipa-com.sillens.iShape-23.8.1",
     "type": "ipa",
     "name": "Lifesum",
