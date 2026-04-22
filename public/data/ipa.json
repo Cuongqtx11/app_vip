@@ -576,6 +576,24 @@
     "lastSync": "2026-04-22T13:35:12.511Z"
   },
   {
+    "id": "ipa-com.readdle.Scanner-8.36.2",
+    "type": "ipa",
+    "name": "ScannerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.Scanner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/22-04-2026/ScannerPro_8.36.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.36.2",
+    "developer": "khomodvip",
+    "date": "2026-04-22",
+    "source": "apptesters",
+    "bundleID": "com.readdle.Scanner",
+    "lastSync": "2026-04-22T15:35:12.414Z"
+  },
+  {
     "id": "ipa-com.sillens.iShape-23.8.1",
     "type": "ipa",
     "name": "Lifesum",
