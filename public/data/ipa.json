@@ -1,5 +1,41 @@
 [
   {
+    "id": "ipa-com.frontrow.vlog-2.3.4",
+    "type": "ipa",
+    "name": "VlogNow",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontrow.vlog.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-04-2026/VlogNow_2.3.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.3.4",
+    "developer": "khomodvip",
+    "date": "2026-04-23",
+    "source": "apptesters",
+    "bundleID": "com.frontrow.vlog",
+    "lastSync": "2026-04-22T21:35:12.551Z"
+  },
+  {
+    "id": "ipa-com.sillens.iShape-23.8.2",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-04-2026/Lifesum_23.8.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.8.2",
+    "developer": "khomodvip",
+    "date": "2026-04-23",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2026-04-22T21:35:12.552Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.4.3",
     "type": "ipa",
     "name": "Infuse",
