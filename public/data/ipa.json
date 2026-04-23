@@ -432,6 +432,42 @@
     "lastSync": "2026-04-23T15:35:12.671Z"
   },
   {
+    "id": "ipa-com.tickettothemoon.video.persona-1.15.22",
+    "type": "ipa",
+    "name": "Persona",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tickettothemoon.video.persona.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-04-2026/Persona_1.15.22_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.15.22",
+    "developer": "khomodvip",
+    "date": "2026-04-23",
+    "source": "apptesters",
+    "bundleID": "com.tickettothemoon.video.persona",
+    "lastSync": "2026-04-23T16:35:12.823Z"
+  },
+  {
+    "id": "ipa-com.bowery-digital.bend-7.4.0",
+    "type": "ipa",
+    "name": "Bend",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bowery-digital.bend.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/23-04-2026/Bend_7.4.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.4.0",
+    "developer": "khomodvip",
+    "date": "2026-04-23",
+    "source": "apptesters",
+    "bundleID": "com.bowery-digital.bend",
+    "lastSync": "2026-04-23T16:35:12.824Z"
+  },
+  {
     "id": "ipa-com.firecore.infuse-8.4.3",
     "type": "ipa",
     "name": "Infuse",
