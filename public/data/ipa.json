@@ -18,6 +18,42 @@
     "lastSync": "2026-04-23T21:35:12.318Z"
   },
   {
+    "id": "ipa-com.ulisesolave.Fitia-22.4",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-04-2026/Fitia_22.4_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "22.4",
+    "developer": "khomodvip",
+    "date": "2026-04-24",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-04-23T22:35:12.984Z"
+  },
+  {
+    "id": "ipa-com.wellocution.iosapp-3.8.0",
+    "type": "ipa",
+    "name": "BoldVoice",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.wellocution.iosapp.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-04-2026/BoldVoice_3.8.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.8.0",
+    "developer": "khomodvip",
+    "date": "2026-04-24",
+    "source": "apptesters",
+    "bundleID": "com.wellocution.iosapp",
+    "lastSync": "2026-04-23T22:35:12.985Z"
+  },
+  {
     "id": "ipa-com.frontrow.vlog-2.3.4",
     "type": "ipa",
     "name": "VlogNow",
