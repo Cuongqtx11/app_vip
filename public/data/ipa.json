@@ -252,6 +252,60 @@
     "lastSync": "2026-04-24T07:39:08.744Z"
   },
   {
+    "id": "ipa-instapreview-6.11.1",
+    "type": "ipa",
+    "name": "Inpreview",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/instapreview.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-04-2026/Inpreview_6.11.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.11.1",
+    "developer": "khomodvip",
+    "date": "2026-04-24",
+    "source": "apptesters",
+    "bundleID": "instapreview",
+    "lastSync": "2026-04-24T09:39:08.696Z"
+  },
+  {
+    "id": "ipa-com.readdle.Scanner-8.36.3",
+    "type": "ipa",
+    "name": "ScannerPro",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.readdle.Scanner.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-04-2026/ScannerPro_8.36.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.36.3",
+    "developer": "khomodvip",
+    "date": "2026-04-24",
+    "source": "apptesters",
+    "bundleID": "com.readdle.Scanner",
+    "lastSync": "2026-04-24T09:39:08.697Z"
+  },
+  {
+    "id": "ipa-com.neo.NeoMan-8.1.7",
+    "type": "ipa",
+    "name": "NeoServer",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neo.NeoMan.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-04-2026/NeoServer_8.1.7_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.1.7",
+    "developer": "khomodvip",
+    "date": "2026-04-24",
+    "source": "apptesters",
+    "bundleID": "com.neo.NeoMan",
+    "lastSync": "2026-04-24T09:39:08.698Z"
+  },
+  {
     "id": "ipa-com.frontrow.vlog-2.3.4",
     "type": "ipa",
     "name": "VlogNow",
