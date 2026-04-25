@@ -288,6 +288,24 @@
     "lastSync": "2026-04-25T13:39:08.690Z"
   },
   {
+    "id": "ipa-com.lightricks.Facetune2-26.8",
+    "type": "ipa",
+    "name": "Facetune",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.lightricks.Facetune2.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-04-2026/Facetune_26.8_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.8",
+    "developer": "khomodvip",
+    "date": "2026-04-25",
+    "source": "apptesters",
+    "bundleID": "com.lightricks.Facetune2",
+    "lastSync": "2026-04-25T17:39:08.750Z"
+  },
+  {
     "id": "ipa-dazz.camera.vintagecamera-2.17",
     "type": "ipa",
     "name": "Dazz",
