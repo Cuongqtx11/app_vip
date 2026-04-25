@@ -270,6 +270,24 @@
     "lastSync": "2026-04-25T03:39:08.950Z"
   },
   {
+    "id": "ipa-com.frameoneapps.Crsel-1.3.703",
+    "type": "ipa",
+    "name": "Crsel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/25-04-2026/Crsel_1.3.703_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.3.703",
+    "developer": "khomodvip",
+    "date": "2026-04-25",
+    "source": "apptesters",
+    "bundleID": "com.frameoneapps.Crsel",
+    "lastSync": "2026-04-25T13:39:08.690Z"
+  },
+  {
     "id": "ipa-dazz.camera.vintagecamera-2.17",
     "type": "ipa",
     "name": "Dazz",
