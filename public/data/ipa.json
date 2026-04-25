@@ -1,5 +1,23 @@
 [
   {
+    "id": "ipa-tech.miidii.MDClock-2.67.3",
+    "type": "ipa",
+    "name": "MDClock",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/tech.miidii.MDClock.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/26-04-2026/MDClock_2.67.3_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.67.3",
+    "developer": "khomodvip",
+    "date": "2026-04-26",
+    "source": "apptesters",
+    "bundleID": "tech.miidii.MDClock",
+    "lastSync": "2026-04-25T23:39:08.646Z"
+  },
+  {
     "id": "ipa-com.campmobile.snow-15.1.1",
     "type": "ipa",
     "name": "SNOW",
