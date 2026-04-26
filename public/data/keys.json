@@ -5,12 +5,13 @@
     "createdAt": "2026-04-26T15:11:22.031Z",
     "expiresAt": "2026-05-03T15:11:20.977Z",
     "maxUses": 10,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "EDB7KA",
     "package": "Gói 2K (10 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-04-26T15:12:08.780Z"
   },
   {
     "id": "key_1777215615",
