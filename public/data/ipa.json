@@ -162,6 +162,168 @@
     "lastSync": "2026-04-27T21:39:09.016Z"
   },
   {
+    "id": "ipa-com.bowery-digital.bend-7.5.0",
+    "type": "ipa",
+    "name": "Bend",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.bowery-digital.bend.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Bend_7.5.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "7.5.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.bowery-digital.bend",
+    "lastSync": "2026-04-27T23:39:08.554Z"
+  },
+  {
+    "id": "ipa-com.burbn.barcelona-427.0.0",
+    "type": "ipa",
+    "name": "Threads",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.burbn.barcelona.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Threads_427.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "427.0.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.burbn.barcelona",
+    "lastSync": "2026-04-27T23:39:08.555Z"
+  },
+  {
+    "id": "ipa-org.iggymedia.periodtracker-9.103.0",
+    "type": "ipa",
+    "name": "Flo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/org.iggymedia.periodtracker.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Flo_9.103.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.103.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "org.iggymedia.periodtracker",
+    "lastSync": "2026-04-27T23:39:08.555Z"
+  },
+  {
+    "id": "ipa-com.frontierdesign.videostar-15.1.2",
+    "type": "ipa",
+    "name": "VideoStar",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frontierdesign.videostar.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/VideoStar_15.1.2_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "15.1.2",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.frontierdesign.videostar",
+    "lastSync": "2026-04-27T23:39:08.556Z"
+  },
+  {
+    "id": "ipa-PHCXZHD53T.com.enki.insights-2.40.8",
+    "type": "ipa",
+    "name": "Enki",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PHCXZHD53T.com.enki.insights.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Enki_2.40.8_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.40.8",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "PHCXZHD53T.com.enki.insights",
+    "lastSync": "2026-04-27T23:39:08.556Z"
+  },
+  {
+    "id": "ipa-com.tiimo.app-3.50.0",
+    "type": "ipa",
+    "name": "Tiimo",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tiimo.app.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Tiimo_3.50.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.50.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.tiimo.app",
+    "lastSync": "2026-04-27T23:39:08.557Z"
+  },
+  {
+    "id": "ipa-com.gunthermarktl.stepapp-8.8.3",
+    "type": "ipa",
+    "name": "StepsApp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.gunthermarktl.stepapp.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/StepsApp_8.8.3_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.8.3",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.gunthermarktl.stepapp",
+    "lastSync": "2026-04-27T23:39:08.557Z"
+  },
+  {
+    "id": "ipa-gen.tech.impulse-1.47",
+    "type": "ipa",
+    "name": "Impulse",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/gen.tech.impulse.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Impulse_1.47_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.47",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "gen.tech.impulse",
+    "lastSync": "2026-04-27T23:39:08.558Z"
+  },
+  {
+    "id": "ipa-com.sillens.iShape-23.9.0",
+    "type": "ipa",
+    "name": "Lifesum",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.sillens.iShape.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Lifesum_23.9.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "23.9.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.sillens.iShape",
+    "lastSync": "2026-04-27T23:39:08.558Z"
+  },
+  {
     "id": "ipa-com.mobisystems.OxfordDictionaryOfEnglishFree-15.23",
     "type": "ipa",
     "name": "Dictionary",
