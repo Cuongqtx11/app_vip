@@ -360,6 +360,60 @@
     "lastSync": "2026-04-27T12:39:11.276Z"
   },
   {
+    "id": "ipa-com.intsig.CamScannerLite-9.7",
+    "type": "ipa",
+    "name": "",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.intsig.CamScannerLite.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/_9.7_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.7",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.intsig.CamScannerLite",
+    "lastSync": "2026-04-27T13:39:08.962Z"
+  },
+  {
+    "id": "ipa-com.calisthenics.thenx-6.6.0",
+    "type": "ipa",
+    "name": "Thenx",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.calisthenics.thenx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Thenx_6.6.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.0",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.calisthenics.thenx",
+    "lastSync": "2026-04-27T13:39:08.963Z"
+  },
+  {
+    "id": "ipa-com.planblabs.drops.italian-39.9",
+    "type": "ipa",
+    "name": "Drops",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.planblabs.drops.italian.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Drops_39.9_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "39.9",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.planblabs.drops.italian",
+    "lastSync": "2026-04-27T13:39:08.964Z"
+  },
+  {
     "id": "ipa-tech.miidii.MDClock-2.67.3",
     "type": "ipa",
     "name": "MDClock",
