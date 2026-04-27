@@ -1,5 +1,59 @@
 [
   {
+    "id": "ipa-es.monkimun.lingokids-26.18.0",
+    "type": "ipa",
+    "name": "Lingokids",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/es.monkimun.lingokids.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "kids"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Lingokids_26.18.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.18.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "es.monkimun.lingokids",
+    "lastSync": "2026-04-27T20:39:09.048Z"
+  },
+  {
+    "id": "ipa-com.beauchamp.Messenger.external-20260424.0.0",
+    "type": "ipa",
+    "name": "Chai",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.beauchamp.Messenger.external.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Chai_20260424.0.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "20260424.0.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.beauchamp.Messenger.external",
+    "lastSync": "2026-04-27T20:39:09.049Z"
+  },
+  {
+    "id": "ipa-com.risesci.nyx-0.1.587",
+    "type": "ipa",
+    "name": "RiseSleep",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.risesci.nyx.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "health & fitness"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/RiseSleep_0.1.587_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "0.1.587",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.risesci.nyx",
+    "lastSync": "2026-04-27T20:39:09.059Z"
+  },
+  {
     "id": "ipa-com.mobisystems.OxfordDictionaryOfEnglishFree-15.23",
     "type": "ipa",
     "name": "Dictionary",
