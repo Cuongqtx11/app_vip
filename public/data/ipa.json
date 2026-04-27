@@ -180,6 +180,96 @@
     "lastSync": "2026-04-27T10:39:09.107Z"
   },
   {
+    "id": "ipa-com.frameoneapps.Crsel-1.3.704",
+    "type": "ipa",
+    "name": "Crsel",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.frameoneapps.Crsel.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Crsel_1.3.704_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.3.704",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.frameoneapps.Crsel",
+    "lastSync": "2026-04-27T11:39:14.851Z"
+  },
+  {
+    "id": "ipa-com.zijayrate.analogcam-8.5.0",
+    "type": "ipa",
+    "name": "OldRoll",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zijayrate.analogcam.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/OldRoll_8.5.0_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "8.5.0",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.zijayrate.analogcam",
+    "lastSync": "2026-04-27T11:39:14.852Z"
+  },
+  {
+    "id": "ipa-com.tickettothemoon.video.persona-1.15.24",
+    "type": "ipa",
+    "name": "Persona",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.tickettothemoon.video.persona.png",
+    "desc": "Injected with VIP",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Persona_1.15.24_VIP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.15.24",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.tickettothemoon.video.persona",
+    "lastSync": "2026-04-27T11:39:14.853Z"
+  },
+  {
+    "id": "ipa-com.zhiliaoapp.musically-44.9.0",
+    "type": "ipa",
+    "name": "TikTok",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.zhiliaoapp.musically.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/TikTok_44.9.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "44.9.0",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.zhiliaoapp.musically",
+    "lastSync": "2026-04-27T11:39:14.853Z"
+  },
+  {
+    "id": "ipa-com.neocortext.doublicatapp-6.6.0",
+    "type": "ipa",
+    "name": "Reface",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.neocortext.doublicatapp.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Reface_6.6.0_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.6.0",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.neocortext.doublicatapp",
+    "lastSync": "2026-04-27T11:39:14.854Z"
+  },
+  {
     "id": "ipa-tech.miidii.MDClock-2.67.3",
     "type": "ipa",
     "name": "MDClock",
