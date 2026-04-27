@@ -270,6 +270,96 @@
     "lastSync": "2026-04-27T11:39:14.854Z"
   },
   {
+    "id": "ipa-com.facebook.Messenger-558.2.0",
+    "type": "ipa",
+    "name": "Messenger",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.facebook.Messenger.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "social"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Messenger_558.2.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "558.2.0",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.facebook.Messenger",
+    "lastSync": "2026-04-27T12:39:11.273Z"
+  },
+  {
+    "id": "ipa-com.itimeteo.webssh-31.4",
+    "type": "ipa",
+    "name": "WebSSH",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.itimeteo.webssh.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/WebSSH_31.4_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "31.4",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.itimeteo.webssh",
+    "lastSync": "2026-04-27T12:39:11.274Z"
+  },
+  {
+    "id": "ipa-com.iteration-mobile.radarbot-free-ww-9.40",
+    "type": "ipa",
+    "name": "Radarbot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.iteration-mobile.radarbot-free-ww.png",
+    "desc": "Injected with Gold",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Radarbot_9.40_Gold_%40thisismanpreets_apptesters.org.ipa",
+    "version": "9.40",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.iteration-mobile.radarbot-free-ww",
+    "lastSync": "2026-04-27T12:39:11.275Z"
+  },
+  {
+    "id": "ipa-com.funnmedia.calory-4.8",
+    "type": "ipa",
+    "name": "Calory",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.funnmedia.calory.png",
+    "desc": "Injected with IAP",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Calory_4.8_IAP_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.8",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.funnmedia.calory",
+    "lastSync": "2026-04-27T12:39:11.276Z"
+  },
+  {
+    "id": "ipa-com.travelboast.travelboast-2.36",
+    "type": "ipa",
+    "name": "TravelBoast",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.travelboast.travelboast.png",
+    "desc": "Injected with Pro",
+    "tags": [
+      "navigation"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/TravelBoast_2.36_Pro_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.36",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.travelboast.travelboast",
+    "lastSync": "2026-04-27T12:39:11.276Z"
+  },
+  {
     "id": "ipa-tech.miidii.MDClock-2.67.3",
     "type": "ipa",
     "name": "MDClock",
