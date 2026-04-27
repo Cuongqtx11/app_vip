@@ -414,6 +414,78 @@
     "lastSync": "2026-04-27T13:39:08.964Z"
   },
   {
+    "id": "ipa-com.elevateapp.elevate-5.237.0",
+    "type": "ipa",
+    "name": "Elevate",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.elevate.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Elevate_5.237.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.237.0",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.elevate",
+    "lastSync": "2026-04-27T14:39:09.139Z"
+  },
+  {
+    "id": "ipa-com.osmose-it.osmosis-6.0.5",
+    "type": "ipa",
+    "name": "Osmosis",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.osmose-it.osmosis.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Osmosis_6.0.5_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "6.0.5",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.osmose-it.osmosis",
+    "lastSync": "2026-04-27T14:39:09.140Z"
+  },
+  {
+    "id": "ipa-com.truesoftware.TrueCallerOther-26.16.5",
+    "type": "ipa",
+    "name": "Truecaller",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.truesoftware.TrueCallerOther.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "game"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Truecaller_26.16.5_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "26.16.5",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.truesoftware.TrueCallerOther",
+    "lastSync": "2026-04-27T14:39:09.140Z"
+  },
+  {
+    "id": "ipa-com.evolve.helm-3.183.0",
+    "type": "ipa",
+    "name": "Rest",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.evolve.helm.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Rest_3.183.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.183.0",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.evolve.helm",
+    "lastSync": "2026-04-27T14:39:09.141Z"
+  },
+  {
     "id": "ipa-tech.miidii.MDClock-2.67.3",
     "type": "ipa",
     "name": "MDClock",
