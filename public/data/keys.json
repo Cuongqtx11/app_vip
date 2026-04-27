@@ -1968,12 +1968,13 @@
     "createdAt": "2026-03-12T10:55:22.582Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 4,
+    "currentUses": 5,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "8RA3YM",
     "package": "Gói 5K (20 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-04-27T13:49:04.206Z"
   },
   {
     "id": "udid_1773306670",
