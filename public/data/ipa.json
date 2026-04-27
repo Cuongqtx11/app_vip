@@ -540,6 +540,60 @@
     "lastSync": "2026-04-27T16:39:09.136Z"
   },
   {
+    "id": "ipa-com.andyworks.camera-1.49",
+    "type": "ipa",
+    "name": "Camera",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.andyworks.camera.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Camera_1.49_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.49",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.andyworks.camera",
+    "lastSync": "2026-04-27T19:39:08.545Z"
+  },
+  {
+    "id": "ipa-com.ulisesolave.Fitia-22.4.1",
+    "type": "ipa",
+    "name": "Fitia",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.ulisesolave.Fitia.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Fitia_22.4.1_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "22.4.1",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.ulisesolave.Fitia",
+    "lastSync": "2026-04-27T19:39:08.546Z"
+  },
+  {
+    "id": "ipa-com.dreamer.Habits-3.34",
+    "type": "ipa",
+    "name": "Habits",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.dreamer.Habits.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/27-04-2026/Habits_3.34_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "3.34",
+    "developer": "khomodvip",
+    "date": "2026-04-27",
+    "source": "apptesters",
+    "bundleID": "com.dreamer.Habits",
+    "lastSync": "2026-04-27T19:39:08.549Z"
+  },
+  {
     "id": "ipa-tech.miidii.MDClock-2.67.3",
     "type": "ipa",
     "name": "MDClock",
