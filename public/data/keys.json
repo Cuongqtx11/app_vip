@@ -5,12 +5,13 @@
     "createdAt": "2026-04-28T08:05:27.977Z",
     "expiresAt": null,
     "maxUses": 20,
-    "currentUses": 0,
+    "currentUses": 1,
     "active": true,
     "createdBy": "payos_webhook",
     "transaction_code": "EIB611",
     "package": "Gói 5K (20 Lượt)",
-    "notes": "Auto PayOS"
+    "notes": "Auto PayOS",
+    "lastUsedAt": "2026-04-28T08:06:11.041Z"
   },
   {
     "id": "key_1777312065",
