@@ -414,6 +414,60 @@
     "lastSync": "2026-04-28T07:39:09.414Z"
   },
   {
+    "id": "ipa-app.labbet.labbet-2.60",
+    "type": "ipa",
+    "name": "Labbet",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/app.labbet.labbet.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "shopping"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Labbet_2.60_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.60",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "app.labbet.labbet",
+    "lastSync": "2026-04-28T08:39:09.110Z"
+  },
+  {
+    "id": "ipa-com.elevateapp.kamino.kamino-1.202.0",
+    "type": "ipa",
+    "name": "Balance",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.elevateapp.kamino.kamino.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Balance_1.202.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.202.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.elevateapp.kamino.kamino",
+    "lastSync": "2026-04-28T08:39:09.111Z"
+  },
+  {
+    "id": "ipa-eu.gowod-5.8.2",
+    "type": "ipa",
+    "name": "GOWOD",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/eu.gowod.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/GOWOD_5.8.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "5.8.2",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "eu.gowod",
+    "lastSync": "2026-04-28T08:39:09.112Z"
+  },
+  {
     "id": "ipa-com.mobisystems.OxfordDictionaryOfEnglishFree-15.23",
     "type": "ipa",
     "name": "Dictionary",
