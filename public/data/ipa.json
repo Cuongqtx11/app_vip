@@ -576,6 +576,60 @@
     "lastSync": "2026-04-28T14:39:09.035Z"
   },
   {
+    "id": "ipa-com.newmarketinglab.ImageCompressor-2.16",
+    "type": "ipa",
+    "name": "Compress",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.newmarketinglab.ImageCompressor.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "news"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/Compress_2.16_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "2.16",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.newmarketinglab.ImageCompressor",
+    "lastSync": "2026-04-28T15:39:09.441Z"
+  },
+  {
+    "id": "ipa-com.snowcorp.glowup-4.2.0",
+    "type": "ipa",
+    "name": "GlowUp",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.snowcorp.glowup.png",
+    "desc": "Injected with Subscription Unlocked",
+    "tags": [
+      "utilities"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/GlowUp_4.2.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
+    "version": "4.2.0",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.snowcorp.glowup",
+    "lastSync": "2026-04-28T15:39:09.442Z"
+  },
+  {
+    "id": "ipa-com.camerasideas.InstaShot-1.95.1",
+    "type": "ipa",
+    "name": "InShot",
+    "icon": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/com.camerasideas.InstaShot.png",
+    "desc": "Injected with Premium",
+    "tags": [
+      "photo & video"
+    ],
+    "badge": "new",
+    "fileLink": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/28-04-2026/InShot_1.95.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+    "version": "1.95.1",
+    "developer": "khomodvip",
+    "date": "2026-04-28",
+    "source": "apptesters",
+    "bundleID": "com.camerasideas.InstaShot",
+    "lastSync": "2026-04-28T15:39:09.443Z"
+  },
+  {
     "id": "ipa-com.mobisystems.OxfordDictionaryOfEnglishFree-15.23",
     "type": "ipa",
     "name": "Dictionary",
